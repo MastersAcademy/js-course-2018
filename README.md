@@ -48,4 +48,4 @@ Project structure
 
 
 # Authors
-Mentors of MastersAcademy
+❤️ Mentors of MastersAcademy
