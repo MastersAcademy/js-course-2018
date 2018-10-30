@@ -48,5 +48,4 @@ Project structure
 
 
 # Authors
- * Aleksandr Fesenko (https://github.com/smithua)
- * Oleh Kastornov (https://github.com/powerbot15)
+❤️All Mentors of MastersAcademy
