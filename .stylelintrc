@@ -1,0 +1,105 @@
+{
+  "rules": {
+    "at-rule-name-case": "lower",
+    "at-rule-name-space-after": "always-single-line",
+    "at-rule-semicolon-newline-after": "always",
+
+    "block-closing-brace-newline-after": "always",
+
+    "selector-pseudo-element-colon-notation": "single",
+    "selector-pseudo-element-case": "lower",
+    "selector-max-specificity": "0,7,2",
+    "selector-type-case": "lower",
+
+    "number-leading-zero": "never",
+    "number-no-trailing-zeros": true,
+    "unit-whitelist": ["em", "rem", "px", "%", "s", "vh", "vw", "deg", "ms"],
+
+    "color-hex-case": "upper",
+    "color-named": "never",
+    "color-hex-length": "short",
+    "color-no-invalid-hex": true,
+
+    "font-weight-notation": "numeric",
+
+    "function-calc-no-unspaced-operator": true,
+    "function-comma-newline-before": "never-multi-line",
+    "function-comma-space-before": "never-single-line",
+    "function-linear-gradient-no-nonstandard-direction": true,
+    "function-max-empty-lines": 0,
+    "function-name-case": "lower",
+    "function-parentheses-newline-inside": "always-multi-line",
+    "function-parentheses-space-inside": "never",
+    "function-url-no-scheme-relative": true,
+    "function-url-quotes": "always",
+    "function-whitespace-after": "always",
+
+    "string-no-newline": true,
+    "string-quotes": "double",
+
+    "length-zero-no-unit": true,
+
+    "time-min-milliseconds": 100,
+
+    "unit-case": "lower",
+
+    "value-keyword-case": "lower",
+    "value-no-vendor-prefix": true,
+
+    "max-empty-lines": 2,
+    "indentation": [ 2, {
+      "indentInsideParens": "twice"
+    }],
+    "max-nesting-depth": 4,
+    "no-descending-specificity": true,
+    "no-empty-source": true,
+    "no-eol-whitespace": true,
+    "no-extra-semicolons": true,
+    "no-unknown-animations": true,
+
+    "declaration-colon-space-after": "always",
+    "declaration-colon-space-before": "never",
+    "block-no-empty": true,
+    "shorthand-property-no-redundant-values": true,
+
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "after-declaration",
+          "first-nested"
+        ]
+      }
+    ],
+    "block-closing-brace-empty-line-before": "never",
+    "rule-empty-line-before": [
+      "always-multi-line"
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "blockless-after-same-name-blockless",
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "include",
+          "mixin",
+          "content",
+          "at-root"
+        ]
+      }
+    ],
+    "block-opening-brace-newline-after": "always-multi-line",
+    "block-opening-brace-space-before": "always",
+    "block-opening-brace-space-after": "always-single-line"
+  }
+}
