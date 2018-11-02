@@ -1,40 +1,12 @@
 {
-  "name": "js-course-2018",
+  "name": "homework_1",
   "version": "1.0.0",
-  "description": "add some magic for JavaScript course 2018",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MastersAcademy/js-course-2018.git"
-  },
-  "author": "smithua <aleksandr.fesenko@masterofcode.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MastersAcademy/js-course-2018/issues"
-  },
-  "homepage": "https://github.com/MastersAcademy/js-course-2018",
+  "description": "10.13.0 6.4.1",
   "main": "index.js",
   "scripts": {
-    "test": "lint-staged"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "lint-staged": {
-    "*.js": [
-      "eslint --config .eslintrc.js",
-      "git add"
-    ],
-    "*.css": [
-      "stylelint --config .stylelintrc",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "dependencies": {
-    "eslint": "^5.8.0",
-    "husky": "^1.1.2",
-    "lint-staged": "^8.0.4",
-    "stylelint": "^9.7.1"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
