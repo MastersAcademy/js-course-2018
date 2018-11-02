@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/tmp
+    docker:
+    - image: circleci/node:10
+    parallelism: 4
+    steps:
+    - checkout
+    - run: npm install
+    - run: npm test
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
