@@ -1,0 +1,19 @@
+{
+  "name": "--save",
+  "version": "1.0.0",
+  "description": "alexander@alexander-Lenovo-ideapad-100-15IBD:~/js-course-2018/homeworks/alexander.kulyk_KulykAlexander/homework_1$ node -v v8.10.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KulykAlexander/js-course-2018.git"
+  },
+  "author": "KulykAlexander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KulykAlexander/js-course-2018/issues"
+  },
+  "homepage": "https://github.com/KulykAlexander/js-course-2018#readme"
+}
