@@ -1,11 +1,11 @@
 {
   "name": "homework_1",
   "version": "1.0.0",
-  "description": "$ node -v v10.13.0",
+  "description": "node v10.13.0\r npm 6.4.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Yaroslav",
   "license": "ISC"
 }
