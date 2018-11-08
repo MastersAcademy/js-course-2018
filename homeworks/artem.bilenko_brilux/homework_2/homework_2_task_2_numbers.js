@@ -5,32 +5,35 @@ const checkDiapason = readline.createInterface({
     output: process.stdout
 });
 
-checkDiapason.question('Enter diapason(from 500 to 1000). For example(600, 700): ', (Diapason) => {
+checkDiapason.question('Enter diapason(from 500 to 1000). For example(600, 700): ', Diapason => {
     checkDiapason.close();
     let arrDiapason = Diapason.split(',');
     if (arrDiapason[0] < 500 || arrDiapason[1] > 1000) {
         console.log('Enter please valid diapason(from 500 to 1000). For example(600, 700):');
-    } else if (!isNaN(arrDiapason[0])) {
+        return;
+    }
+    if (!isNaN(arrDiapason[0]) && !isNaN(arrDiapason[1])) {
         let minNumber = arrDiapason[0] - 1;
         let maxNumber = arrDiapason[1];
         let length = (maxNumber - minNumber) / 10 - 1;
 
-        min = minNumber.toString();
+        let number = minNumber.toString();
 
-        let arr = min.split('');
+        let arr = number.split('');
+
+        let leftNumber = arr[0];
+        let centralNumber = arr[1];
+        let rightNumber = arr[2];
 
         for (let i = 0; i < length; i++) {
-            arr[2] = arr[0];
-            arr[1]++;
-
-            if (arr[1] === 10) {
-                arr[0]++;
-                arr[1] = 0;
-                arr[2] = arr[0];
+            rightNumber = leftNumber;
+            centralNumber++;
+            if (centralNumber === 10) {
+                leftNumber++;
+                centralNumber = 0;
+                rightNumber = leftNumber;
             }
-            num = arr.toString();
-            num = parseFloat(num.replace(/,/g, ''));
-            console.log(num);
+            console.log(leftNumber + '' + centralNumber + '' +rightNumber);
         }
     } else {
         console.log('Please, enter a valid diapason. For example: 500, 1000');

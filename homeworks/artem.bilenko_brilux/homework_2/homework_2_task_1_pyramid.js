@@ -5,7 +5,7 @@ const checkHeight = readline.createInterface({
     output: process.stdout
 });
 
-checkHeight.question('Enter height of pyramid: ', (height) => {
+checkHeight.question('Enter height of pyramid: ', height => {
     checkHeight.close();
     if (!isNaN(height)) {
         let emptiness = ' ';
