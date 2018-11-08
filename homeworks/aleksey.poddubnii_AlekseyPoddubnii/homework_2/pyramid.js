@@ -22,7 +22,7 @@ function pyramidRun(inputValue) {
     } else if (inputValue > 70) {
         // Take a max value 70 points, because greater value render not beautiful pyramid at terminal.
         console.log("Sorry, your number is greater than 70, please numbers from 1 to 70.");
-    } else if (inputValue.match(/^\d+$/)) {
+    } else if (inputValue >= 1) {
         for (s = inputValue; s >= 1; s--) {
             //Start from two '#', and + 2 for get first value '####'
             i = i + 2;

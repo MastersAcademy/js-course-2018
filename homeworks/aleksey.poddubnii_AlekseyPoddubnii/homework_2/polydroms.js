@@ -16,7 +16,9 @@ rl.question('Please enter the min value of polidroms: ', (answer1) => {
             console.log('Min value must begin from 500')
         } else if (answer2 > 1000) {
             console.log("Max value can't be greater than 1000")
-        } else if (answer1.match(/^\d+$/) && answer2.match(/^\d+$/)) {
+        } else if (answer2 < 500) {
+            console.log("Max value can't be lower than 500");
+        } else if (answer1 >= 500 && answer2 <= 1000) {
             // If condition above passed, run this loop. Check is number polidrom, by revers number. If true, add to array 'var = polindroms'
             var polindroms = [];
             for (var i = (+answer1); i <= (+answer2); i++) {
