@@ -7,7 +7,7 @@ for (x = s; x<=e ; x++){
 	for (i = s; i<=e; i++){
 
 if ((x.toString().split('').reverse().join('')) == i){
-	console.log("Палиндромы: "+x, "-",i)
+	console.log('Палиндромы: '+x, '-',i)
 	}
 	}
 	
