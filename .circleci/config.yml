@@ -8,5 +8,5 @@ jobs:
     steps:
       - checkout
       - run: npm install --production
-      - run: npm test
       - run: npm run test-js
+      - run: npm run test-css
