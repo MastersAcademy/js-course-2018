@@ -19,8 +19,8 @@ describe('Palindrome', () => {
     });
     describe('RangePalindromes', () => {
         let array;
-        it('( 0 ) should return []', () => {
-            array = [];
+        it('( 0 ) should return [ 0 ]', () => {
+            array = [ 0 ];
             assert.deepEqual(RangePalindromes(0, 0), array);
         });
         it('( 1 -> 10 ) should return equal array', () => {
