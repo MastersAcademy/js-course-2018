@@ -5,7 +5,7 @@ var rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question("Please write a number from 1 to 70 and press 'Enter': ", function(inputValue) {
+rl.question('Please write a number from 1 to 70 and press \'Enter\': ', function(inputValue) {
     pyramidRun(inputValue);
     rl.close();
 });
@@ -14,14 +14,14 @@ rl.question("Please write a number from 1 to 70 and press 'Enter': ", function(i
 function pyramidRun(inputValue) {
     // Declarate all variables
     var i = 2,
-        space = " ",
-        str = "#",
-        s, i;
+        space = ' ',
+        str = '#',
+        s;
     if (inputValue <= 0) {
-        console.log('Your number is lower or equal zero, lets begin from 1')
+        console.log('Your number is lower or equal zero, lets begin from 1');
     } else if (inputValue > 70) {
         // Take a max value 70 points, because greater value render not beautiful pyramid at terminal.
-        console.log("Sorry, your number is greater than 70, please numbers from 1 to 70.");
+        console.log('Sorry, your number is greater than 70, please numbers from 1 to 70.');
     } else if (inputValue >= 1) {
         for (s = inputValue; s >= 1; s--) {
             //Start from two '#', and + 2 for get first value '####'
@@ -29,6 +29,6 @@ function pyramidRun(inputValue) {
             console.log(space.repeat(s) + str.repeat(i));
         }
     } else {
-        console.log("Sorry, it's not a number, please try again.");
+        console.log('Sorry, it\'s not a number, please try again.');
     }
 }
