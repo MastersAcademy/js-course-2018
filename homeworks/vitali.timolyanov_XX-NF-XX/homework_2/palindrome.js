@@ -83,7 +83,7 @@ function logPalindromicNumbers (start, end) {
 
     function isPalyndromic(number) {
         word = number.toString();
-        middleIndex = Math.ceil(word.length / 2) 
+        middleIndex = Math.ceil(word.length / 2);
 
         for (let i = 0; i < middleIndex; i++) {
             mirroredIndex = word.length - 1 - i;
