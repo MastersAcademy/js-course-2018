@@ -14,11 +14,13 @@
   "homepage": "https://github.com/MastersAcademy/js-course-2018",
   "main": "index.js",
   "scripts": {
-    "test": "lint-staged"
+    "test": "lint-staged",
+    "test-js": "eslint --config .eslintrc.js ."
   },
   "lint-staged": {
     "*.js": [
-      "eslint --config .eslintrc.js",
+      "echo 'Hello'",
+      "eslint",
       "git add"
     ],
     "*.css": [
