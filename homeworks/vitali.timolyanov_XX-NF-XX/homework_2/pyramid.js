@@ -5,7 +5,7 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-console.log('Welcome to pyramid builder!');
+console.log('Welcome to Purabu (pyramid builder)!');
 console.log('Please enter pyramid height.');
 
 rl.setPrompt('Number 3...50 > ');
