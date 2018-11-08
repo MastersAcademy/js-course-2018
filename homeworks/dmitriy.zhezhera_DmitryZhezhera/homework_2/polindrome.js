@@ -7,9 +7,9 @@ const rl = readline.createInterface({
 
 const polindrome = (min, max) => {
     for (let i = Math.min(min, max), total = Math.max(min, max); i <= total; i++) {
-        let curI = i.toString();
-        let curReverseI = curI.split('').reverse().join('');
-        if (curI === curReverseI) console.log(i);
+        let currentI = i.toString();
+        let currentMirrorI = currentI.split('').reverse().join('');
+        if (currentI === currentMirrorI) console.log(i);
     }
 };
 
