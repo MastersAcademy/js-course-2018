@@ -2,7 +2,11 @@ module.exports = {
     extends: 'eslint:recommended',
     env: {
         browser: true,
-        es6: true
+        es6: true,
+        node: true,
+        mocha: true,
+        jasmine: true,
+        jest: true
     },
     rules: {
         // enable additional rules
@@ -16,7 +20,6 @@ module.exports = {
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
-        'no-undef': 'off',
         'no-unused-vars': ['error', { vars: 'local' }],
 
         // override default options for rules from base configurations
@@ -29,7 +32,6 @@ module.exports = {
         'guard-for-in': 'error',
         'no-loop-func': 'error',
         'no-self-compare': 'error',
-        // 'no-use-before-define': 'error',
         'no-unneeded-ternary': 'error'
     }
 };
