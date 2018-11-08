@@ -5,26 +5,18 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
+console.log('Welcome to pyramid builder!');
 console.log('Please enter pyramid height.');
 
-rl.setPrompt('Number > ');
+rl.setPrompt('Number 3...50 > ');
 rl.prompt();
 
 rl.on('line', (line) => {
     const height = parseInt(line.trim(), 10);
 
-    if (isNaN(height)) {
-        console.log('It\'s not a number. Try again.');
-
-    } else if (height < 3) {
-        console.log('Your number is too small. Try again.');
-
-    } else if (height > 50) {
-        console.log('Your number is too big. Try again.');
-
-    } else {
-        drawPyramid(defaultPyramidTopWidth, height);
-        console.log('Please enter pyramid height.');
+    if (isHeightValid(height)) {
+        drawPyramid(height);
+        console.log('Please enter new pyramid height.');
     }
 
     rl.prompt();
@@ -34,6 +26,22 @@ rl.on('line', (line) => {
     process.exit(0);
 });
 
+function isHeightValid (height) {
+    if (isNaN(height)) {
+        console.log('It\'s not a number. Try again.');
+        return false;
+
+    } else if (height < 3) {
+        console.log('Your number is too small. Try again.');
+        return false;
+
+    } else if (height > 50) {
+        console.log('Your number is too big. Try again.');
+        return false;
+    }
+
+    return true;
+}
 
 function drawPyramid (height) {
     const topWidth = 4;
@@ -43,8 +51,8 @@ function drawPyramid (height) {
     let pyramid = '\n';
 
     for (let i = 0; i < height; i++) {
-        let spaces = height - i;
-        let bricks = topWidth + i * 2;
+        const spaces = height - i;
+        const bricks = topWidth + i * 2;
 
         pyramid += space.repeat(spaces) + brick.repeat(bricks) + '\n';
     }
