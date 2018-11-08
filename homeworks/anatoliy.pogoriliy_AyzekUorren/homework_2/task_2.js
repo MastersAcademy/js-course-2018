@@ -11,8 +11,10 @@ rl.question('Please enter start number:', (start) => {
         end = Number.parseInt(end, 10) || null;
         if(start === null || end === null) {
             console.log('Only numbers allow');
-        } else {
+        } else if (start <= 500 && end <= 1000 && start <= end) {
             console.log(palindrome(start, end));
+        } else {
+            console.log('start max: 500, end max: 1000 and start <= end');
         }
         rl.close();
     });
