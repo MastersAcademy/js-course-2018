@@ -1,6 +1,6 @@
 let height = 15; //height pyramid
-let space = " ";
-let hesh = "#";
+let space =' ';
+let hesh ='#';
 let amountSpace = height;
 let amountHesh = 2;
 
