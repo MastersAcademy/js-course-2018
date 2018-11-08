@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 rl.question('final nomber (0; 10000] ', (answer) => {
      if(answer<=10000){
-        for (let i = answer2; i < answer; i++) {
+        for (let i = 0; i < answer; i++) {
             let nomber = i;
             let newN = nomber.toString();
             if (newN[0]===newN[1] && newN[2]===undefined && newN[3]===undefined) {
