@@ -1,5 +1,5 @@
-let readline = require('readline');
-let readconsole = readline.createInterface(process.stdin, process.stdout);
+const readline = require('readline');
+const readconsole = readline.createInterface(process.stdin, process.stdout);
 readconsole.question('Enter the number #1(>=500):',function(answer){
   const num1 = +answer;
   readconsole.question('Enter the number #2(<number #1):',function(answer){
