@@ -27,7 +27,7 @@ start();
 function start() {
     rangeStart = null;
 
-    console.log('\nPlease enter range start');
+    console.log('\nPlease enter range start.');
     rl.prompt();    
 }
 
