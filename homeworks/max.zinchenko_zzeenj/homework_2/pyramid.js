@@ -1,8 +1,8 @@
-var readline = require('readline');
-var n = readline.createInterface(process.stdin, process.stdout);
-n.question("rows of your pyramid: ", function pyramid(n) { 
+let readline = require('readline');
+let n = readline.createInterface(process.stdin, process.stdout);
+n.question("Please enter a rows of your pyramid: ", function pyramid(n) { 
   if(isNaN(n)){
-    console.log(n + " is a not number");
+    console.log(n + " is not a number");
     }else{
     for(let i=1; i<= n; i++){
       let str = ' '.repeat(n-i);
