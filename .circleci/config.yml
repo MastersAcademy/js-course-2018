@@ -4,8 +4,8 @@ jobs:
     working_directory: ~/tmp
     docker:
       - image: circleci/node:10
-    parallelism: 4
     steps:
       - checkout
       - run: npm install
+      - run: npm test
       - run: npm test
