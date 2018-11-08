@@ -7,7 +7,7 @@ function check(str){
 
 function RangePalindromes(start, end){
     let result = [];
-    for(let currentValue = start; currentValue < end; currentValue++){
+    for(let currentValue = start; currentValue <= end; currentValue++){
         if(check(currentValue.toString())){
             result.push(currentValue);
         }
