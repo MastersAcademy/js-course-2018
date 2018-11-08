@@ -9,4 +9,4 @@ jobs:
       - checkout
       - run: npm install --production
       - run: npm test
-      - run: npm test-js
+      - run: npm run test-js
