@@ -1,0 +1,22 @@
+{
+  "name": "homework_1",
+  "version": "1.0.0",
+  "description": "**node -v**\r *v10.13.0*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CAHE4EK007/js-course-2018.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "alexandr.malahov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CAHE4EK007/js-course-2018/issues"
+  },
+  "homepage": "https://github.com/CAHE4EK007/js-course-2018#readme"
+}

@@ -5,14 +5,12 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-let drawPyramid=(height)=>{
-    for(let i=0,total=height+4,q=0;i<total;i++){
-       if(i>=4){
-           console.log(" ".repeat(total-i-1)+"#".repeat(i+q)
-           //,q+1
-           );     
-           q+=1;
-       }
+const drawPyramid = (height) => {
+    for (let i = 0, total = height + 4, q = 0; i < total; i++) {
+        if (i >= 4) {
+            console.log(" ".repeat(total - i - 1) + "#".repeat(i + q));
+            q += 1;
+        }
     }
 };
 
