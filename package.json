@@ -15,12 +15,12 @@
   "main": "index.js",
   "scripts": {
     "test": "lint-staged",
-    "test-js": "eslint --config .eslintrc.js ."
+    "test-js": "eslint --config .eslintrc.js .",
+    "test-css": "stylelint --config .stylelintrc ./homeworks/**/*.css"
   },
   "lint-staged": {
     "*.js": [
-      "echo 'Hello'",
-      "eslint",
+      "eslint --config .eslintrc.js",
       "git add"
     ],
     "*.css": [
