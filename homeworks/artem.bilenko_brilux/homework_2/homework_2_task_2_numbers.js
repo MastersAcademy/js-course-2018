@@ -33,7 +33,7 @@ checkDiapason.question('Enter diapason(from 500 to 1000). For example(600, 700):
                 centralNumber = 0;
                 rightNumber = leftNumber;
             }
-            console.log(leftNumber + '' + centralNumber + '' +rightNumber);
+            console.log(leftNumber + '' + centralNumber + '' + rightNumber);
         }
     } else {
         console.log('Please, enter a valid diapason. For example: 500, 1000');
