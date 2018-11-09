@@ -2,11 +2,14 @@ const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 // Get max and min value from terminal
 rl.question('Please enter the min value of polidroms: ', (answer1) => {
     rl.question('Please enter the max value of polidroms : ', (answer2) => {
+        // Declarate variables
+        let i;
+        const polindroms = [];
         // Condition checks
         if (answer1 <= 0 || answer2 <= 0) {
             console.log('Min or Max value lower or equal 0, please give me number\'s from 500 to 1000');
@@ -19,15 +22,16 @@ rl.question('Please enter the min value of polidroms: ', (answer1) => {
         } else if (answer2 < 500) {
             console.log('Max value can\'t be lower than 500');
         } else if (answer1 >= 500 && answer2 <= 1000) {
-            // If condition above passed, run this loop. Check is number polidrom, by revers number. If true, add to array 'var = polindroms'
-            var polindroms = [];
-            for (var i = (+answer1); i <= (+answer2); i++) {
+            // If condition above passed, run this loop. Check is number polindrom.
+            for (i = (+answer1); i <= (+answer2); i++) {
+                // Method from MDN docs
                 if (i.toString().split('').reverse().join('') === i.toString()) {
                     polindroms.push(i);
                 }
+                // If polydroms true add to const polindrom above
             }
             // Render all of polidroms beetween our min and max value
-            console.log('Hey, your number\'s are: ' + polindroms);
+            console.log(polindroms);
         } else {
             console.log('Min or Max value can nott be a text, only number from 500 to 1000');
         }
