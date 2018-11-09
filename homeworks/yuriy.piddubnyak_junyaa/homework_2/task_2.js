@@ -9,12 +9,11 @@ for (x = s; x<=e; x++){
 
 if ((x.toString().split('').reverse().join('')) == i){
 	
-	
-	console.log('Перевертыш: '+x, '-',i)
-	console.log('Палиндром:',x%i == 0,i);
+	if(x%i == 0){
+		console.log('Палиндром:',i);
 	}
-	
-			
-	}
-	
+	console.log('Перевертыш: '+x, '-',i);
 }
+	
+	}
+		}
