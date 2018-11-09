@@ -9,6 +9,6 @@ for (x = s; x<=e ; x++){
 if ((x.toString().split('').reverse().join('')) == i){
 	console.log('Палиндромы: '+x, '-',i)
 	}
-	}
+		}
 	
 }
