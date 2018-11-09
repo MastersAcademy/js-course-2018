@@ -2,7 +2,7 @@ const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 
 const drawPyramid = (height) => {
@@ -15,8 +15,8 @@ const drawPyramid = (height) => {
 };
 
 rl.question('PLEASE ENTER HEIGHT ', (answer) => {
-    let height = parseInt(answer);
-    if (isNaN(height)) console.log('ERROR ', answer, ' IS NOT A NUMBER !!!');
+    const height = parseInt(answer, 10);
+    if (Number.isNaN(height)) console.log('ERROR ', answer, ' IS NOT A NUMBER !!!');
     else drawPyramid(height);
     rl.close();
 });
