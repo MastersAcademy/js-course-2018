@@ -10,7 +10,7 @@ const rl = readline.createInterface({
 });
 rl.question('Введите количество строк?\n', (x) => {
     z = x;
-    if (x = x * 1) {
+    if (x == x * 1) {
         for (s = 0; s < x; s++){
             i += '##';
             z -= 1;
