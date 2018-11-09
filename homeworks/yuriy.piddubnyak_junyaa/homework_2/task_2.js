@@ -1,9 +1,9 @@
-var s = 500;
-var e = 1000;
-var x;
-var i;
+let s = 500;
+let e = 1000;
+let x;
+let i;
 
-console.log('Палиндромы от',s,'до',e);
+console.log('Палиндромы от', s, 'до', e);
 for (x = s; x<=e; x++){
     for (i = s; i<=e; i++){
         if ((x.toString().split('').reverse().join('')) == i){

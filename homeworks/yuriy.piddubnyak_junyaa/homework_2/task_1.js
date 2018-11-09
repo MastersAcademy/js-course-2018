@@ -1,7 +1,7 @@
-var s;
-var i='##';
-var p=' ';
-var z;
+let s;
+let i='##';
+let p=' ';
+let z;
 
 const readline = require('readline');
 const rl = readline.createInterface({
