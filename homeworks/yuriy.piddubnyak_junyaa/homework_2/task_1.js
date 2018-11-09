@@ -14,7 +14,7 @@ rl.question('Введите количество строк?\n', (x) => {
         for (s = 0; s < x; s++) {
             i += '##';
             z -= 1;
-            console.log(p.repeat(z)+i); 
+            console.log(p.repeat(z) + i);
         }
         rl.close();
     }
