@@ -1,34 +1,35 @@
-var readline = require('readline');
+const readline = require('readline');
 
-var rl = readline.createInterface({
+const rl = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 
-rl.question('Please write a number from 1 to 70 and press \'Enter\': ', function(inputValue) {
-    pyramidRun(inputValue);
+rl.question('How big pyramid you want?: ', (answer) => {
+    // Convert string to number, and +1 for correct score of pyramid
+    const inputValue = +answer + 1;
+    // Loop to add space and sharp into variable pyramid, and render if conditions true
+    function pyramidRun(int) {
+        for (let quantity = 1; quantity < int; quantity++) {
+            let pyramid = '';
+            for (let space = 1; space < int - quantity; space++) {
+                pyramid += ' ';
+            }
+            for (let indentTop = 0; indentTop <= quantity; indentTop++) {
+                pyramid += '##';
+            }
+            console.log(pyramid);
+        }
+    }
+    // Condition checks
+    if (inputValue <= 0) {
+        console.log('Your number have negative value');
+    } else if (inputValue - 1 === 0) {
+        console.log('Our pyramid can\'t begin from 0');
+    } else if (inputValue > 70) {
+        console.log('So big pyramid, don\'t do this');
+    } else {
+        pyramidRun(inputValue);
+    }
     rl.close();
 });
-
-// Get and paste inputValue from readline
-function pyramidRun(inputValue) {
-    // Declarate all variables
-    var i = 2,
-        space = ' ',
-        str = '#',
-        s;
-    if (inputValue <= 0) {
-        console.log('Your number is lower or equal zero, lets begin from 1');
-    } else if (inputValue > 70) {
-        // Take a max value 70 points, because greater value render not beautiful pyramid at terminal.
-        console.log('Sorry, your number is greater than 70, please numbers from 1 to 70.');
-    } else if (inputValue >= 1) {
-        for (s = inputValue; s >= 1; s--) {
-            //Start from two '#', and + 2 for get first value '####'
-            i = i + 2;
-            console.log(space.repeat(s) + str.repeat(i));
-        }
-    } else {
-        console.log('Sorry, it\'s not a number, please try again.');
-    }
-}
