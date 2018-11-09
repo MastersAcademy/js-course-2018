@@ -18,15 +18,19 @@ describe('Palindrome', () => {
     });
     describe('RangePalindromes', () => {
         let array;
-        let options = { start: 0, end: 0 };
+        let start;
+        let end;
         it('( 0 ) should return [ 0 ]', () => {
             array = [0];
-            assert.deepEqual(rangePalindromes(options), array);
+            start = 0;
+            end = 0;
+            assert.deepEqual(rangePalindromes(start, end), array);
         });
         it('( 1 -> 10 ) should return equal array', () => {
             array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-            options = { start: 1, end: 10 };
-            assert.deepEqual(rangePalindromes(options), array);
+            start = 1;
+            end = 10;
+            assert.deepEqual(rangePalindromes(start, end), array);
         });
         it('( 500 -> 1000 ) should return equal array', () => {
             array = [
@@ -36,8 +40,9 @@ describe('Palindrome', () => {
                 777, 787, 797, 808, 818, 828, 838, 848, 858,
                 868, 878, 888, 898, 909, 919, 929, 939, 949,
                 959, 969, 979, 989, 999];
-            options = { start: 500, end: 1000 };
-            assert.deepEqual(rangePalindromes(options), array);
+            start = 500;
+            end = 1000;
+            assert.deepEqual(rangePalindromes(start, end), array);
         });
     });
 });

@@ -1,21 +1,29 @@
 const readline = require('readline');
 const { rangePalindromes } = require('./palindrome');
 
+function checkValidVulue(start, end) {
+    if (!start || !end) {
+        return false;
+    }
+    if (start > 500 || end > 1000 || start > end) {
+        return false;
+    }
+    return true;
+}
+
 const rl = readline.createInterface(process.stdin, process.stdout);
 process.stdin.setEncoding('utf8');
+console.log('Palindome\nStart maximum: 500. end maximum: 1000');
 rl.question('Please enter start number:', (start) => {
     rl.question('Please enter end number:', (end) => {
-        const options = {
-            start: Number.parseInt(start, 10) || null,
-            end: Number.parseInt(end, 10) || null,
-        };
-        if (options.start === null || options.end === null) {
-            console.log('Only numbers allow');
-        } else if (options.start <= 500 && options.end <= 1000 && options.start <= options.end) {
-            console.log(rangePalindromes(options));
-        } else {
-            console.log('start max: 500, end max: 1000 and start <= end');
+        const strfStart = +start;
+        const strfEnd = +end;
+        if (!checkValidVulue(strfStart, strfEnd)) {
+            console.log(`Wrong params: ${strfStart},${strfEnd}`);
+            rl.close();
+            return;
         }
+        console.log(rangePalindromes(strfStart, strfEnd));
         rl.close();
     });
 });

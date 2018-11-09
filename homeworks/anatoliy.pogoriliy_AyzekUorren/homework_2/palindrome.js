@@ -3,9 +3,9 @@ function check(str) {
     return str === reverseStr;
 }
 
-function rangePalindromes(options) {
+function rangePalindromes(start, end) {
     const result = [];
-    for (let currentValue = options.start; currentValue <= options.end; currentValue++) {
+    for (let currentValue = start; currentValue <= end; currentValue++) {
         if (check(currentValue.toString())) {
             result.push(currentValue);
         }

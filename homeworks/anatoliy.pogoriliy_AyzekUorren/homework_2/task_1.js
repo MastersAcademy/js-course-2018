@@ -3,13 +3,15 @@ const pyramid = require('./pyramid');
 
 const rl = readline.createInterface(process.stdin, process.stdout);
 process.stdin.setEncoding('utf8');
+console.log('Pyramid\nOnly numbers allow');
 rl.question('Please enter size:', (size) => {
-    const decodedSize = Number.parseInt(size, 10) || null;
-    console.log('Selected:', decodedSize);
-    if (decodedSize === null) {
-        console.log('Only numbers allow');
-    } else {
-        console.log(pyramid(decodedSize));
+    const strfSize = +size;
+    console.log('Selected:', strfSize);
+    if (!strfSize) {
+        console.log('Wrong params');
+        rl.close();
+        return;
     }
+    console.log(pyramid(strfSize));
     rl.close();
 });
