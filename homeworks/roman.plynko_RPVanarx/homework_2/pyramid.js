@@ -6,8 +6,8 @@ const rl = readline.createInterface({
 });
 
 (function create() {
-    rl.question('Enter a positive integer > 1 : ', answer => {
-        answer = +answer;
+    rl.question('Enter a positive integer > 1 : ', (value) => {
+        const answer = +value;
         if (typeof answer === 'number' && Number.isInteger(answer) && answer > 1) {
             const str = ['#', '#'];
             str.length = (answer * 2 + 2) / 2;
@@ -22,7 +22,7 @@ const rl = readline.createInterface({
             rl.close();
         } else {
             console.log('Opps you have entered an invalid value, try again');
-            create(); //recursion
+            create(); // recursion
         }
     });
-})();
+}());
