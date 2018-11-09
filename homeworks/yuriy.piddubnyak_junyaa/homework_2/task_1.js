@@ -1,12 +1,12 @@
 let s;
-let i='##';
-let p=' ';
+let i = '##';
+const p = ' ';
 let z;
 
 const readline = require('readline');
 const rl = readline.createInterface( {
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 } );
 rl.question('Введите количество строк?\n', (x) => {
     z = x;
