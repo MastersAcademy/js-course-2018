@@ -17,7 +17,7 @@ rl.question('Введите количество строк?\n', (x) => {
             console.log(p.repeat(z) + i);
             rl.close();
         }
-     }
+    }
     else {
         console.log('Ошибка, количество строк должно быть числом!');
         rl.close();
