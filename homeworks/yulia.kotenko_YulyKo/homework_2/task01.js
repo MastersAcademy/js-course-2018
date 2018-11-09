@@ -8,7 +8,6 @@ const rl = readline.createInterface({
 });
 
 rl.question('How much? ', (answer) => {
-    
     let spase = " ";
     let grille = "#";
     for (let i = 0; i < answer; i++) {
