@@ -1,5 +1,5 @@
 module.exports = {
-    extends: 'eslint:recommended',
+    extends: 'airbnb-base',
     env: {
         browser: true,
         es6: true,
@@ -21,6 +21,7 @@ module.exports = {
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
         'no-unused-vars': ['error', { vars: 'local' }],
+        'no-plusplus': 'off',
 
         // override default options for rules from base configurations
         'no-cond-assign': ['error', 'always'],
