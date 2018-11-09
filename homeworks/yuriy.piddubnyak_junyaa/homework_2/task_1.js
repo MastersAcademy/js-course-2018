@@ -4,10 +4,10 @@ const p = ' ';
 let z;
 
 const readline = require('readline');
-const rl = readline.createInterface( {
+const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
-} );
+});
 rl.question('Введите количество строк?\n', (x) => {
     z = x;
     if (x == x * 1) {
@@ -21,6 +21,4 @@ rl.question('Введите количество строк?\n', (x) => {
         console.log('Ошибка, количество строк должно быть числом!');
         rl.close();
     }
-}
-);
-
+});
