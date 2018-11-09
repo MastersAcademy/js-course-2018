@@ -2,8 +2,12 @@ const readline = require('readline');
 
 const mirrorQuestion = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
+
+function isMirror(str) {
+    return str === str.split('').reverse().join('');
+}
 
 mirrorQuestion.question('What is the range of numbers? Print two numbers (ex: 500, 1000).', (range) => {
     const rangeArray = range.split(',');
@@ -22,7 +26,3 @@ mirrorQuestion.question('What is the range of numbers? Print two numbers (ex: 50
 
     mirrorQuestion.close();
 });
-
-function isMirror(str) {
-    return str === str.split('').reverse().join('');
-}
