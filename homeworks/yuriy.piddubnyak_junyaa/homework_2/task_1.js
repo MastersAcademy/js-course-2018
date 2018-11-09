@@ -8,9 +8,9 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
-rl.question('Введите количество строк?\n', (x) => {
+rl.question('Enter the number of lines:\n', (x) => {
     z = x;
-    if (x == x * 1) {
+    if (x *= 1) {
         for (s = 0; s < x; s++) {
             i += '##';
             z -= 1;
@@ -19,7 +19,7 @@ rl.question('Введите количество строк?\n', (x) => {
         }
     }
     else {
-        console.log('Ошибка, количество строк должно быть числом!');
+        console.log('Error, value must be a number!');
         rl.close();
     }
 });
