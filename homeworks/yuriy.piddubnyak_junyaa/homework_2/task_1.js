@@ -1,5 +1,5 @@
 var s;
-var i='##;
+var i='##';
 var p=' ';
 var z;
 
