@@ -1,6 +1,6 @@
 var s;
-var i="##";
-var p=" ";
+var i='##;
+var p=' ';
 var z;
 
 const readline = require('readline');
@@ -9,7 +9,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 rl.question('Введите количество строк?\n', (x) => {
-z = x;
+	z = x;
 	if (x *= 1) {
 			for (s = 0; s < x; s++){
 		i += '##';
