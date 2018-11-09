@@ -11,7 +11,7 @@ rl.question('How much? ', (answer) => {
     let spase = " ";
     let grille = "#";
     for (let i = 0; i < answer; i++) {
-        console.log(spase.repeat(answer-i) + grille.repeat(2+i) + grille.repeat(2+i) + spase.repeat(answer-i));
+        console.log(spase.repeat(answer-i) + grille.repeat(2+i+2+i) + spase.repeat(answer-i));
     }
   rl.close();
 });
