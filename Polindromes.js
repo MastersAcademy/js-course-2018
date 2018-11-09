@@ -20,3 +20,4 @@ enterExpression.question('Enter the digit in available diapason from 500 to 1000
         console.log("Wrong input!")
     }
 });
+
