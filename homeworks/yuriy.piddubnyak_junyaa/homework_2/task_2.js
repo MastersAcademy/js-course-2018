@@ -12,7 +12,6 @@ if ((x.toString().split('').reverse().join('')) == i){
 	if(x%i == 0){
 		console.log('Палиндром:',i);
 	}
-	console.log('Перевертыш: '+x, '-',i);
 }
 	
 	}
