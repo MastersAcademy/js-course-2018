@@ -1,23 +1,26 @@
-function checkPalindrom(expression) {
-    return expression === expression.split('').reverse().join('');
-}
-
 const readline = require('readline');
-const enterExpression = readline.createInterface({
+
+const enterDigit = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-enterExpression.question('Enter the digit in available diapason from 500 to 1000: ', (expression) => {
-    enterExpression.close();
-    if (expression >= 500 && expression <= 1000){
-        if (checkPalindrom(expression)){
-            console.log("The expression is palindrome: " + expression);
+function checkPalindrom(str) {
+    return str === str.split('').reverse().join('');
+}
+
+enterDigit.question('Enter the digit in available diapason, from 500 to 1000: ', (digit) => {
+    enterDigit.close();
+    if (digit >= 500 && digit <= 1000){
+        if (checkPalindrom(digit)){
+            console.log("The digit " + digit + " is palindrome");
+        } else {
+            console.log("The digit " + digit + " is not palindrome");
         }
-        else
-            console.log("The expression is not palindrome")
+
     } else {
         console.log("Wrong input!")
     }
 });
+
 
