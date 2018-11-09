@@ -1,18 +1,18 @@
-'use strict';
-
 const readline = require('readline');
-const palindrome = require('./palindrome').RangePalindromes;
+const { rangePalindromes } = require('./palindrome');
 
-let rl = readline.createInterface(process.stdin, process.stdout);
+const rl = readline.createInterface(process.stdin, process.stdout);
 process.stdin.setEncoding('utf8');
 rl.question('Please enter start number:', (start) => {
     rl.question('Please enter end number:', (end) => {
-        start = Number.parseInt(start, 10) || null;  
-        end = Number.parseInt(end, 10) || null;
-        if(start === null || end === null) {
+        const options = {
+            start: Number.parseInt(start, 10) || null,
+            end: Number.parseInt(end, 10) || null,
+        };
+        if (options.start === null || options.end === null) {
             console.log('Only numbers allow');
-        } else if (start <= 500 && end <= 1000 && start <= end) {
-            console.log(palindrome(start, end));
+        } else if (options.start <= 500 && options.end <= 1000 && options.start <= options.end) {
+            console.log(rangePalindromes(options));
         } else {
             console.log('start max: 500, end max: 1000 and start <= end');
         }

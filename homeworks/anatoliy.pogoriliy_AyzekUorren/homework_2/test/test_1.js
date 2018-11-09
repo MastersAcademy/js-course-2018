@@ -1,23 +1,23 @@
-let Pyramid = require('../pyramid');
 const assert = require('assert');
+const pyramid = require('../pyramid');
 
 describe('Pyramid', () => {
     it('should return null', () => {
-        assert.deepEqual(Pyramid(), null);
+        assert.deepEqual(pyramid(), null);
     });
     it('(1) should return \n####', () => {
-        assert.deepEqual(Pyramid(1), '####');
+        assert.deepEqual(pyramid(1), '####');
     });
-    let firstString = '\xa0####\xa0\n######';
-    it('(2) should return\n' + firstString, () => {
-        assert.deepEqual(Pyramid(2), firstString);
+    const firstString = '\xa0####\xa0\n######';
+    it(`(2) should return\n${firstString}`, () => {
+        assert.deepEqual(pyramid(2), firstString);
     });
-    let secondString = '\xa0\xa0####\xa0\xa0\n\xa0######\xa0\n########';
-    it('(3) should return\n' + secondString, () => {
-        assert.deepEqual(Pyramid(3), secondString);
+    const secondString = '\xa0\xa0####\xa0\xa0\n\xa0######\xa0\n########';
+    it(`(3) should return\n${secondString}`, () => {
+        assert.deepEqual(pyramid(3), secondString);
     });
-    let thirdString = '\xa0\xa0\xa0####\xa0\xa0\xa0\n\xa0\xa0######\xa0\xa0\n\xa0########\xa0\n##########';
-    it('(4) should return\n' + thirdString, () => {
-        assert.deepEqual(Pyramid(4), thirdString);
+    const thirdString = '\xa0\xa0\xa0####\xa0\xa0\xa0\n\xa0\xa0######\xa0\xa0\n\xa0########\xa0\n##########';
+    it(`(4) should return\n${thirdString}`, () => {
+        assert.deepEqual(pyramid(4), thirdString);
     });
 });

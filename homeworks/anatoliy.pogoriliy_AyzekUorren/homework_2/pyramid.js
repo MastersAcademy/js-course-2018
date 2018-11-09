@@ -1,22 +1,19 @@
-'use strict';
-
-function buildSting(sourceString, size, additionalSymbol){
-    sourceString += additionalSymbol.toString().repeat(size);
-    return sourceString;
+function buildSting(sourceString, size, additionalSymbol) {
+    const result = `${sourceString}${additionalSymbol.toString().repeat(size)}`;
+    return result;
 }
 
-function Pyramid(size = 0) {
+function pyramid(size = 0) {
     let result = '';
-    let blocks = '####';
+    const blocks = '####';
     if (size === 0) {
         return null;
-    }
-    else if (size === 1) {
+    } if (size === 1) {
         return blocks;
     }
     let bloksSize = 0;
     for (let i = size; i !== 0; i--) {
-        if(i !== size) result += '\n';
+        if (i !== size) result += '\n';
         result += buildSting('', i - 1, '\xa0');
         result += buildSting('####', bloksSize, '#');
         result += buildSting('', i - 1, '\xa0');
@@ -26,5 +23,4 @@ function Pyramid(size = 0) {
 }
 
 
-module.exports = Pyramid;
-
+module.exports = pyramid;

@@ -1,18 +1,16 @@
-'use strict';
-
-function check(str){
+function check(str) {
     const reverseStr = [...str].reverse().join('');
     return str === reverseStr;
 }
 
-function RangePalindromes(start, end){
-    let result = [];
-    for(let currentValue = start; currentValue <= end; currentValue++){
-        if(check(currentValue.toString())){
+function rangePalindromes(options) {
+    const result = [];
+    for (let currentValue = options.start; currentValue <= options.end; currentValue++) {
+        if (check(currentValue.toString())) {
             result.push(currentValue);
         }
     }
     return result;
 }
 
-module.exports = { check, RangePalindromes };
+module.exports = { check, rangePalindromes };
