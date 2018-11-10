@@ -6,12 +6,11 @@ const rl = readline.createInterface({
 });
 
 rl.question('Enter height pyramid: ', (height) => {
+
     pyramid(`${height}`);
 
     rl.close();
 });
-
-
 
 function pyramid(height) {
     for (let i=0; i< height; i++) {
@@ -19,7 +18,7 @@ function pyramid(height) {
         let y = (2 * height + 2 - x)/2;
         let str = '';
         for ( let i=0; i< y; i++) {
-            str += '';
+            str += ' ';
         }
         for (let i=0; i<x ; i++){
             str += '#';
