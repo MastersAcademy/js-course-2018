@@ -15,19 +15,15 @@ rl.question('How big pyramid you want?: ', (answer) => {
             for (let space = 1; space < int - quantity; space++) {
                 pyramid += ' ';
             }
-            for (let indentTop = 0; indentTop <= quantity; indentTop++) {
+            for (let sharp = 0; sharp <= quantity; sharp++) {
                 pyramid += '##';
             }
             console.log(pyramid);
         }
     }
     // Condition checks
-    if (inputValue <= 0) {
-        console.log('Your number have negative value');
-    } else if (inputValue - 1 === 0) {
-        console.log('Our pyramid can\'t begin from 0');
-    } else if (inputValue > 70) {
-        console.log('So big pyramid, don\'t do this');
+    if (inputValue - 1 > 30) {
+        console.log('So big pyramid, don\'t do this (max 30)');
     } else {
         pyramidRun(inputValue);
     }
