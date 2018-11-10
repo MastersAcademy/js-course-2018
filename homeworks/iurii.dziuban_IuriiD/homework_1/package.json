@@ -1,0 +1,25 @@
+{
+  "name": "homework_1",
+  "version": "1.0.0",
+  "description": "MA courses 2018 / Backend course / Iurii Dziuban / Homework 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IuriiD/js-course-2018.git"
+  },
+  "keywords": [
+    "masters academy",
+    "js",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Iurii Dziuban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IuriiD/js-course-2018/issues"
+  },
+  "homepage": "https://github.com/IuriiD/js-course-2018#readme"
+}
