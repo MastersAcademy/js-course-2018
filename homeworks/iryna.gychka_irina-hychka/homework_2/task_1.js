@@ -4,9 +4,9 @@ function generatePyramid(maxRowsNumber) {
     const hashTags = '#';
     const maxLength = maxRowsNumber * 2 + 2;
     for (let linesNumber = 1; linesNumber <= maxRowsNumber; linesNumber++) {
-        const hashTagLength = linesNumber * 2 + 2;
-        const spacesLength = (maxLength - hashTagLength) / 2;
-        console.log(spaces.repeat(spacesLength) + hashTags.repeat(hashTagLength) + spaces.repeat(spacesLength));
+        const hLength = linesNumber * 2 + 2;
+        const sLength = (maxLength - hLength) / 2;
+        console.log(spaces.repeat(sLength) + hashTags.repeat(hLength) + spaces.repeat(sLength));
     }
 }
 
