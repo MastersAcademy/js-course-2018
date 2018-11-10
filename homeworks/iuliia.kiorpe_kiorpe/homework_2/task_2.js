@@ -1,4 +1,4 @@
-var standard_input = process.stdin;
+let standard_input = process.stdin;
 standard_input.setEncoding('utf-8');
 console.log("Please input min and max values devided by space");
 

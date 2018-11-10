@@ -1,9 +1,9 @@
-var standard_input = process.stdin;
+let standard_input = process.stdin;
 standard_input.setEncoding('utf-8');
 console.log("Please input text in command line.");
 
 standard_input.on('data', function (strings) {
-	strings = parseInt(strings);
+    strings = parseInt(strings);
 	
 	if (strings > 0) {
 		buildPiramid(strings);
@@ -23,7 +23,6 @@ function buildPiramid(x) {
 		console.log(space.repeat(h_lenght - (i + 2)) + sharp.repeat((i + 2) * 2));
 	}
 }
-
 
 
 	
