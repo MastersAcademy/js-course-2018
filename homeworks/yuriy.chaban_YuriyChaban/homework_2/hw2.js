@@ -2,31 +2,31 @@ const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 
-let rangesArray = [],
-    numberItem,
-    reversedNumber,
-    rightDigit,
-    minRange,
-    maxRange,
-    isMinIsNumber,
-    isMaxIsNumber,
-    isMaxAndMinNumber;
+const rangesArray = [];
+let numberItem;
+let reversedNumber;
+let rightDigit;
+let minRange;
+let maxRange;
+let isMinIsNumber;
+let isMaxIsNumber;
+let isMaxAndMinNumber;
 
 function detectPalindromes(min, max) {
     for (let i = min; i <= max; i++) {
         numberItem = i;
         reversedNumber = 0;
 
-        while ( numberItem) {
-            rightDigit = Math.floor( numberItem % 10 );
+        while (numberItem) {
+            rightDigit = Math.floor(numberItem % 10);
             reversedNumber = reversedNumber * 10 + rightDigit;
-            numberItem = Math.floor( numberItem / 10 );
+            numberItem = Math.floor(numberItem / 10);
         }
 
-        if ( i === reversedNumber ) {
+        if (i === reversedNumber) {
             rangesArray.push(i.toString());
         }
     }
@@ -36,10 +36,10 @@ function detectPalindromes(min, max) {
 }
 
 function declareConditions(min, max) {
-    minRange = parseInt(Math.ceil((min)));
-    maxRange = parseInt(Math.ceil((max)));
-    isMinIsNumber = typeof minRange === 'number' && !isNaN(minRange);
-    isMaxIsNumber = typeof maxRange === 'number' && !isNaN(maxRange);
+    minRange = parseInt(Math.ceil(min), 10);
+    maxRange = parseInt(Math.ceil(max), 10);
+    isMinIsNumber = typeof minRange === 'number' && !Number.isNaN(minRange);
+    isMaxIsNumber = typeof maxRange === 'number' && !Number.isNaN(maxRange);
     isMaxAndMinNumber = isMinIsNumber && isMaxIsNumber;
 }
 
@@ -47,9 +47,9 @@ function validateRanges(min, max) {
     declareConditions(min, max);
 
     if (isMaxAndMinNumber) {
-        if (minRange && maxRange > 10) {
+        if (minRange > 10 && maxRange > 10) {
             detectPalindromes(minRange, maxRange);
-        } else if (minRange && maxRange < 10 ) {
+        } else if (minRange < 10 || maxRange < 10) {
             console.log(`Your min range: " ${min} "  or max range: " ${max} " is less than 10.`);
         }
     } else {
