@@ -1,7 +1,7 @@
 const readline = require('readline');
 const { rangePalindromes } = require('./palindrome');
 
-function checkValidVulue(start, end) {
+function checkVulue(start, end) {
     if (!start || !end) {
         return false;
     }
@@ -18,7 +18,7 @@ rl.question('Please enter start number:', (start) => {
     rl.question('Please enter end number:', (end) => {
         const strfStart = +start;
         const strfEnd = +end;
-        if (!checkValidVulue(strfStart, strfEnd)) {
+        if (!checkVulue(strfStart, strfEnd)) {
             console.log(`Wrong params: ${strfStart},${strfEnd}`);
             rl.close();
             return;

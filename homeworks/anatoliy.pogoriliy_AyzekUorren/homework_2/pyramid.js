@@ -1,5 +1,6 @@
 function buildSting(sourceString, size, additionalSymbol) {
-    const result = `${sourceString}${additionalSymbol.toString().repeat(size)}`;
+    const repeatedSymbols = additionalSymbol.toString().repeat(size);
+    const result = sourceString + repeatedSymbols;
     return result;
 }
 
@@ -8,7 +9,8 @@ function pyramid(size = 0) {
     const blocks = '####';
     if (size === 0) {
         return null;
-    } if (size === 1) {
+    }
+    if (size === 1) {
         return blocks;
     }
     let bloksSize = 0;
