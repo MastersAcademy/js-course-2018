@@ -22,7 +22,7 @@ console.log('Insert the pyramids height: ');
 
 rl.on('line', (input) => {
     let pyramidsHeight = input;
-    if (+pyramidsHeight && Number.isNaN(pyramidsHeight) && pyramidsHeight > 0) {
+    if (+pyramidsHeight && !Number.isNaN(pyramidsHeight) && pyramidsHeight > 0) {
         pyramidsHeight = Math.floor(pyramidsHeight);
         generatePyramid(pyramidsHeight);
         rl.close();

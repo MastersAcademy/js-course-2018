@@ -32,7 +32,7 @@ console.log('Insert the start number: ');
 
 rl.on('line', (line) => {
     const input = +line;
-    if (Number.isNaN(input) && Number.isInteger(input) && input > 0) {
+    if (!Number.isNaN(input) && Number.isInteger(input) && input > 0) {
         if (startNumber === undefined) {
             startNumber = input;
             console.log('Insert the end number: ');
