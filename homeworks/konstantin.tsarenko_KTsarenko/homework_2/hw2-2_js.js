@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 rl.question('Ведите минимальное значение: ', (answer) => {
     const minNum = parseInt(answer, 10);
     rl.question('Ведите максимальное значение: ', (answer2) => {
-        if (!NumberisNaN(Math.round(answer2)) && !NumberisNaN(Math.round(answer))) {
+        if (!Number.isNaN(Math.round(answer2)) && !Number.isNaN(Math.round(answer))) {
             const maxNum = parseInt(answer2, 10);
             for (let i = minNum; i <= maxNum; i++) {
                 const num = i.toString();
