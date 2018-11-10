@@ -1,0 +1,21 @@
+{
+  "name": "myhomework",
+  "version": "1.0.0",
+  "description": "nodejs 10.13.0 npm 6.4.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/AlBerkut/MoCR"
+  },
+  "keywords": [
+    "homework",
+    "nodejs",
+    "npm",
+    "javascript"
+  ],
+  "author": "Alexey Berkut",
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "homework_1",
+  "version": "1.0.0",
+  "description": "node -v v11.0.0 , npm -v 6.4.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "js-course-2018"
+  },
+  "author": "Pavlo.Berezin",
+  "license": "ISC"
+}
