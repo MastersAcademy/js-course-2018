@@ -1,9 +1,8 @@
-
 const i = 15; // высота
-const space = ' '; // пробел
-const str = '#'; // символ 
-let y = 1; // ряд
+const space = ' '; 
+const str = '#'; 
+let y = 1; 
 while (y <= i) {
-    console.log (space.repeat (i - y) + str.repeat (y * 2 + 2)); // повтор пробела 14 раз + 4 символа
-    y+=1; // в каждый ряд + 2 символа
+    console.log (space.repeat (i - y) + str.repeat (y * 2 + 2)); 
+    y+=1; 
 }
