@@ -1,8 +1,8 @@
-let standard_input = process.stdin;
-standard_input.setEncoding('utf-8');
+let standardInput = process.stdin;
+standardInput.setEncoding('utf-8');
 console.log("Please input text in command line.");
 
-standard_input.on('data', function (strings) {
+standardInput.on('data', function (strings) {
     strings = parseInt(strings);
 	
 	if (strings > 0) {

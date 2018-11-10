@@ -1,8 +1,8 @@
-let standard_input = process.stdin;
-standard_input.setEncoding('utf-8');
+let standardInput = process.stdin;
+standardInput.setEncoding('utf-8');
 console.log("Please input min and max values devided by space");
 
-standard_input.on('data', function (data) {
+standardInput.on('data', function (data) {
 	let numbers	= data.split(" ");
 	let start = parseInt(numbers[0]);
 	let end = parseInt(numbers[1]);
