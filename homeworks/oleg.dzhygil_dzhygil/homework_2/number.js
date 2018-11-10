@@ -1,8 +1,7 @@
-// Number function
-for (let n = 500; n < 1000; n++) {
-    const str = n.toString();
+for (let i = 500; i < 1000; i++) {
+    const str = i.toString();
     const reverse = str.split('').reverse().join('');
     if (str === reverse) {
-        console.log(n);
+        console.log(i);
     }
 }

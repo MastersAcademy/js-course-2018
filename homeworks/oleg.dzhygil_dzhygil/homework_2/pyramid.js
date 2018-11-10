@@ -1,28 +1,27 @@
-// Input question
 const readline = require('readline');
 
-const op = readline.createInterface({
+const r1 = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
 
-// Function
-function func(num) {
+
+function func(palindrome) {
     let i = 2;
-    const str1 = ' ';
-    const str2 = '#';
-    let c = 15;
-    if (num > c) {
+    const bs = ' ';
+    const str = '#';
+    let j = 15;
+    if (palindrome > j) {
         console.log('Your number is bigger than 15');
         return;
     }
-    for (c = num; c >= 1; c--) {
+    for (j = palindrome; j >= 1; j--) {
         i += 2;
-        console.log(str1.repeat(c) + str2.repeat(i));
+        console.log(bs.repeat(j) + str.repeat(i));
     }
 }
 
-op.question('What is the height of pyramid? (under 15) :', (num) => {
-    func(num);
-    op.close();
+r1.question('What is the height of pyramid? (under 15) :', (palindrome) => {
+    func(palindrome);
+    r1.close();
 });
