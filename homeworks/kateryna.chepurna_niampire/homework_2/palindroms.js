@@ -1,33 +1,37 @@
 const readline = require('readline');
-const r1 = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
 
-r1.question('Enter minimal number : ', (minNumber) => {
-    r1.question('Enter maximal number : ', (maxNumber) => {
-        check(parseInt(minNumber), parseInt(maxNumber));
-        r1.close();
-    });
-});
+const r1 = readline.createInterface({ input: process.stdin, output: process.stdout });
 
-function check(minNumber, maxNumber) {
-    if ( !isNaN(minNumber) && !isNaN(maxNumber)){
-        if ((minNumber > 0 && maxNumber >= 0) || (minNumber >= 0 && maxNumber > 0)) {
-            if (minNumber > maxNumber){
-                let changeNumber = minNumber; 
-                minNumber= maxNumber;
-                maxNumber = changeNumber;
+function check(minNumb, maxNumb) {
+    // const minNumb;
+    // const maxNumb;
+    if (parseInt(minNumb, 10) === Number(minNumb) && parseInt(maxNumb, 10) === Number(maxNumb)) {
+        if ((minNumb > 0 && maxNumb >= 0) || (minNumb >= 0 && maxNumb > 0)) {
+            if (minNumb > maxNumb) {
+                const changeMinNumb = minNumb;
+                const changeMaxNumb = maxNumb;
+                for (let i = changeMaxNumb; i <= changeMinNumb; i++) {
+                    if (i.toString() === i.toString().split('').reverse().join('')) {
+                        console.log(i);
+                    }
+                }
             }
-            for ( let i = minNumber; i <= maxNumber; i++ ){
-                if ( i.toString() === i.toString().split("").reverse().join("")) {
-                console.log (i);
-                }  
+            for (let i = minNumb; i <= maxNumb; i++) {
+                if (i.toString() === i.toString().split('').reverse().join('')) {
+                    console.log(i);
+                }
             }
-        }else{
+        } else {
             console.log('It\' a negative number. Enter correct value.');
-        }  
-    }else{
+        }
+    } else {
         console.log('It\'s not a number. Enter correct value.');
     }
 }
+
+r1.question('Enter minimal number : ', (minNumb) => {
+    r1.question('Enter maximal number : ', (maxNumb) => {
+        check(parseInt(minNumb, 10), parseInt(maxNumb, 10));
+        r1.close();
+    });
+});
