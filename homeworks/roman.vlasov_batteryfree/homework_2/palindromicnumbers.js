@@ -9,6 +9,9 @@ const readline = require('readline');
 
 const readconsole = readline.createInterface(process.stdin, process.stdout);
 readconsole.question('Enter the number #1(>=500):', (answer) => {
+    function closeconsole() {
+        readconsole.close();
+    }
     const num1 = +answer;
     if (typeof (num1) === 'number' && num1 >= 500) {
         readconsole.question('Enter the number #2(<number #1):', (answer1) => {
@@ -18,10 +21,10 @@ readconsole.question('Enter the number #1(>=500):', (answer) => {
             } else {
                 console.log('***Invalid data entered***');
             }
-            readconsole.close();
+            closeconsole();
         });
     } else {
         console.log('***Invalid data entered***');
-        readconsole.close();
+        closeconsole();
     }
 });

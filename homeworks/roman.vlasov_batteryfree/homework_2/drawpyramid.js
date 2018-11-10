@@ -9,7 +9,7 @@ const readline = require('readline');
 
 const readconsole = readline.createInterface(process.stdin, process.stdout);
 readconsole.question('Enter the height of the pyramid in the range from 1 to 20:', (answer) => {
-    const a = parseInt(answer, 2);
+    const a = parseInt(answer, 10);
     if (a >= 1 && a <= 20) {
         drawpyrapid(a);
     } else {
