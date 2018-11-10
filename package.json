@@ -14,7 +14,9 @@
   "homepage": "https://github.com/MastersAcademy/js-course-2018",
   "main": "index.js",
   "scripts": {
-    "test": "lint-staged"
+    "test": "lint-staged",
+    "test-js": "eslint --config .eslintrc.js .",
+    "test-css": "stylelint --config .stylelintrc ./homeworks/**/*.css"
   },
   "lint-staged": {
     "*.js": [
@@ -32,9 +34,14 @@
     }
   },
   "dependencies": {
-    "eslint": "^5.9.0",
-    "husky": "^1.1.2",
+    "editorconfig": "^0.15.2",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "lint-staged": "^8.0.4",
     "stylelint": "^9.7.1"
+  },
+  "devDependencies": {
+    "husky": "^1.1.3"
   }
 }
