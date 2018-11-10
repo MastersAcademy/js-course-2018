@@ -3,8 +3,6 @@ const readline = require('readline');
 const r1 = readline.createInterface({ input: process.stdin, output: process.stdout });
 
 function check(minNumb, maxNumb) {
-    // const minNumb;
-    // const maxNumb;
     if (parseInt(minNumb, 10) === Number(minNumb) && parseInt(maxNumb, 10) === Number(maxNumb)) {
         if ((minNumb > 0 && maxNumb >= 0) || (minNumb >= 0 && maxNumb > 0)) {
             if (minNumb > maxNumb) {
