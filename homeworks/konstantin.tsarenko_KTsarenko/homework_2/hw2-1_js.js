@@ -6,16 +6,14 @@ const rl = readline.createInterface({
 });
 
 rl.question('Ведите высоту пирамиды: ', (answer) => {
-    if (!isNaN(Math.round(answer))) {
-        let height = parseInt(answer);
-        let space = " ";
-        let symbol = "#";
+    if (!Number.isNaN(Math.round(answer))) {
+        let height = parseInt(answer, 10) + 2;
+        const space = ' ';
+        const symbol = '#';
         let i = 2;
-        let repeatStr = height += i;
-
-        for (i; i < repeatStr; i++) {
-            let spaceRep = space.repeat(height - i);
-            let symbolRep = symbol.repeat(i);
+        for (i; i < height; i++) {
+            const spaceRep = space.repeat(height - i);
+            const symbolRep = symbol.repeat(i);
             let strResult = spaceRep + symbolRep + symbolRep + spaceRep;
             console.log(strResult);
         }
@@ -25,6 +23,3 @@ rl.question('Ведите высоту пирамиды: ', (answer) => {
         rl.close();
     }
 });
-
-
-
