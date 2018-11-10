@@ -5,6 +5,7 @@ let emptySpaceNumber = 14;
 
 for (let i = 0; i < 15; i++) {
     console.log(emptySpace.repeat(emptySpaceNumber) + symbol.repeat(startNumber));
-    startNumber = startNumber + 2;
-    emptySpaceNumber = emptySpaceNumber - 1;
+    startNumber += 2;
+    emptySpaceNumber -= 1;
+    // eslint-disable-next-line eol-last
 }
