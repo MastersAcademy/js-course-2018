@@ -18,7 +18,7 @@ rl.question('Enter the number of lines:\n', (x) => {
             rl.close();
         }
     }
-    if (Number.isNaN(x)) {
+    if (Number.isNaN(Number(x))) {
         console.log('Error, value must be a number');
     }
 });
