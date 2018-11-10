@@ -10,7 +10,7 @@ const rl = readline.createInterface({
 });
 rl.question('Enter the number of lines:\n', (x) => {
     z = x;
-    if (x *= 1) {
+    if (parseInt(x)) {
         for (s = 0; s < x; s++) {
             i += '##';
             z -= 1;
