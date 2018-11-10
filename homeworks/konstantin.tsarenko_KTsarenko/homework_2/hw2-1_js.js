@@ -6,8 +6,7 @@ const rl = readline.createInterface({
 });
 
 rl.question('Ведите высоту пирамиды: ', (answer) => {
-    let intRegex = /^[0-9]+$/;
-    if (intRegex.test(answer)) {
+    if (!isNaN(Math.round(answer))) {
         let height = parseInt(answer);
         let space = " ";
         let symbol = "#";
@@ -25,7 +24,6 @@ rl.question('Ведите высоту пирамиды: ', (answer) => {
         console.log('Ошибка ввода.');
         rl.close();
     }
-
 });
 
 
