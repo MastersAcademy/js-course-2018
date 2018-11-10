@@ -4,5 +4,4 @@ for (let test = 500; test < 1000; test++) {
     if (numberTest === numberTestCheck) {
         console.log(`${test} ${typeof test}`);
     }
-    // eslint-disable-next-line eol-last
 }

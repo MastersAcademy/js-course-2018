@@ -7,5 +7,4 @@ for (let i = 0; i < 15; i++) {
     console.log(emptySpace.repeat(emptySpaceNumber) + symbol.repeat(startNumber));
     startNumber += 2;
     emptySpaceNumber -= 1;
-    // eslint-disable-next-line eol-last
 }
