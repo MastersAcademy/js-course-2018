@@ -4,14 +4,10 @@ let palindromes = [];
 
 function isPalindrome(number) {
     const numberToString = String(number);
-    let index = 1;
     for (let i = 0; i < numberToString.length / 2; i++) {
         if (numberToString[i] !== numberToString[numberToString.length - i - 1]) {
-            index = 0;
+            return false;
         }
-    }
-    if (index !== 1) {
-        return false;
     }
     return true;
 }
