@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 
 rl.question('Enter the minimum value.\nOnly numbers are allowed for input, and they must be more than nine.\nEnter min: ', (min) => {
     rl.question('Enter the maximum value.\nOnly numbers are allowed for input, and they must be more than nine.\nEnter max:  ', (max) => {
-        if(Number(min) == min && Number(max) == max && min > 9 && max > 10 && min < max) {
+        if(Number(min) == min && Number(max) === max && min > 9 && max > 10 && min < max) {
             for (i=min; i<=max; i++){
                 const str = i.toString();
                 const Numb = i;
