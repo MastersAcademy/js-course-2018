@@ -1,5 +1,4 @@
-const space = ' ';
-const symbol = '#';
-for (let i = 1; i <= 15; i++) {
-    console.log(space.repeat(15 - i) + symbol.repeat(i * 2 + 2));
+const h = 15;
+for (let i = 1; i <= h; i++) {
+    console.log(' '.repeat(h - i) + '#'.repeat(i * 2 + 2));
 }
