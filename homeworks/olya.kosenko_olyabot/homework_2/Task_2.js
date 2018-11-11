@@ -9,11 +9,8 @@ function polindrom(min1, max1) {
 }
 
 function check(min1, max1) {
-    if ((!Number.isNaN(min1 && min1 > 0)
-    && (!Number.isNaN(max1) && max1 > 0))) {
-        return true;
-    }
-    return false;
+    return ((!Number.isNaN(min1) && min1 > 0)
+    && (!Number.isNaN(max1) && max1 > 0)) ? 1 : 0;
 }
 
 const readline = require('readline');

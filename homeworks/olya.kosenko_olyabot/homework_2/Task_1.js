@@ -8,10 +8,7 @@ function pyramid(n1) {
 }
 
 function check(n1) {
-    if (!Number.isNaN(n1) && n1 > 0) {
-        return true;
-    }
-    return false;
+    return (!Number.isNaN(n1) && n1 > 0) ? 1 : 0;
 }
 
 const readline = require('readline');
