@@ -1,13 +1,13 @@
 let height = 15; //height pyramid
 let space =' ';
-let hesh ='#';
+let hash ='#';
 let amountSpace = height;
-let amountHesh = 2;
+let amountHash = 2;
 
 for (let i = 0; i < height; i++){
-    amountHesh = amountHesh + 2;
+    amountHash = amountHash + 2;
     amountSpace--;
-    let printHesh = hesh.repeat(amountHesh);
+    let printHash = hash.repeat(amountHash);
     let printSpace = space.repeat(amountSpace);  
-    console.log(printSpace + printHesh);
+    console.log(printSpace + printHash);
 }
