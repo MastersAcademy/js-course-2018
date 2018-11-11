@@ -1,8 +1,12 @@
 module.exports = {
-    extends: 'eslint:recommended',
+    extends: 'airbnb-base',
     env: {
         browser: true,
-        es6: true
+        es6: true,
+        node: true,
+        mocha: true,
+        jasmine: true,
+        jest: true
     },
     rules: {
         // enable additional rules
@@ -16,8 +20,8 @@ module.exports = {
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
-        'no-undef': 'off',
         'no-unused-vars': ['error', { vars: 'local' }],
+        'no-plusplus': 'off',
 
         // override default options for rules from base configurations
         'no-cond-assign': ['error', 'always'],
@@ -29,7 +33,6 @@ module.exports = {
         'guard-for-in': 'error',
         'no-loop-func': 'error',
         'no-self-compare': 'error',
-        // 'no-use-before-define': 'error',
         'no-unneeded-ternary': 'error'
     }
 };
