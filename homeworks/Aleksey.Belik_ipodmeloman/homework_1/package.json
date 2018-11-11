@@ -1,0 +1,11 @@
+{
+  "name": "package.json",
+  "version": "1.1.1",
+  "description": "node version v10.13.0 npm version 6.4.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
