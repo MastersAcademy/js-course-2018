@@ -5,7 +5,6 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-rl.question('Введите число до 50: ', (value) => {
     function func(value) {
         let i = 2;
         const lt = ' ';
@@ -20,6 +19,7 @@ rl.question('Введите число до 50: ', (value) => {
             console.log(lt.repeat(j) + str.repeat(i));
         }
     }
-    func(value);
-    rl.close();
-});
+    rl.question('Введите число до 50: ', (value) => {
+        func(value);
+        rl.close();
+    });
