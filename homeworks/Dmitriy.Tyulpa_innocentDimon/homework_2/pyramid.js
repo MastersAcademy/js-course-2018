@@ -3,7 +3,7 @@ const readline = require('readline');
 
 const pyramidHeight = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 
 pyramidHeight.question('Введите высоту пирамиды? ', (height) => {
@@ -15,7 +15,7 @@ pyramidHeight.question('Введите высоту пирамиды? ', (height
         let top = 4;
         for (let i = 0; i < height; i++) {
             console.log(space.repeat(height - (i + 1)) + str.repeat(top));
-            top = top + 2;
+            top += 2;
         }
     }
     pyramidHeight.close();

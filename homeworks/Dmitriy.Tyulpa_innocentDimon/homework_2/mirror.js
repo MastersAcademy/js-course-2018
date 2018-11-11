@@ -1,8 +1,14 @@
+
 const readline = require('readline');
+
 const mirrorRange = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
+
+function isMirror(str) {
+    return str === str.split('').reverse().join('');
+}
 
 mirrorRange.question('Введите диапазон чисел через пробел: ', (range) => {
     const rangeArray = range.split(' ');
@@ -19,7 +25,3 @@ mirrorRange.question('Введите диапазон чисел через пр
     }
     mirrorRange.close();
 });
-
-function isMirror(str) {
-    return str === str.split('').reverse().join('');
-}
