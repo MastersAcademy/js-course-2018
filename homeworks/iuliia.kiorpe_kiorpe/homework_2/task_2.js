@@ -1,6 +1,6 @@
 function findMirrors(a, b) {
     for (let i = a; i <= b; i++) {
-        if (i === i.toString().split('').reverse().join('')) {
+        if (i.toString() === i.toString().split('').reverse().join('')) {
             console.log(i);
         }
     }
