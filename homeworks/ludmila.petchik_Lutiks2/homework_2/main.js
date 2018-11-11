@@ -6,7 +6,7 @@ const maxstring = 15;
 
 while (i < maxstring) {
     let space = '';
-    let star = '****';
+    let star = '***';
     for (j = 0; j < maxstring - i; j++) {
         space += ' ';
     }
@@ -20,8 +20,9 @@ while (i < maxstring) {
 
 const palindr = [];
 for (let k = 500; k <= 1000; k++) {
-    if (k.toString().split('').reverse().join('') === k.toString()) {
-        palindr.push(k);
+    const mirror = k.toString();
+    if (mirror.split('').reverse().join('') === mirror) {
+        palindr.push(mirror);
     }
 }
 console.log(palindr);
