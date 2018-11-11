@@ -10,6 +10,7 @@ rl.question('Enter first number: ', (firstNum) => {
         let num1 = +firstNum;
         let num2 = +lastNum;
         if (num1 && num2) {
+            // changing variables if first is greater than last
             if (num1 > num2) {
                 const change = num1;
                 num1 = num2;
