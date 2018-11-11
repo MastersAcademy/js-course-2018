@@ -5,7 +5,7 @@ const read = readline.createInterface({
     output: process.stdout,
 });
 
-read.question('Enter the height of the pyramid: ', (max) => {  
+read.question('Enter the height of the pyramid: ', (max) => {
     for (let i = 0; i < max; i++) {
         const space = ' ';
         const sign = '#';
