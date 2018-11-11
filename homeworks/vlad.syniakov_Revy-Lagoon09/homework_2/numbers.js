@@ -4,6 +4,6 @@ function input(a) {
     arr[arr.length - 1] = reverse;
     console.log(arr.join(''));
 }
-for (let i = 500; i <= 1000; i++) {
+for (let i = 50; i <= 100; i++) {
     input(i);
 }
