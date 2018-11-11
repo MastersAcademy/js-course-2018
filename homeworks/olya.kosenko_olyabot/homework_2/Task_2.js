@@ -8,15 +8,12 @@ function polindrom(min1, max1) {
     }
 }
 
-function check(min, max) {
-    const min1 = parseInt(min, 10);
-    const max1 = parseInt(max, 10);
+function check(min1, max1) {
     if ((!Number.isNaN(min1 && min1 > 0)
     && (!Number.isNaN(max1) && max1 > 0))) {
-        polindrom(min1, max1);
-    } else {
-        console.log('Oops! You don\'t input a number!');
+        return true;
     }
+    return false;
 }
 
 const readline = require('readline');
@@ -27,9 +24,13 @@ const r1 = readline.createInterface({
 });
 r1.question('Enter MIN number from 500 to 1000: ', (min) => {
     r1.question('Enter MAX number from 500 to 1000: ', (max) => {
+        const min1 = parseInt(min, 10);
+        const max1 = parseInt(max, 10);
         if (check(min, max)) {
+            polindrom(min1, max1);
             r1.close();
         } else {
+            console.log('Oops! You don\'t input a number!');
             r1.close();
         }
     });

@@ -1,5 +1,5 @@
-function PYRAMID(n1) {
-    console.log(`PYRAMID with ${n1} rows:`);
+function pyramid(n1) {
+    console.log(`Pyramid with ${n1} rows:`);
     const str1 = '#';
     const str2 = ' ';
     for (let i = 0; i < n1; i++) {
@@ -7,13 +7,11 @@ function PYRAMID(n1) {
     }
 }
 
-function check(n) {
-    const n1 = parseInt(n, 10);
+function check(n1) {
     if (!Number.isNaN(n1) && n1 > 0) {
-        PYRAMID(n1);
-    } else {
-        console.log('Oops! You don\'t input a quantity of rows!');
+        return true;
     }
+    return false;
 }
 
 const readline = require('readline');
@@ -23,11 +21,13 @@ const r1 = readline.createInterface({
     output: process.stdout,
 });
 
-r1.question('How many rows must have PYRAMID? ', (n) => {
+r1.question('How many rows must have Pyramid? ', (n) => {
     const n1 = parseInt(n, 10);
     if (check(n1)) {
+        pyramid(n1);
         r1.close();
     } else {
         r1.close();
+        console.log('Oops! You don\'t input a quantity of rows!');
     }
 });
