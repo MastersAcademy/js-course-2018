@@ -5,17 +5,29 @@ const rl = readline.createInterface({
 });
 rl.question('Enter the first number from 500 to 1000 ', (number_1) => {
 	rl.question('Enter the second number from 500 to 1000 ', (number_2) => {
+		let s = console.log('Invalid data enter a number from 500 to 1000');
 		let a = number_1-0;
 		let b = number_2-1;
-if(a >= 500  && b < 1000){		
-	for (let i = a; i <= b; i++){
-		let q = ((i/100)%10);
-		let w = (i%10);
-		if(Math.floor(q) === Math.round(w)){
-		console.log(i);	
+if (a>=b){
+	if (b+1 >= 500  && a-1 < 1000){
+		for (let i = b; i <= a; i++){
+			const z = i.toString().split('').reverse().join('');
+			const k = i.toString();
+			if(z===k){
+			console.log(i);	
+			}
 		}
-	}
-}else console.log('Invalid data enter a number from 500 to 1000');
+	}else s;
+} 
+else if(a >= 500  && b < 1000){		
+		for (let i = a; i <= b; i++){
+			const z = i.toString().split('').reverse().join('');
+			const k = i.toString();
+			if(z===k){
+			console.log(i);	
+			}
+		}
+} else s;
 rl.close();
 });
 });
