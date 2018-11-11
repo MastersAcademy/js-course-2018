@@ -1,30 +1,22 @@
-// build pyramid
-function buildPyramid(height) {
-    const pyramidBGround = ' ';
-    let pyramidBody = '^^';
+const readline = require('readline');
 
-    for (let i = height; i >= 1; i--) {
-        pyramidBody += '^^';
-        console.log(`${pyramidBGround.repeat(i)} ${pyramidBody}`);
-    }
-}
-
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
 // pyramid height finding
-function pyramidHeightFindout() {
-    /* eslint-disable global-require */
-    const readline = require('readline');
+rl.question('Enter your pyramid height: ', (height) => {
+    if (+height) {
+        // build pyramid
+        const pyramidBGround = ' ';
+        let pyramidBody = '^^';
 
-    const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout,
-    });
-
-    rl.question('Enter your pyramid height: ', (height) => {
-        if (+height) {
-            buildPyramid(height);
-        } else {
-            console.log('Mission failed! Pharaoh will kill you! Run');
+        for (let i = height; i >= 1; i--) {
+            pyramidBody += '^^';
+            console.log(`${pyramidBGround.repeat(i)} ${pyramidBody}`);
         }
-        rl.close();
-    });
-}pyramidHeightFindout();
+    } else {
+        console.log('Mission failed! Pharaoh will kill you! Run');
+    }
+    rl.close();
+});
