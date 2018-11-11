@@ -1,4 +1,4 @@
-const readline = require('readline-sync');
+const readline = require('readline');
 
 const r1 = readline.createInterface({
     input: process.stdin,
