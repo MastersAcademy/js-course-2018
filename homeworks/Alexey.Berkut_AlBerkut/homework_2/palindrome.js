@@ -3,7 +3,7 @@ function checkPl(str) {
 }
 
 for (let i = 500; i < 1000; i++) {
-    let x = String(i);
+    const x = String(i);
     if (checkPl(x) === true) {
         console.log(x);
     }
