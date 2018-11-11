@@ -5,15 +5,11 @@ const read = readline.createInterface({
     output: process.stdout,
 });
 
-read.question('Enter the height of the pyramid: ', (max) => {
-    let i = 0;
-    while (i < max) {
-        let space = '';
-        let sign = '';
-        for (let j = 0; j < max - i; j++) space += ' ';
-        for (let j = 0; j < 2 * i + 1; j++) sign += '#';
-        console.log(space + sign);
-        i++;
+read.question('Enter the height of the pyramid: ', (max) => {  
+    for (let i = 0; i < max; i++) {
+        const space = ' ';
+        const sign = '#';
+        console.log((space.repeat(max - i) + sign.repeat(i)) + (sign.repeat(i) + space.repeat(max - i)));   
     }
     read.close();
 });
