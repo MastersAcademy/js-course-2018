@@ -19,4 +19,3 @@ r1.question('Enter height of pyramid', (height) => {
     }
     r1.close();
 });
-
