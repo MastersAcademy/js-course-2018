@@ -1,11 +1,9 @@
-let num;
-
 function build(num) {
     const symbl = '#';
     const space = '_';
     let i = 2;
 
-    for (num; num > 0; num--) {
+    for (num > 0; num--;) {
         i += 2;
         console.log(space.repeat(num) + symbl.repeat(i));
     }
