@@ -6,22 +6,22 @@ const r1 = readline.createInterface({
 });
 
 
-function func(palindrome) {
+function pyramid(num) {
     let i = 2;
     const bs = ' ';
     const str = '#';
     let j = 15;
-    if (palindrome > j) {
+    if (num > j) {
         console.log('Your number is bigger than 15');
         return;
     }
-    for (j = palindrome; j >= 1; j--) {
+    for (j = num; j >= 1; j--) {
         i += 2;
         console.log(bs.repeat(j) + str.repeat(i));
     }
 }
 
-r1.question('What is the height of pyramid? (under 15) :', (palindrome) => {
-    func(palindrome);
+r1.question('What is the height of pyramid? (under 15) :', (num) => {
+    pyramid(num);
     r1.close();
 });
