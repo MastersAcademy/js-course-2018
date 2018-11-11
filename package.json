@@ -34,13 +34,13 @@
     }
   },
   "dependencies": {
-    "eslint": "^5.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "lint-staged": "^8.0.4",
     "stylelint": "^9.7.1"
   },
   "devDependencies": {
+    "eslint": "^5.9.0",
     "husky": "^1.1.3"
   }
 }
