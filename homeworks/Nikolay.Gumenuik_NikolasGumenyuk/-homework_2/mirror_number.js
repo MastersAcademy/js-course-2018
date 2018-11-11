@@ -1,6 +1,6 @@
 const readline = require('readline-sync');
-const min = readline.question("What is your min value?");
-const max = readline.question("What is your max value?");
+const min = readline.question("Your min value?");
+const max = readline.question("Your max value?");
     console.log(max, min);
     var num;
     var x, y, z;
