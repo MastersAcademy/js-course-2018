@@ -1,34 +1,36 @@
-﻿let readline = require('readline-sync');
-let height = process.argv[2];
+const readline = require('readline');
 
-if(typeof height === 'undefined')
-    height = readline.question('Type a number of rows: ');
+const rl = readline.createInterface(process.stdin, process.stdout);
 
-if(!isNumeric(height)){
-    console.log('Argument isn\'t a number.');
-    process.exit(-1);
-} else if(!inRange(height)){
-    console.log('Argument must be more than 1.');
-    process.exit(-1);
+function isNumeric(height) {
+    return /\d+/i.test(height);
 }
 
-let lineWidth = 2 + height * 2;
-let symbolsCount = 2;
-let spacesCount = (lineWidth - symbolsCount) / 2;
-
-for(let i = 0; i < height; i++){
-    symbolsCount += 2;
-    spacesCount = (lineWidth - symbolsCount) / 2;
-    let spaces = ' '.repeat(spacesCount);
-    let symbols = '#'.repeat(symbolsCount ); 
-    let line = spaces + symbols + spaces;
-    console.log(line);
+function inRange(height) {
+    return height > 1;
 }
 
-function isNumeric(n){
-    return !isNaN(parseFloat(n)) && isFinite(n);
+function writePhyramid(height) {
+    const lineWidth = 2 + height * 2;
+    let symbolsCount = 2;
+    let spacesCount = (lineWidth - symbolsCount) / 2;
+
+    for (let i = 0; i < height; i++) {
+        symbolsCount += 2;
+        spacesCount = (lineWidth - symbolsCount) / 2;
+        const spaces = ' '.repeat(spacesCount);
+        const symbols = '#'.repeat(symbolsCount);
+        const line = spaces + symbols + spaces;
+        console.log(line);
+    }
 }
 
-function inRange(n){
-    return n > 1; 
-}
+rl.question('Type a number of rows: ', (height) => {
+    console.log(height);
+    if (isNumeric(height) && inRange(height)) {
+        writePhyramid(height);
+    } else {
+        console.log('Bad argument!');
+    }
+    rl.close();
+});
