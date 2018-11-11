@@ -1,13 +1,10 @@
 for (let i = 500; i < 1000; i++) {
+    const Palindrome = i.toString();
 
-    const iString = i.toString();
-    const length = iString.length;
-    const first = iString.charAt(0);
-    const last = iString.charAt(length-1);
+    const first = Palindrome.charAt(0);
+    const last = Palindrome.charAt(2);
 
     if (first === last) {
-        console.log(iString);
-
+        console.log(Palindrome);
     }
-    
-}   
+}
