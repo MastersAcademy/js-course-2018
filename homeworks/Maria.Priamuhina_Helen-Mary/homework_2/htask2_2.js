@@ -24,9 +24,9 @@ rl.on('line', (input) => {
     const temp = input.split(' ');
     const start = temp[0];
     const end = temp[1];
-    for (let tempIter = start; tempIter < end; tempIter ++) {
+    for (let tempIter = start; tempIter < end; tempIter++) {
         if (IsSymetry(tempIter)) {
-            console.log(tempIter + ' ');
+            console.log(`${tempIter} `);
         }
     }
     rl.close();

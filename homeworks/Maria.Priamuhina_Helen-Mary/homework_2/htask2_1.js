@@ -18,8 +18,7 @@ rl.on('line', (input) => {
         for (let iter = 0; iter < input; iter++) {
             console.log(space.repeat(numSpace - iter) + sharp.repeat(numSharp + iter));
         }
-    }
-    else {
+    } else {
         console.log('error.');
     }
     rl.close();
