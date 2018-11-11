@@ -1,10 +1,21 @@
 const readline = require('readline-sync');
-const height = readline.question("What is your pyraid`s height?");
+
 let startWidth = 4;
-let str = '#';
-let k = '*';
-let str1 = '';
-for (let i = 0; i < height; i++) {
-    console.log(str1.concat(k.repeat(height - 1 - i)).concat(str.repeat(startWidth)).concat(k.repeat(height - 1 - i)));
-    startWidth += 2;
-}
+const str = '#';
+const s = '*';
+const str1 = '';
+
+const r1 = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+r1.question('Enter height of pyramid', (height) => {
+    for (let i = 0; i < height; i++) {
+        console.log(str1.concat(s.repeat(height - 1 - i))
+            .concat(str.repeat(startWidth))
+            .concat(s.repeat(height - 1 - i)));
+        startWidth += 2;
+    }
+    r1.close();
+});
