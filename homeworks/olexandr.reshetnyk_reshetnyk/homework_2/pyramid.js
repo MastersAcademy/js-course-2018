@@ -10,7 +10,7 @@ function inRange(height) {
     return height > 1;
 }
 
-function writePhyramid(height) {
+function printPyramid(height) {
     const lineWidth = 2 + height * 2;
     let symbolsCount = 2;
     let spacesCount = (lineWidth - symbolsCount) / 2;
@@ -28,7 +28,7 @@ function writePhyramid(height) {
 rl.question('Type a number of rows: ', (height) => {
     console.log(height);
     if (isNumeric(height) && inRange(height)) {
-        writePhyramid(height);
+        printPyramid(height);
     } else {
         console.log('Bad argument!');
     }
