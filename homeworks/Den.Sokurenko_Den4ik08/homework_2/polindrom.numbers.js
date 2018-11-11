@@ -2,3 +2,4 @@
 2   if (i.toString () === i.toString ().split('').
 3  reverse ().join('')){
 4  console.log(i)}}
+
