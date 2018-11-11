@@ -11,7 +11,8 @@ rl.question('Please enter the first number: ', (min) => {
         let rangeMax = + max;
 
         for(let i = rangeMin; i < rangeMax; i++){
-            if(i.toString().split('').reverse().join('') === i.toString()){
+            let checkPalidromes = i.toString().split('').reverse().join('');
+            if( checkPalidromes === i.toString()){
                 console.log(i);
             }
         }

@@ -10,7 +10,8 @@ rl.question('What is the height of the pyramid? ', (answer) => {
 let height = + answer;
 
 for (let i = 1; i < height + 1; i++){
-    console.log(' '.repeat(height - i) + '#'.repeat(i) + '#'.repeat(i));
+    let piramida = ' '.repeat(height - i) + '#'.repeat(i) + '#'.repeat(i);
+    console.log(piramida);
  }
 
   rl.close();
