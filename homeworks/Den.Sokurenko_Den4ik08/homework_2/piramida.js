@@ -9,3 +9,4 @@
             console.log(str + str2 + str);
          }
        } 
+pyramid(15)
