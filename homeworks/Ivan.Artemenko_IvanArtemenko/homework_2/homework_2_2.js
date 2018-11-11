@@ -1,9 +1,36 @@
-for (var i = 500; i<1000; i++){
-	var a, b, c;
-	a = ((i/100)%10);
-	b = ((i/10)%10);
-	c = (i%10);
-	if(Math.floor(a) == Math.round(c)){
-		console.log(Math.floor(a),Math.floor(b),c)
-	}
-}
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+rl.question('Enter the first number from 500 to 1000 ', (number_1) => {
+	rl.question('Enter the second number from 500 to 1000 ', (number_2) => {
+		let s = console.log('Invalid data enter a number from 500 to 1000');
+
+		let a = number_1-0;
+		let b = number_2-1;
+if (a>=b){
+	if (b+1 >= 500  && a-1 < 1000){
+		for (let i = b; i <= a; i++){
+			const z = i.toString().split('').reverse().join('');
+			const k = i.toString();
+			if(z===k){
+			console.log(i);	
+			}
+		}
+
+	}else s;
+	
+} 
+else if(a >= 500  && b < 1000){		
+		for (let i = a; i <= b; i++){
+			const z = i.toString().split('').reverse().join('');
+			const k = i.toString();
+			if(z===k){
+			console.log(i);	
+			}
+		}
+} else s;
+rl.close();
+});
+});
