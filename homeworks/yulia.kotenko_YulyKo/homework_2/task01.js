@@ -1,17 +1,14 @@
-// 
-
 const readline = require('readline');
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
 rl.question('How much? ', (answer) => {
-    let spase = " ";
-    let grille = "#";
+    const spase = ' ';
+    const grille = '#';
     for (let i = 0; i < answer; i++) {
-        console.log(spase.repeat(answer-i) + grille.repeat(2+i+2+i) + spase.repeat(answer-i));
+        const first = spase.repeat(answer - i) + grille.repeat(2 + i);
+        const second = first.toString().split('').reverse().join('');
+        console.log(first + second);
     }
-  rl.close();
+    rl.close();
 });
