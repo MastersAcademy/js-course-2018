@@ -1,19 +1,20 @@
+
 const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
-    output:process.stdout,
-    });
+    output: process.stdout,
+});
 
-function getPyramid (height) {
+function getPyramid(height) {
     let i = 2;
-      for (let j = height; j >= 1; j--) {
-        i = i + 2;
+    for (let j = height; j >= 1; j--) {
+        i += 2;
         console.log(' '.repeat(j) + '#'.repeat(i));
     }
 }
 
-function checkPyramidHeight (height) {
+function checkPyramidHeight(height) {
     return typeof height !== 'number' || height === 0 || height > 50;
 }
 
