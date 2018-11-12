@@ -10,7 +10,6 @@ function getPyramid (height) {
     for (j = height; j >= 1; j--) {
         i = i + 2;
         console.log(' '.repeat(j) + '#'.repeat(i));
-
     }
 }
 
