@@ -1,6 +1,8 @@
 const readline = require('readline');
+
 const rl = readline.createInterface({
-    input: process.stdin
+    input: process.stdin,
+    output:process.stdout,
     });
 
 function getPyramid (height) {
@@ -16,7 +18,6 @@ function checkPyramidHeight (height) {
 }
 
 rl.question('Enter height pyramid: ', (number) => {
-
     if (checkPyramidHeight(number)) {
         console.log('Sorry your answer is not correct');
         rl.close();
