@@ -2,23 +2,22 @@ const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 
 rl.question('Enter min and max values separated by a space ', (answer) => {
-    answer = answer.split(' ')
-  
-    if ((typeof +answer[0]) !== 'number' || (typeof +answer[1]) !== 'number') {
-        console.log('wrong type')
+    const values = answer.split(' ');
+    if ((typeof +values[0]) !== 'number' || (typeof +values[1]) !== 'number') {
+        console.log('wrong type');
         rl.close();
         return;
     }
-    	
-    for (let i = answer[0]; i < answer[1]; i++) {
+
+    for (let i = values[0]; i < values[1]; i += 1) {
         i += '';
         let mirror = true;
 
-        for (let j = 0; j < i.length / 2; j++) {
+        for (let j = 0; j < i.length / 2; j += 1) {
             if (i[j] !== i[i.length - 1 - j]) {
                 mirror = false;
             }
