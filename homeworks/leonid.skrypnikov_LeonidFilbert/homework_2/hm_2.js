@@ -19,12 +19,12 @@ rl.question('Enter min and max values separated by a space ', (answer) => {
     let mirror = true;
 
     for (let j = 0; j < i.length / 2; j++) {
-      if (i[j] !== i[i.length - 1 - j]) {
+      if (i[j] != i[i.length - 1 - j]) {
           mirror = false;
       }
     }
 
-    if (mirror === true) {
+    if (mirror == true) {
       console.log(i);
     }
   }
