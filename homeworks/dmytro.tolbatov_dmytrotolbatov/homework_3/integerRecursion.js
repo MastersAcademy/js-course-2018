@@ -8,11 +8,13 @@ function integerRecursion(current, maxNumber) {
 
         return integerRecursion(current + 1, maxNumber);
     }
+
+    return false;
 }
 
 const integerQuestion = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 
 integerQuestion.question('What is the range of numbers? Print two numbers (ex: 10, 600).', (range) => {

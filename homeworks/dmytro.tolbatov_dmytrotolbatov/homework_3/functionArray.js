@@ -15,7 +15,7 @@ function maxByStep(max, step) {
 }
 
 function squareArray(arr) {
-    return arr.map((number) => number * number);
+    return arr.map(number => number * number);
 }
 
 function sumArray(arr) {
