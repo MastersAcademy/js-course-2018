@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 rl.question('Enter min and max values separated by a space ', (answer) => {
   answer = answer.split(' ')
   
-  if ((typeof + answer[0]) != 'number' || (typeof + answer[1]) != 'number') {
+  if ((typeof +answer[0]) != 'number' || (typeof +answer[1]) != 'number') {
     console.log('wrong type')
     rl.close();
     return;
