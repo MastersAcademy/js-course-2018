@@ -46,24 +46,13 @@ function isNumberValid(number, minNumber) {
     return true;
 }
 
-function requestRangeEnd(minNumber, callback) {
-    rl.question('Please eneter range end > ', (answer) => {
+function requestRangeNumber(minNumber, subject, callback) {
+    rl.question(`Please enter ${subject} > `, (answer) => {
         const number = parseInt(answer.trim(), 10);
         if (isNumberValid(number, minNumber)) {
             callback(number);
         } else {
-            requestRangeEnd(minNumber, callback);
-        }
-    });
-}
-
-function requestRangeStart(minNumber, callback) {
-    rl.question('Please enter range start > ', (answer) => {
-        const number = parseInt(answer.trim(), 10);
-        if (isNumberValid(number, minNumber)) {
-            callback(number);
-        } else {
-            requestRangeStart(minNumber, callback);
+            requestRangeNumber(minNumber, subject, callback);
         }
     });
 }
@@ -80,10 +69,10 @@ function start() {
 
     function onRangeStartEntered(number) {
         rangeStart = number;
-        requestRangeEnd(rangeStart, onRangeEndEntered);
+        requestRangeNumber(rangeStart, 'range end', onRangeEndEntered);
     }
 
-    requestRangeStart(defaultMinNumber, onRangeStartEntered);
+    requestRangeNumber(defaultMinNumber, 'range start', onRangeStartEntered);
 }
 
 function showGreeting() {
