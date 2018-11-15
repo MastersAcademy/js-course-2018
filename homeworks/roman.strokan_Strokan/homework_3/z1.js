@@ -5,9 +5,9 @@ function func(a) {
     // console.log(`${a}^2=${b}`);
     return b;
 }
-func(5);
-func(15);
-func(53);
+// func(5);
+// func(15);
+// func(53);
 
 // 1.2
 function arrayCreation(a, b) {
