@@ -6,8 +6,6 @@ const rl = readline.createInterface({
 });
 
 rl.question('Please give me max value of power (range takes a start from 10): ', (inputValue) => {
-    console.log(`Thank you for your valuable feedback: ${inputValue}`);
-
     function isPower(num) {
         if (num > 1) {
             return isPower(num / 2);
@@ -17,12 +15,11 @@ rl.question('Please give me max value of power (range takes a start from 10): ',
         }
         return false;
     }
+    isPower();
 
-    isPower(12); // Don't forger del checker
-
-    function logPowOfTwoInRange(maxValue) {
+    function renderPower(maxValue) {
         const ourPowerNums = [];
-
+        // Loop that check is incoming data from recursive func isPower of two
         for (let i = 10; i <= maxValue; i++) {
             if (isPower(i)) {
                 ourPowerNums.push(i);
@@ -30,7 +27,7 @@ rl.question('Please give me max value of power (range takes a start from 10): ',
         }
         console.log(ourPowerNums);
     }
-    logPowOfTwoInRange(inputValue);
+    renderPower(inputValue);
 
     rl.close();
 });
