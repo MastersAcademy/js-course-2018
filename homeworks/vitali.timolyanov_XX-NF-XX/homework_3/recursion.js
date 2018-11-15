@@ -36,10 +36,12 @@ function isNumberValid(number, minNumber) {
     if (Number.isNaN(number)) {
         console.log('It\'s not a number. Try again.');
         return false;
-    } if (number > Number.MAX_SAFE_INTEGER) {
+    }
+    if (number > Number.MAX_SAFE_INTEGER) {
         console.log(`Your number is too big. It mus be smaller than ${Number.MAX_SAFE_INTEGER}. Try again.`);
         return false;
-    } if (number < minNumber) {
+    }
+    if (number < minNumber) {
         console.log(`Your number is smaller than ${minNumber}. Try again.`);
         return false;
     }
