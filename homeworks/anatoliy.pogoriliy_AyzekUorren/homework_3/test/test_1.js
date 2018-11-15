@@ -10,7 +10,7 @@ describe('Square', () => {
     it('(5) should return 25', () => {
         assert.deepEqual(square(5), 25);
     });
-    it('(15) should return 25', () => {
+    it('(15) should return 225', () => {
         assert.deepEqual(square(15), 225);
     });
     it('(53) should return 2809', () => {
