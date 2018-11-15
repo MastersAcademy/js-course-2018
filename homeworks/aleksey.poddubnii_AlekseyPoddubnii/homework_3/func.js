@@ -1,7 +1,5 @@
 // Task 1.1
 
-console.log('Task 1.2');
-
 const degree = (num1, num2, num3) => {
     console.log(num1 ** 2);
     console.log(num2 ** 2);
@@ -12,7 +10,7 @@ degree(5, 15, 53);
 
 // Task 1.2 (1)
 
-console.log('Task 1.2');
+
 const createArrayOne = () => {
     const firstArray = [];
     for (let i = 0; i < 50; i += 5) {
@@ -24,7 +22,6 @@ createArrayOne();
 
 // Task 1.2 (2)
 
-console.log('Task 1.3');
 const createArrayTwo = () => {
     const secondArray = [];
 
