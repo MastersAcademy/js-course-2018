@@ -2,7 +2,7 @@ const readline = require('readline');
 
 function integerRecursion(current, maxNumber) {
     if (current <= maxNumber) {
-        if (current % 2 === 0) {
+        if (Math.log2(current) % 1 === 0) {
             console.log(current);
         }
 
