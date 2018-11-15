@@ -1,7 +1,7 @@
 let a = 1;
 let b;
 
-function exponentN2(n) {
+function exp2(n) {
     if (a > n) {
         return false;
     }
@@ -9,11 +9,11 @@ function exponentN2(n) {
         return true;
     }
     a *= 2;
-    return exponentN2(n);
+    return exp2(n);
 }
 
 for (let i = 10; i <= 600; i++) {
-    b = exponentN2(i);
+    b = exp2(i);
     if (b === true) {
         console.log(i);
     }
