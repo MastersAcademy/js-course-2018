@@ -1,20 +1,20 @@
-let a = 1;
-let b;
+let a;
 
 function exp2(n) {
-    if (a > n) {
-        return false;
+    if (n > 1) {
+        return exp2(n / 2);
     }
-    if (a === n) {
+    if (n === 1) {
         return true;
     }
-    a *= 2;
-    return exp2(n);
+    return false;
 }
-
-for (let i = 10; i <= 600; i++) {
-    b = exp2(i);
-    if (b === true) {
-        console.log(i);
+function mainFunc(x, y) {
+    for (let i = x; i <= y; i++) {
+        a = exp2(i);
+        if (a === true) {
+            console.log(i);
+        }
     }
 }
+mainFunc(10, 600);

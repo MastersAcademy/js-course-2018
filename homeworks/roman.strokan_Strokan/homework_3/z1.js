@@ -11,12 +11,10 @@ function func(a) {
 function arrayCreation(a, b) {
     const arr = [];
     let c = 0;
-    let i = 0;
-    do {
+    for (let i = 0; c <= b; i++) {
         arr[i] = c;
         c += a;
-        i++;
-    } while (c <= b);
+    }
     /* for (let j = 0; j < arr.length; j++) {
         console.log(arr[j]);
     } */
