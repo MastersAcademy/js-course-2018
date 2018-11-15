@@ -1,15 +1,28 @@
 const readline = require('readline');
 
-function integerRecursion(current, maxNumber) {
-    if (current <= maxNumber) {
-        if (Math.log2(current) % 1 === 0) {
-            console.log(current);
-        }
+function numberCheck(number) {
+    if (number === 1) {
+        return true;
+    }
 
-        return integerRecursion(current + 1, maxNumber);
+    if (number > 0 && Number.isInteger(number)) {
+        return numberCheck(number / 2);
     }
 
     return false;
+}
+
+
+function checkRange(min, max) {
+    const result = [];
+
+    for (let i = min; i < max + 1; i++) {
+        if (numberCheck(i)) {
+            result.push(i);
+        }
+    }
+
+    return result;
 }
 
 const integerQuestion = readline.createInterface({
@@ -25,7 +38,7 @@ integerQuestion.question('What is the range of numbers? Print two numbers (ex: 1
     if (rangeArray.length > 2 || Number.isNaN(min) || Number.isNaN(max) || min >= max) {
         console.log('Incorrect Input!');
     } else {
-        integerRecursion(min, max);
+        console.log(checkRange(min, max));
     }
 
     integerQuestion.close();
