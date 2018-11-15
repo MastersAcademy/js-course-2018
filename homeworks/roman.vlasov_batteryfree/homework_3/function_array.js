@@ -1,16 +1,14 @@
 function degree(a) {
     return a * a;
 }
-function arraystep(a, b) {
+function arrayStep(a, b) {
     const arr = [];
-    for (let i = 0; i <= (parseInt(a / b, 10)); i++) {
-        arr[i] = i * b;
+    for (let i = 0; i <= a; i += b) {
+        arr.push(i);
     }
     return arr;
 }
-const arr = arraystep(32, 4);
-for (let i = 0; i < arr.length; i++) {
-    arr[i] = degree(arr[i]);
-}
-const c = arr.reduce((a, b) => a + b, 0);
+const arr = arrayStep(32, 4);
+const arr1 = arr.map(element => degree(element));
+const c = arr1.reduce((a, b) => a + b, 0);
 console.log(c);
