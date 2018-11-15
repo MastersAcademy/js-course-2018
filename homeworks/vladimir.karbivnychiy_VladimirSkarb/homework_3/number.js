@@ -9,12 +9,12 @@ console.log(`${53}^2=${func(53)}`);
 function block(a, b) {
     const array = [];
     for (let i=0; i<=a; i+=b) {
-        array.push (i);
+        array.push(i);
     }
     return array;
 }
-console.log(block (50, 5));
-console.log(block (32, 4));
+console.log(block(50, 5));
+console.log(block(32, 4));
 
 function arraySq(block) {
     return block.map(element => element * element);
@@ -22,6 +22,6 @@ function arraySq(block) {
 console.log(arraySq(block(32, 4)));
 
 function sumArraySq(block) {
-    return block.reduce((sum, nextNum) => sum + nextNum)
+    return block.reduce((sum, nextNum) => sum + nextNum);
 }
 console.log(sumArraySq(arraySq(block(32, 4))));

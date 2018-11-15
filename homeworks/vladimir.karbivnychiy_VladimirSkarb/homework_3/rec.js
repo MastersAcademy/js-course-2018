@@ -25,5 +25,5 @@ inputData.question('Введите минимальное значение: ', (
         if (b === true) {
             console.log(i);
         }
-    };
+    }
 });
