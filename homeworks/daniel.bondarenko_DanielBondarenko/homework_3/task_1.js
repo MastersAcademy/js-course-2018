@@ -1,12 +1,12 @@
 // task 1.1
 
-function pow(number) {
+function square(number) {
     return number * number;
 }
 
-console.log(pow(5));
-console.log(pow(15));
-console.log(pow(53));
+console.log(square(5));
+console.log(square(15));
+console.log(square(53));
 
 // task 1.2
 
