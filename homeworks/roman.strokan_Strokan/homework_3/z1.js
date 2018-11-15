@@ -6,8 +6,6 @@ function func(a) {
     return b;
 }
 // func(5);
-// func(15);
-// func(53);
 
 // 1.2
 function arrayCreation(a, b) {
