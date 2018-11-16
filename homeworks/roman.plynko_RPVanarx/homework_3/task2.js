@@ -14,7 +14,7 @@ function searchPow(number) {
     return false;
 }
 
-rl.question('Enter min & max positive numbers (example:10 600): ', (value) => {
+rl.question('Enter min & max positive numbers > 1 (example:10 600): ', (value) => {
     const mass = value.split(' ').map(Number);
     let minValue = mass[0];
     const maxValue = mass[1];
@@ -27,5 +27,6 @@ rl.question('Enter min & max positive numbers (example:10 600): ', (value) => {
         }
     } else {
         console.log('Oops you have entered an invalid value, try again');
+        rl.close();
     }
 });
