@@ -3,13 +3,12 @@ function sq(n) {
 }
 function arrNew(p, x) {
     const arr = [];
-    const arr2 = [];
+    let arr2 = [];
     for (let i = 0; i <= p; i += x) {
         arr.push(i);
     }
-    for (let j = 0; j < arr.length; j++) {
-        arr2[j] = arr[j] * arr[j];
-    }
+    arr2 = arr.map(elem => elem * elem);
+
     console.log(arr);
     console.log(arr2);
     console.log(arr2.reduce((a, b) => a + b));
