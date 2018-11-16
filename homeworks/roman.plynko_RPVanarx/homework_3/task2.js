@@ -5,37 +5,29 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-let searchPowNumber;
-let minValue;
-let maxValue;
+(function create() {
+    let searchPowNumber;
+    let minValue;
+    let maxValue;
 
-function searchPow(n, min, max) {
-    if (n >= min && n <= max) {
-        console.log(n);
-        return searchPow(n * searchPowNumber, min, max);
-    }
-    if (n > max) {
+    function searchPow(number) {
+        let value = number;
+        while (value < minValue) {
+            value *= searchPowNumber;
+        }
+        if (value >= minValue && value <= maxValue) {
+            console.log(value);
+            return searchPow(value * searchPowNumber);
+        }
         return 0; // close recursion
     }
-    return searchPow(n * searchPowNumber, min, max); // in searchPowNumber < min
-}
 
-(function create() {
-    rl.question('Enter (searchPowNumber min max) positive integer (example:2 10 600): ', (value) => {
-        [searchPowNumber, minValue, maxValue] = value.split(' ');
-        searchPowNumber = +searchPowNumber;
-        minValue = +minValue;
-        maxValue = +maxValue;
-        if ( // input check
-            Number.isInteger(searchPowNumber)
-            && Number.isInteger(minValue)
-            && Number.isInteger(maxValue)
-            && searchPowNumber > 1
-            && minValue < maxValue
-        ) { // if true
+    rl.question('Enter (searchPowNumber min max) positive numbers (example:2 10 600): ', (value) => {
+        [searchPowNumber, minValue, maxValue] = value.split(' ').map(Number);
+        if (minValue > 1 && searchPowNumber > 1 && minValue < maxValue) {
             rl.close();
-            searchPow(searchPowNumber, minValue, maxValue);
-        } else { // if false, repeat input
+            searchPow(searchPowNumber);
+        } else { // repeat input
             console.log('Opps you have entered an invalid value, try again');
             create(); // recursion
         }
