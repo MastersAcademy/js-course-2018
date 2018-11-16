@@ -4,8 +4,8 @@ function pow(a) { // task 1.1
 
 function massCreate(step, max) { // task 1.2
     const newmass = [];
-    for (let i = 0; i <= max / step; i++) {
-        newmass[i] = i * step;
+    for (let i = 0; i <= max; i += step) {
+        newmass.push(i);
     }
     return newmass;
 }
