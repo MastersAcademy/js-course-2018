@@ -5,31 +5,27 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-(function create() {
-    let searchPowNumber;
-    let minValue;
-    let maxValue;
-
-    function searchPow(number) {
-        let value = number;
-        while (value < minValue) {
-            value *= searchPowNumber;
-        }
-        if (value >= minValue && value <= maxValue) {
-            console.log(value);
-            return searchPow(value * searchPowNumber);
-        }
-        return 0; // close recursion
+function searchPow(number) {
+    if (number > 1) {
+        return searchPow(number / 2);
+    } if (number === 1) {
+        return true;
     }
+    return false;
+}
 
-    rl.question('Enter (searchPowNumber min max) positive numbers (example:2 10 600): ', (value) => {
-        [searchPowNumber, minValue, maxValue] = value.split(' ').map(Number);
-        if (minValue > 1 && searchPowNumber > 1 && minValue < maxValue) {
-            rl.close();
-            searchPow(searchPowNumber);
-        } else { // repeat input
-            console.log('Opps you have entered an invalid value, try again');
-            create(); // recursion
+rl.question('Enter min & max positive numbers (example:10 600): ', (value) => {
+    const mass = value.split(' ').map(Number);
+    let minValue = mass[0];
+    const maxValue = mass[1];
+    if (minValue > 1 && minValue < maxValue) {
+        rl.close();
+        for (minValue; minValue <= maxValue; minValue++) {
+            if (searchPow(minValue)) {
+                console.log(minValue);
+            }
         }
-    });
-}()); // function call "create"
+    } else {
+        console.log('Oops you have entered an invalid value, try again');
+    }
+});
