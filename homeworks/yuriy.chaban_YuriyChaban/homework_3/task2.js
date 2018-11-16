@@ -32,7 +32,7 @@ function checkRange(min, max) {
 
 function getNumberOfDegreeTwo(min, max) {
     const arrayOfNumber = [];
-    for (let i = min; i < max; i++) {
+    for (let i = min; i <= max; i++) {
         if (recursionSquare(i)) {
             arrayOfNumber.push(i);
         }
