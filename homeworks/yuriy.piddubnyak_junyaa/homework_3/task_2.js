@@ -7,7 +7,7 @@ function func(x) {
 const min = 10;
 const max = 600;
 for (let a = min; a <= max; a++) {
-    if (func(a) == 1) {
+    if (func(a)) {
         console.log(a);
     }
 }
