@@ -1,11 +1,8 @@
 const someArray = [0, 4, 8, 12, 16, 20, 24, 28, 32];
 
-function square(array) {
-    const results = [];
-    for (let i = 0; i < array.length; i++) {
-        results.push(array[i] ** 2);
-    }
-    return results;
+function squareTheArray(array) {
+    const squaredArray = array.map(num => num * num);
+    return squaredArray;
 }
 
-console.log(square(someArray));
+console.log(squareTheArray(someArray));
