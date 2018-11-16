@@ -12,17 +12,16 @@ function isNumber(arg) {
 
 function recursionSquare(arg) {
     if (arg === 1) {
-        return 1;
+        return true;
     }
-    if (arg > 1 && arg < 2) {
-        return 0;
+    if (arg < 2) {
+        return false;
     }
-
     return recursionSquare(arg / 2);
 }
 
 function checkRange(min, max) {
-    if (min <= 0 || min <= 0) {
+    if (min <= 0 || max <= 0) {
         console.log('\nYour min range or max range is less than or equal to 0.');
     }
 
@@ -34,7 +33,7 @@ function checkRange(min, max) {
 function getNumberOfDegreeTwo(min, max) {
     const arrayOfNumber = [];
     for (let i = min; i < max; i++) {
-        if (recursionSquare(i) === 1) {
+        if (recursionSquare(i)) {
             arrayOfNumber.push(i);
         }
     }
