@@ -1,6 +1,5 @@
 function sq(n) {
-    const x = n ** 2;
-    return (x);
+    return n * n;
 }
 function arrNew(p, x) {
     const arr = [];
@@ -9,7 +8,7 @@ function arrNew(p, x) {
         arr.push(i);
     }
     for (let j = 0; j < arr.length; j++) {
-        arr2[j] = arr[j] ** 2;
+        arr2[j] = arr[j] * arr[j];
     }
     console.log(arr);
     console.log(arr2);
