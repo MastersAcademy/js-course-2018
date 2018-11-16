@@ -14,11 +14,11 @@ function searchPow(number) {
     return false;
 }
 
-rl.question('Enter min & max positive numbers > 1 (example:10 600): ', (value) => {
+rl.question('Enter min & max positive numbers (example:10 600): ', (value) => {
     const mass = value.split(' ').map(Number);
     let minValue = mass[0];
     const maxValue = mass[1];
-    if (minValue > 1 && minValue < maxValue && Number.isInteger(minValue)) {
+    if (minValue > 0 && minValue < maxValue && Number.isInteger(minValue)) {
         rl.close();
         for (minValue; minValue <= maxValue; minValue++) {
             if (searchPow(minValue)) {
