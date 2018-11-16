@@ -1,13 +1,11 @@
-let startDate = 1;
 function powerTwo(value) {
-    if (startDate === value) {
+    if (value === 1) {
         return true;
     }
-    if (startDate > value) {
-        return false;
+    if (value > 1) {
+        return powerTwo(value / 2);
     }
-    startDate *= 2;
-    return powerTwo(value);
+    return false;
 }
 for (let rangeNumbers = 10; rangeNumbers <= 600; rangeNumbers++) {
     if (powerTwo(rangeNumbers) === true) {

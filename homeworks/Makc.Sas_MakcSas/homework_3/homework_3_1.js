@@ -1,4 +1,4 @@
-function Square() {
+function square() {
     let numberElements = 0;
     const massA = [];
     const massB = [];
@@ -10,4 +10,4 @@ function Square() {
     }
     console.log(sum);
 }
-Square();
+square();
