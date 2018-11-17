@@ -1,6 +1,5 @@
 
 const myArray = [];
-const iteration = 0;
 
 function getMyArray(i, minN, maxN) {
     const result = 2 ** i;
@@ -27,7 +26,7 @@ rl.question('Specify minimum value: ', (answer) => {
         if (Number.isNaN(minN) || Number.isNaN(maxN)) {
             console.log('The value you were entered is not correct. Use integers');
         } else {
-            console.log(getMyArray(iteration, minN, maxN));
+            console.log(getMyArray(0, minN, maxN));
         }
         rl.close();
     });

@@ -7,12 +7,10 @@ console.log(getPower(5));
 console.log(getPower(15));
 console.log(getPower(53));
 
-
 console.log('task 1.2');
-const myArray = [];
 
 function getArray(step, maxN) {
-    myArray.length = 0;
+    const myArray = [];
     for (let i = 0; i <= maxN; i += step) {
         myArray.push(i);
     }
@@ -23,14 +21,13 @@ console.log(getArray(4, 32));
 
 console.log('task 1.3');
 
-const finalArray = myArray.map(elem => elem ** 2);
+const finalArray = getArray(4, 32).map(elem => elem ** 2);
 
 console.log(finalArray);
 
 console.log('task 1.4');
 
 function getSum() {
-    const result = finalArray.reduce((sum, current) => sum + current);
-    return result;
+    return finalArray.reduce((sum, current) => sum + current);
 }
 console.log(getSum());
