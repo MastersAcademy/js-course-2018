@@ -25,19 +25,15 @@ console.log('Task 1.2.2:', createArray(32, 4));
 // ============= Task 1.3 =============
 
 function getSquaredArray(arr) {
-    const resArr = arr.map(getSquaredNum);
-
-    return resArr;
+    return arr.map(getSquaredNum);
 }
 
 console.log('Task 1.3:', getSquaredArray(createArray(32, 4)));
 
-// ============= Task 1.4 =============
+// ============= Task 1.4 =============s
 
 function getArraySum(arr) {
-    const res = arr.reduce((a, b) => a + b);
-
-    return res;
+    return arr.reduce((a, b) => a + b);
 }
 
 console.log('Task 1.4:', getArraySum(getSquaredArray(createArray(32, 4))));
