@@ -2,7 +2,7 @@ function createarray(a, b) {
     let i;
     const arr = [];
     for (i = 0; i <= b; i += a) {
-        arr.push(Math.pow(i,2));
+        arr.push(i * i);
     }
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
     console.log('Square: ', arr);
