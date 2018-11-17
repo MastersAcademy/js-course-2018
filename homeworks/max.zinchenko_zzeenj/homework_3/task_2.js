@@ -4,10 +4,10 @@ const n = readline.createInterface(process.stdin, process.stdout);
 n.question('Please enter the min value of array: ', (min) => {
     n.question('Please enter the max value of array: ', (max) => {
         function square2(number) {
-            if (number > 1) {
+            if (number > 2) {
                 return square2(number / 2);
             }
-            if (number === 1) {
+            if (number === 2) {
                 return true;
             }
             return false;
