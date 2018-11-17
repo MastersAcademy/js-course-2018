@@ -1,47 +1,44 @@
-const array = [];
-
 const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
+
+function isCorrectDiapason(firstValue, lastValue) {
+    return Number(firstValue) < Number(lastValue);
+}
+
+function isPositive(firstValue, lastValue) {
+    return Number(firstValue) > 0 && Number(lastValue) > 0;
+}
+
+function isPowerOfTwo(digit) {
+    if (digit % 2 === 0) {
+        return isPowerOfTwo(digit / 2);
+    }
+    return digit === 1;
+}
+
 rl.question('Enter first value of diapason: ', (firstValue) => {
-    rl.question('Enter first value of diapason: ', (lastValue) => {
-        function isDigit() {
-            return firstValue.match(/\d*/) > 0 && lastValue.match(/\d*/) > 0;
-        }
-
-        function isCorrectDiapason() {
-            return firstValue < lastValue;
-        }
-
+    rl.question('Enter last value of diapason: ', (lastValue) => {
         function fillArray() {
-            if (isDigit() && isCorrectDiapason()) {
-                for (let i = firstValue; i <= lastValue; i++) {
-                    array.push(i);
-                }
-            } else {
-                console.log('Invalid input!');
+            const array = [];
+            for (let i = firstValue; i <= lastValue; i++) {
+                array.push(i);
             }
-        }
-
-        function isPowerOfTwo(digit) {
-            if (digit % 2 === 0) {
-                return isPowerOfTwo(digit / 2);
-            }
-            return digit === 1;
+            return array;
         }
 
         function print() {
-            fillArray();
-            for (let i = 0; i < array.length; i++) {
-                if (isPowerOfTwo(array[i])) {
-                    console.log(array[i]);
-                }
-            }
+            console.log(fillArray().filter(isPowerOfTwo));
         }
-        print();
+
+        if (isCorrectDiapason(firstValue, lastValue) && isPositive(firstValue, lastValue)) {
+            print();
+        } else {
+            console.log('Wrong input!');
+        }
         rl.close();
     });
 });

@@ -1,23 +1,21 @@
-const array = [];
-
 function power(n) {
     return n * n;
 }
 
 function fillArray(maxValue, step) {
+    const array = [];
     for (let i = 0; i <= maxValue; i += step) {
         array.push(i);
     }
-    return array.join(', ');
+    return array;
 }
 
 function elementToPower() {
-    const powerArray = array.map(num => num * num);
-    return powerArray.join(', ');
+    return fillArray(32, 4).map(num => power(num));
 }
 
 function sumOfElements() {
-    return array.reduce((sum, currentValue) => sum + currentValue, 0);
+    return elementToPower().reduce((sum, currentValue) => sum + currentValue, 0);
 }
 
 console.log(`To power: ${power(53)}`);
