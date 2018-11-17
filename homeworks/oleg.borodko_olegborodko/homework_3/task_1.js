@@ -9,37 +9,25 @@ function square(numeric) {
     return false;
 }
 
-function createArray(maxValue, step) {
-    const result = [];
-    let i = 0;
+function fixDecimalNumbrer(number) {
+    if (isNumeric(number)) {
+        return parseFloat((number).toFixed(2));
+    }
+    return false;
+}
 
+function createArray(maxValue, step) {
     if (!isNumeric(maxValue) || !isNumeric(step)) {
         return false;
     }
 
-    if (step < 1) {
+    if (step <= 0) {
         return false;
     }
 
-    while (i <= maxValue) {
-        result.push(i);
-        i += step;
-    }
-    return result;
-}
-
-function elementsArrayToSquare(array) {
     const result = [];
-    for (let i = 0; i < array.length; ++i) {
-        result.push(square(array[i]));
-    }
-    return result;
-}
-
-function elementsArraySum(array) {
-    let result = 0;
-    for (let i = 0; i < array.length; ++i) {
-        result += array[i];
+    for (let i = 0; fixDecimalNumbrer(i) <= maxValue; i += step) {
+        result.push(fixDecimalNumbrer(i));
     }
     return result;
 }
@@ -51,7 +39,10 @@ console.log(square(53));
 const testArray = createArray(32, 4);
 console.log(testArray);
 
-const testArray2 = elementsArrayToSquare(testArray);
+const testArray2 = testArray.map(square);
 console.log(testArray2);
 
-console.log(elementsArraySum(testArray2));
+console.log(testArray2.reduce((x, y) => x + y));
+
+const testArray3 = createArray(1, 0.02);
+console.log(testArray3);
