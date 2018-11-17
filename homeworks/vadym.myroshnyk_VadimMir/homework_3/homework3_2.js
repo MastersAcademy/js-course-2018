@@ -11,21 +11,19 @@ rl.question('What range is minimum: ', (min) => {
         const maxNumber = +max;
 
 
-        const powerOfTwo = (maxNum, minNum) => {
+        function powerOfTwo(maxNum, minNum) {
             if (maxNum === minNum) {
-                const stop = 'complete';
-                return stop;
+                return 'complete';
             }
 
-            if (Math.sqrt(maxNum) % 2 === 0) {
+            if (Math.log2(maxNum) % 2 === 0 || Math.log2(maxNum) % 2 === 1) {
                 console.log(maxNum);
             }
 
             return powerOfTwo(maxNum - 1, minNum);
-        };
+        }
 
-        const allPowersOfTwo = powerOfTwo(maxNumber, minNumber);
-        console.log(allPowersOfTwo);
+        powerOfTwo(maxNumber, minNumber);
         rl.close();
     });
 });
