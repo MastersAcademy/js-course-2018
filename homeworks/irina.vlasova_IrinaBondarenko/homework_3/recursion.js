@@ -2,7 +2,7 @@ function rec(nummer) {
     if (nummer === 2) {
         return true;
     }
-    if (nummer % 2 === 0) {
+    if (nummer > 2) {
         return rec(nummer / 2);
     }
     return false;

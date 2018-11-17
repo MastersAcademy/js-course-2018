@@ -11,13 +11,7 @@ function array(maxvalue, step) {
 console.log(array(50, 5));
 console.log(array(32, 4));
 const zArray = array(32, 4);
-const xArray = [];
-for (let i = 0; i < zArray.length; i++) {
-    xArray[i] = degree(zArray[i]);
-}
+const xArray = zArray.map(i => degree(i));
 console.log(xArray);
-let sum = 0;
-for (let i = 0; i < xArray.length; i++) {
-    sum += xArray[i];
-}
-console.log(sum);
+const total = xArray.reduce((sum, current) => sum + current, 0);
+console.log(total);
