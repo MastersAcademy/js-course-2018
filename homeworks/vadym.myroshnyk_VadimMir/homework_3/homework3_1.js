@@ -18,25 +18,20 @@ function arrNum(valueMax, stepElements) {
         arr.push(i);
     }
     console.log(arr);
+    return arr;
 }
 arrNum(50, 5);
 arrNum(32, 4);
 
 // homework 1.3
-const arr = [0, 4, 8, 12, 16, 20, 24, 28, 32];
-
-function squareArr(num) {
-    return num * num;
-}
-const empyArr = arr.map(squareArr);
+const empyArr = arrNum(32, 4).map(squareNunber);
 console.log(empyArr);
 
 
 // homework 1.4
-const arrSum = [0, 16, 64, 144, 256, 400, 576, 784, 1024];
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
 function sum() {
-    console.log(arrSum.reduce(reducer));
+    console.log(empyArr.reduce(reducer));
 }
 sum();
