@@ -1,6 +1,6 @@
 const height = 15; // height pyramid
 const space = ' ';
-const hash = '#';
+const hash = '#'; // you can select any character
 let amountSpace = height;
 let amountHash = 2;
 
