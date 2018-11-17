@@ -21,7 +21,7 @@ console.log(getArray(4, 32));
 
 console.log('task 1.3');
 
-const finalArray = getArray(4, 32).map(elem => elem ** 2);
+const finalArray = getArray(4, 32).map(getPower);
 
 console.log(finalArray);
 
