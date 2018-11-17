@@ -10,7 +10,7 @@
  */
 
 function getSquare(inputNumber) {
-    return inputNumber ** 2;
+    return inputNumber * inputNumber;
 }
 
 const testInput1 = [5, 15, 53];
@@ -28,9 +28,9 @@ testInput1.forEach(element => console.log(`Square of ${element} equals to ${getS
 
 function getSteppedArray(upperBorder, step) {
     const result = [0];
-    let N = 0;
-    while (N + step <= upperBorder) {
-        result.push((N += step));
+    let n = 0;
+    while (n + step <= upperBorder) {
+        result.push((n += step));
     }
     return result;
 }
@@ -53,7 +53,7 @@ console.log(getSteppedArray(maxValues[1], increments[1]));
  */
 
 function involuteArr(inputArr) {
-    return inputArr.map(element => element ** 2);
+    return inputArr.map(element => element * element);
 }
 
 console.log(
