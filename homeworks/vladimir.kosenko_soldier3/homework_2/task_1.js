@@ -1,3 +1,4 @@
+
 const str = '#';
 const space = ' ';
 const readline = require('readline');

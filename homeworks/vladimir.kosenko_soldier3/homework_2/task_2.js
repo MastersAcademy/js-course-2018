@@ -5,6 +5,7 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
+
 function checkImputValue(min, max) {
     return ((!Number.isNaN(min) && min > 500 && min < 1000)
             && (!Number.isNaN(max) && max > 500 && max < 1000));

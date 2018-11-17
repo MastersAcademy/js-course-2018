@@ -46,7 +46,6 @@ console.log(createArray(50, 5));
 const arr = createArray(32, 4);
 console.log(arr);
 
-
 console.log('~task 1.3~');
 const arrayNumber = arrayMathPow(arr);
 console.log(arrayNumber);
