@@ -13,18 +13,18 @@ function power(number) {
     return number *= number;
 }
 
-let a = 5,
-    b = 15,
-    c = 53;
+const a = 5;
+const b = 15;
+const c = 53;
 
 console.log();
-console.log("1. РАБОТА С ФУНКЦИЯМИ И МАССИВАМИ");
+console.log('1. РАБОТА С ФУНКЦИЯМИ И МАССИВАМИ');
 console.log();
-console.log("Задание 1.1");
-console.log("------------");
-console.log("1)", a," ^ 2 = ", power(a));
-console.log("2)", b," ^ 2 = ", power(b));
-console.log("3)", c," ^ 2 = ", power(c));
+console.log('Задание 1.1');
+console.log('------------');
+console.log('1)', a,' ^ 2 = ', power(a));
+console.log('2)', b,' ^ 2 = ', power(b));
+console.log('3)', c,' ^ 2 = ', power(c));
 
 /**
  * 1.2 Написати функцію, яка створює масив з числами від 0 до заданої
@@ -45,8 +45,8 @@ function createArray (maxValue, step) {
 }
 
 console.log();
-console.log("Задание 1.2");
-console.log("------------");
+console.log('Задание 1.2');
+console.log('------------');
 console.log(createArray(maxValue = 50, step = 5));
 console.log(createArray(maxValue = 32, step = 4));
 
@@ -66,8 +66,8 @@ function createArrayPow (Array) {
 }
 
 console.log();
-console.log("Задание 1.3");
-console.log("------------");
+console.log('Задание 1.3');
+console.log('------------');
 console.log(createArrayPow(createArray(maxValue = 32, step = 4)));
 
 /**
@@ -85,6 +85,6 @@ function sumArray (Array) {
 }
 
 console.log();
-console.log("Задание 1.4");
-console.log("------------");
+console.log('Задание 1.4');
+console.log('------------');
 console.log(sumArray(createArrayPow(createArray(maxValue = 32, step = 4))));
