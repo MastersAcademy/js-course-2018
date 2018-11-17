@@ -1,4 +1,4 @@
-function pyram(height) {
+function getPyram(height) {
     for (let i = 0; i < height; i++) {
         let str = ' ';
         for (let before = 1; before < height - i; before++) {
@@ -10,4 +10,4 @@ function pyram(height) {
         console.log(str);
     }
 }
-pyram(15);
+getPyram(15);
