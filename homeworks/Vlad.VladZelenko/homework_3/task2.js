@@ -1,15 +1,13 @@
-const start = 10;
 const end = 600;
+let start = 10;
+let power = 4;
 
-function recurs(power) {
-    let result = 0;
-    result = 2 ** power;
-    if (result <= start) {
-        recurs(power + 1);
-    } else if (result <= end) {
-        console.log(result);
-        recurs(power + 1);
+function recurs() {
+    start = 2 ** power;
+    if (start < end) {
+        console.log(start);
+        power += 1;
+        recurs();
     }
 }
-
-recurs(2);
+recurs();
