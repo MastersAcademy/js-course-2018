@@ -9,8 +9,7 @@ console.log(square(53));
 // task 1.2
 function createArray(step, value) {
     const newArray = [];
-    let i = 0;
-    for (i = 0; i <= value; i += step) {
+    for (let i = 0; i <= value; i += step) {
         newArray.push(i);
     }
     return newArray;
