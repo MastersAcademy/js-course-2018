@@ -22,13 +22,14 @@ function powToArray(arr) {
     }
     console.log(newArr);
     sumOfArray(newArr);
+    return newArr;
 }
-const readline = require('readline');
 
-const rl = readline.createInterface({
+const rl = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout,
 });
+
 rl.question('Max value ', (answer) => {
     rl.question('Step ', (answer2) => {
         const arr = [];
