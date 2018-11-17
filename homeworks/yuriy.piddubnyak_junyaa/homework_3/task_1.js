@@ -1,6 +1,6 @@
 
 function square(a) {
-    return (a ** 2);
+    return Math.pow(a,2);
 }
 console.log(square(5));
 console.log(square(15));
