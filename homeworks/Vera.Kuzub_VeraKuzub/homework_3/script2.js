@@ -1,8 +1,8 @@
 function checkNumber(num) {
     if (num === 1) {
-        return 1;
+        return true;
     } if (num > 1 && num < 2) {
-        return 0;
+        return false;
     } return checkNumber(num / 2);
 }
 
@@ -10,7 +10,7 @@ function findNaturalNumbers(firstNum, LastNum) {
     const arr = [];
     let number = firstNum;
     while (number <= LastNum) {
-        if (checkNumber(number) === 1) {
+        if (checkNumber(number) === true) {
             arr.push(number);
             number += 1;
         } else number += 1;
