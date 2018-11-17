@@ -25,10 +25,7 @@ console.log('Task 1.2.2:', createArray(32, 4));
 // ============= Task 1.3 =============
 
 function getSquaredArray(arr) {
-    const resArr = [];
-    arr.forEach((e) => {
-        resArr.push(getSquaredNum(e));
-    });
+    const resArr = arr.map(getSquaredNum);
 
     return resArr;
 }
@@ -38,10 +35,7 @@ console.log('Task 1.3:', getSquaredArray(createArray(32, 4)));
 // ============= Task 1.4 =============
 
 function getArraySum(arr) {
-    let res = 0;
-    arr.forEach((e) => {
-        res += (e);
-    });
+    const res = arr.reduce((a, b) => a + b);
 
     return res;
 }
