@@ -8,9 +8,8 @@ console.log(square(53));
 // 1.2 Function of creating an array from zero to the 'max' value with a 'step' between the elements
 const createArray = (max, step) => {
     const array = [];
-    const length = max / step;
-    for (let i = 0; i <= length; i++) {
-        array[i] = i * step;
+    for (let i = 0; i <= max; i += step) {
+        array.push(i);
     }
     return array;
 };
