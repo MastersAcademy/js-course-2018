@@ -19,7 +19,6 @@ function arrNum(valueMax, stepElements) {
     }
     console.log(arr);
 }
-
 arrNum(50, 5);
 arrNum(32, 4);
 
@@ -29,9 +28,7 @@ const arr = [0, 4, 8, 12, 16, 20, 24, 28, 32];
 function squareArr(num) {
     return num * num;
 }
-
 const empyArr = arr.map(squareArr);
-
 console.log(empyArr);
 
 
@@ -42,5 +39,4 @@ const reducer = (accumulator, currentValue) => accumulator + currentValue;
 function sum() {
     console.log(arrSum.reduce(reducer));
 }
-
 sum();
