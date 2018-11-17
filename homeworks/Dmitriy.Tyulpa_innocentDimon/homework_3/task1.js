@@ -22,9 +22,9 @@ console.log('1. РАБОТА С ФУНКЦИЯМИ И МАССИВАМИ');
 console.log();
 console.log('Задание 1.1');
 console.log('------------');
-console.log('1)', a,' ^ 2 = ', power(a));
-console.log('2)', b,' ^ 2 = ', power(b));
-console.log('3)', c,' ^ 2 = ', power(c));
+console.log('1)', a, ' ^ 2 = ', power(a));
+console.log('2)', b, ' ^ 2 = ', power(b));
+console.log('3)', c, ' ^ 2 = ', power(c));
 
 /**
  * 1.2 Написати функцію, яка створює масив з числами від 0 до заданої
@@ -44,6 +44,9 @@ function createArray (maxValue, step) {
     return resultArray;
 }
 
+let maxValue;
+let step;
+
 console.log();
 console.log('Задание 1.2');
 console.log('------------');
@@ -59,6 +62,7 @@ console.log(createArray(maxValue = 32, step = 4));
  */
 
 function createArrayPow (Array) {
+    let resultArray = [];
     for (let i = 0; i < Array.length; i++) {
         resultArray = Array.map(elem => elem * elem);
     }
@@ -78,7 +82,7 @@ console.log(createArrayPow(createArray(maxValue = 32, step = 4)));
 
 function sumArray (Array) {
     let resultSum = 0;
-    for (i = 0; i < Array.length; i++) {
+    for (let i = 0; i < Array.length; i++) {
         resultSum = resultSum + Array[i];
     }
     return resultSum;
