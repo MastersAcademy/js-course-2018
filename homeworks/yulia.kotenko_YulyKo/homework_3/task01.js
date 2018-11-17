@@ -14,14 +14,25 @@ const rl = readline.createInterface({
 });
 rl.question('Max value ', (answer) => {
     rl.question('Step ', (answer2) => {
+
         let arr = [];
         let step = +answer2;
         let size = +answer;
-    for (let i = 0; i <= size; i+=step) {
-        arr.push(i);
-    }
-    console.log(arr);
-            rl.close();
+
+        for (let i = 0; i <= size; i+=step) {
+            arr.push(i);
+        }
+        console.log(arr);
+        powForArray(arr);
+        rl.close();
     });
 });
+function powForArray(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        newArr.push(riseToDegree(element));
+    }
+    console.log(newArr);
 
+}
