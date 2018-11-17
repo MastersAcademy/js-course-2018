@@ -1,5 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
-
 //  task 1.1
 
 function numbers(num) {
