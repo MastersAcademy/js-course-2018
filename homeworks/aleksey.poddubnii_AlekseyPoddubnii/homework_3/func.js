@@ -1,7 +1,7 @@
 // Task 1.1
 
 function degree(num) {
-    console.log(num ** 2);
+    console.log(num * num);
 }
 
 degree(5);
