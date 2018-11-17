@@ -33,5 +33,16 @@ function powToArray(arr) {
         newArr.push(riseToDegree(element));
     }
     console.log(newArr);
+    sumOfArray(newArr);
+
+}
+
+function sumOfArray(newArr) {
+    let sum = 0;
+    for (let i = 0; i < newArr.length; i++) {
+        const element = newArr[i];
+        sum += element;
+    }
+    console.log(sum);
 
 }
