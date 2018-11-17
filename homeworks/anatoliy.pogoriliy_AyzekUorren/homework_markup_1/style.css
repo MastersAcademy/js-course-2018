@@ -6,11 +6,10 @@
 
 .header {
   background-image: url("images/Background.png");
-  height: 657px;
-  background-size: 100% auto;
+  height: 645px;
 }
 
-.header-info, .header-nav {
+.header-content, .header-nav {
   color: #FFF;
   position: relative;
   z-index: 1;
@@ -20,11 +19,13 @@
 }
 
 .header-logo {
-  margin: 51px 0 15px 130px;
+  margin: 52px 0 0 130px;
+  height: 28px;
+  filter: invert(100%);
 }
 
 .header-nav {
-  margin-top: 51px;
+  margin-top: 67px;
   float: right;
 }
 
@@ -34,6 +35,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
+  height: 10px;
   color: #FFF;
 }
 
@@ -45,11 +47,11 @@
   color: #EE2F1B;
 }
 
-.header-info-tittle {
+.header-content-tittle {
   font-size: 50px;
   flex-basis: 545px;
   margin: auto;
-  margin-top: 167px;
+  margin-top: 173px;
   line-height: 60px;
   text-transform: uppercase;
 }
@@ -60,25 +62,22 @@
   background-color: #35C2F8;
   display: block;
   content: "";
-  margin: 51px auto;
+  margin: 50px auto 0;
 }
 
-.header-info-desc {
+.header-content-desc {
   font-size: 20px;
   flex-basis: 500px;
   margin: auto;
   color: #CCC;
+  margin-top: 54px;
 }
 
 .header-transparency-layer {
   position: absolute;
   background-color: rgba(0, 0, 0, .75);
   width: 1024px;
-  height: 657px;
-}
-
-.header-logo {
-  filter: invert(100%);
+  height: 645px;
 }
 
 .content {
@@ -89,6 +88,7 @@
 .content-header {
   text-align: center;
   font-size: 40px;
+  margin: 0;
   margin-top: 99px;
   flex-basis: 100%;
   line-height: 75px;
@@ -96,32 +96,40 @@
   text-transform: uppercase;
 }
 
-.content-item {
+.content-header.underline:after {
+  margin-bottom: 79px;
+  margin-top: 40px;
+}
+
+.content-service {
   flex-basis: 33%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.content-item-image {
+.content-service-image {
   margin: auto;
   height: 55px;
+  margin-bottom: 39px;
 }
 
-.content-item-header {
+.content-service-header {
   margin: 0;
   flex-basis: 100%;
   text-align: center;
-  line-height: 75px;
+  line-height: 12px;
   color: #222;
   text-transform: uppercase;
+  margin-bottom: 19px;
 }
 
-.content-item-desc {
+.content-service-desc {
   font-size: 14px;
   text-align: center;
   margin: 0 20px;
   line-height: 22px;
+  height: 59px;
   letter-spacing: -.35px;
   color: #888;
 }
