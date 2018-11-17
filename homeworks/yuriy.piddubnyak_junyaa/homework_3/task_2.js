@@ -1,17 +1,14 @@
-function func(x) {
-    if (typeof x !== 'number') {
-        return 'Not a number';
-    }
-    while (x > 1 && x / 2 !== 0 && x % 2 === 0) {
-        x /= 2;
-    }
-    if (x === 1) return true;
-    return false;
+function isPower(v) {
+    if (v == 1) {
+        return true;
+    } if (v % 2 != 0 || v == 0) {
+        return false;
+    } return isPower(v / 2);
 }
 const min = 10;
 const max = 600;
 for (let a = min; a <= max; a++) {
-    if (func(a)) {
+    if (isPower(a)) {
         console.log(a);
     }
 }
