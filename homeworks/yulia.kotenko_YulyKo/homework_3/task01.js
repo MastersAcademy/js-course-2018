@@ -17,8 +17,7 @@ function sumOfArray(newArr) {
 function powToArray(arr) {
     const newArr = [];
     for (let i = 0; i < arr.length; i++) {
-        const element = arr[i];
-        newArr.push(riseToDegree(element));
+        newArr.push(riseToDegree(arr[i]));
     }
     console.log(newArr);
     sumOfArray(newArr);
@@ -39,7 +38,11 @@ rl.question('Max value ', (answer) => {
             arr.push(i);
         }
         console.log(arr);
-        powToArray(arr);
+        const newArr = arr.map(powToArray(arr));
+        const result = newArr.reduce(sumOfArray(newArr));
+        console.log(newArr);
+        console.log(result);
+
         rl.close();
     });
 });
