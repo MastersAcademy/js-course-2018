@@ -37,3 +37,4 @@ readConsole.question('Enter the number #1(>=10):', (answer) => {
         closeConsole();
     }
 });
+ 
