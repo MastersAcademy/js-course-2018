@@ -1,12 +1,17 @@
+.main {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
 .header, .content {
   width: 1024px;
   margin: auto;
-  font-family: "Open Sans", sans-serif;
 }
 
 .header {
   background-image: url("images/Background.png");
   height: 645px;
+  overflow: auto;
 }
 
 .header-content, .header-nav {
@@ -20,7 +25,10 @@
 
 .header-logo {
   margin: 52px 0 0 130px;
-  height: 28px;
+  display: inline-block;
+}
+
+.header-logo-image {
   filter: invert(100%);
 }
 
@@ -31,7 +39,7 @@
 
 .header-nav-link {
   margin-right: 50px;
-  line-height: 43px;
+  line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
@@ -39,8 +47,8 @@
   color: #FFF;
 }
 
-.header-nav-link:last-child {
-  margin-right: 100px;
+.header-logo+.header-nav {
+  margin-right: 50px;
 }
 
 .header-nav-link:hover {
@@ -65,7 +73,7 @@
   margin: 50px auto 0;
 }
 
-.header-content-desc {
+.header-content-description {
   font-size: 20px;
   flex-basis: 500px;
   margin: auto;
@@ -106,6 +114,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .content-service-image {
@@ -124,7 +133,7 @@
   margin-bottom: 19px;
 }
 
-.content-service-desc {
+.content-service-description {
   font-size: 14px;
   text-align: center;
   margin: 0 20px;
