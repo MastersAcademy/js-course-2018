@@ -1,4 +1,7 @@
 function isPower(v) {
+    if (typeof v !== 'number') {
+        return 'Not a number';
+    }
     if (v == 1) {
         return true;
     } if (v % 2 != 0 || v == 0) {
