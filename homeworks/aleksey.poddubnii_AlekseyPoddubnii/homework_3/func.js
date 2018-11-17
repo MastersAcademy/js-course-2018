@@ -1,54 +1,27 @@
 // Task 1.1
 
-const degree = (num1, num2, num3) => {
-    console.log(num1 ** 2);
-    console.log(num2 ** 2);
-    console.log(num3 ** 2);
-};
-degree(5, 15, 53);
+function degree(num) {
+    console.log(num ** 2);
+}
 
+degree(5);
+degree(15);
+degree(53);
 
 // Task 1.2 (1)
 
-
-const createArrayOne = () => {
-    const firstArray = [];
-    for (let i = 0; i < 50; i += 5) {
-        firstArray.push(i);
-    }
-    console.log(firstArray);
-};
-createArrayOne();
-
-// Task 1.2 (2)
-
-const createArrayTwo = () => {
+function createArrayTwo(max, step) {
     const secondArray = [];
 
-    for (let i = 0; i <= 32; i += 4) {
+    for (let i = 0; i <= max; i += step) {
         secondArray.push(i);
     }
     return secondArray;
-};
-
-console.log(createArrayTwo());
-
-// Task 1.3
-
-function createArrayThree() {
-    const thirdArray = [];
-    const a = createArrayTwo();
-    for (let i = 0; i < a.length; i++) {
-        thirdArray.push(a[i] ** 2);
-    }
-
-    return thirdArray;
 }
 
-console.log(createArrayThree());
+console.log(createArrayTwo(50, 5));
 
-// Task 1.4
+// Task 1.3 and 1.4 combine in one
 
-console.log(
-    createArrayThree().reduce((a, b) => a + b),
-);
+const sumOfArray = createArrayTwo(4, 32).map(degree).reduce((a, b) => a + b);
+console.log(sumOfArray);

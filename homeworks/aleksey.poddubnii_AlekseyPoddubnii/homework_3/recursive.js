@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 rl.question('Please give me max value of power (range takes a start from 10): ', (inputValue) => {
     function isPower(num) {
         if (num > 1) {
-            return isPower(num / 2);
+            return isPower(num === 1);
         }
         if (num === 1) {
             return true;
@@ -31,12 +31,3 @@ rl.question('Please give me max value of power (range takes a start from 10): ',
 
     rl.close();
 });
-
-// Code how test is num is power of two
-
-// if (num === 1) {
-//     // console.log('true');
-// } else {
-//     console.log('False');
-//     return false;
-// }
