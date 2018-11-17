@@ -21,7 +21,17 @@ rl.question('Max value ', (answer) => {
         arr.push(i);
     }
     console.log(arr);
+    powToArray(arr);
             rl.close();
     });
 });
 
+function powToArray(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        newArr.push(riseToDegree(element));
+    }
+    console.log(newArr);
+
+}
