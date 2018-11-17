@@ -23,5 +23,5 @@ console.log(createArrayTwo(50, 5));
 
 // Task 1.3 and 1.4 combine in one
 
-const sumOfArray = createArrayTwo(4, 32).map(degree).reduce((a, b) => a + b);
+const sumOfArray = createArrayTwo(32, 4).map(degree).reduce((a, b) => a + b);
 console.log(sumOfArray);
