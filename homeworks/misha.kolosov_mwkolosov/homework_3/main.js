@@ -20,11 +20,7 @@ console.log(arr(32, 4));
 // Task 1.3
 
 function arrInSquare(a = arr(32, 4)) {
-    const arrNew = [];
-    a.forEach((item) => {
-        arrNew.push(square(item));
-    });
-    return arrNew;
+    return a.map(item => square(item));
 }
 
 console.log(arrInSquare());
@@ -32,11 +28,7 @@ console.log(arrInSquare());
 // Task 1.4
 
 function arrSum(a = arrInSquare()) {
-    let sum = 0;
-    a.forEach((item) => {
-        sum += item;
-    });
-    return sum;
+    return a.reduce(((sum, current) => sum + current), 0);
 }
 
 console.log(arrSum());
