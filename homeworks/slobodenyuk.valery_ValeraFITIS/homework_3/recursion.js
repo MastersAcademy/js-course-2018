@@ -1,8 +1,8 @@
 function deRec(a) {
-    if (a === 2) {
+    if (a > 2) {
         return true;
     }
-    if (a % 2 === 0) {
+    if (a > 2 === 0) {
         return deRec(a / 2);
     }
     return false;
