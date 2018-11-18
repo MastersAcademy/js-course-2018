@@ -1,0 +1,89 @@
+body {
+  color: #777;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+header, footer, .wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.s-between {
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 0;
+  margin-top: 55px;
+}
+
+.top, .top a {
+  color: #FFF;
+}
+
+.top {
+  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)),url("./images/Background.jpg") center no-repeat ;
+  background-size: cover;
+}
+
+.menu li {
+  text-transform: uppercase;
+  margin: 65px 25px 0;
+}
+
+.slogan {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-top: 175px;
+}
+
+.h-line {
+  border-top: 2px solid #35C2F8;
+  width: 111px;
+  margin: 50px auto;
+}
+
+.explanation {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 140px;
+}
+
+.h-service {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 40px
+}
+
+.services li {
+  width: 300px;
+  text-align: center;
+}
+
+.services h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #222;
+}
