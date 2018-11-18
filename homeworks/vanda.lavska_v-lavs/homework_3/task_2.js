@@ -5,28 +5,25 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
+function recursion(n) {
+    if (n === 1) {
+        return 1;
+    }
+    if (n > 1 && n < 2) {
+        return n;
+    }
+    return recursion(n / 2);
+}
+
 rl.question('Enter min number ', (min) => {
     rl.question('Enter max number ', (max) => {
-        function createArray() {
-            function recursion(n) {
-                if (n === 1) {
-                    return 1;
-                }
-                if (n > 1 && n < 2) {
-                    return n;
-                }
-                return recursion(n / 2);
-            }
-            const myArray = [];
-            for (let i = `${min}`; i <= `${max}`; i++) {
-                if (recursion(i) === 1) {
-                    myArray.push(i);
-                    console.log(myArray);
-                }
+        const myArray = [];
+        for (let i = min; i <= max; i++) {
+            if (recursion(i) === 1) {
+                myArray.push(i);
+                console.log(myArray);
             }
         }
-        createArray(`${min}`, `${max}`);
-
         rl.close();
     });
 });
