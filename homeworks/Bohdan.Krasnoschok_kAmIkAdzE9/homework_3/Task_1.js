@@ -10,8 +10,7 @@ function returnArray(max, step) {
 }
 
 function returnSquareArray(arr) {
-    arr = arr.map(returnSquare(a));
-    return arr;
+    return arr.map(returnSquare);
 }
 
 function returnSum(arr) {
@@ -25,4 +24,4 @@ console.log(returnSquare(53));
 console.log(returnArray(50, 5));
 console.log(returnArray(32, 4));
 console.log(returnSquareArray(returnArray(32, 4)));
-console.log(Sum(returnSquareArray(returnArray(32, 4))));
+console.log(returnSum(returnSquareArray(returnArray(32, 4))));
