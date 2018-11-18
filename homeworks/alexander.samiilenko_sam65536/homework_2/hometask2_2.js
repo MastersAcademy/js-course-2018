@@ -8,32 +8,20 @@
 
  */
 
-Main = (function () {
-    function Main() {
+function reverse (number) {
+    let digits = number.toString().split('');
+    for (let i = 0; i < ((digits.length - 1)/2); i++) {
+        for (let j = digits.length - 1; j > i; j--) {
+            let tmp = digits[i];
+            digits[i++] = digits[j];
+            digits[j] = tmp;
+        }
     }
+    let str = digits.join('');
+    let result = parseInt(str);
+    return result;
+}
 
-    Main.reverse = function (number) {
-        if (number === 0) return 0;
-        let digits = (String(number).toString()).split('');
-        for (let i = 0; i < ((digits.length - 1) / 2 | 0); i++) {
-            for (let j = digits.length - 1; j > i + 1; j--) {
-                let tmp = digits[i];
-                digits[i++] = digits[j];
-                digits[j] = tmp;
-            }
-        }
-        let str = digits.join('');
-        let result = parseInt(str);
-        return result;
-    };
-    Main.main = function () {
-        for (let i = 500; i <= 1000; i++) {
-            if (i === Main.reverse(i))
-                console.info(i);
-        }
-    };
-    return Main;
-}());
-
-Main['__class'] = 'Main';
-Main.main(null);
+for (let i = 500; i <= 1000; i++) {
+    if (i === reverse(i)) console.info(i);
+}
