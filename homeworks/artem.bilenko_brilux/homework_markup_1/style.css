@@ -62,7 +62,6 @@ a {
 
 .title {
   text-align: center;
-  /*width: 700px;*/
 }
 
 .dream-section-title {
@@ -111,4 +110,8 @@ a {
 
 .services-item h3, .services-item p {
   padding-top: 15px;
+}
+
+.services-item h3 {
+  text-transform: uppercase;
 }
