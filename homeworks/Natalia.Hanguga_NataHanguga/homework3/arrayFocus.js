@@ -9,12 +9,20 @@ function createArray() {
         console.log(n);
     }
     console.log(arr);
+    return arr
+}
     //task 1.3
-    arr1 = arr.map(el => return el*el);
+function arrElemSquare(){
+    const arr = createArray();
+    arr1 = .map(el => return el*el);
     console.log(arr1);
+    return arr1;
+}
     //task1.4
+function sumArray(){
+    const arr1 = arrElemSquare();
     const sum = arr1.reduce((a, b) => return a + b);
     console.log(sum);
 }
 
-createArray();
+sumArray();
