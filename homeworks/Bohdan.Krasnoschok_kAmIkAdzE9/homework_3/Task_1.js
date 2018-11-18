@@ -16,7 +16,7 @@ function returnSquareArray(arr) {
 
 function returnSum(arr) {
     const sum = (accumulator, currentValue) => accumulator + currentValue;
-    return arr.reduce(reducer));
+    return arr.reduce(sum);
 }
 
 console.log(returnSquare(5));
