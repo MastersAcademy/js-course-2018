@@ -1,10 +1,10 @@
-var a = '####';
-    var b = ' '; 
+let a = '####';
+    let b = ' '; 
    
-    for(var i = 15; 1 < i; i--){ 
+    for(let i = 15; 1 < i; i--){ 
     }
    
-    for(var j = 1; j < 16; j++ ) {
+    for(let j = 1; j < 16; j++ ) {
 
         }
     
