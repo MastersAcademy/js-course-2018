@@ -1,17 +1,19 @@
 const readline = require('readline');
+
 const r1 = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
+
 const arr = [];
 let arr1 = [];
-let n = 0;
+let iter = 0;
 r1.question('Max element in array: ', (max) => {
     r1.question('Step of array: ', (step) => {
-        while (n < Number(max)) {
-            arr.push(n);
-            n += Number(step);
-            console.log(n);
+        while (iter < Number(max)) {
+            arr.push(iter);
+            iter += Number(step);
+            console.log(iter);
         }
         console.log(arr);
         arr1 = arr.map(el => el ** 2);
