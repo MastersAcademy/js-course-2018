@@ -22,14 +22,14 @@ console.log(createArrayWithStep(32, 4));
 // task2.1
 
 const someArray = [0, 4, 8, 12, 16, 20, 24, 28, 32];
-function square(array) {
+function pow(array) {
     const results = [];
     for (let i = 0; i < array.length; i++) {
         results.push(array[i] ** 2);
     }
     return results;
 }
-console.log(square(someArray));
+console.log(pow(someArray));
 
 // task2.2
 
