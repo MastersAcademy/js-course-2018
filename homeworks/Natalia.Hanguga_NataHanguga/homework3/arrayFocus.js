@@ -1,3 +1,4 @@
+//task1.2
 function createArray() {
     const arr = [];
     let arr1 = [];
@@ -8,9 +9,11 @@ function createArray() {
         console.log(n);
     }
     console.log(arr);
+    //task 1.3
     arr1 = arr.map(el => return el*el);
     console.log(arr1);
-    const sum = arr1.reduce((a, b) => a + b);
+    //task1.4
+    const sum = arr1.reduce((a, b) => return a + b);
     console.log(sum);
 }
 
