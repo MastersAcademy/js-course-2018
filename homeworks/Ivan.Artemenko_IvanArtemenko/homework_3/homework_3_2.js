@@ -1,8 +1,13 @@
+function pow(n) {
+    if (n === 2) {
+        return true;
+    } if (n % 2 === 0) {
+        return pow(n / 2);
+    }
+    return false;
+}
 for (let i = 10; i <= 600; i++) {
-    for (let j = 0; j <= 20; j++) {
-        const rezOne = (2 ** j);
-        if (rezOne === i) {
-            console.log(rezOne);
-        }
+    if (pow(i)) {
+        console.log(i);
     }
 }
