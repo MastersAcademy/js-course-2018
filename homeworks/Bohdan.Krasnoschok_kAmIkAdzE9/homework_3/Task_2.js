@@ -1,12 +1,12 @@
 function checkMultiplicity(num) {
-    num /= 2;
-    if(num < 2) {
+    const res = num / 2;
+    if (res < 2) {
         return false;
     }
-    if(num === 2) {
+    if (res === 2) {
         return true;
     }
-    return checkMultiplicity(num);
+    return checkMultiplicity(res);
 }
 
 for (let i = 10; i < 600; i++) {
