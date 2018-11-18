@@ -21,7 +21,7 @@ function arrElemSquare(){
     //task1.4
 function sumArray(){
     const arr1 = arrElemSquare();
-    const sum = arr1.reduce((a, b) => return a + b);
+    const sum = arr1.reduce((a, b) => a + b);
     return sum;
 }
 
