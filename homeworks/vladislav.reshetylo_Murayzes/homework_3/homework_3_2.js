@@ -1,11 +1,8 @@
 function recursion(number) {
-    if (number === 2) {
-        return true;
-    }
-    if (number > 2) {
+    if (number > 1) {
         return recursion(number / 2);
     }
-    return false;
+    return number === 1;
 }
 const minValue = 10;
 const maxValue = 600;
