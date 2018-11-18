@@ -4,7 +4,6 @@ function createArray() {
     const step = 4;
     for (let n = 0; n < max; n += step) {
         arr.push(n);
-        console.log(n);
     }
     console.log(arr);
     return arr;
