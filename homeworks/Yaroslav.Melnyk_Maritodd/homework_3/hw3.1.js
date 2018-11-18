@@ -5,20 +5,20 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-function func(i) {
-    if (i === 1) {
+function func(x) {
+    if (x === 1) {
         return true;
     }
-    if (i === 0) {
+    if (x === 0) {
         return false;
     }
-    return func(i / 2);
+    return func(x / 2);
 }
 
 rl.question('Enter numbers from 10 to 1000: ', (num) => {
-    for (let i = 1; i <= num; i++) {
-        if (func(i) === true) {
-            console.log(i);
+    for (let x = 1; x <= num; x++) {
+        if (func(x) === true) {
+            console.log(x);
         }
     }
     rl.close();
