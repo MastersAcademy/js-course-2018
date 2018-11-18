@@ -71,7 +71,7 @@ header {
 }
 
 .nav__link:hover {
-  color: #FF0
+  color: rgb(255, 0, 0);
 }
 
 /* title */
@@ -140,6 +140,10 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   color: #222;
+}
+
+.servises-content__title__link:hover {
+  color: #888;
 }
 
 .servises-content__title {
