@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 
  /*task1.1*/
-function Square (num) {
+function Square(num) {
       return num * num;
   }
   
@@ -17,17 +17,16 @@ function Square (num) {
   });
 
   /*task 1.2*/
-function CreateArray (end, step) {
-  var array = [0];
-  end = Number(end);
-  step = Number(step);
+function CreateArray(end, step) {
+  const array = [0];
+  const newEnd = Number(end);
+  const newStep = Number(step);
   let temp = 0;
-  for (let i = 1; (temp + step) <= end; i++) {
-    array[i] = temp + step;
-    temp += step;
+  for (let i = 1; (temp + newStep) <= newEnd; i++) {
+    array[i] = temp + newStep;
+    temp += newStep;
   }
-  for (let i = 0; i < array.length; i++)
-    console.log(array[i]);
+  for (let i = 0; i < array.length; i++) { console.log(array[i]); }
   return array;
 }
 rl.on('line', (input) => {
@@ -35,23 +34,24 @@ rl.on('line', (input) => {
   const end = temp[0];
   const step = temp[1];
 rl.close();
-var arr = CreateArray(end, step);
-console.log("\n");
-Square_Array(arr);
+const arr = CreateArray(end, step);
+console.log('\n');
+SquareArray(arr);
 });
 
 /*task 1.3*/
-function Square_Array(array) {
+function SquareArray(array) {
   for (let i = 0; i < array.length; i++) {
-    array[i] = Square(array[i]);
+    const temp = Square(array[i]);
+    array[i] = temp;
     console.log(array[i]);
   }
-  console.log("\n");
-  Sum_of_Elems(array);
+  console.log('\n');
+  SumOfElems(array);
 }
 
 /*task 1.4*/
-function Sum_of_Elems(array) {
+function SumOfElems(array) {
   let sum = 0;
   for (let i = 0; i < array.length; i++) {
     sum += array[i];
