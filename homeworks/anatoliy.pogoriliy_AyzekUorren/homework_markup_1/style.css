@@ -17,7 +17,6 @@
 .header-content, .header-nav {
   color: #FFF;
   position: relative;
-  z-index: 1;
   text-align: center;
 }
 
