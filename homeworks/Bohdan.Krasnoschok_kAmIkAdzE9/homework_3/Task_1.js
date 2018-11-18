@@ -1,8 +1,8 @@
-function Pow (a) {
+function Pow(a) {
     return a * a;
 }
 
-function ReturnArray (max, step) {
+function ReturnArray(max, step) {
     const arr = [];
     let a = 0;
     for (let i = 0; i <= max; i++) {
@@ -11,11 +11,12 @@ function ReturnArray (max, step) {
     }
 }
 
-function PowArr (arr) {
+function PowArr(arr) {
+    let arr2 = [];
     for (let i = 0; i < arr.length; i++) {
-        arr[i] =Poww(arr[i]);
+        arr2[i] = Pow(arr[i]);
     }
-    return arr;
+    return arr2	;
 }
 
 function Sum (arr) {
