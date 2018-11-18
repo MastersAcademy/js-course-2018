@@ -5,12 +5,8 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 const initialArray = [];
-const sortedArray = [];
 function isInt(data) {
-    if (typeof (data) === 'number' && data % 1 === 0) {
-        return true;
-    }
-    return false;
+    return (typeof (data) === 'number' && data % 1 === 0);
 }
 function isDegreeOfTwo(num) {
     if (num === 2) {
@@ -21,12 +17,8 @@ function isDegreeOfTwo(num) {
     }
     return false;
 }
-function arraySorting(array) {
-    array.forEach((el) => {
-        if (isDegreeOfTwo(el)) {
-            sortedArray.push(el);
-        }
-    });
+function arrayFiltering(array) {
+    return array.filter(el => isDegreeOfTwo(el));
 }
 function arrayFilter() {
     rl.question('Enter the range of array; (Example: start, end); ', (values) => {
@@ -37,8 +29,8 @@ function arrayFilter() {
             for (let i = parsedStartValue; i <= parsedEndValue; i++) {
                 initialArray.push(i);
             }
-            arraySorting(initialArray);
-            console.log(sortedArray);
+            const result = arrayFiltering(initialArray);
+            console.log(result);
             process.exit();
         } else {
             console.log('Please enter only intengers with coma!');

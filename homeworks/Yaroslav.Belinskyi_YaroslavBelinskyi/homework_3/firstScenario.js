@@ -5,7 +5,6 @@ function square(num) {
 console.log(square(5));
 console.log(square(15));
 console.log(square(53));
-
 // 1.2 List of numbers with certain step
 function createList(listLength, step) {
     const listOfNumbers = [];
@@ -16,17 +15,11 @@ function createList(listLength, step) {
 }
 console.log(createList(50, 5));
 console.log(createList(32, 4));
-
 // 1.3 Square of all numbers in a list
 function squareList(array) {
-    const squaredListOfNumbers = [];
-    array.forEach((el) => {
-        squaredListOfNumbers.push(square(el));
-    });
-    return squaredListOfNumbers;
+    array.map(el => square(el));
 }
 console.log(squareList(createList(32, 4)));
-
 // 1.4 Sum of all numbers in squared list
 function sumOfSquaredList(squaredArray) {
     return squaredArray.reduce(
