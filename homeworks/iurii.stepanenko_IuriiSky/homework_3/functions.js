@@ -27,7 +27,6 @@ console.log(degree);
 
 // Task 1.4
 function arraySum(array) {
-    // eslint-disable-next-line func-names
     const total = array.reduce((a, b) => a + b);
     return total;
 }
