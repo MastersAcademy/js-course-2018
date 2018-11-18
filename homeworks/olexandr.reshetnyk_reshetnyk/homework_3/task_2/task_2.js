@@ -2,39 +2,42 @@ const readline = require('readline');
 
 const rl = readline.createInterface(process.stdin, process.stdout);
 
-// знаю,что не красиво. не знаю, как иначе.
-function printDegreesOf2(rangeStart, rangeEnd) {
-    (function nextDegreesOf2(n) {
-        if (typeof n === 'undefined') {
-            nextDegreesOf2(1);
+// main function
+function printNumbersDegreesOf2(rangeStart, rangeEnd) {
+    // recursion
+    function isDegreeOf2(n) {
+        if (n === 1) {
+            return true;
         }
-        if (n * 2 <= rangeEnd) {
-            nextDegreesOf2(n * 2);
+        if (n % 2 === 0) {
+            return isDegreeOf2(n / 2);
         }
-        if (n >= rangeStart) {
-            console.log(n);
+        return false;
+    }
+
+    // enumeration
+    for (let i = rangeStart; i <= rangeEnd; i++) {
+        if (isDegreeOf2(i)) {
+            console.log(i);
         }
-    }());
+    }
 }
 
-// проверка на целое число без знака
-function isNumeric(n) {
-    return /\d+/i.test(n);
-}
-
-// валидация
+// validation
 function valid(start, end) {
-    return isNumeric(start) && isNumeric(end) && start <= end && start >= 0;
+    return !Number.isNaN(start) && !Number.isNaN(end) && start <= end && start >= 0;
 }
 
-// точка входа
-rl.question('Type a start number: ', (start) => {
+// an entry point
+rl.question('Type a start number: ', (startStr) => {
     rl.setPrompt('Type an end number: ');
     rl.prompt();
-    rl.on('line', (end) => {
+    rl.on('line', (endStr) => {
         rl.close();
+        const start = parseInt(startStr, 10);
+        const end = parseInt(endStr, 10);
         if (valid(start, end)) {
-            printDegreesOf2(start, end);
+            printNumbersDegreesOf2(start, end);
         } else {
             console.log('Bad arguments!');
         }
