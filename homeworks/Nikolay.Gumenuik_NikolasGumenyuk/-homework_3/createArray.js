@@ -5,7 +5,7 @@ const r1 = readline.createInterface({
     output: process.stdout,
 });
 const arr = [];
-const arr1 = [];
+let arr1 = [];
 let n = 0;
 r1.question('Max element in array: ', (max) => {
     r1.question('Step of array: ', (step) => {
