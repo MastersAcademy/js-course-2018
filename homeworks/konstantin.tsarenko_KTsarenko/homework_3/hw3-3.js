@@ -1,23 +1,21 @@
 // task 1.1
 
-let numb1 = 5;
-let numb2 = 15;
-let numb3 = 53;
-numb1 **= 2;
-numb2 **= 2;
-numb3 **= 2;
-const resArr = [numb1, numb2, numb3];
+const numb1 = 5;
+const numb2 = 15;
+const numb3 = 53;
+const resNumb1 = numb1 * numb1;
+const resNumb2 = numb2 * numb2;
+const resNumb3 = numb3 * numb3;
+const resArr = [resNumb1, resNumb2, resNumb3];
 console.log(`Task 1.1: ${resArr}`);
 
 // task 1.2
 
 function arrCreate(minValue, maxValue, stepValue) {
-    let i = minValue;
     const resValue = [];
-    for (i; i <= maxValue; i += stepValue) {
+    for (let i = minValue; i <= maxValue; i += stepValue) {
         resValue.push(i);
     }
-    // console.log(`Task 1.2: ${resValue}`);
     return resValue;
 }
 
@@ -30,9 +28,9 @@ resCreate(arrCreate(0, 32, 4));
 // task 1.3
 
 function sqr(array) {
-    const arrValue = array;
+    let arrValue = array;
     for (let i = 0; i < arrValue.length; i++) {
-        arrValue[i] **= 2;
+        arrValue = array.map(() => array[i] * array[i]);
     }
     return arrValue;
 }
@@ -46,11 +44,11 @@ resSqr(sqr(arrCreate(0, 32, 4)));
 // task 1.4
 
 function arraySum(array) {
-    let sum = 0;
+    let sumval = 0;
     for (let i = 0; i < array.length; i++) {
-        sum += parseInt(array[i], 10);
+        sumval = array.reduce((sum, current) => sum + current);
     }
-    console.log(`Task 1.4: ${sum}`);
+    console.log(`Task 1.4: ${sumval}`);
 }
 
 arraySum(sqr(arrCreate(0, 32, 4)));
@@ -64,8 +62,8 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-rl.question('Ведите минимальное значение: ', (minValue) => {
-    rl.question('Ведите максимальное значение: ', (maxValue) => {
+rl.question('Enter the minimum value: ', (minValue) => {
+    rl.question('Enter the maximum value: ', (maxValue) => {
         rl.close();
         const arrValue = [];
         const resValue = [];
@@ -75,10 +73,10 @@ rl.question('Ведите минимальное значение: ', (minValue)
         for (let i = 0; i < arrValue.length; i++) {
             const check = (x) => {
                 if (x === 1) {
-                    return 1;
+                    return true;
                 }
                 if (x > 1 && x < 2) {
-                    return 0;
+                    return false;
                 }
                 return check(x / 2);
             };
