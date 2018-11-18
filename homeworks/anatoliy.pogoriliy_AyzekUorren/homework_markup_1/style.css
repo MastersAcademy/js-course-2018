@@ -9,7 +9,7 @@
 }
 
 .header {
-  background-image: url("images/Background.png");
+  background-image: url("images/background.png");
   height: 645px;
   overflow: auto;
 }
@@ -19,8 +19,6 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .header-logo {
@@ -35,6 +33,9 @@
 .header-nav {
   margin-top: 67px;
   float: right;
+  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header-nav-link {
@@ -43,12 +44,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
-  height: 10px;
   color: #FFF;
-}
-
-.header-logo+.header-nav {
-  margin-right: 50px;
 }
 
 .header-nav-link:hover {
