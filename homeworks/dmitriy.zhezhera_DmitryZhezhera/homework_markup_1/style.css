@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
+
+@font-face {
+  font-family: Bello;
+  src: url("./fonts/Bello-Script_6557.ttf");
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/*dreams-first*/
+
+.dreams-first {
+  background: url("./img/bg.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 645px;
+  color: #FFF;
+}
+
+.dreams-first__heading {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-top: 37px;
+}
+
+.dreams-logo {
+  font-family: "Bello", sans-serif;
+  font-size: 36px;
+  line-height: 18.88px;
+  margin: 0;
+}
+
+.dreams-navigation__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dreams-navigation__list-link {
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 10px 25px;
+}
+
+.dreams-navigation__list-link:hover {
+  background: #808080;
+}
+
+.dreams-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 63px;
+  text-align: center;
+  padding: 0 190px;
+  margin-top: 143px;
+  text-transform: uppercase;
+}
+
+.dreams-title:after {
+  content: "";
+  display: block;
+  width: 110px;
+  margin: 39px auto 48px;
+  border-bottom: 1px solid #35B9EB;
+}
+
+.dreams-first__about {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 270px;
+}
+
+/*dreams-second*/
+
+.dreams-second {
+  min-height: 535px;
+}
+
+.dreams-title--second {
+  margin-top: 80px;
+  color: #222;
+  font-size: 40px;
+}
+
+.dreams-services {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 66px;
+}
+
+.dreams-services__item {
+  text-align: center;
+  min-width: 200px;
+  flex-basis: 280px;
+}
+
+.dreams-services__item-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  margin-top: 33px;
+  text-transform: uppercase;
+}
+
+.dreams-services__item-text {
+  font-family: "Noto Sans", sans-serif;
+  color: #888;
+  font-size: 14px;
+  line-height: 22px;
+}
