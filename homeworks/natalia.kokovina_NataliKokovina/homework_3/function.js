@@ -2,12 +2,12 @@
 
 // 1.1 Exponentiation
 
-function Exponentiation(testNumber) {
-    console.log(testNumber ** 2);
+function exponentiation(testNumber) {
+    console.log(testNumber * testNumber);
 }
-Exponentiation(5);
-Exponentiation(15);
-Exponentiation(53);
+exponentiation(5);
+exponentiation(15);
+exponentiation(53);
 
 // 1.2 Make an array
 
@@ -24,19 +24,19 @@ array(32, 4);
 
 //  1.3 Exponentiation elements of arr
 
-function Expon(numSet) {
+function expon(numSet) {
     const arrExp = [];
     for (let i = 0; i < numSet.length; i++) {
-        arrExp.push(numSet[i] ** 2);
+        arrExp.push(numSet[i] * numSet[i]);
     }
     console.log(arrExp);
     return (arrExp);
 }
-Expon(array(32, 4));
+expon(array(32, 4));
 
 // 1.4 Sum elements
 
-function Sum(arrForSumm) {
+function sum(arrForSumm) {
     let sumArr = 0;
     for (let i = 0; i < arrForSumm.length; i++) {
         sumArr += arrForSumm[i];
@@ -44,4 +44,4 @@ function Sum(arrForSumm) {
     console.log(sumArr);
     return (sumArr);
 }
-Sum(Expon(array(32, 4)));
+sum(expon(array(32, 4)));

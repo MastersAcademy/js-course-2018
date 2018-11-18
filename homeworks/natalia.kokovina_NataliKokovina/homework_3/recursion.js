@@ -1,7 +1,9 @@
 function recursion(fA, sA) {
     if (fA <= sA) {
+        let result = 1;
         for (let i = 0; i < sA; i++) {
-            if (2 ** (i + 1) === fA) {
+            result *= 2;
+            if (result === fA) {
                 console.log(fA);
             }
         }
