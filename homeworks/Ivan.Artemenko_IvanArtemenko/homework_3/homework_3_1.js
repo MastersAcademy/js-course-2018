@@ -1,43 +1,25 @@
-const arr = [5, 15, 53];
-console.log('Task 3.1.1');
-arr.forEach((item) => {
-    console.log(`${item}^2 = ${item * item}`);
-});
-
-function masuv(one, two) {
-    const massuv = [];
-    for (let i = 0; i <= one; i += two) {
-        massuv.push(i);
-    }
-    return massuv;
+function square(num) {
+    return num * num;
 }
-console.log('Task 3.1.2 \nFrom 0 to 50 in step 5');
-console.log(masuv(50, 5));
-console.log('From 0 to 32 in step 4');
-console.log(masuv(32, 4));
-
-function Stage(one, two) {
-    let stepin = [];
-    const massuv = [];
-    for (let i = 0; i <= one; i += two) {
-        massuv.push(i);
-        stepin = massuv.map(x => x * x);
+let numbs = [5, 15, 53];
+numbs.forEach(num => console.log(`${num}^2 = ${square(num)}`));
+// Task 1.2
+function mainFunction(numeric, step) {
+    const result = [];
+    let num = 0;
+    for (let i = 0; num <= numeric; i++) {
+        result[i] = num;
+        num += step;
     }
-    return stepin;
+    return result;
 }
-console.log('Task 3.1.3 \nElevation to degree');
-console.log(Stage(32, 4));
-
-function Cycle(one, two) {
-    let suma = [];
-    let stepin = [];
-    const massuv = [];
-    for (let i = 0; i <= one; i += two) {
-        massuv.push(i);
-        stepin = massuv.map(x => x * x);
-        suma = stepin.reduce((summ, nextNumber) => summ + nextNumber);
-    }
-    return suma;
-}
-console.log('Task 3.1.4 \nThe amount of the cycle');
-console.log(Cycle(32, 4));
+console.log(mainFunction(50, 5));
+console.log(mainFunction(32, 4));
+// Task 1.3
+numbs = mainFunction(32, 4);
+const squareNumbs = numbs.map(square);
+console.log(squareNumbs);
+// Task 1.4
+let sum = 0;
+squareNumbs.forEach((num) => { sum += num; });
+console.log(sum);
