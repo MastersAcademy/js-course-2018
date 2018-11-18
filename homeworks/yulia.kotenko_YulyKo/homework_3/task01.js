@@ -10,6 +10,8 @@ function createArr() {
     for (let i = 0; i <= max; i += step) {
         arr.push(i);
     }
+    const newArr = arr.map(value => value * value);
+    console.log(`${arr}\n${newArr}`);
     return arr;
 }
-console.log(createArr());
+createArr();
