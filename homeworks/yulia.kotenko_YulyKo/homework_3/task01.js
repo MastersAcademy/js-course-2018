@@ -11,7 +11,8 @@ function createArr() {
         arr.push(i);
     }
     const newArr = arr.map(value => value * value);
-    console.log(`${arr}\n${newArr}`);
+    const sum = newArr.reduce((i, j) => i + j);
+    console.log(`${arr}\n${newArr}\n${sum}`);
     return arr;
 }
 createArr();
