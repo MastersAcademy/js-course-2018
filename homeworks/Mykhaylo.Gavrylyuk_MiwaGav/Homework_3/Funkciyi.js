@@ -1,8 +1,10 @@
 function kvadrat(x, y, z) {
-    console.log(`1) ${x}^2 = ${x * x}`);
-    console.log(`2) ${y}^2 = ${y * y}`);
-    console.log(`3) ${z}^2 = ${z * z}`);
+    return x * x;
 }
+console.log(kvadrat(5));
+console.log(kvadrat(15));
+console.log(kvadrat(53));
+
 kvadrat(5, 15, 53);
 function masiv(a, b) {
     const mas = [];
