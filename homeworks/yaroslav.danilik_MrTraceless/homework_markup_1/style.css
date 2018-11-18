@@ -1,149 +1,147 @@
 html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-    max-width: 1024px;
-    margin: auto;
-    font-family: 'Open Sans', sans-serif;
+  max-width: 1024px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
 }
 
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header-img {
-  
-    background-image: url(./img/Background.jpg);
-    background-repeat: no-repeat;
-    width: 1024px;
-    height: 473px;
-    position: relative;
-    
+  background-image: url("./img/Background.jpg");
+  background-repeat: no-repeat;
+  width: 1024px;
+  height: 473px;
+  position: relative;
 }
 
 .header-sh {
-    position: absolute;
-    width: 1024px;
-    height: 100%;
-    background-color: #000000;
-    opacity: 0.75;
+  position: absolute;
+  width: 1024px;
+  height: 100%;
+  background-color: #000;
+  opacity: .75;
 }
 
 .logo {
-    margin-left: 134px;
-    margin-top: 42px;
+  margin-left: 134px;
+  margin-top: 42px;
 }
 
 nav {
-    top: 42px;
-    margin-left: 500px;
-    position: relative;
+  top: 42px;
+  margin-left: 500px;
+  position: relative;
 }
 
 .wrapper a {
-    padding: 20px 10px;
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
+  padding: 20px 10px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .wrapper a:hover {
-    color: #ee2f1b;
+  color: #EE2F1B;
 }
 
 h1 {
-    position: relative;
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 60px;
-    text-transform: uppercase;
-    text-align: center;
-    top: 120px;
+  position: relative;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  top: 120px;
 }
 
 .line:after {
-    width: 80px;
-    height: 1px;
-    background-color: #35C2F8;
-    display: block;
-    content: "";
-    margin: 31px auto;
+  width: 80px;
+  height: 1px;
+  background-color: #35C2F8;
+  display: block;
+  content: "";
+  margin: 31px auto;
 }
 
 .p-info {
-    color: #cccccc;
-    font-family: "Noto Sans";
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: -0.5px;
-    position: relative;
-    opacity: 0.8;
-    text-align: center;
-    top: 120px;
+  color: #CCC;
+  font-family: "Noto Sans";
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -.5px;
+  position: relative;
+  opacity: .8;
+  text-align: center;
+  top: 120px;
 }
 
 h2 {
-    color: #222222;
-    font-family: Montserrat;
-    font-size: 27px;
-    font-weight: 700;
-    line-height: 75px;
-    text-transform: uppercase;
-    letter-spacing: -0.5px;
-    margin-left: 405px;
-    margin-top: 40px;
+  color: #222;
+  font-family: Montserrat;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -.5px;
+  margin-left: 405px;
+  margin-top: 40px;
 }
 
 .liner:after {
-    width: 111px;
-    height: 2px;
-    background-color: #35C2F8;
-    display: block;
-    content: "";
-    margin: 31px;
-    margin-left: 50px;
+  width: 80px;
+  height: 1px;
+  background-color: #35C2F8;
+  display: block;
+  content: "";
+  margin: 31px;
+  margin-left: 70px;
 }
 
 .container {
-    display: flex;
-    flex-basis: 33%;
-    justify-content: space-around;
-
+  display: flex;
+  flex-basis: 33%;
+  justify-content: space-around;
 }
 
 .core-block {
-    text-align: center;
+  text-align: center;
 }
 
 
 h3 {
-    color: #222222;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 75px;
-    text-transform: uppercase;
-    letter-spacing: -0.4px;
-    text-align: center;
-    margin-top: -10px;
+  color: #222;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -.4px;
+  text-align: center;
+  margin-top: -10px;
 }
 
 .core-p {
-    color: #888888;
-    font-family: "Noto Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;  
-    letter-spacing: -0.35px;
-    margin-top: -20px;
-    margin-bottom: 20px;
-    text-align: center;
+  color: #888;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -.35px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
