@@ -1,0 +1,94 @@
+body {
+  background-color: #FFF;
+  font-family: "Open Sans", "sans-serif";
+}
+
+.first_block {
+  background-image: url("images/2-layers.jpg");
+  width: 1024px;
+  margin: auto;
+  background-size: cover;
+  height: 473px;
+}
+
+.second_block {
+  width: 1024px;
+  margin: auto;
+}
+
+.third_block {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fourth_block {
+  width: 25%;
+  text-align: center;
+}
+
+.logo {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.text1_block {
+  padding-top: 120px;
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text2_block {
+  padding-top: 20px;
+  text-align: center;
+  color: #CCC;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 2;
+}
+
+.text3_block {
+  padding-top: 50px;
+  text-align: center;
+  color: #222;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text4_block {
+  text-align: center;
+  color: #222;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text5_block {
+  text-align: center;
+  color: #888;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.link_style {
+  padding-right: 10px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation {
+  margin-top: -20px;
+  text-align: right;
+}
+
+.line {
+  text-align: center;
+}
