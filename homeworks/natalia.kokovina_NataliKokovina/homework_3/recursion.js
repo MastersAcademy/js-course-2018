@@ -1,15 +1,11 @@
-function recursion(fA, sA) {
-    if (fA <= sA) {
-        let result = 1;
-        for (let i = 0; i < sA; i++) {
-            result *= 2;
-            if (result === fA) {
-                console.log(fA);
-            }
-        }
-        return recursion((fA + 1), sA);
+
+function recursion(startNum) {
+    if (startNum > 2) {
+        return recursion(startNum / 2);
+    } if (startNum === 2) {
+        return (1);
     }
-    return (1);
+    return (0);
 }
 
 const readline = require('readline');
@@ -21,9 +17,15 @@ const rl = readline.Interface({
 
 rl.question('Please write first value ', (firstAnswer) => {
     rl.question('Please write second value ', (secondAnswer) => {
-        if (+firstAnswer > +secondAnswer || +firstAnswer <= 0) {
+        if (+firstAnswer > +secondAnswer || +firstAnswer <= 2) {
             console.log('N/A');
-        } else { recursion(+firstAnswer, +secondAnswer); }
+        } else {
+            for (let i = +firstAnswer; i < +secondAnswer; i++) {
+                if (recursion(i) === 1) {
+                    console.log(i);
+                }
+            }
+        }
         rl.close();
     });
 });
