@@ -1,5 +1,5 @@
 function degree(n) {
-    if (n > 1 || n === 0) {
+    if (n > 1) {
         return degree(n / 2);
     }
     return n === 1;
