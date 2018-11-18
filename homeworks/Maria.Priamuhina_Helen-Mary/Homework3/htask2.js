@@ -2,19 +2,19 @@ const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 
 function Recursion(num, d = 2) {
-    num = Number(num);
-    if((d == num) || (num == 1)) {
+    const newnum = Number(num);
+    if ((d === newnum) || (newnum === 1)) {
         console.log(num);
         return;
     }
-    if(d > num) {
+    if (d > num) {
         return;
     }
-    Recursion(num, d*2);
+    Recursion(num, d * 2);
 }
 
 rl.on('line', (input) => {
@@ -24,5 +24,5 @@ rl.on('line', (input) => {
     for (let i = start; i < end; i++) {
         Recursion(i);
     }
-rl.close();
+    rl.close();
 });
