@@ -14,7 +14,7 @@ function createArray() {
     //task 1.3
 function arrElemSquare(){
     const arr = createArray();
-    let arr1 = arr.map(el => return el*el);
+    let arr1 = arr.map(el => el*el);
     console.log(arr1);
     return arr1;
 }
