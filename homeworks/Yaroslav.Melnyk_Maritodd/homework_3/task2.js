@@ -9,7 +9,7 @@ function func(i) {
     if (i === 1) {
         return true;
     }
-    if (i === 0) {
+    if (i <= 1) {
         return false;
     }
     return func(i / 2);
