@@ -5,7 +5,7 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-function Recursion(num, d = 2) {
+function recursion(num, d = 2) {
     const newnum = Number(num);
     if ((d === newnum) || (newnum === 1)) {
         console.log(num);
@@ -14,7 +14,7 @@ function Recursion(num, d = 2) {
     if (d > num) {
         return;
     }
-    Recursion(num, d * 2);
+    recursion(num, d * 2);
 }
 
 rl.on('line', (input) => {
@@ -22,7 +22,7 @@ rl.on('line', (input) => {
     const start = temp[0];
     const end = temp[1];
     for (let i = start; i < end; i++) {
-        Recursion(i);
+        recursion(i);
     }
     rl.close();
 });

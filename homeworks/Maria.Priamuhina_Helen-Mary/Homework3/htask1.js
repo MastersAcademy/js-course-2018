@@ -5,25 +5,25 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-/* task1.1 */
-function Square(num) {
+// /* task1.1 */
+function square(num) {
     return num * num;
 }
 
 rl.on('line', (input) => {
     const num = input;
     rl.close();
-    console.log(Square(num));
+    console.log(square(num));
 });
 
 /* task 1.2 */
-function CreateArray(end, step) {
+function createArray(end, step) {
     const array = [0];
     const newEnd = Number(end);
     const newStep = Number(step);
     let temp = 0;
     for (let i = 1; (temp + newStep) <= newEnd; i += 1) {
-        array[i] = temp + newStep;
+        array.push(temp + newStep);
         temp += newStep;
     }
     for (let i = 0; i < array.length; i += 1) { console.log(array[i]); }
@@ -31,30 +31,25 @@ function CreateArray(end, step) {
 }
 
 /* task 1.4 */
-function SumOfElems(array) {
-    let sum = 0;
-    for (let i = 0; i < array.length; i += 1) {
-        sum += array[i];
-    }
-    console.log(sum);
+function sumOfElems(array) {
+    console.log('task 1.4');
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    console.log(array.reduce(reducer));
 }
 /* task 1.3 */
-function SquareArray(array) {
-    for (let i = 0; i < array.length; i += 1) {
-        const temp = Square(array[i]);
-        // eslint-disable-next-line no-param-reassign
-        array[i] = temp;
-        console.log(array[i]);
-    }
+function squareArray(array) {
+    console.log('task 1.3');
+    const temp = array.map(x => x * x);
+    console.log(temp);
     console.log('\n');
-    SumOfElems(array);
+    sumOfElems(array);
 }
 rl.on('line', (input) => {
     const temp = input.split(' ');
     const end = temp[0];
     const step = temp[1];
     rl.close();
-    const arr = CreateArray(end, step);
+    const arr = createArray(end, step);
     console.log('\n');
-    SquareArray(arr);
+    squareArray(arr);
 });
