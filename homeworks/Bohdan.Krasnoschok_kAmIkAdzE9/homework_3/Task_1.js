@@ -12,14 +12,14 @@ function ReturnArray(max, step) {
 }
 
 function PowArr(arr) {
-    let arr2 = [];
+    const arr2 = [];
     for (let i = 0; i < arr.length; i++) {
         arr2[i] = Pow(arr[i]);
     }
-    return arr2	;
+    return arr2;
 }
 
-function Sum (arr) {
+function Sum(arr) {
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];

@@ -2,7 +2,7 @@ function MyFunction(num) {
     if (num === 1) {
         return true;
     }
-    if( num === 0) {
+    if (num === 0) {
         return false;
     }
     return MyFunction(num / 2);
