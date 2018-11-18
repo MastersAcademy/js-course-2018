@@ -1,8 +1,6 @@
 function square(i) {
-    if (i === 0) return 1;
-    if (i === 2) return true;
     if (i % 2 === 0) return square(i / 2);
-    return false;
+    return i === 1;
 }
 
 function isPowTwo(n1, n2) {
@@ -13,10 +11,9 @@ function isPowTwo(n1, n2) {
     }
 }
 
-function check(n1, n2) {
-    return ((!Number.isNaN(n1) && n1 >= 0)
-    && (!Number.isNaN(n2) && n2 > 0));
-}
+const checkNum = function check(n1) {
+    return !Number.isNaN(n1) && n1 >= 0;
+};
 
 const readline = require('readline');
 
@@ -29,7 +26,7 @@ r1.question('Enter first number of range: ', (first) => {
     r1.question('Enter last number of range: ', (last) => {
         const n1 = parseInt(first, 10);
         const n2 = parseInt(last, 10);
-        if (check(first, last)) {
+        if (checkNum(n1) && checkNum(n2)) {
             isPowTwo(n1, n2);
             r1.close();
         } else {
