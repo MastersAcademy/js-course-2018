@@ -1,6 +1,6 @@
 function squareNum(...args) {
     for (let i = 0; i < args.length; i++) {
-       return args[i]*args[i];
+       return args[i] * args[i];
     }
 }
 const first = 5;
