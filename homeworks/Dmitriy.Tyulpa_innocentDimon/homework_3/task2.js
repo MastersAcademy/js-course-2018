@@ -22,8 +22,8 @@ const inputRange = readline.createInterface({
 
 inputRange.question('Введите диапазон чисел через пробел: ', (range) => {
     const rangeArray = range.split(' ');
-    const min = Number(rangeArray[0]);
-    const max = Number(rangeArray[1]);
+    const min = rangeArray[0];
+    const max = rangeArray[1];
     for (let i = min; i <= max; i++) {
         if (power(i) === true) {
             console.log(i);

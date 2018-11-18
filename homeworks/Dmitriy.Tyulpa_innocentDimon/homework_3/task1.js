@@ -10,7 +10,8 @@
  */
 
 function power(number) {
-    return number *= number;
+    const result = number * number;
+    return result;
 }
 
 const a = 5;
@@ -36,22 +37,22 @@ console.log('3)', c, ' ^ 2 = ', power(c));
  * [ 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
  */
 
-function createArray (maxValue, step) {
-    let resultArray = [];
+function createArray(maxValue, step) {
+    const resultArray = [];
     for (let i = 0; i <= maxValue; i += step) {
         resultArray.push(i);
     }
     return resultArray;
 }
 
-let maxValue;
-let step;
+// let maxValue;
+// let step;
 
 console.log();
 console.log('Задание 1.2');
 console.log('------------');
-console.log(createArray(maxValue = 50, step = 5));
-console.log(createArray(maxValue = 32, step = 4));
+console.log(createArray(50, 5));
+console.log(createArray(32, 4));
 
 /**
  * 1.3 Привести до квадрату всі значення елементів масиву.
@@ -61,7 +62,7 @@ console.log(createArray(maxValue = 32, step = 4));
  * [ 0, 16, 64, 144, 256, 400, 576, 784, 1024 ]
  */
 
-function createArrayPow (Array) {
+function createArrayPow(Array) {
     let resultArray = [];
     for (let i = 0; i < Array.length; i++) {
         resultArray = Array.map(elem => elem * elem);
@@ -72,7 +73,7 @@ function createArrayPow (Array) {
 console.log();
 console.log('Задание 1.3');
 console.log('------------');
-console.log(createArrayPow(createArray(maxValue = 32, step = 4)));
+console.log(createArrayPow(createArray(32, 4)));
 
 /**
  * 1.4 Знайти суму елементів масиву з попереднього завдання
@@ -80,10 +81,10 @@ console.log(createArrayPow(createArray(maxValue = 32, step = 4)));
  * Результат виконання: 3264
  */
 
-function sumArray (Array) {
+function sumArray(Array) {
     let resultSum = 0;
     for (let i = 0; i < Array.length; i++) {
-        resultSum = resultSum + Array[i];
+        resultSum += Array[i];
     }
     return resultSum;
 }
@@ -91,4 +92,4 @@ function sumArray (Array) {
 console.log();
 console.log('Задание 1.4');
 console.log('------------');
-console.log(sumArray(createArrayPow(createArray(maxValue = 32, step = 4))));
+console.log(sumArray(createArrayPow(createArray(32, 4))));
