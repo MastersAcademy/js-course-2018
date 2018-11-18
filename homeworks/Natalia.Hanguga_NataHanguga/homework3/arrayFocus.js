@@ -14,7 +14,7 @@ function createArray() {
     //task 1.3
 function arrElemSquare(){
     const arr = createArray();
-    arr1 = .map(el => return el*el);
+    let arr1 = arr.map(el => return el*el);
     console.log(arr1);
     return arr1;
 }
@@ -22,7 +22,7 @@ function arrElemSquare(){
 function sumArray(){
     const arr1 = arrElemSquare();
     const sum = arr1.reduce((a, b) => return a + b);
-    console.log(sum);
+    return sum;
 }
 
-sumArray();
+console.log(sumArray());
