@@ -5,18 +5,12 @@
 
 body {
   font-family: Open Sans, sans-serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
+  font-size: 14px;
+  background-color: #FFF;
 }
 
 .dream-section {
-  background: url("./images/Background.jpg") no-repeat;
+  background: url("./images/background.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -52,6 +46,7 @@ a {
   margin-right: 30px;
   text-transform: uppercase;
   display: flex;
+  text-decoration: none;
 }
 
 .menu a:hover {
@@ -104,10 +99,16 @@ a {
   text-align: center;
   padding-right: 15px;
   padding-left: 15px;
+  list-style: none;
 }
 
-.services-item h3 {
+.services-item h2 {
   text-transform: uppercase;
+  font-size: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.services-item p {
+  color: #777;
 }
