@@ -19,8 +19,7 @@ console.log(createArray(4, 32));
 
 // task 1.3
 function squareArray(newArray) {
-    const number = Number => Number * Number;
-    const sqrArray = newArray.map(number);
+    const sqrArray = newArray.map(square);
     return sqrArray;
 }
 console.log(squareArray(createArray(4, 32)));
