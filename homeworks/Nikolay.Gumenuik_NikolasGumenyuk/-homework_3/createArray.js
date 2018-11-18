@@ -14,7 +14,7 @@ r1.question('Max element in array: ', (max) => {
             console.log(n);
         }
         console.log(arr);
-        const arr1 = arr.map((el) => return el ** 2);
+        const arr1 = arr.map((el) => return (el ** 2));
         console.log(arr1);
         const sum = arr1.reduce((a, b) => return a + b);
         console.log(sum);
