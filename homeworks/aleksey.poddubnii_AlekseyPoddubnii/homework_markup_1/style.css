@@ -4,8 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
 }
 
 h1,h2,h3,p,ul {
@@ -19,13 +18,13 @@ h1,h2,h3,p,ul {
   background-color: #35C2F8;
   display: block;
   content: "";
-  margin: 50px auto 0;
+  margin: 40px auto 0;
 }
 
 /* Banner and menu block */
 
 .banner-block {
-  background-image: url("images/banner.png");
+  background-image: url("images/banner.jpg");
   height: 100vh;
   background-color: rgba(0,0,0,.7);
   background-blend-mode: darken;
@@ -53,9 +52,10 @@ h1,h2,h3,p,ul {
 }
 
 .menu__link {
+  font-family: "Montserrat";
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 14px;
+  font-weight: 600;
   color: #FFF;
   padding: 10px 25px;
   border-radius: 9px;
@@ -69,13 +69,15 @@ h1,h2,h3,p,ul {
 /* Banner triggers */
 
 .banner-triggers {
-  padding-top: 145px;
+  padding-top: 170px;
 }
 
 .trigger-big {
-  text-transform: uppercase;
+  font-family: "Montserrat";
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
   color: #FFF;
   width: 550px;
   text-align: center;
@@ -88,9 +90,10 @@ h1,h2,h3,p,ul {
   margin: auto;
   padding-top: 54px;
   text-align: center;
+  font-family: "Noto Sans";
   font-size: 20px;
   font-weight: 100;
-  line-height: 30px;
+  line-height: 35px;
   letter-spacing: -.5px;
 }
 
@@ -116,10 +119,12 @@ h1,h2,h3,p,ul {
 }
 
 .content-header__title {
-  text-align: center;
-  text-transform: uppercase;
+  font-family: Montserrat;
   font-size: 40px;
   font-weight: 700;
+  letter-spacing: -2px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .block-services {
@@ -134,14 +139,18 @@ h1,h2,h3,p,ul {
 
 .box-service__title {
   font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 600;
+  letter-spacing: -.4px;
+  color: #222;
   margin: 39px 0 18px;
   text-transform: uppercase;
 }
 
 .box-service__text {
-  color: #888;
-  margin: 0 18px;
-  font-size: 14px;
+  font-family: "Noto Sans";
   line-height: 22px;
   letter-spacing: -.35px;
+  color: #888;
+  margin: 0 18px;
 }
