@@ -1,36 +1,28 @@
-function Pow(a) {
+function returnSquare(a) {
     return a * a;
 }
 
-function ReturnArray(max, step) {
+function returnArray(max, step) {
     const arr = [];
-    let a = 0;
-    for (let i = 0; i <= max; i++) {
-        arr[i] = a;
-        a += step;
+    for (let i = 0; i <= max; i += step) {
+        arr[i].push(i);
     }
 }
 
-function PowArr(arr) {
-    const arr2 = [];
-    for (let i = 0; i < arr.length; i++) {
-        arr2[i] = Pow(arr[i]);
-    }
-    return arr2;
+function returnSquareArray(arr) {
+    arr = arr.map(returnSquare(a));
+    return arr;
 }
 
-function Sum(arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
-    }
-    return sum;
+function returnSum(arr) {
+    const sum = (accumulator, currentValue) => accumulator + currentValue;
+    return arr.reduce(reducer));
 }
 
-console.log(Pow(5));
-console.log(Pow(15));
-console.log(Pow(53));
-console.log(ReturnArray(50, 5));
-console.log(ReturnArray(32, 4));
-console.log(PowArr(ReturnArray(32, 4)));
-console.log(Sum(PowArr(ReturnArray(32, 4))));
+console.log(returnSquare(5));
+console.log(returnSquare(15));
+console.log(returnSquare(53));
+console.log(returnArray(50, 5));
+console.log(returnArray(32, 4));
+console.log(returnSquareArray(returnArray(32, 4)));
+console.log(Sum(returnSquareArray(returnArray(32, 4))));
