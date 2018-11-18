@@ -1,4 +1,4 @@
-function createArray() {    // task1.2
+function createArray() { 
     const arr = [];
     const max = 32;
     const step = 4;
@@ -10,14 +10,14 @@ function createArray() {    // task1.2
     return arr;
 }
 
-function arrElemSquare(){   // task1.3
+function arrElemSquare() {  
     const arr = createArray();
-    let arr1 = arr.map(el => el*el);
+    const arr1 = arr.map(el => el * el);
     console.log(arr1);
     return arr1;
 }
 
-function sumArray(){     // task1.4
+function sumArray() {  
     const arr1 = arrElemSquare();
     const sum = arr1.reduce((a, b) => a + b);
     return sum;
