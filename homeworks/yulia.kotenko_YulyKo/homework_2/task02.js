@@ -10,7 +10,6 @@ rl.question('first nomber ', (answer) => {
         for (info; info < answer2; info++) {
             const newNumber = info.toString().split('').reverse().join('');
             const rev = info.toString();
-
             if (newNumber === rev) {
                 console.log(info);
             }
