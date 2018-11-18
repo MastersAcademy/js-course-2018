@@ -8,7 +8,7 @@ function createArray() {
         console.log(n);
     }
     console.log(arr);
-    arr1 = arr.map(el => Math.pow(el, 2));
+    arr1 = arr.map(el => return el*el);
     console.log(arr1);
     const sum = arr1.reduce((a, b) => a + b);
     console.log(sum);
