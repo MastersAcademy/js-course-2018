@@ -1,4 +1,4 @@
-function kvadrat(x, y, z) {
+function kvadrat(x) {
     return x * x;
 }
 console.log(kvadrat(5));
