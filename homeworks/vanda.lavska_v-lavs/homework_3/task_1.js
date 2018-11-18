@@ -2,18 +2,12 @@
 * task 1.1
  */
 
-function myPow(num, degree) {
-    let result = num;
-    if (degree >= 1) {
-        for (let i = 1; i < degree; i++) {
-            result *= num;
-        }
-        return result;
-    }
-    return 1;
+function myPow(num) {
+    return num * num;
 }
-
-console.log(myPow(53, 2));
+console.log(myPow(5));
+console.log(myPow(15));
+console.log(myPow(53));
 
 /*
 * task 1.2
@@ -33,19 +27,8 @@ const array = createArray(0, 32, 4);
 /*
 * task 1.3
  */
-function getArr(arr, exp) {
-    function pow(num, degree) {
-        let result = num;
-        if (degree >= 1) {
-            for (let i = 1; i < degree; i++) {
-                result *= num;
-            }
-            return result;
-        }
-        return 1;
-    }
-
-    const powArr = arr.map(item => pow(item, exp));
+function getArr(arr) {
+    const powArr = arr.map(item => myPow(item));
     console.log(powArr);
     return powArr;
 }
