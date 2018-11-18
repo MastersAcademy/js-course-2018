@@ -1,14 +1,14 @@
-function isNumber(a) {
-    if (a === null || a <= 2) {
-        console.log('Try again');
-        return 0;
+function recursion(number) {
+    if (number > 1) {
+        return recursion(number / 2);
     }
-    return (a === 16 || a === 32
-        || a === 64 || a === 128 || a === 256 || a === 512);
+    return number === 1;
 }
 
-for (let i = 10; i < 600; i++) {
-    if (isNumber(i)) {
+const max = 600;
+const min = 10;
+for (let i = min; i < max; i++) {
+    if (recursion(i) === true) {
         console.log(i);
     }
 }
