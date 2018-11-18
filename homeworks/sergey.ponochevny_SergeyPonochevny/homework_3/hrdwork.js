@@ -1,5 +1,4 @@
-/* eslint-disable no-array-constructor */
-/* task1.1 */
+/* task 1.1 */
 function inSquare(h) {
     return h * h;
 }
@@ -9,22 +8,21 @@ console.log(inSquare(53));
 
 /* task1.2 */
 
-function Array(max, step) {
+function array(max, step) {
     const Arr = [];
-    for (let i = 0; i <= max; i += step) {
-        Arr.push(i);
-    }
+    for (let i = 0; i <= max; i += step) Arr.push(i);
     return Arr;
 }
 
-console.log(Array(50, 5));
-console.log(Array(32, 4));
+console.log(array(50, 5));
+console.log(array(32, 4));
 
 /* Task 1.3 */
-const ArrayInSquare = (Array(32, 4)).map(n => inSquare(n));
-console.log(ArrayInSquare);
-
+function arrSquare(Arr) {
+    return Arr.map(element => element * element);
+}
 /* task 1.4 */
-// eslint-disable-next-line no-undef
-const SumarrSquare = ArrayInSquare.reduce((sum, number) => sum + number);
-console.log(SumarrSquare);
+function sumArray(Arr) {
+    return Arr.reduce((num1, num2) => num1 + num2);
+}
+console.log(sumArray(arrSquare(array(32, 4))));
