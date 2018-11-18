@@ -1,0 +1,84 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.title {
+  background-image: url("images/title_background.png");
+  background-size: cover;
+}
+
+.logo {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.nav {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.link {
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.topic {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+}
+
+.line {
+  text-align: center;
+}
+
+.phrase {
+  text-align: center;
+  color: #CCC;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.services {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description {
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sentence {
+  color: #888;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.serv_block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.group_elements {
+  text-align: center;
+  width: 23%;
+}
