@@ -21,24 +21,15 @@ console.log(createArrayWithStep(32, 4));
 
 // task2.1
 
-const someArray = [0, 4, 8, 12, 16, 20, 24, 28, 32];
-function pow(array) {
-    const results = [];
-    for (let i = 0; i < array.length; i++) {
-        results.push(array[i] ** 2);
+function someArray(lngth, step) {
+    const arr = [];
+    for (let i = 0; i <= lngth; i += step) {
+        arr.push(i);
     }
-    return results;
+    return arr;
 }
-console.log(pow(someArray));
+const arraypow = someArray(32, 4).map(number => pow(number));
+console.log(arraypow);
 
-// task2.2
-
-const SomeArrayWithStep = [0, 16, 64, 144, 256, 400, 576, 784, 1024];
-function arraySum(array) {
-    let result = 0;
-    for (let i = 0; i < array.length; i++) {
-        result += array[i];
-    }
-    return result;
-}
-console.log(arraySum(SomeArrayWithStep));
+const arraysum = arraypow.reduce((sum, num) => sum + num);
+console.log(arraysum);
