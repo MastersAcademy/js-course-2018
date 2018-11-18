@@ -11,10 +11,8 @@ numbs.forEach(num => console.log(`${num}^2 = ${square(num)}`));
 
 function createMassiv(max, step) {
     const result = [];
-    let num = 0;
-    for (let i = 0; num <= max; i++) {
-        result[i] = num;
-        num += step;
+    for (let num = 0; num <= max; num += step) {
+        result.push(num);
     }
     return result;
 }
