@@ -1,5 +1,3 @@
-// 2
-
 const rec = (numb) => {
     if (numb === 1) {
         return true;

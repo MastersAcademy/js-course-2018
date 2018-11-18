@@ -1,4 +1,4 @@
- // 1.1
+// 1.1
 function kv(){
     var a = 5, b = 15, c = 53;
     kvadrat1 = Math.pow(a, 2);
@@ -8,7 +8,7 @@ function kv(){
 }
 kv();
 
- //1.2 
+   //1.2 
 function creatArr(max, step){
     const arr = [];
     for (let i = 0; i <= max; i += step){
@@ -23,7 +23,7 @@ console.log(creatArr(50, 5));
 console.log(creatArr(32, 4));
 
 
-   //1.3
+//1.3
 function creatArr(max, step){
     const arr = [];
     for (let i = 0; i <= max; i += step){
@@ -31,8 +31,17 @@ function creatArr(max, step){
     } 
     return arr;
 }
-console.log(creatArr(32, 4));
+console.log(creatArr(32, 4));*/
 
+/*
+function rec(){
+    for (let i = 10; i<= 600; i++ ){
+        
+       }
+
+}
+
+rec();
 
 
 
