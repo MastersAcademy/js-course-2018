@@ -1,35 +1,35 @@
 // 1.1
-function func(a) {
+function expanent(a) {
     const b = a * a;
     return b;
 }
-console.log(func(5));
-console.log(func(15));
-console.log(func(55));
+console.log(expanent(5));
+console.log(expanent(15));
+console.log(expanent(55));
 
 // 1.2
-function func2(step, max) {
+function createArray2(step, max) {
     const arr = [];
     for (let i = 0; i <= max; i += step) {
         arr.push(i);
     }
     return arr;
 }
-console.log(func2(4, 32));
+console.log(createArray2(4, 32));
 
 // 1.3
-function func3(a) {
+function editedArray3(a) {
     const arr2 = [];
     for (let i = 0; i < a.length; i++) {
-        arr2.push(func(a[i]));
+        arr2.push(expanent(a[i]));
     }
     return arr2;
 }
-console.log(func3(func2(4, 32)));
+console.log(editedArray3(createArray2(4, 32)));
 
 // 1.4
-function func4(a) {
+function arrayEISum4(a) {
     const sum = a.reduce((x, y) => x + y);
     return sum;
 }
-console.log(func4(func3(func2(4, 32))));
+console.log(arrayEISum4(editedArray3(createArray2(4, 32))));

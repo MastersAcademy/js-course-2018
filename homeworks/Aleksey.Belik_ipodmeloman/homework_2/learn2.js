@@ -1,4 +1,4 @@
-function copy(h1, h2) {
+function palindrome(h1, h2) {
     let len;
     for (let i = h1; i <= h2; i++) {
         i += '';
@@ -14,4 +14,4 @@ function copy(h1, h2) {
         }
     }
 }
-copy(500, 1000);
+palindrome(500, 1000);
