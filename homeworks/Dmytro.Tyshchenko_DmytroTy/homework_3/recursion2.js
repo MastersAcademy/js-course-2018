@@ -1,11 +1,8 @@
 function isPowOfTwo(numb) {
-    let b;
     if (numb % 2) {
-        b = false;
-    } else {
-        b = numb > 2 ? isPowOfTwo(numb / 2) : true;
+        return false;
     }
-    return b;
+    return numb > 2 ? isPowOfTwo(numb / 2) : true;
 }
 
 for (let i = 10; i <= 600; i++) {
