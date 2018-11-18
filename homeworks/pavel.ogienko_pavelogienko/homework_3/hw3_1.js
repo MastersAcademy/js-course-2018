@@ -1,4 +1,4 @@
-//task1.1
+// task1.1
 
 function pow(number) {
     return number * number;
@@ -7,7 +7,7 @@ console.log(pow(5));
 console.log(pow(15));
 console.log(pow(53));
 
-//task1.2
+// task1.2
 
 function createArrayWithStep(maxNumber, step) {
     const numbers = [];
@@ -16,11 +16,10 @@ function createArrayWithStep(maxNumber, step) {
     }
     return numbers;
 }
-console.log('\nArray test');
-console.log(`From 0 to 50. Step 5: {createArrayWithStep(50, 5)}`);
-console.log(`From 0 to 32. Step 4: {createArrayWithStep(32, 4)}`);
+console.log(createArrayWithStep(50, 5));
+console.log(createArrayWithStep(32, 4));
 
-//task2.1
+// task2.1
 
 const someArray = [0, 4, 8, 12, 16, 20, 24, 28, 32];
 function square(array) {
@@ -32,7 +31,7 @@ function square(array) {
 }
 console.log(square(someArray));
 
-//task2.2
+// task2.2
 
 const SomeArrayWithStep = [0, 16, 64, 144, 256, 400, 576, 784, 1024];
 function arraySum(array) {
