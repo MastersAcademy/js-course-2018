@@ -1,5 +1,5 @@
-let space = " ";
-let hashtag = "#";
-for (let i=0; i<15;i++) {
-    console.log(space.repeat(14-i) + hashtag.repeat(4+2*i))};
-
+for (let i = 1; i <= 15; i++) {
+    const space = ' '.repeat(15 - i);
+    const hasht = '#'.repeat(i * 2 + 2);
+    console.log(space + hasht);
+}
