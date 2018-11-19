@@ -4,8 +4,6 @@ function kvadrat(x) {
 console.log(kvadrat(5));
 console.log(kvadrat(15));
 console.log(kvadrat(53));
-
-kvadrat(5, 15, 53);
 function masiv(a, b) {
     const mas = [];
     for (let i = 0; i <= a; i += b) {
