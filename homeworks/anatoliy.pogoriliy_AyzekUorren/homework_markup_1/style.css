@@ -53,8 +53,7 @@
 .header-content-tittle {
   font-size: 50px;
   flex-basis: 545px;
-  margin: auto;
-  margin-top: 173px;
+  margin: 173px auto auto;
   line-height: 60px;
   text-transform: uppercase;
 }
@@ -71,9 +70,8 @@
 .header-content-description {
   font-size: 20px;
   flex-basis: 500px;
-  margin: auto;
   color: #CCC;
-  margin-top: 54px;
+  margin: 54px auto auto;
 }
 
 .header-transparency-layer {
@@ -91,8 +89,7 @@
 .content-header {
   text-align: center;
   font-size: 40px;
-  margin: 0;
-  margin-top: 99px;
+  margin: 99px 0 0;
   flex-basis: 100%;
   line-height: 75px;
   color: #222;
@@ -113,26 +110,26 @@
 }
 
 .content-service-image {
-  margin: auto;
   height: 55px;
-  margin-bottom: 39px;
+  margin: auto auto 39px;
+}
+
+.content-service-caption {
+  margin: auto;
 }
 
 .content-service-header {
-  margin: 0;
-  flex-basis: 100%;
   text-align: center;
-  line-height: 12px;
   color: #222;
   text-transform: uppercase;
-  margin-bottom: 19px;
+  font-size: 16px;
+  margin: 0 0 9px;
 }
 
 .content-service-description {
   font-size: 14px;
   text-align: center;
-  margin: 0 20px;
+  margin: 0;
   line-height: 22px;
-  letter-spacing: -.35px;
   color: #888;
 }
