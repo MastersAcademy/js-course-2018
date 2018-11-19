@@ -10,14 +10,9 @@ body {
 
 .background {
   position: relative;
-  background-color: rgba(0, 0, 0, .45);
+  background-color: rgba(0, 0, 0, .75);
   width: 1024px;
   height: 645px;
-}
-
-.menu_navigation {
-  color: #FFF;
-  display: flex;
 }
 
 .logo {
@@ -27,8 +22,9 @@ body {
 }
 
 .menu_navigation {
-  margin-top: 65px;
-  float: right;
+  margin-top: -20px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .menu_navigation_a {
@@ -54,11 +50,12 @@ body {
 }
 
 .title_text {
-  font-size: 37px;
+  font-size: 40px;
   flex-basis: 555px;
   margin: auto;
   margin-top: 150px;
   line-height: 55px;
+  text-transform: uppercase;
 }
 
 .line:after {
@@ -71,19 +68,19 @@ body {
 }
 
 .subtitle_text {
-  font-size: 20px;
+  font-size: 22px;
   flex-basis: 500px;
   margin: auto;
-  color: #FFF;
+  color: #CCC;
   margin-top: 50px;
 }
 
-.text {
+.section {
   display: flex;
   flex-wrap: wrap;
 }
 
-.text_title {
+.core_services {
   text-align: center;
   font-size: 40px;
   margin: 0;
@@ -91,30 +88,34 @@ body {
   flex-basis: 100%;
   line-height: 75px;
   color: #000;
+  text-transform: uppercase;
 }
 
-.service_text {
+.core_service_text {
   flex-basis: 33%;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
 }
 
-.group_image {
+.group_service_image {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.service_text_title {
+.core_service_text_title {
   margin: 0;
   flex-basis: 100%;
   text-align: center;
   color: #000;
+  text-transform: uppercase;
 }
 
-.service_text_subtitle {
+.core_service_text_subtitle {
   font-size: 14px;
   text-align: center;
-  color: rgb(133, 125, 125);
+  margin: 0 20px;
+  line-height: 22px;
+  color: #888;
 }
