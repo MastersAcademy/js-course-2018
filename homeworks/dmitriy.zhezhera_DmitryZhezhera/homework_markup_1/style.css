@@ -37,6 +37,8 @@ body {
   font-size: 36px;
   line-height: 18.88px;
   margin: 0;
+  color: #FFF;
+  text-decoration: none;
 }
 
 .dreams-navigation__list {
