@@ -12,6 +12,7 @@ body {
 .dream-section {
   background: url("./images/background.jpg") no-repeat;
   background-size: cover;
+  max-width: 1024px;
 }
 
 .dream-section-overlay {
@@ -77,6 +78,10 @@ body {
   font-size: 20px;
   color: #CCC;
   padding-bottom: 140px;
+}
+
+.services-section {
+  max-width: 1024px;
 }
 
 .services-title {
