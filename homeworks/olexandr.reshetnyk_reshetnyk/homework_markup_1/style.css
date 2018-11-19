@@ -1,0 +1,149 @@
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #CCC;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  background-color: rgba(0,0,0,.7);
+  background-blend-mode: darken;
+  padding-top: 50px;
+  padding-bottom: 140px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.main-nav {
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  display: inline-flex;
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav ul li {
+  padding: 0 25px;
+}
+
+.main-nav ul li a:hover {
+  color: #EE2F1B;
+}
+
+.header__title {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #FFF;
+  padding-top: 175px;
+  padding-bottom: 51px;
+  text-transform: uppercase;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 111px;
+  height: 2px;
+  background-color: #35C2F8;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__subtitle {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  color: #CCC;
+  padding-top: 54px;
+}
+
+.header__title,
+.header__subtitle {
+  text-align: center;
+}
+
+.services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.services__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: Montserrat;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  padding-bottom: 40px;
+  letter-spacing: -2px;
+}
+
+.services__row {
+  display: flex;
+  padding-top: 80px;
+  justify-content: space-between;
+}
+
+.service {
+  width: 282px;
+}
+
+.service__img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 55px;
+}
+
+.service__name {
+  padding-top: 39px;
+  letter-spacing: -.4px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: Montserrat;
+  color: #222;
+}
+
+.service__descr {
+  color: #888;
+  font-family: "Noto Sans";
+  letter-spacing: -.35px;
+  line-height: 22px;
+  padding-top: 18px;
+}
+
+.service__name,
+.service__descr {
+  text-align: center;
+}
