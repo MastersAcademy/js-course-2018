@@ -1,13 +1,9 @@
 // task 1.1
 
-const numb1 = 5;
-const numb2 = 15;
-const numb3 = 53;
-const resNumb1 = numb1 * numb1;
-const resNumb2 = numb2 * numb2;
-const resNumb3 = numb3 * numb3;
-const resArr = [resNumb1, resNumb2, resNumb3];
-console.log(`Task 1.1: ${resArr}`);
+function extentNum(n) {
+    return n * n;
+}
+console.log(`Task 1.1: ${extentNum(5)},${extentNum(15)},${extentNum(53)}`);
 
 // task 1.2
 
@@ -81,7 +77,7 @@ rl.question('Enter the minimum value: ', (minValue) => {
                 return check(x / 2);
             };
             const x = arrValue[i];
-            if (check(x) === 1) {
+            if (check(x)) {
                 resValue.push(x);
             }
         }
