@@ -1,0 +1,141 @@
+body {
+  font-family: "Open Sans", "sans-serif";
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url("images/background.png");
+  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, .7);
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px 115px 40px 160px;
+}
+
+.header__logo {
+  width: 115px;
+  height: 30px;
+}
+
+.header__logo .logo-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.img-responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header__menu {
+  padding-right: 50px;
+  font-size: 10px;
+  text-transform: uppercase;
+  display: flex;
+  list-style-type: none;
+}
+
+.menu__link {
+  margin-left: 35px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  opacity: .5;
+  transition: opacity .4s ease;
+  text-decoration: none;
+}
+
+.header__title {
+  text-align: center;
+}
+
+.title__build {
+  font-size: 40px;
+  margin-top: 50px;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.underline {
+  width: 111px;
+  height: 2px;
+  background-color: #35C2F8;
+  margin: 0 auto;
+}
+
+.title__meaningful {
+  margin-top: 54px;
+  font-size: 20px;
+  color: #CCC;
+  margin-bottom: 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content_block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.block {
+  width: 280px;
+}
+
+.content_title {
+  font-family: "Open Sans", "sans-serif";
+  margin-top: 90px;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
+
+.block__img {
+  width: 62px;
+  height: 55px;
+  margin-top: 79px;
+  margin-bottom: 39px;
+}
+
+.block__title {
+  color: #222;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+
+.block__text {
+  color: #888;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
