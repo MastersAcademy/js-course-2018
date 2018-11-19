@@ -1,0 +1,152 @@
+.main {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header, .content {
+  width: 1400px;
+  margin: auto;
+}
+
+.header {
+  background-image: url("images/Background.png");
+  overflow: auto;
+  background-color: rgba(0, 0, 0,.7);
+  background-blend-mode: darken;
+  width: 1400px;
+  height: 645px;
+}
+
+.logo {
+  margin: 52px 0 0 196px;
+  display: inline-block;
+}
+
+.center_block_main {
+  margin-top: 67px;
+  float: right;
+}
+
+.menu {
+  float: right;
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.menu a:hover {
+  color: #EE2F1B;
+}
+
+.big_trigger {
+  width: 544px;
+  height: 112px;
+  position: absolute;
+  top: 253px;
+  left: 456px;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat",  sans-serif;
+  color: #FFF;
+}
+
+.underline:after {
+  width: 111px;
+  height: 2px;
+  background-color: rgb(46, 135, 170);
+  display: block;
+  content: "";
+  margin: 51px auto 0;
+}
+
+.small_trigger {
+  width: 422px;
+  position: absolute;
+  top: 462px;
+  left: 503px;
+  margin-top: 54px;
+  color: #CCC;
+  text-align: center;
+  font-family: "Noto Sans",  sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content_header {
+  text-align: center;
+  margin-top: 99px;
+  text-transform: uppercase;
+  font-family: "Montserrat",  sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  color: #222;
+}
+
+.content_header.underline:after {
+  margin-bottom: 79px;
+  margin-top: 40px;
+}
+
+.block_services {
+  display: grid;
+  grid-auto-columns: repeat(3, 1);
+  grid-auto-rows: repeat(3, 466px);
+  text-align: center;
+}
+
+.service_left {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.service_center {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.service_right {
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.service_padding {
+  padding: 0 72px;
+}
+
+.service_img {
+  float: center;
+}
+
+.service_title {
+  margin-top: 18px;
+  line-height: 12px;
+  color: #222;
+  text-transform: uppercase;
+  margin: 39px 0 19px;
+}
+
+.service_text {
+  float: center;
+  margin-bottom: 101px;
+  font-family: "Noto Sans",  sans-serif;
+  color: #888;
+}
