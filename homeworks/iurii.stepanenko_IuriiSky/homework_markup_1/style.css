@@ -1,0 +1,105 @@
+body {
+  max-width: 1024px;
+  height: 1200px;
+  font-family: "Open Sans", sans-serif;
+  margin: auto;
+  background-image: url("images/Background.png");
+  background-repeat: no-repeat;
+}
+
+header {
+  display: block;
+  background-color: rgb(8, 8, 8);
+  background-size: 100% 100%;
+  opacity: .75;
+  max-width: 1024px;
+  height: 645px;
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  width: 1000px;
+  height: 100px;
+}
+
+.logo {
+  max-width: 107px;
+  height: 28px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.menu {
+  display: flex;
+  width: 500px;
+  height: 28px;
+  padding-top: 50px;
+  padding-left: 250px;
+  justify-content: space-between;
+}
+
+a {
+  height: 10px;
+  color: #FFFF;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.text {
+  height: 100px;
+  max-width: 545px;
+  color: #FFFF;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 250px;
+  font-size: 50px;
+}
+
+.info_text {
+  color: #FFFF;
+  font-size: 16px;
+  letter-spacing: .5px;
+  text-align: center;
+  line-height: 25px;
+  padding-top: 80px;
+}
+
+.after_heading {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  height: 400px;
+}
+
+.section {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 375px;
+  padding-right: 200px;
+}
+
+.serv {
+  height: 100px;
+  width: 280px;
+  padding-left: 50px;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.core {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.info_services {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
