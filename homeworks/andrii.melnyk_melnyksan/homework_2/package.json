@@ -1,0 +1,11 @@
+{
+  "name": "homework_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "task-2a_pyramid__20181109.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "melnyksan",
+  "license": "ISC"
+}
