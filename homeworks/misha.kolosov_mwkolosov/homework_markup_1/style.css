@@ -1,0 +1,138 @@
+/* Global style */
+
+body {
+  width: 1024px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 41px;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 45px;
+  text-align: center;
+  font-size: 40px;
+}
+
+h2:after {
+  content: "";
+  width: 111px;
+  height: 2px;
+  background: #35C2F8;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+.container {
+  max-width: 900px;
+  width: 900px;
+}
+
+/* Header */
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+}
+
+.menu-list {
+  display: inline-block;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  padding-left: 24px;
+}
+
+/*Section Slider Home */
+
+.slide-home-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-home {
+  height: 697px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-home:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #607D8B61;
+  position: absolute;
+}
+
+.slide-home-desc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  color: #FFF;
+  max-width: 544px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.slide-home-desc h1:after {
+  content: "";
+  width: 111px;
+  height: 2px;
+  background: #35C2F8;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 43px;
+}
+
+/* Section Services */
+
+.services-list {
+  display: flex;
+}
+
+.services-list-item {
+  text-align: center;
+  padding: 0 35px;
+}
+
+.services-list-item p {
+  color: #888;
+}
+
+.services-list-item-desc h4 {
+  text-transform: uppercase;
+}
