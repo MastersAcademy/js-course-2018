@@ -8,6 +8,10 @@
 
 body {
   margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  color: #888;
+  font-size: 16px;
+  background: #FFF
 }
 
 .container {
@@ -82,7 +86,6 @@ body {
 }
 
 .dreams-first__about {
-  font-family: "Noto Sans", sans-serif;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -127,8 +130,6 @@ body {
 }
 
 .dreams-services__item-text {
-  font-family: "Noto Sans", sans-serif;
-  color: #888;
   font-size: 14px;
   line-height: 22px;
 }
