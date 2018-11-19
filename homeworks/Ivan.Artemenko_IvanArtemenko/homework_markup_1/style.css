@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  background: url("../homework_markup_1/images/fon.jpg") no-repeat center top /cover;
+  padding-bottom: 140px;
+}
+
+nav {
+  float: right;
+  margin-top: 67px;
+}
+
+.conteiner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 52px;
+  float: left;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.menu li {
+  float: left;
+  display: block;
+  margin-right: 50px;
+}
+
+.menu a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 50px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 176px;
+}
+
+.line {
+  background: #35C2F8;
+  display: block;
+  border-radius: 5px;
+  width: 111px;
+  padding: 2px 0;
+  margin: 0 auto;
+  margin-top: 51px;
+}
+
+.titles_first {
+  font-size: 20px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 54px;
+}
+
+.tatel {
+  padding-top: 100px;
+}
+
+.tatel h2 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.services {
+  margin-top: 79px;
+}
+
+.services_item {
+  width: 290px;
+  float: left;
+  text-align: center;
+}
+
+.services_item h3 {
+  color: #222;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.services_item p {
+  color: #888;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding-bottom: 50px;
+}
+
+.services_item:last-child {
+  float: right;
+}
+
+.services_item:nth-child(2) {
+  margin-left: 90px;
+}
