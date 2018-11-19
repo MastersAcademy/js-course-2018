@@ -27,8 +27,9 @@ function mySecondArray() {
 mySecondArray();
 // Task 1.3
 const myThirdArray = [0, 4, 8, 12, 16, 20, 24, 28, 32];
-const arrSquare = myThirdArray.map(num => num * num);
+const arrSquare = myThirdArray.map(square);
 console.log(arrSquare);
+
 // Task 1.4
 const myFourthArray = [0, 16, 64, 144, 256, 400, 576, 784, 1024];
 const sum = myFourthArray.reduce((a, b) => a + b, 0);
