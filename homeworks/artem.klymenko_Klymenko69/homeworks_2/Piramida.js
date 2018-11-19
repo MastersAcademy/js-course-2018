@@ -1,8 +1,8 @@
-let a = '####';
-let b = ' '; 
-for(let i = 15; 1 < i; i--){ 
+const a = '####';
+const b = ' '; 
+for(let forB = 15; 1 < forB; forB--){ 
    }
-for(let j = 1; j < 16; j++ ) {
+for(let forA = 1; forA < 16; forA++ ) {
 	}
-console.log(b.repeat(+i) + a.repeat(+j));
+console.log(b.repeat(+forB) + a.repeat(+forA));
 
