@@ -5,6 +5,10 @@ body {
 .title {
   background-image: url("images/title_background.png");
   background-size: cover;
+  display: block;
+  margin: 0 auto;
+  width: 1024px;
+  height: 480px;
 }
 
 .logo {
@@ -37,7 +41,8 @@ body {
 }
 
 .line {
-  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .phrase {
@@ -80,5 +85,10 @@ body {
 
 .group_elements {
   text-align: center;
-  width: 23%;
+  width: 30%;
+}
+
+.service {
+  width: 1024px;
+  margin: auto;
 }
