@@ -1,0 +1,152 @@
+/*
+
+font-family: 'Montserrat', sans-serif;
+<img src="image/bgimage/banner.jpg" alt="banner" no-repeat>
+*/
+
+body {
+  background-color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #777;
+  width: 1522px;
+  height: 7000px;
+}
+
+h1,h2,h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+  text-transform: uppercase;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 1431px;
+  height: 657px;
+  background-color: #000;
+}
+
+.main-header {
+  padding-top: 37px;
+}
+
+/*.dreams-img {
+
+}*/
+
+.menu {
+  justify-content: space-around;
+  margin-left: 180px;
+}
+
+.menu__item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 41px;
+}
+
+.menu__item a {
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+/*.offer {
+
+}*/
+
+.title__heading {
+  width: 544px;
+  height: 102px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -2.5px;
+  text-align: center;
+  margin: 253px ;
+}
+
+.underline-1 {
+  margin-top: 0
+}
+
+.title__intro {
+  text-align: center;
+  width: 422px;
+  height: 55px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -.5px;
+}
+
+/*
+second block(core service)
+*/
+
+.services {
+  margin-top: 744px;
+}
+
+.core-service {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  text-align: center;
+}
+/*
+.design {
+
+}
+
+.design-img {
+
+}
+
+.design-title {
+
+}
+
+.design-desc {
+
+}
+
+.development {
+
+}
+
+.development-img {
+
+}
+
+.development-title {
+
+}
+
+.development-desc {
+
+}
+
+.support {
+
+}
+
+.support-img {
+
+}
+
+.support-title {
+
+}
+
+.support-desc {
+
+}
+*/
