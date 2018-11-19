@@ -22,9 +22,7 @@ console.log(arr);
 
 // 1.3
 function squareArr(array) {
-    let newArr = 0;
-    newArr = array.map(element => square(element));
-    return newArr;
+    return array.map(square);
 }
 
 const result = squareArr(arr);
@@ -32,9 +30,7 @@ console.log(result);
 
 // 1.4
 function arraySum(array) {
-    let sum = 0;
-    sum = array.reduce((a, b) => a + b, 0);
-    return sum;
+    return array.reduce((a, b) => a + b, 0);
 }
 
 console.log(arraySum(result));
