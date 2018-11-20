@@ -1,177 +1,197 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    top: 0; 
-    left: 0; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-color: #fff;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  top: 0; 
+  left: 0; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #fff;
+}
 
 /*site header*/
-header{
-    box-sizing: border-box;
-    text-align: justify;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
+
+header {
+  box-sizing: border-box;
+  text-align: justify;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
 }
 
 /*background image(computer)*/
-.bgimg{
-    background-image: url(img/Background.png);
-    position: relative;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+
+.bgimg {
+  background-image: url(img/Background.png);
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /*second layer of background image*/
-.shadow{
-    background-image: url(img/TransparencyLayer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
+
+.shadow {
+  background-image: url(img/TransparencyLayer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 /*site logo*/
-.logo{
-    background-image: url(img/Dreams@1X.png);
-    width:107px;
-    height: 28px;
-    margin-top: 20px;
-    margin-left: 50px;
-    display: flex;
-    flex-direction: wrap;
-    position: relative;
+
+.logo {
+  background-image: url(img/Dreams@1X.png);
+  width: 107px;
+  height: 28px;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: wrap;
+  position: relative;
 }
 
 /*menu bar*/
-.menu{
-    box-sizing: border-box;
-    text-align: justify;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
+
+.menu {
+  box-sizing: border-box;
+  text-align: justify;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
 }
-.menuBar{
-    margin-top:30px;
-    margin-left: -600px;
-    height:12px ;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
+
+.menuBar {
+  margin-top: 30px;
+  margin-left: -600px;
+  height: 12px ;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
 }
-.menuPoint{
-    margin-right: 40px;
-    color:#fff;
-    font-weight: 900;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10pt;
-    text-align: center;
+
+.menuPoint {
+  margin-right: 40px;
+  color: #fff;
+  font-weight: 900;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  text-align: center;
 }
 
 
 /*content part of site(slogans)*/
-main{
-    background-image: url(img/Container.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+
+main {
+  background-image: url(img/Container.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
-.contain{
-    margin-top: 110px;
-    text-align: center;
+
+.contain {
+  margin-top: 110px;
+  text-align: center;
 }
-.bigSlogan{
-    text-align: center;
-    text-transform:uppercase;
-    color:#fff;
-    font-weight:bold;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 27pt;
-    line-height: 60px;
+
+.bigSlogan {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27pt;
+  line-height: 60px;
 }
-.line1{
-    margin-top: 20px;
-    text-align: center;
+
+.line1 {
+  margin-top: 20px;
+  text-align: center;
 
 }
-.smallSlogan{
-    margin-top: 20px;
-    color:#ccc;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12pt;
-    text-align: center;
-    margin-bottom: 70px;
+
+.smallSlogan {
+  margin-top: 20px;
+  color:#ccc;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  text-align: center;
+  margin-bottom: 70px;
 }
 
 
 /*footer of site*/
-.title{
-    text-transform:uppercase;
-    color:#000;
-    text-align: center;
-    font-weight: 800;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25pt;
-    margin-top: 70px;
+
+.title {
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25pt;
+  margin-top: 70px;
 }
-.line2{
-    text-align: center;
+
+.line2 {
+  text-align: center;
 }
-.footerMenu{
-    box-sizing: border-box;
-    text-align: justify;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
-    margin-top: 60px;
-    margin-bottom: 100px;
+
+.footerMenu {
+  box-sizing: border-box;
+  text-align: justify;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
- .design, .develop,.support{
-    width:300px;
-    text-align: center;
-    margin-left: 50px;
+
+.design, .develop, .support {
+  width: 300px;
+  text-align: center;
+  margin-left: 50px;
 } 
-.logoDesign>img{
-   width:40px;
-   height: 35px;
-   margin-bottom: 10px;
+
+.logoDesign > img {
+  width: 40px;
+  height: 35px;
+  margin-bottom: 10px;
 }
-.logoTitle{
-    margin-top: 20px;
-    text-transform:uppercase;
-    color:#222;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 11pt;
+
+.logoTitle {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11pt;
 }
-.describe{
-    margin-top: 10px;
-    color:#888;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 9pt;
+
+.describe {
+  margin-top: 10px;
+  color: #888;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9pt;
 }
-.support{
-    margin-right: 30px;
+
+.support {
+  margin-right: 30px;
 }
