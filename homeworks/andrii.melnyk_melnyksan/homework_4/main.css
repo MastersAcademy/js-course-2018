@@ -1,0 +1,193 @@
+
+/* ------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------- */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+a {
+  color: #111;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  overflow-y: scroll;
+  background-color: #FFF;
+  min-height: 100vh;
+  color: #111;
+  letter-spacing: .05em;
+}
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* New for this project */
+
+body {
+  color: #888;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+/* .container {
+  width: 100%;
+  outline: 1px solid red;
+} */
+
+/* ------------------------------------------------- */
+/* HEADER */
+/* ------------------------------------------------- */
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo-dream {
+  color: #FFF;
+  font-family: "Kaushan Script", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.header__bar {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  padding: 0 15px;
+}
+
+.nav__link {
+  display: block;
+  color: #FFF;
+  border-bottom: 1px solid transparent;
+  text-transform: uppercase;
+  font: 14px/41px "Montserrat", sans-serif;
+}
+
+.nav__link:hover {
+  border-bottom-color: #35C2F8;
+}
+
+
+/* ------------------------------------------------- */
+/* HOME */
+/* ------------------------------------------------- */
+
+.section_home {
+  background: url("./img/bg_home.jpg");
+  background-size: cover;
+}
+
+.section__inner-home {
+  width: 1024px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-motto {
+  position: relative;
+  padding-bottom: 45px;
+  text-align: center;
+  color: #FFF;
+  font: 700 50px/60px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2.5px;
+}
+
+.title-motto:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -55px;
+  width: 111px;
+  height: 2px;
+  background-color: #35C2F8;
+}
+
+.title-description {
+  padding-top: 50px;
+  text-align: center;
+  color: #CCC;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -.5px;
+}
+
+/* ------------------------------------------------- */
+/* SERVICES */
+/* ------------------------------------------------- */
