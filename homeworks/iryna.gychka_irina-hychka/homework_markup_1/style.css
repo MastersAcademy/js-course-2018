@@ -23,34 +23,34 @@ header {
   background-size: cover;
 }
 
-header .header-filter {
+header .filter {
   overflow: hidden;
   margin: 0;
   padding: 40px 130px 0;
   background-color: #000;
-  opacity: 0.75;
+  opacity: .75;
 }
 
-header .header-filter nav {
+header .filter nav {
   display: flex;
   justify-content: space-between;
   margin: 0 0 140px;
 }
 
-header .header-filter nav h1 {
+header .filter nav h1 {
   margin: 0;
 }
 
-header .header-filter nav h1 a,
-header .header-filter nav h1 a img {
+header .filter nav h1 a,
+header .filter nav h1 a img {
   display: block;
 }
 
-header .header-filter nav h1 a:hover {
-  opacity: 0.9;
+header .filter nav h1 a:hover {
+  opacity: .9;
 }
 
-header .header-filter nav ul {
+.main-menu {
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -58,12 +58,12 @@ header .header-filter nav ul {
   list-style: none;
 }
 
-header .header-filter nav ul li {
+.main-menu li {
   overflow: hidden;
   margin: 0 0 0 50px;
 }
 
-header .header-filter nav ul li a {
+.main-menu li a {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -73,8 +73,8 @@ header .header-filter nav ul li a {
   text-decoration: none;
 }
 
-header .header-filter nav ul li a:active,
-header .header-filter nav ul li a:hover {
+.main-menu li a:active,
+.main-menu li a:hover {
   color: #35C2F8;
 }
 
@@ -110,14 +110,14 @@ header .header-filter nav ul li a:hover {
 /* Main Section */
 /* Services Section */
 
-section.services {
+.services {
   overflow: hidden;
   margin: 0;
   padding: 99px 0;
   background-color: #FFF;
 }
 
-h3 {
+.services h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -126,14 +126,14 @@ h3 {
   color: #222;
 }
 
-h3.lined {
+.services h3.lined {
   margin: 0 0 79px;
   padding: 0 0 40px;
   text-align: center;
   background: url("images/line.png") no-repeat center bottom;
 }
 
-section.services ul {
+.services .serv-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -142,14 +142,15 @@ section.services ul {
   list-style: none;
 }
 
-section.services ul li {
+.services .serv-menu li {
   overflow: hidden;
   margin: 0;
 }
 
-section.services ul li a {
+.services .serv-menu li a {
   overflow: hidden;
   display: block;
+  padding: 94px 0 19px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -160,31 +161,27 @@ section.services ul li a {
   color: #222;
 }
 
-section.services ul li a:hover {
+.services .serv-menu li a:hover {
   color: #35C2F8;
 }
 
-section.services ul li p {
+.services .serv-menu li a.serv_icon.serv_icon_1 {
+  background: url("images/serv_design_icon.png") no-repeat center top;
+}
+
+.services .serv-menu li a.serv_icon.serv_icon_2 {
+  background: url("images/serv_dev_icon.png") no-repeat center top;
+}
+
+.services .serv-menu li a.serv_icon.serv_icon_3 {
+  background: url("images/serv_support_icon.png") no-repeat center top;
+}
+
+.services .serv-menu li p {
   overflow: hidden;
   width: 283px;
   margin: 0;
   color: #888;
   text-align: center;
   font-family: inherit;
-}
-
-a.serv_icon {
-  padding: 94px 0 19px;
-}
-
-a.serv_icon.serv_icon_1 {
-  background: url("images/serv_design_icon.png") no-repeat center top;
-}
-
-a.serv_icon.serv_icon_2 {
-  background: url("images/serv_dev_icon.png") no-repeat center top;
-}
-
-a.serv_icon.serv_icon_3 {
-  background: url("images/serv_support_icon.png") no-repeat center top;
 }
