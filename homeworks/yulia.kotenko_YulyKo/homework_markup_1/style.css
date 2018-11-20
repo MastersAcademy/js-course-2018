@@ -76,3 +76,25 @@ li a:hover {
   color: #CCC;
   padding: 50px 24.828125% 0;
 }
+
+.main_core {
+  display: grid;
+  margin: 0 100px;
+  grid-template-columns: 33.33333333333333% 33.33333333333333% 33.33333333333333%;
+  grid-row-gap: 50px;
+}
+
+.block__text-1, .block__text-2, .block__text-3 {
+  text-align: center;
+}
+
+.block__img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.main__core-title, .block__title {
+  text-align: center;
+  text-transform: uppercase;
+}
