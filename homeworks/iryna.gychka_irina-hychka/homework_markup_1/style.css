@@ -41,12 +41,12 @@ header .filter nav h1 {
   margin: 0;
 }
 
-header .filter nav h1 a,
-header .filter nav h1 a img {
+header .filter nav h1 .logo,
+header .filter nav h1 .logo img {
   display: block;
 }
 
-header .filter nav h1 a:hover {
+header .filter nav h1 .logo:hover {
   opacity: .9;
 }
 
