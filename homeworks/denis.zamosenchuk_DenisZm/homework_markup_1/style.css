@@ -48,9 +48,8 @@ nav {
 }
 
 .title {
-  background-image: url("images/background.jpg");
+  background: rgba(0, 0, 0, .75) url("images/background.jpg");
   height: 470px;
-  background-color: rgba(0, 0, 0, .75);
   background-blend-mode: darken;
 }
 
@@ -66,7 +65,7 @@ nav {
   font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
-  letter-spacing: -2.5px;
+  letter-spacing: -3px;
 }
 
 .spacer {
@@ -85,7 +84,7 @@ nav {
   color: #CCC;
   text-align: center;
   line-height: 24px;
-  letter-spacing: -.5px;
+  letter-spacing: -1px;
 }
 
 .core-services {
@@ -113,7 +112,7 @@ nav {
   font-weight: 400;
   line-height: 65px;
   text-transform: uppercase;
-  letter-spacing: -.4px;
+  letter-spacing: -1px;
 }
 
 .core-services p {
