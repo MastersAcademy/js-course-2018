@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/Noto_Sans/NotoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  max-width: 1024px;
+  background-color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  color: rgb(240, 240, 240);
+  background: url("images/header-bg.png") center;
+}
+
+.opacity-layer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .75);
+  padding: 40px;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 155px;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 615px;
+}
+
+.nav-link {
+  color: rgb(240, 240, 240);
+  margin-bottom: 10px;
+}
+
+.nav-link:hover {
+  color: rgb(53, 194, 248);
+}
+
+.heading {
+  margin: 20px auto;
+}
+
+.heading--h1 {
+  max-width: 544px;
+  font-size: 50px;
+}
+
+.header-article {
+  max-width: 422px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+}
+
+.underline {
+  width: 111px;
+  height: 2px;
+  margin: 40px auto;
+  background-color: rgb(53, 194, 248);
+}
+
+.top-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.heading--h2 {
+  font-size: 40px;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.services-figure {
+  max-width: 282px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.services-figure__img {
+  margin: 14px auto;
+}
+
+.services-article {
+  font-family: "Noto Sans", sans-serif;
+}
