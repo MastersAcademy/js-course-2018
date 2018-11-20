@@ -1,0 +1,128 @@
+body {
+  font-family: Open Sans, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 1024px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+.div {
+  box-sizing: border-box;
+}
+
+header {
+  background: url("/home/kostyan/js-course-2018/homeworks/Tatiana.Skachko_S3tt0n/homework_markup_1/images/background.jpg") no-repeat center top / cover;
+  width: 1024px;
+}
+
+.container {
+  width: 811px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.logo {
+  margin-top: 29px;
+  float: left;
+}
+
+nav {
+  float: right;
+  margin-top: 40px;
+}
+
+.menu li {
+  float: left;
+  display: block;
+  margin-right: 37px;
+}
+
+.menu a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+}
+
+.titles__first {
+  font-size: 50px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 105px;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: NotoSans, sans-serif;
+  font-weight: 10;
+  color: #CCC;
+  text-align: center;
+  margin: 77px;
+  padding-bottom: 115px;
+}
+
+.title h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.fig {
+  text-align: center;
+  margin: 0;
+}
+
+.services {
+  display: flex;
+  margin-top: 60px;
+}
+
+.services__item {
+  width: 270px;
+  float: left;
+  text-align: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__item h3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.services__item p {
+  color: rgb(216, 216, 216);
+  font-size: 10px;
+  font-family: NotoSans, sans-serif;
+  line-height: 2em;
+}
+
+.services__item:last-child {
+  float: right;
+  margin-left: 60px;
+}
+
+.services__item:nth-child(2) {
+  margin-left: 60px;
+}
+
