@@ -17,7 +17,6 @@ body {
 header {
   box-sizing: border-box;
   text-align: justify;
-  display: -webkit-flex;
   display: flex;
   flex-direction: wrap;
   justify-content: space-between;
@@ -26,7 +25,7 @@ header {
 /*background image(computer)*/
 
 .bgimg {
-  background-image: url('img/Background.png');
+  background-image: url("img/Background.png");
   position: relative;
   background-size: cover;
   width: 100%;
@@ -36,7 +35,7 @@ header {
 /*second layer of background image*/
 
 .shadow {
-  background-image: url('img/TransparencyLayer.png');
+  background-image: url("img/TransparencyLayer.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -47,7 +46,7 @@ header {
 /*site logo*/
 
 .logo {
-  background-image: url('img/Dreams@1X.png');
+  background-image: url("img/Dreams@1X.png");
   width: 107px;
   height: 28px;
   margin-top: 20px;
@@ -82,8 +81,8 @@ header {
   margin-right: 40px;
   color: #FFF;
   font-weight: 900;
-  font-family: 'Open Sans', 'sans-serif';
-  font-size: 10`pt`;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 10"`pt`";
   text-align: center;
 }
 
@@ -91,7 +90,7 @@ header {
 /*content part of site(slogans)*/
 
 main {
-  background-image: url('img/Container.svg');
+  background-image: url("img/Container.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -111,8 +110,8 @@ main {
   text-transform: uppercase;
   color: #FFF;
   font-weight: 900;
-  font-family: 'Open Sans', 'sans-serif';
-  font-size: 27pt;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 27"`pt`";
   line-height: 60px;
 }
 
@@ -125,8 +124,8 @@ main {
   margin-top: 20px;
   color: #CCC;
   font-weight: 400;
-  font-family: 'Open Sans', "sans-serif";
-  font-size: 12pt;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 12"`pt`";
   text-align: center;
   margin-bottom: 70px;
 }
@@ -139,8 +138,8 @@ main {
   color: #000;
   text-align: center;
   font-weight: 800;
-  font-family: 'Open Sans', "sans-serif";
-  font-size: 25pt;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 25"`pt`";
   margin-top: 70px;
 }
 
@@ -176,16 +175,16 @@ main {
   color: #222;
   text-align: center;
   font-weight: 900;
-  font-family: 'Open Sans', "sans-serif";
-  font-size: 11pt;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 11"`pt`";
 }
 
 .describe {
   margin-top: 10px;
   color: #888;
   text-align: center;
-  font-family: 'Open Sans', "sans-serif";
-  font-size: 9pt;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 9"`pt`";
 }
 
 .support {
