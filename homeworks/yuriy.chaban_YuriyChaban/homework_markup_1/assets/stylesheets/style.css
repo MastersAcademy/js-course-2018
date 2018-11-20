@@ -104,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links li a {
   font-size: 14px;
+  font-weight: 600;
   line-height: 20px;
   text-transform: uppercase;
 }
@@ -115,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner-title {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 60px;
   text-transform: uppercase;
   letter-spacing: -2.5px;
@@ -167,6 +168,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px auto 40px;
   color: #222;
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   letter-spacing: -.4px;
