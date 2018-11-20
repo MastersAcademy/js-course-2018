@@ -1,4 +1,50 @@
-.page {
+body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-image: url("img/TransparencyLayer.png");
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 67px 1.820728291316527%;
+  align-items: center;
+}
+
+.logo {
+  height: 28px;
+}
+
+.container_menu {
+  padding: 0;
+  width: 51%;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+  text-transform: uppercase;
+}
+
+li a {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
 }
