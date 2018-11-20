@@ -1,0 +1,154 @@
+/* body style rules */
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1024px;
+  font-family: "Open Sans", "Noto Sans", "sans-serif";
+  margin: 0 auto;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #F4F4F4;
+}
+
+/* font style */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h2, h3, h4, h5, h6 {
+  letter-spacing: -1px;
+  text-align: center;
+  color: #222;
+}
+
+p {
+  text-decoration: none;
+  font-size: 13px;
+  color: #888;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+/* header */
+
+.logo_link {
+  margin: 32px 0 0 80px;
+}
+
+.divider {
+  background-color: #35C2F8;
+  width: 109px;
+  height: 2px;
+  position: relative;
+  display: block;
+  margin: 40px auto 35px;
+}
+
+.header {
+  width: 1024px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/Background.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: color-burn;
+}
+
+/* navigation */
+
+.nav_block {
+  display: flex;
+}
+
+.menu {
+  list-style: none;
+  margin: 40px 0 0 236px;
+  padding: 0;
+  display: flex;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 0 18px;
+  transition: 200ms color;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.menu__link:hover {
+  color: #35C2F8;
+  transition: 200ms color;
+}
+
+/* slide */
+
+.header-slide {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header> .header-slide {
+  text-align: center;
+  margin: 101px auto;
+}
+
+.header-slide .text {
+  color: #CCC;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+}
+
+/* main style */
+
+h1.headline {
+  color: #FFF;
+  font-size: 37px;
+  letter-spacing: -1px;
+}
+
+h4.headline {
+  font-size: 12px;
+}
+
+.main-article {
+  padding: 74px 30px;
+}
+
+.main {
+  background: #FFF;
+  box-shadow: 0 0 10px #CCC;
+}
+
+.main-article h2 {
+  margin: 0;
+  font-size: 33px;
+}
+
+.main .divider {
+  margin: 27px auto 64px;
+}
+
+.services_block {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  text-align: center;
+}
+
+.services_block div {
+  padding: 0 35px;
+}
+
+/* footer */
