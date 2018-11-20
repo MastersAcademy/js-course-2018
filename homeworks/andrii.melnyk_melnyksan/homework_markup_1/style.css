@@ -82,12 +82,56 @@ body {
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
+  letter-spacing: -.35px;
 }
 
 /* .container {
   width: 100%;
-  outline: 1px solid red;
+  display: grid;
+  grid-template-areas: “header” “home” “services”;
+  grid-template-rows: auto 100vh 100vh;
+  grid-template-columns: 100%;
 } */
+
+/* ------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------- */
+
+.section {
+  width: 100%;
+}
+
+.section__inner-wrap {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.s-header {
+  position: relative;
+  padding-bottom: 40px;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.s-header:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -55px;
+  width: 111px;
+  height: 2px;
+  background-color: #35C2F8;
+}
 
 /* ------------------------------------------------- */
 /* HEADER */
@@ -96,8 +140,15 @@ body {
 .header {
   width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  z-index: 99;
+}
+
+.header__bar {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .logo-dream {
@@ -108,12 +159,8 @@ body {
   line-height: 19px;
 }
 
-.header__bar {
-  width: 1024px;
-  margin: 0 auto;
-  padding: 30px 0;
-  display: flex;
-  justify-content: space-around;
+.logo-dream:hover {
+  color: #888;
 }
 
 .nav__list {
@@ -142,7 +189,10 @@ body {
 /* ------------------------------------------------- */
 
 .section_home {
-  background: url("./img/bg_home.jpg");
+  background-color: #000;
+  background-image: url("./image/bg_home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -191,3 +241,37 @@ body {
 /* ------------------------------------------------- */
 /* SERVICES */
 /* ------------------------------------------------- */
+
+.section_services {
+  width: 100%;
+  height: 100vh;
+}
+
+.s-list {
+  display: flex;
+}
+
+.s-list__item {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.s-list__wrap {
+  margin-top: 40px;
+}
+
+
+.s-list__icon {
+  width: auto;
+}
+
+.s-list__heading {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.s-list__desc {
+  width: 300px;
+  padding: 10px 0;
+}
+
