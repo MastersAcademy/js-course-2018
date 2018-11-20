@@ -1,8 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
   transition: all .3s;
 }
 
@@ -83,7 +80,6 @@ h3 {
   bottom: 0;
   right: 50%;
   -webkit-transform: translateX(50%);
-  -ms-transform: translateX(50%);
   transform: translateX(50%);
   height: 1px;
   width: 111px;
@@ -97,18 +93,8 @@ h3 {
 
 header {
   padding: 40px 0;
-
-  /* display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex; */
-
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -156,25 +142,9 @@ nav {
 }
 
 .list-services {
-
-  /* display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex; */
-
   display: flex;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
   align-items: baseline;
 }
 
