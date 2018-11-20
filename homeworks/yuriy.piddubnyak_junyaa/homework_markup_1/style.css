@@ -8,6 +8,18 @@
   background-size: 1024px 659px;
 }
 
+.top {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  width: 30%;
+  margin-top: 37px;
+}
+
 .menu {
   display: flex;
   color: #FFF;
@@ -18,12 +30,8 @@
   list-style: none;
   justify-content: flex-end;
   margin-top: 37px;
-  margin-right: 132px;
 }
 
-.logo {
-  justify-content: flex-start;
-}
 
 .menu a {
   padding: 1em;
