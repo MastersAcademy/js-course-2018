@@ -4,7 +4,6 @@ body {
   font-weight: 400;
   line-height: 22px;
   color: #777;
-  letter-spacing: -0.35px;
   background-color: #F1F1F1;
 }
 
@@ -20,7 +19,7 @@ header {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background: url(images/header_bg.png) no-repeat;
+  background: url("images/header_bg.png") no-repeat;
   background-size: cover;
 }
 
@@ -42,7 +41,14 @@ header .header-filter nav h1 {
   margin: 0;
 }
 
+header .header-filter nav h1 a,
+header .header-filter nav h1 a img {
+  display: block;
+}
 
+header .header-filter nav h1 a:hover {
+  opacity: 0.9;
+}
 
 header .header-filter nav ul {
   display: flex;
@@ -72,15 +78,6 @@ header .header-filter nav ul li a:hover {
   color: #35C2F8;
 }
 
-header .header-filter nav h1 a,
-header .header-filter nav h1 a img {
-  display: block;
-}
-
-header .header-filter nav h1 a:hover {
-  opacity: 0.9;
-}
-
 .site_description {
   overflow: hidden;
   margin: 0 0 140px;
@@ -96,7 +93,6 @@ header .header-filter nav h1 a:hover {
   line-height: 60px;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: -2.5px;
   background: url("images/line.png") no-repeat center bottom;
 }
 
@@ -107,7 +103,6 @@ header .header-filter nav h1 a:hover {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  letter-spacing: -0.5px;
   text-align: center;
   color: #CCC;
 }
@@ -123,12 +118,11 @@ section.services {
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 75px;
   text-transform: uppercase;
-  letter-spacing: -2px;
   color: #222;
 }
 
@@ -136,7 +130,7 @@ h3.lined {
   margin: 0 0 79px;
   padding: 0 0 40px;
   text-align: center;
-  background: url(images/line.png) no-repeat center bottom;
+  background: url("images/line.png") no-repeat center bottom;
 }
 
 section.services ul {
@@ -156,14 +150,13 @@ section.services ul li {
 section.services ul li a {
   overflow: hidden;
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: -0.4px;
   color: #222;
 }
 
