@@ -5,6 +5,7 @@ function func(a) {
     return b;
 }
 console.log(func(5));
+
 // 1.2
 function arrayCreation(a, b) {
     const arr = [];
@@ -13,7 +14,6 @@ function arrayCreation(a, b) {
     }
     return arr;
 }
-
 console.log(arrayCreation(4, 32));
 
 // 1.3
