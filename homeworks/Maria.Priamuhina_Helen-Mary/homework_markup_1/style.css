@@ -1,0 +1,120 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 1024px;
+  font-family: "Open Sans", "sans-serif";
+}
+
+.header {
+  width: 1024px;
+  background-image: url("../homework_markup_1/images/Backgroundbackground.png");
+  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, .7);
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_im {
+  display: flex;
+}
+
+.logo {
+  margin: 52px 0 0 120px;
+}
+
+.menu {
+  padding-right: 50px;
+  margin: 67px 0 0 130px;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  display: flex;
+  list-style-type: none;
+}
+
+.ref {
+  margin-left: 35px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.ref:hover {
+  text-decoration: underline;
+  color: #35C;
+}
+
+.title {
+  text-align: center;
+}
+
+.title_f {
+  color: #FFF;
+  font-size: 40px;
+  font-family: Montserrat, sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 51px;
+  margin-top: 50px;
+}
+
+.underline {
+  width: 111px;
+  height: 2px;
+  background-color: #35C;
+  margin: 0 auto;
+}
+
+.meaningful {
+  margin-top: 54px;
+  margin-bottom: 60px;
+  color: #CCC;
+  font-family: Noto Sans, sans-serif;
+  font-size: 20px;
+}
+
+.services {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  letter-spacing: -2px;
+  font-weight: 700;
+  line-height: 75px;
+  margin-top: 99px;
+  margin-bottom: 40px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.section {
+  width: 900px;
+  margin: 10px auto;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block_im {
+  width: 62px;
+  height: 55px;
+  margin-top: 79px;
+  margin-bottom: 39px;
+}
+
+.block_head {
+  margin-bottom: 18 px;
+  font-family: Montserrat, sans-serif;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.block_txt {
+  color: #888;
+  font-family: Noto Sans, sans-serif;
+  font-size: 14px;
+  margin-bottom: 101px;
+}
