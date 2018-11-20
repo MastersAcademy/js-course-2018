@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:any-link {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+}
+
+.header__logo {
+  margin-left: 97px;
+  margin-top: 46px;
+}
+
+nav {
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: 95px;
+}
+
+.navbar a {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.navbar a:hover {
+  color: #EE2F1B;
+}
+
+.title {
+  background-image: url("images/background.jpg");
+  height: 470px;
+  background-color: rgba(0, 0, 0, .75);
+  background-blend-mode: darken;
+}
+
+.title h1 {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  width: 510px;
+  text-align: center;
+  margin: auto;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: -2.5px;
+}
+
+.spacer {
+  align-self: center;
+  margin: auto;
+  width: 100px;
+  border-bottom: 2px solid #35C2F8;
+}
+
+.title p {
+  width: 400px;
+  margin: auto;
+  padding-top: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #CCC;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: -.5px;
+}
+
+.core-services {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.core-services h2 {
+  width: 304px;
+  margin: auto;
+  color: #222;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 70px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.core-services h3 {
+  height: 15;
+  color: #222;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 65px;
+  text-transform: uppercase;
+  letter-spacing: -.4px;
+}
+
+.core-services p {
+  color: #888;
+  font-family: "Noto Sans";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.core-services__services {
+  padding-top: 55px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 235px 235px 235px;
+  grid-column-gap: 77px;
+}
