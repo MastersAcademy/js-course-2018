@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; 
+    padding: 0;
+    background-color: #CCCCCC;
+}
+.wrapper {
+    width: 1024px;
+    height: 480px;
+    background-image: url(images/bg.png);
+    background-size: cover;
+}
+.header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+}
+.logo {
+    display: block;
+    margin: auto;
+    width: 107px;
+    height: 28px;
+    background-image: url(images/Dreams.png);
+}
+.menu {
+    margin: auto;
+}
+.nav__menu {
+    display: flex;
+    margin: 0; 
+    padding-left: 0; 
+  }
+a {
+    text-decoration: none; 
+    color: 	#FFFFFF;
+    margin-right: 20px;
+}
+a:hover{
+    color: 	#35c2f8;;
+}
+.intro {
+    width: 100%;
+    height: 400px;
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
+h1.intro__heading {
+    margin-top: 0;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+p.intro__title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.intro__line {
+    margin: auto;
+    width: 111px;
+    height: 2px;
+    background-color: #35c2f8;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+.about__heading {
+    height: 40%;
+}
+.about__title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: #222222;
+}
+.about__block {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+
+}
+.block1{
+    text-align: center;
+    width: 25%;
+
+}
+h4 {
+    font-size: 16px;
+    color: #222222;
+}
+.desc {
+    font-size: 14px;
+    color: #888888;
+}
+.block2{
+    text-align: center;
+    width: 25%;
+}
+.block3{
+    text-align: center;
+    width: 25%;
+}
+img {
+    width: 62px;
+    height: 55px;
+}
