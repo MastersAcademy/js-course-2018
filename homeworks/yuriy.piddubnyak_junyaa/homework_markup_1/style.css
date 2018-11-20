@@ -120,9 +120,7 @@
 
 .h3_icons {
   display: flex;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-flex-direction: column;
   flex-direction: column;
   height: 80px;
   text-align: center;
@@ -132,7 +130,6 @@
 .description {
   display: flex;
   justify-content: center;
-  -webkit-flex-direction: column;
   flex-direction: column;
   font-size: 14px;
   font-weight: 400;
