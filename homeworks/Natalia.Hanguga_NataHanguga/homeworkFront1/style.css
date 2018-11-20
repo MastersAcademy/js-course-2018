@@ -4,12 +4,12 @@
 }
 
 body {
-  top: 0; 
-  left: 0; 
+  top: 0;
+  left: 0;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-color: #fff;
+  background-color: #FFF;
 }
 
 /*site header*/
@@ -26,7 +26,7 @@ header {
 /*background image(computer)*/
 
 .bgimg {
-  background-image: url(img/Background.png);
+  background-image: url('img/Background.png');
   position: relative;
   background-size: cover;
   width: 100%;
@@ -36,7 +36,7 @@ header {
 /*second layer of background image*/
 
 .shadow {
-  background-image: url(img/TransparencyLayer.png);
+  background-image: url('img/TransparencyLayer.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -47,7 +47,7 @@ header {
 /*site logo*/
 
 .logo {
-  background-image: url(img/Dreams@1X.png);
+  background-image: url('img/Dreams@1X.png');
   width: 107px;
   height: 28px;
   margin-top: 20px;
@@ -62,7 +62,6 @@ header {
 .menu {
   box-sizing: border-box;
   text-align: justify;
-  display: -webkit-flex;
   display: flex;
   flex-direction: wrap;
   justify-content: space-between;
@@ -72,7 +71,6 @@ header {
   margin-top: 30px;
   margin-left: -600px;
   height: 12px ;
-  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -82,10 +80,10 @@ header {
 
 .menuPoint {
   margin-right: 40px;
-  color: #fff;
+  color: #FFF;
   font-weight: 900;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 10pt;
+  font-family: 'Open Sans', 'sans-serif';
+  font-size: 10`pt`;
   text-align: center;
 }
 
@@ -93,7 +91,7 @@ header {
 /*content part of site(slogans)*/
 
 main {
-  background-image: url(img/Container.svg);
+  background-image: url('img/Container.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -111,9 +109,9 @@ main {
 .bigSlogan {
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
-  font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
+  color: #FFF;
+  font-weight: 900;
+  font-family: 'Open Sans', 'sans-serif';
   font-size: 27pt;
   line-height: 60px;
 }
@@ -121,14 +119,13 @@ main {
 .line1 {
   margin-top: 20px;
   text-align: center;
-
 }
 
 .smallSlogan {
   margin-top: 20px;
-  color:#ccc;
+  color: #CCC;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', "sans-serif";
   font-size: 12pt;
   text-align: center;
   margin-bottom: 70px;
@@ -142,7 +139,7 @@ main {
   color: #000;
   text-align: center;
   font-weight: 800;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', "sans-serif";
   font-size: 25pt;
   margin-top: 70px;
 }
@@ -154,7 +151,6 @@ main {
 .footerMenu {
   box-sizing: border-box;
   text-align: justify;
-  display: -webkit-flex;
   display: flex;
   flex-direction: wrap;
   justify-content: space-between;
@@ -166,7 +162,7 @@ main {
   width: 300px;
   text-align: center;
   margin-left: 50px;
-} 
+}
 
 .logoDesign > img {
   width: 40px;
@@ -179,8 +175,8 @@ main {
   text-transform: uppercase;
   color: #222;
   text-align: center;
-  font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-family: 'Open Sans', "sans-serif";
   font-size: 11pt;
 }
 
@@ -188,7 +184,7 @@ main {
   margin-top: 10px;
   color: #888;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', "sans-serif";
   font-size: 9pt;
 }
 
