@@ -2,8 +2,8 @@ body {
   display: flex;
   justify-content: center;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-  margin: 0; 
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
   padding: 0;
   background-color: #CCC;
 }
@@ -11,7 +11,7 @@ body {
 .wrapper {
   width: 1024px;
   height: 480px;
-  background-image: url(images/bg.png);
+  background-image: url("images/bg.png");
   background-size: cover;
 }
 
@@ -27,7 +27,7 @@ body {
   margin: auto;
   width: 107px;
   height: 28px;
-  background-image: url(images/Dreams.png);
+  background-image: url("images/Dreams.png");
 }
 
 .menu {
