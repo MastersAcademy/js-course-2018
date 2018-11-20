@@ -60,7 +60,6 @@ body {
 
 .header .navbar {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 83%;
 }
@@ -68,7 +67,6 @@ body {
 .header .nav {
   list-style: none;
   display: inline-flex;
-  flex-direction: row;
   margin: 10px;
   font-size: 14px;
 }
@@ -141,10 +139,9 @@ body {
 
 .section-services .services-block {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   width: 83%;
-  padding: 155px 0;
+  padding: 66px 0;
 }
 
 .section-services .services-subblock {
@@ -155,32 +152,12 @@ body {
   width: 30%;
 }
 
-.section-services .subcaption-1:before {
-  content: "";
-  position: absolute;
-  top: -90px;
-  left: calc(50% - 31px);
-  width: 62px;
+.section-services .service-image {
+  width: 55px;
   height: 55px;
-  background-image: url("./images/tools.png");
+  margin-bottom: 36px;
 }
 
-.section-services .subcaption-2:before {
-  content: "";
-  position: absolute;
-  top: -90px;
-  left: calc(50% - 28px);
-  width: 56px;
-  height: 56px;
-  background-image: url("./images/flow-tree.png");
-}
-
-.section-services .subcaption-3:before {
-  content: "";
-  position: absolute;
-  top: -90px;
-  left: calc(50% - 28px);
-  width: 56px;
-  height: 56px;
-  background-image: url("./images/lifebuoy.png");
+.section-services .service-image-1 {
+  width: 62px;
 }
