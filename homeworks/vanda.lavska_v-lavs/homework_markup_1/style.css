@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
 }
 
-.section_title {
+.section__title {
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
@@ -28,7 +28,7 @@ body {
   margin: 0 auto 40px;
 }
 
-.section_title:after {
+.section__title:after {
   position: absolute;
   content: "";
   display: block;
@@ -52,19 +52,19 @@ body {
   z-index: 200;
 }
 
-.container-header {
+.container_header {
   display: flex;
   justify-content: space-between;
 }
 
-.logo-site {
+.logo_site {
   display: block;
   width: 108px;
   height: 28px;
   text-decoration: none;
 }
 
-.img-logo {
+.img_logo {
   display: block;
   width: 100%;
   height: auto;
@@ -72,12 +72,12 @@ body {
 
 /*navigation */
 
-.header_nav {
+.header__nav {
   display: flex;
   align-items: flex-end;
 }
 
-.nav_list {
+.nav__list {
   display: flex;
   justify-content: flex-end;
   margin: 0;
@@ -88,15 +88,15 @@ body {
   line-height: 1;
 }
 
-.nav_item {
+.nav__item {
   margin-left: 50px;
 }
 
-.nav_item:first-child {
+.nav__item:first-child {
   margin-left: 0;
 }
 
-.nav_link {
+.nav__link {
   display: block;
   text-decoration: none;
   color: inherit;
@@ -108,15 +108,15 @@ body {
   transition: .35s ;
 }
 
-.nav_link:hover,
-.nav_link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: #EE2F1B;
   outline: none;
 }
 
 /*section-intro*/
 
-.section-intro {
+.section_intro {
   position: relative;
   display: flex;
   align-items: center;
@@ -129,7 +129,7 @@ body {
   padding: 100px 0 20px;
 }
 
-.section-intro:before {
+.section_intro:before {
   position: absolute;
   content: "";
   top: 0;
@@ -140,12 +140,12 @@ body {
   z-index: 1;
 }
 
-.container-intro {
+.container_intro {
   position: relative;
   z-index: 2;
 }
 
-.section_title-intro {
+.section__title_intro {
   max-width: 544px;
   font-size: 50px;
   font-weight: 700;
@@ -155,7 +155,7 @@ body {
   margin: 0 auto 54px;
 }
 
-.sub-title {
+.subtitle {
   max-width: 422px;
   font-size: 20px;
   color: #CCC;
@@ -166,12 +166,12 @@ body {
 
 /*section-services*/
 
-.section-services {
+.section_services {
   padding: 100px 0;
   height: 100px;
 }
 
-.container-cards {
+.container_cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -179,7 +179,7 @@ body {
 
 /*card-services*/
 
-.card-services {
+.card_services {
   max-width: 26%;
   text-align: center;
   padding-top: 40px;
@@ -192,10 +192,15 @@ body {
   margin: 0 auto 40px;
 }
 
-.card_title {
+.card__title {
   color: #222;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 20px;
 }
+
+.text {
+  margin: 0;
+}
+
