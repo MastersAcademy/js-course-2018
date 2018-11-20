@@ -6,8 +6,8 @@ let i;
 console.log('Palindromes from', s, 'to', e);
 for (x = s; x <= e; x++) {
     for (i = s; i <= e; i++) {
-        if ((x.toString().split('').reverse().join('')) == i) {
-            if (x % i == 0) {
+        if ((x.toString().split('').reverse().join('')) === i.toString()) {
+            if (x % i === 0) {
                 console.log(i);
             }
         }
