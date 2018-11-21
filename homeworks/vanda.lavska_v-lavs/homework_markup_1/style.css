@@ -144,7 +144,7 @@ body {
   z-index: 2;
 }
 
-.section__title--intro {
+.section__title_intro {
   max-width: 544px;
   font-size: 50px;
   font-weight: 700;
