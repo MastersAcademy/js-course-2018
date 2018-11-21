@@ -4,15 +4,16 @@
 }
 
 body {
-  top: 0; 
-  left: 0; 
+  top: 0;
+  left: 0;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-color:  #FFF;
+  background-color: #FFF;
 }
 
 /*site header*/
+
 header {
   box-sizing: border-box;
   text-align: justify;
@@ -22,6 +23,7 @@ header {
 }
 
 /*background image(computer)*/
+
 .backgroundImage {
   background-image: url("img/Background.png");
   position: relative;
@@ -31,6 +33,7 @@ header {
 }
 
 /*second layer of background image*/
+
 .shadow {
   background-image: url("img/TransparencyLayer.png");
   background-repeat: no-repeat;
@@ -46,6 +49,7 @@ header {
 }
 
 /*site logo*/
+
 .logo {
   width:107px;
   height: 28px;
@@ -57,7 +61,6 @@ header {
 }
 
 /*menu bar*/
-
 
 .menuBar {
   margin-top: 35px;
@@ -81,6 +84,7 @@ header {
 
 
 /*content part of site(slogans)*/
+
 .contain {
   width: 100%;
   height: 100%;
@@ -90,7 +94,7 @@ header {
 
 .bigSlogan {
   text-align: center;
-  text-transform:uppercase;
+  text-transform: uppercase;
   color: #FFF;
   font-weight:900;
   font-family: "Open Sans", "sans-serif";
@@ -99,7 +103,7 @@ header {
 }
 
 .bigSlogan::after, .title::after {
-  content:  url("img/Underline.png");
+  content: url("img/Underline.png");
   width: 100px;
   height: 30px;
   margin-top: 60px;
@@ -118,10 +122,10 @@ header {
   margin-bottom: 70px;
 }
 
-
 /*main of site*/
+
 .title {
-  text-transform:uppercase;
+  text-transform: uppercase;
   color:#000;
   text-align: center;
   font-weight: 900;
