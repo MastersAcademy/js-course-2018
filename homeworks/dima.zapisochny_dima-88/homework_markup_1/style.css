@@ -26,7 +26,6 @@ body {
   margin: auto;
   width: 107px;
   height: 30px;
-  background-image: url("images/Dreams.png");
 }
 
 .menu {
@@ -34,21 +33,14 @@ body {
   text-transform: uppercase;
 }
 
-ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-a {
+.menu a {
   text-decoration: none;
   color: #FFF;
   margin-right: 20px;
 }
 
-a :hover {
-  color: #D8EDF5;
+a:hover {
+  color: #35C2F8;
 }
 
 .block__heading {
@@ -59,7 +51,7 @@ a :hover {
   align-content: center;
 }
 
-h1.heading {
+.heading {
   margin-top: 0;
   padding-top: 30px;
   margin-bottom: 30px;
@@ -69,19 +61,24 @@ h1.heading {
   color: #FFF;
 }
 
-p.title {
+.heading:after {
+  content: "";
+  width: 111px;
+  height: 2px;
+  background: #35C2F8;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.title {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 20px;
   color: #FFF;
-}
-
-.line {
-  margin: auto;
-  width: 111px;
-  height: 2px;
-  background-color: #35C2F8;
 }
 
 .section2 {
@@ -106,6 +103,18 @@ p.title {
   color: #222;
 }
 
+.headline:after {
+  content: "";
+  width: 111px;
+  height: 2px;
+  background: #35C2F8;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -128,7 +137,7 @@ p.title {
   width: 25%;
 }
 
-h4.subtitle {
+.subtitle {
   font-size: 16px;
   text-transform: uppercase;
   color: #222;
@@ -139,7 +148,7 @@ h4.subtitle {
   color: #888;
 }
 
-img.icon {
+.icon {
   width: 62px;
   height: 55px;
 }
