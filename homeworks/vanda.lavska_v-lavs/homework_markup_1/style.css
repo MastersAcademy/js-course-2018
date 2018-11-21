@@ -116,20 +116,19 @@ body {
 
 /*section-intro*/
 
-.section_intro {
+.section__intro {
   position: relative;
   display: flex;
   align-items: center;
   width: 100%;
   min-height: 645px;
   background: url("images/Background-intro.jpg"), center center no-repeat;
-  height: 768px;
   -webkit-background-size: cover;
   background-size: cover;
   padding: 100px 0 20px;
 }
 
-.section_intro:before {
+.section__intro:before {
   position: absolute;
   content: "";
   top: 0;
@@ -140,7 +139,7 @@ body {
   z-index: 1;
 }
 
-.container_intro {
+.container__intro {
   position: relative;
   z-index: 2;
 }
@@ -166,7 +165,7 @@ body {
 
 /*section-services*/
 
-.section_services {
+.section__services {
   padding: 100px 0;
   height: 100px;
 }
