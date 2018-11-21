@@ -9,21 +9,20 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 1024px;
+  width: 1400px;
   padding: 0;
   margin: 0 auto;
 }
 
-/* HEADER */
-
-.header .container {
+.header-background {
+  width: 1400px;
+  margin: 0 auto;
   background-image: url("./images/TransparencyLayer.png"), url("./images/Background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 40px 0;
 }
 
-.header .caption {
+.section-intro .caption {
   color: #FFF;
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
@@ -32,12 +31,12 @@ body {
   text-transform: uppercase;
   position: relative;
   text-align: center;
-  margin: 150px 0 65px;
+  margin: 110px 0 65px;
   letter-spacing: -2px;
   line-height: 64px;
 }
 
-.header .caption:after {
+.section-intro .caption:after {
   content: "";
   position: absolute;
   top: 166px;
@@ -47,14 +46,14 @@ body {
   background-color: #35C2F8;
 }
 
-.header .text {
+.section-intro .text {
   color: #CCC;
   font-family: "Noto Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
-  margin-bottom: 94px;
+  margin-bottom: 134px;
   line-height: 35px;
 }
 
@@ -62,6 +61,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 83%;
+  padding: 40px 0;
 }
 
 .header .nav {
