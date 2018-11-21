@@ -88,11 +88,11 @@ body {
   line-height: 1;
 }
 
-.nav__item {
+.nav__list--item {
   margin-left: 50px;
 }
 
-.nav__item:first-child {
+.nav__list--item:first-child {
   margin-left: 0;
 }
 
@@ -180,7 +180,7 @@ body {
 /*card-services*/
 
 .card_services {
-  max-width: 26%;
+  max-width: 280px;
   text-align: center;
   padding-top: 40px;
 }
