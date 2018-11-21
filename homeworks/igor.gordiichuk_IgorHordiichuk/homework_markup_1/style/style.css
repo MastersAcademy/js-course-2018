@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Noto Sans";
-  src: url("fonts/Noto_Sans/NotoSans-Regular.ttf");
+  src: url("../fonts/Noto_Sans/NotoSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("fonts/Montserrat/Montserrat-SemiBold.ttf");
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
 }
 
 * {
@@ -20,6 +20,7 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  color: rgb(0, 0, 0);
 }
 
 .header {
@@ -27,10 +28,10 @@ body {
   flex-flow: column nowrap;
   text-align: center;
   color: rgb(240, 240, 240);
-  background: url("images/header-bg.png") center;
+  background: url("../images/header-bg.png") center;
 }
 
-.opacity-layer {
+.transparent-layer {
   width: 100%;
   background-color: rgba(0, 0, 0, .75);
   padding: 40px;
@@ -51,12 +52,12 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 615px;
+  max-width: 615px;
 }
 
 .nav-link {
   color: rgb(240, 240, 240);
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .nav-link:hover {
@@ -111,4 +112,5 @@ body {
 
 .services-article {
   font-family: "Noto Sans", sans-serif;
+  color: rgb(136, 136, 136);
 }
