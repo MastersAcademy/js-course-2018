@@ -51,7 +51,7 @@ header {
 /*site logo*/
 
 .logo {
-  width:107px;
+  width: 107px;
   height: 28px;
   margin-top: 20px;
   margin-left: 50px;
@@ -70,7 +70,7 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-   position: absolute;
+  position: absolute;
 }
 
 .menuPoint {
@@ -96,13 +96,13 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
-  font-weight:900;
+  font-weight: 900;
   font-family: "Open Sans", "sans-serif";
   line-height: 60px;
   margin-top: 100px;
 }
 
-.bigSlogan::after, .title::after {
+.bigSlogan ::after, .title ::after {
   content: url("img/Underline.png");
   width: 100px;
   height: 30px;
@@ -126,10 +126,10 @@ header {
 
 .title {
   text-transform: uppercase;
-  color:#000;
+  color: #000;
   text-align: center;
   font-weight: 900;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", "sans-serif";
   margin-top: 70px;
 }
 
@@ -144,7 +144,7 @@ header {
 }
 
 .design, .develop, .support {
-  width:300px;
+  width: 300px;
   text-align: center;
   margin-left: 50px;
 }
