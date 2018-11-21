@@ -27,13 +27,13 @@ header {
   margin-top: 46px;
 }
 
-nav {
+.navbar {
   margin-top: 55px;
   margin-left: auto;
   margin-right: 95px;
 }
 
-.navbar a {
+.navbar__link {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #FFF;
@@ -43,7 +43,7 @@ nav {
   padding-right: 30px;
 }
 
-.navbar a:hover {
+.navbar__link:hover {
   color: #EE2F1B;
 }
 
@@ -53,7 +53,7 @@ nav {
   background-blend-mode: darken;
 }
 
-.title h1 {
+.title__header {
   padding-top: 100px;
   padding-bottom: 30px;
   width: 510px;
@@ -75,7 +75,7 @@ nav {
   border-bottom: 2px solid #35C2F8;
 }
 
-.title p {
+.title__description {
   width: 400px;
   margin: auto;
   padding-top: 30px;
@@ -90,37 +90,32 @@ nav {
 .core-services {
   text-align: center;
   margin-top: 70px;
-}
-
-.core-services h2 {
-  width: 304px;
-  margin: auto;
-  color: #222;
-  font-family: Montserrat;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 70px;
-  text-transform: uppercase;
-  letter-spacing: -2px;
-}
-
-.core-services h3 {
-  height: 15;
-  color: #222;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 65px;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-
-.core-services p {
   color: #888;
   font-family: "Noto Sans";
   font-size: 11px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.core-services__header {
+  margin: auto;
+  color: #222;
+  font-family: Montserrat;
+  text-transform: uppercase;
+}
+
+.header-big {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -2px;
+}
+
+.header-medium {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 65px;
+  letter-spacing: -1px;
 }
 
 .core-services__services {
