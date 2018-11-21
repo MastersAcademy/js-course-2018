@@ -19,7 +19,9 @@ body {
 
 .header__logo {
   flex-grow: 2;
-  padding: 15px;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
 }
 
 .header__nav {
@@ -28,14 +30,16 @@ body {
   justify-content: flex-end;
 }
 
-.header__nav-item {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 15px;
-  color: #FFF;
-  font-family: Montserrat, "Open Sans";
+.header__nav--list {
+  display: inline-block;
 }
 
+.header__nav--item {
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 15px;
+}
 
 .header__header-section {
   display: flex;
