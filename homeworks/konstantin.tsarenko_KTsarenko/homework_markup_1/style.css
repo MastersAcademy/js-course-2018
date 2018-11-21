@@ -67,7 +67,7 @@ h3 {
   color: #222;
   font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 10;
+  margin-bottom: 10px;
 }
 
 .border_b {
@@ -111,15 +111,15 @@ nav {
 }
 
 .item-nav:not(:last-child) {
-  margin-right: 54;
+  margin-right: 54px;
 }
 
-.item-nav a {
+.link-nav {
   color: #FFF;
   text-transform: uppercase
 }
 
-.item-nav a:hover {
+.link-nav:hover {
   color: #EE2F1B;
 }
 
