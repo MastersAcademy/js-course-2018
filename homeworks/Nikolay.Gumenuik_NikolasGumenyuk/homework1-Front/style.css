@@ -102,7 +102,7 @@ header {
   margin-top: 100px;
 }
 
-.bigSlogan ::after, .title ::after {
+.bigSlogan::after, .title::after {
   content: url("img/Underline.png");
   width: 100px;
   height: 30px;
