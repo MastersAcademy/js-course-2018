@@ -24,7 +24,7 @@ header {
 
 /*background image(computer)*/
 
-.bgimg {
+.backgroundImage {
   background-image: url("img/Background.png");
   position: relative;
   background-size: cover;
@@ -41,12 +41,16 @@ header {
   background-attachment: fixed;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
+  text-align: justify;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
 }
 
 /*site logo*/
 
 .logo {
-  background-image: url("img/Dreams@1X.png");
   width: 107px;
   height: 28px;
   margin-top: 20px;
@@ -58,17 +62,9 @@ header {
 
 /*menu bar*/
 
-.menu {
-  box-sizing: border-box;
-  text-align: justify;
-  display: flex;
-  flex-direction: wrap;
-  justify-content: space-between;
-}
-
 .menuBar {
-  margin-top: 30px;
-  margin-left: -600px;
+  margin-top: 35px;
+  margin-left: 500px;
   height: 12px ;
   display: flex;
   flex-direction: row;
@@ -78,31 +74,22 @@ header {
 }
 
 .menuPoint {
-  margin-right: 40px;
   color: #FFF;
+  margin-right: 50px;
   font-weight: 900;
   font-family: "Open Sans", "sans-serif";
-  font-size: 10"`pt`";
+  font-size: 13px;
   text-align: center;
 }
 
 
 /*content part of site(slogans)*/
 
-main {
-  background-image: url("img/Container.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
+.contain {
   width: 100%;
   height: 100%;
   text-align: center;
-}
-
-.contain {
   margin-top: 110px;
-  text-align: center;
 }
 
 .bigSlogan {
@@ -111,40 +98,39 @@ main {
   color: #FFF;
   font-weight: 900;
   font-family: "Open Sans", "sans-serif";
-  font-size: 27"`pt`";
   line-height: 60px;
+  margin-top: 100px;
 }
 
-.line1 {
-  margin-top: 20px;
-  text-align: center;
+.bigSlogan:after, .title:after {
+  content: url("img/Underline.png");
+  width: 100px;
+  height: 30px;
+  margin-top: 60px;
+  margin-left: -160px;
+  position: absolute;
+  display: inline-block;
 }
 
 .smallSlogan {
-  margin-top: 20px;
+  margin-top: 80px;
   color: #CCC;
   font-weight: 400;
   font-family: "Open Sans", "sans-serif";
-  font-size: 12"`pt`";
+  font-size: 16px;
   text-align: center;
   margin-bottom: 70px;
 }
 
-
-/*footer of site*/
+/*main of site*/
 
 .title {
   text-transform: uppercase;
   color: #000;
   text-align: center;
-  font-weight: 800;
+  font-weight: 900;
   font-family: "Open Sans", "sans-serif";
-  font-size: 25"`pt`";
   margin-top: 70px;
-}
-
-.line2 {
-  text-align: center;
 }
 
 .footerMenu {
@@ -153,7 +139,7 @@ main {
   display: flex;
   flex-direction: wrap;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 130px;
   margin-bottom: 100px;
 }
 
@@ -176,7 +162,7 @@ main {
   text-align: center;
   font-weight: 900;
   font-family: "Open Sans", "sans-serif";
-  font-size: 11"`pt`";
+  font-size: 15px;
 }
 
 .describe {
@@ -184,7 +170,7 @@ main {
   color: #888;
   text-align: center;
   font-family: "Open Sans", "sans-serif";
-  font-size: 9"`pt`";
+  font-size: 12px;
 }
 
 .support {
