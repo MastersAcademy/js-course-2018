@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
-.site-logo a {
+.site-logo .site-logo-link {
   font-family: "Bello Script", sans-serif;
   font-size: 36px;
   line-height: 20px;
@@ -97,12 +97,12 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
-.nav-links li {
+.nav-links .nav-links-item {
   display: block;
   margin: 0 25px;
 }
 
-.nav-links li a {
+.nav-links .nav-links-item .nav-links-item-link {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.services-list li {
+.services-list .services-list-item {
   flex-basis: 285px;
   margin: 65px auto 80px;
 }
