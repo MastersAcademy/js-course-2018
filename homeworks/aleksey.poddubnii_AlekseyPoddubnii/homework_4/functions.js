@@ -1,33 +1,42 @@
 // // Declarete function
 
 function plusTen(number) {
-    console.log(number + 10);
+    return number + 10;
 }
-plusTen();
 
-function multiplyByThree(number) {
+function multiplyThree(number) {
     return number * 3;
-    // console.log(number * 3);
 }
-multiplyByThree();
 
 function minusTen(number) {
-    console.log(number - 20);
+    return number - 20;
 }
 
-minusTen();
+// Task 1.1
 
-// Task 1,1
-
-function renderCallback(number) {
-    setTimeout(() => {
-        plusTen(number);
-    }, 1000);
-    setTimeout(() => {
-        console.log(multiplyByThree(number));
-    }, 2000);
-    setTimeout(() => {
-        minusTen(number);
-    }, 3000);
+function renderMyCallback(number) {
+    setTimeout(
+        (firstArg) => {
+            setTimeout(
+                (secondArg) => {
+                    setTimeout(
+                        (thirdArg) => {
+                            console.log(minusTen(thirdArg));
+                        },
+                        1000,
+                        multiplyThree(secondArg),
+                    );
+                    console.log(multiplyThree(secondArg));
+                },
+                1000,
+                plusTen(firstArg),
+            );
+            console.log(plusTen(firstArg));
+        },
+        1000,
+        number,
+    );
 }
-renderCallback(10);
+renderMyCallback(11);
+
+// Task 1.2
