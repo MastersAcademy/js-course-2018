@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.section-intro .caption {
+.intro__caption {
   color: #FFF;
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
@@ -36,7 +36,7 @@ body {
   line-height: 64px;
 }
 
-.section-intro .caption:after {
+.intro__caption:after {
   content: "";
   position: absolute;
   top: 166px;
@@ -46,7 +46,7 @@ body {
   background-color: #35C2F8;
 }
 
-.section-intro .text {
+.intro__text {
   color: #CCC;
   font-family: "Noto Sans", sans-serif;
   font-size: 20px;
@@ -57,49 +57,49 @@ body {
   line-height: 35px;
 }
 
-.header .navbar {
+.header__navbar {
   display: flex;
   justify-content: space-between;
   width: 83%;
   padding: 40px 0;
 }
 
-.header .nav {
+.header__nav {
   list-style: none;
   display: inline-flex;
   margin: 10px;
   font-size: 14px;
 }
 
-.header .nav-item {
+.header__nav-item {
   margin-left: 50px;
   letter-spacing: 1px;
 }
 
-.header .logo {
+.header__logo {
   width: 107px;
   height: 28px;
   margin-left: 43px;
 }
 
-.header .nav-link {
+.header__nav-link {
   color: #FFF;
   text-transform: uppercase;
   text-decoration: none;
   transition: color .3s;
 }
 
-.header .nav-link:hover {
+.header__nav-link:hover {
   color: #EE2F1B;
 }
 
 /* SECTION 1 */
 
-.section-services .container {
+.services__container {
   padding: 43px 0;
 }
 
-.section-services .caption {
+.services__caption {
   color: #222;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
@@ -110,7 +110,7 @@ body {
   position: relative;
 }
 
-.section-services .caption:after {
+.services__caption:after {
   content: "";
   position: absolute;
   top: 93px;
@@ -120,7 +120,7 @@ body {
   background-color: #35C2F8;
 }
 
-.section-services .subcaption {
+.services__subblock__caption {
   color: #222;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -131,20 +131,20 @@ body {
   position: relative;
 }
 
-.section-services .text {
+.services__subblock__text {
   margin: 10px 0 0;
   text-align: center;
   letter-spacing: -1px;
 }
 
-.section-services .services-block {
+.services__block {
   display: flex;
   justify-content: space-around;
   width: 83%;
   padding: 66px 0;
 }
 
-.section-services .services-subblock {
+.services__subblock {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -152,12 +152,12 @@ body {
   width: 30%;
 }
 
-.section-services .service-image {
+.services__image {
   width: 55px;
   height: 55px;
   margin-bottom: 36px;
 }
 
-.section-services .service-image-1 {
+.services__image-1 {
   width: 62px;
 }
