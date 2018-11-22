@@ -1,23 +1,33 @@
-// Declarete function
+// // Declarete function
 
 function plusTen(number) {
-    const result = number + 10;
-    console.log(result);
-    return result;
+    console.log(number + 10);
 }
 plusTen();
 
 function multiplyByThree(number) {
-    const result = number * 3;
-    console.log(result);
-    return result;
+    return number * 3;
+    // console.log(number * 3);
 }
-multiplyByThree(plusTen(20));
+multiplyByThree();
 
 function minusTen(number) {
-    const result = number - 10;
-    console.log(result);
-    return result;
+    console.log(number - 20);
 }
 
-minusTen(multiplyByThree());
+minusTen();
+
+// Task 1,1
+
+function renderCallback(number) {
+    setTimeout(() => {
+        plusTen(number);
+    }, 1000);
+    setTimeout(() => {
+        console.log(multiplyByThree(number));
+    }, 2000);
+    setTimeout(() => {
+        minusTen(number);
+    }, 3000);
+}
+renderCallback(10);
