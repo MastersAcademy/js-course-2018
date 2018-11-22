@@ -8,7 +8,7 @@ function bar(y) {
 function baz(z) {
     return z - 20;
 }
-function logNumberCb(n) {
+function logNumberCallbacks(n) {
     setTimeout((cb1) => {
         setTimeout((cb2) => {
             setTimeout((cb3) => {
@@ -19,28 +19,32 @@ function logNumberCb(n) {
         console.log(foo(cb1));
     }, 1000, n);
 }
-logNumberCb(1);
+logNumberCallbacks(1);
+
 
 // Using Promise
-function promiseValidation(n, functionName, t) {
-    return new Promise((resolve, reject) => {
-        if (typeof (n) === 'number') {
-            setTimeout(() => {
-                const promise = functionName(n);
-                console.log(promise);
-                resolve(promise);
-            }, t);
-        } else {
-            reject();
-        }
+function validation(n, funcName, t) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            const promise = funcName(n);
+            console.log(promise);
+            resolve(promise);
+        }, t);
     });
 }
 function logNumbersPromise(n) {
-    promiseValidation(n, foo, 1000)
-        .then(res => promiseValidation(res, bar, 2000))
-        .then(res => promiseValidation(res, baz, 3000))
+    validation(n, foo, 1000)
+        .then(res => validation(res, bar, 2000))
+        .then(res => validation(res, baz, 3000))
         .catch(err => console.log(err));
 }
 logNumbersPromise(1);
 
-// Using Asnyc
+
+// Using Async
+async function logNumberAsync(n) {
+    let toPoint = await validation(n, foo, 1000);
+    toPoint = await validation(toPoint, bar, 2000);
+    await validation(toPoint, baz, 3000);
+}
+logNumberAsync(1);
