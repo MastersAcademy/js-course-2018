@@ -19,17 +19,17 @@ input[type="reset"],
 input[type="button"],
 button {
   background: none;
+  overflow: visible;
   border: 0;
+  padding: 0;
   color: inherit;
-  cursor: pointer;
   font: inherit;
   line-height: normal;
-  overflow: visible;
-  padding: 0;
   -webkit-appearance: button;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  cursor: pointer;
 }
 
 input::-moz-focus-inner,
@@ -45,27 +45,14 @@ button:focus {
 
 a {
   color: #111;
+  text-decoration: none;
   -webkit-transition: all .25s ease;
   -o-transition: all .25s ease;
   transition: all .25s ease;
-  text-decoration: none;
 }
 
 a:hover, a:focus {
   text-decoration: none;
-}
-
-html, body {
-  font-size: 16px;
-  font-family: "Playfair Display", serif;
-}
-
-body {
-  overflow-y: scroll;
-  background-color: #FFF;
-  min-height: 100vh;
-  color: #111;
-  letter-spacing: .05em;
 }
 
 html, body {
@@ -74,64 +61,150 @@ html, body {
   padding: 0;
 }
 
-/* New for this project */
-
 body {
-  color: #888;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 400;
+  overflow-y: scroll;
+  min-height: 100vh;
+  background-color: #FFF;
+  color: #777;
+  font: 400 14px/22px "Open Sans", sans-serif;
   letter-spacing: -.35px;
 }
-
-/* .container {
-  width: 100%;
-  display: grid;
-  grid-template-areas: “header” “home” “services”;
-  grid-template-rows: auto 100vh 100vh;
-  grid-template-columns: 100%;
-} */
 
 /* ------------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ------------------------------------------------- */
 
+/* seaction */
+
 .section {
   width: 100%;
+  min-width: 960px;
+  min-height: 100vh;
 }
 
-.section__inner-wrap {
-  width: 1024px;
+/* container */
+
+/* In container I use flexbox properties, I thought it's not a better choice, but it works */
+/* At the moment I'm dealing with Grid, I thought it will be better in this case. I will apply the Grid a little later */
+
+.container {
+  width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
-  text-align: center;
-  margin-top: 100px;
-  padding-bottom: 100px;
 }
 
-.s-header {
+.container--column {
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.container--jc-start {
+  justify-content: flex-start;
+}
+
+.container--jc-between {
+  justify-content: space-between;
+}
+
+/* heading */
+
+.heading {
+  width: 100%;
   position: relative;
-  padding-bottom: 40px;
   color: #222;
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
   font-weight: 700;
-  line-height: 75px;
+  text-align: center;
   text-transform: uppercase;
+}
+
+.heading__h1 {
+  padding-bottom: 35px;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -2.5px;
+}
+
+.heading__h2 {
+  padding-bottom: 30px;
+  font-size: 40px;
+  line-height: 75px;
   letter-spacing: -2px;
 }
 
-.s-header:after {
+.heading__h3 {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  text-shadow: -1px 1px 3px #888;
+}
+
+.heading--border-btm:after {
   content: "";
+  width: 111px;
+  height: 2px;
   display: block;
   position: absolute;
   bottom: 0;
   left: 50%;
   margin-left: -55px;
-  width: 111px;
-  height: 2px;
   background-color: #35C2F8;
 }
+
+.heading--color-white {
+  color: #FFF;
+}
+
+/* description */
+
+.description {
+  width: 100%;
+}
+
+.description__for-h1 {
+  padding-top: 35px;
+  color: #CCC;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -.5px;
+}
+
+.description--center {
+  text-align: center;
+}
+
+/* article */
+
+.article-list {
+  width: 100%;
+  display: flex;
+  margin: 0 -15px;
+}
+
+.article-list__item {
+  width: 100%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.article-list__icon {
+  padding: 20px 0;
+}
+
+.article-list__icon--and-a-bit-to-right {
+  margin-left: 21px;
+}
+
+.article-list__heading {
+  padding: 10px 0;
+}
+
+.article-list__desc {
+  padding: 5px 0;
+}
+
 
 /* ------------------------------------------------- */
 /* HEADER */
@@ -139,32 +212,27 @@ body {
 
 .header {
   width: 100%;
-  position: absolute;
-  z-index: 99;
+  min-width: 960px;
+  height: 100vh;
+  min-height: 480px;
+  padding: 30px 0 70px;
+  background: url("./image/bg_transparency-layer.png"), url("./image/bg_home.jpg") center/cover no-repeat, #000;
 }
 
-.header__bar {
-  width: 1024px;
-  margin: 0 auto;
-  padding: 30px 0;
-  display: flex;
-  justify-content: space-around;
+.logo-dreams {
+  width: 107px;
+  height: 28px;
+  display: block;
+  margin-left: 15px;
 }
 
-.logo-dream {
-  color: #FFF;
-  font-family: "Kaushan Script", cursive;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 19px;
-}
-
-.logo-dream:hover {
-  color: #888;
+.logo-dreams__image {
+  width: 100%;
+  height: auto;
 }
 
 .nav__list {
-  display: flex;
+  display: inline-flex;
 }
 
 .nav__item {
@@ -173,105 +241,33 @@ body {
 
 .nav__link {
   display: block;
-  color: #FFF;
   border-bottom: 1px solid transparent;
-  text-transform: uppercase;
   font: 14px/41px "Montserrat", sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
 }
 
 .nav__link:hover {
   border-bottom-color: #35C2F8;
 }
 
-
-/* ------------------------------------------------- */
-/* HOME */
-/* ------------------------------------------------- */
-
-.section_home {
-  background-color: #000;
-  background-image: url("./image/bg_home.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.section__inner-home {
-  width: 1024px;
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.title-motto {
-  position: relative;
-  padding-bottom: 45px;
-  text-align: center;
-  color: #FFF;
-  font: 700 50px/60px "Montserrat", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -2.5px;
-}
-
-.title-motto:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -55px;
-  width: 111px;
-  height: 2px;
-  background-color: #35C2F8;
-}
-
-.title-description {
-  padding-top: 50px;
-  text-align: center;
-  color: #CCC;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: -.5px;
-}
-
 /* ------------------------------------------------- */
 /* SERVICES */
 /* ------------------------------------------------- */
 
-.section_services {
-  width: 100%;
-  height: 100vh;
+.page-services {
+  padding: 70px 0;
 }
 
-.s-list {
-  display: flex;
+.page-services__article-list {
+  padding-top: 50px;
 }
 
-.s-list__item {
-  width: 100%;
-  margin-top: 40px;
+/* ------------------------------------------------- */
+/* CUSTOMIZING FONTAWESOME */
+/* ------------------------------------------------- */
+
+.fa-hat-wizard--my-tuning {
+  color: #DDD;
+  font-size: 55px;
 }
-
-.s-list__wrap {
-  margin-top: 40px;
-}
-
-
-.s-list__icon {
-  width: auto;
-}
-
-.s-list__heading {
-  width: 100%;
-  margin-top: 40px;
-}
-
-.s-list__desc {
-  width: 300px;
-  padding: 10px 0;
-}
-

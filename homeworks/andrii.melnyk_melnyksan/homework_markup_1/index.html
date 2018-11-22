@@ -6,77 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dreams</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-    <div  class="container">
-        <header class="header">
-            <div class="header__bar">
-                    <a href="#main-page" class="logo-dream">Dreams</a>
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#page1" class="nav__link">Home</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#page2" class="nav__link">Services</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#page3" class="nav__link">Portfolio</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#page4" class="nav__link">About</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#page5" class="nav__link">Team</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#page6" class="nav__link">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-            </div>
-        </header>
-
-        <section class="section section_home">
-            <div class="section__inner-home">
-                <h1 class="title-motto">Build the website of<br>your dreams</h1>
-                <p class="title-description">We are a digital agency that believes in building<br>things that are meaningfull!</p>
-            </div>
-        </section>
-
-        <section class="section section_services">
-            <div class="section__inner-wrap">
-                <div class="s-header">
-                    <h2 class="s-header__heading">Core services</h2>
-                </div>
-                <ul class="s-list">
-                    <li class="s-list__item">
-                        <div class="s-list__wrap">
-                            <img src="./image/icon_tools.png"  class="s-list__icon" alt="Tools">
-                        </div>
-                        <h3 class="s-list__heading">Beautiful design</h3>
-                        <p class="s-list__desc">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+    <header class="header">
+        <div class="container container--jc-between">
+            <a href="/" class="logo-dreams">
+                <img src="./image/logo_dreams.png" alt="Dreams" class="logo-dreams__image">
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#page1" class="nav__link">Home</a>
                     </li>
-                    <li class="s-list__item">
-                        <div class="s-list__wrap">
-                            <img src="./image/icon_flow-tree.png"  class="s-list__icon" alt="Flow-tree">
-                        </div>
-                        <h3 class="s-list__heading">Web development</h3>
-                        <p class="s-list__desc">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+                    <li class="nav__item">
+                        <a href="#page2" class="nav__link">Services</a>
                     </li>
-                    <li class="s-list__item">
-                        <div class="s-list__wrap">
-                            <img src="./image/icon_lifebuoy.png"  class="s-list__icon" alt="Lifebouy">
-                        </div>
-                        <h3 class="s-list__heading">24/7 support</h3>
-                        <p class="s-list__desc">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+                    <li class="nav__item">
+                        <a href="#page3" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#page4" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#page5" class="nav__link">Team</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#page6" class="nav__link">Contact</a>
                     </li>
                 </ul>
-            </div>
-        </section>
-    </div>
+            </nav>
+        </div>
+        <div class="container container--column">
+            <h1 class="heading heading__h1 heading--border-btm heading--color-white">Build the website of<br>your dreams</h1>
+            <p class="description description__for-h1 description--center">We are a digital agency that believes in building<br>things that are meaningfull!</p>
+        </div>
+    </header>
+
+    <section class="section page-services">
+        <div class="container container--column container--jc-start">
+            <h2 class="heading heading__h2 heading--border-btm">Core services</h2>
+            <ul class="article-list page-services__article-list">
+                <li class="article-list__item">
+                    <i class=" article-list__icon fas fa-hat-wizard fa-hat-wizard--my-tuning article-list__icon--and-a-bit-to-right"></i>
+                    <h3 class="article-list__heading heading heading__h3">Beautiful 'magic' designs</h3>
+                    <p class="article-list__desc">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+                </li>
+                <li class="article-list__item">
+                    <i class=" article-list__icon fab fa-aws fa-hat-wizard--my-tuning"></i>
+                    <h3 class="article-list__heading heading heading__h3">Web development</h3>
+                    <p class="article-list__desc">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+                </li>
+                <li class="article-list__item">
+                    <i class=" article-list__icon far fa-life-ring fa-hat-wizard--my-tuning"></i>
+                    <h3 class="article-list__heading heading heading__h3">24/7 support</h3>
+                    <p class="article-list__desc">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
