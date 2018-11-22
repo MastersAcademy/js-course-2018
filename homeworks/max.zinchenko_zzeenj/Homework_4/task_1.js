@@ -1,4 +1,3 @@
-// Using Callback
 function foo(x) {
     return x + 10;
 }
@@ -8,6 +7,9 @@ function bar(y) {
 function baz(z) {
     return z - 20;
 }
+
+
+// Using Callback
 function logNumberCallbacks(n) {
     setTimeout((cb1) => {
         setTimeout((cb2) => {
