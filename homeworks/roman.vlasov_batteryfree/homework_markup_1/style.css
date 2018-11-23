@@ -15,14 +15,21 @@ body {
   height: 500px;
 }
 
-.logo {
-  padding-top: 40px;
-  padding-left: 40px;
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navigation {
-  margin-top: -40px;
-  margin-left: 45%;
+.logo {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.nav-list {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .link {
@@ -34,18 +41,17 @@ body {
   padding-left: 40px;
   color: #FFF;
   font-size: 10px;
-  font-weight: 290;
+  font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .title-text-up {
   padding-top: 10%;
-  width: 450px;
-  height: 73px;
+  width: 350px;
   color: #FFF;
   font-size: 30px;
-  font-weight: 550;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   margin: auto;
@@ -53,10 +59,9 @@ body {
 
 .title-text {
   width: 300px;
-  height: 40px;
   color: #CCC;
   font-size: 14px;
-  font-weight: 287;
+  font-weight: 400;
   line-height: 21px;
   text-align: center;
   margin: auto;
@@ -71,10 +76,9 @@ body {
 
 .core-service {
   width: 300px;
-  height: 21px;
   color: #222;
   font-size: 30px;
-  font-weight: 550;
+  font-weight: 600;
   line-height: 54px;
   text-transform: uppercase;
   text-align: center;
@@ -85,7 +89,7 @@ body {
 .service-title {
   color: #222;
   font-size: 12px;
-  font-weight: 350;
+  font-weight: 400;
   line-height: 55px;
   text-transform: uppercase;
   text-align: center;
@@ -94,7 +98,7 @@ body {
 .service-text {
   color: #888;
   font-size: 10px;
-  font-weight: 350;
+  font-weight: 400;
   line-height: 16px;
   text-align: center;
 }
