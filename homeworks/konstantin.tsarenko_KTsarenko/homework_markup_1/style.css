@@ -6,13 +6,11 @@
   transition: all .3s;
 }
 
-html {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-}
-
 body {
   margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #FFF;
 }
 
 img {
@@ -37,6 +35,10 @@ ul li {
   list-style: none;
 }
 
+p {
+  margin-top: 0;
+}
+
 .container {
   width: 100%;
   max-width: 1108px;
@@ -44,18 +46,17 @@ ul li {
   margin: 0 auto;
 }
 
-h1 {
+.heading_1 {
   font-size: 50px;
   font-weight: 700;
   line-height: 64px;
-  color: #FFF;
   text-transform: uppercase;
   padding-bottom: 40px;
   margin-top: 0;
   margin-bottom: 48px;
 }
 
-h2 {
+.heading_2 {
   color: #222;
   font-size: 40px;
   font-weight: 700;
@@ -66,7 +67,7 @@ h2 {
   line-height: 1.2;
 }
 
-h3 {
+.heading_3 {
   color: #222;
   font-size: 16px;
   text-transform: uppercase;
@@ -95,14 +96,8 @@ h3 {
   background-blend-mode: multiply;
 }
 
-header {
+.header_top {
   padding: 40px 0;
-
-  /* display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex; */
-
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -112,7 +107,7 @@ header {
   align-items: center;
 }
 
-nav {
+.navigation {
   margin-top: 8px;
 }
 
@@ -128,7 +123,7 @@ nav {
   margin-right: 54;
 }
 
-.item-nav a {
+.link-nav {
   color: #FFF;
   text-transform: uppercase
 }
@@ -140,14 +135,12 @@ nav {
 .content {
   margin: 120px auto 137px;
   text-align: center;
-  max-width: 560px;
+  max-width: 600px;
 }
 
-.content p {
+.content {
   color: #CCC;
   font-size: 20px;
-  padding: 0 48px;
-  line-height: 32px;
 }
 
 .services {
@@ -156,12 +149,6 @@ nav {
 }
 
 .list-services {
-
-  /* display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex; */
-
   display: flex;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -188,8 +175,4 @@ nav {
 .icon {
   width: 62px;
   margin: 0 auto 36px;
-}
-
-.desc p {
-  margin-top: 0;
 }
