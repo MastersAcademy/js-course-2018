@@ -38,9 +38,7 @@ function minuseTwenty(number) {
 
 function calculateAll(number) {
     addTen(number, (result) => {
-        multiplyThree(result, (preResult) => {
-            minuseTwenty(preResult);
-        });
+        multiplyThree(result, minuseTwenty);
     });
 }
 

@@ -24,12 +24,9 @@ function minuseTwenty(number) {
 }
 
 async function calculateAll(number) {
-    /* eslint-disable no-unused-vars */
-    let currentValue = number;
-    /* eslint-enable no-unused-vars */
-    currentValue = await addTen(currentValue);
+    let currentValue = await addTen(number);
     currentValue = await multiplyThree(currentValue);
-    currentValue = await minuseTwenty(currentValue);
+    await minuseTwenty(currentValue);
 }
 
 calculateAll(startNumber);

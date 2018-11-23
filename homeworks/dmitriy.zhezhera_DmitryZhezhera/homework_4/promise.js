@@ -24,9 +24,7 @@ function minuseTwenty(number) {
 }
 
 function calculateAll(number) {
-    addTen(number)
-        .then(result => multiplyThree(result))
-        .then(result => minuseTwenty(result));
+    addTen(number).then(multiplyThree).then(minuseTwenty);
 }
 
 calculateAll(startNumber);
