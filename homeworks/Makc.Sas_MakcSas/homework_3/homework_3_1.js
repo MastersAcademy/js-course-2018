@@ -1,13 +1,13 @@
-function square() {
-    let numberElements = 0;
-    const massA = [];
-    const massB = [];
-    let sum = 0;
-    for (numberElements; numberElements <= 32; numberElements += 4) {
-        massA[numberElements] = numberElements;
-        massB[numberElements] = (massA[numberElements] ** 2);
-        sum += massB[numberElements];
-    }
-    console.log(sum);
+function pow(value) {
+    return value * value;
 }
-square();
+function square() {
+    const massA = [];
+    for (let numberElements = 0; numberElements <= 32; numberElements += 4) {
+        massA.push(numberElements);
+    }
+    return massA;
+}
+const massA = square(32, 4);
+const massB = massA.map(value => pow(value));
+console.log(massB.reduce((numberA, numberB) => numberA + numberB));
