@@ -1,40 +1,36 @@
-const EventEmitter = require('events');
-
-function doSomeAsync(timeout, cb) {
-    const ee = new EventEmitter();
-    const state = {
-        progress: 0,
-    };
-
-    function loop() {
-        if (state.progress === 8) return cb(null, state);
-        if (state.progress === 'canceled') return cb(new Error('Action canceled'));
-        if (state.progress * 1000 > timeout) return cb(new Error('Action timed out'));
-        state.progress++;
-        ee.emit('progress', state);
-        return setTimeout(loop, 1000);
-    }
-
-    loop();
-
-    return ee;
-}
-
-function timeAction(actions = {}) {
-    const maxTime = 8000;
-    return new Promise((res, rej) => {
-        const actProg = doSomeAsync(maxTime, (err, result) => (err ? rej : res)(err || result));
-        actProg.on('progress', actions.progress);
+const path = 'https://kwork.ru/pics/t3/85/427668-1534523285.jpg';
+function loadImage(file, url, progressCallback) {
+    return new Promise((resolve, reject) => {
+        const request = new XMLHttpRequest();
+        request.open('GET', url);
+        request.onloadstart = () => {
+            console.log('upload begin');
+        };
+        request.onprogress = (event) => {
+            progressCallback(event);
+        };
+        request.onload = () => {
+            if (request.status === 200) {
+                console.log('end upload');
+                resolve(request.response);
+            } else {
+                reject(request.statusText);
+            }
+        };
+        request.send(file);
     });
 }
 
-timeAction({
-    progress: (state) => {
-        const objState = state;
-        console.log('state:', objState.progress);
-        if (objState.progress === 7) { objState.progress = 'canceled'; }
-    },
-}).then(
-    res => console.log('state: ready', res),
-    err => console.log('state:', err),
-);
+function progress(event) {
+    return new Promise((resolve, reject) => {
+        if (event.loadedDate < event.totalDate) {
+            console.log(`${event.loadedDate / event.totalDate * 100} %`);
+            resolve();
+        } else {
+            console.log('100%');
+            reject();
+        }
+    });
+}
+
+loadImage({}, path, progress).then().catch(err => console.log(err));
