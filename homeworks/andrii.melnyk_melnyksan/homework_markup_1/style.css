@@ -66,8 +66,10 @@ body {
   min-height: 100vh;
   background-color: #FFF;
   color: #777;
-  font: 400 14px/22px "Open Sans", sans-serif;
-  letter-spacing: -.35px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /* ------------------------------------------------- */
@@ -78,7 +80,7 @@ body {
 
 .section {
   width: 100%;
-  min-width: 960px;
+  min-width: 1024px;
   min-height: 100vh;
 }
 
@@ -88,7 +90,7 @@ body {
 /* At the moment I'm dealing with Grid, I thought it will be better in this case. I will apply the Grid a little later */
 
 .container {
-  width: 960px;
+  width: 1024px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,21 +125,18 @@ body {
 .heading__h1 {
   padding-bottom: 35px;
   font-size: 50px;
-  line-height: 60px;
-  letter-spacing: -2.5px;
+  line-height: 1.2;
 }
 
 .heading__h2 {
   padding-bottom: 30px;
   font-size: 40px;
-  line-height: 75px;
-  letter-spacing: -2px;
+  line-height: 1.875;
 }
 
 .heading__h3 {
   font-weight: 400;
   font-size: 16px;
-  letter-spacing: -.4px;
   text-shadow: -1px 1px 3px #888;
 }
 
@@ -167,8 +166,7 @@ body {
   padding-top: 35px;
   color: #CCC;
   font-size: 20px;
-  line-height: 30px;
-  letter-spacing: -.5px;
+  line-height: 1.5;
 }
 
 .description--center {
@@ -177,46 +175,53 @@ body {
 
 /* article */
 
-.article-list {
+.list {
   width: 100%;
   display: flex;
   margin: 0 -15px;
 }
 
-.article-list__item {
+.list__item {
   width: 100%;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   text-align: center;
 }
 
-.article-list__icon {
-  padding: 20px 0;
+.list__icon {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.article-list__icon--and-a-bit-to-right {
+.list__icon--and-a-bit-to-right {
   margin-left: 21px;
 }
 
-.article-list__heading {
-  padding: 10px 0;
+.list__heading {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.article-list__desc {
-  padding: 5px 0;
+.list__desc {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
 
 /* ------------------------------------------------- */
 /* HEADER */
 /* ------------------------------------------------- */
 
-.header {
+.home {
   width: 100%;
-  min-width: 960px;
+  min-width: 1024px;
   height: 100vh;
   min-height: 480px;
-  padding: 30px 0 70px;
-  background: url("./image/bg_transparency-layer.png"), url("./image/bg_home.jpg") center/cover no-repeat, #000;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("./image/bg-home.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .logo-dreams {
@@ -231,23 +236,23 @@ body {
   height: auto;
 }
 
-.nav__list {
+.navigation {
   display: inline-flex;
 }
 
-.nav__item {
-  padding: 0 15px;
-}
-
-.nav__link {
-  display: block;
+.navigation__link {
+  display: inline-block;
   border-bottom: 1px solid transparent;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font: 14px/41px "Montserrat", sans-serif;
   color: #FFF;
   text-transform: uppercase;
 }
 
-.nav__link:hover {
+.navigation__link:hover {
   border-bottom-color: #35C2F8;
 }
 
@@ -256,18 +261,10 @@ body {
 /* ------------------------------------------------- */
 
 .page-services {
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-.page-services__article-list {
+.page-services__list {
   padding-top: 50px;
-}
-
-/* ------------------------------------------------- */
-/* CUSTOMIZING FONTAWESOME */
-/* ------------------------------------------------- */
-
-.fa-hat-wizard--my-tuning {
-  color: #DDD;
-  font-size: 55px;
 }
