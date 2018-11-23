@@ -25,7 +25,7 @@ header {
   float: left;
 }
 
-nav {
+.mainMenu {
   float: right;
   margin-top: 52px;
 }
@@ -46,20 +46,6 @@ nav {
   color: #FFF;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.titles {
-  text-transform: uppercase;
-  color: #FFF;
-  font-size: 25px;
-  text-align: center;
-  margin-top: 260px;
-  text-align: center;
-}
-
-.line {
-  display: block;
-  margin: 0 auto;
 }
 
 .h2_text {
@@ -113,17 +99,7 @@ nav {
   color: #000;
 }
 
-.title:after {
-  left: 45%;
-  bottom: -45px;
-  width: 111px;
-  height: 2px;
-  background: #35C2F8;
-  content: "";
-  position: absolute;
-}
-
-.titles:after {
+.underline:after {
   left: 45%;
   bottom: -45px;
   width: 111px;
