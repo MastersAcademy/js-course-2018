@@ -1,4 +1,5 @@
- //  Callback
+//  Callback
+/*eslint linebreak-style: ["error", "unix"]*/
 function stepPlus(number) {
     return number + 10;
 }
@@ -20,8 +21,8 @@ function logNumbersCallback(num) {
     }, 1000, num);
 }
 logNumbersCallback(0);
- //  Promise
- function promiseCalc(number, operation, delay) {
+//  Promise
+function promiseCalc(number, operation, delay) {
     return new Promise((resolve, reject) => {
         if (typeof (number) === 'number') {
             setTimeout(() => {
@@ -41,11 +42,10 @@ function logNumbersPromise(number) {
         .catch(error => console.log(error));
 }
 logNumbersPromise(0);
- //  Async
- async function logNumbersAsync(number) {
+//  Async
+async function logNumbersAsync(number) {
     let value = await promiseCalc(number, stepPlus, 1000);
     value = await promiseCalc(value, stepMultiply, 2000);
     promiseCalc(value, stepMinus, 3000);
 }
 logNumbersAsync(0);
-
