@@ -48,4 +48,3 @@ async function logNumbersAsync(number) {
     promiseCalc(value, stepMinus, 3000);
 }
 logNumbersAsync(0);
-
