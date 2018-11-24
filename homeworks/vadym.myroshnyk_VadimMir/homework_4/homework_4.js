@@ -1,4 +1,4 @@
-let num = 10;
+const num = 10;
 
 // callback
 function logNumbers(number) {
