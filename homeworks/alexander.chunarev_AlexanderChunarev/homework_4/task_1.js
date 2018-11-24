@@ -26,8 +26,9 @@ function usingCallback(number) {
 function createPromise(number, arithmeticOperation) {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log(arithmeticOperation(number));
-            resolve(arithmeticOperation(number));
+            const result = arithmeticOperation(number);
+            console.log(result);
+            resolve(result);
         }, 1000, number);
     });
 }
