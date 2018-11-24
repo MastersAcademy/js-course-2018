@@ -1,5 +1,5 @@
+const number = 100;
 const promise = new Promise((resolve) => {
-    const number = 100;
     resolve(number);
 });
 async function func() {
