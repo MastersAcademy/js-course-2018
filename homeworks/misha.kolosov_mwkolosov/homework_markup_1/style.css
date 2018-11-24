@@ -1,6 +1,6 @@
 /* Global style */
 
-body {
+.body {
   width: 1024px;
   margin: auto;
   position: relative;
@@ -11,16 +11,16 @@ body {
   background: #9E9E9E33;
 }
 
-section {
+.section {
   background: #FFF;
 }
 
-h1 {
+.h1 {
   font-size: 41px;
   text-transform: uppercase;
 }
 
-h2 {
+.h2 {
   text-transform: uppercase;
   color: #000;
   margin-top: 45px;
@@ -28,7 +28,7 @@ h2 {
   font-size: 40px;
 }
 
-h2:after {
+.h2:after {
   content: "";
   width: 111px;
   height: 2px;
@@ -40,7 +40,7 @@ h2:after {
   margin-bottom: 50px;
 }
 
-h3 {
+.h3 {
   font-weight: 100;
 }
 
@@ -61,11 +61,11 @@ h3 {
   align-items: center;
 }
 
-.menu-list {
+.nav__item {
   display: inline-block;
 }
 
-.menu-link {
+.nav__link {
   text-decoration: none;
   color: #FFF;
   text-transform: uppercase;
@@ -74,7 +74,7 @@ h3 {
 
 /*Section Slider Home */
 
-.slide-home-img {
+.slide-home__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -95,7 +95,7 @@ h3 {
   position: absolute;
 }
 
-.slide-home-desc {
+.slide-home__desc {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -112,7 +112,7 @@ h3 {
   text-align: center;
 }
 
-.slide-home-desc h1:after {
+.h1-home:after {
   content: "";
   width: 111px;
   height: 2px;
@@ -125,19 +125,19 @@ h3 {
 
 /* Section Services */
 
-.services-list {
+.services {
   display: flex;
 }
 
-.services-list-item {
+.services__item {
   text-align: center;
   padding: 0 35px;
 }
 
-.services-list-item p {
+.services__item-desc {
   color: #888;
 }
 
-.services-list-item-desc h4 {
+.services__item-name {
   text-transform: uppercase;
 }
