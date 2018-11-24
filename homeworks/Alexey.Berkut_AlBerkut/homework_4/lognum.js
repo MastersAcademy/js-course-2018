@@ -22,11 +22,11 @@ function minus(number) {
 
 function logNumberCallBack(number) {
     setTimeout(() => {
-        plus(number);
+        const res1 = plus(number);
         setTimeout(() => {
-            multiply(number);
+            const res2 = multiply(res1);
             setTimeout(() => {
-                minus(number);
+                minus(res2);
             }, 3000);
         }, 2000);
     }, 1000);
@@ -61,12 +61,7 @@ function taskThree(number) {
 }
 
 function logNumberPromise(number) {
-    taskOne(number)
-        .then(res1 => taskTwo(res1))
-        .then(res2 => taskThree(res2))
-        .catch((error) => {
-            console.log(error);
-        });
+    taskOne(number).then(taskTwo).then(taskThree).catch(console.error);
 }
 
 logNumberPromise(2);
@@ -74,9 +69,9 @@ logNumberPromise(2);
 // async;
 
 async function logNumbersAsync(number) {
-    await taskOne(number);
-    await taskTwo(number);
-    await taskThree(number);
+    const resOne = await taskOne(number);
+    const resTwo = await taskTwo(resOne);
+    await taskThree(resTwo);
 }
 
 logNumbersAsync(4);
