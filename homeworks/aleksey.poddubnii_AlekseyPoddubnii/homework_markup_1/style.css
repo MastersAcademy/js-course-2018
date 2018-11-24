@@ -131,6 +131,7 @@ ul {
 .content-header__title {
   font-family: Montserrat;
   font-size: 40px;
+  color: #222;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -289,4 +290,71 @@ ul {
   right: 0;
 }
 
-/* Portfolio */
+/* Amazing Portfolio */
+
+.amazing-wrap {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 60px;
+  max-width: 1024px;
+}
+
+.amazing-portfolio__heading {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  color: #222;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.amazing-portfolio__desc {
+  margin-bottom: 40px;
+}
+
+.amazing-portfolio-background {
+  background-image: url("images/users.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 560px;
+}
+
+.amazing-box__img {
+  float: left;
+  margin-right: 16px;
+}
+
+.amazing-box__title {
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 13px;
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+.amazing-box__desc {
+  margin-left: 46px;
+  margin-bottom: 40px;
+}
+
+.amazing-portfolio__ipad {
+  position: absolute;
+  right: 0;
+  width: 550px;
+  margin-top: 100px;
+}
+
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.gallery-item__img {
+  width: 33.33%;
+}
