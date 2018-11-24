@@ -8,6 +8,4 @@ function numbers(callback) {
     const y = z - 20;
     setTimeout(() => callback(y), 3000);
 }
-numbers((result) => {
-    console.log(result);
-});
+numbers(console.log);
