@@ -15,14 +15,12 @@
 /* Header */
 
 .header-intro {
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
-    url("./images/background.png");
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("./images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.header { 
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,9 +90,9 @@
   left: calc(50% - 55px);
 }
 
-.intro__text{
+.intro__text {
   max-width: 500px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 25px;
   color: #CCC;
   font-size: 20px;
