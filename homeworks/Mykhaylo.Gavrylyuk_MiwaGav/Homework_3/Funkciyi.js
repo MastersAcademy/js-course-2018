@@ -1,10 +1,11 @@
 /* eslint-disable no-console */
+
 function kvadrat(x) {
   return x * x;
 }
 console.log(kvadrat(5));
 console.log(kvadrat(15));
-console.log1(kvadrat(53));
+console.log(kvadrat(53));
 function masiv(a, b) {
   const mas = [];
   for (let i = 0; i <= a; i += b) {
