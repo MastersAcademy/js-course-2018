@@ -25,7 +25,7 @@ setTimeout(() => {
 
 
 // promise
-const promise = new Promise((resolve, reject) => {
+const promise = new Promise(() => {
     setTimeout(() => {
         console.log(logNumbers(0));
     }, 1000);
@@ -45,7 +45,7 @@ promise
 
 
 // async await
-async function logNum(num) {
+async function logNum() {
     await setTimeout(() => {
         console.log(logNumbers(0));
     }, 1000);
