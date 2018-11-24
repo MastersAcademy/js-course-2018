@@ -1,33 +1,29 @@
 // 1.1
-function square(a, b, c) {
-    console.log(a ** 2);
-    console.log(b ** 2);
-    console.log(c ** 2);
+function square(num) {
+    return num ** 2;
 }
-square(2, 15, 53);
-
+console.log(square(2));
+console.log(square(15));
+console.log(square(53));
 // 1.2
-function StepArray(step, maxNum) {
-    // eslint-disable-next-line camelcase
-    const array_1 = [];
+function stepArray(step, maxNum) {  
+    const array1 = [];
     for (let i = 0; i <= maxNum; i += step) {
-        array_1.push(i);
+        array1.push(i);
     }
-    console.log(array_1);
+    console.log(array1);
 }
-StepArray(5, 50);
-StepArray(4, 32);
+stepArray(5, 50);
+stepArray(4, 32);
 
 // 1.3
-function squareArray() {
-    // eslint-disable-next-line camelcase
-    const array_3 = [];
+function squareArray() {   
+    const array3 = [];
     const array = [0, 4, 8, 12, 16, 20, 24, 28, 32];
     for (let i = 0; i < array.length; i++) {
-        (array_3.push(array[i] ** 2));
+        (array3.push(array[i] ** 2));
     }
-    // eslint-disable-next-line camelcase
-    return array_3;
+    return array3;
 }
 console.log(squareArray());
 // 1.4
