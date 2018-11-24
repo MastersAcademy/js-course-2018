@@ -7,7 +7,7 @@ function square(a, b, c) {
 square(2, 15, 53);
 
 // 1.2
-function StepArray(step,maxNum) {
+function StepArray(step, maxNum) {
     // eslint-disable-next-line camelcase
     const array_1 = [];
     for (let i = 0; i <= maxNum; i += step) {
@@ -15,8 +15,8 @@ function StepArray(step,maxNum) {
     }
     console.log(array_1);
 }
-StepArray(5,50);
-StepArray(4,32);
+StepArray(5, 50);
+StepArray(4, 32);
 
 // 1.3
 function squareArray() {
