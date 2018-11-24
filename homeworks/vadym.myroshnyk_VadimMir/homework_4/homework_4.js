@@ -11,54 +11,54 @@ function threeStep(numberThree) {
     return twoStep(numberThree) - 20;
 }
 
-setTimeout(()=>{
+setTimeout(() => {
     console.log(logNumbers(0));
 }, 1000);
 
-setTimeout(()=>{
+setTimeout(() => {
     console.log(twoStep(logNumbers(0)));
 }, 2000);
 
-setTimeout(()=>{
+setTimeout(() => {
     console.log(threeStep(10));
 }, 3000);
 
 
 // promise
 const promise = new Promise((resolve, reject) => {
-    setTimeout(()=>{
+    setTimeout(() => {
         console.log(logNumbers(0));
     }, 1000);
 
-    setTimeout(()=>{
+    setTimeout(() => {
         console.log(twoStep(logNumbers(0)));
     }, 2000);
 
-    setTimeout(()=>{
+    setTimeout(() => {
         console.log(threeStep(10));
     }, 3000);
 });
 
 promise
     .then()
-    .catch(err => console.log('err'));
+    .catch();
 
 
 // async await
 async function logNum(num) {
-    await setTimeout(()=>{
+    await setTimeout(() => {
         console.log(logNumbers(0));
     }, 1000);
 
-    await setTimeout(()=>{
+    await setTimeout(() => {
         console.log(twoStep(logNumbers(0)));
     }, 2000);
 
-    await setTimeout(()=>{
+    await setTimeout(() => {
         console.log(threeStep(10));
     }, 3000);
 }
 
 logNum(10)
     .then()
-    .catch(err => console.log(err));
+    .catch();
