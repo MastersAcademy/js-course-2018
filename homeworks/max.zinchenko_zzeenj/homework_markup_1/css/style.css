@@ -10,6 +10,8 @@ body {
   color: #FFF;
 }
 
+/* ---SECTION Title --- */
+
 .header {
   background-image: url("../img/backgrounds/title-bg.jpg");
 }
@@ -19,21 +21,22 @@ body {
   padding: 40px 0 0 130px;
 }
 
-.title__navigation {
+.title-navigation {
   float: right;
   padding: 50px 130px 0 0;
 }
 
-.nav__ul {
+.navigation {
   list-style: none;
 }
 
-.nav__li {
+.navigation__list {
   display: inline-block;
 }
 
-.nav__a {
-  margin-left: 55px;
+.navigation__link {
+  margin-left: 40px;
+  padding: 10px 5px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 10px;
@@ -41,24 +44,24 @@ body {
   color: #FFF;
 }
 
-.nav__a:hover {
+.navigation__link:hover {
   cursor: pointer;
   color: #35E9EB;
 }
 
-.title__content {
+.title-content {
   padding-top: 242px;
   text-align: center;
 }
 
-.title__h1 {
+.title-content__h1 {
   text-transform: uppercase;
   font-size: 35px;
   font-weight: 700;
   color: #FFF;
 }
 
-.title__h1:after {
+.title-content__h1:after {
   content: "";
   display: block;
   margin: 0 auto;
@@ -67,7 +70,7 @@ body {
   border-bottom: 2px solid #35E9EB;
 }
 
-.title__p {
+.title-content__p {
   margin-top: 50px;
   font-size: 16px;
   color: #CCC;
@@ -75,11 +78,13 @@ body {
   padding-bottom: 140px;
 }
 
-.core__services {
+/* --- SECTION Core Services ---*/
+
+.core-services {
   text-align: center;
 }
 
-.services__h2 {
+.core-services__h2 {
   margin-top: 100px;
   text-transform: uppercase;
   font-size: 30px;
@@ -87,7 +92,7 @@ body {
   color: #000;
 }
 
-.services__h2:after {
+.core-services__h2:after {
   content: "";
   display: block;
   margin: 0 auto;
@@ -98,12 +103,11 @@ body {
 
 .services {
   margin-top: 80px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 110px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.services__h3 {
+.core-services__h3 {
   margin-top: 40px;
   text-transform: uppercase;
   font-size: 13px;
@@ -111,9 +115,308 @@ body {
   color: #000;
 }
 
-.services__p {
+.core-services__p {
   margin-top: 20px;
   font-size: 12px;
   color: #888;
   padding-bottom: 100px;
+}
+
+/* --- SECTION Other Expertise --- */
+
+.other-expertise {
+  background-color: #F7F7F7;
+}
+
+.other-expertise__item {
+  float: right;
+}
+
+.other-expertise-content {
+  margin-left: 50px;
+  padding-bottom: 163px;
+}
+
+.other-expertise-content__h2 {
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.other-expertise-content__p {
+  padding-top: 40px;
+  font-size: 12px;
+  color: #777;
+}
+
+.types-of-expertise {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.types-of-expertise__item {
+  width: 250px;
+}
+
+.types-of-expertise__h3 {
+  margin-top: 55px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.types-of-expertise__p {
+  margin-top: 14px;
+  font-size: 10px;
+  color: #777;
+}
+
+/* Custom Setup */
+
+.custom-setup__img {
+  float: left;
+}
+
+.custom-setup-items {
+  margin-top: 60px;
+  margin-left: 45px;
+}
+
+/* All star support team */
+
+.all-star__img {
+  float: left;
+}
+
+.all-star-items {
+  margin-top: 60px;
+  margin-left: 45px;
+}
+
+/* Cloud Control */
+
+.cloud-control__img {
+  margin-left: -7px;
+  float: left;
+}
+
+.cloud-control-items {
+  margin-top: 60px;
+  margin-left: 45px;
+}
+
+/* Top Notch Security */
+
+.top-security__img {
+  float: left;
+}
+
+.top-security-items {
+  margin-top: 60px;
+  margin-left: 45px;
+}
+
+.button-of-expertise {
+  margin-top: 60px;
+  float: left;
+}
+
+.button-of-expertise__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 40px;
+  background-color: #35E9EB;
+  color: #FFF;
+}
+
+.button-of-expertise__link:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+/* --- SECTION Amazing Portfolio --- */
+
+.amazing-portfolio {
+  margin-left: 50px;
+  width: 100%;
+  display: flex
+}
+
+.amazing-content {
+  width: 580px;
+  padding-bottom: 50px;
+}
+
+.amazing-portfolio__item {
+  margin-top: 130px;
+}
+
+.amazing-portfolio__img {
+  max-width: 400px;
+  max-height: 345px;
+}
+
+.amazing-portfolio__h2 {
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.amazing-portfolio-bg {
+  background-image: url("../img/backgrounds/users-bg.png");
+  background-repeat: no-repeat;
+}
+
+.amazing-portfolio__p1 {
+  margin-top: 40px;
+  font-size: 10px;
+  color: #777;
+}
+
+.amazing-portfolio__p2 {
+  margin-top: 30px;
+  font-size: 9px;
+  color: #777;
+}
+
+.advantages-of-portfolio__h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.advantages-of-portfolio__p {
+  margin-top: 15px;
+  font-size: 10px;
+  color: #777;
+}
+
+/* Sail Away Your Worries */
+
+.sail-away__img {
+  float: left;
+}
+
+.sail-away__items {
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+/* All Star Suppurt Team */
+
+.support-team__img {
+  float: left;
+}
+
+.support-team__items {
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+/* Fully Integrated Service */
+
+.fully-service__img {
+  float: left;
+}
+
+.fully-service__items {
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+/* --- SECTION Portfolio Photos --- */
+
+.portfolio-content {
+  width: 100%;
+}
+
+.portfolio-photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.portfolio-photos__item {
+  width: 341px;
+  height: 256px;
+}
+
+/* photo-1 */
+
+.portfolio-photos__img-1 {
+  width: 341px;
+  height: 256px;
+  opacity: 1;
+}
+
+.portfolio-photos__img-1:hover {
+  opacity: .6;
+}
+
+/* photo-2 */
+
+.portfolio-photos__img-2 {
+  width: 341px;
+  height: 256px;
+  opacity: 1;
+}
+
+.portfolio-photos__img-2:hover {
+  opacity: .6;
+}
+
+/* photo-3 */
+
+.portfolio-photos__img-3 {
+  width: 341px;
+  height: 256px;
+  opacity: 1;
+}
+
+.portfolio-photos__img-3:hover {
+  opacity: .6;
+}
+
+/* photo-4 */
+
+.portfolio-photos__img-4 {
+  width: 341px;
+  height: 256px;
+  opacity: 1;
+}
+
+.portfolio-photos__img-4:hover {
+  opacity: .6;
+}
+
+/* photo-5 */
+
+.portfolio-photos__img-5 {
+  width: 341px;
+  height: 256px;
+  opacity: 1;
+}
+
+.portfolio-photos__img-5:hover {
+  opacity: .6;
+}
+
+/* photo-6 */
+
+.portfolio-photos__img-6 {
+  width: 341px;
+  height: 256px;
+  opacity: 1;
+}
+
+.portfolio-photos__img-6:hover {
+  opacity: .6;
 }
