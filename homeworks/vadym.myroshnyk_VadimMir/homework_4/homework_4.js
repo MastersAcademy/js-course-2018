@@ -1,3 +1,5 @@
+let num = 10;
+
 // callback
 function logNumbers(number) {
     return number + 10;
@@ -12,7 +14,7 @@ function threeStep(numberThree) {
 }
 
 setTimeout(() => {
-    console.log(logNumbers(0));
+    console.log(logNumbers(num));
 }, 1000);
 
 setTimeout(() => {
@@ -20,14 +22,14 @@ setTimeout(() => {
 }, 2000);
 
 setTimeout(() => {
-    console.log(threeStep(10));
+    console.log(threeStep(num));
 }, 3000);
 
 
 // promise
 const promise = new Promise(() => {
     setTimeout(() => {
-        console.log(logNumbers(0));
+        console.log(logNumbers(num));
     }, 1000);
 
     setTimeout(() => {
@@ -35,7 +37,7 @@ const promise = new Promise(() => {
     }, 2000);
 
     setTimeout(() => {
-        console.log(threeStep(10));
+        console.log(threeStep(num));
     }, 3000);
 });
 
@@ -47,7 +49,7 @@ promise
 // async await
 async function logNum() {
     await setTimeout(() => {
-        console.log(logNumbers(0));
+        console.log(logNumbers(num));
     }, 1000);
 
     await setTimeout(() => {
@@ -55,7 +57,7 @@ async function logNum() {
     }, 2000);
 
     await setTimeout(() => {
-        console.log(threeStep(10));
+        console.log(threeStep(num));
     }, 3000);
 }
 
