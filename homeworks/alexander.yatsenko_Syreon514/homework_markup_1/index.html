@@ -2,69 +2,69 @@
 <html>
     <head>
         <title>Dreams</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Noto+Sans:400,700" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <div class="header-background">
+    <body class="body">
+
+        <section class="header-intro">
             <header class="header">
-                <div class="header__container container">
-                    <div class="header__navbar">
-                        <a href="index.html"><img src="./images/Dreams_logo.png" alt="logo" class="header__logo"></a>
-                        <ul class="header__nav">
-                            <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link">Services</a></li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link">Portfolio</a></li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link">About</a></li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link">Team</a></li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <a href="/">
+                    <img class="dreams-logo" src="./images/dreams-logo.png" alt="Dreams">
+                </a>
+                <nav class="navigation">
+                    <a href="#" class="navigation__link">Home</a>
+                    <a href="#" class="navigation__link">Services</a>
+                    <a href="#" class="navigation__link">Portfolio</a>
+                    <a href="#" class="navigation__link">About</a>
+                    <a href="#" class="navigation__link">Team</a>
+                    <a href="#" class="navigation__link">Contact</a>
+                </nav>
             </header>
-            <section class="intro">
-                <div class="intro__container container">
-                    <h1 class="intro__caption">Build the website of<br> your dreams</h1>
-                    <p class="intro__text">We are a digital agency that believes in building<br> things that are  meaningful!</p>
-                </div>
-            </section>
-        </div>
-        <section class="services">
-            <div class="services__container container">
-                <h2 class="services__caption">Core Services</h2>
-                <div class="services__block">
-                    <div class="services__subblock">
-                        <img src="./images/tools.png" alt="tools" class="services__image services__image-1">
-                        <h3 class="services__subblock__caption subblock__caption-1">Beautiful Designs</h3>
-                        <p class="services__subblock__text">
-                            Proin iaculis purus consequat sem digni ssim.
-                            Donec porttitora entum aenean rhoncus
-                            posuere odio in. Iaculis purus digni.
-                        </p>
-                    </div>
-                    <div class="services__subblock">
-                        <img src="./images/flow-tree.png" alt="tree" class="services__image services__image-2">
-                        <h3 class="services__subblock__caption subblock__caption-2">web development</h3>
-                        <p class="services__subblock__text">
-                            Proin iaculis purus consequat sem digni ssim.
-                            Donec porttitora entum aenean rhoncus
-                            posuere odio in. Iaculis purus digni.
-                        </p>
-                    </div>
-                    <div class="services__subblock">
-                        <img src="./images/lifebuoy.png" alt="lifebuoy" class="services__image services__image-3">
-                        <h3 class="services__subblock__caption subblock__caption-3">24/7 Support</h3>
-                        <p class="services__subblock__text">
-                            Proin iaculis purus consequat sem digni ssim.
-                            Donec porttitora entum aenean rhoncus
-                            posuere odio in. Iaculis purus digni.
-                        </p>
-                    </div>
-                </div>
+            <div class="intro">
+                <h1 class="intro__caption">Build the website of your dreams</h1>
+                <p class="intro__text">
+                    We are a digital agency that believes 
+                    in building things that are  meaningful!
+                </p>
             </div>
         </section>
-        <section>
+
+        <section class="services">
+            <h2 class="services__caption">Core Services</h2>
+            <div class="description">
+                <figure class="description__block">
+                    <img class="description__image description__image-1" src="./images/tools.png" alt="tools" >
+                    <figcaption class="description__caption">Beautiful Designs</figcaption>
+                    <p class="description__text">
+                        Proin iaculis purus consequat sem digni ssim.
+                        Donec porttitora entum aenean rhoncus
+                        posuere odio in. Iaculis purus digni.
+                    </p>
+                </figure>
+                <figure class="description__block">
+                    <img class="description__image description__image-2" src="./images/flow-tree.png" alt="tree">
+                    <figcaption class="description__caption">web development</figcaption>
+                    <p class="description__text">
+                        Proin iaculis purus consequat sem digni ssim.
+                        Donec porttitora entum aenean rhoncus
+                        posuere odio in. Iaculis purus digni.
+                    </p>
+                </figure>
+                <figure class="description__block">
+                    <img class="description__image description__image-3" src="./images/lifebuoy.png" alt="lifebuoy">
+                    <figcaption class="description__caption">24/7 Support</figcaption>
+                    <p class="description__text">
+                        Proin iaculis purus consequat sem digni ssim.
+                        Donec porttitora entum aenean rhoncus
+                        posuere odio in. Iaculis purus digni.
+                    </p>
+                </figure>
+            </div>
+        </section>
+
+        <section class="expertice">
             <div class="container">
                 <h2>Other Expertise</h2>
                 <p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean
@@ -94,6 +94,7 @@
                 <button type="button">Learn more</button>
             </div>
         </section>
+        
         <section>
             <div class="container">
                 <h2>Amazing Portfolio</h2>
