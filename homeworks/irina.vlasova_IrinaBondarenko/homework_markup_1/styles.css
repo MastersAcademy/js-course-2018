@@ -3,7 +3,7 @@ body {
 }
 
 .title {
-  background-image: url("images/title_background.png");
+  background-image: url("images/title-background.png");
   background-size: cover;
   display: block;
   margin: 0 auto;
@@ -11,14 +11,20 @@ body {
   height: 480px;
 }
 
+.main-head {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
-  padding-top: 40px;
-  padding-left: 40px;
+  margin-top: 40px;
+  margin-left: 40px;
 }
 
 .nav {
-  text-align: right;
-  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
 }
 
 .link {
@@ -34,8 +40,9 @@ body {
 .topic {
   text-transform: uppercase;
   color: #FFF;
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 40px;
+  margin-top: 70px;
+  font-weight: 600;
   line-height: 60px;
   text-align: center;
 }
@@ -48,14 +55,14 @@ body {
 .phrase {
   text-align: center;
   color: #CCC;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 30px;
 }
 
 .services {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 75px;
   text-transform: uppercase;
   text-align: center;
@@ -64,7 +71,7 @@ body {
 .description {
   color: #222;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 75px;
   text-transform: uppercase;
   text-align: center;
@@ -78,12 +85,12 @@ body {
   text-align: center;
 }
 
-.serv_block {
+.serv-block {
   display: flex;
   justify-content: space-around;
 }
 
-.group_elements {
+.group-elements {
   text-align: center;
   width: 30%;
 }
