@@ -4,6 +4,7 @@ function logNumbers(number) {
 }
 
 function twoStep(numberTwo) {
+    return logNumbers(numberTwo) * 3;
 }
 
 function threeStep(numberThree) {
