@@ -9,7 +9,7 @@ function generation(value) {
 function difference(value) {
     return value - 10;
 }
-//callback
+// callback
 function callback(value) {
     setTimeout((result1) => {
         setTimeout((result2) => {
@@ -31,13 +31,13 @@ function newPromise(value, operation) {
         }, 1000, value);
     });
 }
-//promise
+// promise
 function promise(value) {
     newPromise(value, summa)
         .then(result => newPromise(result, generation))
         .then(result => newPromise(result, difference));
 }
-//async
+// async
 async function async(value) {
     let result = await newPromise(value, summa);
     result = await newPromise(result, generation);
