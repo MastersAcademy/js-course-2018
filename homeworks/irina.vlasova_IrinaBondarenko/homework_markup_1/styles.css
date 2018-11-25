@@ -1,0 +1,101 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.title {
+  background-image: url("images/title-background.png");
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  width: 1024px;
+  height: 480px;
+}
+
+.main-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.link {
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.topic {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 40px;
+  margin-top: 70px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+}
+
+.line {
+  display: block;
+  margin: 0 auto;
+}
+
+.phrase {
+  text-align: center;
+  color: #CCC;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.services {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description {
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sentence {
+  color: #888;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.serv-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.group-elements {
+  text-align: center;
+  width: 30%;
+}
+
+.service {
+  width: 1024px;
+  margin: auto;
+}
