@@ -44,18 +44,18 @@ setTimeAsync(num);
 
 // callback function
 
-let setTimeCallback1=(number, callback)=> {
+let setTimeCallback1=(number, callback) => {
     setTimeout(() => callback(number += 10), 1000);
 }
 
 setTimeCallback1(num, (num) => {
     console.log(num);
-    let setTimeCallback2=(number, callback)=> {
+    let setTimeCallback2 = (number, callback) => {
         setTimeout(() => callback(number *= 3), 1000);
     }
     setTimeCallback2(num, (num) => {
         console.log(num);
-        let setTimeCallback3=(number, callback)=> {
+        let setTimeCallback3 = (number, callback) => {
             setTimeout(() => callback(number -= 20), 1000);
         }
         setTimeCallback3(num, (num) => {
