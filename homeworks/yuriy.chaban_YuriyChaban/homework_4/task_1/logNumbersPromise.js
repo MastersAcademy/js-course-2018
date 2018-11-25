@@ -39,7 +39,7 @@ function logNumbers(logNumber, timeout) {
                 console.log('Rejected: ', error);
             },
         );
-    logNumberPromise(logNumberPromise(logNumbersRusultMinusTwenty(logNumber), timeout * 3))
+    logNumberPromise(logNumbersRusultMinusTwenty(logNumber), timeout * 3)
         .then(
             (result) => {
                 console.log('Result: ', result);
