@@ -9,7 +9,7 @@ function setTimePromise(number) {
     promise.then(result => (setTimeout(() => (console.log(number -= 20)), 2000)));
 }
 
-//setTimePromise(num);
+setTimePromise(num);
 
 
 function setTime(number) {
@@ -18,7 +18,7 @@ function setTime(number) {
     setTimeout(() => console.log(number -= 20), 3000);
 }
 
-//setTime(num);
+setTime(num);
 
 // asunc/await function
 
@@ -46,7 +46,7 @@ async function setTimeAsync(number) {
 
 }
 
-//setTimeAsync(num);
+setTimeAsync(num);
 
 // callback function
 
