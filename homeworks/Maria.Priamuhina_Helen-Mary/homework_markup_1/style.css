@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans|Open+Sans");
+
 body {
   padding: 0;
   margin: 0 auto;
@@ -5,7 +7,7 @@ body {
   font-family: "Open Sans", "sans-serif";
 }
 
-.header {
+.header_style {
   width: 1024px;
   background-image: url("../homework_markup_1/images/Backgroundbackground.png");
   background-size: 100% 100%;
@@ -15,7 +17,7 @@ body {
   flex-direction: column;
 }
 
-.header_im {
+.pos_of_logo_and_nav {
   display: flex;
 }
 
@@ -54,14 +56,17 @@ body {
   font-family: Montserrat, sans-serif;
   color: #FFF;
   text-transform: uppercase;
-  margin-bottom: 51px;
   margin-top: 50px;
 }
 
-.underline {
+.title_f:after,
+.services:after {
+  content: "";
+  margin-top: 51px;
   width: 111px;
   height: 2px;
   background-color: #35C;
+  display: inline-block;
   margin: 0 auto;
 }
 
@@ -106,7 +111,8 @@ body {
 }
 
 .block_head {
-  margin-bottom: 18 px;
+  height: 12px;
+  margin-bottom: 18px;
   font-family: Montserrat, sans-serif;
   color: #222;
   text-transform: uppercase;
