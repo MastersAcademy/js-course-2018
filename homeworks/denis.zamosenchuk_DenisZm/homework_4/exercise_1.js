@@ -62,3 +62,14 @@ function promiseLog(number) {
 }
 
 promiseLog(42);
+
+// Async\await
+
+async function awaitLog(number) {
+    let result = number;
+    result = await promiseCalculation(result, n => n + 10);
+    result = await promiseCalculation(result, n => n * 3);
+    await promiseCalculation(result, n => n - 20);
+}
+
+awaitLog(42);
