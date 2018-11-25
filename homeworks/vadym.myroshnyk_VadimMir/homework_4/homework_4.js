@@ -9,38 +9,32 @@ function callbackFunction(num, time, callback) {
         () => {
             console.log(num);
             callback();
-        }, time
-    )
+        }, time,
+    );
 }
 
 function logNumber() {
     callbackFunction(sum, 1000, () => {
-      callbackFunction(mult, 1000, () => {
-          callbackFunction(minus, 1000, () => {})
-      })
-    })
+        callbackFunction(mult, 1000, () => {
+            callbackFunction(minus, 1000, () => {})
+      });
+    });
 }
 
 logNumber(number);
 
 // promise
 function promiseFunction(num, time) {
-    return new Promise((resolve, reject) => {
-        setTimeout(
-            () => {
-                resolve(num);
-            }, time
-        )
-    })
+    return new Promise((resolve) => {
+        setTimeout(() => resolve(num), time);
+    });
 }
 
 function addAll() {
     promiseFunction(sum, 1000)
-    .then(() => promiseFunction(mult, 1000))
-    .then(() => promiseFunction(minus, 1000))
-        .then(resalt => {
-            console.log(resalt)
-        })
+        .then(() => promiseFunction(mult, 1000))
+        .then(() => promiseFunction(minus, 1000))
+        .then(console.log)
 }
 
 addAll(number);
