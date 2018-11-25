@@ -19,9 +19,9 @@ stepArray(5, 50);
 stepArray(4, 32);
 
 // 1.3
-    const newArr = stepArray(4,32);
-    const squareArr = newArr.map(square);
-    console.log(squareArr);
+const newArr = stepArray(4, 32);
+const squareArr = newArr.map(square);
+console.log(squareArr);
 // 1.4
 function sumArray3() {
     const arr = squareArr;
