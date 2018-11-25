@@ -6,13 +6,14 @@
 const isPowOfTwo = function isPowerOfTwo(num) {
     if (num < 1) {
         return false;
-    } if (num === 1) {
+    }
+    if (num === 1) {
         return true;
     }
     return isPowerOfTwo(num / 2);
 };
 
-const isAllNumbersPowerOfTwo = function () {
+const isAllNumbersPowerOfTwo = () => {
     const min = 10;
     const max = 600;
     const arrayService = [];
