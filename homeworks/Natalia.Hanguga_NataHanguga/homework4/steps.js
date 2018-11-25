@@ -2,11 +2,12 @@ const num = 20;
 
 // promise
 
-function setTimePromise(number) {
+function setTimePromise(num) {
+    let num = number.1;
     const promise = new Promise((resolve) => {
-        setTimeout(number => resolve(console.log(number += 10)), 1000);
-        setTimeout(number => resolve(console.log(number *= 3)), 1000);
-        setTimeout(number => resolve(console.log(number -= 20)), 1000);
+        setTimeout(number => resolve(console.log(number.1 += 10)), 1000);
+        setTimeout(number => resolve(console.log(number.1 *= 3)), 1000);
+        setTimeout(number => resolve(console.log(number.1 -= 20)), 1000);
     });
 }
 
@@ -44,6 +45,6 @@ function setTimeCallback(number, callback) {
     setTimeout(() => callback(number -= 20), 3000);
 }
 
-setTimeCallback(num, () => {
+setTimeCallback(num, (num) => {
     console.log(num);
 });
