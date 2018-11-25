@@ -26,24 +26,18 @@ async function setTimeAsync(number) {
     const promise1 = new Promise((resolve, reject) => {
         setTimeout(() => resolve(number += 10), 1000);
     });
-
     const res1 = await promise1;
     console.log(res1);
-    
     const promise2 = new Promise((resolve, reject) => {
         setTimeout(() => resolve(number *= 3), 1000);
     });
-
     const res2 = await promise2;
     console.log(res2);
-
     const promise3 = new Promise((resolve, reject) => {
         setTimeout(() => resolve(number -= 20), 1000);
     });
-
     const res3 = await promise3;
     console.log(res3);
-
 }
 
 setTimeAsync(num);
@@ -59,13 +53,11 @@ setTimeCallback1(num, (num) => {
     let setTimeCallback2=(number, callback)=> {
         setTimeout(() => callback(number *= 3), 1000);
     }
-    
     setTimeCallback2(num, (num) => {
         console.log(num);
         let setTimeCallback3=(number, callback)=> {
             setTimeout(() => callback(number -= 20), 1000);
         }
-        
         setTimeCallback3(num, (num) => {
             console.log(num);
         });
