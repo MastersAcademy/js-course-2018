@@ -30,3 +30,12 @@ const logNumbersPromise = (number) => {
 };
 
 logNumbersPromise(10); // 20, 60, 40
+
+// Async/Await based solution
+async function logNumbersAsync(number) {
+    const a = await promise(number + 10);
+    const b = await promise(a * 3);
+    await promise(b - 20);
+}
+
+logNumbersAsync(10); // 20, 60, 40
