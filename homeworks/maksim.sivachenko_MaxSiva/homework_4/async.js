@@ -9,9 +9,9 @@ function getValue(n, Timeout) {
 }
 
 async function logNumbers(n) {
-    await getValue(n + 10, 1000);
-    await getValue(n * 3, 2000);
-    await getValue(n - 20, 3000);
+    let myValue = await getValue(n + 10, 1000);
+    myValue = await getValue(myValue * 3, 2000);
+    await getValue(myValue - 20, 3000);
 }
 
 const readline = require('readline');
