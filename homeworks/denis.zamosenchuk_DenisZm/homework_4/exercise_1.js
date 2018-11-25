@@ -34,9 +34,31 @@ function delayedCalculation(number, calculation, callback) {
 function logNumbersV2(number) {
     delayedCalculation(number, n => n + 10, (result1) => {
         delayedCalculation(result1, n => n * 3, (result2) => {
-            delayedCalculation(result2, n => n - 20, () => {});
+            delayedCalculation(result2, n => n - 20, () => {
+            });
         });
     });
 }
 
 logNumbersV2(42);
+
+
+// Promise base delayed calculation
+
+function promiseCalculation(number, calculation) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            const result = calculation(number);
+            console.log(result);
+            resolve(result);
+        }, 1000);
+    });
+}
+
+function promiseLog(number) {
+    promiseCalculation(number, n => n + 10)
+        .then(result => promiseCalculation(result, n => n * 3))
+        .then(result => promiseCalculation(result, n => n - 20));
+}
+
+promiseLog(42);
