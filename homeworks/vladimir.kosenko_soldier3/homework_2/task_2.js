@@ -6,28 +6,26 @@ const rl = readline.createInterface({
 });
 
 
-function checkImputValue(min, max) {
+function checkInputValue(min, max) {
     return ((!Number.isNaN(min) && min > 500 && min < 1000)
             && (!Number.isNaN(max) && max > 500 && max < 1000));
 }
 
 function getMinMaxArr(minInt, maxInt) {
     if (minInt > maxInt) {
-        const max = minInt;
-        const min = maxInt;
-        return [min, max];
+        return [maxInt, minInt];
     }
     return [minInt, maxInt];
 }
 
 function getArray(arr) {
-    const nambersArr = [];
+    const numbers = [];
 
     for (let i = arr[0]; i <= arr[1]; i++) {
-        nambersArr.push(i);
+        numbers.push(i);
     }
 
-    return nambersArr;
+    return numbers;
 }
 
 function getReverseArr(arr) {
@@ -65,7 +63,7 @@ function getPalindrome(min, max) {
     const minInt = parseInt(min, 10);
     const maxInt = parseInt(max, 10);
 
-    if (checkImputValue(minInt, maxInt)) {
+    if (checkInputValue(minInt, maxInt)) {
         const arrMinMax = getMinMaxArr(minInt, maxInt);
         const allNumbers = getArray(arrMinMax);
         const reverseAllNumbers = getReverseArr(allNumbers);
