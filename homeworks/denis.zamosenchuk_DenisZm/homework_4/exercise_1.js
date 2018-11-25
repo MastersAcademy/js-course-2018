@@ -21,7 +21,7 @@ logNumbersV1(42);
 
 // Callbacks v2 - use for delayed calculation and send result to next step
 
-function delayedCalculation(number, calculation, callback) {
+const delayedCalculation = (number, calculation, callback) => {
     setTimeout(
         () => {
             const result = calculation(number);
@@ -29,47 +29,45 @@ function delayedCalculation(number, calculation, callback) {
             callback(result);
         }, 1000,
     );
-}
+};
 
-function logNumbersV2(number) {
+const logNumbersV2 = (number) => {
     delayedCalculation(number, n => n + 10, (result1) => {
         delayedCalculation(result1, n => n * 3, (result2) => {
             delayedCalculation(result2, n => n - 20, () => {
             });
         });
     });
-}
+};
 
 logNumbersV2(42);
 
 
 // Promise base delayed calculation
 
-function promiseCalculation(number, calculation) {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            const result = calculation(number);
-            console.log(result);
-            resolve(result);
-        }, 1000);
-    });
-}
+const promiseCalculation = (number, calculation) => new Promise((resolve) => {
+    setTimeout(() => {
+        const result = calculation(number);
+        console.log(result);
+        resolve(result);
+    }, 1000);
+});
 
-function promiseLog(number) {
+const promiseLog = (number) => {
     promiseCalculation(number, n => n + 10)
         .then(result => promiseCalculation(result, n => n * 3))
         .then(result => promiseCalculation(result, n => n - 20));
-}
+};
 
 promiseLog(42);
 
 // Async\await
 
-async function awaitLog(number) {
+const awaitLog = async (number) => {
     let result = number;
     result = await promiseCalculation(result, n => n + 10);
     result = await promiseCalculation(result, n => n * 3);
     await promiseCalculation(result, n => n - 20);
-}
+};
 
 awaitLog(42);
