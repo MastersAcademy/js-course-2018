@@ -1,7 +1,7 @@
 function operation1(n, callback) {
     setTimeout(() => {
         const x = n + 10;
-        console.log(`After the 1st second:  ${n} + 10 = ${x}`);
+        console.log(`After the 1st second: ${n} + 10 = ${x}`);
         callback(x);
     }, 1000);
 }
@@ -9,17 +9,17 @@ function operation1(n, callback) {
 function operation2(n, callback) {
     setTimeout(() => {
         const x = n * 3;
-        console.log(`After the 2nd second:  ${n} * 3 = ${x}`);
+        console.log(`After 2 more seconds: ${n} * 3 = ${x}`);
         callback(x);
-    }, 1000);
+    }, 2000);
 }
 
 function operation3(n, callback) {
     setTimeout(() => {
         const x = n - 20;
-        console.log(`After the 3rd second: ${n} - 20 = ${x}`);
+        console.log(`After another 3 seconds: ${n} - 20 = ${x}`);
         callback(x);
-    }, 1000);
+    }, 3000);
 }
 
 function logNumbers(n) {

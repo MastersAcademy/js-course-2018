@@ -15,7 +15,7 @@ function operation2(n) {
         try {
             setTimeout(() => {
                 resolve(n * 3);
-            }, 1000);
+            }, 2000);
         } catch (error) {
             reject(error);
         }
@@ -27,7 +27,7 @@ function operation3(n) {
         try {
             setTimeout(() => {
                 resolve(n - 20);
-            }, 1000);
+            }, 3000);
         } catch (error) {
             reject(error);
         }
@@ -36,11 +36,11 @@ function operation3(n) {
 
 async function logNumbers(n) {
     const result1 = await operation1(n);
-    console.log(`After the 1st second:  ${n} + 10 = ${result1}`);
+    console.log(`After the 1st second: ${n} + 10 = ${result1}`);
     const result2 = await operation2(result1);
-    console.log(`After the 2nd second:  ${result1} * 3 = ${result2}`);
+    console.log(`After 2 more seconds: ${result1} * 3 = ${result2}`);
     const result3 = await operation3(result2);
-    console.log(`After the 3rd second: ${result2} - 20 = ${result3}`);
+    console.log(`After another 3 seconds: ${result2} - 20 = ${result3}`);
 }
 
 logNumbers(5); // 15 .. 45 .. 25

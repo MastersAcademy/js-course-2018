@@ -15,7 +15,7 @@ function operation2(n) {
         try {
             setTimeout(() => {
                 resolve(n * 3);
-            }, 1000);
+            }, 2000);
         } catch (error) {
             reject(error);
         }
@@ -27,7 +27,7 @@ function operation3(n) {
         try {
             setTimeout(() => {
                 resolve(n - 20);
-            }, 1000);
+            }, 3000);
         } catch (error) {
             reject(error);
         }
@@ -37,16 +37,17 @@ function operation3(n) {
 function logNumbers(n) {
     operation1(n)
         .then((result1) => {
-            console.log(`After the 1st second:  ${n} + 10 = ${result1}`);
+            console.log(`After the 1st second: ${n} + 10 = ${result1}`);
             return operation2(result1);
         })
         .then((result2) => {
-            console.log(`After the 2nd second:  ${result2 / 3} * 3 = ${result2}`);
+            console.log(`After 2 more seconds: ${result2 / 3} * 3 = ${result2}`);
             return operation3(result2);
         })
         .then((result3) => {
-            console.log(`After the 3rd second: ${result3 + 20} - 20 = ${result3}`);
-        });
+            console.log(`After another 3 seconds: ${result3 + 20} - 20 = ${result3}`);
+        })
+        .catch(error => console.log(error));
 }
 
 logNumbers(5); // 15 .. 45 .. 25
