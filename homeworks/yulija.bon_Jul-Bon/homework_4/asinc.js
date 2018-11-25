@@ -45,4 +45,4 @@ async function logNumbersAsinc(num) {
     }, 3000);
 }
 
-logNumbersAsinc(10);
+logNumbersAsinc(20);
