@@ -10,6 +10,7 @@ body {
   background-size: cover;
   position: relative;
   background-color: #FFF;
+  font-family: "Open Sans", "sans-serif";
 }
 
 /*site header*/
@@ -65,7 +66,6 @@ header {
 .menuBar {
   margin-top: 35px;
   margin-left: 500px;
-  height: 12px ;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -77,9 +77,9 @@ header {
   color: #FFF;
   margin-right: 50px;
   font-weight: 900;
-  font-family: "Open Sans", "sans-serif";
   font-size: 13px;
   text-align: center;
+  text-decoration:none;
 }
 
 
@@ -97,13 +97,12 @@ header {
   text-transform: uppercase;
   color: #FFF;
   font-weight: 900;
-  font-family: "Open Sans", "sans-serif";
   line-height: 60px;
   margin-top: 100px;
 }
 
 .bigSlogan:after, .title:after {
-  content: url("img/Underline.png");
+  border-top:1px solid blue;
   width: 100px;
   height: 30px;
   margin-top: 60px;
@@ -129,11 +128,10 @@ header {
   color: #000;
   text-align: center;
   font-weight: 900;
-  font-family: "Open Sans", "sans-serif";
   margin-top: 70px;
 }
 
-.footerMenu {
+.mainMenu {
   box-sizing: border-box;
   text-align: justify;
   display: flex;
@@ -149,7 +147,7 @@ header {
   margin-left: 50px;
 }
 
-.logoDesign > img {
+.logoDesign{
   width: 40px;
   height: 35px;
   margin-bottom: 10px;
@@ -161,7 +159,7 @@ header {
   color: #222;
   text-align: center;
   font-weight: 900;
-  font-family: "Open Sans", "sans-serif";
+ 
   font-size: 15px;
 }
 
@@ -169,7 +167,6 @@ header {
   margin-top: 10px;
   color: #888;
   text-align: center;
-  font-family: "Open Sans", "sans-serif";
   font-size: 12px;
 }
 
