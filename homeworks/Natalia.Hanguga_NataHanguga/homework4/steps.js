@@ -1,15 +1,15 @@
 // promise
-let num = 20;
+const num = 20;
 
 function setTimePromise(number) {
     const promise = new Promise((resolve) => {
         setTimeout(() => (resolve(console.log(number += 10))), 1000);
     });
-    promise.then(result=>(setTimeout(() => (console.log(number *= 3)), 1000)))
-    promise.then(result=>(setTimeout(() => (console.log(number -= 20)), 2000)))
+    promise.then(result => (setTimeout(() => (console.log(number *= 3)), 1000)));
+    promise.then(result => (setTimeout(() => (console.log(number -= 20)), 2000)));
 }
 
-setTimePromise(num);
+//setTimePromise(num);
 
 
 function setTime(number) {
@@ -18,35 +18,35 @@ function setTime(number) {
     setTimeout(() => console.log(number -= 20), 3000);
 }
 
-setTime(num);
+//setTime(num);
 
 // asunc/await function
 
 async function setTimeAsync(number) {
-    let promise1 = new Promise((resolve, reject) => {
+    const promise1 = new Promise((resolve, reject) => {
         setTimeout(() => resolve(number += 10), 1000);
     });
 
-    let res1 = await promise1;
+    const res1 = await promise1;
     console.log(res1);
     
-    let promise2 = new Promise((resolve, reject) => {
+    const promise2 = new Promise((resolve, reject) => {
         setTimeout(() => resolve(number *= 3), 1000);
     });
 
-    let res2 = await promise2;
+    const res2 = await promise2;
     console.log(res2);
 
-    let promise3 = new Promise((resolve, reject) => {
+    const promise3 = new Promise((resolve, reject) => {
         setTimeout(() => resolve(number -= 20), 1000);
     });
 
-    let res3 = await promise3;
+    const res3 = await promise3;
     console.log(res3);
 
 }
 
-setTimeAsync(num);
+//setTimeAsync(num);
 
 // callback function
 
@@ -71,6 +71,3 @@ setTimeCallback1(num, (num) => {
         });
     });
 });
-
-
-
