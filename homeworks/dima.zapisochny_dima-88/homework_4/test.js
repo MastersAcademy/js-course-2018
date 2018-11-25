@@ -7,15 +7,18 @@ const sub = number => number - 20;
 // Task 1. Using callback.
 
 function logNumber1(number) {
-    setTimeout((callback1) => {
-        setTimeout((callback2) => {
-            setTimeout((callback3) => {
-                console.log(sub(callback3));
-            }, 1000, prod(callback2));
-            console.log(prod(callback2));
-        }, 1000, sum(callback1));
-        console.log(sum(callback1));
-    }, 1000, number);
+    setTimeout(() => {
+        const result1 = sum(number);
+        console.log(result1);
+        setTimeout(() => {
+            const result2 = prod(result1);
+            console.log(result2);
+            setTimeout(() => {
+                const result3 = sub(result2);
+                console.log(result3);
+            }, 1000);
+        }, 1000);
+    }, 1000);
 }
 
 // Task 2. Using Promise.
