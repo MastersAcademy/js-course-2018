@@ -51,7 +51,7 @@ function Promises() {
             console.log(multiply);
             return minusPromise(multiply);
         })
-       .then(minus => console.log(minus));
+        .then(minus => console.log(minus));
 }
 Promises();
 let inNumber = 10;
