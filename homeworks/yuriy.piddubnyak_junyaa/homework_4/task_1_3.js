@@ -3,18 +3,25 @@ const promise = new Promise((resolve) => {
     resolve(number);
 });
 async function func() {
-    const x = await promise;
-    const a = x + 10;
-    setTimeout(() => {
-        console.log(a);
-    }, 2000);
-    const y = x * 3;
-    setTimeout(() => {
-        console.log(y);
-    }, 3000);
-    const z = y - 20;
-    setTimeout(() => {
-        console.log(z);
-    }, 4000);
+    await promise;
+    promise.then((value) => {
+        setTimeout(() => {
+        }, 0);
+        return value + 10;
+    }).then((value) => {
+        setTimeout(() => {
+            console.log(value);
+        }, 1000);
+        return value * 3;
+    }).then((value) => {
+        setTimeout(() => {
+            console.log(value);
+        }, 2000);
+        return value - 20;
+    }).then((value) => {
+        setTimeout(() => {
+            console.log(value);
+        }, 3000);
+    });
 }
 func();
