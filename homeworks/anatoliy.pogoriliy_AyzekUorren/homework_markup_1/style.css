@@ -1,0 +1,135 @@
+.main {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.header, .content {
+  width: 1024px;
+  margin: auto;
+}
+
+.header {
+  background-image: url("images/background.png");
+  height: 645px;
+  overflow: auto;
+}
+
+.header-content, .header-nav {
+  color: #FFF;
+  position: relative;
+  text-align: center;
+}
+
+.header-logo {
+  margin: 52px 0 0 130px;
+  display: inline-block;
+}
+
+.header-logo-image {
+  filter: invert(100%);
+}
+
+.header-nav {
+  margin-top: 67px;
+  float: right;
+  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nav-link {
+  margin-right: 50px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFF;
+}
+
+.header-nav-link:hover {
+  color: #EE2F1B;
+}
+
+.header-content-tittle {
+  font-size: 50px;
+  flex-basis: 545px;
+  margin: 173px auto auto;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.underline:after {
+  width: 111px;
+  height: 2px;
+  background-color: #35C2F8;
+  display: block;
+  content: "";
+  margin: 50px auto 0;
+}
+
+.header-content-description {
+  font-size: 20px;
+  flex-basis: 500px;
+  color: #CCC;
+  margin: 54px auto auto;
+}
+
+.header-transparency-layer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .75);
+  width: 1024px;
+  height: 645px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-header {
+  text-align: center;
+  font-size: 40px;
+  margin: 99px 0 0;
+  flex-basis: 100%;
+  line-height: 75px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.content-header.underline:after {
+  margin-bottom: 79px;
+  margin-top: 40px;
+}
+
+.content-service {
+  flex-basis: 33%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.content-service-image {
+  height: 55px;
+  margin: auto auto 39px;
+}
+
+.content-service-caption {
+  margin: auto;
+}
+
+.content-service-header {
+  text-align: center;
+  color: #222;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 0 0 9px;
+}
+
+.content-service-description {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  line-height: 22px;
+  color: #888;
+}
