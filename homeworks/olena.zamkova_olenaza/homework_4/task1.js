@@ -59,10 +59,10 @@ async function logNumbersAsync(number) {
 
 // Output results
 
-const isNaturalNumber = (string) => {
+const isNumber = (string) => {
     const number = parseInt(string, 10);
 
-    return !Number.isNaN(number) && number.toString() === string && number >= 0;
+    return !Number.isNaN(number) && number.toString() === string;
 };
 
 const rl = readline.createInterface({
@@ -71,7 +71,7 @@ const rl = readline.createInterface({
 });
 
 rl.question('Please enter a number: ', (answer) => {
-    if (!isNaturalNumber(answer)) {
+    if (!isNumber(answer)) {
         console.log('Wrong input!');
     } else {
         const input = parseInt(answer, 10);
