@@ -1,37 +1,37 @@
 //  1.1
 
-function square_of_number(n) {
-    return n *n;
+function squareOfNumber(n) {
+    return n * n;
 }
-
-console.log(square_of_number(5));
-console.log(square_of_number(15));
-console.log(square_of_number(53));
+console.log(squareOfNumber(5));
+console.log(squareOfNumber(15));
+console.log(squareOfNumber(53));
 
 //  1.2.1 and 1.2.2
 
-function step_array(max_nember, step) {
+function stepArray(maxNumber, step) {
     const array = [];
-    for (let i = 0; i <= max_nember; i += step) {
+    for (let i = 0; i <= maxNumber; i += step) {
         array.push(i);
     }
     return array;
 }
+console.log(stepArray(50, 5));
+console.log(stepArray(32, 4));
 
-console.log(step_array(50, 5));
-console.log(step_array(32, 4));
 
 //  1.3
-function elements_to_square(array) {
+
+function elementsToSquare(array) {
     return array.map(n => n * n);
 }
 
-console.log(elements_to_square(step_array(32, 4)));
+console.log(elementsToSquare(stepArray(32, 4)));
 
 //  1.4
 
-function elements_sum(array) {
-    return array.reduce((sum, next_n) => sum + next_n);
+function elementsSum(array) {
+    return array.reduce((sum, nextNumber) => sum + nextNumber);
 }
 
-console.log(elements_sum(elements_to_square(step_array(32, 4))));
+console.log(elementsSum(elementsToSquare(stepArray(32, 4))));
