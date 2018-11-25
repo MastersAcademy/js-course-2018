@@ -1,17 +1,10 @@
 // rec
-function rec(num) {
-    if (num === 2) {
-        return true;
-    }
-    if (num % 2 === 0) {
-        return rec(num / 2);
-    }
-    return false;
+function rec(num) {   
+     return num % 2 === 0 ? rec(num / 2) : num === 1;
 }
-const minNum = 10;
-const maxNum = 600;
-for (let i = minNum; i <= maxNum; i++) {
+for (let i = 10; i <= 600; i++) {
     if (rec(i)) {
         console.log(i);
     }
 }
+
