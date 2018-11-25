@@ -12,7 +12,7 @@ const isPowOfTwo = function isPowerOfTwo(num) {
     return isPowerOfTwo(num / 2);
 };
 
-const isAllNumbersPowerOfTwo = function () {
+const isAllNumbersPowerOfTwo = () => {
     const min = 10;
     const max = 600;
     const arrayService = [];
