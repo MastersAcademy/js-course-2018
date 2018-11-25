@@ -25,7 +25,7 @@ setTime(num);
 
 async function setTimeAsync(number) {
     let promise = new Promise((resolve, reject) => {
-        setTimeout((number) => resolve(number += 10), 1000);
+        setTimeout((number) => resolve(number += 10)), 1000);
         setTimeout((number) => resolve(number *= 3)), 2000);
         setTimeout((number) => resolve(number -= 20)), 3000);
     });
