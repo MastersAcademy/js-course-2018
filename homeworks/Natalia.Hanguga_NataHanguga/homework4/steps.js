@@ -14,9 +14,9 @@ setTimePromise(num);
 // vanila js
 
 function setTime(number) {
-    setTimeout(number => console.log(number += 10), 1000);
-    setTimeout(number => console.log(number *= 3), 2000);
-    setTimeout(number => console.log(number -= 20), 3000);
+    setTimeout(() => console.log(number += 10), 1000);
+    setTimeout(() => console.log(number *= 3), 2000);
+    setTimeout(() => console.log(number -= 20), 3000);
 }
 
 setTime(num);
@@ -25,9 +25,9 @@ setTime(num);
 
 async function setTimeAsync(number) {
     let promise = new Promise((resolve, reject) => {
-        setTimeout(() => resolve(number += 10)), 1000);
-        setTimeout(() => resolve(number *= 3)), 2000);
-        setTimeout(() => resolve(number -= 20)), 3000);
+        setTimeout(() => resolve(number += 10), 1000);
+        setTimeout(() => resolve(number *= 3), 2000);
+        setTimeout(() => resolve(number -= 20), 3000);
     });
 
     let res = await promise;
