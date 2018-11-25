@@ -242,6 +242,37 @@ p, h1, h2, figure, body {
   box-shadow: 0 0 20px 5px #D9F0F9;
 }
 
-.content__button--top-margin {
+.content__button--margin {
   margin-top: 17px;
+  margin-bottom: 114px;
+}
+
+.content__wrapper--portfolio {
+  flex-basis: 55%;
+  background-image: url("images/background-users-icon.png");
+  background-repeat: no-repeat;
+  background-position-y: 210px;
+}
+
+.content__description--portfolio {
+  margin-top: 30px;
+  margin-bottom: 38px;
+}
+
+.content__aside--portfolio {
+  flex-basis: 43%;
+  align-self: center;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.content__item--portfolio {
+  width: 100%;
+}
+
+.aside_img--portfolio {
+  width: 700px;
+  object-fit: unset;
+  margin-top: auto;
+  height: auto;
 }
