@@ -1,17 +1,19 @@
-function num_degree(n) {    if (n > 1) {
-        return num_degree(n / 2);
+function numDegree(n) {
+    if (n > 1) {
+        return numDegree(n / 2);
     }
     if (n === 1) {
         return true;
     }
     return false;
 }
-function num_range(a, b) {
+
+function numRange(a, b) {
     for (let i = a; i <= b; i++) {
-        if (num_degree(i) === true) {
+        if (numDegree(i) === true) {
             console.log(i);
         }
     }
 }
-num_range(10, 600);
 
+numRange(10, 600);
