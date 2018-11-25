@@ -4,10 +4,10 @@ const num = 20;
 
 function setTimePromise(num1) {
     const promise = new Promise((resolve) => {
-        let number = num1;
-        setTimeout(() => (resolve(console.log(number === num1 + 10))), 1000);
-        setTimeout(() => (resolve(console.log(number === num1 * 3))), 1000);
-        setTimeout(() => (resolve(console.log(number === num1 - 20))), 1000);
+        const number = num1;
+        setTimeout(() => (resolve(console.log(number = num1 + 10))), 1000);
+        setTimeout(() => (resolve(console.log(number = (num1 + 10) * 3))), 1000);
+        setTimeout(() => (resolve(console.log(number = num1 - 20))), 1000);
     });
 }
 
