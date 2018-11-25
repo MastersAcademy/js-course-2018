@@ -14,3 +14,19 @@ const logNumbersCallback = (number) => {
 };
 
 logNumbersCallback(10); // 20, 60, 40
+
+// Promise based solution
+const promise = number => new Promise((resolve) => {
+    setTimeout(() => {
+        console.log(number);
+        resolve(number);
+    }, delay);
+});
+
+const logNumbersPromise = (number) => {
+    promise(number + 10)
+        .then(a => promise(a * 3))
+        .then(b => promise(b - 20));
+};
+
+logNumbersPromise(10); // 20, 60, 40
