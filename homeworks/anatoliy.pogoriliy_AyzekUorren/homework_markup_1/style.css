@@ -273,6 +273,4 @@ p, h1, h2, figure, body {
 .aside_img--portfolio {
   width: 700px;
   object-fit: unset;
-  margin-top: auto;
-  height: auto;
 }
