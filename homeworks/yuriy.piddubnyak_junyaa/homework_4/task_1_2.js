@@ -1,20 +1,22 @@
-const number = 100;
 const promise = new Promise((resolve) => {
-    resolve(number);
+    resolve(100);
 });
-promise.then((result) => {
-    const x = result + 10;
+promise.then((value) => {
     setTimeout(() => {
-        console.log(x);
+    }, 0);
+    return value + 10;
+}).then((value) => {
+    setTimeout(() => {
+        console.log(value);
+    }, 1000);
+    return value * 3;
+}).then((value) => {
+    setTimeout(() => {
+        console.log(value);
     }, 2000);
-
-    const y = x * 3;
+    return value - 20;
+}).then((value) => {
     setTimeout(() => {
-        console.log(y);
+        console.log(value);
     }, 3000);
-
-    const z = y - 20;
-    setTimeout(() => {
-        console.log(z);
-    }, 4000);
 });
