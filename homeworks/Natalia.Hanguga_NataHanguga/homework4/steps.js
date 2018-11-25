@@ -39,11 +39,11 @@ setTimeAsync(num);
 // callback function
 
 function setTimeCallback(number, callback) {
-    setTimeout((number) => callback(number += 10), 1000);
-    setTimeout((number) => callback(number *= 3), 2000);
-    setTimeout((number) => callback(number -= 20), 3000);
+    setTimeout(() => callback(number += 10), 1000);
+    setTimeout(() => callback(number *= 3), 2000);
+    setTimeout(() => callback(number -= 20), 3000);
 }
 
-setTimeCallback(num, (num)=> {
+setTimeCallback(num, () => {
     console.log(num);
 });
