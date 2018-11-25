@@ -4,11 +4,19 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.block__text-1, .block__text-2, .block__text-3, .article_text, .article-text {
+  color: #777;
+  font-size: 14px;
 }
 
 .header {
   height: 500px;
   background-image: url("img/TransparencyLayer.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 
 .header__container {
@@ -65,32 +73,34 @@ body {
   text-transform: uppercase;
 }
 
-
 .text_2 {
   color: #CCC;
   padding: 50px 24.82% 0;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.main {
+.main_core-servise {
   margin: 10% 0;
+  width: 100%;
 }
 
-.main_core {
+.core-servise_core {
   display: flex;
-  margin: 0 100px;
   justify-content: space-around;
+  margin-bottom: 40px;
 }
 
 .block__text-1, .block__text-2, .block__text-3 {
   text-align: center;
 }
 
-.main__core-title, .block__title {
+.core-servise__core-title, .block__title {
   text-align: center;
   text-transform: uppercase;
 }
 
-.text_1:after, .main__core-title:after {
+.text_1:after, .core-servise__core-title:after {
   content: " ";
   display: block;
   height: 1px;
@@ -98,9 +108,80 @@ body {
   width: 111px;
 }
 
-.block__img , .text_1:after, .main__core-title:after {
+.block__img , .text_1:after, .core-servise__core-title:after {
   text-align: center;
   display: block;
   margin: 0 auto;
   margin-top: 25px;
+}
+
+.article-title {
+  margin: 0;
+  padding: 0;
+}
+
+.article_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.other-expertise_article {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.article_text {
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.main_other-expertise {
+  display: flex;
+  background-color: #F7F7F7;
+}
+
+.list_item-setup {
+  list-style-image: url("img/gear_icon.png");
+}
+
+.list_item-control {
+  list-style-image: url("img/star_icon.png");
+}
+
+.list_item-star {
+  list-style-image: url("img/cloud_icon.png");
+}
+
+.list_item-security {
+  list-style-image: url("img/lock_icon.png");
+}
+
+.item_article {
+  max-width: 200px;
+}
+
+.article_learn-more {
+  width: 169px;
+  height: 61px;
+  color: #222;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #FFF;
+  border: none;
+  padding: 11px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.article_title {
+  font-size: 40px;
+  font-weight: 700;
 }
