@@ -25,7 +25,7 @@ function logNumCallBack(num) {
 logNumCallBack(50);
 // Promise
 function promiseFunc(num, funcResult, time) {
-    const result = funcRes(num);
+    const result = funcResult(num);
     return new Promise((resolve) => {
         setTimeout(() => {
             console.log(result);
@@ -35,8 +35,8 @@ function promiseFunc(num, funcResult, time) {
 }
 function logNumPromise(num) {
     promiseFunc(num, addNum, 1000)
-        .then(firstnum => promiseMaker(firstnum, multiplyNum, 2000)
-            .then(secondnum => promiseMaker(secondnum, minusNum, 3000)));
+        .then(firstnum => promiseFunc(firstnum, multiplyNum, 2000)
+            .then(secondnum => promiseFunc(secondnum, minusNum, 3000)));
 }
 logNumPromise(50);
 // Async function
