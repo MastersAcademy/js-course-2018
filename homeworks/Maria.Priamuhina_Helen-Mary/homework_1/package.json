@@ -1,0 +1,19 @@
+{
+  "name": "verstka-tasks-1",
+  "version": "1.0.0",
+  "description": ":warning: При создании PullRequest'а не забудьте указать ваши имя и фамилию.   \r :warning: [Codestyle для HTML](https://github.com/urfu-2015/guides/blob/master/html-codestyle.md)  \r :sos: [Как создать Pull Request](https://github.com/urfu-2015/guides/blob/master/how-to-pull-request.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helen-Mary/verstka-tasks-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Helen-Mary/verstka-tasks-1/issues"
+  },
+  "homepage": "https://github.com/Helen-Mary/verstka-tasks-1#readme"
+}
