@@ -43,7 +43,7 @@ p {
   margin: 0 auto;
 }
 
-.heading_1 {
+.heading-page {
   font-size: 50px;
   font-weight: 700;
   line-height: 64px;
@@ -53,7 +53,7 @@ p {
   margin-bottom: 48px;
 }
 
-.heading_2 {
+.title-section {
   color: #222;
   font-size: 40px;
   font-weight: 700;
@@ -64,7 +64,7 @@ p {
   line-height: 1.2;
 }
 
-.heading_3 {
+.title-content {
   color: #222;
   font-size: 16px;
   text-transform: uppercase;
@@ -142,15 +142,17 @@ p {
 .list-services {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
 }
 
 .item-sevices {
   width: 33.33%;
-  max-width: 290px;
+  max-width: 310px;
+  min-width: 200px;
   color: #888;
   line-height: 22px;
+  padding: 0 10px;
 }
 
 .icon {
