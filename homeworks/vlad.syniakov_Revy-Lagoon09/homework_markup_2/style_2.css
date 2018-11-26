@@ -191,7 +191,7 @@ body {
   flex-wrap: wrap;
   padding-top: 38px;
   align-items: center;
-  margin-left:-40px;
+  margin-left: -40px;
 }
 
 .block-3 {
@@ -206,7 +206,7 @@ body {
 .block-4 {
   display: flex;
   height: 50px;
-  width: 400px; 
+  width: 400px;
   flex-wrap: wrap;
   align-items: center;
   margin-left: -30px;
@@ -216,7 +216,7 @@ body {
 .block-1-header {
   margin-top: auto;
   padding-left: 15px;
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 .block-2-header {
@@ -236,7 +236,7 @@ body {
   height: 30px;
 }
 
-.block-1-description {  
+.block-1-description {
   width: 314px;
   height: 37px;
   color: #777;
@@ -248,7 +248,7 @@ body {
   padding-left: 80px;
 }
 
-.block-2-description {  
+.block-2-description {
   width: 314px;
   height: 37px;
   color: #777;
@@ -258,19 +258,19 @@ body {
   letter-spacing: -.35px;
   margin-top: -10px;
   padding-left: 88px;
-  }
+ }
 
-.block-3-description {  
- margin-left: -11px;
- width: 314px;
- height: 37px;
- color: #777777;
- font-size: 13px;
- font-weight: 400;
- line-height: 22px;
- letter-spacing: -0.35px;
- margin-top: -10px;
- padding-left: 88px;
+.block-3-description {
+   margin-left: -11px;
+   width: 314px;
+   height: 37px;
+   color: #777;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 22px;
+   letter-spacing: -0.35px;
+   margin-top: -10px;
+   padding-left: 88px;
 }
 
 .other-expertise-menu {
@@ -295,7 +295,7 @@ body {
   font-weight: 700;
 }
 
- .content__button:hover {
+.content__button:hover {
   box-shadow: 0 0 30px 2px rgb(10, 159, 218);
 }
 
@@ -334,7 +334,6 @@ body {
 }
 
 .portfolio-container {
-  
   width: 450px;
   height: 200px;
   display: flex;
