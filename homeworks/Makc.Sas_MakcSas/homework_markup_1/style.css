@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
   width: 1024px;
   margin: auto;
 }
@@ -32,7 +38,6 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 14px;
   height: 10px;
   color: #FFF;
 }
@@ -113,9 +118,132 @@ body {
 }
 
 .core_service_text_subtitle {
-  font-size: 14px;
   text-align: center;
   margin: 0 20px;
   line-height: 22px;
   color: #888;
+}
+
+.page_three {
+  background-color: #F7F7F7;
+}
+
+.page_three_picture {
+  float: right;
+}
+
+.page_three_text {
+  margin-left: 50px;
+  padding-bottom: 50px;
+}
+
+.size_text {
+  padding-top: 50px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.page_three_text_title {
+  padding-top: 40px;
+  color: #777;
+}
+
+.two_lines {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.transfer {
+  width: 250px;
+}
+
+.page_three_font_size {
+  margin-top: 55px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.page_three_text_size {
+  color: #777;
+}
+
+.page_three_icons {
+  float: left;
+}
+
+.retreat {
+  margin-top: 50px;
+  margin-left: 45px;
+}
+
+.page_three_button {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.page_three_button_link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 40px;
+  background-color: #FFF;
+  color: #000;
+}
+
+.page_four {
+  margin-left: 50px;
+  width: 100%;
+  display: flex;
+}
+
+.page_four_content {
+  width: 580px;
+  padding-bottom: 50px;
+}
+
+.page_four_picture_tablet {
+  margin-top: 130px;
+}
+
+.tablet_picture {
+  max-width: 400px;
+  max-height: 345px;
+}
+
+.page_four_title_text {
+  padding-top: 50px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.page_four_background {
+  background-image: url("images/page_four.jpg");
+}
+
+.page_four_text {
+  margin-top: 30px;
+  color: #777;
+}
+
+.portfolio-content {
+  width: 100%;
+}
+
+.portfolio_pictures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page_four_portfolio_picture {
+  width: 340px;
+  height: 255px;
+}
+
+.page_four_portfolio_picture:hover {
+  opacity: .5;
 }
