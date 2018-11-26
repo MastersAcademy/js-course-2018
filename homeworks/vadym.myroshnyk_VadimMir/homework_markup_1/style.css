@@ -117,15 +117,13 @@ header {
 
 .containerThrird {
   width: 1200px;
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
   margin-left: 200px;
   border: 1px solid transparent;
   display: flex;
   flex-direction: row;
   justify-content: center;
- 
 }
-
 
 .titleThirdSection {
   text-transform: uppercase;
@@ -134,7 +132,6 @@ header {
   color: rgba(34, 34, 34, 255);
   position: relative;
 }
-
 
 .service-imgThrirdBlock {
   margin-top: 25px;
@@ -157,14 +154,15 @@ header {
   font-size: 14px;
   color: #000;
 }
+
 .bottomblock {
- display: flex;
- flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .block {
- display: flex;
- flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .button {
@@ -176,10 +174,9 @@ header {
 }
 
 .textButton {
- color: #000;
- position: relative;
+  color: #000;
+  position: relative;
 }
-
 
 .sectionFour {
   width: 1400px;
@@ -188,11 +185,10 @@ header {
   border: 1px solid transparent;
   display: flex;
   flex-direction: row;
-
 }
 
 .service-paragraphFourBlock {
-    margin-top: 5px;
+  margin-top: 5px;
   padding: 10px;
   text-transform: none;
   font-size: 14px;
@@ -210,10 +206,6 @@ header {
   display: flex;
   flex-direction: column;
   background: url("./images/background3.png") 30% 30% no-repeat;
-  
-}
-
-.imgFourSection {
 }
 
 .main {
