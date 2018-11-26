@@ -258,19 +258,19 @@ body {
   letter-spacing: -.35px;
   margin-top: -10px;
   padding-left: 88px;
- }
+}
 
 .block-3-description {
-   margin-left: -11px;
-   width: 314px;
-   height: 37px;
-   color: #777;
-   font-size: 13px;
-   font-weight: 400;
-   line-height: 22px;
-   letter-spacing: -0.35px;
-   margin-top: -10px;
-   padding-left: 88px;
+  margin-left: -11px;
+  width: 314px;
+  height: 37px;
+  color: #777; 
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -.35px;
+  margin-top: -10px;
+  padding-left: 88px;
 }
 
 .other-expertise-menu {
@@ -313,7 +313,7 @@ body {
   background-size: 48%;
 }
 
-.amazing-portfolio{
+.amazing-portfolio {
   color: #222;
   font-size: 32px;
   font-weight: 700;
@@ -387,9 +387,9 @@ body {
 }
 
 .gallery-img {
-width: 340px;
+  width: 340px;
 }
 
 .box-4, .box-5, .box-6 {
-  margin-top:-5px;
+  margin-top: -5px;
 }
