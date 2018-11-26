@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body */
+ body {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  width: 1024px;
+}
+ div {
+  box-sizing: border-box;
+}
+/* header */
+ header {
+  background: url("images/background.png") rgb(65, 58, 58) no-repeat center top / cover;
+  background-blend-mode: multiply;
+  height: 645px;
+}
+ .header_container:after {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both;
+}
+ .header_container_img {
+  margin: 39px 0 0 130px;
+  float: left;
+}
+ /*header menu */
+ .header_container_navigation {
+  float: right;
+  margin: 53px 130px 0 0;
+  position: relative;
+}
+ .header_container_navigation_menu{
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+ .header_container_navigation_menu_list {
+  float: left;
+  display: block;
+  margin: 0 42px 0 0 ;
+}
+ .header_container_navigation_menu_list_link {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ .header_container_navigation_menu_list_link:hover {
+  color: rgb(255, 0, 0);
+}
+ /* header title */
+ .header_title {
+  text-align: center;
+}
+ .header_title_h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-top: 174px;
+}
+ .header_title_underline {
+  content: "";
+  display: block;
+  width: 111px;
+  height: 1px;
+  background-color: #35C2F8;
+  margin: 51px auto 0 ;
+}
+ .header_title_text {
+  color: #CCC;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 53px;
+}
+ /* servises */
+ .servises {
+  height: 534px;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+ .servises_title {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222;
+  display: block;
+  margin: 66px auto 0 ;
+}
+ .grid_servises {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: 77px auto 0 ;
+  align-items: center;
+}
+ .servises_content {
+  text-align: center;
+}
+ .servises_content_title_link {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222;
+}
+ .servises_content_title_link:hover {
+  color: #888;
+}
+ .servises_content_title {
+  margin-top: 38px;
+}
+ .servises_content_text {
+  color: #888;
+  margin-top: 20px;
+}
