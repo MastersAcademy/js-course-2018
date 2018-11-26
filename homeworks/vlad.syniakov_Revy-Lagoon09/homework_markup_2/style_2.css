@@ -6,6 +6,7 @@ body {
 }
 
 /*first block*/
+
 .header {
   background-image: url("images_2/background.png");
   height: 657px;
@@ -86,6 +87,7 @@ body {
 }
 
 /*second*/
+
 .content {
   margin-top: -240px;
   display: flex;
@@ -134,13 +136,14 @@ body {
 }
 
 /*third*/
+
 .other-expertise {
   height: 616px;
   background-color: #F7F7F7;
 }
 
 .other-expertise-content {
-  display: block;
+  display : block;
   max-height: 250px;
   width: 700px;
   margin-top:100px;
@@ -236,11 +239,11 @@ body {
 .block-1-description {  
   width: 314px;
   height: 37px;
-  color: #777777;
+  color: #777;
   font-size: 13px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: -0.35px;
+  letter-spacing: -.35px;
   margin-top:-10px;
   padding-left:80px;
 }
@@ -248,14 +251,14 @@ body {
 .block-2-description {  
   width: 314px;
   height: 37px;
-  color: #777777;
+  color: #777;
   font-size: 13px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: -0.35px;
+  letter-spacing: -.35px;
   margin-top:-10px;
   padding-left:88px;
-}
+  }
 
 .block-3-description {  
  margin-left:-11px;
@@ -284,10 +287,10 @@ body {
   border-style: solid;
   background: #FFF;
   border-color: #D9F0F9;
-  border-width: 1px 1px 1px 1px;
+  border-width: 1px;
   border-radius: 42px;
-  text-shadow: 0 .2px .2px rgba(0, 0, 0, 0.7);
-  color: #222222;
+  text-shadow: 0 .2px .2px rgba(0, 0, 0, .7);
+  color: #222;
   font-size: 14px;
   font-weight: 700;
 }
@@ -295,7 +298,9 @@ body {
  .content__button:hover {
   box-shadow: 0 0 30px 2px rgb(10, 159, 218);
 }
+
 /*fourth*/
+
 .portfolio {
   height: 550px;
   position: relative;
