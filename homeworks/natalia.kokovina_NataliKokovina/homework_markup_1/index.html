@@ -6,31 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <title>Document</title>
+    <title>HomeWork_markup_01</title>
 </head>
 <body class="page">
     <div class="heading">
-        <div class="heading__top">
-        <div><a href="#"><img class="heading__img_logo" src="images/logo.png" alt="logo"> </a></div>
-        <nav class="heading__menu">
-                <a class="heading__menu_box" href="#">Home</a>
-                <a class="heading__menu_box" href="#">Services</a>
-                <a class="heading__menu_box" href="#">Portfolio</a>
-                <a class="heading__menu_box" href="#">About</a>
-                <a class="heading__menu_box" href="#">Team</a>
-                <a class="heading__menu_box" href="#">Contact</a>
-        </nav>
+        <header class="heading__top">
+        <a href="#"><img class="heading__img_logo" src="images/logo.png" alt="logo"></a>
+            <nav class="heading__menu">
+                    <a class="heading__menu_box" href="#">Home</a>
+                    <a class="heading__menu_box" href="#services">Services</a>
+                    <a class="heading__menu_box" href="#">Portfolio</a>
+                    <a class="heading__menu_box" href="#">About</a>
+                    <a class="heading__menu_box" href="#">Team</a>
+                    <a class="heading__menu_box" href="#">Contact</a>
+            </nav>
+        </header>
+        <section class="heading__wrap">
+            <h1 class="heading__title"> Build the website of your dreams</h1>
+            <p class="heading__text">We are a digital agency that believes in building things that are  meaningful!</p>
+        </section>
     </div>
-        <article class="heading__wrap">
-        <h1 class="heading__title"> Build the website of your dreams</h1>
-        <div class="heading__title_after"></div>
-        <p class="heading__text">We are a digital agency that believes in building things that are  meaningful!</p>
-        </article>
-    </div>
-    <div class="coreServices">
+    <main class="coreServices" id="services">
         <h2 class="coreServices__title">Core Services</h2>
-        <div class="coreServices__title_after"></div>
-        <div class="coreServices__tasksBlock">
+        <section class="coreServices__tasksBlock">
             <figure class="coreServices__task">
                 <img class="coreServices__task_icon" src="images/tools.png" alt="icon">
                 <a class= "coreServices__task_title" href="#">Beautiful Designs</a>
@@ -50,8 +48,69 @@
                 <a class= "coreServices__task_title" href="#">24/7 Support</a>
                 <p class= "coreServices__task_text">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
             </figure>
-        </div>
-    </div>
+        </section>
+    </main>
+    <section class="otherExpertise">
+        <section class="otherExpertise__contentWrap">
+            <h2 class="otherExpertise__title">Other Expertise</h2>
+            <p class="otherExpertise__text">Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean
+                    rhoncus posuere odio in tincidunt consequat sem cure  digni ssim. </p>
+            <div class="otherExpertise__infoWrap">
+                <figure class="otherExpertise__infoBox infoBox_img1">
+                    <h3 class="infoBox_title">Custom setup</h3>
+                    <p class="infoBox_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                </figure>
+                <figure class="otherExpertise__infoBox infoBox_img3">
+                    <h3 class="infoBox_title">Cloud control</h3>
+                    <p class="infoBox_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                 </figure>
+                <figure class="otherExpertise__infoBox infoBox_img2">
+                        <h3 class="infoBox_title">All star support team</h3>
+                        <p class="infoBox_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                </figure>
+                <figure class="otherExpertise__infoBox infoBox_img4">
+                        <h3 class="infoBox_title">top notch security</h3>
+                        <p class="infoBox_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                </figure>
+            </div>
+            <button class="otherExpertise_buttom">Learn more</button>
+        </section>
+        <img class="otherExpertise_img" src="images/otherExpertise.png" alt="expertise">
+    </section>
+    <section class="portfolio">
+        <h2 class="portfolio_title">Amazing Portfolio</h2>
+        <section class="portfolio_contentWrap">
+        <p class="portfolio_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+            suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus
+            consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+        <p class="portfolio_text">Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+            rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
+        <figure class="portfolio__infoBox infoBoxPf_img1">
+                <h3 class="infoBoxPf_title">Sail Away Your Worries</h3>
+                <p class="infoBoxPf_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                    suscipit aenean rhoncus posuere odio in tincidunt. </p>
+        </figure>
+        <figure class="portfolio__infoBox infoBoxPf_img2">
+                <h3 class="infoBoxPf_title">All-star support team</h3>
+                <p class="infoBoxPf_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                        suscipit aenean rhoncus posuere odio in tincidunt.</p>
+        </figure>
+        <figure class="portfolio__infoBox infoBoxPf_img3">
+                <h3 class="infoBoxPf_title">fully Integrated service</h3>
+                <p class="infoBoxPf_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                    rhoncus posuere odio in tincidunt. </p>
+        </figure>
+    </section>
+        <img class="portfolio__imgSection" src="images/ipad.png" alt="Ipad">
+    </section>
+    <figure class="portfolio__gallery_wrap">
+        <img class="portfolio__img" src="images/Image-1.png" alt="Image-1">
+        <img class="portfolio__img" src="images/Image-2.png" alt="Image-2">
+        <img class="portfolio__img" src="images/Image-3.png" alt="Image-3">
+        <img class="portfolio__img" src="images/Image-4.png" alt="Image-4">
+        <img class="portfolio__img" src="images/Image-5.png" alt="Image-5">
+        <img class="portfolio__img" src="images/Image-6.png" alt="Image-6">
+    </figure>
 </body>
 
 </html>
