@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background: url("./images/Background.png") rgb(67, 65, 65) no-repeat center top / cover;
+  background: url("./images/Background.png") rgb(67, 65, 65) no-repeat center top;
   background-blend-mode: multiply;
 }
 
@@ -21,13 +21,17 @@ header {
 }
 
 .logo {
-  margin-top: 33px;
-  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 32px;
 }
 
 .mainMenu {
-  float: right;
-  margin-top: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: -52px;
 }
 
 .menu {
@@ -39,7 +43,7 @@ header {
 .menu li {
   float: left;
   display: block;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .menu a {
@@ -56,19 +60,21 @@ header {
   margin-bottom: 140px;
 }
 
-.title {
+.titleTwoSection {
   text-transform: uppercase;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 70px;
   font-size: 40px;
   color: rgba(34, 34, 34, 255);
   position: relative;
 }
 
-.titles {
+.titleHeader {
+  display: flex;
   text-transform: uppercase;
+  justify-content: center;
   text-align: center;
-  margin-top: 260px;
+  margin-top: 210px;
   font-size: 50px;
   color: #FFF;
   position: relative;
@@ -107,4 +113,113 @@ header {
   background: #35C2F8;
   content: "";
   position: absolute;
+}
+
+.containerThrird {
+  width: 1200px;
+  background-color: #f7f7f7;
+  margin-left: 200px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+}
+
+
+.titleThirdSection {
+  text-transform: uppercase;
+  margin-top: 70px;
+  font-size: 40px;
+  color: rgba(34, 34, 34, 255);
+  position: relative;
+}
+
+
+.service-imgThrirdBlock {
+  margin-top: 25px;
+  width: 30px;
+  height: 30px;
+}
+
+.service-paragraphThrirdBlock {
+  margin-top: -30px;
+  padding: 10px;
+  text-transform: none;
+  font-size: 16px;
+  color: #CCC;
+}
+
+.service-titleThrirdBlock {
+  margin-top: 10px;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #000;
+}
+.bottomblock {
+ display: flex;
+ flex-direction: row;
+}
+
+.block {
+ display: flex;
+ flex-direction: row;
+}
+
+.button {
+  position: relative;
+}
+
+.imgButton {
+  position: absolute;
+}
+
+.textButton {
+ color: #000;
+ position: relative;
+}
+
+
+.sectionFour {
+  width: 1400px;
+  margin-left: 100px;
+  padding: 100px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.service-paragraphFourBlock {
+    margin-top: 5px;
+  padding: 10px;
+  text-transform: none;
+  font-size: 14px;
+  color: #CCC;
+}
+
+.service-titleFourBlock {
+  text-transform: uppercase;
+  margin-top: 70px;
+  font-size: 40px;
+  color: rgba(34, 34, 34, 255);
+}   
+
+.bottomText {
+  display: flex;
+  flex-direction: column;
+  background: url("./images/background3.png") 30% 30% no-repeat;
+  
+}
+
+.imgFourSection {
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  border: 1px solid transparent;
+  margin: 0 auto;
 }
