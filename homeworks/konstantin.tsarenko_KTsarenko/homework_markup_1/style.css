@@ -13,7 +13,7 @@ body {
 img {
   border: none;
   outline: none;
-  max-width: 100%;
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -60,7 +60,7 @@ p {
   margin: 0 auto;
 }
 
-.heading_1 {
+.heading-page {
   font-size: 50px;
   font-weight: 700;
   line-height: 64px;
@@ -70,7 +70,7 @@ p {
   margin-bottom: 48px;
 }
 
-.heading_2 {
+.title-section {
   color: #222;
   font-size: 40px;
   font-weight: 700;
@@ -81,7 +81,7 @@ p {
   line-height: 1.2;
 }
 
-.heading_3 {
+.title-content {
   color: #222;
   font-size: 16px;
   text-transform: uppercase;
@@ -156,15 +156,15 @@ p {
 .list-services {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
 }
 
 .item-sevices {
-  width: 33.33%;
-  max-width: 290px;
+  width: 310px;
   color: #888;
   line-height: 22px;
+  padding: 0 10px;
 }
 
 .icon {
