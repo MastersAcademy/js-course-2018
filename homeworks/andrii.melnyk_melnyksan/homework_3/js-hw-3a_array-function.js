@@ -13,7 +13,7 @@ console.log('toSquare(53)', toSquare(53), '\n');
 //  data for test: 1) min: 0, max: 50, step: 5
 //                 2) min: 0, max: 32, step: 4
 
-const toCreateArrayRangeStep = function (min, max, step) {
+const toCreateArrayRangeStep = (min, max, step) => {
     const arrayService = [];
 
     for (let i = min; i <= max; i += step) {
