@@ -135,7 +135,7 @@ h3 {
   color: #222;
 }
 
-.site-section.services h3 {
+.services-title {
   margin: 0 0 79px;
   padding: 0 0 40px;
 }
@@ -226,7 +226,7 @@ h3 {
   margin: 80px 0 80px 80px;
 }
 
-.expertise-info h3 {
+.expertise-title {
   margin: 0;
   padding: 0 0 20px
 }
@@ -306,7 +306,7 @@ h3 {
   font-weight: 700;
   color: #222;
   background-color: #FFF;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
 }
 
 .read-more:hover,
@@ -333,7 +333,7 @@ h3 {
   margin: 0;
 }
 
-.portfolio-info h3 {
+.portfolio-title {
   margin: 0 0 20px;
 }
 
