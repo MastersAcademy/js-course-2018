@@ -17,20 +17,22 @@ body {
   margin: 0 auto;
 }
 
-header {
+.header {
   width: 100%;
   display: flex;
 }
 
 .header__logo {
-  margin-left: 97px;
-  margin-top: 46px;
+  margin-left: 87px;
+  margin-top: 36px;
+  padding: 10px;
 }
 
 .navbar {
-  margin-top: 55px;
+  display: flex;
+  margin-top: 50px;
   margin-left: auto;
-  margin-right: 95px;
+  margin-right: 90px;
 }
 
 .navbar__link {
@@ -40,25 +42,27 @@ header {
   font-size: 14px;
   font-weight: 400;
   text-align: center;
-  padding-right: 30px;
+  padding: 10px;
 }
 
 .navbar__link:hover {
-  color: #EE2F1B;
+  color: #35C2F8;
 }
 
 .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: rgba(0, 0, 0, .75) url("images/background.jpg");
   height: 470px;
   background-blend-mode: darken;
 }
 
 .title__header {
-  padding-top: 100px;
-  padding-bottom: 30px;
+  margin-top: 100px;
+  margin-bottom: 30px;
   width: 510px;
   text-align: center;
-  margin: auto;
   color: #FFF;
   font-family: "Montserrat", sans-serif;
   font-size: 45px;
@@ -69,16 +73,13 @@ header {
 }
 
 .spacer {
-  align-self: center;
-  margin: auto;
   width: 100px;
   border-bottom: 2px solid #35C2F8;
 }
 
 .title__description {
   width: 400px;
-  margin: auto;
-  padding-top: 30px;
+  margin-top: 30px;
   font-size: 15px;
   font-weight: 400;
   color: #CCC;
@@ -88,40 +89,155 @@ header {
 }
 
 .core-services {
-  text-align: center;
-  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #888;
   font-family: "Noto Sans";
   font-size: 11px;
   font-weight: 400;
-  line-height: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
-.core-services__header {
-  margin: auto;
+.section__header {
   color: #222;
   font-family: Montserrat;
   text-transform: uppercase;
 }
 
 .header-big {
+  margin-top: 70px;
+  margin-bottom: 30px;
   font-size: 36px;
   font-weight: 700;
-  line-height: 70px;
   letter-spacing: -2px;
 }
 
 .header-medium {
+  margin-top: 30px;
+  margin-bottom: 15px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 65px;
   letter-spacing: -1px;
 }
 
 .core-services__services {
-  padding-top: 55px;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 235px 235px 235px;
-  grid-column-gap: 77px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.core-services__services__item {
+  width: 235px;
+  text-align: center;
+}
+
+.expertise {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-left: 70px;
+  background-color: #F7F7F7;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+
+.expertise__content {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 70px;
+}
+
+.expertise__content__item {
+  width: 290px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.expertise__background {
+  flex-basis: 30%;
+  background-image: url("images/expertise.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.header-medium-no-margin {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-icon {
+  float: left;
+  width: 40px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+
+.link-button {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  border: 1px solid #35C2F8;
+  background-color: #FFF;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Montserrat;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -.37px;
+}
+
+.link-button__link {
+  color: #222;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-left: 70px;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.portfolio__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  background-image: url("images/users-background.png");
+  flex-direction: column;
+  padding-right: 70px;
+}
+
+.portfolio__background {
+  flex-basis: 50%;
+  background-image: url("images/ipad.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.portfolio__content__item {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.portfolio__content__description {
+  margin-bottom: 30px;
 }
