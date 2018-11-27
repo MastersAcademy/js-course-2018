@@ -1,105 +1,233 @@
+/* first block */
+
 body {
   max-width: 1024px;
-  height: 1200px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open+Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   margin: auto;
+}
+
+.background {
   background-image: url("images/Background.png");
+  background-position: top;
   background-repeat: no-repeat;
 }
 
-header {
+.title {
   display: block;
   background-color: rgb(8, 8, 8);
-  background-size: 100% 100%;
   opacity: .75;
   max-width: 1024px;
   height: 645px;
 }
 
-.head {
+.top-navigation {
   display: flex;
   align-items: baseline;
-  width: 1000px;
-  height: 100px;
+  max-width: 1024px;
+  height: 80px;
 }
 
 .logo {
-  max-width: 107px;
-  height: 28px;
-  padding-top: 50px;
-  padding-left: 50px;
+  max-width: 110px;
+  height: 25px;
+  margin-top: 50px;
+  margin-left: 80px;
 }
 
 .menu {
   display: flex;
   width: 500px;
   height: 28px;
-  padding-top: 50px;
-  padding-left: 250px;
+  margin-top: 50px;
+  margin-left: 250px;
   justify-content: space-between;
 }
 
-a {
+.btn {
   height: 10px;
   color: #FFFF;
-  font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 15px;
 }
 
-.text {
-  height: 100px;
-  max-width: 545px;
+.btn:hover {
+  color: rgb(250, 2, 2);
+}
+
+.slogan {
   color: #FFFF;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 100px;
-  padding-left: 250px;
-  font-size: 50px;
+  padding-top: 125px;
+  font-size: 45px;
 }
 
-.info_text {
+.underline {
+  margin-left: 460px;
+  margin-top: 25px;
+}
+
+.present {
   color: #FFFF;
   font-size: 16px;
-  letter-spacing: .5px;
   text-align: center;
   line-height: 25px;
-  padding-top: 80px;
+  margin-top: 50px;
 }
 
-.after_heading {
+/* the second block */
+
+.for-core-services {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   max-width: 1024px;
-  height: 400px;
+  height: 350px;
+  justify-content: space-between;
 }
 
-.section {
+.core-services {
   color: rgb(0, 0, 0);
-  font-size: 25px;
-  line-height: 50px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 50px;
-  padding-left: 375px;
-  padding-right: 200px;
+  padding-top: 70px;
+  font-size: 40px;
 }
 
-.serv {
-  height: 100px;
-  width: 280px;
-  padding-left: 50px;
+.our-services {
   text-align: center;
   padding-top: 70px;
 }
 
-.core {
+.name-services {
   color: rgb(0, 0, 0);
   font-size: 16px;
   text-transform: uppercase;
 }
+/* third block */
 
-.info_services {
+.other-expertise {
+  background: rgb(236, 236, 236);
+  height: 550px;
+}
+
+.other-expertise-img {
+  float: right;
+}
+
+.other-expertise-name {
   color: rgb(0, 0, 0);
-  font-size: 12px;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-left: 25px;
+  font-size: 40px
+}
+
+.other-expertise-info {
+  padding-left: 25px;
+  line-height: 20px;
+}
+
+.about-expertise {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.icon-expertise {
+  float: left;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.name-expertise {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-left: 50px;
+}
+
+.info-expertise {
+  padding-left: 50px;
+  line-height: 20px;
+}
+
+.learn {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(12, 12, 245);
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.learn:hover {
+  background: rgb(12, 12, 245);
+}
+
+/*  fourth block */
+
+.amazing-portfolio-body {
+  float: right;
+  position: absolute;
+  padding-left: 400px;
+  padding-top: 140px;
+}
+
+.amazing-portfolio-line {
+  float: right;
+  padding-left: 400px;
+  padding-top: 300px;
+  position: absolute;
+}
+
+.amazing-portfolio-texture {
+  float: right;
+  padding-left: 650px;
+  padding-top: 220px;
+  position: absolute;
+}
+
+.amazing-portfolio-img {
+  float: right;
+  position: absolute;
+  padding-left: 480px;
+  padding-top: 170px;
+}
+
+.amazing-portfolio-name {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-left: 25px;
+  font-size: 40px
+}
+
+.amazing-portfolio-info {
+  padding-left: 25px;
+  line-height: 20px;
+}
+
+.icon-portfolio {
+  float: left;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.name-portfolio {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-left: 50px;
+}
+
+.info-portfolio {
+  padding-left: 50px;
+  line-height: 20px;
 }
