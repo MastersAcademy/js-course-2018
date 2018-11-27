@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #FFF;
+  color: #777;
 }
 
 img {
@@ -60,7 +60,7 @@ p {
   margin: 0 auto;
 }
 
-.heading-page {
+.title-page {
   font-size: 50px;
   font-weight: 700;
   line-height: 64px;
@@ -68,13 +68,13 @@ p {
   padding-bottom: 40px;
   margin-top: 0;
   margin-bottom: 48px;
+  color: #FFF;
 }
 
 .title-section {
   color: #222;
   font-size: 40px;
   font-weight: 700;
-  padding-bottom: 33px;
   margin-top: 0;
   margin-bottom: 79px;
   text-transform: uppercase;
@@ -90,6 +90,7 @@ p {
 
 .border_b {
   position: relative;
+  padding-bottom: 33px;
 }
 
 .border_b:before {
@@ -201,9 +202,18 @@ p {
   padding-right: 26%
 }
 
+.expertise .title-section {
+  margin-bottom: 36px;
+}
+
+.desc-expertise {
+  margin-bottom: 58px;
+}
+
 .list-expertise {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
 .item-expertise {
@@ -215,8 +225,70 @@ p {
 
 .desc-text {
   margin-left: 16px;
+  color: #777;
+  font-size: 14px;
 }
 
 .desc-text h4 {
   margin-top: 0;
+}
+
+.expertise .title-content {
+  margin-top: 0;
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* portfolio */
+
+.portfolio {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .container {
+  padding-right: 44%;
+}
+
+.portfolio .bg-section {
+  position: absolute;
+  top: 0;
+  right: -20%;
+  bottom: 0;
+  left: 52%;
+}
+
+.portfolio .bg-images {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.desc-portfolio {
+  margin-bottom: 40px;
+}
+
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-portfolio {
+  padding-right: 20px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.portfolio .title-content {
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.icon-portfolio {
+  width: 30px;
 }
