@@ -1,0 +1,313 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  background: url("../homework_markup_1/images/fon.jpg") no-repeat center top /cover;
+  padding-bottom: 140px;
+  max-width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  flex: auto;
+}
+
+nav {
+  float: right;
+  margin-top: 67px;
+}
+
+.conteiner {
+  width: 100%;
+  max-width: 1024px;
+  min-height: 480px;
+  margin: 0  auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-top: 52px;
+  margin-right: 50px;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  float: left;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-left: 50px;
+}
+
+.menu a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 50px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 176px;
+}
+
+.line {
+  background: #35C2F8;
+  display: block;
+  border-radius: 5px;
+  width: 111px;
+  padding: 2px 0;
+  margin: 0 auto;
+  margin-top: 51px;
+}
+
+.titles_first {
+  font-size: 20px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 54px;
+}
+
+.tatel {
+  padding-top: 100px;
+}
+
+.tatel h2 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.services {
+  width: 100%;
+  margin-top: 79px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.services_item img {
+  margin-left: 40%;
+}
+
+.services_item h3 {
+  color: #222;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services_item p {
+  color: #888;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding-bottom: 50px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.expertise {
+  background-color: #F7F7F7;
+}
+
+.conteiner {
+  position: relative;
+}
+
+.expertise_item_image {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 70%;
+  margin-right: -100px;
+}
+
+.expertise_item_image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tatel_3 {
+  padding-top: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tatel_3 h2 {
+  color: #222;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.tatel_3 p {
+  padding-top: 36px;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: left;
+  width: 600px;
+  padding-left: 5px;
+}
+
+.setup {
+  position: absolute;
+  top: 250px;
+  left: 0;
+}
+
+.cloud {
+  position: absolute;
+  top: 250px;
+  left: 350px;
+}
+
+.star {
+  position: absolute;
+  top: 370px;
+  left: 0;
+}
+
+.security {
+  position: absolute;
+  top: 360px;
+  left: 350px;
+}
+
+.expertise_item h3 {
+  text-transform: uppercase;
+  margin-bottom: -10px;
+}
+
+.expertise_item p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: left;
+  width: 300px;
+  margin-left: 45px;
+}
+
+.button {
+  position: absolute;
+  bottom: 30px;
+  left: 5px;
+  border-radius: 50px;
+  background: #FFF;
+  color: #222;
+  display: block;
+  width: 169px;
+  padding: 30px 0;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+.amazing-portfolio {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.images-background-users {
+  padding-top: 70px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: -1;
+}
+
+.tatel_4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tatel_4 h2 {
+  color: #222;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 530;
+  padding-top: 100px;
+  margin: 0;
+}
+
+.tatel_4 p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: left;
+  width: 530px;
+}
+
+.images-fpom-text-1 {
+  width: 420px;
+  position: absolute;
+  top: 280px;
+  left: 0;
+}
+
+.images-fpom-text-2 {
+  width: 420px;
+  position: absolute;
+  top: 380px;
+  left: 0;
+}
+
+.images-fpom-text-3 {
+  width: 420px;
+  position: absolute;
+  top: 480px;
+  left: 0;
+  padding-bottom: 50px;
+}
+
+.images-fpom-text h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #222;
+}
+
+.images-fpom-text p {
+  padding-left: 33px;
+  line-height: 1.5em;
+  font-size: 14px;
+  color: #777
+}
+
+.portfolio-images {
+  margin-left: 5px;
+  margin-right: -200px;
+  position: absolute;
+  top: 65px;
+  left: 600px;
+}
+
+.portfolio-images img {
+  max-width: 100%;
+  height: auto;
+}
