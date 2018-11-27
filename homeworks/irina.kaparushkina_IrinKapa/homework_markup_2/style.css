@@ -1,0 +1,257 @@
+
+.body-page {
+  font-family: "Open Sans", sans-serif;
+  color: #FFF;
+  margin: 0;
+  width: 1024px;
+  background-color: #FFF;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  min-height: 600px;
+  background: url("images/background.jpg") center top / cover;
+  background-size: cover;
+  position: relative;
+}
+
+.main-overlay {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: #000;
+  opacity: .75;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 52px;
+  width: 85%;
+  position: relative;
+  z-index: 2;
+}
+
+.menu {
+  width: 60%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.menu__item {
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+.headline {
+  font-size: 50px;
+  text-transform: uppercase;
+  width: 70%;
+  letter-spacing: -2px;
+}
+
+.headline:after {
+  content: " ";
+  display: block;
+  width: 111px;
+  height: 1px;
+  background-color: #35C2F8;
+  margin: 0 auto;
+}
+
+.description {
+  width: 45%;
+}
+
+/* second section */
+
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #222;
+  font-size: 30px;
+  height: 100vh;
+  min-height: 600px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 230;
+  margin-right: 230;
+}
+
+.h2:after {
+  content: " ";
+  display: block;
+  width: 111px;
+  height: 2px;
+  background-color: #35C2F8;
+  margin: 0 auto;
+}
+
+.core-services {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.core-service {
+  display: flex;
+  flex-direction: column;
+  padding: 5  rem;
+  width: 282px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  color: #888;
+  font-size: 14px;
+}
+
+.design {
+  color: #222;
+  font-size: 16px;
+}
+
+.text {
+  font-size: 14px;
+  text-transform: none;
+  color: #777;
+}
+
+/* third section */
+
+.expertise {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #F7F7F7;
+  color: #777;
+  font-size: 14px;
+  height: 100vh;
+  min-height: 600px;
+  text-align: left;
+  padding-left: 70px;
+}
+
+.table-header {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 50px;
+  color: #222;
+}
+
+.text-description {
+  text-transform: uppercase;
+  color: #222;
+  font-size: 14px;
+}
+
+.text-icon {
+  margin-left: 30px;
+}
+
+.icon-expertise {
+  float: left;
+  padding-top: 15px;
+}
+
+.button {
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  border: solid 1px #35C2F8;
+  border-radius: 100px;
+  padding: 13px 23px;
+}
+
+.other-expertise-custom-item-button {
+  padding-top: 40px;
+}
+
+.text-expertise {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.other-expertise-custom {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.other-expertise-custom-item {
+  width: 270px;
+}
+
+.image-tabel {
+  width: 350px;
+}
+
+/* fourth section */
+
+.amazing-portfolio {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  min-height: 600px;
+  padding-left: 35px;
+  background: url("images/background-users.png") no-repeat;
+  background-size: 500px;
+  background-position-y: center;
+  background-position-x: 50px;
+}
+
+.section-amazing-portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-amazing-portfolio {
+  display: flex;
+  flex-direction: column;
+  color: #777;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 530px;
+}
+
+.text-expertise-header {
+  color: #222;
+}
+
+.icon-wrap {
+  float: left;
+}
+
+.text-sail {
+  margin-left: 60px;
+  padding-bottom: 30px;
+  width: 420px;
+}
+  
