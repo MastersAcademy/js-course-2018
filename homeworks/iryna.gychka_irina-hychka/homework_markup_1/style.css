@@ -15,7 +15,8 @@ a {
 }
 
 a:hover,
-a:active {
+a:active,
+a:focus {
   background: transparent;
 }
 
@@ -61,7 +62,9 @@ h1 {
   display: block;
 }
 
-.logo:hover {
+.logo:hover,
+.logo:active,
+.logo:focus {
   opacity: .9;
 }
 
@@ -84,7 +87,8 @@ h1 {
 }
 
 .main-menu a:hover,
-.main-menu a:active {
+.main-menu a:active,
+.main-menu a:focus {
   color: #35C2F8;
   opacity: 1;
 }
@@ -177,7 +181,8 @@ h3 {
 }
 
 .serv-link:hover,
-.serv-link:active {
+.serv-link:active,
+.serv-link:focus {
   color: #35C2F8;
   background-repeat: no-repeat;
   background-position: center top;
@@ -293,13 +298,9 @@ h3 {
 }
 
 .read-more {
-  display: flex;
-  max-width: 120px;
+  display: inline-flex;
   margin: 10px 0 0;
   padding: 20px 24px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -310,7 +311,8 @@ h3 {
 }
 
 .read-more:hover,
-.read-more:active {
+.read-more:active,
+.read-more:focus {
   color: #35C2F8;
   opacity: 1;
   background-color: #FFF;
