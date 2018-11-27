@@ -13,7 +13,7 @@ body {
 img {
   border: none;
   outline: none;
-  max-width: 100%;
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -147,9 +147,7 @@ p {
 }
 
 .item-sevices {
-  width: 33.33%;
-  max-width: 310px;
-  min-width: 200px;
+  width: 310px;
   color: #888;
   line-height: 22px;
   padding: 0 10px;
