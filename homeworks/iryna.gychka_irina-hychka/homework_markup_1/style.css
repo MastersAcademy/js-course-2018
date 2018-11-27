@@ -294,11 +294,11 @@ h3 {
 
 .read-more {
   display: flex;
+  max-width: 120px;
   margin: 10px 0 0;
+  padding: 20px 24px;
   justify-content: center;
   align-items: center;
-  width: 169px;
-  height: 61px;
   text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
