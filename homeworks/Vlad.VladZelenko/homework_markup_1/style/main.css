@@ -175,7 +175,7 @@
   letter-spacing: -0.35px;
 }
 
-/* --------------------------Section Expertise--------------------------- */
+/* --------------------------Section Portfolio--------------------------- */
 .portfolio {
   min-height: 701px;
   padding: 98px 0;
@@ -199,7 +199,16 @@
 
 .portfolio .fa-star , .portfolio .fa-chart-pie {font-size: 27px;}
 
+.itembox-portfolio {
+  display: flex;
+  flex-flow: row wrap;
+}
 
+.item-portfolio{max-width: 33%;}
+.item-portfolio img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* -------------------------------MEDIA------------------------------------------ */
 
@@ -271,4 +280,14 @@
   }
 
   .expertise, .portfolio { padding: 90px 20px;}
+  .item-portfolio{max-width: 50%;}
+}
+
+@media only screen and (max-width: 730px) {
+  .itembox-portfolio {flex-direction: column;}
+  .item-portfolio{max-width: 100%;}
+  .item-portfolio img {
+    max-width: 100%;
+    height: auto;
+  }
 }
