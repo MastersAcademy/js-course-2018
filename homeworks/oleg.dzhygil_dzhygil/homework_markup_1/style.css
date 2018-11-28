@@ -5,7 +5,6 @@
 }
 
 .body {
-  margin: 0;
   font-family: "Open Sans", sans-serif;
   width: 1024px;
   font-size: 14px;
@@ -45,18 +44,17 @@ a:hover {
   display: inline-flex;
 }
 
-.menu ul {
+.list {
   display: flex;
   align-items: center;
   list-style: none;
 }
 
-.menu ul li {
+.item {
   padding: 0 15px;
 }
 
 .heading {
-  display: block;
   font-weight: 700;
   color: #FFF;
   padding-top: 150px;
@@ -64,17 +62,21 @@ a:hover {
   text-align: center;
 }
 
-.underline {
-  width: 111px;
+.underline:after {
+  display: block;
+  width: 95px;
   height: 2px;
   background-color: #35C2F8;
-  margin-top: 30px;
+  margin: 30px auto;
+  content: "";
 }
+
 
 .subtitle {
   color: #CCC;
   padding-top: 15px;
   text-align: center;
+  font-size: 20px;
 }
 
 /* Core Services */
@@ -120,15 +122,15 @@ a:hover {
   margin: 0 5px;
 }
 
-.expertise-heading {
+.section-title {
   text-transform: uppercase;
-  margin-left: 59px;
+  margin-left: 40px;
 }
 
 .expertise__description {
   margin-top: 32px;
   margin-bottom: 50px;
-  margin-left: 59px;
+  margin-left: 40px;
 }
 
 .expertise-list__title {
@@ -175,7 +177,7 @@ a:hover {
   background-color: #FFF;
 }
 
-.setup:before {
+.gear:before {
   content: url("images/gear.png");
 }
 
@@ -225,7 +227,7 @@ a:hover {
   margin-top: 50px;
   margin-bottom: 40px;
   font-size: 14px;
-  margin-left: 46px;
+  margin-left: 40px;
 }
 
 .properties__item:before {
@@ -233,14 +235,6 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.worries:before {
-  content: url("images/gear.png");
-}
-
-.star:before {
-  content: url("images/star.png");
 }
 
 .service-portfolio:before {
