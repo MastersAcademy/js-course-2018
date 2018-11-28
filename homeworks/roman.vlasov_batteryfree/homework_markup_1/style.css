@@ -36,10 +36,13 @@ body {
 .nav-main__link:hover {
   background-color: rgb(180, 180, 180);
   color: #000;
+  border-radius: 15px;
 }
 
 .nav-main__link:focus {
-  border: 1px solid #000;
+  background-color: rgb(180, 180, 180);
+  color: #000;
+  border-radius: 15px;
 }
 
 .main-title__txt {
