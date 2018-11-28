@@ -41,10 +41,11 @@ p {
   list-style-type: none;
   margin: 0;
   overflow: hidden;
+  display: flex;
+  justify-content: left;
 }
 
 .list__item {
-  float: left;
   text-transform: uppercase;
   padding: 10px;
 }
@@ -72,6 +73,7 @@ p {
   padding: 50px 30% 10px;
   margin: 0;
   text-transform: uppercase;
+  font-weight: 900;
 }
 
 .text_2 {
@@ -116,19 +118,19 @@ p {
   margin-top: 25px;
 }
 
-.article-title {
+.div-title {
   margin: 0;
   padding: 0;
 }
 
-.article_list {
+.div_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0;
 }
 
-.other-expertise_article, .portfolio_article-portfolio {
+.other-expertise_div, .portfolio_div-portfolio {
   margin: 0 50px;
   display: flex;
   flex-direction: column;
@@ -136,7 +138,7 @@ p {
   align-content: center;
 }
 
-.article_text {
+.div_text {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 20px;
@@ -144,7 +146,7 @@ p {
 
 .main_other-expertise {
   display: flex;
-  background-color: #F7F7F7;
+  background-color: #F7F;
 }
 
 .list_item-setup, .points_item-1 {
@@ -163,11 +165,11 @@ p {
   list-style-image: url("img/lock_icon.png");
 }
 
-.item_article {
+.item_div {
   max-width: 200px;
 }
 
-.article_learn-more {
+.div_learn-more {
   width: 169px;
   height: 61px;
   color: #222;
@@ -182,7 +184,7 @@ p {
   border-radius: 50px;
 }
 
-.article_title {
+.div_title {
   font-size: 40px;
   font-weight: 700;
 }
@@ -205,7 +207,7 @@ p {
   padding-left: 30px;
 }
 
-.portfolio_article-portfolio {
+.portfolio_div-portfolio {
   display: flex;
   width: 50%;
   flex-direction: column;
@@ -226,7 +228,7 @@ p {
   width: 50%;
 }
 
-.article-portfolio_text-2, .article-portfolio_points {
+.div-portfolio_text-2, .div-portfolio_points {
   margin-bottom: 0;
 }
 
