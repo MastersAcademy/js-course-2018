@@ -61,7 +61,7 @@ p {
   background-color: #111;
 }
 
-.header_text {
+.header__text {
   width: 100%;
   color: #FFF;
   display: flex;
@@ -83,12 +83,12 @@ p {
   font-weight: 400;
 }
 
-.main_core-servise {
+.main__core-servise {
   margin: 10% 0;
   width: 100%;
 }
 
-.core-servise_core {
+.core-servise__core {
   display: flex;
   justify-content: space-around;
   margin-bottom: 40px;
@@ -118,19 +118,19 @@ p {
   margin-top: 25px;
 }
 
-.div-title {
+.block-title {
   margin: 0;
   padding: 0;
 }
 
-.div_list {
+.block__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0;
 }
 
-.other-expertise_div, .portfolio_div-portfolio {
+.other-expertise__block, .portfolio__block-portfolio {
   margin: 0 50px;
   display: flex;
   flex-direction: column;
@@ -138,38 +138,38 @@ p {
   align-content: center;
 }
 
-.div_text {
+.block__text {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.main_other-expertise {
+.main__other-expertise {
   display: flex;
-  background-color: #F7F;
+  background-color: ##F7F7F7;
 }
 
-.list_item-setup, .points_item-1 {
+.list__item-setup, .points__item-1 {
   list-style-image: url("img/gear_icon.png");
 }
 
-.list_item-control, .points_item-2 {
+.list__item-control, .points__item-2 {
   list-style-image: url("img/star_icon.png");
 }
 
-.list_item-star {
+.list__item-star {
   list-style-image: url("img/cloud_icon.png");
 }
 
-.list_item-security {
+.list__item-security {
   list-style-image: url("img/lock_icon.png");
 }
 
-.item_div {
+.item__block {
   max-width: 200px;
 }
 
-.div_learn-more {
+.block__learn-more {
   width: 169px;
   height: 61px;
   color: #222;
@@ -184,12 +184,11 @@ p {
   border-radius: 50px;
 }
 
-.div_title {
-  font-size: 40px;
+.block__title {
   font-weight: 700;
 }
 
-.main_protfolio {
+.main__protfolio {
   height: 700px;
   display: flex;
 }
@@ -202,12 +201,12 @@ p {
   margin-bottom: 0;
 }
 
-.portfolio_photo {
+.portfolio__photo {
   padding-top: 30px;
   padding-left: 30px;
 }
 
-.portfolio_div-portfolio {
+.portfolio__block-portfolio {
   display: flex;
   width: 50%;
   flex-direction: column;
@@ -216,7 +215,7 @@ p {
   background-repeat: no-repeat;
 }
 
-.points_item-3 {
+.points__item-3 {
   list-style-image: url("img/diagram_icon.png");
 }
 
@@ -228,11 +227,11 @@ p {
   width: 50%;
 }
 
-.div-portfolio_text-2, .div-portfolio_points {
+.block-portfolio__text-2, .block-portfolio__points {
   margin-bottom: 0;
 }
 
-.main_gallery {
+.main__gallery {
   margin: 0;
   width: 100%;
   display: flex;
