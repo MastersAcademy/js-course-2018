@@ -141,7 +141,7 @@ body {
 }
 
 .expertise-options-column {
-  max-width: 350px;
+  max-width: 330px;
 }
 
 .section-figure {
@@ -202,12 +202,16 @@ body {
   margin-left: 0;
 }
 
-.portfolio-examples {
+.portfolio-gallery {
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio-preview-item_img {
+.portfolio-gallery-item {
   max-width: 341px;
-  padding: 0;
+}
+
+.portfolio-gallery-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 0 rgb(0, 0, 0);
 }
