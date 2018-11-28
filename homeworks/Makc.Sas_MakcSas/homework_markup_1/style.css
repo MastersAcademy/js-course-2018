@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -126,62 +127,63 @@ body {
 
 .page_three {
   background-color: #F7F7F7;
-}
-
-.page_three_picture {
-  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .page_three_text {
-  margin-left: 50px;
-  padding-bottom: 50px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .size_text {
-  padding-top: 50px;
+  margin: 0;
   text-transform: uppercase;
-  color: #000;
+  padding-bottom: 25px;
 }
 
 .page_three_text_title {
-  padding-top: 40px;
+  margin: 0 0 10px;
+  width: 95%;
+  padding-bottom: 25px;
   color: #777;
 }
 
 .two_lines {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .transfer {
-  width: 250px;
+  margin: 0;
+  width: 50%;
+  display: flex;
 }
 
 .page_three_font_size {
-  margin-top: 55px;
   text-transform: uppercase;
-  color: #000;
+  padding-bottom: 10px;
+  font-weight: 600;
 }
 
 .page_three_text_size {
+  padding-bottom: 15px;
   color: #777;
 }
 
 .page_three_icons {
-  float: left;
+  width: 30px;
+  height: 30px;
 }
 
 .retreat {
-  margin-top: 50px;
-  margin-left: 45px;
-}
-
-.page_three_button {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  padding-left: 15px;
 }
 
 .page_three_button_link {
@@ -227,6 +229,12 @@ body {
 .page_four_text {
   margin-top: 30px;
   color: #777;
+}
+
+.page_four_position {
+  margin: 0;
+  display: flex;
+  padding-top: 25px;
 }
 
 .portfolio-content {
