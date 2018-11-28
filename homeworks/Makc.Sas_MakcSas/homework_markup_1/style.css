@@ -67,7 +67,7 @@ body {
 .line:after {
   width: 150px;
   height: 4px;
-  background-color: rgb(12, 111, 150);
+  background-color: rgb(12, 111, 151);
   display: block;
   content: "";
   margin: 40px auto 0;
