@@ -15,8 +15,7 @@ body {
   background-image: url("images/background.jpg");
 }
 
-.background {
-  position: relative;
+.header_layout_background {
   background-color: rgba(0, 0, 0, .75);
   width: 1024px;
   height: 645px;
@@ -34,7 +33,7 @@ body {
   justify-content: flex-end;
 }
 
-.menu_navigation_a {
+.menu_navigation--link {
   margin-right: 50px;
   line-height: 20px;
   text-transform: uppercase;
