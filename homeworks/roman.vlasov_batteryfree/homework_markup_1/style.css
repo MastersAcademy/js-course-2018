@@ -24,19 +24,13 @@ body {
 
 .nav-main__link {
   text-decoration: none;
-  width: 45px;
-  height: 10px;
   color: #FFF;
   font-size: 12px;
   font-weight: 400;
-  line-height: 41px;
   text-transform: uppercase;
   margin-left: 10px;
   margin-right: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 10px;
 }
 
 .nav-main__link:hover {
@@ -44,13 +38,16 @@ body {
   color: #000;
 }
 
+.nav-main__link:focus {
+  border: 1px solid #000;
+}
 
 .main-title__txt {
   width: 544px;
   color: #FFF;
   font-size: 40px;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
   margin: auto;
@@ -70,10 +67,9 @@ body {
 .main__txt {
   width: 350px;
   color: #CCC;
-  font-family: "Noto Sans";
   font-size: 15px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 2;
   text-align: center;
   margin: auto;
   padding-top: 30px;
@@ -90,14 +86,13 @@ body {
   color: #222;
   font-size: 30px;
   font-weight: 600;
-  line-height: 75px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .services-box {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .services-box__figure {
@@ -112,7 +107,6 @@ body {
   color: #222;
   font-size: 14px;
   font-weight: 400;
-  line-height: 75px;
   text-transform: uppercase;
 }
 
@@ -120,7 +114,7 @@ body {
   color: #888;
   font-size: 12px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.7;
 }
 
 /*3 block*/
@@ -141,7 +135,6 @@ body {
 
 .other__txt {
   color: #777;
-  font-family: "Noto Sans";
   font-size: 14px;
   font-weight: 400;
   width: 600px;
@@ -151,39 +144,42 @@ body {
 .other-box {
   margin-left: 40px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .other-box__figure {
+  width: 40%;
   display: flex;
   align-items: baseline;
+  margin-left: 20px;
+}
+
+.other-box__img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 .other-box-title__txt {
   color: #222;
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
   text-transform: uppercase;
 }
 
 .other-box__txt {
-  width: 314px;
   color: #777;
   font-size: 12px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.7;
 }
 
-.other-box2 {
-  float: right;
+.other-box2__img {
+  width: 255px;
+  height: 470px;
 }
 
-.other-box2_img {
-  width: 283px;
-  height: 450px;
-}
-
-.portfolio-box_but {
+.portfolio-box_button {
   margin-left: 150px;
   margin-bottom: 10px;
   width: 100px;
@@ -193,8 +189,7 @@ body {
   border-radius: 70px;
   font-size: 10px;
   color: #222;
-  font-weight: 500;
-  line-height: 44.21px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -224,7 +219,6 @@ body {
   color: #222;
   font-size: 30px;
   font-weight: 600;
-  line-height: 75px;
   text-transform: uppercase;
 }
 
@@ -232,22 +226,20 @@ body {
   color: #777;
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
 }
 
 .portfolio-box-title__txt {
   color: #222;
   font-size: 14px;
   font-weight: 600;
-  line-height: 22px;
   text-transform: uppercase;
 }
 
 .portfolio-box__txt {
   color: #777;
   font-size: 12px;
-  font-weight: 300;
-  line-height: 22px;
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 .portfolio-box__figure {
@@ -255,9 +247,15 @@ body {
   align-items: baseline;
 }
 
+.portfolio-box__img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
 .portfolio__img {
   padding-top: 150px;
-  width: 512px;
+  width: 500px;
 }
 
 .portfolio-albom__img {
