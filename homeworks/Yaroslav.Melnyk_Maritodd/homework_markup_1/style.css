@@ -1,61 +1,81 @@
-
 .body {
+  padding: 0;
   margin: 0 auto;
+  background: #FFF;
   font-family: "Open Sans", "sans-serif";
-  width: 1024px;
 }
 
-.header {
-  background-image: url("images/background.jpg");
-  background-position: center;
+.dreem {
+  background: url("images/background.jpg") no-repeat top center;
   background-size: cover;
-  background-color: rgba(3, 3, 3, .7);
-  padding-bottom: 50px;
-  background-blend-mode: darken;
-  justify-content: space-between;
+  display: flex;
+  min-height: 657px;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
 }
+
 
 .header__logo {
+  max-width: 1024px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.dreem_header {
+  padding: 15px;
   display: flex;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .logo {
-  margin: 29px;
-  padding: 10px 15px;
+  max-height: 30px;
 }
 
-.top__menu {
-  padding: 10px 120px;
-  font-family: Montserrat;
-  font-size: 14px;
-  text-transform: uppercase;
-  display: inline-flex;
-  justify-content: space-between;
-}
 
 .menu__link {
-  margin: 30px;
+  font-family: Montserrat;
+  padding: 25px;
   color: #FFF;
+  font-size: 14px;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
 .menu__link:hover {
-  color: #F00;
+  opacity: .5;
+  transition: opacity .4s ease;
+  color: rgb(104, 0, 0);
   text-decoration: none;
 }
 
 .header__title {
-  text-align: center;
   display: flex;
+  text-align: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 620px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .title__solution {
   font-family: Montserrat;
   margin-top: 70px;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
   color: #FFF;
+  position: relative;
+  font-weight: 700;
 }
 
 .title__description:before {
@@ -81,6 +101,13 @@
   font-size: 20px;
   color: #CCC;
   margin-bottom: 60px;
+}
+
+.main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
+  height: 0;
 }
 
 .content {
@@ -132,3 +159,29 @@
   line-height: 22px;
   letter-spacing: -.35px;
 }
+
+.expertise {
+  
+  background: url("images/image.png");
+  background-repeat: no-repeat;
+  background-color: #F7F7F7;
+  background-size: contain;
+  background-position: right;
+ 
+}
+
+.block__text--size {
+  width: 554px;
+}
+
+.content__title {
+  color: #222;
+  font-family: Montserrat;
+  font-size: 40px;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  font-weight: 700;
+  text-align: initial;
+}
+
