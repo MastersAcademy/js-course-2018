@@ -203,7 +203,7 @@ body {
 .amazing-portfolio-name {
   color: rgb(0, 0, 0);
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-top: 70px;
   padding-left: 25px;
   font-size: 40px
 }
@@ -230,4 +230,16 @@ body {
 .info-portfolio {
   padding-left: 50px;
   line-height: 20px;
+}
+
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 70px;
+  margin-bottom: 20px;
+}
+
+.img-portfolio {
+  width: 33.3%;
+  height: 33.3%;
 }
