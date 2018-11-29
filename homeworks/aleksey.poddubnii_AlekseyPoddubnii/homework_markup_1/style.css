@@ -5,9 +5,19 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  color: #777;
+  font-weight: 400;
 }
 
-h1,h2,h3,p,ul {
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -26,7 +36,7 @@ h1,h2,h3,p,ul {
 .banner-block {
   background-image: url("images/banner.jpg");
   height: 100vh;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, .7);
   background-blend-mode: darken;
   background-size: cover;
 }
@@ -43,15 +53,11 @@ h1,h2,h3,p,ul {
   padding-top: 30px;
 }
 
-.menu {
+.nav-menu {
   margin-top: 41px;
 }
 
-.menu__item {
-  display: inline-block;
-}
-
-.menu__link {
+.nav-menu__link {
   font-family: "Montserrat";
   text-transform: uppercase;
   text-decoration: none;
@@ -64,6 +70,7 @@ h1,h2,h3,p,ul {
 .menu__link:hover {
   background-color: #FFD700;
   color: #000;
+  transition: 1s;
 }
 
 /* Banner triggers */
@@ -72,7 +79,7 @@ h1,h2,h3,p,ul {
   padding-top: 170px;
 }
 
-.trigger-big {
+.banner-triggers__big {
   font-family: "Montserrat";
   font-size: 50px;
   font-weight: 700;
@@ -84,7 +91,7 @@ h1,h2,h3,p,ul {
   margin: auto;
 }
 
-.trigger-small {
+.banner-triggers__small {
   color: #CCC;
   width: 425px;
   margin: auto;
@@ -107,7 +114,7 @@ h1,h2,h3,p,ul {
 
 /* Services */
 
-.wrap {
+.services-block {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto 101px;
@@ -120,12 +127,13 @@ h1,h2,h3,p,ul {
 .content-header__title {
   font-family: Montserrat;
   font-size: 40px;
+  color: #222;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }
 
-.block-services {
+.box-services {
   display: flex;
   justify-content: space-between;
 }
@@ -149,4 +157,199 @@ h1,h2,h3,p,ul {
   line-height: 22px;
   color: #888;
   margin: 0 18px;
+}
+
+/* Another expertise */
+
+.content--grey {
+  background-color: #F7F7F7;
+}
+
+.expertise-wrap {
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 616px;
+}
+
+.expertise-block {
+  flex: auto;
+}
+
+.expertise-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.expertise-block__title {
+  margin: 80px 0 36px;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #222;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+
+.expertise-box-flex, .amazing-box-flex {
+  display: flex;
+}
+
+.expertise-block__description {
+  font-size: 16px;
+  font-family: "Noto Sans";
+  margin-bottom: 58px;
+  max-width: 690px;
+}
+
+.expertise-box__title {
+  color: #222;
+  font-size: 14px;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+}
+
+.expertise-box__description {
+  margin-bottom: 32px;
+  max-width: 350px;
+}
+
+/* Icons set */
+/* Custom icon */
+
+.custom--img {
+  margin-right: 16px;
+}
+
+.custom--desc {
+  margin-left: 46px;
+}
+
+/* Cloud icon */
+
+.cloud--img {
+  margin-right: 10px;
+}
+
+.cloud--desc {
+  margin-left: 52px;
+}
+
+/* Star icon */
+
+.star--img {
+  margin-right: 14px;
+}
+
+.star--desc {
+  margin-left: 45px;
+}
+
+/* Secutiry icon  */
+
+.security--img {
+  margin-left: 5px;
+  margin-right: 22px;
+}
+
+.security--desc {
+  margin-left: 54px;
+}
+
+/* Learning button */
+
+.expertise-boxes__learn-more {
+  background-color: #FFF;
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Montserrat;
+  padding: 23px 36px;
+  border-radius: 30px;
+}
+
+.expertise-boxes__learn-more:hover {
+  background-color: #FFD700;
+  color: #FFF;
+  transition: 1s;
+}
+
+/* Right Image */
+/* Add here height for picture, only for be similiar like at PSD */
+
+.expertise-img__img {
+  width: 350px;
+  position: absolute;
+  height: 616px;
+  right: 0;
+}
+
+/* Amazing Portfolio */
+
+.amazing-wrap {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 60px;
+  max-width: 1024px;
+}
+
+.amazing-portfolio__heading {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  color: #222;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.amazing-portfolio__desc {
+  margin-bottom: 40px;
+}
+
+.amazing-portfolio-background {
+  background-image: url("images/users.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 560px;
+}
+
+.amazing-box__img {
+  margin-right: 16px;
+}
+
+.amazing-box__title {
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 13px;
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+.amazing-box__desc {
+  margin-left: 46px;
+  margin-bottom: 40px;
+}
+
+.amazing-portfolio__ipad {
+  position: absolute;
+  right: 0;
+  width: 550px;
+  margin-top: 100px;
+}
+
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.gallery-item__img {
+  width: 33.33%;
 }
