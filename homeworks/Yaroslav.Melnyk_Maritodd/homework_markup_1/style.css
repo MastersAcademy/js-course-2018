@@ -20,7 +20,7 @@
   max-width: 1024px;
   width: 100%;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 .dreem_header {
@@ -161,13 +161,11 @@
 }
 
 .expertise {
-  
   background: url("images/image.png");
   background-repeat: no-repeat;
   background-color: #F7F7F7;
   background-size: contain;
   background-position: right;
- 
 }
 
 .block__text--size {
@@ -184,4 +182,3 @@
   font-weight: 700;
   text-align: initial;
 }
-
