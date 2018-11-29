@@ -5,13 +5,16 @@ const classes = ['header', 'menu', 'menu_item', 'tabs',
 function propertyCounter(arr) {
     const result = {};
 
-    arr.sort().forEach((element) => {
-        if (result[element]) {
-            result[element] += 1;
-        } else {
-            result[element] = 1;
+    arr.sort().reduce((returnedObj, current) => {
+        if (Object.prototype.hasOwnProperty.call(returnedObj, current)) {
+            result[current]++;
+
+            return result;
         }
-    });
+        result[current] = 1;
+
+        return result;
+    }, {});
 
     return result;
 }

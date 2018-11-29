@@ -4,7 +4,7 @@ function sumClosure(arr) {
         result.push(sum + current);
 
         return sum + current;
-    }, null);
+    }, 0);
 
     return result;
 }
