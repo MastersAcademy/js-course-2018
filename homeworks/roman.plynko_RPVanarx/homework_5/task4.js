@@ -7,37 +7,20 @@ const people = [
     { id: 6, name: 'Jeen', friends: [5, 1] },
 ];
 
-function getFriend(userId) {
-    let friend = null;
-    people.forEach((person) => {
-        if (person.id === userId) {
-            if (person.friends !== null) {
-                friend = person.friends;
-            } else {
-                friend = [];
-                return friend;
-            }
-        }
-        return {};
-    });
-    return friend;
-}
-
 function getPeople(userId) {
-    const friendsMass = getFriend(userId);
-    const newFriendsArray = [];
-    if (friendsMass !== null && friendsMass !== []) {
-        friendsMass.forEach((friendId) => {
-            people.forEach((obj) => {
-                if (obj.id === friendId) {
-                    newFriendsArray.push(obj);
+    const friends = [];
+    if (people.find(user => user.id === userId)) {
+        people.forEach((obj) => {
+            if (Array.isArray(obj.friends)) {
+                if (obj.friends.includes(userId)) {
+                    friends.push(obj);
                 }
-            });
+            }
         });
     } else {
-        return friendsMass;
+        return null;
     }
-    return newFriendsArray;
+    return friends;
 }
 
 console.log(getPeople(2));
