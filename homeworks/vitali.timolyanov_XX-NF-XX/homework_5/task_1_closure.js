@@ -12,5 +12,5 @@ const sumArr = testArr.map(summarizer);
 
 console.log('Test array: ');
 console.log(testArr);
-console.log('Sum array: ');
+console.log('\nSum array: ');
 console.log(sumArr);

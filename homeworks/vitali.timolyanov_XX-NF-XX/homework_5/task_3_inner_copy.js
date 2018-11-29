@@ -14,6 +14,8 @@ const objCopy = innerCopy(obj);
 
 console.log('obj.d:');
 console.log(obj.d);
-console.log('objCopy.d:');
+
+console.log('\nobjCopy.d:');
 console.log(objCopy.d);
-console.log(`obj.d === objCopy.d: ${obj.d === objCopy.d}`);
+
+console.log(`\nobj.d === objCopy.d: ${obj.d === objCopy.d}`);
