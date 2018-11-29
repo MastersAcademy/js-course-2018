@@ -20,7 +20,7 @@ squareNumber(53);
 
 // 1.2
 // The function of creating an array with numbers
-const doArray = function (maxValue, step) {
+const doArray = (maxValue, step) => {
     const newArray = [];
     for (let i = 0; i <= maxValue; i += step) {
         newArray.push(i);
@@ -34,19 +34,15 @@ const arrayValue = doArray(32, 4);
 
 // 1.3
 // Square value of elements
-const squareVal = function (i) {
-    return i * i;
-};
-const arraySquare = function (arr) {
-    return arr.map(squareVal);
-};
+const squareVal = i => i * i;
+const arraySquare = arr => arr.map(squareVal);
 
 console.log(arraySquare(arrayValue));
 const newArrayValue = arraySquare(arrayValue);
 
 // 1.4
 // The sum of elements of an array
-const arraySum = function (arr) {
+const arraySum = (arr) => {
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
