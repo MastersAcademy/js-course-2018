@@ -17,26 +17,25 @@ body {
   margin: 0 auto;
 }
 
-.header {
+.top-navbar {
   width: 100%;
   display: flex;
 }
 
-.header__logo {
-  margin-left: 87px;
-  margin-top: 36px;
-  padding: 10px;
-}
-
-.navbar {
+.top-navbar__menu {
   display: flex;
   margin-top: 50px;
   margin-left: auto;
   margin-right: 90px;
 }
 
-.navbar__link {
-  font-family: "Montserrat", sans-serif;
+.top-navbar__logo {
+  margin-left: 87px;
+  margin-top: 36px;
+  padding: 10px;
+}
+
+.top-navbar__menu__link {
   text-transform: uppercase;
   color: #FFF;
   font-size: 14px;
@@ -45,11 +44,15 @@ body {
   padding: 10px;
 }
 
-.navbar__link:hover {
+.top-navbar__menu__link:hover {
   color: #35C2F8;
 }
 
-.title {
+.top-navbar__menu__link:focus {
+  color: #35C2F8;
+}
+
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,13 +61,12 @@ body {
   background-blend-mode: darken;
 }
 
-.title__header {
+.header__title {
   margin-top: 100px;
   margin-bottom: 30px;
   width: 510px;
   text-align: center;
   color: #FFF;
-  font-family: "Montserrat", sans-serif;
   font-size: 45px;
   font-weight: 700;
   line-height: 50px;
@@ -77,7 +79,7 @@ body {
   border-bottom: 2px solid #35C2F8;
 }
 
-.title__description {
+.header__description {
   width: 400px;
   margin-top: 30px;
   font-size: 15px;
@@ -102,7 +104,6 @@ body {
 
 .section__header {
   color: #222;
-  font-family: Montserrat;
   text-transform: uppercase;
 }
 
@@ -187,25 +188,27 @@ body {
 }
 
 .link-button {
-  width: 150px;
-  height: 50px;
-  line-height: 50px;
+  padding: 15px 30px;
   border-radius: 30px;
   border: 1px solid #35C2F8;
   background-color: #FFF;
   margin-top: 30px;
-  margin-left: 50px;
   margin-bottom: 30px;
   font-size: 16px;
   font-weight: 700;
-  font-family: Montserrat;
-  text-align: center;
   text-transform: uppercase;
-  letter-spacing: -.37px;
+  letter-spacing: -.5px;
+  color: #222;
 }
 
-.link-button__link {
-  color: #222;
+.link-button:hover {
+  color: #35C2F8;
+  border: 1px solid #222;
+}
+
+.link-button:focus {
+  color: #35C2F8;
+  border: 1px solid #222;
 }
 
 .portfolio {
@@ -222,6 +225,8 @@ body {
   flex-wrap: wrap;
   flex-basis: 50%;
   background-image: url("images/users-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
   flex-direction: column;
   padding-right: 70px;
 }
