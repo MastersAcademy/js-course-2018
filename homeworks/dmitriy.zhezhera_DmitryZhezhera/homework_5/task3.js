@@ -5,4 +5,5 @@ function innerCopy(obj) {
 }
 
 const objCopy = innerCopy(someObject);
+someObject.d.e = 'shlyapa';
 console.log(objCopy.d);
