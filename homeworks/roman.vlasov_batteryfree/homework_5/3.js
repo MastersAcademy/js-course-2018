@@ -1,7 +1,10 @@
-const  obj = {b: "c", d:{e: "f"}};
-const keys = Object.keys(obj);
-const newObj = {};
-keys.forEach(function(key) {
-  newObj[key] = obj[key];
-});
-console.log(newObj);
+const originalObj = { b: 'c', d: { e: 'f' } };
+
+function innerCopy(obj) {
+    const keys = Object.keys(obj);
+    const newObj = {};
+    keys.forEach((key) => { newObj[key] = obj[key]; });
+    return newObj;
+}
+
+console.log(innerCopy(originalObj));
