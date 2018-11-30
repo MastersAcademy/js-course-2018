@@ -1,10 +1,3 @@
-const readline = require('readline');
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
-
 /* Callback */
 function logNumbersCallback(num) {
     let tempNum = num + 10;
@@ -21,34 +14,29 @@ function logNumbersCallback(num) {
     }, 1000);
 }
 
+logNumbersCallback(5);
+
 /* Promise */
 function promise(num, timeout) {
-    return new Promise(
-        (resolve) => {
-            setTimeout(() => {
-                resolve(num);
-            }, timeout);
-        },
-    );
+    return new Promise((resolve) => {
+        setTimeout(() => resolve(num), timeout);
+    });
 }
 
 function logNumbersPromise(num) {
     let temp = num + 10;
-    promise(temp, 1000)
-        .then(console.log);
+    promise(temp, 1000).then(console.log);
     temp *= 3;
-    promise(temp, 2000)
-        .then(console.log);
+    promise(temp, 2000).then(console.log);
     temp -= 20;
-    promise(temp, 3000)
-        .then(console.log);
+    promise(temp, 3000).then(console.log);
 }
+
+logNumbersPromise(5);
 
 /* Await */
 function print(num, time) {
-    setTimeout(() => {
-        console.log(num);
-    }, time);
+    setTimeout(() => console.log(num), time);
 }
 
 async function logNumbersAwait(num) {
@@ -60,10 +48,4 @@ async function logNumbersAwait(num) {
     await print(temp, 3000);
 }
 
-rl.on('line', (input) => {
-    const num = Number(input);
-    logNumbersCallback(num);
-    logNumbersPromise(num);
-    logNumbersAwait(num);
-    rl.close();
-});
+logNumbersAwait(5);
