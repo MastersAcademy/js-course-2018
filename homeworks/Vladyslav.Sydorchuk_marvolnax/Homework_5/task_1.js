@@ -1,4 +1,4 @@
-// task_1
+// task-1
 
 function summElements() {
     let summ = 0;

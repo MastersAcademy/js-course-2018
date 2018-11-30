@@ -1,4 +1,4 @@
-// task_3
+// task-3
 
 function innerCopy(obj) {
     const newObj = {};

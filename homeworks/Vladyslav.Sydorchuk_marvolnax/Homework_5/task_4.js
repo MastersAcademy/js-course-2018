@@ -1,4 +1,4 @@
-// task_4
+// task-4
 
 const people = [
     { id: 1, name: 'Nick', friends: [2, 5, 6] },
