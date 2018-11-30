@@ -1,6 +1,7 @@
 /* First two blocks */
 
-*, *:before {
+*,
+*:before {
   box-sizing: border-box;
 }
 
@@ -24,7 +25,7 @@
   justify-content: space-between;
 }
 
-.content {
+.heading {
   width: 1024px;
   margin: 0 auto;
 }
@@ -38,7 +39,7 @@ a:hover {
   color: #35C2F8;
 }
 
-.menu {
+.heading__menu {
   color: #FFF;
   text-transform: uppercase;
   display: inline-flex;
@@ -50,11 +51,11 @@ a:hover {
   list-style: none;
 }
 
-.item {
+.heading__menu_box {
   padding: 0 15px;
 }
 
-.heading {
+.heading-title {
   font-weight: 700;
   color: #FFF;
   padding-top: 150px;
@@ -72,7 +73,7 @@ a:hover {
 }
 
 
-.subtitle {
+.heading-subtitle {
   color: #CCC;
   padding-top: 15px;
   text-align: center;
@@ -85,13 +86,13 @@ a:hover {
   text-align: center;
 }
 
-.service_content {
+.services-content {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
 }
 
-.headline {
+.services__title {
   display: block;
   font-weight: 700;
   color: #222;
@@ -99,7 +100,7 @@ a:hover {
   text-align: center;
 }
 
-.service {
+.services_wrap {
   width: 450px;
   margin-top: 50px;
 }
@@ -116,7 +117,7 @@ a:hover {
   background-position: 100% 100%;
 }
 
-.expertise-container {
+.other-expertise__block {
   max-width: 1024px;
   padding: 0 15px;
   margin: 0 5px;
@@ -127,7 +128,7 @@ a:hover {
   margin-left: 40px;
 }
 
-.expertise__description {
+.expertise-description {
   margin-top: 32px;
   margin-bottom: 50px;
   margin-left: 40px;
@@ -195,12 +196,6 @@ a:hover {
 
 /* Portfolio */
 
-.portfolio-container {
-  max-width: 1024px;
-  padding: 0 15px;
-  margin: 0 5px;
-}
-
 .portfolio {
   padding-top: 70px;
   padding-bottom: 80px;
@@ -250,10 +245,10 @@ a:hover {
   list-style: none;
 }
 
-.properties__title {
+.properties-title {
   text-transform: uppercase;
 }
 
-.properties__description {
+.properties-description {
   font-size: 14px;
 }
