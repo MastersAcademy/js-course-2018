@@ -8,7 +8,7 @@ const people = [
     { id: 5, name: 'Edward', friends: [1, 3] },
     { id: 6, name: 'Jeen', friends: [5, 1] },
 ];
- 
+
 function getPeople(userId) {
     const friends = [];
     if (people.find(user => user.id === userId)) {

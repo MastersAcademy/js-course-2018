@@ -6,8 +6,8 @@ function innerCopy(obj) {
     return newObj;
 }
 
-    const someObj = { b: 'c', d: { e: { s: 'f' } } };
-    const objCopy = innerCopy(someObj);
+const someObj = { b: 'c', d: { e: { s: 'f' } } };
+const objCopy = innerCopy(someObj);
 
 console.log(objCopy);
 console.log(objCopy.d.e);

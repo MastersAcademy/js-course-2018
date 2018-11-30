@@ -2,7 +2,7 @@
 
 function summElements() {
     let summ = 0;
-    return (value) => { 
+    return (value) => {
         summ += value;
         return summ;
     };
