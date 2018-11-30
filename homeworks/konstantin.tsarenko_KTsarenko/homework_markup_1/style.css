@@ -14,7 +14,9 @@ img {
   border: none;
   outline: none;
   width: 100%;
+  height: 100%;
   vertical-align: middle;
+  object-fit: contain;
 }
 
 a {
@@ -23,7 +25,7 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul, figure {
   padding: 0;
   margin: 0;
 }
@@ -169,8 +171,12 @@ p {
 }
 
 .icon {
+  margin: 0 auto;
+}
+
+.icon_sevices {
   width: 62px;
-  margin: 0 auto 36px;
+  margin-bottom: 36px
 }
 
 /* expertise */
@@ -182,12 +188,15 @@ p {
   position: relative;
 }
 
-.expertise .bg-section {
+.bg-section {
   position: absolute;
   top: 0;
-  right: 0;
   bottom: 0;
+}
+
+.bg_expertise {
   left: 70%;
+  right: 0;
 }
 
 .bg-images {
@@ -198,15 +207,15 @@ p {
   width: 100%;
 }
 
-.expertise .container {
+.container_expertise {
   padding-right: 26%
 }
 
-.expertise .title-section {
+.title-section_expertise {
   margin-bottom: 36px;
 }
 
-.desc-expertise {
+.description-expertise {
   margin-bottom: 58px;
 }
 
@@ -218,22 +227,24 @@ p {
 
 .item-expertise {
   width: 50%;
-  padding-right: 20px;
   display: flex;
   align-items: flex-start;
+  margin-bottom: 16px;
 }
 
-.desc-text {
-  margin-left: 16px;
+.icon_expertise {
+  width: 40px;
+  height: 40px;
+}
+
+.block-text {
+  padding: 0 20px 0 16px;
   color: #777;
   font-size: 14px;
+  width: calc(100% - 40px);
 }
 
-.desc-text h4 {
-  margin-top: 0;
-}
-
-.expertise .title-content {
+.title-content_expertise {
   margin-top: 0;
   color: #222;
   font-size: 14px;
@@ -249,19 +260,16 @@ p {
   overflow: hidden;
 }
 
-.portfolio .container {
+.container_portfolio {
   padding-right: 44%;
 }
 
-.portfolio .bg-section {
-  position: absolute;
-  top: 0;
-  right: -20%;
-  bottom: 0;
+.bg_portfolio {
   left: 52%;
+  right: -20%;
 }
 
-.portfolio .bg-images {
+.bg-images_portfolio {
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -276,13 +284,12 @@ p {
 }
 
 .item-portfolio {
-  padding-right: 20px;
   display: flex;
   align-items: flex-start;
   margin-bottom: 16px;
 }
 
-.portfolio .title-content {
+.title-content_portfolio {
   color: #222;
   font-size: 16px;
   font-weight: 400;
@@ -290,5 +297,5 @@ p {
 }
 
 .icon-portfolio {
-  width: 30px;
+  width: 32px;
 }
