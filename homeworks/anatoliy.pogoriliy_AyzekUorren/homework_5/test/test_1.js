@@ -101,17 +101,17 @@ describe('Convert JSON to Object', () => {
             }];
         const compareArray = [{
             country: '123asd',
-            percentValue: 97,
+            percentValue: 96.60264507324389,
             population: '912,986,952',
         },
         {
             country: 'Afghanistan',
-            percentValue: 3,
+            percentValue: 3.0813071855756666,
             population: '29,121,286',
         },
         {
             country: 'Albania',
-            percentValue: 0,
+            percentValue: 0.3160477411804413,
             population: '2,986,952',
         }];
 
