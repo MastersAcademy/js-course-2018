@@ -1,13 +1,13 @@
 
 .body-page {
   font-family: "Open Sans", sans-serif;
-  color: #FFF;
-  margin: 0;
+  margin: 0 auto;
   width: 1024px;
   background-color: #FFF;
 }
 
 .main {
+  color: #FFF;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,9 +41,6 @@
 
 .menu {
   width: 60%;
-}
-
-.menu ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -88,7 +85,7 @@
 
 /* second section */
 
-.table {
+.services {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -103,7 +100,7 @@
   margin-right: 230;
 }
 
-.h2:after {
+.services__headline:after {
   content: " ";
   display: block;
   width: 111px;
@@ -118,7 +115,7 @@
   align-items: baseline;
 }
 
-.core-service {
+.core-services__item {
   display: flex;
   flex-direction: column;
   padding: 5  rem;
@@ -130,12 +127,12 @@
   font-size: 14px;
 }
 
-.design {
+.core-services__headline {
   color: #222;
   font-size: 16px;
 }
 
-.text {
+.core-services__text {
   font-size: 14px;
   text-transform: none;
   color: #777;
@@ -143,41 +140,34 @@
 
 /* third section */
 
-.expertise {
+.other-expertise {
   display: flex;
-  justify-content: flex-end;
   background-color: #F7F7F7;
   color: #777;
   font-size: 14px;
   height: 100vh;
   min-height: 600px;
   text-align: left;
-  padding-left: 70px;
+  padding-left: 50px;
 }
 
-.table-header {
+.expertise-header {
   text-transform: uppercase;
   font-size: 30px;
-  margin-top: 50px;
   color: #222;
 }
 
-.text-description {
+.advantage__headline {
   text-transform: uppercase;
   color: #222;
   font-size: 14px;
 }
 
-.text-icon {
-  margin-left: 30px;
-}
-
-.icon-expertise {
-  float: left;
+.advantage__icon {
   padding-top: 15px;
 }
 
-.button {
+.other-expertise__button {
   text-decoration: none;
   color: #222;
   text-transform: uppercase;
@@ -187,30 +177,29 @@
   border: solid 1px #35C2F8;
   border-radius: 100px;
   padding: 13px 23px;
-}
-
-.other-expertise-custom-item-button {
-  padding-top: 40px;
+  max-width: 169px;
+  text-align: center;
+  margin-top: 49px;
 }
 
 .text-expertise {
   display: flex;
   flex-direction: column;
   margin-right: 50px;
+  margin-top: 50px;
 }
 
-.other-expertise-custom {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 50px;
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(2, 5%  40%);
+  justify-items: end;
+  align-items: start;
+  grid-column-gap: 20px;
+  margin-top: 30px;
 }
 
-.other-expertise-custom-item {
-  width: 270px;
-}
-
-.image-tabel {
-  width: 350px;
+.other-expertise__image {
+  max-width: 350px;
 }
 
 /* fourth section */
@@ -227,12 +216,12 @@
   background-position-x: 50px;
 }
 
-.section-amazing-portfolio {
+.portfolio {
   display: flex;
   flex-direction: column;
 }
 
-.text-amazing-portfolio {
+.portfolio-about {
   display: flex;
   flex-direction: column;
   color: #777;
@@ -241,17 +230,24 @@
   width: 530px;
 }
 
-.text-expertise-header {
+.portfolio-about__header {
   color: #222;
 }
 
-.icon-wrap {
-  float: left;
+.grid-text {
+  display: grid;
+  grid-template-columns: 34px 420px;
+  grid-column-gap: 10px;
 }
 
-.text-sail {
-  margin-left: 60px;
-  padding-bottom: 30px;
-  width: 420px;
+.portfolio-gallery {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 33% 33% 33%;
+  grid-row-gap: 0;
+  align-content: start;
 }
-  
+
+.portfolio-gallery__image {
+  max-width: 341px;
+}
