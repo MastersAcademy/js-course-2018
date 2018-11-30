@@ -7,8 +7,9 @@ function innerCopy(obj) {
         if (typeof obj[key] === 'object') {
             newObj[key] = innerCopy(obj[key]);
         } else {
-            newObj[key] = obj[key]; }
-     });
+            newObj[key] = obj[key];
+        }
+    });
     return newObj;
 }
 const newObject = innerCopy(originalObj);
