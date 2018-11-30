@@ -1,7 +1,7 @@
 const assert = require('assert');
 const sum = require('../task').getSumArray;
 const countElements = require('../task').getCountElements;
-const innerCopy = require('../task').cloneObj;
+const innerCopy = require('../task').clone;
 const { getPeople, getJSONtoObject } = require('../task');
 
 describe('Sum', () => {

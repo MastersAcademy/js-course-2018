@@ -21,8 +21,29 @@ function getCountElements(array) {
     }, {});
 }
 
-function cloneObj(obj) {
-    return Object.assign({}, obj);
+function clone(obj) {
+    let copy;
+    if (obj == null || typeof obj != 'object') return obj;
+    if (obj instanceof Date) {
+        copy = new Date();
+        copy.setTime(obj.getTime());
+        return copy;
+    }
+    if (obj instanceof Array) {
+        copy = [];
+        for (let i = 0, len = obj.length; i < len; i++) {
+            copy[i] = clone(obj[i]);
+        }
+        return copy;
+    }
+    if (obj instanceof Object) {
+        copy = {};
+        Object.keys(obj).forEach((attr) => {
+            if (Object.prototype.hasOwnProperty.call(obj, attr)) copy[attr] = clone(obj[attr]);
+        });
+        return copy;
+    }
+    throw new Error('Unable to copy obj! Its type isn\'t supported.');
 }
 
 const people = [
@@ -57,7 +78,12 @@ function sortArrayOfObjects(firstValue, secondValue) {
 }
 
 function getJSONtoObject(arrayJSON) {
-    const array = JSON.parse(arrayJSON);
+    let array;
+    try {
+        array = JSON.parse(arrayJSON);
+    } catch (error) {
+        throw error;
+    }
     const populationArray = array.map(country => convertToNumber(country.Population));
     const populationAll = sumOfArray(populationArray);
 
@@ -74,7 +100,7 @@ function getJSONtoObject(arrayJSON) {
 module.exports = {
     getSumArray,
     getCountElements,
-    cloneObj,
+    clone,
     getPeople,
     getJSONtoObject,
 };
