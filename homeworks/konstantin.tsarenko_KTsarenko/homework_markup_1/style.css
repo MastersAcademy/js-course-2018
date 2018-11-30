@@ -19,10 +19,26 @@ img {
   object-fit: contain;
 }
 
+.image-holder {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.image-holder__img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+
 a {
   border: none;
   outline: none;
   text-decoration: none;
+  display: inline-block;
 }
 
 ul, figure {
@@ -298,4 +314,37 @@ p {
 
 .icon-portfolio {
   width: 32px;
+}
+
+/*portfolio-gallery*/
+
+.list-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-gallery {
+  width: 33.33%;
+}
+
+.image-holder:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(58, 59, 56, .6);
+  background-image: url("images/plus-symbol.svg");
+  background-size: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.image-holder:hover:before {
+  opacity: 1;
+  transition: all .3s;
 }
