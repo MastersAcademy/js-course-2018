@@ -5,7 +5,6 @@ const exampleOne = [10, -10, 10, -10, 10];
 const exampleTwo = [0, 0, 0, 0, 0];
 const exampleThree = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-
 function plusNumbers(number) {
     let summ = number;
     return (integer) => {
@@ -23,9 +22,7 @@ showNumbers(exampleOne);
 showNumbers(exampleTwo);
 showNumbers(exampleThree);
 
-
 // Reduce
-console.log('Just fun with reduce');
 
 function getSum(arr) {
     const result = [];
