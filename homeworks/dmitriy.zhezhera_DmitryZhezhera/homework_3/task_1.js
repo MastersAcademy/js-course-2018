@@ -11,10 +11,9 @@ console.log(toSquare(53));
 // величини та заданим кроком між значеннями елементів
 function createArray(maxNumber, step) {
     const array = [];
-    for (let i = 0, value = 0; i <= maxNumber; i++) {
-        if (value > maxNumber) break;
-        array.push(value);
-        value += step;
+    for (let i = 0; i <= maxNumber; i += step) {
+        if (i > maxNumber) break;
+        array.push(i);
     }
     return array;
 }
@@ -26,7 +25,7 @@ console.log(myArray12);
 // 1.3 Привести до квадрату всі значення елементів масиву.Вхідним масивом є
 // результат виконання попереднього завдання(2) з агрументами 32 та 4
 console.log('result of task 1.3 results:');
-const myArray13 = myArray12.map(item => toSquare(item));
+const myArray13 = myArray12.map(toSquare);
 console.log(myArray13);
 
 // 1.4 Знайти суму елементів масиву з попереднього завдання
