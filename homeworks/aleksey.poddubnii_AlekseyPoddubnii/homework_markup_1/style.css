@@ -75,11 +75,11 @@ ul {
 
 /* Banner triggers */
 
-.banner-triggers {
+.triggers {
   padding-top: 170px;
 }
 
-.banner-triggers__big {
+.triggers__big {
   font-family: "Montserrat";
   font-size: 50px;
   font-weight: 700;
@@ -91,7 +91,7 @@ ul {
   margin: auto;
 }
 
-.banner-triggers__small {
+.triggers__small {
   color: #CCC;
   width: 425px;
   margin: auto;
