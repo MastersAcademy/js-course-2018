@@ -1,25 +1,34 @@
+let result1;
+let result2;
+let result3;
 function summ(number) {
-    const result1 = number + 10;
+    result1 = number + 10;
     console.log(result1);
-    function multiplication() {
-        const result2 = result1 * 3;
-        console.log(result2);
-        function subtraction() {
-            const result3 = result2 - 20;
-            console.log(result3);
-        }
-        setTimeout(() => {
-            subtraction();
-        }, 3000);
-    }
-    setTimeout(() => {
-        multiplication();
-    }, 2000);
 }
 
-setTimeout(() => {
-    summ(5);
-}, 1000);
+function multiplication() {
+    result2 = result1 * 3;
+    console.log(result2);
+}
+
+function subtraction() {
+    result3 = result2 - 20;
+    console.log(result3);
+}
+function numbOperations() {
+    setTimeout(() => {
+        setTimeout(() => {
+            setTimeout(() => {
+                 subtraction();
+            }, 3000);
+            multiplication();
+        }, 2000);
+        summ(5);
+    }, 1000);
+}
+
+numbOperations();
+
 
 // Promise
 function sum(number) {
