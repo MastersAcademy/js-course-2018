@@ -5,9 +5,9 @@ const Obj = {
 function innerCopy(mainObj) {
     const copyObj = {};
     for (const key in mainObj) {
-        copyObj[key] = mainObj[key];
+        if (copyObj[key] = mainObj[key]);
+        return copyObj;
     }
-    return copyObj;
 }
 console.log(innerCopy(Obj));
 console.log(innerCopy(Obj.d));
