@@ -1,4 +1,4 @@
-function calcutaleSum() {
+function calculateSum() {
     let sum = 0;
     return (value) => {
         sum += value;
@@ -8,4 +8,4 @@ function calcutaleSum() {
 
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-console.log(arr.map(calcutaleSum()));
+console.log(arr.map(calculateSum()));
