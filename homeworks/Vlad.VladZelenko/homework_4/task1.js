@@ -1,6 +1,7 @@
 let result1;
 let result2;
 let result3;
+
 function summ(number) {
     result1 = number + 10;
     console.log(result1);
@@ -15,11 +16,12 @@ function subtraction() {
     result3 = result2 - 20;
     console.log(result3);
 }
+
 function numbOperations() {
     setTimeout(() => {
         setTimeout(() => {
             setTimeout(() => {
-                 subtraction();
+                subtraction();
             }, 3000);
             multiplication();
         }, 2000);
