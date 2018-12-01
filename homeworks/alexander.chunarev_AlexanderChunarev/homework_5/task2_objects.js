@@ -4,14 +4,7 @@ const classes = ['header', 'menu', 'menu_item', 'tabs',
 
 function amountOfElements() {
     const object = {};
-
-    classes.sort().forEach((key) => {
-        if (key in object) {
-            object[key] += 1;
-        } else {
-            object[key] = 1;
-        }
-    });
+    classes.forEach((key) => { object[key] = object[key] + 1 || 1; });
     return object;
 }
 

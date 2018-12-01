@@ -8,9 +8,11 @@ const someObj = {
 };
 
 function innerCopy(obj) {
-    return Object.assign({}, obj);
+    const newObject = {};
+    Object.keys(obj).forEach((key) => { newObject[key] = obj[key]; });
+    return newObject;
 }
 
-console.log(someObj);
+const objCopy = innerCopy(someObj);
 
-console.log(innerCopy(someObj.d.e));
+console.log(innerCopy(objCopy.d));

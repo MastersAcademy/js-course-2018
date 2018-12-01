@@ -8,17 +8,14 @@ const people = [
 ];
 
 const getPeople = (userId) => {
-    const foundFriends = [];
-    if (people.find(friend => friend.id === userId)) {
-        people.forEach((person) => {
-            if (Array.isArray(person.friends) && person.friends.includes(userId)) {
-                foundFriends.push(person);
-            }
-        });
-    } else {
+    const person = people.find(friend => friend.id === userId);
+    if (typeof person === 'undefined') {
         return null;
     }
-    return foundFriends;
+    if (Array.isArray(person.friends)) {
+        return people.filter(friend => person.friends.includes(friend.id));
+    }
+    return [];
 };
 
 console.log(getPeople(2));
