@@ -96,13 +96,6 @@ function innerCopyV1(objToCopy) {
     return result;
 }
 
-/*
-Also:
-function innerCopyV2(objToCopy) {
-    return JSON.parse(JSON.stringify(objToCopy));
-}
-*/
-
 const obj = { b: 'c', d: { e: 'f' } };
 const resultingObj = innerCopyV1(obj);
 
