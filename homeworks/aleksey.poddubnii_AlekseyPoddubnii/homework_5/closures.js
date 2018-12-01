@@ -28,9 +28,9 @@ function getSum(arr) {
         return sum + item;
     });
     result.push(totalSum);
-    console.log(result);
+    return result;
 }
 
-getSum(exampleOne);
-getSum(exampleTwo);
-getSum(exampleThree);
+console.log(getSum(exampleOne));
+console.log(getSum(exampleTwo));
+console.log(getSum(exampleThree));
