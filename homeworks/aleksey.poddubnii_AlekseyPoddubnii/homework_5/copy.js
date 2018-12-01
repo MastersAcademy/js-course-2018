@@ -7,9 +7,4 @@ function newArray(arr) {
     });
     return newObject;
 }
-
-// const newArray = oldArray.map((a) => {
-
-// });
-
 console.log(newArray(oldArray));
