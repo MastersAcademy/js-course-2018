@@ -5,22 +5,18 @@ const exampleOne = [10, -10, 10, -10, 10];
 const exampleTwo = [0, 0, 0, 0, 0];
 const exampleThree = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function plusNumbers(number) {
-    let summ = number;
-    return (integer) => {
-        summ += integer;
-        return summ;
-    };
-}
 
 function showNumbers(inputArray) {
-    const callPlus = plusNumbers(0);
-    console.log(inputArray.map(callPlus));
+    let newArray = 0;
+    return inputArray.map((num) => {
+        newArray += num;
+        return newArray;
+    });
 }
 
-showNumbers(exampleOne);
-showNumbers(exampleTwo);
-showNumbers(exampleThree);
+console.log(showNumbers(exampleOne));
+console.log(showNumbers(exampleTwo));
+console.log(showNumbers(exampleThree));
 
 // Reduce
 

@@ -7,4 +7,11 @@ const people = [
     { id: 6, name: 'Jeen', friends: [5, 1] },
 ];
 
-console.log(people);
+function getPeople(userId) {
+    const user = people.find(search => search.id === userId);
+    if (Array.isArray(user.friends)) {
+        return people.filter(u => user.friends.includes(u.id));
+    }
+    return [];
+}
+console.log(getPeople(1));
