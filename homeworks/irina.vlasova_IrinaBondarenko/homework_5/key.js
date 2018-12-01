@@ -9,6 +9,6 @@ function baz(arr) {
     });
     return obj;
 }
- const classes = ['header', 'menu', 'menu_item', 'tabs', 'tab_item', 'menu',
+const classes = ['header', 'menu', 'menu_item', 'tabs', 'tab_item', 'menu',
     'link', 'tabs', 'tab_item', 'menu', 'menu_item', 'menu', 'menu_item'];
- console.log(baz(classes));
+console.log(baz(classes));
