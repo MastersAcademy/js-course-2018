@@ -8,14 +8,21 @@ const people = [
 ];
 
 function getPeople(userId) {
-    if (!people.some(person => (person.id === userId))) return null;
-    return people.filter((person) => {
-        if (person.friends !== null
-            && person.friends.some(id => id === userId)) {
-            return true;
+    let result = null;
+    people.forEach((human) => {
+        if (human.id === userId) {
+            // Our human ID exists
+            result = [];
+            if (human.friends) {
+                // Our human have friends
+                result = people.filter(person => human.friends.some((id) => {
+                    if (id === person.id) return true;
+                    return false;
+                }));
+            }
         }
-        return false;
     });
+    return result;
 }
 
 console.log('=1=');
