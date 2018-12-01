@@ -1,0 +1,295 @@
+/* Global style */
+
+.body {
+  width: 1024px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  background: #9E9E9E33;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.section {
+  background: #FFF;
+  width: 100%;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  padding: 23px 50px;
+  border-radius: 50px;
+}
+
+.h1 {
+  font-size: 41px;
+  text-transform: uppercase;
+}
+
+.h2 {
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 45px;
+  font-size: 40px;
+  margin-top: 0;
+  padding-top: 45px;
+}
+
+.h4-black {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.h2_bottom-blue-line:after {
+  content: "";
+  width: 111px;
+  height: 2px;
+  background: #35C2F8;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.h3 {
+  font-weight: 100;
+}
+
+.container {
+  max-width: 900px;
+  width: 900px;
+}
+
+/* Header */
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  padding-left: 24px;
+  transition: .5s all;
+}
+
+.nav__link:hover {
+  color: #35C2F8;
+  transition: .5s all;
+}
+
+/*Section Slider Home */
+
+.slide-home__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-home {
+  height: 697px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-home:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #607D8B61;
+  position: absolute;
+}
+
+.slide-home__desc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  color: #FFF;
+  max-width: 544px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.h1-home:after {
+  content: "";
+  width: 111px;
+  height: 2px;
+  background: #35C2F8;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 43px;
+}
+
+/* Section Services */
+
+.services {
+  display: flex;
+}
+
+.section__services {
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+.services__item {
+  text-align: center;
+  padding: 0 35px;
+}
+
+.p_grey {
+  color: #888;
+}
+
+.services__item-name {
+  text-transform: uppercase;
+}
+
+/* HOMEWORK 2 */
+
+/* Section Services */
+
+.section__expertise {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F7F7F7;
+  overflow: hidden;
+}
+
+.expertise__info {
+  padding-left: 62px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+}
+
+.expertise__description {
+  color: #777;
+  font-weight: 100;
+  letter-spacing: -.4px;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.expertise__features {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.feature__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.item-expertise {
+  width: 50%;
+}
+
+.expertise__background {
+  max-width: 33%;
+}
+
+.feature__item__img {
+  min-width: 43px;
+  text-align: center;
+}
+
+.feature__item__description {
+  padding-left: 20px;
+}
+
+.button_white {
+  background: #FFF;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid #35C2FC;
+  transition: .5s all;
+}
+
+.button_white:hover {
+  background: #35C2F8;
+  color: #FFF;
+  transition: .5s all;
+}
+
+.expertise__img {
+  height: 100%;
+}
+
+/* SECTION PORTFOLIO */
+
+.section__portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio__info {
+  padding-left: 62px;
+}
+
+.portfolio__info {
+  width: 50%;
+  position: relative;
+}
+
+.portfolio__info_text {
+  position: relative;
+}
+
+.portfolio__background {
+  width: calc(50% - 62px);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding-top: 8%;
+}
+
+.portfolio__info_background {
+  position: absolute;
+  opacity: .8;
+  width: 89%;
+  top: 23%;
+}
+
+.portfolio__grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__item-3 {
+  width: calc(100% / 3);
+  overflow: hidden;
+}
+
+.grid__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
