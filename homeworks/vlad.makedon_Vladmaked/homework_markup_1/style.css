@@ -4,7 +4,6 @@
   font-family: "open Sans", sans-serif;
   font-size: 16px;
   color: #FFF;
-  padding: 0;
   margin: 0 auto;
 }
 
@@ -18,7 +17,7 @@
 }
 
 .container {
-  width: 77%;
+  max-width: 77%;
   margin: 0 auto;
 }
 
@@ -41,21 +40,25 @@
   flex-direction: row;
 }
 
-.menu__li {
+.menu__item {
   display: block;
   margin-left: 40px;
   margin-right: 0;
 }
 
-.menu__a {
-  color: #FFF;
-  text-decoration: none;
+.header_text {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  align-self: center;
+}
+
+.menu__link {
+  color: #FFF;
+  text-decoration: none;
   font-size: 14px;
 }
 
-.menu__a:hover {
+.menu__link:hover {
   color: #35C2F8;
 }
 
@@ -66,47 +69,49 @@
   align-items: center;
 }
 
-.heading__h1 {
+.title-heading {
   font-size: 50px;
-  color: #FFF;
-  text-transform: uppercase;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  margin-top: 156px;
-  margin-bottom: 42px;
-  transform: scale(.85,1);
+  transform: scaleX(.9);
+  margin-top: 166px;
+  margin-bottom: 0;
 }
 
-.underline {
-  width: 111px;
+.underline:after {
+  width: 121px;
+  height: 1px;
+  background-color: #35C2F8;
+  content: "";
   align-self: center;
-  margin-bottom: 54px;
+  display: block;
+  margin: 30px auto;
 }
 
-.heading__p {
+.title-text {
   align-self: center;
   text-align: center;
   font-size: 20px;
   color: #CCC;
+  transform: scaleX(.9);
   margin: 0;
+  margin-top: 24px;
   margin-bottom: 140px;
 }
 
-.heading__h2 {
-  align-self: center;
+.sub-heading {
   font-size: 40px;
   color: #222;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
   margin-top: 89px;
+  margin-bottom: 0;
 }
 
-.main-section__content {
+.service-section__content {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
-.main-section__box {
+.service-section__box {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -119,13 +124,11 @@
   margin-bottom: 101px;
 }
 
-.main-section__h3 {
+.third-heading {
   color: #222;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
 }
 
-.main-section__p {
+.main-text {
   margin: 0;
 }
