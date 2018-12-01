@@ -1,7 +1,8 @@
-const Obj = { b: 'c', d: { e: 'f' } }
+const Obj = { b: 'c', 
+             d: { e: 'f' } }
 function innerCopy(mainObj) {
-    let copyObj = {};
-    for (let key in mainObj) {
+    const copyObj = {};
+    for (const key in mainObj) {
         copyObj[key] = mainObj[key];
     }
     return copyObj;
