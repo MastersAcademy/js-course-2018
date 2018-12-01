@@ -14,6 +14,7 @@ function getPeople(userId) {
     if (Array.isArray(person.friends)) {
         return people.filter(user => person.friends.includes(user.id));
     }
+        return {};
 }
 console.log(getPeople(2));
 console.log(getPeople(3));
