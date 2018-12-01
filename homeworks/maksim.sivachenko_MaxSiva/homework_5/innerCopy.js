@@ -5,12 +5,16 @@ const obj = {
 
 function innerCopy(myKey) {
     const keys = Object.keys(myKey);
-    const result = {};
+    const clone = {};
     keys.forEach((key) => {
-        result[key] = myKey[key];
+        if (typeof myKey[key] === 'object') {
+            clone[key] = innerCopy(myKey[key]);
+        } else {
+            clone[key] = myKey[key];
+        }
     });
 
-    return result;
+    return clone;
 }
 
 console.log(innerCopy(obj.d));
