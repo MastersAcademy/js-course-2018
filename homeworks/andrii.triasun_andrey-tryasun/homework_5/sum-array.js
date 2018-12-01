@@ -1,15 +1,11 @@
 // converting a numeric array to an array of sums
 
 const sumArray = (array) => {
-    const resultArray = [];
-    return () => {
-        array.reduce((acc, cur) => {
-            const sum = acc + cur;
-            resultArray.push(sum);
-            return sum;
-        }, 0);
-        return resultArray;
-    };
+    let sum = 0;
+    return () => array.map((item) => {
+        sum += item;
+        return sum;
+    });
 };
 
 const res1 = sumArray([10, -10, 10, -10, 10]);
