@@ -3,7 +3,13 @@ const array = ['header', 'menu', 'menu_item', 'tabs',
     'menu_item', 'menu', 'menu_item'];
 const result = {};
 
-array.forEach((a) => {
-    result[a] = result[a] + 1 || 1;
+array.forEach((name) => {
+    if (Object.prototype.hasOwnProperty.call(result, name)) {
+        result[name] += 1;
+    } else {
+        result[name] = 1;
+    }
+
+    /* result[name] = result[name] + 1 || 1; */
 });
 console.log(result);

@@ -3,10 +3,14 @@ const obj = {
     d: { e: 'f' },
 };
 
-function innerCopy() {
-    return Object.assign({}, obj);
+function innerCopy(myKey) {
+    const keys = Object.keys(myKey);
+    const result = {};
+    keys.forEach((key) => {
+        result[key] = myKey[key];
+    });
+
+    return result;
 }
 
-const objCopy = innerCopy();
-
-console.log(objCopy.d);
+console.log(innerCopy(obj.d));
