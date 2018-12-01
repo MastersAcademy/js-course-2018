@@ -1,47 +1,47 @@
 // 1 task
 const exampleArray = [10, -10, 10, -10, 10];
-const resultArray = [];
 function sumArray(arr) {
+    const resultArray = [];
     arr.reduce((previousSum, currentNumber) => {
         const value = previousSum + currentNumber;
         resultArray.push(value);
         return value;
     }, 0);
+    console.log(resultArray);
 }
 sumArray(exampleArray);
-console.log(resultArray);
-// 2 task, please write a hint if there are any easier method for it
+// 2 task
 const classes = ['header', 'menu', 'menu_item', 'tabs',
     'tab_item', 'menu', 'link', 'tabs', 'tab_item', 'menu',
     'menu_item', 'menu', 'menu_item'];
-const obj = {};
 function repeatsInObj(array) {
-    array.forEach((element) => {
-        obj[element] = 0;
-    });
-    const objKeys = Object.keys(obj);
-    array.forEach((element) => {
-        for (let i = 0; i < objKeys.length; i++) {
-            if (objKeys[i] === element) {
-                const key = objKeys[i];
-                obj[key] += 1;
-            }
+    const obj = array.reduce((classList, className) => {
+        const cl = classList;
+        const cn = className;
+        if (cn in cl) {
+            cl[cn]++;
+        } else {
+            cl[cn] = 1;
         }
-    });
+        return classList;
+    }, {});
     console.log(obj);
 }
 repeatsInObj(classes);
-// 3 task, I know this the easiest way to copy everything :D
+// 3 task
 const objForCopy = { b: 'f', d: { e: 'f' } };
-function innerCopy(object) {
-    const objParsed = JSON.stringify(object);
-    const objCopy = JSON.parse(objParsed);
-    return objCopy;
+function objCopy(obj) {
+    if (typeof obj === 'object') {
+        return Object.keys(obj)
+            .map(k => ({ [k]: objCopy(obj[k]) }))
+            .reduce((a, c) => Object.assign(a, c), {});
+    }
+    return obj;
 }
-const objInnerCopy = innerCopy(objForCopy);
-objInnerCopy.d.e = 0;
-console.log(objForCopy.d);
-console.log(objInnerCopy.d);
+const copiedObj = objCopy(objForCopy);
+copiedObj.d.e = 0;
+console.log(objForCopy);
+console.log(copiedObj);
 // 4 task
 const people = [
     { id: 1, name: 'Nick', friends: [2, 5, 6] },
@@ -54,10 +54,8 @@ const people = [
 function getPeople(peopleArray, index) {
     let peopleWithFriends = [];
     for (let i = 0; i < peopleArray.length; i++) {
-        if (peopleArray[i].friends != null) {
-            if (peopleArray[i].friends.indexOf(index) >= 0) {
-                peopleWithFriends.push(peopleArray[i]);
-            }
+        if (peopleArray[i].friends != null && peopleArray[i].friends.indexOf(index) >= 0) {
+            peopleWithFriends.push(peopleArray[i]);
         }
     }
     if (peopleWithFriends.length < 1) {
