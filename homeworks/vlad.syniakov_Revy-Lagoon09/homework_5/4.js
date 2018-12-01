@@ -11,7 +11,7 @@ function getPeople(userId) {
     if (typeof person === 'undefined') {
         return null;
     }
-     if (Array.isArray(person.friends)) {
+    if (Array.isArray(person.friends)) {
         return people.filter(user => person.friends.includes(user.id));
     }
 }
