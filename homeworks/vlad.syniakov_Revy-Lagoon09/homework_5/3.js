@@ -1,6 +1,6 @@
 const Obj = {
     b: 'c',
-    d: { e: 'f' }
+    d: { e: 'f' },
 };
 function innerCopy(mainObj) {
     const copyObj = {};
