@@ -1,25 +1,20 @@
 // Task 1
 
-function countNumber() {
+const arrayFirst = [10, -10, 10, -10, 10];
+const arraySecond = [0, 0, 0, 0, 0];
+const arrayThird = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const sumOfArray = (array) => {
     let number = 0;
-    return (value) => {
+    return array.map((value) => {
         number += value;
         return number;
-    };
-}
+    });
+};
 
-function createMass(mass) {
-    const array = mass;
-    const summ = countNumber();
-    for (let i = 0; i < array.length; i++) {
-        array[i] = summ(array[i]);
-    }
-    return array;
-}
-
-console.log(createMass([10, -10, 10, -10, 10]));
-console.log(createMass([0, 0, 0, 0, 0]));
-console.log(createMass([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(sumOfArray(arrayFirst));
+console.log(sumOfArray(arraySecond));
+console.log(sumOfArray(arrayThird));
 
 
 // Task 2
@@ -29,7 +24,7 @@ const classes = ['header', 'menu', 'menu_item', 'tabs',
     'menu_item', 'menu', 'menu_item'];
 
 
-function sortKey(arr) {
+const sortKey = (arr) => {
     const obj = {};
     arr.forEach((x) => {
         if (x in obj) {
@@ -39,7 +34,7 @@ function sortKey(arr) {
         }
     });
     return obj;
-}
+};
 console.log(sortKey(classes));
 
 // Task 3
