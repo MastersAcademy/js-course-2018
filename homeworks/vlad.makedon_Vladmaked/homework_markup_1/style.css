@@ -8,7 +8,7 @@
 }
 
 .header-section {
-  background-image: url("../homework_markup_1/images/background.jpg");
+  background-image: url("./images/background.jpg");
   background-repeat: no-repeat;
   background-position: center, top;
   background-size: cover;
