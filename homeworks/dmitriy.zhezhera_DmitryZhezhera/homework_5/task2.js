@@ -4,9 +4,10 @@ const classes = ['header', 'menu', 'menu_item', 'tabs',
 
 function toObject(arr) {
     const result = {};
-    for (let i = 0; i < arr.length; ++i) {
-        if (arr[i] !== undefined) result[arr[i]] = (result[arr[i]] || 0) + 1;
-    }
+    arr.forEach((item) => {
+        if (!result[item]) result[item] = 1;
+        else result[item]++;
+    });
     return result;
 }
 
