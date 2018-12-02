@@ -23,4 +23,5 @@ function timer4(value) {
     }, 3000);
 }
 
+
 promise.then(v => timer(v)).then(v => timer2(v)).then(v => timer3(v)).then(v => timer4(v));
