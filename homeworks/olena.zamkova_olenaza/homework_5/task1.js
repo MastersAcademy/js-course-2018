@@ -1,20 +1,16 @@
 const sumArray = (someArr) => {
-    const result = [];
-    let sum = 0;
-
-    const adder = (item) => {
+    const arraySum = () => {
+        let sum = 0;
         function add(num) {
             sum += num;
             return sum;
         }
-        return add(item);
+        return add;
     };
 
-    someArr.forEach((item) => {
-        result.push(adder(item));
-    });
+    const adder = arraySum();
 
-    return result;
+    return someArr.map(adder);
 };
 
 // output results
