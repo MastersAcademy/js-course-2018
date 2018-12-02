@@ -211,6 +211,11 @@ body {
 .amazing-portfolio-info {
   padding-left: 25px;
   line-height: 20px;
+  margin-right: 500px;
+}
+
+.about-portfolio {
+  margin-top: 40px;
 }
 
 .icon-portfolio {
