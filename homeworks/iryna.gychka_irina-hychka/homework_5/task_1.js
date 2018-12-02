@@ -4,11 +4,7 @@ const yArray = [0, 0, 0, 0, 0];
 const zArray = [10, -10, 10, -10, 10];
 
 function sumArray(n) {
-    const sum = [];
-    for (let el = 1; el <= n.length; el++) {
-        sum.push(n.slice(0, el).reduce((res, sub) => (res + sub)));
-    }
-    return sum;
+    return n.map((v, i) => (n.slice(0, i + 1).reduce((sum, el) => (sum + el))));
 }
 
 // Task 1.2 Counts the duplicated values
@@ -52,13 +48,11 @@ const people = [
 ];
 
 function getPeople(userId) {
-    const res = [];
-    for (let i = 0; i < people.length; i++) {
-        const man = people[i];
-        if (man.friends !== null && man.friends.indexOf(userId) !== -1) {
-            res.push(man);
-        }
+    const users = people.filter(p => (p.id === userId));
+    if (users.length === 0 || users[0].friends === null) {
+        return null;
     }
+    const res = people.filter(p => (users[0].friends.indexOf(p.id) !== -1));
     return res.length > 0 ? res : null;
 }
 
