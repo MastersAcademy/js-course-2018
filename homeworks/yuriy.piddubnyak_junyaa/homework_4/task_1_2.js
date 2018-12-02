@@ -1,7 +1,3 @@
-const promise = new Promise((resolve) => {
-    resolve(100);
-});
-
 function timer(value) {
     return value + 10;
 }
@@ -24,4 +20,5 @@ function timer4(value) {
 }
 
 
-promise.then(v => timer(v)).then(v => timer2(v)).then(v => timer3(v)).then(v => timer4(v));
+Promise.resolve(100).then(timer).then(timer2).then(timer3)
+    .then(timer4);
