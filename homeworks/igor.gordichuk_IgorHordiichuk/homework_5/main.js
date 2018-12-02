@@ -30,19 +30,20 @@ console.log(findSameKeyCuont(classes));
 
 // task 3
 
-const obj = { b: 'c', d: { e: 'f' } };
+const obj = { b: 'c', d: { e: 'f', g: { h: 'i' } } };
 
 const innerCopy = (originObj) => {
     const clonedObj = {};
     Object.keys(originObj).forEach((key) => {
         if (typeof originObj[key] === 'object') {
-            clonedObj[key] = clonedObj(originObj(key));
+            clonedObj[key] = innerCopy(originObj[key]);
         } else {
             clonedObj[key] = originObj[key];
         }
     });
     return clonedObj;
 };
+console.log(innerCopy(obj));
 console.log(innerCopy(obj.d));
 
 // task 4
