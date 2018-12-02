@@ -18,7 +18,6 @@ const people = [
         id: 4,
         name: 'Janny',
         friends: null,
-        // friends: [7, 9],
     },
     {
         id: 5,

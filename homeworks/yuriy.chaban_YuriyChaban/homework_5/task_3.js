@@ -6,7 +6,7 @@ const obj = {
 };
 
 function innerCopy(objectToCheck) {
-    if (objectToCheck === null || typeof objectToCheck !== 'object') {
+    if (typeof objectToCheck !== 'object') {
         return objectToCheck;
     }
     if (objectToCheck instanceof Object) {
