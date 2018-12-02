@@ -16,11 +16,7 @@ function getPeople(userId) {
     if (friend !== undefined) {
         result = [];
         if (friend !== null) {
-            friend.forEach((user) => {
-                people.forEach((obj) => {
-                    if (obj.id === user) result.push(obj);
-                });
-            });
+            result = people.filter(obj => friend.some(user => user === obj.id));
         }
     }
     return result;
