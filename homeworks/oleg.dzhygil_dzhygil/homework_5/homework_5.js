@@ -41,17 +41,20 @@ console.log(sortKey(classes));
 
 const obj = { b: 'c', d: { e: 'f' } };
 
-function innerCopy() {
-    const newObject = {};
-    Object.keys(obj).forEach((key) => {
-        newObject[key] = obj[key];
+const innerCopy = (object) => {
+    const result = {};
+    Object.keys(object).forEach((key) => {
+        if (typeof (object[key]) == 'object') {
+            innerCopy(object[key]);
+        }
+        result[key] = object[key];
     });
-    return newObject;
-}
+    return result;
+};
 const objCopy = innerCopy(obj);
 
 
-console.log(objCopy);
+console.log(objCopy.d);
 
 // Task 4
 
