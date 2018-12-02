@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1042px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text {
+  font-size: 14px;
+  color: #888;
+  line-height: 22px;
+  margin-top: 15px;
+}
+
+.title-h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.title-h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title-h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.wrapper__title-h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("images/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
+  padding-bottom: 50px;
+}
+
+.header_head {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 0;
+  margin-top: 52px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+  width: 570px;
+}
+
+.header-menu__list {
+  list-style: none;
+}
+
+.navigation {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 41px;
+}
+
+.navigation:hover {
+  color: #35C2F8;
+}
+
+.header_welcome {
+  margin-top: 110px;
+  text-align: center;
+}
+
+.horizontal-line {
+  height: 2px;
+  width: 111px;
+  background-color: #35C2F8;
+  margin: 30px auto;
+}
+
+/*------section 1 Core Services------------*/
+
+.section1 {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.section1_services {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.section1_tool {
+  width: 301px;
+}
+
+.image {
+  margin-bottom: 20px;
+}
+
+/*------section 2 Other Expertise------------*/
+
+.section2 {
+  background-color: #F7F7F7;
+  display: flex;
+}
+
+.section2_expertise {
+  width: 620px;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.section2_tools {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.tools {
+  width: 200px;
+  margin-bottom: 25px;
+  margin-right: 35px;
+  padding-left: 50px;
+}
+
+.tool-gear {
+  background-image: url("images/Gear_Icon.png");
+  background-repeat: no-repeat;
+}
+
+.tool-cloud {
+  background-image: url("images/Cloud_Icon.png");
+  background-repeat: no-repeat;
+}
+
+.tool-star {
+  background-image: url("images/Star_Icon.png");
+  background-repeat: no-repeat;
+}
+
+.tool-lock {
+  background-image: url("images/Lock_Icon.png");
+  background-repeat: no-repeat;
+}
+
+.button {
+  border-radius: 50px;
+  border: none;
+  width: 169px;
+  height: 61px;
+  margin-top: 20px;
+  margin-left: 40px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  background-color: #FFF;
+}
+
+.button:hover {
+  background-color: #35C2F8;
+  color: #FFF;
+}
+
+/*------section 3 Amazing Portfolio------------*/
+
+.section3 {
+  display: flex;
+  min-height: 700px;
+}
+
+.section2_portfolio {
+  width: 765px;
+  margin-top: 60px;
+  margin-left: 30px;
+  background-image: url("images/Background_-_Users-Icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.tools-portfolio {
+  margin-top: 30px;
+  padding-left: 50px
+}
+
+.tool-pie {
+  background-image: url("images/Pie_Icon.png");
+  background-repeat: no-repeat;
+}
+
+.portfolio-photo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 347px;
+}
