@@ -3,7 +3,7 @@ const promise = new Promise((resolve) => {
     resolve(number);
 });
 async function func() {
-    await promise;
+  await promise;
     promise.then((value) => {
         setTimeout(() => {
         }, 0);
