@@ -5,15 +5,10 @@ const clases = ['header', 'menu', 'menu_item', 'tabs',
 function returnKey(params) {
     const obj = {};
     params.forEach((element) => {
-        if (obj[element] === undefined) {
-            Object.defineProperty(obj, element, {
-                enumerable: true,
-                configurable: false,
-                writable: true,
-                value: 1,
-            });
+        if (element in obj) {
+            obj[element] += 1;
         } else {
-            obj[element]++;
+            obj[element] = 1;
         }
     });
     return obj;
