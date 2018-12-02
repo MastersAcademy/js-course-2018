@@ -31,12 +31,17 @@ repeatsInObj(classes);
 // 3 task
 const objForCopy = { b: 'f', d: { e: 'f' } };
 function objCopy(obj) {
+    const copiedObj = {};
     if (typeof obj === 'object') {
-        return Object.keys(obj)
-            .map(k => ({ [k]: objCopy(obj[k]) }))
-            .reduce((a, c) => Object.assign(a, c), {});
+        Object.keys(obj).forEach((key) => {
+            if (typeof obj[key] === 'object') {
+                copiedObj[key] = objCopy(obj[key]);
+            } else {
+                copiedObj[key] = obj[key];
+            }
+        });
     }
-    return obj;
+    return copiedObj;
 }
 const copiedObj = objCopy(objForCopy);
 copiedObj.d.e = 0;
@@ -52,15 +57,10 @@ const people = [
     { id: 6, name: 'Jeen', friends: [5, 1] },
 ];
 function getPeople(peopleArray, index) {
-    let peopleWithFriends = [];
-    for (let i = 0; i < peopleArray.length; i++) {
-        if (peopleArray[i].friends != null && peopleArray[i].friends.indexOf(index) >= 0) {
-            peopleWithFriends.push(peopleArray[i]);
-        }
-    }
-    if (peopleWithFriends.length < 1) {
-        peopleWithFriends = null;
-    }
-    console.log(peopleWithFriends);
+    const userId = peopleArray.find(user => user.id === index);
+    if (typeof userId === 'undefined') { return null; }
+    if (!Array.isArray(userId.friends)) { return null; }
+    const result = peopleArray.filter(user => userId.friends.includes(user.id));
+    return result;
 }
-getPeople(people, 2);
+console.log(getPeople(people, 2));
