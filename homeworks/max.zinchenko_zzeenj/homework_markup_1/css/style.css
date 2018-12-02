@@ -1,0 +1,375 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  margin: 0 auto;
+  width: 1024px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #FFF;
+}
+
+/* ---SECTION Title --- */
+
+.header {
+  background-image: url("../img/backgrounds/title-bg.jpg");
+}
+
+.head {
+  display: flex;
+}
+
+.logo__dreams {
+  margin: 40px 0 0 130px;
+}
+
+.title-navigation {
+  margin: 50px 130px 0 70px;
+}
+
+.navigation {
+  list-style: none;
+}
+
+.navigation__list {
+  display: inline-block;
+}
+
+.navigation__link {
+  margin-left: 40px;
+  padding: 10px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.navigation__link:hover {
+  cursor: pointer;
+  color: #35E9EB;
+}
+
+.title-content {
+  padding-top: 242px;
+  text-align: center;
+}
+
+.title-content__headline {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.title-content__headline:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 110px;
+  padding-top: 50px;
+  border-bottom: 2px solid #35E9EB;
+}
+
+.title-content__paragraph {
+  margin-top: 50px;
+  font-size: 16px;
+  color: #CCC;
+  line-height: 1.7;
+  padding-bottom: 140px;
+}
+
+/* --- SECTION Core Services ---*/
+
+.core-services {
+  text-align: center;
+}
+
+.core-services__headline {
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
+
+.core-services__headline:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 110px;
+  padding-top: 40px;
+  border-bottom: 2px solid #35E9EB;
+}
+
+.services {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.services__headline {
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+}
+
+.core-services__paragraph {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888;
+  padding-bottom: 100px;
+}
+
+/* --- SECTION Other Expertise --- */
+
+.other-expertise {
+  background-color: #F7F7F7;
+  display: flex;
+}
+
+.other-expertise-content {
+  margin-left: 50px;
+}
+
+.other-expertise-content__headline {
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.other-expertise-content__paragraph {
+  padding-top: 40px;
+  font-size: 12px;
+  color: #777;
+}
+
+.types-of-expertise {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.types-of-expertise__item {
+  width: 250px;
+}
+
+.types-of-expertise__headline {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.types-of-expertise__paragraph {
+  margin-top: 14px;
+  font-size: 10px;
+  color: #777;
+}
+
+.expertise__items {
+  margin-left: 15px;
+}
+
+/* Custom Setup */
+
+.custom-setup {
+  display: flex;
+}
+
+.custom-setup__img {
+  width: 30px;
+  height: 30px;
+}
+
+/* All star support team */
+
+.all-star {
+  margin-top: 25px;
+  display: flex;
+}
+
+.all-star__img {
+  width: 31px;
+  height: 31px;
+}
+
+/* Cloud Control */
+
+.cloud-control {
+  margin-left: -13px;
+  display: flex;
+}
+
+.cloud-control__img {
+  width: 42px;
+  height: 29px;
+}
+
+/* Top Notch Security */
+
+.top-security {
+  margin-top: 25px;
+  display: flex;
+}
+
+.top-security__img {
+  width: 27px;
+  height: 39px;
+}
+
+.button-of-expertise {
+  margin-top: 60px;
+}
+
+.button-of-expertise__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 40px;
+  background-color: #35E9EB;
+  color: #FFF;
+}
+
+.button-of-expertise__link:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+/* --- SECTION Amazing Portfolio --- */
+
+.amazing-portfolio {
+  margin-left: 50px;
+  width: 100%;
+  display: flex
+}
+
+.amazing-content {
+  width: 580px;
+  padding-bottom: 50px;
+}
+
+.amazing-portfolio__item {
+  margin-top: 130px;
+}
+
+.amazing-portfolio__img {
+  max-width: 400px;
+  max-height: 345px;
+}
+
+.amazing-portfolio__headline {
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.amazing-portfolio-bg {
+  background-image: url("../img/backgrounds/users-bg.png");
+  background-repeat: no-repeat;
+}
+
+.amazing-portfolio__paragraph1 {
+  margin-top: 40px;
+  font-size: 10px;
+  color: #777;
+}
+
+.amazing-portfolio__paragraph2 {
+  margin-top: 30px;
+  font-size: 9px;
+  color: #777;
+}
+
+.advantages-of-portfolio__headline {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.advantages-of-portfolio__paragraph {
+  margin-top: 15px;
+  font-size: 10px;
+  color: #777;
+}
+
+.advantages-of-portfolio__item {
+  margin-top: 30px;
+}
+
+.service__items {
+  margin-left: 15px;
+}
+
+/* Sail Away Your Worries */
+
+.sail-away {
+  display: flex;
+}
+
+.sail-away__img {
+  width: 30px;
+  height: 30px;
+}
+
+/* All Star Suppurt Team */
+
+.support-team {
+  display: flex;
+}
+
+.support-team__img {
+  width: 31px;
+  height: 31px;
+}
+
+/* Fully Integrated Service */
+
+.fully-service {
+  display: flex;
+}
+
+.fully-service__img {
+  width: 29px;
+  height: 30px;
+}
+
+/* --- SECTION Portfolio Photos --- */
+
+.portfolio-content {
+  width: 100%;
+}
+
+.portfolio-photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.portfolio-photos__item {
+  width: 341px;
+  height: 256px;
+}
+
+/* photos */
+
+.portfolio-photos__img {
+  width: 341px;
+  height: 256px;
+  opacity: 1;
+}
+
+.portfolio-photos__img:hover {
+  cursor: pointer;
+  opacity: .6;
+}
