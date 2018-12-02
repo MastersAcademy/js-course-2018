@@ -1,4 +1,4 @@
-const Obj = {
+const someObj = {
     b: 'c',
     d: { e: 'f' },
 };
@@ -9,5 +9,5 @@ function innerCopy(mainObj) {
     }
     return copyObj;
 }
-console.log(innerCopy(Obj));
-console.log(innerCopy(Obj.d));
+console.log(innerCopy(someObj));
+console.log(innerCopy(someObj.d));
