@@ -6,36 +6,15 @@ const human = [
     { id: 5, name: 'Edward', friends: [1, 3] },
     { id: 6, name: 'Jeen', friends: [5, 1] },
 ];
-function getFriend(userId) {
-    let friend = null;
-    human.forEach((person) => {
-        if (person.id === userId) {
-            if (person.friends !== null) {
-                friend = person.friends;
-            } else {
-                friend = [];
-                return friend;
-            }
-        }
-        return {};
-    });
-    return friend;
-}
 function getHuman(userId) {
-    const friendsMass = getFriend(userId);
-    const newFriendsArray = [];
-    if (friendsMass !== null && friendsMass !== []) {
-        friendsMass.forEach((friendId) => {
-            human.forEach((obj) => {
-                if (obj.id === friendId) {
-                    newFriendsArray.push(obj);
-                }
-            });
-        });
-    } else {
-        return friendsMass;
+    const user = human.find(person => person.id === userId);
+    if (typeof user === 'undefined') {
+        return null;
     }
-    return newFriendsArray;
+    if (Array.isArray(user.friends)) {
+        return human.filter(person => user.friends.includes(person.id));
+    }
+    return [];
 }
 console.log(getHuman(2));
 console.log(getHuman(4));
