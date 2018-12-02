@@ -281,7 +281,7 @@ p, h1, h2, figure, body {
 .content__portfolio-img-wrapper {
   width: 33.333%;
   overflow: hidden;
-  height: 255px;
+  max-height: 255px;
 }
 
 .portfolio__img {
