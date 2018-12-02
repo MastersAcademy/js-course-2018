@@ -33,13 +33,13 @@ const people = [
 
 const getPeople = (userId, arrayOfUsers) => {
     const friendsArray = [];
-    arrayOfUsers.forEach((obj) => {
+    arrayOfUsers.find((obj) => {
         if (obj.friends === null) {
-            return;
+            return true;
         }
-        obj.friends.forEach((friendId) => {
+        obj.friends.filter((friendId) => {
             if (friendId === null) {
-                return;
+                return true;
             }
 
             friendsArray.push(friendId);
@@ -51,7 +51,10 @@ const getPeople = (userId, arrayOfUsers) => {
             if (friendId === userId) {
                 console.log(obj);
             }
+
+            return true;
         });
+        return false;
     });
 };
 
