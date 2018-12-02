@@ -1,37 +1,31 @@
 const countryCodes = require('./CountryCodes.json');
 
 let allPeople = 0;
-const allCountry = [];
-const other = 0.5;
-const otherCountrys = { country: 'Other', percentValue: 0, population: 0 };
+const allCountries = [];
+const MIN_PERCENT_VALUE = 0.5;
+const otherCountries = { country: 'Other', percentValue: 0, population: 0 };
 const otherMass = [];
 
-countryCodes.forEach((element) => {
-    allPeople += Number(element.Population.split(',').join(''));
-});
+allPeople = countryCodes.reduce((sum, { Population }) => sum + parseInt(Population.replace(',', ''), 10), 0);
 
-countryCodes.forEach((element) => {
-    const population = Number(element.Population.split(',').join(''));
+countryCodes.forEach(({ Country, Population }) => {
+    const population = parseInt(Population.replace(',', ''), 10);
     const percentValue = population / allPeople * 100;
-    if (percentValue >= other) {
-        allCountry.push({ country: element.Country, percentValue, population });
+    if (percentValue >= MIN_PERCENT_VALUE) {
+        allCountries.push({ country: Country, percentValue, population });
         return;
     }
-    otherMass.push({ country: element.Country, percentValue, population });
-    otherCountrys.population += population;
-    otherCountrys.percentValue += percentValue;
+    otherMass.push({ country: Country, percentValue, population });
+    otherCountries.population += population;
+    otherCountries.percentValue += percentValue;
 });
 
-if (otherMass.length < 2) allCountry.push(otherMass[0]);
+if (otherMass.length < 2) allCountries.push(otherMass[0]);
 
-allCountry.sort((a, b) => {
-    if (a.percentValue < b.percentValue) { return 1; }
-    if (a.percentValue > b.percentValue) { return -1; }
-    return 0;
-});
+allCountries.sort(({ percentValue: a }, { percentValue: b }) => b - a);
 
 if (otherMass.length > 1) {
-    allCountry.push(otherCountrys);
+    allCountries.push(otherCountries);
 }
 
-console.log(allCountry);
+console.log(allCountries);
