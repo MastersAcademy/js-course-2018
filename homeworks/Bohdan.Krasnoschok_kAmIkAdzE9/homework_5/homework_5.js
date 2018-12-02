@@ -1,4 +1,4 @@
-//Task_1
+//    Task_1
 function returnSum(input) {
     const output = [];
     input.reduce((sum, value) => {
@@ -11,7 +11,7 @@ console.log(returnSum([10, -10, 10, -10, 10]));
 console.log(returnSum([0, 0, 0, 0, 0]));
 console.log(returnSum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
-//Task_2
+//    Task_2
 function returnobj(input) {
     const output = {};
     input.forEach((value) => {
@@ -23,8 +23,8 @@ const items = ['header', 'menu', 'menu_item', 'tabs', 'tab_item', 'menu',
     'link', 'tabs', 'tab_item', 'menu', 'menu_item', 'menu', 'menu_item'];
 console.log(returnobj(items));
 
-//Task_3
-const obj = { b: 'c', d: { e: 'f' } };
+//    Task_3
+const object = { b: 'c', d: { e: 'f' } };
 function innerCopy(obj) {
     const objClone = {};
     obj.keys(obj).forEach((key) => {
@@ -36,10 +36,10 @@ function innerCopy(obj) {
     });
     return objClone;
 }
-console.log(innerCopy(obj));
-console.log(innerCopy(obj.d));
+console.log(innerCopy(object));
+console.log(innerCopy(object.d));
 
-//Task_4
+//    Task_4
 const people = [
     { id: 1, name: 'Nick', friends: [2, 5, 6] },
     { id: 2, name: 'John', friends: [1, 3] },
