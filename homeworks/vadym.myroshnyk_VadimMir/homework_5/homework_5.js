@@ -2,15 +2,14 @@
 const someArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function sumArrayFunction() {
-    const arr = [];
-    for (let i = 0; i < someArr.length; i++) {
-        arr[i] = someArr[i];
-        const sumArray = arr.reduce((a, b) => a + b, 0);
-        console.log(sumArray);
-    }
+    let sum = 0;
+    return someArr.map((item) => {
+        sum = item + sum;
+        return sum;
+    });
 }
 
-sumArrayFunction();
+console.log(sumArrayFunction());
 
 // tesk 2
 const classes = ['header', 'menu', 'menu_item', 'tabs',
@@ -19,15 +18,17 @@ const classes = ['header', 'menu', 'menu_item', 'tabs',
 
 function returnObjKey() {
     const result = {};
-    for (let i = 0; i < classes.length; i++) {
-        let sum = 0;
-        sum = classes.filter(item => item === classes[i]).length;
-        result[classes[i]] = sum;
-    }
-    console.log(result);
+
+    classes.reduce((previousValue, value, i) => {
+        let sumValue = 0;
+        sumValue = classes.filter(item => item === classes[i]).length;
+        result[value] = sumValue;
+        return result[value];
+    });
+    return result;
 }
 
-returnObjKey();
+console.log(returnObjKey());
 
 // tesk 3
 const obj = {
@@ -36,11 +37,12 @@ const obj = {
 };
 
 function innerCopy() {
-    return Object.assign({}, obj);
+    const objCopy = JSON.parse(JSON.stringify(obj));
+    return objCopy;
 }
-const objCopy = innerCopy();
-console.log(objCopy);
-console.log(objCopy.d);
+const copy = innerCopy();
+console.log(copy);
+console.log(copy.d);
 
 // tesk 4
 const people = [
@@ -53,14 +55,16 @@ const people = [
 ];
 
 const getPeople = function (userId) {
+    const arrPeople = [];
     for (let i = 0; i < people.length; i++) {
         if (people[i].id === userId) {
+            if (people[i].friends === null) return 'null';
             for (let j = 0; j < people[i].friends.length; j++) {
                 const number = people[i].friends[j];
-                console.log(people[number - 1]);
+                arrPeople.push(people[number - 1]);
             }
         }
     }
+    return arrPeople;
 };
-
-getPeople(2);
+console.log(getPeople(2));
