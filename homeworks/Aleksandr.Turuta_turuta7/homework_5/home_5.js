@@ -7,13 +7,10 @@ function createCounter() {
     });
 }
 
+
 function sumArray(array) {
-    const res = array;
     const fn = createCounter();
-    for (let i = 0; i < res.length; i++) {
-        res[i] = fn(res[i]);
-    }
-    return res;
+    return array.map(fn);
 }
 
 
@@ -45,11 +42,17 @@ const Array = { b: 'c', d: { e: 'f' } };
 function newArray(arr1) {
     const newObject = {};
     Object.keys(arr1).forEach((x) => {
-        newObject[x] = arr1[x];
+        if (typeof (arr1[x]) === 'object') {
+            newObject[x] = newArray(arr1[x]);
+        } else {
+            newObject[x] = arr1[x];
+        }
     });
+
     return newObject;
 }
-console.log(newArray(Array));
+const copy = newArray(Array);
+console.log(copy.b);
 
 // the task 4
 const people = [
