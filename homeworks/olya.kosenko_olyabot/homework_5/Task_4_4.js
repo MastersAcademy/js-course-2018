@@ -16,10 +16,8 @@ function getPeople(userId) {
     if (objFriend.friends === null) {
         return [];
     }
-
     return people.filter(item => objFriend.friends.includes(item.id));
 }
-
 console.log(getPeople(2));
 console.log(getPeople(4));
 console.log(getPeople(100500));
