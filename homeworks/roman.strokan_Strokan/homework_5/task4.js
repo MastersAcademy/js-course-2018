@@ -10,7 +10,7 @@ const people = [
 function getPeople(userId) {
     const array = [];
     const usedObj = people.find(currentObj => currentObj.id === userId);
-    if (userId < Object.keys(people).length && usedObj.friends !== null) {
+    if (usedObj.friends !== null) {
         usedObj.friends.forEach((element) => {
             // array.push(people[element]);
             array.push(people.find(currentObj => currentObj.id === element));
