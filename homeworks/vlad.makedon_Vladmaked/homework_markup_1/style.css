@@ -17,8 +17,7 @@
 }
 
 .container {
-  max-width: 77%;
-  margin: 0 auto;
+  margin: 0 11.5%;
 }
 
 .header {
@@ -87,7 +86,7 @@
   margin: 30px auto;
 }
 
-.title-text {
+.title_text {
   align-self: center;
   text-align: center;
   font-size: 20px;
@@ -98,10 +97,10 @@
   margin-bottom: 140px;
 }
 
-.sub-heading {
+.sub_heading {
   font-size: 40px;
   color: #222;
-  margin-top: 89px;
+  margin-top: 90px;
   margin-bottom: 0;
 }
 
@@ -109,6 +108,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  margin-bottom: 101px;
 }
 
 .service-section__box {
@@ -121,14 +121,149 @@
   color: #888;
   font-size: 14px;
   text-align: center;
-  margin-bottom: 101px;
 }
 
-.third-heading {
+.third_heading {
   color: #222;
   font-size: 16px;
 }
 
-.main-text {
+.main_text {
   margin: 0;
+}
+
+.expertise-section {
+  background-color: #F7F7F7;
+}
+
+.expertise-section .container {
+  margin-right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  min-width: 420px;
+  min-height: 616px;
+}
+
+.expertise-text {
+  color: #777;
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+.list {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.two-column_list {
+  column-count: 2;
+}
+
+.list-header {
+  margin: 0;
+  font-size: 14px;
+}
+
+.list-text {
+  margin-top: 13px;
+  margin-bottom: 30px;
+}
+
+.small_text {
+  color: #777;
+  font-size: 14px;
+}
+
+.list__item {
+  display: flex;
+  list-style-type: none;
+  color: #777;
+}
+
+.list__item:before {
+  float: left;
+  min-width: 45px;
+  text-align: center;
+  padding-right: 10px;
+}
+
+.list__item:nth-child(1):before {
+  content: url("./images/gear-icon.png");
+}
+
+.list__item:nth-child(2):before {
+  content: url("./images/star-icon.png");
+}
+
+.list__item:nth-child(3):before {
+  content: url("./images/cloud-icon.png");
+}
+
+.list__item:nth-child(4):before {
+  content: url("./images/lock-icon.png");
+}
+
+.button {
+  width: 169px;
+  height: 61px;
+  border-radius: 40px;
+  border: 1px solid #D4EFF9;
+  background-color: #FFF;
+  margin-bottom: 88px;
+  margin-left: 9px;
+}
+
+.portfolio-section .container {
+  margin-right: 0;
+}
+
+.amazing-portfolio {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+
+.portfolio-description {
+  min-width: 584px;
+  margin-right: 50px;
+  margin-bottom: 80px;
+}
+
+.amazing-portfolio-description {
+  background-image: url("./images/background-users-icon.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+.portfolio-text {
+  margin-top: 42px;
+}
+
+.portfolio-text-2 {
+  margin-top: 40px;
+}
+
+.portfolio-description .list__item:nth-child(3):before {
+  content: url("./images/pie_icon.png");
+}
+
+.portfolio-description .list__item:nth-child(3) .list-text {
+  margin-bottom: 0;
+}
+
+.isometric-ipad-air {
+  margin-top: 63px;
+  position: relative;
+  min-height: 613px;
+  min-width: 1080px;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
