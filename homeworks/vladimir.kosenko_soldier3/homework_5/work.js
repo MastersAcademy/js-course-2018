@@ -96,10 +96,20 @@ function getPeople(userId) {
 
     const { friends } = people;
 
-    const result = friends.map(element => findPeople(element));
-    return result;
+    return peoples.filter(element => friends.includes(element.id));
 }
 
 console.log(getPeople(2));
 console.log(getPeople(4));
 console.log(getPeople(100500));
+
+// unction getPeople(userId) {
+//     const user = people.find(man => man.id === userId);
+//     if (typeof user === 'undefined') {
+//         return null;
+//     }
+//     if (Array.isArray(user.friends)) {
+//         return people.filter(person => user.friends.includes(person.id));
+//     }
+//     return [];
+// }
