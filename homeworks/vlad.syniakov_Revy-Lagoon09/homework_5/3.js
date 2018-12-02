@@ -4,7 +4,7 @@ const someObj = {
 };
 function innerCopy(mainObj) {
     const copyObj = {};
-    for ( const key in mainObj) {
+    for (const key in mainObj) {
         copyObj[key] = mainObj[key];
     }
     return copyObj;
