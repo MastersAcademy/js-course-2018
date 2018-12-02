@@ -40,7 +40,7 @@ function minusPromise(number) {
         setTimeout(() => resolve(number - 20), 3000);
     });
 }
-function Promises() {
+function promises() {
     plusPromise(10)
         .then((plus) => {
             console.log(plus);
@@ -52,14 +52,14 @@ function Promises() {
         })
         .then(minus => console.log(minus));
 }
-Promises();
+promises();
 let inNumber = 10;
-async function Asyncs() {
+async function asyncs() {
     inNumber = await plusPromise(inNumber);
-    await console.log(inNumber);
+    console.log(inNumber);
     inNumber = await multiplyPromise(inNumber);
-    await console.log(inNumber);
+    console.log(inNumber);
     inNumber = await minusPromise(inNumber);
-    await console.log(inNumber);
+    console.log(inNumber);
 }
-Asyncs();
+asyncs();
