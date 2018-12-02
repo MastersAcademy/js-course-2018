@@ -9,9 +9,7 @@ const people = [
 
 const getPeople = (userId) => {
     const user = people.find(object => object.id === userId);
-    if (typeof user === 'undefined') {
-        return null;
-    }
+    if (!user) return null;
     if (Array.isArray(user.friends)) {
         return people.filter(friend => user.friends.includes(friend.id));
     }

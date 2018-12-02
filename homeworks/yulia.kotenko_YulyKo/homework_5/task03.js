@@ -1,11 +1,17 @@
 const object = {
-    menu: {
-        logo: 'Dreams',
-        item: 'About',
-    },
+    menu: { logo: 'Dreams', item: 'About' },
     content: 'article',
 };
+function cloneObject(obj) {
+    const objectCopy = {};
+    Object.keys(obj).forEach((i) => {
+        if (obj[i] !== null && typeof (obj[i]) === 'object') {
+            objectCopy[i] = cloneObject(obj[i]);
+        } else {
+            objectCopy[i] = obj[i];
+        }
+    });
+    return objectCopy;
+}
 
-const objectCopy = Object.assign({}, object);
-
-console.log(objectCopy.menu);
+console.log(cloneObject(object));
