@@ -1,6 +1,5 @@
-const number = 100; // input number
-
 function numbers(callback) {
+    const number = 100; // input number
     const x = number + 10;
     setTimeout(() => callback(x), 1000);
     const z = x * 3;
