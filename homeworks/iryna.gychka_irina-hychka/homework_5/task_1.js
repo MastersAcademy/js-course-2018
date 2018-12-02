@@ -4,13 +4,12 @@ const yArray = [0, 0, 0, 0, 0];
 const zArray = [10, -10, 10, -10, 10];
 
 function sumArray(n) {
-    return n.map((v, i) => {
-        let sum = 0;
-        for (let j = 0; j <= i; j++) {
-            sum += n[j];
-        }
+    let sum = 0;
+    const result = n.map((v) => {
+        sum += v;
         return sum;
     });
+    return result;
 }
 
 // Task 1.2 Counts the duplicated values
