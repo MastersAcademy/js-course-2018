@@ -13,7 +13,7 @@ function getPeople(userId) {
     if (usedObj.friends !== null) {
         usedObj.friends.forEach((element) => {
             // array.push(people[element]);
-            array.push(people.find(currentObj => currentObj.id === element));
+            array.push(people.filter(currentObj => currentObj.id === element));
         });
         return array;
     }
