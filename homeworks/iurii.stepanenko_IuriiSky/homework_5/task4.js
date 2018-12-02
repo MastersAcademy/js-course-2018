@@ -12,15 +12,13 @@ const getPeople = function showPeople(userId) {
     if (targetPerson === undefined) {
         return null;
     }
-    const friendsPeople = [];
     if (targetPerson.friends === null) {
-        return friendsPeople;
+        return [];
     }
-    targetPerson.friends.forEach((element) => {
-        const friendPerson = people.find(person => person.id === element);
-        friendsPeople.push(friendPerson);
-    });
-    return friendsPeople;
+    if (Array.isArray(targetPerson.friends)) {
+        return people.filter(person => targetPerson.friends.includes(person.id));
+    }
+    return targetPerson;
 };
 
 console.log(getPeople(2));
