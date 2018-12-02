@@ -10,16 +10,13 @@ const people = [
 
 function getPeople(userId) {
     const user = people.find(person => person.id === userId);
-    const idFriends = user.friends;
-    const userFriends = [];
-    if (idFriends !== null) {
-        idFriends.forEach((friendId) => {
-            userFriends.push(people.find(somebody => somebody.id === friendId));
-        });
-
-        return userFriends;
+    if (user === undefined) {
+        return null;
     }
-    return null;
+    if (user.friends !== null) {
+        return people.filter(somebody => user.friends.find(id => id === somebody.id));
+    }
+    return [];
 }
 
 console.log(getPeople(2));
