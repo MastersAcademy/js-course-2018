@@ -3,18 +3,11 @@ const classes = ['header', 'menu', 'menu_item', 'tabs',
     'menu_item', 'menu', 'menu_item'];
 
 function createObject(array) {
-    const obj = {};
-    let str;
-    let count;
-    array.forEach((element) => {
-        if (element === str) count++;
-        else {
-            str = element;
-            count = 1;
-        }
-        obj[str] = count;
-    });
-    return obj;
+    return array.reduce((obj, elem) => {
+        const objNew = obj;
+        objNew[elem] = elem in obj ? obj[elem] + 1 : 1;
+        return obj;
+    }, {});
 }
 
 console.log(createObject(classes.sort()));
