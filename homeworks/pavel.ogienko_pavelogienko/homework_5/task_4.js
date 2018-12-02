@@ -7,22 +7,13 @@ const people = [
     { id: 6, name: 'Jeen', friends: [5, 1] },
 ];
 
-function getPeople(userId) {
-    const friends = [];
-    if (people.find(user => user.id === userId)) {
-        people.forEach((obj) => {
-            if (Array.isArray(obj.friends)) {
-                if (obj.friends.includes(userId)) {
-                    friends.push(obj);
-                }
-            }
-        });
-    } else {
-        return null;
-    }
-    return friends;
-}
+const getPeople = (people, userId) => {
+    const result = [];
+    const friendsIds = people.find(item => item.id === userId).friends;
+    friendsIds.forEach((id) => {
+        result.push(people.find(item => item.id === id));
+    });
+    return result;
+};
 
-console.log(getPeople(2));
-console.log(getPeople(4));
-console.log(getPeople(100500));
+console.log(getPeople(people, 2));
