@@ -9,14 +9,14 @@ function summElements() {
 }
 
 function newMass(mass) {
-    const newArray = mass;
-    const previousSumm = summElements();
-    for (let i = 0; i < newArray.length; i++) {
-        newArray[i] = previousSumm(newArray[i]);
-    }
-    return newArray;
+    const newArr = summElements();
+    return mass.map(newArr);
 }
+let someArr = [10, -10, 10, -10, 10];
+console.log(newMass(someArr));
 
-console.log(newMass([10, -10, 10, -10, 10]));
-console.log(newMass([0, 0, 0, 0, 0]));
-console.log(newMass([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+someArr = [0, 0, 0, 0, 0];
+console.log(newMass(someArr));
+
+someArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(newMass(someArr));
