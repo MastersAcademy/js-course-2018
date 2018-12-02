@@ -1,0 +1,270 @@
+
+/* ------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------- */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  overflow: visible;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: scroll;
+  min-height: 100vh;
+  background-color: #FFF;
+  color: #777;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------- */
+
+/* seaction */
+
+.section {
+  width: 100%;
+  min-width: 1024px;
+  min-height: 100vh;
+}
+
+/* container */
+
+/* In container I use flexbox properties, I thought it's not a better choice, but it works */
+/* At the moment I'm dealing with Grid, I thought it will be better in this case. I will apply the Grid a little later */
+
+.container {
+  width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container--column {
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.container--jc-start {
+  justify-content: flex-start;
+}
+
+.container--jc-between {
+  justify-content: space-between;
+}
+
+/* heading */
+
+.heading {
+  width: 100%;
+  position: relative;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading__h1 {
+  padding-bottom: 35px;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.heading__h2 {
+  padding-bottom: 30px;
+  font-size: 40px;
+  line-height: 1.875;
+}
+
+.heading__h3 {
+  font-weight: 400;
+  font-size: 16px;
+  text-shadow: -1px 1px 3px #888;
+}
+
+.heading--border-btm:after {
+  content: "";
+  width: 111px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -55px;
+  background-color: #35C2F8;
+}
+
+.heading--color-white {
+  color: #FFF;
+}
+
+/* description */
+
+.description {
+  width: 100%;
+}
+
+.description__for-h1 {
+  padding-top: 35px;
+  color: #CCC;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.description--center {
+  text-align: center;
+}
+
+/* article */
+
+.list {
+  width: 100%;
+  display: flex;
+  margin: 0 -15px;
+}
+
+.list__item {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.list__icon {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.list__icon--and-a-bit-to-right {
+  margin-left: 21px;
+}
+
+.list__heading {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.list__desc {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* ------------------------------------------------- */
+/* HEADER */
+/* ------------------------------------------------- */
+
+.home {
+  width: 100%;
+  min-width: 1024px;
+  height: 100vh;
+  min-height: 480px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("./image/bg-home.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-dreams {
+  width: 107px;
+  height: 28px;
+  display: block;
+  margin-left: 15px;
+}
+
+.logo-dreams__image {
+  width: 100%;
+  height: auto;
+}
+
+.navigation {
+  display: inline-flex;
+}
+
+.navigation__link {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font: 14px/41px "Montserrat", sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.navigation__link:hover {
+  border-bottom-color: #35C2F8;
+}
+
+/* ------------------------------------------------- */
+/* SERVICES */
+/* ------------------------------------------------- */
+
+.page-services {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.page-services__list {
+  padding-top: 50px;
+}
