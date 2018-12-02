@@ -28,7 +28,7 @@ const object = { b: 'c', d: { e: 'f' } };
 function innerCopy(obj) {
     const objClone = {};
     obj.keys(obj).forEach((key) => {
-        if (typeof obj[key] === 'obj') {
+        if (typeof object[key] === 'obj') {
             objClone[key] = innerCopy(obj[key]);
         } else {
             objClone[key] = obj[key];
