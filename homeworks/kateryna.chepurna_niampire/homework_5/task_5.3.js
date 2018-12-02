@@ -1,13 +1,20 @@
-const innerObj = { b: 'c', d: { e: 'f' } };
 
+const innerObj = { b: 'c', d: { e: { f: 'g' } } };
 function innerCopy(obj) {
     const someObj = Object.keys(obj);
     const newObj = {};
     someObj.forEach((key) => {
-        newObj[key] = obj[key];
+        if (typeof (obj[key]) === 'object') {
+            newObj[key] = innerCopy(obj[key]);
+        } else {
+            newObj[key] = obj[key];
+        }
     });
     return newObj;
 }
 
-console.log(innerCopy(innerObj));
-console.log(innerCopy(innerObj.d));
+const copyObject = innerCopy(innerObj);
+
+console.log(copyObject);
+console.log(copyObject.d);
+console.log(copyObject.b);

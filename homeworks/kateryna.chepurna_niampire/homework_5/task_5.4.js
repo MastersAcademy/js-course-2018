@@ -7,17 +7,20 @@ const people = [
     { id: 6, name: 'Jeen', friends: [5, 1] },
 ];
 
-const getPeople = (userId) => {
+function getPeople(userId) {
     const result = [];
-    const friendsId = people.find(user => user.id === userId);
-    if (friendsId) {
-        friendsId.friends.forEach((id) => {
-            result.push(people.find(user => user.id === id));
-        });
-    } else {
-        return null;
+    const objPeople = people.find(user => user.id === userId);
+    if (!objPeople) {
+        return 'We can\'t find this user ID';
     }
+    if (objPeople.friends === null) {
+        return 'This person is an introvert';
+    }
+    objPeople.friends.forEach((id) => {
+        result.push(people.find(user => user.id === id));
+    });
     return result;
-};
-console.log(getPeople(6));
+}
+console.log(getPeople(5));
+console.log(getPeople(4));
 console.log(getPeople(100500));
