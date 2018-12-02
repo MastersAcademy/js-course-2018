@@ -16,9 +16,8 @@ function getPeople(userId) {
     if (objFriend.friends === null) {
         return [];
     }
-    const friendArr = objFriend.friends;
-    const peopleFriends = people.filter(item => friendArr.includes(item.id));
-    return peopleFriends;
+
+    return people.filter(item => objFriend.friends.includes(item.id));
 }
 
 console.log(getPeople(2));
