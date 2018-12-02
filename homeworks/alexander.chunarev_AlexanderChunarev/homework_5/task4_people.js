@@ -7,16 +7,16 @@ const people = [
     { id: 6, name: 'Jeen', friends: [5, 1] },
 ];
 
-const getPeople = (userId) => {
+function getPeople(userId) {
     const person = people.find(friend => friend.id === userId);
-    if (typeof person === 'undefined') {
+    if (!person) {
         return null;
     }
     if (Array.isArray(person.friends)) {
         return people.filter(friend => person.friends.includes(friend.id));
     }
     return [];
-};
+}
 
 console.log(getPeople(2));
 

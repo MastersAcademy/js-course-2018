@@ -1,18 +1,15 @@
-const someObj = {
-    b: 'c',
-    d: {
-        e: {
-            s: 'f',
-        },
-    },
+const obj = { b: 'c', d: { e: 'f' } };
+
+const innerCopy = (object) => {
+    const deepCopy = {};
+    Object.keys(object).forEach((key) => {
+        if (typeof (object[key]) === 'object') {
+            innerCopy(object[key]);
+        }
+        deepCopy[key] = object[key];
+    });
+    return deepCopy;
 };
 
-function innerCopy(obj) {
-    const newObject = {};
-    Object.keys(obj).forEach((key) => { newObject[key] = obj[key]; });
-    return newObject;
-}
-
-const objCopy = innerCopy(someObj);
-
-console.log(innerCopy(objCopy.d));
+const objectCopy = innerCopy(obj);
+console.log(objectCopy.d);
