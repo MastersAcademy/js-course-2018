@@ -37,8 +37,16 @@ const obj = {
 };
 
 function innerCopy() {
-    const objCopy = JSON.parse(JSON.stringify(obj));
-    return objCopy;
+    const newObj = {};
+    Object.keys(obj).forEach((value) => {
+        if (typeof (obj[value]) === 'object') {
+            for (let i = 0; i < obj[value]; i++) {
+                innerCopy(obj[value]);
+            }
+        }
+        newObj[value] = obj[value];
+    });
+    return newObj;
 }
 const copy = innerCopy();
 console.log(copy);
@@ -56,15 +64,18 @@ const people = [
 
 const getPeople = function (userId) {
     const arrPeople = [];
-    for (let i = 0; i < people.length; i++) {
-        if (people[i].id === userId) {
-            if (people[i].friends === null) return 'null';
-            for (let j = 0; j < people[i].friends.length; j++) {
-                const number = people[i].friends[j];
-                arrPeople.push(people[number - 1]);
-            }
+    people.find((user) => {
+        if (user.id === userId) {
+            people.filter((item) => {
+                if (user.friends.includes(item.id) === true) {
+                    arrPeople.push(item);
+                }
+                return null;
+            });
         }
-    }
+        return null;
+    });
     return arrPeople;
 };
+
 console.log(getPeople(2));
