@@ -6,12 +6,8 @@ function foo() {
     };
 }
 function bar(arr) {
-    const newArr = [];
     const baz = foo();
-    for (let i = 0; i < arr.length; i++) {
-        newArr[i] = baz(arr[i]);
-    }
-    return newArr;
+    return arr.map(baz);
 }
 console.log(bar([10, -10, 10, -10, 10]));
 console.log(bar([0, 0, 0, 0, 0]));
