@@ -31,10 +31,33 @@ ul {
   margin: 40px auto 0;
 }
 
+/* Offsets */
+
+.offset-right--xs {
+  margin-right: 15px;
+}
+
+.offset-bottom--sm {
+  margin-bottom: 30px;
+}
+
+.offset-bottom--md {
+  margin-bottom: 40px;
+}
+
+.offset-left--lg {
+  margin-left: 47px;
+}
+
+.img--right {
+  position: absolute;
+  right: 0;
+}
+
 /* Banner and menu block */
 
 .banner-block {
-  background-image: url("images/banner.jpg");
+  background-image: url("images/background.jpg");
   height: 100vh;
   background-color: rgba(0, 0, 0, .7);
   background-blend-mode: darken;
@@ -211,51 +234,10 @@ ul {
 }
 
 .expertise-box__description {
-  margin-bottom: 32px;
   max-width: 350px;
 }
 
 /* Icons set */
-/* Custom icon */
-
-.custom--img {
-  margin-right: 16px;
-}
-
-.custom--desc {
-  margin-left: 46px;
-}
-
-/* Cloud icon */
-
-.cloud--img {
-  margin-right: 10px;
-}
-
-.cloud--desc {
-  margin-left: 52px;
-}
-
-/* Star icon */
-
-.star--img {
-  margin-right: 14px;
-}
-
-.star--desc {
-  margin-left: 45px;
-}
-
-/* Secutiry icon  */
-
-.security--img {
-  margin-left: 5px;
-  margin-right: 22px;
-}
-
-.security--desc {
-  margin-left: 54px;
-}
 
 /* Learning button */
 
@@ -281,9 +263,7 @@ ul {
 
 .expertise-img__img {
   width: 350px;
-  position: absolute;
   height: 616px;
-  right: 0;
 }
 
 /* Amazing Portfolio */
@@ -306,19 +286,11 @@ ul {
   margin-bottom: 50px;
 }
 
-.amazing-portfolio__desc {
-  margin-bottom: 40px;
-}
-
 .amazing-portfolio-background {
   background-image: url("images/users.png");
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 560px;
-}
-
-.amazing-box__img {
-  margin-right: 16px;
 }
 
 .amazing-box__title {
@@ -329,15 +301,8 @@ ul {
   font-size: 16px;
 }
 
-.amazing-box__desc {
-  margin-left: 46px;
-  margin-bottom: 40px;
-}
-
-.amazing-portfolio__ipad {
-  position: absolute;
-  right: 0;
-  width: 550px;
+.amazing-portfolio__tablet {
+  max-width: 550px;
   margin-top: 100px;
 }
 
@@ -350,6 +315,6 @@ ul {
   align-content: space-between;
 }
 
-.gallery-item__img {
+.width--third {
   width: 33.33%;
 }
