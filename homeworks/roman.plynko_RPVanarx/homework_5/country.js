@@ -16,8 +16,6 @@ countryCodes.forEach(({ Country, Population }) => {
         return;
     }
     otherMass.push({ country: Country, percentValue, population });
-    otherCountries.population += population;
-    otherCountries.percentValue += percentValue;
 });
 
 if (otherMass.length < 2) allCountries.push(otherMass[0]);
@@ -25,6 +23,10 @@ if (otherMass.length < 2) allCountries.push(otherMass[0]);
 allCountries.sort(({ percentValue: a }, { percentValue: b }) => b - a);
 
 if (otherMass.length > 1) {
+    otherCountries.forEach(({ percentValue, population }) => {
+        otherCountries.population += population;
+        otherCountries.percentValue += percentValue;
+    });
     allCountries.push(otherCountries);
 }
 
