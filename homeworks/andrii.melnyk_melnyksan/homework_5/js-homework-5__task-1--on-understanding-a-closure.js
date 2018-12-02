@@ -18,8 +18,7 @@ function sumArray() {
 }
 
 function summator(someArray) {
-    const arrayOfSums = someArray.map(sumArray());
-    return arrayOfSums;
+    return someArray.map(sumArray());
 }
 
 const arrayOfSums1 = summator(someArray1);

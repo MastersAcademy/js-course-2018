@@ -3,23 +3,38 @@
 
 // Source object:
 
-// const someSourceObject = { b: 'c', d: { e: 'f' } };
+const someSourceObject = { b: 'c', d: { e: 'f' } };
 
-// function cloneObject(originalObject) {
-//     const clone = {};
-//     for (const element in originalObject) {
-//         if (originalObject[element] != null && typeof (originalObject[element]) == 'object') {
-//             clone[element] = cloneObject(originalObject[element]);
-//         } else {
-//             clone[element] = originalObject[element];
-//         }
-//     }
-//     return clone;
-// }
+// I don't know how to do it at the moment. But ...
+// Let's See... Let's know, learn and master something new ;)
+console.log('\nLet\'s See... Let\'s know, learn and master something new ;)\n');
 
-// const objectCopy = cloneObject(someSourceObject);
+function doodadForCloningAnObject(sourceObject) {
+    const arrayWithKeysOfSourceObject = Object.keys(sourceObject);
+    const clone = {};
+    arrayWithKeysOfSourceObject.forEach((key) => {
+        if (sourceObject[key] != null && typeof (sourceObject[key]) === 'object') {
+            clone[key] = doodadForCloningAnObject(sourceObject[key]);
+        } else {
+            clone[key] = sourceObject[key];
+        }
+    });
+    return clone;
+}
 
-// console.log(objectCopy.d);
+const objectClone = doodadForCloningAnObject(someSourceObject);
 
-// It's kind of works, but ESLint tells me to find another way.
-// I sort things out how to do it.
+console.log('someSourceObject', someSourceObject);
+console.log('objectClone', objectClone);
+console.log('objectClone.d', objectClone.d);
+
+console.log('\nLet\'s check it out more.\n');
+
+someSourceObject.b = 21;
+objectClone.d.e = 'I did it!';
+
+console.log('someSourceObject', someSourceObject);
+console.log('objectClone', objectClone);
+
+console.log('\nAs we see, changing in the source object does not effect on the copied object,');
+console.log('and vice versa.');

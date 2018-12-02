@@ -23,9 +23,7 @@ const classes = ['header', 'menu', 'menu_item', 'tabs',
 
 function arrangeAndCalculateClasses(sourceArray) {
     const someObject = {};
-    sourceArray.sort().forEach((key) => {
-        someObject[key] = (key in someObject) ? someObject[key] + 1 : 1;
-    });
+    sourceArray.sort().forEach((key) => { someObject[key] = someObject[key] + 1 || 1; });
     return someObject;
 }
 
