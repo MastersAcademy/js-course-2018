@@ -3,7 +3,7 @@ const someArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function sumArrayFunction() {
     const arr = [];
-    for (const i in someArr) {
+    for (let i = 0; i < someArr.length; i++) {
         arr[i] = someArr[i];
         const sumArray = arr.reduce((a, b) => a + b, 0);
         console.log(sumArray);
@@ -17,9 +17,9 @@ const classes = ['header', 'menu', 'menu_item', 'tabs',
     'tab_item', 'menu', 'link', 'tabs', 'tab_item', 'menu',
     'menu_item', 'menu', 'menu_item'];
 
-function returnObjKey(obj) {
+function returnObjKey() {
     const result = {};
-    for (const i in classes) {
+    for (let i = 0; i < classes.length; i++) {
         let sum = 0;
         sum = classes.filter(item => item === classes[i]).length;
         result[classes[i]] = sum;
@@ -31,14 +31,12 @@ returnObjKey();
 
 // tesk 3
 const obj = {
-     b: 'c',
-     d: {
-         e: 'f' },
+    b: 'c',
+    d: { e: 'f' },
 };
 
-function innerCopy(a) {
-     a = Object.assign({}, obj);
-    return a;
+function innerCopy() {
+    return Object.assign({}, obj);
 }
 const objCopy = innerCopy();
 console.log(objCopy);
@@ -54,10 +52,10 @@ const people = [
     { id: 6, name: 'Jeen', friends: [5, 1] },
 ];
 
-const getPeople = function(userId) {
-    for (const i in people) {
+const getPeople = function (userId) {
+    for (let i = 0; i < people.length; i++) {
         if (people[i].id === userId) {
-            for (const j in people[i].friends) {
+            for (let j = 0; j < people[i].friends.length; j++) {
                 const number = people[i].friends[j];
                 console.log(people[number - 1]);
             }
