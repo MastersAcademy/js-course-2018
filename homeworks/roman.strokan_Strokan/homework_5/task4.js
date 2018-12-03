@@ -10,7 +10,7 @@ const people = [
 function getPeople(userId) {
     const usedObj = people.find(currentObj => currentObj.id === userId);
     if (usedObj.friends !== null) {
-        return people.filter(currentObj => usedObj.friends.includes(currentObj.id));
+        return people.filter(users => usedObj.friends.includes(users.id));
     }
     return null;
 }
