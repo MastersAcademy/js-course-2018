@@ -42,7 +42,7 @@ body {
   color: #FFF;
 }
 
-.menu_navigation_a:hover {
+.menu_navigation--link:hover {
   color: rgb(48, 27, 238);
 }
 
@@ -253,4 +253,65 @@ body {
 
 .page_four_portfolio_picture:hover {
   opacity: .5;
+}
+
+.page_five_position_left {
+  padding-top: 50px;
+  padding-left: 128px;
+  display: flex;
+}
+
+.page_five_title_text_left {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.page_five_subtitle_text_left {
+  color: #777;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.page_five_size_image {
+  width: 135px;
+  height: 135px;
+}
+
+.page_five_position_right {
+  padding-top: 50px;
+  padding-left: 443px;
+  display: flex;
+}
+
+.page_five_title_text_right {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000;
+  padding-left: 20px;
+}
+
+.page_five_subtitle_text_right {
+  color: #777;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.page_five_button {
+  margin-left: 443px;
+  margin-top: 50px;
+  width: 135px;
+  height: 135px;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #35C2F8;
+  border-radius: 50%;
+  border: 7px solid #F1F1F1;
+}
+
+.page_five_button:hover {
+  cursor: pointer;
 }
