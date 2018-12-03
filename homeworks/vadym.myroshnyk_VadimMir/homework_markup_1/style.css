@@ -100,7 +100,7 @@ header {
   position: absolute;
 }
 
-.title-section{
+.title-section {
   text-transform: uppercase;
   margin-top: 70px;
   font-size: 40px;
@@ -108,8 +108,8 @@ header {
 }
 
 .title-section-fix {
- text-align: center;
- position: relative;
+  text-align: center;
+  position: relative;
 }
 
 .section-container {
@@ -171,7 +171,6 @@ header {
   position: absolute;
   color: #000;
   margin-left: 40px;
-
 }
 
 .service-paragraphFourBlock {
@@ -188,22 +187,20 @@ header {
   background: url("./images/background3.png") 30% 30% no-repeat;
 }
 
-.imageFlex{
-margin-top: 100px;
-display: flex;
- flex-direction: column;
+.imageFlex {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .paragraph-flex {
-display: flex;
-flex-direction: row-reverse;
-justify-content: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
-
 .left {
- margin-left: 410px;
-
+  margin-left: 410px;
 }
 
 .center {
