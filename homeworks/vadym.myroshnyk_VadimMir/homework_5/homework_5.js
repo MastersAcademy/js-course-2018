@@ -16,14 +16,13 @@ const classes = ['header', 'menu', 'menu_item', 'tabs',
     'tab_item', 'menu', 'link', 'tabs', 'tab_item', 'menu',
     'menu_item', 'menu', 'menu_item'];
 
-function returnObjKey(classes) {
+function returnObjKey(classObj) {
     const result = {};
 
-    classes.reduce((previousValue, value, i) => {
-        let sumValue = 0;
-        sumValue = classes.filter(item => item === classes[i]).length;
-        result[value] = sumValue;
-        return result[value];
+    classObj.reduce((previousValue, value) => {
+        if (!result[value]) result[value] = 1;
+        else result[value]++;
+        return result;
     });
     return result;
 }
@@ -36,13 +35,13 @@ const obj = {
     d: { e: 'f' },
 };
 
-function innerCopy(obj) {
+function innerCopy(objNew) {
     const newObj = {};
-    Object.keys(obj).forEach((value) => {
-        if (typeof (obj[value]) === 'object') {
-                innerCopy(obj[value]);
+    Object.keys(objNew).forEach((value) => {
+        if (typeof (objNew[value]) === 'object') {
+            innerCopy(objNew[value]);
         }
-        newObj[value] = obj[value];
+        newObj[value] = objNew[value];
     });
     return newObj;
 }
@@ -61,19 +60,19 @@ const people = [
 ];
 
 const getPeople = function (userId) {
-    const arrPeople = [];
-    people.find((user) => {
+    const peopleFriends = people.find((user) => {
         if (user.id === userId) {
-            people.filter((item) => {
-                if (user.friends.includes(item.id) === true) {
-                    arrPeople.push(item);
-                }
-                return null;
-            });
+            return user;
         }
         return null;
     });
-    return arrPeople;
+
+    return people.filter((item) => {
+        if (peopleFriends.friends.includes(item.id) === true) {
+            return item;
+        }
+        return null;
+    });
 };
 
 console.log(getPeople(2));
