@@ -8,15 +8,10 @@ const people = [
 ];
 
 function getPeople(userId) {
-    const array = [];
     const usedObj = people.find(currentObj => currentObj.id === userId);
     if (usedObj.friends !== null) {
-        usedObj.friends.forEach((element) => {
-            // array.push(people[element]);
-            array.push(people.filter(currentObj => currentObj.id === element));
-        });
-        return array;
+        return people.filter(currentObj => usedObj.friends.includes(currentObj.id));
     }
     return null;
 }
-console.log(getPeople(3));
+console.log(getPeople(1));
