@@ -16,7 +16,7 @@ const classes = ['header', 'menu', 'menu_item', 'tabs',
     'tab_item', 'menu', 'link', 'tabs', 'tab_item', 'menu',
     'menu_item', 'menu', 'menu_item'];
 
-function returnObjKey() {
+function returnObjKey(classes) {
     const result = {};
 
     classes.reduce((previousValue, value, i) => {
@@ -28,7 +28,7 @@ function returnObjKey() {
     return result;
 }
 
-console.log(returnObjKey());
+console.log(returnObjKey(classes));
 
 // tesk 3
 const obj = {
@@ -36,19 +36,17 @@ const obj = {
     d: { e: 'f' },
 };
 
-function innerCopy() {
+function innerCopy(obj) {
     const newObj = {};
     Object.keys(obj).forEach((value) => {
         if (typeof (obj[value]) === 'object') {
-            for (let i = 0; i < obj[value]; i++) {
                 innerCopy(obj[value]);
-            }
         }
         newObj[value] = obj[value];
     });
     return newObj;
 }
-const copy = innerCopy();
+const copy = innerCopy(obj);
 console.log(copy);
 console.log(copy.d);
 
