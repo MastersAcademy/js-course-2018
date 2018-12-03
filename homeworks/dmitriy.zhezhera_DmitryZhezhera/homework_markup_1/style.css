@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
-
 @font-face {
   font-family: Bello;
   src: url("./fonts/Bello-Script_6557.ttf");
 }
 
-* {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -91,13 +88,16 @@ body {
   padding-top: 20px;
 }
 
+.dreams-logo-link {
+  text-decoration: none;
+}
+
 .dreams-logo {
   font-family: "Bello", sans-serif;
   font-size: 36px;
   line-height: 18.88px;
   margin: 0;
   color: #FFF;
-  text-decoration: none;
 }
 
 .dreams-navigation__list {
