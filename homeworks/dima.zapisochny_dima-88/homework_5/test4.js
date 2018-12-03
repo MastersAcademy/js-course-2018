@@ -6,28 +6,11 @@ const people = [
     { id: 5, name: 'Edward', friends: [1, 3] },
     { id: 6, name: 'Jeen', friends: [5, 1] },
 ];
-const getPeople = (numbId) => {
-    const id = numbId;
-    const arr = [];
-    if ((Object.keys(people).length) >= numbId) {
-        people.forEach((element) => {
-            if (element.id === id) {
-                if (element.friends !== null) {
-                    element.friends.forEach((friendsId) => {
-                        people.forEach((elem) => {
-                            if (elem.id === friendsId) {
-                                arr.push(elem);
-                            }
-                        });
-                    });
-                    console.log(arr);
-                } else {
-                    console.log('This user has no friends found.');
-                }
-            }
-        });
-    } else {
-        console.log('User with this id not found.');
-    }
-};
-getPeople(1);
+
+function getPeople(Id) {
+    const Obj = people.find(current => current.id === Id);
+    if (Obj.friends !== null) {
+        return people.filter(users => Obj.friends.includes(users.id));
+    } return null;
+}
+console.log(getPeople(4));
