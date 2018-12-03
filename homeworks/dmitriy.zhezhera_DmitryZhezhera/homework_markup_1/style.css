@@ -18,7 +18,7 @@ body {
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 1px 15px;
+  padding: 0 15px;
 }
 
 /*TOOLS*/
@@ -29,20 +29,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #222;
-}
-
-.dreams-title--first {
-  color: #FFF;
-  font-size: 50px;
-  line-height: 63px;
-  text-align: center;
-  padding: 0 190px;
-  margin-top: 134px;
-}
-
-.dreams-title--second {
-  margin-top: 88px;
-  text-align: center;
 }
 
 .dreams-line:after {
@@ -78,6 +64,16 @@ body {
   background-size: cover;
   min-height: 645px;
   color: #FFF;
+  padding: 33px 0;
+}
+
+.dreams-title--first {
+  color: #FFF;
+  font-size: 50px;
+  line-height: 63px;
+  text-align: center;
+  padding: 0 190px;
+  margin-top: 141px;
 }
 
 .dreams-first__heading {
@@ -85,7 +81,6 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: baseline;
-  padding-top: 20px;
 }
 
 .dreams-logo-link {
@@ -132,6 +127,12 @@ body {
 
 .dreams-second {
   min-height: 535px;
+  padding: 88px 0 20px;
+}
+
+.dreams-title--second {
+  margin-top: 0;
+  text-align: center;
 }
 
 .dreams-services {
@@ -242,11 +243,12 @@ body {
   background: url("./img/bg-forth.jpg") no-repeat center;
   background-size: cover;
   min-height: 700px;
+  padding: 50px 0;
 }
 
 .dreams-forth-content {
   max-width: 50%;
-  padding-top: 52px;
+  padding-top: 5px;
 }
 
 .dreams-forth-dreams-forth {
