@@ -3,129 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <title>Your dreams</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400:" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400" rel="stylesheet">
-  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
-  <section class="header">
+  <section class="main darkened-bg">
     <div class="container">
-      <div class="header-top">
-        <a class="logo" href="#"><img src="images/logo.png" alt="Site logo"></a>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      <header class="header">
+        <a class="logo" href="#"><img src="images/logo.png" alt="our logo"></a>
+        <nav class="nav">
+          <a href="#" class="nav__link nav__link--active">Home</a>
+          <a href="#" class="nav__link">Services</a>
+          <a href="#" class="nav__link">Portfolio</a>
+          <a href="#" class="nav__link">About</a>
+          <a href="#" class="nav__link">Team</a>
+          <a href="#" class="nav__link">Contact</a>
         </nav>
-      </div>
-      <h1 class="header__title text-center underline">Build the website of <br>your dreams</h1>
-      <div class="header__subtitle text-center">We are a digital agency that believes in building <br>things that are  meaningful!</div>
+      </header>
+      <h1 class="caption underline">Build the website of <br>your dreams</h1>
+      <p class="slogan">We are a digital agency that believes in building <br>things that are meaningful!</p>
     </div>
   </section>
   <section class="services">
     <div class="container">
-      <h2 class="services__title section-title text-center underline">Core Services</h2>
-      <div class="services__row">
-        <div class="service">
-          <div class="service__img"><img src="images/design.png" alt="Beautiful Designs icon"></div>
-          <h3 class="service__name"><a href="#">Beautiful Designs</a></h3>
-          <p class="service__descr">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
-        </div>
-        <div class="service">
-          <div class="service__img"><img src="images/development.png" alt="Beautiful Designs icon"></div>
-          <h3 class="service__name"><a href="#">web development</a></h3>
-          <p class="service__descr">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
-        </div>
-        <div class="service">
-          <div class="service__img"><img src="images/support.png" alt="Beautiful Designs icon"></div>
-          <h3 class="service__name"><a href="#">24/7 Support</a></h3>
-          <p class="service__descr">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
-        </div>
-      </div>
+      <h2 class="section__title text-center services__title--padd underline ">Core Services</h2>
+        <figure class="content-item column-direction third-part-width services-item centered-items">
+          <div class="icon-holder icon-holder--aling-full-center servirce-item__icon-holder--size"><img class="content-item__icon" src="images/design.png" alt="tool icon"></div>
+          <figcaption class="content-item__text-wrap">
+            <h3 class="content-item__name servirce-item__name text-center">Beautiful Designs</h3>
+            <p class="content-item__descr servirce-item__descr text-center">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+          </figcaption>
+        </figure>
+        <figure class="content-item column-direction third-part-width services-item centered-items">
+          <div class="icon-holder icon-holder--aling-full-center servirce-item__icon-holder--size"><img class="content-item__icon" src="images/development.png" alt="tree icon"></div>
+          <figcaption class="content-item__text-wrap">
+            <h3 class="content-item__name servirce-item__name text-center">web development</h3>
+            <p class="content-item__descr servirce-item__descr text-center">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+          </figcaption>
+        </figure>
+        <figure class="content-item column-direction third-part-width services-item centered-items">
+          <div class="icon-holder icon-holder--aling-full-center servirce-item__icon-holder--size"><img class="content-item__icon" src="images/support.png" alt="lifebuoy icon"></div>
+          <figcaption class="content-item__text-wrap">
+            <h3 class="content-item__name servirce-item__name text-center">24/7 Support</h3>
+            <p class="content-item__descr servirce-item__descr text-center">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+          </figcaption>
+        </figure>
     </div>
   </section>
-  <section class="expertise">
-    <div class="container">
-      <div class="grid">
-        <div class="expertise-content">
-          <h2 class="section-title">Other Expertise</h2>
-          <p class="expertise__text section-text">Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt consequat sem cure  digni ssim.</p>
-          <div class="expertise-feautures feautures">
-            <div class="feauture-item">
-              <div class="feauture-item__img-wrap"><img class="feauture-item__img" src="images/gear-icon.png" alt="Setup icon"></div>
-              <div class="text-wrapper">
-                <h3 class="feauture-item__title">Custom setup</h3>
-                <p class="feauture-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-              </div>
-            </div>
-            <div class="feauture-item">
-              <div class="feauture-item__img-wrap"><img class="feauture-item__img" src="images/cloud-icon.png" alt="Cloud icon"></div>
-              <div class="text-wrapper">
-                <h3 class="feauture-item__title">Cloud control</h3>
-                <p class="feauture-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-              </div>
-            </div>
-            <div class="feauture-item">
-              <div class="feauture-item__img-wrap"><img class="feauture-item__img" src="images/star-icon.png" alt="Support icon"></div>
-              <div class="text-wrapper">
-                <h3 class="feauture-item__title">All star support team</h3>
-                <p class="feauture-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-              </div>
-            </div>
-            <div class="feauture-item">
-              <div class="feauture-item__img-wrap"><img class="feauture-item__img" src="images/lock-icon.png" alt="Custom setup icon"></div>
-              <div class="text-wrapper">
-                <h3 class="feauture-item__title">All star support team</h3>
-                <p class="feauture-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-              </div>
-            </div>
-          </div>
-          <a class="button" href="#">Learn more</a>
-        </div>
-        <div class="expertise-background-image-wrapper"><img class="expertise__background-image" src="images/expertise-bg.jpg" alt=""></div>
+  <section class="expertise bg-color--second hide-rest-of-bg-img">
+    <div class="container flex">
+      <div class="expertise__content--width expertise__content--padd">
+        <h2 class="section__title expertise__title">Other Expertise</h2>
+        <p class="text-fs-medium text-pb-25">Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt consequat sem cure  digni ssim. </p>
+        <figure class="content-item half-part-width content-item--padd">
+          <div class="icon-holder expertise-item__icon-holder--size"><img class="content-item__icon icon--align-top" src="images/gear-icon.png" alt="gear icon"></div>
+          <figcaption class="content-item__text-wrap portfolio__text-bg">
+            <h3 class="content-item__name">Custom setup</h3>
+            <p class="content-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+          </figcaption>
+        </figure>
+        <figure class="content-item half-part-width content-item--padd">
+          <div class="icon-holder expertise-item__icon-holder--size"><img class="content-item__icon icon--align-top" src="images/cloud-icon.png" alt="cloud icon"></div>
+          <figcaption class="content-item__text-wrap">
+            <h3 class="content-item__name">Custom setup</h3>
+            <p class="content-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+          </figcaption>
+        </figure>
+        <figure class="content-item half-part-width content-item--padd">
+          <div class="icon-holder expertise-item__icon-holder--size"><img class="content-item__icon icon--align-top" src="images/star-icon.png" alt="star icon"></div>
+          <figcaption class="content-item__text-wrap">
+            <h3 class="content-item__name">Custom setup</h3>
+            <p class="content-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+          </figcaption>
+        </figure>
+        <figure class="content-item half-part-width content-item--padd">
+          <div class="icon-holder expertise-item__icon-holder--size"><img class="content-item__icon icon--align-top" src="images/lock-icon.png" alt="lock icon"></div>
+          <figcaption class="content-item__text-wrap">
+            <h3 class="content-item__name">Custom setup</h3>
+            <p class="content-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+          </figcaption>
+        </figure>
+        <a href="#" class="button expertise__button--margin">Learn more</a>
       </div>
+      <aside class="pos-rel expertise__side-bg--width"><img class="absolute-full-height-image" src="images/expertise-bg.jpg"" alt=""></aside>
     </div>
   </section>
-  <section class="portfolio">
-    <div class="container">
-      <div class="grid">
-        <div class="portfolio-content">
-          <h2 class="portfolio__title section-title">Amazing Portfolio</h2>
-          <div class="portfolio-feautures feautures">
-            <p class="portfolio__text section-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
-            <p class="portfolio__text section-text">Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
-            <div class="feauture-item feauture-item--block">
-              <div class="feauture-item__img-wrap"><img class="feauture-item__img" src="images/gear-icon.png" alt="Setup icon"></div>
-              <div class="text-wrapper">
-                <h3 class="feauture-item__title">Sail Away Your Worries</h3>
-                <p class="feauture-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-              </div>
-            </div>
-            <div class="feauture-item feauture-item--block">
-              <div class="feauture-item__img-wrap"><img class="feauture-item__img" src="images/cloud-icon.png" alt="Star icon"></div>
-              <div class="text-wrapper">
-                <h3 class="feauture-item__title">All-star support team</h3>
-                <p class="feauture-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-              </div>
-            </div>
-            <div class="feauture-item feauture-item--block">
-              <div class="feauture-item__img-wrap"><img class="feauture-item__img" src="images/star-icon.png" alt="Service icon"></div>
-              <div class="text-wrapper">
-                <h3 class="feauture-item__title">fully Integrated service</h3>
-                <p class="feauture-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-              </div>
-            </div>
-          </div>
+  <section class="portfolio hide-rest-of-bg-img">
+    <div class="container flex">
+      <div class="portfolio__content--width portfolio__content--padd">
+        <h2 class="section__title portfolio__title--padd">Amazing Portfolio</h2>
+        <div class="portfolio__text-wrap portfolio__text-bg">
+          <p class="text-fs-medium text-pb-45">Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt consequat sem cure  digni ssim. </p>
+          <p class="text-fs-medium">Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt consequat sem cure  digni ssim. </p>
+          <figure class="content-item content-item--padd">
+            <div class="icon-holder portfolio-item__icon-holder--size"><img class="content-item__icon icon--align-top" src="images/gear-icon.png" alt="gear icon"></div>
+            <figcaption class="content-item__text-wrap">
+              <h3 class="content-item__name">Sail Away Your Worries</h3>
+              <p class="content-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+            </figcaption>
+          </figure>
+          <figure class="content-item content-item--padd">
+            <div class="icon-holder portfolio-item__icon-holder--size"><img class="content-item__icon icon--align-top" src="images/star-icon.png" alt="gear icon"></div>
+            <figcaption class="content-item__text-wrap">
+              <h3 class="content-item__name">All-star support team</h3>
+              <p class="content-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+            </figcaption>
+          </figure>
+          <figure class="content-item content-item--padd">
+            <div class="icon-holder portfolio-item__icon-holder--size"><img class="content-item__icon icon--align-top" src="images/pie-icon.png" alt="gear icon"></div>
+            <figcaption class="content-item__text-wrap">
+              <h3 class="content-item__name">fully Integrated service</h3>
+              <p class="content-item__descr">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+            </figcaption>
+          </figure>
         </div>
-        <div class="portfolio-background-image-wrapper"><img class="portfolio__background-image" src="images/portfolio-bg.png" alt="Section background"></div>
       </div>
+      <aside class="pos-rel portfolio__side-bg--width"><img class="absolute-block-vertical-centering" src="images/portfolio-bg.png" alt=""></aside>
     </div>
   </section>
 </body>
