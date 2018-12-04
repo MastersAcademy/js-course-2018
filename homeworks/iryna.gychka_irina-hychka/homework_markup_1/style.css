@@ -393,10 +393,6 @@ h4 {
   justify-content: center;
 }
 
-.odd .about-photo {
-  text-align: right;
-}
-
 .info-odd {
   order: 2;
   margin: 0 0 0 46px;
@@ -427,18 +423,19 @@ h4 {
   max-width: 304px;
 }
 
+.about-photo {
+  position: relative;
+  width: 527px;
+  padding: 0 0 94px;
+}
+
 .odd .about-photo {
+  text-align: right;
   order: 1;
 }
 
 .even .about-photo {
   order: 2;
-}
-
-.about-photo {
-  position: relative;
-  width: 527px;
-  padding: 0 0 94px;
 }
 
 .about-photo img {
@@ -447,8 +444,8 @@ h4 {
   border-radius: 91px;
 }
 
-.about-photo::after {
-  content: '';
+.about-photo:after {
+  content: " ";
   position: absolute;
   bottom: 0;
   width: 3px;
@@ -456,11 +453,11 @@ h4 {
   background-color: #F1F1F1;
 }
 
-.even .about-photo::after {
+.even .about-photo:after {
   left: 90px;
 }
 
-.odd .about-photo::after {
+.odd .about-photo:after {
   right: 90px;
 }
 
