@@ -15,14 +15,14 @@ function subtractTwenty(num) {
 // Task 1.1 Callbacks
 
 function logNumbers1(num) {
-    setTimeout((callback1) => {
-        setTimeout((callback2) => {
-            setTimeout((callback3) => {
-                console.log(subtractTwenty(callback3));
-            }, 1000, multiplyByThree(callback2));
-            console.log(multiplyByThree(callback2));
-        }, 1000, plusTen(callback1));
-        console.log(plusTen(callback1));
+    setTimeout((firstStep) => {
+        setTimeout((secondStep) => {
+            setTimeout((thirdStep) => {
+                console.log(subtractTwenty(thirdStep));
+            }, 1000, multiplyByThree(secondStep));
+            console.log(multiplyByThree(secondStep));
+        }, 1000, plusTen(firstStep));
+        console.log(plusTen(firstStep));
     }, 1000, num);
 }
 
