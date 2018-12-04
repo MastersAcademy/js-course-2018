@@ -2,7 +2,14 @@ const fs = require('fs');
 
 const EARTH_POPULATION = 7661219098;
 const OTHER = 0.5;
-const countries = JSON.parse(fs.readFileSync('countries.json'));
+let countries = null;
+
+try {
+    countries = JSON.parse(fs.readFileSync('countries.json'));
+} catch (err) {
+    console.log(err.message);
+    process.exit(-1);
+}
 
 const prepared = [];
 

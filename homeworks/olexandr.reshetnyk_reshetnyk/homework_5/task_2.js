@@ -5,16 +5,15 @@ const classes = ['header', 'menu', 'menu_item', 'tabs',
 function getAmountsOfOccurrencesOfElements(array) {
     const resObj = {};
 
-    function occurencesAmount(neededElem) {
-        return array.filter(elem => elem === neededElem).length;
-    }
-
     array.forEach((elem) => {
-        if (!(elem in resObj)) {
-            resObj[elem] = occurencesAmount(elem);
+        if (!resObj[elem]) {
+            resObj[elem] = 1;
+        } else {
+            resObj[elem]++;
         }
     });
 
     return resObj;
 }
+
 console.log(getAmountsOfOccurrencesOfElements(classes));
