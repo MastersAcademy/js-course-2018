@@ -2,6 +2,7 @@ body {
   font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
+  font-size: 14px;
 }
 
 * {
@@ -107,17 +108,9 @@ header {
   color: rgba(34, 34, 34, 255);
 }
 
-.title-section-fix {
+.title-section_fix {
   text-align: center;
   position: relative;
-}
-
-.section-container {
-  width: 1400px;
-  margin-left: 300px;
-  border: 1px solid transparent;
-  display: flex;
-  flex-direction: row;
 }
 
 .section-padding {
@@ -133,7 +126,7 @@ header {
   justify-content: center;
 }
 
-.service-imgThrirdBlock {
+.service-img_section {
   margin-top: 25px;
   width: 30px;
   height: 30px;
@@ -141,16 +134,13 @@ header {
 
 .service-paragraph {
   text-transform: none;
-  font-size: 14px;
   color: #CCC;
 }
 
-
-.service-titleThrirdBlock {
+.service-title_block {
   margin-top: 10px;
   padding: 12px;
   text-transform: uppercase;
-  font-size: 14px;
   color: #000;
 }
 
@@ -159,21 +149,14 @@ header {
   flex-direction: row;
 }
 
-.button {
-  position: relative;
-}
-
-.imgButton {
-  position: absolute;
-}
-
-.textButton {
+.text-button {
   position: absolute;
   color: #000;
-  margin-left: 40px;
+  margin-top: -45px;
+  margin-left: 35px;
 }
 
-.service-paragraphFourBlock {
+.service-paragraph_four_section {
   margin-top: 5px;
   padding: 10px;
   text-transform: none;
@@ -181,13 +164,13 @@ header {
   color: #CCC;
 }
 
-.bottomText {
+.bottom-text_third_section {
   display: flex;
   flex-direction: column;
   background: url("./images/background3.png") 30% 30% no-repeat;
 }
 
-.imageFlex {
+.image-flex {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -203,12 +186,12 @@ header {
   margin-left: 410px;
 }
 
-.center {
+.center-flex {
   display: flex;
   justify-content: center;
 }
 
-.margin {
+.margin-top {
   margin-top: 100px;
 }
 
