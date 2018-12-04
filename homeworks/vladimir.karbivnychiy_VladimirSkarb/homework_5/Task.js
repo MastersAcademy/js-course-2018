@@ -1,4 +1,4 @@
-//task1
+// task1
 const array1 = [10, -10, 10, -10, 10];
 const array2 = [0, 0, 0, 0, 0];
 const array3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -8,15 +8,15 @@ function arraySum(array) {
     return array.map((item) => {
         num += item;
         return num;
-    })
+    });
 }
 
 console.log(arraySum(array1));
 console.log(arraySum(array2));
 console.log(arraySum(array3));
 
-//task2
-let classes = ['header', 'menu', 'menu_item', 'tabs',
+// task2
+const classes = ['header', 'menu', 'menu_item', 'tabs',
     'tab_item', 'menu', 'link', 'tabs', 'tab_item', 'menu',
     'menu_item', 'menu', 'menu_item'];
 
@@ -34,7 +34,7 @@ function sumElements(classArray) {
 
 console.log(sumElements(classes));
 
-//task3
+// task3
 const obj = { b: 'c', d: { e: 'f' } };
 
 function interCopy(objectCopy) {
@@ -48,9 +48,9 @@ function interCopy(objectCopy) {
     return result;
 }
 
-console.log(interCopy(obj))
+console.log(interCopy(obj));
 
-//task4
+// task4
 const people = [
     { id: 1, name: 'Nick', friends: [2, 5, 6] },
     { id: 2, name: 'John', friends: [1, 3] },
