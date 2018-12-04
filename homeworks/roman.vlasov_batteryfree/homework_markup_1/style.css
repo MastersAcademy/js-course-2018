@@ -55,7 +55,7 @@ body {
   display: inline-block;
 }
 
-.baner-title-txt:after {
+.line-blue:after {
   width: 80px;
   height: 1px;
   background-color: #35C2F8;
@@ -135,6 +135,20 @@ body {
   height: auto;
 }
 
+.portfolio-box_button {
+  margin-left: 150px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 45px;
+  background-color: #FFF;
+  border: 1px solid #35C2F8;
+  border-radius: 70px;
+  font-size: 10px;
+  color: #222;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .portfolio-image {
   background-image: url("images/ipad.png");
   background-repeat: no-repeat;
@@ -148,15 +162,44 @@ body {
 }
 
 .text-left {
-  display: block;
-  width: 30%;
+  width: 35%;
   text-align: right;
-
 }
 
 .text-right {
-  display: block;
-  width: 30%;
+  width: 35%;
   text-align: left;
-
 }
+
+.container-image-text-left {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-right: 39%;
+  margin-bottom: 50px;
+}
+
+.container-image-text-right {
+  display: flex;
+  align-items: center;
+  margin-left: 39%;
+  margin-bottom: 50px;
+}
+
+.about-image {
+  width: 120px;
+  margin: 0 50px;
+  border-radius: 50%;
+  border: 3px solid #C7C7C7;
+}
+
+.about-text-circle {
+  margin: 70px auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #35C2F8;
+  color: #FFF;
+  padding: 27px;
+  border: 3px solid #C7C7C7;
+  align-items: center;}
