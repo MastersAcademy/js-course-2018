@@ -97,6 +97,11 @@ body {
   text-transform: uppercase;
 }
 
+.text-bold {
+  font-weight: 600;
+  font-size: 14px;
+}
+
 .text {
   color: #888;
   font-size: 12px;
@@ -115,6 +120,7 @@ body {
 
 .container-flex {
   display: flex;
+  justify-content: center;
 }
 
 .image-icon {
@@ -203,3 +209,28 @@ body {
   padding: 27px;
   border: 3px solid #C7C7C7;
   align-items: center;}
+
+.team-image {
+  width: 170px;
+  margin: 20px 20px 0;}
+
+.pictogram-twit {
+  padding: 10px;
+  background-color: #000;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.pictogram-fac {
+  padding: 10px 15px;
+  background-color: #000;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.pictogram-pin {
+  padding: 10px 13px;
+  background-color: #000;
+  margin: 10px;
+  border-radius: 50%;
+}
