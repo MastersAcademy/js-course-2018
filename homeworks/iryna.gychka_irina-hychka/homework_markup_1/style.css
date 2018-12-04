@@ -495,10 +495,10 @@ h4 {
 }
 
 .photo-box {
-  width: 220px;
-  height: 221px;
+  display: block;
+  width: 100%;
+  max-width: 220px;
   margin: 0 0 26px;
-  background-color: #111;
   border: 7px solid #FFF;
   border-radius: 121px;
 }
