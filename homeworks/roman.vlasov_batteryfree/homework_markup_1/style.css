@@ -42,6 +42,18 @@ body {
   color: #FFF;
 }
 
+.baner-link:hover {
+  background-color: rgb(180, 180, 180);
+  color: #000;
+  border-radius: 15px;
+}
+
+.baner-link:focus {
+  background-color: rgb(180, 180, 180);
+  color: #000;
+  border-radius: 15px;
+}
+
 .baner-text {
   padding: 100px 0 150px;
 }
@@ -126,12 +138,18 @@ body {
 .image-icon {
   width: 40px;
   height: 40px;
-  margin: 20px 20px 40px 20px;
+  margin: 20px 20px 40px;
   float: left;
 }
 
 .container-other {
   width: 50%;
+}
+
+.portfolio-bground {
+  background-position-y: 50px;
+  background-image: url("images/portbground.png");
+  background-repeat: no-repeat;
 }
 
 .other-image {
