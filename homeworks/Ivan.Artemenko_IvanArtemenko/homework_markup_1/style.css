@@ -122,6 +122,10 @@
   background-color: #F7F7F7;
 }
 
+.expertise-item {
+  list-style: none;
+}
+
 .conteiner {
   position: relative;
 }
@@ -170,6 +174,10 @@
   position: absolute;
   top: 250px;
   left: 0;
+}
+
+.custom {
+  padding-left: 10px;
 }
 
 .cloud {
@@ -226,6 +234,7 @@
 .amazing-portfolio {
   position: relative;
   padding-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .images-background-users {
@@ -260,26 +269,12 @@
   width: 530px;
 }
 
-.images-fpom-text-1 {
-  width: 420px;
+.images-fpom-text__nav {
   position: absolute;
-  top: 280px;
+  top: 57%;
   left: 0;
-}
-
-.images-fpom-text-2 {
   width: 420px;
-  position: absolute;
-  top: 380px;
-  left: 0;
-}
-
-.images-fpom-text-3 {
-  width: 420px;
-  position: absolute;
-  top: 480px;
-  left: 0;
-  padding-bottom: 50px;
+  list-style: none;
 }
 
 .images-fpom-text_h3 {
@@ -292,7 +287,7 @@
   padding-left: 33px;
   line-height: 1.5em;
   font-size: 14px;
-  color: #777
+  color: #777;
 }
 
 .portfolio-images {
@@ -306,4 +301,106 @@
 .portfolio-images-img {
   max-width: 100%;
   height: auto;
+}
+
+/*                       5 bloc  */
+
+.picture {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+  list-style: none;
+}
+
+.styles-for-the-image {
+  width: 100%;
+  margin: -1%;
+}
+
+/*                       6 bloc  */
+
+.info {
+  margin-top: 50px;
+}
+
+.vertical-line {
+  background: #35C2F8;
+  display: block;
+  border-radius: 5px;
+  width: 3px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.row1 {
+  display: grid;
+  grid-template-columns: 41% 59%;
+  margin-bottom: -2%;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 59% 41%;
+  margin-top: -2%;
+  margin-bottom: -2%;
+}
+
+.img-in-txt-right {
+  text-align: right;
+}
+
+.img-in-txt-h3 {
+  text-transform: uppercase;
+  color: #222;
+  font-size: 16px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.img-in-txt-p {
+  color: #777;
+  line-height: 1.5em;
+  font-size: 14px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.row2 :nth-child(1) {
+  grid-column: 2;
+  grid-row: 2
+}
+
+.row2 :nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.picture-info-center {
+  margin-left: 70%;
+  margin-top: 3%;
+}
+
+.picture-info {
+  margin-left: 2%;
+}
+
+.circle {
+  background: #35C2F8;
+  display: block;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.text-in-circle {
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  text-align: center;
+  text-transform: uppercase;
 }
