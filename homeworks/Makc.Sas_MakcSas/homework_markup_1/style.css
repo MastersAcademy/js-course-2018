@@ -33,7 +33,7 @@ body {
   justify-content: flex-end;
 }
 
-.menu_navigation--link {
+.menu__navigation--link {
   margin-right: 50px;
   line-height: 20px;
   text-transform: uppercase;
@@ -42,7 +42,7 @@ body {
   color: #FFF;
 }
 
-.menu_navigation--link:hover {
+.menu__navigation--link:hover {
   color: rgb(48, 27, 238);
 }
 
@@ -255,13 +255,13 @@ body {
   opacity: .5;
 }
 
-.page_five_position_left {
+.content__position--left {
   padding-top: 50px;
-  padding-left: 128px;
+  padding-left: 13%;
   display: flex;
 }
 
-.page_five_title_text_left {
+.page_five_title__text--left {
   font-size: 16px;
   text-transform: uppercase;
   color: #000;
@@ -269,7 +269,7 @@ body {
   padding-right: 20px;
 }
 
-.page_five_subtitle_text_left {
+.page_five_subtitle__text--left {
   color: #777;
   text-align: right;
   padding-right: 20px;
@@ -281,27 +281,27 @@ body {
   height: 135px;
 }
 
-.page_five_position_right {
+.content__position--right {
   padding-top: 50px;
-  padding-left: 443px;
+  padding-left: 44%;
   display: flex;
 }
 
-.page_five_title_text_right {
+.page_five_title__text--right {
   font-size: 16px;
   text-transform: uppercase;
   color: #000;
   padding-left: 20px;
 }
 
-.page_five_subtitle_text_right {
+.page_five_subtitle__text--right {
   color: #777;
   padding-left: 20px;
   padding-top: 20px;
 }
 
-.page_five_button {
-  margin-left: 443px;
+.page__five--button {
+  margin-left: 44%;
   margin-top: 50px;
   width: 135px;
   height: 135px;
@@ -312,6 +312,6 @@ body {
   border: 7px solid #F1F1F1;
 }
 
-.page_five_button:hover {
+.page__five--button:hover {
   cursor: pointer;
 }
