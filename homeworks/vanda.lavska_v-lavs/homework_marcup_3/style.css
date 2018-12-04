@@ -580,21 +580,31 @@ body {
 }
 
 .text--team {
+  display: inline-block;
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 .social-list {
-  max-width: 170px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  max-width: 170px;
   margin: 0 auto;
+}
+
+.social-list__item {
+  margin-right: 10px;
+}
+
+.social-list__item:last-child {
+  margin-right: 0;
 }
 
 .social-list__item__link {
   display: flex;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   color: #FFF;
   background-color: #000;
@@ -609,5 +619,6 @@ body {
 
 .fab {
   margin: auto;
+  font-size: 19px;
 }
 
