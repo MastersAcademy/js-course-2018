@@ -14,7 +14,7 @@ function minus(number) {
     return number - 20;
 }
 
-//Callback
+// Callback
 function logNumbers(number) {
     setTimeout(() => {
         setTimeout((number1) => {
@@ -27,7 +27,7 @@ function logNumbers(number) {
 
 logNumbers(50);
 
-//Promise
+// Promise
 function funcPromise(number, result) {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -44,11 +44,11 @@ function logNumbersPromise(number) {
 
 logNumbersPromise(50);
 
-//Async function
+// Async function
 async function logNumbersAsync(number) {
     const num1 = await funcPromise(number, plus);
     const num2 = await funcPromise(num1, multiply);
-    await funcPromise(num2, minus)
+    await funcPromise(num2, minus);
 }
 
 logNumbersAsync(50);
