@@ -41,8 +41,8 @@ function objCopy(obj) {
     const result = {};
     const objKeys = Object.keys(obj);
     objKeys.forEach((el) => {
-        if (typeof el === 'object') {
-            objCopy(el);
+        if (typeof obj[el] === 'object') {
+            result[el] = objCopy(obj[el]);
         } else {
             result[el] = obj[el];
         }
@@ -66,10 +66,8 @@ const people = [
 
 function getFrendById(id) {
     return people.find((el) => {
-        if (el.id !== id) {
-            return false;
-        }
-        return el;
+        const man = el.id !== id ? false : el;
+        return man;
     });
 }
 
@@ -78,7 +76,7 @@ function getFrendsById(id) {
     if (friendsIds === null) {
         return [];
     }
-    return friendsIds.map(friendsId => getFrendById(friendsId));
+    return people.filter(friend => friendsIds.includes(friend.id));
 }
 
 console.log(getFrendsById(5));
