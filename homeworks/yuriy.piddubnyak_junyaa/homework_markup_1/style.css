@@ -13,6 +13,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 1024px 659px;
+  font-size: 14px;
 }
 
 .top {
@@ -148,7 +149,6 @@
   background-image: url("img/2.jpg");
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: 300px 600px;
   height: 600px;
   margin-top: 100px;
 }
