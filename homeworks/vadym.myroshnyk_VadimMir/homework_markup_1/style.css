@@ -21,14 +21,14 @@ header {
   margin: 0 auto;
 }
 
-.logo {
+.logo__img {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin: 32px;
 }
 
-.main-menu {
+.main__menu {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -41,19 +41,19 @@ header {
   display: block;
 }
 
-.menu li {
+.manu__item {
   float: left;
   display: block;
   margin-right: 40px;
 }
 
-.menu a {
+.menu__link {
   color: #FFF;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.h2_text {
+.h2__text {
   text-align: center;
   margin-top: 100px;
   font-size: 20px;
@@ -61,7 +61,7 @@ header {
   margin-bottom: 140px;
 }
 
-.title-header {
+.title__header {
   display: flex;
   text-transform: uppercase;
   justify-content: center;
@@ -72,7 +72,13 @@ header {
   position: relative;
 }
 
-.main-services {
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__services {
   margin-top: 100px;
   display: flex;
   align-items: center;
@@ -80,12 +86,12 @@ header {
   margin-bottom: 100px;
 }
 
-.service-item {
+.service__item {
   text-align: center;
   margin: 20px;
 }
 
-.service-title {
+.service__title {
   text-transform: uppercase;
   font-size: 16px;
   color: #000;
@@ -101,43 +107,39 @@ header {
   position: absolute;
 }
 
-.title-section {
+.title__section {
   text-transform: uppercase;
   margin-top: 70px;
   font-size: 40px;
   color: rgba(34, 34, 34, 255);
 }
 
-.title-section_fix {
+.title__center {
   text-align: center;
   position: relative;
 }
 
-.section-padding {
-  padding: 100px;
+.margin__top {
+  margin-top: 100px;
 }
 
-.paragraph-margin {
-  margin-top: 20px;
-}
-
-.container-fix {
+.color__section {
   background-color: #F7F7F7;
-  justify-content: center;
 }
 
-.service-img_section {
+.service__img {
   margin-top: 25px;
   width: 30px;
   height: 30px;
 }
 
-.service-paragraph {
+.service__paragraph {
+  margin-top: 10px;
   text-transform: none;
   color: #CCC;
 }
 
-.service-title_block {
+.expertise__service {
   margin-top: 10px;
   padding: 12px;
   text-transform: uppercase;
@@ -149,53 +151,34 @@ header {
   flex-direction: row;
 }
 
-.text-button {
-  position: absolute;
-  color: #000;
-  margin-top: -45px;
-  margin-left: 35px;
-}
-
-.service-paragraph_four_section {
-  margin-top: 5px;
-  padding: 10px;
-  text-transform: none;
-  font-size: 14px;
-  color: #CCC;
-}
-
-.bottom-text_third_section {
+.img__background {
   display: flex;
   flex-direction: column;
   background: url("./images/background3.png") 30% 30% no-repeat;
 }
 
-.image-flex {
+.image__flex {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
 
-.paragraph-flex {
+.paragraph__flex {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
 }
 
-.left {
+.margin__left {
   margin-left: 410px;
 }
 
-.center-flex {
+.center__flex {
   display: flex;
   justify-content: center;
 }
 
-.margin-top {
-  margin-top: 100px;
-}
-
-.margin-fix {
+.margin__fix {
   margin-right: 295px;
 }
 
