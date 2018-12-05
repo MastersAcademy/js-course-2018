@@ -198,3 +198,14 @@ header {
 .margin-fix {
   margin-right: 295px;
 }
+
+.button {
+  border-radius: 30px;
+  background-color: 000;
+  color: #111;
+  padding: 15px 20px 13px; 
+  cursor: pointer;
+  border: 1px solid black;
+  font-size: 16px;
+  text-transform: uppercase;
+}
