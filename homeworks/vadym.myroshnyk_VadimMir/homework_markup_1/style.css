@@ -201,11 +201,11 @@ header {
 
 .button {
   border-radius: 30px;
-  background-color: 000;
+  background-color: #FFF;
   color: #111;
-  padding: 15px 20px 13px; 
+  padding: 15px 20px 13px;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid #000;
   font-size: 16px;
   text-transform: uppercase;
 }
