@@ -1,0 +1,197 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 1024px;
+  margin: auto;
+}
+
+.title {
+  background-image: url("images/title-background.png");
+  background-size: cover;
+  width: 1024px;
+  height: 480px;
+}
+
+.main-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.link {
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.topic {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 40px;
+  margin-top: 70px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+}
+
+.line {
+  display: block;
+  margin: 0 auto;
+}
+
+.phrase {
+  text-align: center;
+  color: #CCC;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.services {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description {
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sentence {
+  color: #888;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.serv-block {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  margin-bottom: 100px;
+}
+
+.group-elements {
+  text-align: center;
+  width: 30%;
+}
+
+.service {
+  width: 1024px;
+  margin: auto;
+}
+
+/* MU2*/
+
+/*other*/
+
+.other {
+  color: #222;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.expertise-part {
+  display: flex;
+  background-color: #F7F7F7;
+}
+
+.expertise1 {
+  display: flex;
+  align-items: baseline;
+}
+
+.element2 {
+  padding-right: 10px;
+}
+
+.name-of-block {
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.words {
+  color: #888;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*portfolio*/
+
+.portfolio-part {
+  display: flex;
+}
+
+.portfolio-block {
+  display: flex;
+  align-items: baseline;
+}
+
+.portfolio-text {
+  width: 50%;
+}
+
+.ipad {
+  width: 512px;
+  hight: auto;
+  margin-top: 100px;
+}
+
+.head-portfolio {
+  color: #222;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+
+.portfolio-description {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.name-of-porfolio {
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.portfolio-words {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.gallary-pic {
+  width: 335px;
+  height: auto;
+}
