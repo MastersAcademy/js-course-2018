@@ -16,7 +16,8 @@ function User() {
                 return phone;
             },
             set(phoneNumber) {
-                const hasLeadingPlus = /^\D*\+/g.test(phoneNumber.trim());
+                const leadingPlus = /^\D*\+/g;
+                const hasLeadingPlus = leadingPlus.test(phoneNumber.trim());
                 const number = phoneNumber.trim().replace(/\D/g, '');
                 phone = hasLeadingPlus ? `+${number}` : number;
             },
