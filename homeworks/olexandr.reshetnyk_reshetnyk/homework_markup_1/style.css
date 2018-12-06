@@ -22,7 +22,7 @@ p {
 
 /****** SECTION MAIN ******/
 
-.main {
+.main-section {
   background-color: #625E5D;
   background-image: url("images/background.jpg");
   background-repeat: no-repeat;
@@ -54,7 +54,7 @@ p {
   justify-content: space-between;
 }
 
-.logo {
+.logo-link {
   display: flex;
 }
 
@@ -327,4 +327,176 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
-/****** SECTION PORTFOLIO END******/
+/****** SECTION PORTFOLIO END ******/
+
+/****** SECTION SAMPLES ******/
+
+.samples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sample {
+  flex-grow: 1;
+  width: 33%;
+}
+
+.sample__grow:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  transition: all .3s ease;
+  box-shadow: 0 0 10px 1px #000;
+}
+
+.sample__grow--right:hover {
+  transform: translate(10%) scale(1.2);
+}
+
+.sample__grow--left:hover {
+  transform: translate(-10%) scale(1.2);
+}
+
+.ratio-inner {
+  position: relative;
+  height: 0;
+}
+
+.ratio-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* calculated for 468x351 */
+
+.proportion-4-3 {
+  padding-top: 75%;
+}
+
+.sample__bg-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/****** SECTION SAMPLES END ******/
+
+/****** SECTION ABOUT-US ******/
+
+.about-us {
+  padding-top: 100px;
+  padding-bottom: 105px;
+}
+
+.about-us__title--padd {
+  padding-bottom: 28px;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.timeline--padd {
+  padding: 90px 0 0;
+}
+
+.timeline-item {
+  display: flex;
+}
+
+.timeline-item:not(:last-child) {
+  min-height: 276px;
+}
+
+.timeline-item--right {
+  justify-content: flex-end;
+}
+
+.timeline-item--no-text-container {
+  justify-content: center;
+}
+
+.timeline__text-container {
+  width: 40%;
+  box-sizing: border-box;
+}
+
+.timeline__text-container--right {
+  order: 1;
+}
+
+.timeline__text-container--padd-right {
+  padding-right: 40px;
+}
+
+.timeline__text-container--padd-left {
+  padding-left: 40px;
+}
+
+.timeline__circle-container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline__circle {
+  width: 168px;
+  height: 168px;
+  border: 7px solid #F1F1F1;
+  border-radius: 100%;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.timeline__circle--blue-circle {
+  background-color: #35C2F8;
+}
+
+.timeline__circle--text {
+  color: #FFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .7);
+  text-align: center;
+}
+
+.vertical-line {
+  position: relative;
+}
+
+.vertical-line:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F1F1F1;
+}
+
+.timeline__header {
+  color: #222;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.timeline__img {
+  width: 100%;
+  height: auto;
+}
+
+
+/****** SECTION ABOUT-US END ******/
