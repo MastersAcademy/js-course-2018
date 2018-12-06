@@ -1,0 +1,271 @@
+body {
+  background-color: #FFF;
+  font-family: "Open Sans", "sans-serif";
+  width: 1024px;
+  margin: auto;
+}
+
+.main {
+  background-image: url("images/background-title.png");
+  background-color: rgba(0, 0, 0, .6);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.nav-main__link {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.nav-main__link:hover {
+  background-color: rgb(180, 180, 180);
+  color: #000;
+  border-radius: 15px;
+}
+
+.nav-main__link:focus {
+  background-color: rgb(180, 180, 180);
+  color: #000;
+  border-radius: 15px;
+}
+
+.main-title__txt {
+  width: 544px;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.line-blue:after {
+  width: 80px;
+  height: 1px;
+  background-color: #35C2F8;
+  display: block;
+  content: "";
+  margin: auto;
+  margin-top: 20px;
+}
+
+.main__txt {
+  width: 350px;
+  color: #CCC;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+/*2 block*/
+
+.sevrices {
+  margin-top: 50px;
+}
+
+.services-title__txt {
+  color: #222;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services-box {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.services-box__figure {
+  text-align: center;
+}
+
+.services-box_img {
+  width: 15%;
+}
+
+.services-box-title__txt {
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.services-box__txt {
+  color: #888;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/*3 block*/
+
+.other {
+  background-color: #F7F7F7;
+  display: flex;
+}
+
+.other-title__txt {
+  color: #222;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.other__txt {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  width: 600px;
+  margin-left: 40px;
+}
+
+.other-box {
+  margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.other-box__figure {
+  width: 40%;
+  display: flex;
+  align-items: baseline;
+  margin-left: 20px;
+}
+
+.other-box__img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.other-box-title__txt {
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.other-box__txt {
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.other-box2__img {
+  width: 255px;
+  height: 470px;
+}
+
+.portfolio-box_button {
+  margin-left: 150px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 45px;
+  background-color: #FFF;
+  border: 1px solid #35C2F8;
+  border-radius: 70px;
+  font-size: 10px;
+  color: #222;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio-box_but:hover {
+  background-color: #35C2F8;
+  color: #FFF;
+}
+
+/*4 block*/
+
+.portfolio {
+  display: flex;
+}
+
+.portfolio-box {
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.portfolio-box-back {
+  background-image: url("images/background-porto.png");
+  background-repeat: no-repeat;
+}
+
+.portfolio-title__txt {
+  color: #222;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio__txt {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.portfolio-box-title__txt {
+  color: #222;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio-box__txt {
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.portfolio-box__figure {
+  display: flex;
+  align-items: baseline;
+}
+
+.portfolio-box__img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.portfolio__img {
+  padding-top: 150px;
+  width: 500px;
+}
+
+.portfolio-albom__img {
+  width: 335px;
+}
+
+.portfolio-albom {
+  display: flex;
+  justify-content: space-between;
+}
