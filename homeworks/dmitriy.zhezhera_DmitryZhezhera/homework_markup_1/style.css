@@ -87,6 +87,10 @@ body {
   text-decoration: none;
 }
 
+.dreams-logo-link {
+  text-decoration: none;
+}
+
 .dreams-logo {
   font-family: "Bello", sans-serif;
   font-size: 36px;
