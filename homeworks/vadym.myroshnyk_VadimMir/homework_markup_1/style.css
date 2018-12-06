@@ -114,7 +114,7 @@ header {
   color: rgba(34, 34, 34, 255);
 }
 
-.title__center {
+.title--center {
   text-align: center;
   position: relative;
 }
@@ -163,7 +163,7 @@ header {
   flex-direction: column;
 }
 
-.paragraph__flex {
+.paragraph--flex {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -173,7 +173,7 @@ header {
   margin-left: 410px;
 }
 
-.center__flex {
+.center--flex {
   display: flex;
   justify-content: center;
 }
