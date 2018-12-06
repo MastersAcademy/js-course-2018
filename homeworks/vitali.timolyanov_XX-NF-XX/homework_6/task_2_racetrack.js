@@ -95,6 +95,7 @@ class Race {
             return;
         }
         clearInterval(this.logIntervalID);
+        this.logIntervalID = null;
 
         this.horses.forEach(horse => horse.stop());
         this.logResult();
