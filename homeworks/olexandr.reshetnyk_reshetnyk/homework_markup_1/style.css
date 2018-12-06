@@ -1,0 +1,330 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #777;
+}
+
+h1,h2,h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/****** SECTION MAIN ******/
+
+.main-section {
+  background-color: #625E5D;
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 130px;
+}
+
+.darkened-bg {
+  z-index: 1;
+  position: relative;
+}
+
+.darkened-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+.nav__link:hover {
+  color: #EE2F1B;
+}
+
+.nav__link--active {
+  color: #EE2F1B;
+}
+
+.caption {
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 40px;
+}
+
+.slogan {
+  color: #CCC;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 45px;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 111px;
+  height: 2px;
+  background-color: #35C2F8;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/****** SECTION MAIN END ******/
+
+
+/****** SECTION SERVICES ******/
+
+.section__title {
+  color: #222;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services {
+  padding-top: 85px;
+  padding-bottom: 100px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.services__title--padd {
+  padding-bottom: 35px;
+}
+
+.content-item {
+  margin: 0;
+  display: inline-flex;
+  box-sizing: border-box;
+}
+
+.services-item {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 75px;
+}
+
+.centered-items {
+  align-items: center;
+}
+
+.column-direction {
+  flex-direction: column;
+}
+
+.third-part-width {
+  width: 33%;
+  box-sizing: border-box;
+}
+
+.icon-holder {
+  display: flex;
+}
+
+.icon-holder--aling-full-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.servirce-item__icon-holder--size {
+  width: 65px;
+  height: 65px;
+}
+
+.content-item__name {
+  color: #222;
+  text-transform: uppercase;
+}
+
+.servirce-item__name {
+  font-size: 16px;
+  padding-top: 30px;
+}
+
+.servirce-item__descr {
+  color: #888;
+  padding-top: 15px;
+}
+
+/****** SECTION SERVICES END******/
+
+/****** SECTION EXPERTISE ******/
+
+.expertise__content--padd {
+  padding-top: 95px;
+  padding-bottom: 88px;
+}
+
+.bg-color--second {
+  background-color: #F7F7F7;
+}
+
+.flex {
+  display: flex;
+}
+
+.expertise__title {
+  padding-bottom: 30px;
+}
+
+.expertise__content--width {
+  width: 70%;
+}
+
+.expertise__side-bg--width {
+  width: 30%;
+}
+
+.text-fs-medium {
+  font-size: 16px;
+}
+
+.text-pb-25 {
+  padding-bottom: 25px;
+}
+
+.half-part-width {
+  width: 49%;
+}
+
+.expertise-item__icon-holder--size {
+  width: 45px;
+  height: 45px;
+  flex: none;
+  padding-right: 5px;
+}
+
+.icon--align-top {
+  align-self: flex-start;
+}
+
+.content-item--padd {
+  padding-top: 30px;
+  padding-right: 15px;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 900;
+  color: #222;
+  text-transform: uppercase;
+  padding: 23px 35px;
+  background-color: #FFF;
+  border-radius: 200px;
+  border: 1px solid #D4EFF9;
+  font-family: inherit;
+  line-height: .9;
+}
+
+.button:hover {
+  box-shadow: 0 0 10px 0 #D4EFF9;
+  border: 1px solid #D0E9F5;
+}
+
+.expertise__button--margin {
+  margin-top: 50px;
+}
+
+.absolute-full-height-image {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+/****** SECTION EXPERTISE END******/
+
+/****** SECTION PORTFOLIO ******/
+
+.portfolio-item__icon-holder--size {
+  width: 45px;
+  height: 45px;
+  flex: none;
+  padding-right: 5px;
+}
+
+.portfolio__content--width {
+  width: 50%;
+}
+
+.portfolio__side-bg--width {
+  width: 50%;
+}
+
+.portfolio__content--padd {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.text-pb-45 {
+  padding-bottom: 45px;
+}
+
+.portfolio__title--padd {
+  padding-bottom: 45px;
+}
+
+.portfolio__text-bg {
+  background-image: url("images/portfolio-user-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.hide-rest-of-bg-img {
+  overflow: hidden;
+}
+
+.absolute-block-vertical-centering {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/****** SECTION PORTFOLIO END ******/
