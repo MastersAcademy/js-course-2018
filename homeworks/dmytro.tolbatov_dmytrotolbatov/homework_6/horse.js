@@ -65,7 +65,7 @@ class Race {
 
     startRace() {
         if (this.horses.length) {
-            this.horses.forEach((horse) => horse.run());
+            this.horses.forEach(horse => horse.run());
 
             this.printRacerState();
 
