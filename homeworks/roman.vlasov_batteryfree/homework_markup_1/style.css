@@ -1,7 +1,10 @@
 body {
   font-family: "Open Sans", sans-serif;
-  margin: auto;
+}
+
+.container {
   width: 1024px;
+  margin: auto;
 }
 
 .line:after {
@@ -58,7 +61,7 @@ body {
   font-size: 40px;
   font-weight: 600;
   text-transform: uppercase;
-  width: 50%;
+  width: 40%;
   display: inline-block;
   margin: 110px 0 0;
 }
@@ -67,7 +70,7 @@ body {
   color: #CCC;
   font-size: 16px;
   font-weight: 400;
-  width: 35%;
+  width: 30%;
   margin: 0 auto 50px;
 }
 
@@ -286,7 +289,6 @@ body {
 
 /*about block*/
 
-
 .about__title {
   font-size: 30px;
   font-weight: 600;
@@ -309,36 +311,21 @@ body {
 
 .about-containers__img1 {
   background: url("images/image-a-1.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 50%;
-  border: 3px solid #C7C7C7;
-  width: 140px;
-  height: 140px;
 }
 
 .about-containers__img2 {
   background: url("images/image-a-2.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 50%;
-  border: 3px solid #C7C7C7;
-  width: 140px;
-  height: 140px;
 }
 
 .about-containers__img3 {
   background: url("images/image-a-3.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 50%;
-  border: 3px solid #C7C7C7;
-  width: 140px;
-  height: 140px;
 }
 
 .about-containers__img4 {
   background: url("images/image-a-4.png");
+}
+
+.about-containers__img--size {
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 50%;
@@ -425,21 +412,9 @@ body {
   display: flex;
 }
 
-.team-container-pic__img1 {
+.team-container-pic__img {
   background-color: #000;
   padding: 20px;
-  border-radius: 50%;
-}
-
-.team-container-pic__img2 {
-  background-color: #000;
-  padding: 20px 24px;
-  border-radius: 50%;
-}
-
-.team-container-pic__img3 {
-  background-color: #000;
-  padding: 20px 25px;
   border-radius: 50%;
 }
 
