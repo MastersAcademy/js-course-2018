@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background: url("./images/Background.png") rgb(67, 65, 65) no-repeat center top;
+  background: url("./images/background-1.png") rgb(67, 65, 65) no-repeat center top;
   background-blend-mode: multiply;
 }
 
@@ -38,7 +38,6 @@ header {
 .menu {
   margin: 0;
   padding: 0;
-  display: block;
 }
 
 .manu__item {
@@ -119,7 +118,7 @@ header {
   position: relative;
 }
 
-.hundred-top-xs {
+.m-top-xs {
   margin-top: 100px;
 }
 
@@ -157,23 +156,23 @@ header {
   background: url("./images/background-2.png") 30% 30% no-repeat;
 }
 
-.column__flex {
+.column__fix {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
 
-.paragraph--flex {
+.paragraph--center {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
 }
 
 .margin-left-xs {
-  margin-left: 410px;
+  margin-left: 440px;
 }
 
-.center--flex {
+.center--fix {
   display: flex;
   justify-content: center;
 }
