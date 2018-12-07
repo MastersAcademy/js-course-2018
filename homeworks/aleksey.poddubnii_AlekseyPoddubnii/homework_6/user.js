@@ -1,9 +1,3 @@
-const a = 'aNna-mAria joHNs';
-const b = a.split(/\s+/).join(' ').split(/-/);
-
-console.log(a[0]);
-console.log(b);
-
 
 const user = {};
 
@@ -12,7 +6,7 @@ Object.defineProperty(user, 'name', {
     configurable: true,
     writeble: true,
     set: (input) => {
-        this.name = input.toLowerCase().split(/\s+/);
+        this.name = input.toLowerCase().trim().replace(/\b\w/g, name => name.toUpperCase());
     },
     get: () => this.name,
 });
