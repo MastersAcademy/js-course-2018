@@ -1,0 +1,112 @@
+/* first block */
+
+body {
+  max-width: 1024px;
+  font-family: "Open+Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: auto;
+}
+
+.background {
+  background-image: url("images/Background.png");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.title {
+  display: block;
+  background-color: rgb(8, 8, 8);
+  opacity: .75;
+  max-width: 1024px;
+  height: 645px;
+}
+
+.top-navigation {
+  display: flex;
+  align-items: baseline;
+  max-width: 1024px;
+  height: 80px;
+}
+
+.logo {
+  max-width: 110px;
+  height: 25px;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.menu {
+  display: flex;
+  width: 500px;
+  height: 28px;
+  margin-top: 50px;
+  margin-left: 250px;
+  justify-content: space-between;
+}
+
+.btn {
+  height: 10px;
+  color: #FFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.btn:hover {
+  color: rgb(250, 2, 2);
+}
+
+.slogan {
+  color: #FFFF;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 125px;
+  font-size: 45px;
+}
+
+.underline {
+  margin-left: 460px;
+  margin-top: 25px;
+}
+
+.present {
+  color: #FFFF;
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 50px;
+}
+
+/* the second block */
+
+.for-core__services {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  justify-content: space-between;
+}
+
+.services {
+  width: 1024px;
+  height: 200px;
+}
+
+.core-services {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 40px;
+}
+
+.our-services {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.name-services {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-transform: uppercase;
+}
