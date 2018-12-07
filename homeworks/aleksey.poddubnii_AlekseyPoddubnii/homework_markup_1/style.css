@@ -318,3 +318,18 @@ ul {
 .width--third {
   width: 33.33%;
 }
+
+/* About boxes */
+
+.about-box {
+  display: flex;
+  justify-content: center;
+}
+
+.about-box-desc {
+  max-width: 250px;
+}
+
+.about-box {
+  display: block;
+}
