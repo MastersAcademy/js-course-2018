@@ -1,19 +1,25 @@
 function User() {
     let privateFullName;
     let privatePhone;
+    const FIRST_LETTER = /\b\w/g;
+    const NOT_DIGITS = /\D/g;
+
     Object.defineProperties(this, {
         fullName: {
             get: () => privateFullName,
             set: (value) => {
-                privateFullName = value.toLowerCase().replace(/\b\w/g, firstLetter => firstLetter.toUpperCase());
+                privateFullName = value.toLowerCase()
+                    .replace(FIRST_LETTER, letter => letter.toUpperCase());
             },
         },
         phone: {
             get: () => privatePhone,
             set: (value) => {
+                const onlyDigits = value.replace(NOT_DIGITS, '');
+
                 privatePhone = value.charAt(0) === '+'
-                    ? `+${value.replace(/\D/g, '')}`
-                    : value.replace(/\D/g, '');
+                    ? `+${onlyDigits}`
+                    : onlyDigits;
             },
         },
     });

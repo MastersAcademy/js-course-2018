@@ -14,7 +14,7 @@ class Racer extends Horse {
     }
 
     setSpeed() {
-        this.speed = Math.floor(Math.random() * (15 - 10) + 10);
+        this.speed = Math.floor(Math.random() * 5) + 10;
     }
 
     run() {
@@ -25,53 +25,58 @@ class Racer extends Horse {
     }
 
     stop() {
-        if (this.interval) {
-            clearInterval(this.interval);
-        }
+        if (this.interval) clearInterval(this.interval);
     }
 }
 
 class Race {
     constructor() {
         this.horses = [];
+        this.raceInterval = null;
     }
 
     createRace(horses) {
-        horses.forEach((horse) => {
-            this.horses.push(new Racer(horse.name, horse.breed));
+        this.horses = horses.map(horse => new Racer(horse.name, horse.breed));
+    }
+
+    printRacerState() {
+        this.raceInterval = setInterval(() => {
+            this.horses.forEach((horse) => {
+                console.log(`${horse.name} (${horse.breed}) - ${horse.distance}`);
+            });
+        }, 2000);
+    }
+
+    stopHorses() {
+        if (this.raceInterval) clearInterval(this.raceInterval);
+    }
+
+    stopRace() {
+        let winner = { distance: 0 };
+        this.stopHorses();
+        this.horses.forEach((horse) => {
+            if (horse.distance > winner.distance) winner = horse;
+
+            horse.stop();
         });
+
+        console.log(`Winner: ${winner.name} (${winner.breed}) - ${winner.distance}`);
     }
 
     startRace() {
-        let raceInterval;
         if (this.horses.length) {
-            this.horses.forEach((horse) => {
-                horse.run();
-            });
+            this.horses.forEach((horse) => horse.run());
 
-            raceInterval = setInterval(() => {
-                this.horses.forEach((horse) => {
-                    console.log(`${horse.name} (${horse.breed}) - ${horse.distance}`);
-                });
-            }, 2000);
+            this.printRacerState();
 
             setTimeout(() => {
-                let winner = { distance: 0 };
-                clearInterval(raceInterval);
-                this.horses.forEach((horse) => {
-                    if (horse.distance > winner.distance) {
-                        winner = horse;
-                    }
-                    horse.stop();
-                });
-
-                console.log(`Winner: ${winner.name} (${winner.breed}) - ${winner.distance}`);
+                this.stopRace();
             }, 10000);
         }
     }
 }
 
-const horsesArray = [
+const HORSES = [
     { name: 'horse1', breed: 'breed1' },
     { name: 'horse2', breed: 'breed2' },
     { name: 'horse3', breed: 'breed3' },
@@ -84,5 +89,5 @@ const horsesArray = [
     { name: 'horse10', breed: 'breed10' },
 ];
 const race = new Race();
-race.createRace(horsesArray);
+race.createRace(HORSES);
 race.startRace();
