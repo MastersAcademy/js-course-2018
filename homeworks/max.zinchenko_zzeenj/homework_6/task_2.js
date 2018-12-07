@@ -67,29 +67,12 @@ class Race {
         }, 200);
         setTimeout(() => {
             console.log('Finish');
-        }, 12000);
-        setTimeout(() => {
-            console.log('We have got 3 winners:');
             this.horses.sort((a, b) => b.distance - a.distance);
-            setTimeout(() => {
-                setTimeout(() => {
-                    setTimeout(() => {
-                        console.log(`Third place ... 
-                Name: ${this.horses[2].name};
-                Breed: ${this.horses[2].breed};
-                Distance: ${this.horses[2].distance}.`);
-                    }, 600);
-                    console.log(`Second place ...  
-                Name: ${this.horses[1].name};
-                Breed: ${this.horses[1].breed};
-                Distance: ${this.horses[1].distance}.`);
-                }, 400);
-                console.log(`First place ... 
-                Name: ${this.horses[0].name};
-                Breed: ${this.horses[0].breed};
-                Distance: ${this.horses[0].distance}.`);
-            }, 200);
-        }, 13000);
+            console.log(`First place ... 
+            Name: ${this.horses[0].name};
+            Breed: ${this.horses[0].breed};
+            Distance: ${this.horses[0].distance}.`);
+        }, 11000);
     }
 }
 
