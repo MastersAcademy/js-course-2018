@@ -20,9 +20,7 @@ function addUser(userName, userPhone, obj) {
         },
         set(phoneValue) {
             let plus = '';
-            if (phoneValue.charAt(0) === '+') {
-                plus = '+';
-            }
+            if (phoneValue.charAt(0) === '+') { plus = '+'; }
             phoneConstructor = plus + phoneValue.replace(/[^0-9]/g, '');
         },
     });
