@@ -17,9 +17,7 @@ function User() {
             set: (value) => {
                 const onlyDigits = value.replace(NOT_DIGITS, '');
 
-                privatePhone = value.charAt(0) === '+'
-                    ? `+${onlyDigits}`
-                    : onlyDigits;
+                privatePhone = value.charAt(0) === '+' ? `+${onlyDigits}` : onlyDigits;
             },
         },
     });

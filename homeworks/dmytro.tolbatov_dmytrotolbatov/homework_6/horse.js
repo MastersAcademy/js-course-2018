@@ -13,15 +13,15 @@ class Racer extends Horse {
         this.interval = null;
     }
 
-    setSpeed() {
-        this.speed = Math.floor(Math.random() * 5) + 10;
-    }
-
     run() {
         this.interval = setInterval(() => {
             this.setSpeed();
             this.distance += this.speed;
         }, 1000);
+    }
+
+    setSpeed() {
+        this.speed = Math.floor(Math.random() * 5) + 10;
     }
 
     stop() {
@@ -39,16 +39,22 @@ class Race {
         this.horses = horses.map(horse => new Racer(horse.name, horse.breed));
     }
 
+    startRace() {
+        if (this.horses.length) {
+            this.horses.forEach(horse => horse.run());
+
+            this.printRacerState();
+
+            setTimeout(this.stopRace.bind(this), 10000);
+        }
+    }
+
     printRacerState() {
         this.raceInterval = setInterval(() => {
             this.horses.forEach((horse) => {
                 console.log(`${horse.name} (${horse.breed}) - ${horse.distance}`);
             });
         }, 2000);
-    }
-
-    stopHorses() {
-        if (this.raceInterval) clearInterval(this.raceInterval);
     }
 
     stopRace() {
@@ -63,30 +69,22 @@ class Race {
         console.log(`Winner: ${winner.name} (${winner.breed}) - ${winner.distance}`);
     }
 
-    startRace() {
-        if (this.horses.length) {
-            this.horses.forEach(horse => horse.run());
-
-            this.printRacerState();
-
-            setTimeout(() => {
-                this.stopRace();
-            }, 10000);
-        }
+    stopHorses() {
+        if (this.raceInterval) clearInterval(this.raceInterval);
     }
 }
 
 const HORSES = [
-    { name: 'horse1', breed: 'breed1' },
-    { name: 'horse2', breed: 'breed2' },
-    { name: 'horse3', breed: 'breed3' },
-    { name: 'horse4', breed: 'breed4' },
-    { name: 'horse5', breed: 'breed5' },
-    { name: 'horse6', breed: 'breed6' },
-    { name: 'horse7', breed: 'breed7' },
-    { name: 'horse8', breed: 'breed8' },
-    { name: 'horse9', breed: 'breed9' },
-    { name: 'horse10', breed: 'breed10' },
+    new Horse('horse1', 'breed1'),
+    new Horse('horse2', 'breed2'),
+    new Horse('horse3', 'breed3'),
+    new Horse('horse4', 'breed4'),
+    new Horse('horse5', 'breed5'),
+    new Horse('horse6', 'breed6'),
+    new Horse('horse7', 'breed7'),
+    new Horse('horse8', 'breed8'),
+    new Horse('horse9', 'breed9'),
+    new Horse('horse10', 'breed10'),
 ];
 const race = new Race();
 race.createRace(HORSES);
