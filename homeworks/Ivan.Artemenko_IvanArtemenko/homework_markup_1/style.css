@@ -1,0 +1,309 @@
+.body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: url("../homework_markup_1/images/fon.jpg") no-repeat center top /cover;
+  padding-bottom: 140px;
+  max-width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  flex: auto;
+}
+
+.conteiner {
+  width: 100%;
+  max-width: 1024px;
+  min-height: 480px;
+  margin: 0  auto 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.menu_li {
+  list-style: none;
+  align-items: flex-end;
+  margin-right: 5%;
+  margin-top: 4%;
+}
+
+.menu_logo {
+  padding-right: 20%;
+  margin-top: 2%;
+}
+
+.menu_a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.titles {
+  font-size: 50px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 176px;
+}
+
+.line {
+  background: #35C2F8;
+  display: block;
+  border-radius: 5px;
+  width: 111px;
+  padding: 2px 0;
+  margin: 0 auto;
+  margin-top: 51px;
+}
+
+.entitle {
+  font-size: 20px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 54px;
+}
+
+/*                        2  bloc  */
+
+.title {
+  padding-top: 100px;
+}
+
+.article {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.services {
+  width: 100%;
+  margin-top: 79px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-item {
+  margin-left: 40%;
+}
+
+.subsection {
+  color: #222;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services-item_p {
+  color: #888;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding-bottom: 50px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/*                        3  bloc  */
+
+.expertise {
+  background-color: #F7F7F7;
+}
+
+.conteiner {
+  position: relative;
+}
+
+.expertise-item-image {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 15.8%;
+  margin-right: -100px;
+}
+
+.expertise-item-image_img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-3 {
+  padding-top: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title-3_h2 {
+  color: #222;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.title-3_p {
+  padding-top: 36px;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: left;
+  width: 600px;
+  padding-left: 5px;
+}
+
+.setup {
+  position: absolute;
+  top: 250px;
+  left: 0;
+}
+
+.cloud {
+  position: absolute;
+  top: 250px;
+  left: 350px;
+}
+
+.star {
+  position: absolute;
+  top: 370px;
+  left: 0;
+}
+
+.security {
+  position: absolute;
+  top: 360px;
+  left: 350px;
+}
+
+.expertise-item_h3 {
+  text-transform: uppercase;
+  margin-bottom: -10px;
+}
+
+.expertise-item_p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: left;
+  width: 300px;
+  margin-left: 45px;
+}
+
+.button {
+  position: absolute;
+  bottom: 30px;
+  left: 5px;
+  border-radius: 50px;
+  background: #FFF;
+  color: #222;
+  display: block;
+  width: 169px;
+  padding: 30px 0;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+/*                        4  bloc  */
+
+.amazing-portfolio {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.images-background-users {
+  padding-top: 70px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: -1;
+}
+
+.title-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title-4_h2 {
+  color: #222;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 530;
+  padding-top: 100px;
+  margin: 0;
+}
+
+.title-4_p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: left;
+  width: 530px;
+}
+
+.images-fpom-text-1 {
+  width: 420px;
+  position: absolute;
+  top: 280px;
+  left: 0;
+}
+
+.images-fpom-text-2 {
+  width: 420px;
+  position: absolute;
+  top: 380px;
+  left: 0;
+}
+
+.images-fpom-text-3 {
+  width: 420px;
+  position: absolute;
+  top: 480px;
+  left: 0;
+  padding-bottom: 50px;
+}
+
+.images-fpom-text_h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #222;
+}
+
+.images-fpom-text_p {
+  padding-left: 33px;
+  line-height: 1.5em;
+  font-size: 14px;
+  color: #777
+}
+
+.portfolio-images {
+  margin-left: 5px;
+  margin-right: -200px;
+  position: absolute;
+  top: 65px;
+  left: 600px;
+}
+
+.portfolio-images-img {
+  max-width: 100%;
+  height: auto;
+}
