@@ -12,7 +12,7 @@ body {
 .dream-section {
   background: url("./images/background.jpg") no-repeat;
   background-size: cover;
-  max-width: 1024px;
+  width: 1024px;
 }
 
 .dream-section-overlay {
@@ -81,7 +81,7 @@ body {
 }
 
 .services-section {
-  max-width: 1024px;
+  width: 1024px;
 }
 
 .services-title {
@@ -120,7 +120,7 @@ body {
 }
 
 .expertise-section {
-  max-width: 1024px;
+  width: 1024px;
   background-color: #F7F7F7;
 }
 
@@ -207,7 +207,7 @@ body {
 }
 
 .portfolio-section {
-  max-width: 1024px;
+  width: 1024px;
   display: flex;
 }
 
@@ -236,6 +236,7 @@ body {
 .portfolio-section_img {
   padding-left: 20px;
   align-self: center;
+  overflow: hidden;
 }
 
 .portfolio-list {
@@ -269,13 +270,13 @@ body {
   padding-right: 20px;
 }
 
-.images-container {
-  max-width: 1024px;
+.images-section {
+  width: 1024px;
   font-size: 0;
 }
 
-.about-us-container {
-  max-width: 1024px;
+.about-us-section {
+  width: 1024px;
 }
 
 .about-us_title {
