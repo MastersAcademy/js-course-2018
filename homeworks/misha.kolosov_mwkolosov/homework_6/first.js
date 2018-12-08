@@ -1,25 +1,23 @@
-const user = {};
-let fullName = '';
+const user = {
+    _fullName: '',
+    _phone: '',
+};
 
 Object.defineProperty(user, 'fullName', {
-    get: () => fullName,
+    get: () => this.editedFullName,
     set: (value) => {
-        const chars = value.toLowerCase().split(/[- ]/g).map(txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()).join(' ');
-        fullName = chars;
-        const char = value.match(chars);
-        while (char) {
-            this.letstr = chars.substr(0, char.index) + char[0] + chars.substr(char.index + 1);
-            this.value = `${value.substr(0, char.index)}*${value.substr(char.index + 1)}`;
-        }
+        this.editedFullName = value.toLowerCase();
+        this.editedFullName = this.editedFullName.split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ');
+        this.editedFullName = this.editedFullName.split('-').map(word => word[0].toUpperCase() + word.substring(1)).join('-');
     },
 });
 
-let phone = '';
+
 Object.defineProperty(user, 'phone', {
-    get: () => phone,
+    get: () => this.phone,
     set: (value) => {
         const chars = /[/(/)/+-]|[a-zA-Zа-яА-Я]/g;
-        phone = `+${value.replace(chars, '')}`;
+        this.phone = `+${value.replace(chars, '')}`;
     },
 });
 
