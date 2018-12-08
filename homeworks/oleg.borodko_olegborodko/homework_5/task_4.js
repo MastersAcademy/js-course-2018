@@ -5,20 +5,22 @@ const people = [
     { id: 4, name: 'Janny', friends: null },
     { id: 5, name: 'Edward', friends: [1, 3] },
     { id: 6, name: 'Jeen', friends: [5, 1] },
+    { id: 7 },
 ];
 
 const getPeople = function (userId) {
-    if (userId <= 0 || userId > 6) {
+    const friendsObj = people.filter(el => el.id === userId)[0];
+
+    if (typeof friendsObj === 'undefined') {
         return null;
     }
 
-    const { friends } = people[userId - 1].friends;
-
-    if (friends === null) {
-        return [];
+    let result = [];
+    if (friendsObj.friends) {
+        result = people.filter(item => friendsObj.friends.find(el => el === item.id));
     }
 
-    return people[userId - 1].friends.map(numeric => people[numeric - 1]);
+    return result;
 };
 
-console.log(getPeople(1));
+console.log(getPeople(3));

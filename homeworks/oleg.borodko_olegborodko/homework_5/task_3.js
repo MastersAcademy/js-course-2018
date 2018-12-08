@@ -1,27 +1,22 @@
-function copyObject(obj) {
-    const newObject = {};
+const clone = {};
 
-    function fill(object, externalKey, ifObject = false) {
-        Object.entries(object).forEach((entry) => {
-            const key = entry[0];
-            const value = entry[1];
+function copyObject(obj, externalKey) {
+    Object.entries(obj).forEach((entry) => {
+        const key = entry[0];
+        const value = entry[1];
 
-            newObject[key] = value;
-            if (value && value.constructor === Object) {
-                fill(value, key, true);
-            } else if (ifObject) {
-                newObject[externalKey] = {};
-                newObject[externalKey][key] = value;
-            } else {
-                newObject[key] = value;
-            }
-        });
-    }
+        if (value !== null && typeof value === 'object') {
+            copyObject(value, key);
+        } else if (externalKey) {
+            clone[externalKey] = {};
+            clone[externalKey][key] = value;
+        } else {
+            clone[key] = value;
+        }
+    });
 
-    fill(obj);
-    return newObject;
+    return clone;
 }
-
 
 const obj = {
     a: 'c',
@@ -34,8 +29,8 @@ const obj = {
     h: 0,
 };
 
-const objClone = copyObject(obj);
+const newClone = copyObject(obj);
 
-obj.d.e = 'f2';
+obj.b.e = 'f2';
 
-console.log(objClone);
+console.log(newClone);
