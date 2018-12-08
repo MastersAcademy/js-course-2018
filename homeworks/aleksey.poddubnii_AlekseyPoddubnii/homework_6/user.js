@@ -1,13 +1,6 @@
 
 const user = {};
 
-// Object.defineProperty(user, 'name', {
-//     set: (input) => {
-//         this.name = input.toLowerCase().trim().replace(/\b\w/g, name => name.toUpperCase());
-//     },
-//     get: () => this.name,
-// });
-
 function createName(obj, key) {
     let correctName;
     Object.defineProperty(obj, key, {
@@ -19,7 +12,6 @@ function createName(obj, key) {
         },
     });
 }
-
 
 function createPhone(obj, key) {
     let correctPhone;
@@ -36,7 +28,6 @@ function createPhone(obj, key) {
 
 createName(user, 'name');
 createPhone(user, 'phone');
-
 
 user.name = 'aNna-mAria joHNs';
 console.log(user.name);
