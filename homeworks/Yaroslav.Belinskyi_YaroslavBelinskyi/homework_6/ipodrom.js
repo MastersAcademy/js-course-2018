@@ -1,4 +1,4 @@
-const HORSES = ['Axe', 'Handzo', 'Zeus', 'Morty', 'Rick', 'Bot', 'Geralt', 'Gaben', 'Artanis', 'Hideo'];
+const HORSES = ['Axe', 'Handzo', 'Roach', 'Morty', 'Rick', 'Bot', 'Geralt', 'Gaben', 'Artanis', 'Hideo'];
 class Horse {
     constructor(name, breed) {
         this.name = name;
@@ -13,11 +13,12 @@ class Racer extends Horse {
     }
 
     run() {
-        setTimeout(() => {
-            this.speed = this.setSpeed();
-            this.distance += this.speed;
-            this.run();
-        }, 1000);
+        for (let i = 0; i < 10; i++) {
+            setTimeout(() => {
+                this.distance += this.speed;
+                this.setSpeed();
+            }, 1000 * i);
+        }
     }
 
     setSpeed() {
@@ -31,24 +32,25 @@ class Race {
 
     createRace(horsesArray) {
         horsesArray.forEach((e) => {
-            const horse = new Horse(e, 'skakun');
+            const horse = new Racer(e, '"skakun"');
             this.horses.push(horse);
         });
     }
 
     startRace() {
-        this.initialTime = 0;
-        if (this.initialTime < 10) {
+        this.horses.forEach(e => e.run());
+        for (let i = 1; i <= 5; i++) {
             setTimeout(() => {
-                this.horses.forEach(() => {
-                    Racer.run();
-                    console.log(`The horse ${this.name} aka ${this.breed} ran ${this.distance} meters.`);
+                console.log('----------');
+                this.horses.forEach((e) => {
+                    console.log(`The horse -- ${e.name} - ${e.breed} - has last speed: ${e.speed} and ran ${e.distance} meters.`);
                 });
-            }, 2000);
-            this.initialTime += 2;
-        } else {
-            // console.log("Winner....")
+            }, 2000 * i);
         }
+        setTimeout(() => {
+            this.horses.sort((a, b) => b.distance - a.distance);
+            console.log(`The winner is: ${this.horses[0].name}!!!`);
+        }, 10000);
     }
 }
 const race = new Race();

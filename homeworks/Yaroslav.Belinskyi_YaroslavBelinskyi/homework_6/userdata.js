@@ -9,9 +9,7 @@ function addUser(userName, userPhone, obj) {
             nameConstructor = nameValue
                 .trim()
                 .toLowerCase()
-                .split(' ')
-                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                .join(' ');
+                .replace(/\b\w/g, e => e.toUpperCase());
         },
     });
     Object.defineProperty(obj, userPhone, {
@@ -27,7 +25,7 @@ function addUser(userName, userPhone, obj) {
     return obj;
 }
 const obj = addUser('fullName', 'phone', {});
-obj.fullName = '   asdASD qweqFDG  ';
+obj.fullName = '   aNna-mAria joHNs  ';
 obj.phone = '+3(das)a2323+32392-23';
 console.log(obj.fullName);
 console.log(obj.phone);
