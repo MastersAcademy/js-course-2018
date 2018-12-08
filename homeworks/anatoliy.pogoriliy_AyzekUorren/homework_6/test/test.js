@@ -65,7 +65,6 @@ describe('Classes', () => {
         it('createRace', () => {
             const testRace1 = new Race();
             testRace1.createRace();
-            console.log(testRace1.horses);
             assert.deepStrictEqual(testRace1.horses.length, 10);
         });
         it('startRace', (done) => {
