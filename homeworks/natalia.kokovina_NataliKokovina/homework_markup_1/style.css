@@ -328,10 +328,3 @@
   width: 341px;
   height: 256px;
 }
-
-/* About Us */
-
-.aboutUs__box {
-  display: flex;
-  justify-content: center;
-}
