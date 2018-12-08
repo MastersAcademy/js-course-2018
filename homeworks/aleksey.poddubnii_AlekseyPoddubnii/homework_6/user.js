@@ -1,25 +1,42 @@
 
 const user = {};
 
-Object.defineProperty(user, 'name', {
-    set: (input) => {
-        this.name = input.toLowerCase().trim().replace(/\b\w/g, name => name.toUpperCase());
-    },
-    get: () => this.name,
-});
+// Object.defineProperty(user, 'name', {
+//     set: (input) => {
+//         this.name = input.toLowerCase().trim().replace(/\b\w/g, name => name.toUpperCase());
+//     },
+//     get: () => this.name,
+// });
 
-const plus = '+';
+function createName(obj, key) {
+    let correctName;
+    Object.defineProperty(obj, key, {
+        set(input) {
+            correctName = input.toLowerCase().trim().replace(/\b\w/g, name => name.toUpperCase());
+        },
+        get() {
+            return correctName;
+        },
+    });
+}
 
-Object.defineProperty(user, 'phone', {
-    set: (phone) => {
-        if (phone[0] === '+') {
-            this.phone = plus + phone.split(/\D/).join('');
-        } else {
-            this.phone = phone.split(/\D/).join('');
-        }
-    },
-    get: () => this.phone,
-});
+
+function createPhone(obj, key) {
+    let correctPhone;
+    Object.defineProperty(obj, key, {
+        enumerable: true,
+        set(input) {
+            correctPhone = input.match(/^\+|\d/g).join('');
+        },
+        get() {
+            return correctPhone;
+        },
+    });
+}
+
+createName(user, 'name');
+createPhone(user, 'phone');
+
 
 user.name = 'aNna-mAria joHNs';
 console.log(user.name);
