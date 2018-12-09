@@ -25,7 +25,8 @@ class Racer extends Horse {
     }
 
     setSpeed() {
-        this.speed = Math.floor(Math.random() * (this.maxRange - this.minRange)) + this.minRange;
+        const rand = this.minRange + Math.random() * (this.maxRange + 1 - this.minRange);
+        this.speed = Math.floor(rand);
     }
 }
 
