@@ -1,15 +1,15 @@
 const user = {};
 
-const regularFirstChar = new RegExp('\\b\\w', 'g');
-const regularPlusNum = new RegExp('(?!^\\+)\\D', 'g');
+const regFirstChar = new RegExp('\\b\\w', 'g');
+const regPlusNum = new RegExp('(?!^\\+)\\D', 'g');
 
-function addKeyName(keyName, obj) {
+function addKeyName(obj) {
     let name;
-    Object.defineProperty(obj, keyName, {
+    Object.defineProperty(obj, 'fullName', {
         configurable: true,
         enumerable: true,
         set(value) {
-            name = value.toLowerCase().replace(regularFirstChar, s => s.toUpperCase());
+            name = value.toLowerCase().replace(regFirstChar, s => s.toUpperCase());
         },
         get() {
             return name;
@@ -17,13 +17,13 @@ function addKeyName(keyName, obj) {
     });
 }
 
-function addKeyPhone(keyName, obj) {
+function addKeyPhone(obj) {
     let num;
-    Object.defineProperty(obj, keyName, {
+    Object.defineProperty(obj, 'phone', {
         configurable: true,
         enumerable: true,
         set(value) {
-            num = value.trim().replace(regularPlusNum, '');
+            num = value.trim().replace(regPlusNum, '');
         },
         get() {
             return num;
@@ -31,8 +31,8 @@ function addKeyPhone(keyName, obj) {
     });
 }
 
-addKeyName('fullName', user);
-addKeyPhone('phone', user);
+addKeyName(user);
+addKeyPhone(user);
 
 console.log(user);
 user.fullName = 'aNna-mAria joHNs';
