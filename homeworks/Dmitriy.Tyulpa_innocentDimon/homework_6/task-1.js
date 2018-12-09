@@ -27,7 +27,6 @@ function User() {
                 return fullName;
             },
         },
-
         phone: {
             set(value) {
                 const phoneNumber = value.replace(/\D+/g, '');
@@ -37,9 +36,7 @@ function User() {
                 return phone;
             },
         },
-
     });
-
 }
 
 const user = new User();
