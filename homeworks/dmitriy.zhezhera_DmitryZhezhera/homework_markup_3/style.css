@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
-
 @font-face {
   font-family: Bello;
   src: url("./fonts/Bello-Script_6557.ttf");
 }
 
-* {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -21,14 +18,14 @@ body {
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 1px 15px;
+  padding: 0 15px;
 }
-
-/*TOOLS*/
 
 .dreams-display-none {
   display: none;
 }
+
+/*TOOLS*/
 
 .dreams-title {
   font-family: "Montserrat", sans-serif;
@@ -36,20 +33,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #222;
-}
-
-.dreams-title--first {
-  color: #FFF;
-  font-size: 50px;
-  line-height: 63px;
-  text-align: center;
-  padding: 0 190px;
-  margin-top: 134px;
-}
-
-.dreams-title--second {
-  margin-top: 88px;
-  text-align: center;
 }
 
 .dreams-line:after {
@@ -72,6 +55,11 @@ body {
   font-weight: 700;
 }
 
+.dreams-btn:hover {
+  background: #35C2F8;
+  color: #FFF;
+}
+
 /*BLOCKS*/
 /*dreams-first*/
 
@@ -80,6 +68,16 @@ body {
   background-size: cover;
   min-height: 645px;
   color: #FFF;
+  padding: 33px 0;
+}
+
+.dreams-title--first {
+  color: #FFF;
+  font-size: 50px;
+  line-height: 63px;
+  text-align: center;
+  padding: 0 190px;
+  margin-top: 141px;
 }
 
 .dreams-first__heading {
@@ -87,7 +85,10 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: baseline;
-  padding-top: 20px;
+}
+
+.dreams-logo-link {
+  text-decoration: none;
 }
 
 .dreams-logo {
@@ -96,7 +97,6 @@ body {
   line-height: 18.88px;
   margin: 0;
   color: #FFF;
-  text-decoration: none;
 }
 
 .dreams-navigation__list {
@@ -131,6 +131,12 @@ body {
 
 .dreams-second {
   min-height: 535px;
+  padding: 88px 0 20px;
+}
+
+.dreams-title--second {
+  margin-top: 0;
+  text-align: center;
 }
 
 .dreams-services {
@@ -241,11 +247,12 @@ body {
   background: url("./img/bg-forth.jpg") no-repeat center;
   background-size: cover;
   min-height: 700px;
+  padding: 50px 0;
 }
 
 .dreams-forth-content {
   max-width: 50%;
-  padding-top: 52px;
+  padding-top: 5px;
 }
 
 .dreams-forth-dreams-forth {
@@ -351,4 +358,150 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+
+  .dreams-title--first {
+    padding: 0 20%;
+  }
+
+  .dreams-first__about {
+    padding: 0 25%;
+  }
+
+  .dreams-services {
+    justify-content: space-evenly;
+  }
+
+  .portfolio-item {
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .dreams-title--first {
+    padding: 0;
+  }
+
+  .dreams-third-left {
+    min-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .dreams-third-content {
+    flex-wrap: wrap;
+  }
+
+  .dreams-third-left {
+    padding-right: 0;
+  }
+
+  .dreams-third-expertise__item {
+    flex-basis: 100%;
+  }
+
+  .dreams-third-right {
+    min-height: 0;
+  }
+
+  .dreams-third-right__image {
+    position: static;
+    width: 100%;
+  }
+
+  .dreams-forth-content {
+    max-width: 100%;
+  }
+
+  .dreams-forth {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .portfolio-item {
+    min-width: 250px;
+  }
+
+  .about-list-item {
+    flex-direction: column;
+  }
+
+  .about-list-item__text {
+    padding-bottom: 30px;
+  }
+
+  .about-list-item__title {
+    margin-top: 10px;
+  }
+
+  .about-list-item__center {
+    order: 1;
+  }
+
+  .about-list-item__left {
+    order: 2;
+    text-align: center;
+  }
+
+  .about-list-item__right {
+    order: 3;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .dreams-title {
+    text-align: center;
+  }
+
+  .dreams-title--first {
+    margin-top: 30px;
+    font-size: 40px;
+  }
+
+  .dreams-first__about {
+    padding: 0;
+  }
+
+  .dreams-sixth-content {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .dreams-navigation__list {
+    display: block;
+    columns: 2;
+  }
+
+  .dreams-navigation__list {
+    justify-content: space-between;
+  }
+
+  .dreams-second {
+    padding-top: 50px;
+  }
+
+  .dreams-services__item-title {
+    margin-top: 10px;
+  }
+
+  .dreams-services__item-text {
+    margin-bottom: 30px;
+  }
+
+  .dreams-third-left {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
