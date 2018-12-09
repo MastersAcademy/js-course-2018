@@ -14,10 +14,8 @@
  */
 
 function User() {
-
     let fullName;
     let phone;
-
     Object.defineProperties(this, {
         fullName: {
             set(value) {
