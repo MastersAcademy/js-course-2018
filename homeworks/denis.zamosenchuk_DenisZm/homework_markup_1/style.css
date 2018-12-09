@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:any-link {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.top-navbar {
+  width: 100%;
+  display: flex;
+}
+
+.top-navbar__menu {
+  display: flex;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: 90px;
+}
+
+.top-navbar__logo {
+  margin-left: 87px;
+  margin-top: 36px;
+  padding: 10px;
+}
+
+.top-navbar__menu__link {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
+
+.top-navbar__menu__link:hover {
+  color: #35C2F8;
+}
+
+.top-navbar__menu__link:focus {
+  color: #35C2F8;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, .75) url("images/background.jpg");
+  height: 470px;
+  background-blend-mode: darken;
+}
+
+.header__title {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  width: 510px;
+  text-align: center;
+  color: #FFF;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+
+.spacer {
+  width: 100px;
+  border-bottom: 2px solid #35C2F8;
+}
+
+.header__description {
+  width: 400px;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #CCC;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+
+.core-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #888;
+  font-size: 11px;
+  font-weight: 400;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.section__header {
+  color: #222;
+  text-transform: uppercase;
+}
+
+.header-big {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.header-medium {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.core-services__services {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.core-services__services__item {
+  width: 235px;
+  text-align: center;
+}
+
+.expertise {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-left: 70px;
+  background-color: #F7F7F7;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+
+.expertise__content {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 70px;
+}
+
+.expertise__content__item {
+  width: 290px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.expertise__background {
+  flex-basis: 30%;
+  background-image: url("images/expertise.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.header-medium-no-margin {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-icon {
+  float: left;
+  width: 40px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+
+.link-button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: 1px solid #35C2F8;
+  background-color: #FFF;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -.5px;
+  color: #222;
+}
+
+.link-button:hover {
+  color: #35C2F8;
+  border: 1px solid #222;
+}
+
+.link-button:focus {
+  color: #35C2F8;
+  border: 1px solid #222;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-left: 70px;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.portfolio__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  background-image: url("images/users-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  padding-right: 70px;
+}
+
+.portfolio__background {
+  flex-basis: 50%;
+  background-image: url("images/ipad.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.portfolio__content__item {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.portfolio__content__description {
+  margin-bottom: 30px;
+}
