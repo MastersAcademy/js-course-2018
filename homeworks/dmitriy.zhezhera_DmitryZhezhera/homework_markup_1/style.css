@@ -18,7 +18,7 @@ body {
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 1px 15px;
+  padding: 0 15px;
 }
 
 /*TOOLS*/
@@ -29,20 +29,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #222;
-}
-
-.dreams-title--first {
-  color: #FFF;
-  font-size: 50px;
-  line-height: 63px;
-  text-align: center;
-  padding: 0 190px;
-  margin-top: 134px;
-}
-
-.dreams-title--second {
-  margin-top: 88px;
-  text-align: center;
 }
 
 .dreams-line:after {
@@ -78,6 +64,16 @@ body {
   background-size: cover;
   min-height: 645px;
   color: #FFF;
+  padding: 33px 0;
+}
+
+.dreams-title--first {
+  color: #FFF;
+  font-size: 50px;
+  line-height: 63px;
+  text-align: center;
+  padding: 0 190px;
+  margin-top: 141px;
 }
 
 .dreams-first__heading {
@@ -85,7 +81,10 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: baseline;
-  padding-top: 20px;
+}
+
+.dreams-logo-link {
+  text-decoration: none;
 }
 
 .dreams-logo-link {
@@ -132,6 +131,12 @@ body {
 
 .dreams-second {
   min-height: 535px;
+  padding: 88px 0 20px;
+}
+
+.dreams-title--second {
+  margin-top: 0;
+  text-align: center;
 }
 
 .dreams-services {
@@ -162,5 +167,97 @@ body {
 .dreams-services__item-text {
   font-size: 14px;
   line-height: 22px;
+}
+
+/*DREAMS-THIRD*/
+
+.dreams-third {
+  background-color: #F7F7F7;
+  min-height: 615px;
+  overflow-x: hidden;
+}
+
+.dreams-third-content {
+  display: flex;
+}
+
+.dreams-third-left {
+  min-width: 600px;
+  flex-basis: 70%;
+  flex-grow: 1;
+  padding: 56px 70px 20px 0;
+}
+
+.dreams-third-right {
+  position: relative;
+  flex-basis: 30%;
+  flex-grow: 1;
+  min-height: 615px;
+  height: 100%;
+}
+
+.dreams-third-right__image {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.dreams-third-expertise {
+  margin-top: 45px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dreams-third-expertise__item {
+  display: flex;
+  flex-basis: 48%;
+  min-width: 250px;
+}
+
+.dreams-third-expertise__item__left {
+  min-width: 45px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.dreams-third-expertise__item-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.dreams-third-expertise__item-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.dreams-third-foot {
+  margin-top: 25px;
+}
+
+/*DREAMS-FORTH*/
+
+.dreams-forth {
+  background: url("./img/bg-forth.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 700px;
+  padding: 50px 0;
+}
+
+.dreams-forth-content {
+  max-width: 50%;
+  padding-top: 5px;
+}
+
+.dreams-forth-dreams-forth {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
 }
 
