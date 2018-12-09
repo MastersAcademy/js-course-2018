@@ -14,15 +14,14 @@ class Racer extends Horse {
     }
 
     setSpeed() {
-        this.speed = Math.floor(Math.random() * (15 - 10) + 10);
+        this.speed = Math.floor(Math.random() * (16 - 10) + 10);
     }
 
     run() {
-        for (let i = 0; i < 10; i++) {
+        for (let i = 1; i <=10; i++) {
             setTimeout(() => {
                 this.distance += this.speed;
                 this.setSpeed();
-                console.log(this);
             }, 1000 * i);
         }
     }
@@ -54,7 +53,7 @@ class Race {
 
     startRace() {
         this.horses.forEach(element => element.run());
-        for (let i = 0; i < 5; i++) {
+        for (let i = 1; i <= 5; i++) {
             setTimeout(() => {
                 this.horses.forEach(element => console.log(element));
             }, 2000 * i);
@@ -65,6 +64,7 @@ class Race {
         }, 10000);
     }
 }
+
 const horseRacing = new Race();
 horseRacing.createRace();
 horseRacing.startRace();
