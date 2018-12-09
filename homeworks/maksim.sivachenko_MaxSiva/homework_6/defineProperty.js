@@ -20,6 +20,8 @@ function addFullName(keyName, obj) {
     return obj;
 }
 
+const regular = /^\+|\d/g;
+
 function addPhone(keyName, obj) {
     let protectedVal;
 
@@ -28,7 +30,6 @@ function addPhone(keyName, obj) {
             return protectedVal;
         },
         set(value) {
-            const regular = /^\+|\d/g;
             protectedVal = value.match(regular).join('');
         },
         enumerable: true,
