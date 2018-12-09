@@ -1,16 +1,28 @@
 const user = {};
+const phone = {};
+let fullName;
+let phoneNumber;
 Object.defineProperties(user, {
     fullName: {
         set: (name) => {
-            this.fullName = name.replace(/([[A-Za-z])\S/g, s => s.toLowerCase()).replace(/(^|\s|[-])\S/g, s => s.toUpperCase());
+            fullName = name.trim().toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
         },
-        get: () => this.fullName,
+        get() {
+            return fullName;
+        },
     },
-    phone: {
+});
+Object.defineProperties(phone, {
+    phoneNumber: {
         set: (numPhone) => {
-            this.phone = numPhone.replace(/(?![/+])\D+/g, '');
+            const plusSymbol = /^\D*\+/g;
+            const plus = plusSymbol.test(numPhone.trim());
+            const value = numPhone.trim().replace(/\D/g, '');
+            phoneNumber = plus ? `+${value}` : value;
         },
-        get: () => this.phone,
+        get() {
+            return phoneNumber;
+        },
     },
 });
 user.fullName = 'aNna-mAria joHNs';
