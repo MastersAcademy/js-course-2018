@@ -9,7 +9,7 @@ function corrName(keyName, obj) {
         },
         get() {
             return name;
-        }
+        },
     });
 }
 function corrNumber(keyName, obj) {
@@ -22,7 +22,7 @@ function corrNumber(keyName, obj) {
         },
         get() {
             return num;
-        }
+        },
     });
 }
 corrName('fullName', user);
