@@ -1,32 +1,37 @@
-const user = {};
+function addProtectedFields(keyName, keyPhone, obj) {
+    let protectedName;
+    let protectedPhone;
+    Object.defineProperty(obj, keyName, {
+        get() {
+            return protectedName;
+        },
+        set(value) {
+            protectedName = value.toLowerCase()
+                .split(/\s+/)
+                .map(word => word[0].toUpperCase() + word.substring(1))
+                .join(' ')
+                .split(/-/)
+                .map(word => word[0].toUpperCase() + word.substring(1))
+                .join('-');
+        },
+        enumerable: true,
+    });
 
-Object.defineProperty(user, 'name', {
-    enumerable: true,
-    configurable: true,
-    writeble: true,
-    set: (date) => {
-        this.name = date.toLowerCase()
-            .split(/\s+/)
-            .map(word => word[0].toUpperCase() + word.substring(1))
-            .join(' ')
-            .split(/-/)
-            .map(word => word[0].toUpperCase() + word.substring(1))
-            .join('-');
-    },
-    get: () => this.name,
-});
+    Object.defineProperty(obj, keyPhone, {
+        get() {
+            return protectedPhone;
+        },
+        set(value) {
+            let plus = '';
+            if (value.charAt(0) === '+') { plus += '+'; }
+            protectedPhone = plus + value.split(/\D/).join('');
+        },
+        enumerable: true,
+    });
+    return obj;
+}
 
-Object.defineProperty(user, 'phone', {
-    enumerable: true,
-    configurable: true,
-    writeble: true,
-    set: (date) => {
-        let plus = '';
-        if (date.charAt(0) === '+') { plus += '+'; }
-        this.phone = plus + date.split(/\D/).join('');
-    },
-    get: () => this.phone,
-});
+const user = addProtectedFields('name', 'phone', {});
 
 user.name = 'aNna-mAria joHNs';
 console.log(user.name);
