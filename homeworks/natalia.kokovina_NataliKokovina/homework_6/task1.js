@@ -8,14 +8,15 @@ function addProtectedKey(firstKey, secondKey, user) {
             protectedVal = value.toLowerCase().replace(/\b\w/g, l => l.toUpperCase());
         },
     });
+    let secondVal;
     Object.defineProperty(user, secondKey, {
         get() {
-            return protectedVal;
+            return secondVal;
         },
-        set(value) {
-            protectedVal = value.replace(/\D/g, '');
-            if (value.charAt(0) === '+') {
-                protectedVal = `+${protectedVal}`;
+        set(secondValue) {
+            secondVal = secondValue.replace(/\D/g, '');
+            if (secondValue.charAt(0) === '+') {
+                secondVal = `+${secondVal}`;
             }
         },
     });
