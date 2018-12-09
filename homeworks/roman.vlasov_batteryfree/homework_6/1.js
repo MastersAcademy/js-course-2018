@@ -1,7 +1,7 @@
 const user = {};
 
-const regFirstChar = new RegExp('\\b\\w', 'g');
-const regPlusNum = new RegExp('(?!^\\+)\\D', 'g');
+const REG_FIRST_CHAR = new RegExp('\\b\\w', 'g');
+const REG_PLUS_NUM = new RegExp('(?!^\\+)\\D', 'g');
 
 function addKeyName(obj) {
     let name;
@@ -9,7 +9,7 @@ function addKeyName(obj) {
         configurable: true,
         enumerable: true,
         set(value) {
-            name = value.toLowerCase().replace(regFirstChar, s => s.toUpperCase());
+            name = value.toLowerCase().replace(REG_FIRST_CHAR, s => s.toUpperCase());
         },
         get() {
             return name;
@@ -23,7 +23,7 @@ function addKeyPhone(obj) {
         configurable: true,
         enumerable: true,
         set(value) {
-            num = value.trim().replace(regPlusNum, '');
+            num = value.trim().replace(REG_PLUS_NUM, '');
         },
         get() {
             return num;
