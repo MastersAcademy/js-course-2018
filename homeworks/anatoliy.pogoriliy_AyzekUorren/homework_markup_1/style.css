@@ -371,3 +371,90 @@ p, h1, h2, figure, body {
   text-transform: uppercase;
   font-weight: 400;
 }
+
+.content__items--nowrap {
+  flex-wrap: nowrap;
+}
+
+.content__items--awesome-team {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.content__item--awesome-team {
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 0;
+  width: auto;
+}
+
+.content__description--no-margin {
+  margin: 0;
+}
+
+
+.content--awesome-bg {
+  background-color: #F7F7F7;
+}
+
+.awesome-team__link-wrapper {
+  margin-top: 14px;
+}
+
+.content__header--awesome-team-margin {
+  margin-top: 100px;
+}
+
+.content__description--align {
+  text-align: center;
+}
+
+.awesome-team__img--invert {
+  filter: invert(100%);
+}
+
+.awesome-team__link-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo-wrapper {
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+  background-color: #111;
+  border: 7px solid #FFF;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.awesome-team__img {
+  width: 100%;
+}
+
+.social-link {
+  background-color: #111;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.social-link--google-hover:hover {
+  background-color: #D95232;
+}
+
+.social-link--facebook-hover:hover {
+  background-color: #3B5998;
+}
+
+.social-link--twitter-hover:hover {
+  background-color: #00ACED;
+}
+
+.social-link--pinterest-hover:hover {
+  background-color: #CB2028;
+}
