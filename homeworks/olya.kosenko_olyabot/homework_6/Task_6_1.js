@@ -1,4 +1,8 @@
 const user = {};
+// regular first letter in word
+const reg1 = /\b[a-z]/g;
+// regular first + and all numbers in string
+const reg2 = /^\+\d*|\d/g;
 let userName;
 let userPhone;
 Object.defineProperties(user, {
@@ -7,7 +11,7 @@ Object.defineProperties(user, {
             return userName;
         },
         set(value) {
-            userName = value.toLowerCase().replace(/\b[a-z]/g, str => str.toUpperCase());
+            userName = value.toLowerCase().replace(reg1, str => str.toUpperCase());
         },
     },
     phone: {
@@ -15,7 +19,7 @@ Object.defineProperties(user, {
             return userPhone;
         },
         set(value) {
-            userPhone = value.match(/^\+\d*|\d/g).join('');
+            userPhone = value.match(reg2).join('');
         },
     },
 });
