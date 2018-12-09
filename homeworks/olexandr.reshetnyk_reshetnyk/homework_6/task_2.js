@@ -63,12 +63,20 @@ class Race {
                 });
                 clearInterval(this.raceTimer);
 
-                // calculating winners
-                const distances = [];
-                // fill distances array off all horses
-                this.horses.forEach((horse) => {
-                    distances.push(horse.distance);
-                });
+                // sorting horses by DESC their distances
+                this.horses.sort((h1, h2) => ((h1.distance < h2.distance) ? 1 : -1));
+                // print winners
+                console.log('Congratulation our horses-winners!');
+                for (let i = 0; i < this.horses.length; i++) {
+                    if (this.horses[i].distance === this.horses[0].distance) {
+                        console.log(`Winner: ${this.horses[i].name}  ${this.horses[i].distance}`);
+                    } else {
+                        break;
+                    }
+                }
+                console.log('They won a lot of nothing!');
+
+                /*
                 // calc max distance
                 const maxDistance = Math.max.apply(null, distances);
                 // find winners from Racer instances
@@ -78,6 +86,7 @@ class Race {
                 winners.forEach((horse) => {
                     console.log(`${horse.name} ${horse.breed} ${horse.distance}`);
                 });
+                */
             }
         }, 2010);
     }

@@ -15,7 +15,7 @@ function addUser() {
             return phone;
         },
         set(value) {
-            phone = value.toLowerCase().replace(/(^\+)|\D*(\d+)\D*/g, (str, plus, num) => (plus) || num);
+            phone = ((value[0] === '+') ? '+' : '') + value.replace(/\D*/g, '');
         },
     });
     return obj;
