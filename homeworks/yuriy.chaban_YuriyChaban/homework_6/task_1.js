@@ -9,7 +9,9 @@ Object.defineProperties(user, {
         },
 
         set(value) {
-            this.lowerCaseFullName = value.toLowerCase().replace(nameCapitalizeRegex, letter => letter.toUpperCase());
+            this.lowerCaseFullName = value.toLowerCase().replace(
+                nameCapitalizeRegex, letter => letter.toUpperCase(),
+            );
         },
         enumerable: true,
         configurable: true,
