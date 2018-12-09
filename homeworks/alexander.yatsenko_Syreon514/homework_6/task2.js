@@ -51,10 +51,9 @@ class Race {
     }
 
     startRace() {
-        const runTime = 10;
         console.log('Race started');
         this.horses.forEach(racer => racer.run());
-        for (let i = 1; i <= runTime / 2; i++) {
+        for (let i = 1; i <= 5; i++) {
             setTimeout(() => {
                 this.horses.forEach(racer => console.log(`Name: ${racer.name}, Breed: ${racer.breed}, Distance: ${racer.distance}`));
             }, 2000 * i);
