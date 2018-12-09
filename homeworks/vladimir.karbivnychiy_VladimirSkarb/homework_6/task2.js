@@ -11,10 +11,11 @@ class Racer extends Horse {
         this.speed = 0;
         this.setSpeed();
     }
-    
+
     setSpeed() {
         this.speed = Math.floor(Math.random() * (15 - 10) + 10);
     }
+
     run() {
         for (let i = 1; i <= 10; i++) {
             setTimeout(() => {
