@@ -16,30 +16,30 @@ class Racer extends Horse {
         super(name, breed);
         this.distance = 0;
         this.speed = Racer.setSpeed();
+        this.time = 0;
     }
 
     static setSpeed() { return 10 + 5 * Math.random(); }
 
-    run() {
+    run(timeout) {
         const that = this;
-        function racing() {
+        function racing(time) {
             return new Promise(() => {
                 setTimeout(() => {
                     that.distance += that.speed;
                     that.speed = Racer.setSpeed();
-                    /* eslint no-use-before-define: ["error", { "variables": false }] */
-                    if (!race1.finish) racing();
+                    that.time = time;
+                    if (time < timeout) racing(time + 1);
                 }, 1000);
             });
         }
-        racing();
+        racing(1);
     }
 }
 
 class Race {
     constructor() {
         this.horses = [];
-        this.finish = false;
     }
 
     createRace() {
@@ -47,21 +47,36 @@ class Race {
     }
 
     startRece(timeout) {
-        this.horses.forEach(obj => obj.run());
+        this.horses.forEach(obj => obj.run(timeout));
         const that = this;
         function racing(time) {
             setTimeout(() => {
-                console.log(that.horses.reduce(
-                    (str, obj) => `${str}${obj.name}\t(${obj.breed})\t\trun\t${obj.distance} m\n`,
-                    `Time = ${time} c:\n`,
-                ));
-                if (time < timeout) racing(time + 2);
-                else {
-                    that.finish = true;
-                    that.horses.sort((a, b) => b.distance - a.distance);
-                    console.log(`Winner: ${that.horses[0].name}   congratulate the champion!`);
+                function synchronization() {
+                    return new Promise((resolve, reject) => {
+                        if (that.horses.some(obj => obj.time < time)) reject();
+                        else resolve();
+                    });
                 }
-            }, 2010);
+                function logRacing() {
+                    console.log(that.horses.reduce(
+                        (str, obj) => `${str}${obj.name}\t(${obj.breed})\t\trun\t${obj.distance} m\n`,
+                        `Time = ${time} c:\n`,
+                    ));
+                    if (time < timeout) racing(time + 2);
+                    else {
+                        that.horses.sort((a, b) => b.distance - a.distance);
+                        console.log(`Winner: ${that.horses[0].name}   congratulate the champion!`);
+                    }
+                }
+                synchronization()
+                    .then(logRacing)
+                    .catch(() => setTimeout(() => synchronization()
+                        .then(logRacing)
+                        .catch(() => setTimeout(() => synchronization()
+                            .then(logRacing).catch(() => { console.log('It seems that the program has fallen for some reason'); }),
+                        500)),
+                    16));
+            }, 2000);
         }
         racing(2);
     }
