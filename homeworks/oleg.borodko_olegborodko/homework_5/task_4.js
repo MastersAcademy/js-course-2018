@@ -9,7 +9,7 @@ const people = [
 ];
 
 const getPeople = function (userId) {
-    const friendsObj = people.filter(el => el.id === userId)[0];
+    const friendsObj = people.find(el => el.id === userId);
 
     if (typeof friendsObj === 'undefined') {
         return null;
