@@ -73,7 +73,7 @@ class Race {
                     .catch(() => setTimeout(() => synchronization()
                         .then(logRacing)
                         .catch(() => setTimeout(() => synchronization()
-                            .then(logRacing).catch(() => { console.log('It seems that the program has fallen for some reason'); }),
+                            .then(logRacing).catch(() => { console.log('It seems that the program has fallen for some reason...!'); }),
                         500)),
                     16));
             }, 2000);
