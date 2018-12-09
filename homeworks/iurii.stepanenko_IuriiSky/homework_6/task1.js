@@ -1,7 +1,11 @@
 // task fullName
+function capitalizeWord(word) {
+    return word[0].toUpperCase() + word.slice(1).toLowerCase();
+}
+
 function capitalize(name) {
+    let result = name.split(/\W+/).map(element => capitalizeWord(element)).join(' ');
     const hyphen = name.indexOf('-');
-    let result = name.split(/\W+/).map(element => element[0].toUpperCase() + element.slice(1).toLowerCase()).join(' ');
     if (hyphen !== -1) {
         result = `${result.substring(0, hyphen)}-${result.substring(hyphen + 1)}`;
     }
@@ -24,10 +28,12 @@ function addUserFullName(keyName, obj) {
 
 // Task phone
 function normalizePhone(phone) {
+    const result = phone.split(/\D/).join('');
     if (phone[0] === '+') {
-        return `+${phone.split(/\D/).join('')}`;
+        return `+${result}`;
+        // return '+' + result;
     }
-    return phone.split(/\D/).join('');
+    return result;
 }
 
 function addUserPhone(keyName, obj) {
