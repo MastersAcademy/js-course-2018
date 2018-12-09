@@ -1,23 +1,25 @@
-const user = {};
-let fullName;
-let phone;
-
-Object.defineProperty(user, 'fullName', {
-    get() {
-        return fullName;
-    },
-    set(value) {
-        fullName = value.toLowerCase().replace(/\b\w/g, v => v.toUpperCase());
-    },
-});
-Object.defineProperty(user, 'phone', {
-    get() {
-        return phone;
-    },
-    set(value) {
-        phone = (value[0] === '+') ? phone = value.replace(/[^+\d]/g, '') : phone = value.replace(/[^\d]/g, '');
-    },
-});
+function setUserInfo(keyFullName, keyPhone, object) {
+    let fullName;
+    let phone;
+    Object.defineProperty(object, keyFullName, {
+        get() {
+            return fullName;
+        },
+        set(value) {
+            fullName = value.toLowerCase().replace(/\b\w/g, v => v.toUpperCase());
+        },
+    });
+    Object.defineProperty(object, keyPhone, {
+        get() {
+            return phone;
+        },
+        set(value) {
+            phone = (value[0] === '+') ? phone = value.replace(/[^+\d]/g, '') : phone = value.replace(/[^\d]/g, '');
+        },
+    });
+    return object;
+}
+const user = setUserInfo('fullName', 'phone', {});
 
 user.fullName = 'anna-mAria joHNs';
 console.log(user.fullName);
