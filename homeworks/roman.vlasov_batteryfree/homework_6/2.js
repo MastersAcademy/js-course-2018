@@ -25,7 +25,7 @@ class Racer extends Horse {
     }
 
     stop() {
-        if (typeof this.runing === 'object') {
+        if (!this.running) {
             clearInterval(this.runing);
         }
     }
@@ -37,15 +37,14 @@ class Race {
     }
 
     createRace(stabling) {
-        stabling.forEach((element) => {
-            this.horses.push(new Racer(element.name, element.breed));
-        });
+        this.horses = (stabling);
     }
 
     startRace() {
         this.horses.forEach(element => element.run());
         const runingRace = setInterval(() => {
-            this.horses.forEach(element => console.log(element));
+            this.horses.forEach(element => console.log(`Name:${element.name}, breed:${element.breed}, 
+            distance:${element.distance}, speed:${element.speed}`));
         }, 2000);
 
         setTimeout(() => {
@@ -58,16 +57,16 @@ class Race {
 }
 
 const stabling = [
-    { name: 'Buck', breed: 'Zebra' },
-    { name: 'Widowmaker', breed: 'Pony' },
-    { name: 'Cyril Proudbottom', breed: 'Arabian' },
-    { name: 'Snowball', breed: 'Przewalski' },
-    { name: 'Ahill', breed: 'Zebra' },
-    { name: 'Tagged', breed: 'Arabian' },
-    { name: 'Captain', breed: 'Przewalski' },
-    { name: 'Han', breed: 'Arabian' },
-    { name: 'Major', breed: 'Arabian' },
-    { name: 'Max', breed: 'Pony' },
+    new Racer('Buck', 'Zebra'),
+    new Racer('Widowmaker', 'Pony'),
+    new Racer('Cyril Proudbottom', 'Arabian'),
+    new Racer('Snowball', 'Przewalski'),
+    new Racer('Ahill', 'Zebra'),
+    new Racer('Tagged', 'Arabian'),
+    new Racer('Captain', 'Przewalski'),
+    new Racer('Han', 'Arabian'),
+    new Racer('Major', 'Arabian'),
+    new Racer('Max', 'Pony'),
 ];
 
 const horseRacing = new Race();
