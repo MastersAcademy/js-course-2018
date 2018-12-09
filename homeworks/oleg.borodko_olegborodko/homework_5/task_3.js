@@ -1,15 +1,12 @@
-const clone = {};
+function copyObject(obj) {
+    const clone = {};
 
-function copyObject(obj, externalKey) {
     Object.entries(obj).forEach((entry) => {
         const key = entry[0];
         const value = entry[1];
 
         if (value !== null && typeof value === 'object') {
-            copyObject(value, key);
-        } else if (externalKey) {
-            clone[externalKey] = {};
-            clone[externalKey][key] = value;
+            clone[key] = copyObject(value, key);
         } else {
             clone[key] = value;
         }
