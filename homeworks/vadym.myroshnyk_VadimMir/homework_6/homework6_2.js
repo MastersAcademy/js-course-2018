@@ -40,13 +40,15 @@ class Rase {
     constructor() {
         this.horses = [];
     }
+
     createRase() {
         horses.forEach((item) => {
             this.horses.push(new Raser(item.name, item.breed));
         });
     }
+
     startRase() {
-        this.horses.forEach((run) => run.runing());
+        this.horses.forEach(run => run.runing());
         for (let j = 1; j <= 5; j++) {
             setTimeout(() => {
                 this.horses.forEach(run => console.log(`hors ${run.name} : breed ${run.breed} : distans ${run.distans}`));

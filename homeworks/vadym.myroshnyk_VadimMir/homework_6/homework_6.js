@@ -1,35 +1,36 @@
 // tesk 1
 const user = {};
 
-function changeName (fullName, user) {
+function changeName(fullName, users) {
     let changefullName;
-    Object.defineProperty(user, fullName, {
-        get () {
+    Object.defineProperty(users, fullName, {
+        get() {
             return changefullName;
         },
-        set (value) {
+        set(value) {
             changefullName = value.toLowerCase().replace(/\b\w/g, name => name.toUpperCase());
         },
-        enumerable : true,
-        configurable : true,
-        writeble : true,
+        enumerable: true,
+        configurable: true,
+        writeble: true,
     });
-    return user;
+    return users;
 }
 
-function cangePhone (phone, user) {
-    let cangePhone;
+function cangePhone(phone) {
+    let cangesPhone;
     Object.defineProperty(user, phone, {
-        get () {
-            return cangePhone;
+        get() {
+            return cangesPhone;
         },
-        set (value) {
-            cangePhone = value.toLowerCase().toLowerCase().replace(/(^\+)|\D*(\d+)\D*/g, (str, plus, num) => (plus) || num);
+        set(value) {
+            cangesPhone = value.toLowerCase().toLowerCase().replace(/(^\+)|\D*(\d+)\D*/g, (str, plus, num) => (plus) || num);
         },
-        enumerable : true,
-        configurable : true,
-        writeble : true,
+        enumerable: true,
+        configurable: true,
+        writeble: true,
     });
+
     return user;
 }
 
@@ -37,7 +38,7 @@ changeName('fullName', user);
 user.fullName = 'aNna-mAria joHNs';
 console.log(user.fullName);
 
-cangePhone('phone',user);
+cangePhone('phone', user);
 user.phone = '+38(096)-111-22-33';
 console.log(user.phone);
 user.phone = '38(096)+111b22+33';
