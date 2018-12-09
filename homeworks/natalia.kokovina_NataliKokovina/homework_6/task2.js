@@ -35,15 +35,11 @@ class Race {
     }
 
     crearRace() {
-        const allHorses = [];
         for (let i = 0; i <= horsName.length - 1; i++) {
-            const hors = new Horse(horsName[i], horsBreed[i]);
-            allHorses.push(hors);
+            this.name = horsName[i];
+            this.breed = horsBreed[i];
+            this.horses.push(new Racer(this.name, this.breed));
         }
-
-        allHorses.forEach((hors) => {
-            this.horses.push(new Racer(hors.name, hors.breed));
-        });
     }
 
     startRace() {
