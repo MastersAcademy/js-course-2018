@@ -51,12 +51,6 @@ class Race {
         const that = this;
         function racing(time) {
             setTimeout(() => {
-                function synchronization() {
-                    return new Promise((resolve, reject) => {
-                        if (that.horses.some(obj => obj.time < time)) reject();
-                        else resolve();
-                    });
-                }
                 function logRacing() {
                     console.log(that.horses.reduce(
                         (str, obj) => `${str}${obj.name}\t(${obj.breed})\t\trun\t${obj.distance} m\n`,
@@ -68,14 +62,11 @@ class Race {
                         console.log(`Winner: ${that.horses[0].name}   congratulate the champion!`);
                     }
                 }
-                synchronization()
-                    .then(logRacing)
-                    .catch(() => setTimeout(() => synchronization()
-                        .then(logRacing)
-                        .catch(() => setTimeout(() => synchronization()
-                            .then(logRacing).catch(() => { console.log('It seems that the program has fallen for some reason...!'); }),
-                        500)),
-                    16));
+                function synchronization() {
+                    if (that.horses.some(obj => obj.time < time)) setTimeout(synchronization, 16);
+                    else logRacing();
+                }
+                synchronization();
             }, 2000);
         }
         racing(2);
