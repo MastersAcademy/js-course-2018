@@ -438,6 +438,10 @@
   padding: 56px 25%;
 }
 
+.button_toogle {
+  display: none;
+}
+
 @media (min-width: 992px) {
 
   .body {
@@ -466,6 +470,10 @@
     min-width: 150px;
     height: 150px;
     max-width: 150px;
+  }
+
+  .logo__link {
+    padding-left: 26px;
   }
 }
 
@@ -535,22 +543,43 @@
   }
 
   .button_toogle {
+    display: block;
     background: none;
     border: none;
     position: absolute;
     right: 25px;
-    top: 25px;
+    top: 23px;
   }
 
   .nav__list {
-    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: -300%;
+    left: 0;
+    padding-left: 0;
+    background: #9E9E9E70;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: .4s all;
   }
 
   .nav__mobile .nav__list {
-    display: block;
+    visibility: visible;
+    top: 53px;
   }
 
   .home-header {
     padding-top: 25px;
+  }
+
+  .nav__item {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .services {
+    flex-wrap: wrap;
   }
 }
