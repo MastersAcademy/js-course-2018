@@ -20,7 +20,6 @@ class Racer extends Horse {
         super(name, breed);
         this.distance = 0;
         this.speed = 0;
-        this.timer = undefined;
         this.setSpeed();
     }
 
@@ -55,8 +54,6 @@ const createRacer = (i) => {
 class Race {
     constructor() {
         this.horses = [];
-        this.timer = undefined;
-        this.step = 0;
     }
 
     creatRace() {
@@ -66,6 +63,7 @@ class Race {
     }
 
     startRace() {
+        this.step = 0;
         this.horses.forEach(horse => (horse.run()));
         this.timer = setInterval(() => {
             this.step++;
@@ -83,13 +81,8 @@ class Race {
     }
 
     findWinner() {
-        let winner = this.horses[0];
-        for (let i = 1; i < this.horses.length; i++) {
-            if (winner.distance < this.horses[i].distance) {
-                winner = this.horses[i];
-            }
-        }
-        console.log(`\nWinner: ${winner.name} (${winner.breed})`);
+        this.horses = this.horses.sort((a, b) => (a.distance < b.distance ? 1 : -1));
+        console.log(`\nWinner: ${this.horses[0].name} (${this.horses[0].breed}) - ${this.horses[0].distance}`);
     }
 }
 
