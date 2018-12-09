@@ -588,7 +588,7 @@ p, h1, h2, figure, body {
 }
 
 .footer-Line {
-  content: '';
+  content: "";
   width: 940px;
   height: 1px;
   background-color: #FFF;
