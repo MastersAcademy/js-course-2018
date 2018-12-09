@@ -458,3 +458,141 @@ p, h1, h2, figure, body {
 .social-link--pinterest-hover:hover {
   background-color: #CB2028;
 }
+
+.footer {
+  background-color: #111;
+  display: flex;
+  width: 1024px;
+  margin: auto;
+  justify-content: space-evenly;
+  color: #FFF;
+  flex-direction: column;
+}
+
+.contactUs-form {
+  display: flex;
+  flex-direction: column;
+  width: 456px;
+  order: 2;
+  margin-top: 100px;
+}
+
+.contactus-form--border {
+  border: 1px solid #CCC;
+}
+
+.contactus-form--credentials {
+  height: 50px;
+}
+
+.contactUs-form--placeholder::placeholder {
+  color: #BBB;
+  padding-left: 20px;
+}
+
+.contactUs-form__name {
+  margin-bottom: 29px;
+}
+
+.contactUs-form__email {
+  margin-bottom: 20px;
+}
+
+.contactUs-form__message {
+  height: 166px;
+  margin-bottom: 21px;
+}
+
+.contactUs__submit {
+  width: 187px;
+  height: 60px;
+  background-color: #35C2F8;
+  color: #FFF;
+  border-radius: 55px;
+  transition-duration: .4s;
+  cursor: pointer;
+  border: 0;
+  font-size: 16px;
+}
+
+.contactUs__submit:hover {
+  background-color: #FFF;
+  color: #111;
+}
+
+.contactUs-header {
+  width: 438px;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.contactUs__tittle {
+  margin-top: 100px;
+  margin-bottom: 35px;
+  font-size: 40px;
+}
+
+.contactUs__description {
+  margin-bottom: 47px;
+  font-size: 14px;
+}
+
+.credentials__img {
+  filter: invert(100%);
+}
+
+.contactUs__credentials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 450px;
+}
+
+.credentials__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.credentials__details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.credentials__details__description {
+  font-size: 16px;
+}
+
+.credentials__details__img-Wrapper {
+  width: 30px;
+  margin-right: 16px;
+}
+
+.credentials__img {
+  width: 100%;
+}
+
+.footer-Wrapper {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.powered {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.footer-Line {
+  content: '';
+  width: 940px;
+  height: 1px;
+  background-color: #FFF;
+  align-self: center;
+  margin-top: 63px;
+  margin-bottom: 32px;
+}
