@@ -1,27 +1,32 @@
-/* „Some people, when confronted with a problem, think
-    "I know, I'll use regular expressions."
-    Now they have two problems.“
-    -- Jamie Zawinski
-*/
-
-const user = {};
-
-Object.defineProperties(user, {
-    fullName: {
-        set: (name) => {
-            this.fullName = name.toLowerCase().replace(/\b\w/g,
-                l => l.toUpperCase());
+function User() {
+    let fullName;
+    let phone;
+    Object.defineProperties(this, {
+        fullName: {
+            set(name) {
+                const reName = /\b\w/g;
+                fullName = name
+                    .toLowerCase()
+                    .replace(reName,
+                        l => l.toUpperCase());
+            },
+            get() {
+                return fullName;
+            },
         },
-        get: () => this.fullName,
-    },
-    phone: {
-        set: (phoneNum) => {
-            this.phone = phoneNum.replace(/(?![/+])\D+/g, '');
+        phone: {
+            set(phoneNum) {
+                const rePhone = /(?![/+])\D+/g;
+                phone = phoneNum.replace(rePhone, '');
+            },
+            get() {
+                return phone;
+            },
         },
-        get: () => this.phone,
-    },
-});
+    });
+}
 
+const user = new User();
 user.fullName = 'aNna-mAria joHNs';
 console.log(user.fullName);
 user.phone = '+38(096)-111-22-33';
