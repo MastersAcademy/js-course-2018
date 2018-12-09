@@ -17,11 +17,15 @@ class Racer extends Horse {
     }
 
     run() {
-        for (let i = 0; i < 10; i++) {
-            setTimeout(() => {
-                this.distance += this.speed;
-                this.setSpeed();
-            }, 1000 * i);
+        this.timer = setInterval(() => {
+            this.distance += this.speed;
+            this.setSpeed();
+        }, 1000);
+    }
+
+    stop() {
+        if (this.timer !== undefined) {
+            clearInterval(this.timer);
         }
     }
 }
@@ -31,38 +35,49 @@ class Race {
         this.horses = [];
     }
 
-    createRace() {
-        const racers = [
-            { name: 'Roach', breed: 'Geralt\'s Horse' },
-            { name: 'Pegasus', breed: 'Dandelion\'s white gelding' },
-            { name: 'Aard', breed: 'Windhorse' },
-            { name: 'Ignis', breed: 'Firehorse' },
-            { name: 'Quen', breed: 'Battlehorse' },
-            { name: 'Axii', breed: 'Calmhorse' },
-            { name: 'Yrden', breed: 'Magichorse' },
-            { name: 'Kelpie', breed: 'Ciri\'s Horse' },
-            { name: 'Scorpion', breed: 'Eskel\'s horse' },
-            { name: 'Lexa', breed: 'Student' },
-        ];
+    createRace(racers) {
         racers.forEach((racer) => {
             this.horses.push(new Racer(racer.name, racer.breed));
         });
     }
 
     startRace() {
+        this.step = 0;
         this.horses.forEach(racer => racer.run());
-        for (let i = 0; i < 5; i++) {
-            setTimeout(() => {
-                this.horses.forEach(racer => console.log(racer));
-            }, 2000 * i);
-        }
-        setTimeout(() => {
-            this.horses.sort((x, y) => y.distance - x.distance);
-            console.log(`=== ${this.horses[0].breed} ${this.horses[0].name} win! ===`);
-        }, 10000);
+        this.timer = setInterval(() => {
+            this.step++;
+            this.horses.forEach(racer => console.log(racer.name,
+                racer.breed,
+                racer.distance,
+                racer.speed));
+
+            if (this.step >= 10) {
+                clearInterval(this.timer);
+                this.horses.forEach(racer => racer.stop());
+                this.findWinner();
+            }
+        }, 2000);
+    }
+
+    findWinner() {
+        this.horses.sort((x, y) => y.distance - x.distance);
+        console.log(`=== ${this.horses[0].breed} ${this.horses[0].name} win! ===`);
     }
 }
 
+const racers = [
+    { name: 'Roach', breed: 'Geralt\'s Horse' },
+    { name: 'Pegasus', breed: 'Dandelion\'s white gelding' },
+    { name: 'Aard', breed: 'Windhorse' },
+    { name: 'Ignis', breed: 'Firehorse' },
+    { name: 'Quen', breed: 'Battlehorse' },
+    { name: 'Axii', breed: 'Calmhorse' },
+    { name: 'Yrden', breed: 'Magichorse' },
+    { name: 'Kelpie', breed: 'Ciri\'s Horse' },
+    { name: 'Scorpion', breed: 'Eskel\'s horse' },
+    { name: 'Lexa', breed: 'Student' },
+];
+
 const race = new Race();
-race.createRace();
+race.createRace(racers);
 race.startRace();
