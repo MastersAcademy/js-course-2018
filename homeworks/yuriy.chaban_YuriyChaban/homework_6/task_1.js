@@ -1,4 +1,6 @@
 const user = {};
+const nameCapitalizeRegex = /\b\w/g;
+const phoneRegex = /[^\d]/g;
 
 Object.defineProperties(user, {
     fullName: {
@@ -7,7 +9,7 @@ Object.defineProperties(user, {
         },
 
         set(value) {
-            this.lowerCaseFullName = value.toLowerCase().replace(/\b\w/g, letter => letter.toUpperCase());
+            this.lowerCaseFullName = value.toLowerCase().replace(nameCapitalizeRegex, letter => letter.toUpperCase());
         },
         enumerable: true,
         configurable: true,
@@ -18,7 +20,7 @@ Object.defineProperties(user, {
             return this.userPhone ? `+${this.userPhone}` : '';
         },
         set(value) {
-            this.userPhone = value.replace(/[^\d]/g, '');
+            this.userPhone = value.replace(phoneRegex, '');
         },
         enumerable: true,
         configurable: true,
