@@ -24,14 +24,12 @@ class Racer extends Horse {
     run(timeout) {
         const that = this;
         function racing(time) {
-            return new Promise(() => {
-                setTimeout(() => {
-                    that.distance += that.speed;
-                    that.speed = Racer.setSpeed();
-                    that.time = time;
-                    if (time < timeout) racing(time + 1);
-                }, 1000);
-            });
+            setTimeout(() => {
+                that.distance += that.speed;
+                that.speed = Racer.setSpeed();
+                that.time = time;
+                if (time < timeout) racing(time + 1);
+            }, 1000);
         }
         racing(1);
     }
