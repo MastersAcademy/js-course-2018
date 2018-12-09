@@ -2,94 +2,213 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>I'm from FRONT END course</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <!-- Header and menu -->
     <div class="banner-block">
         <header class="header">
-            <div class="logo">
-                <img class="logo__img" src="images/logo.png" alt="Dreams">
-            </div>
-            <nav class="nav">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Services</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Portfolio</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">About</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Team</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Contact</a>
-                    </li>
-                </ul>
+            <a class="logo" href="#">
+                <img class="logo__img" src="images/logo.png" alt="Dreams" />
+            </a>
+            <nav class="nav-menu">
+                <a class="nav-menu__link" href="#">Home</a>
+                <a class="nav-menu__link" href="#">Services</a>
+                <a class="nav-menu__link" href="#">Portfolio</a>
+                <a class="nav-menu__link" href="#">About</a>
+                <a class="nav-menu__link" href="#">Team</a>
+                <a class="nav-menu__link" href="#">Contact</a>
             </nav>
         </header>
-        <div class="banner-triggers">
-            <h1 class="trigger-big">
+        <div class="triggers">
+            <h1 class="triggers__big banner-line">
                 Build the website of your Dreams
             </h1>
-            <div class="banner-line"></div>
-            <h2 class="trigger-small">
-                We are a digital agency that believes in building things that are meaningful!
+            <h2 class="triggers__small">
+                We are a digital agency that believes in building things
+                that are meaningful!
             </h2>
         </div>
     </div>
-    <!-- Header and menu END -->
 
     <!-- Core services -->
-    <div class="page">
-        <div class="wrap">
-            <div class="page-header">
-                <h2 class="title">
-                    Core services
-                </h2>
-                <div class="line"></div>
+    <section class="services-block">
+        <div class="content-header">
+            <h2 class="content-header__title line">Core services</h2>
+        </div>
+        <div class="box-services">
+            <figure class="box-service">
+                <img class="box-service__img" src="images/tools.png" alt="Beautiful design" />
+                <h3 class="box-service__title">Beautiful Designs</h3>
+                <p class="box-service__text">
+                    Proin iaculis purus consequat sem digni ssim. Donec
+                    porttitora entum aenean rhoncus posuere odio in.
+                    Iaculis purus digni.
+                </p>
+            </figure>
+            <figure class="box-service">
+                <img class="box-service__img" src="images/flow-tree.png" alt="Web development" />
+                <h3 class="box-service__title">Web development</h3>
+                <p class="box-service__text">
+                    Proin iaculis purus consequat sem digni ssim. Donec
+                    porttitora entum aenean rhoncus posuere odio in.
+                    Iaculis purus digni.
+                </p>
+            </figure>
+            <figure class="box-service">
+                <img class="box-service__img" src="images/lifebuoy.png" alt="24/7 Support" />
+                <h3 class="box-service__title">24/7 Support</h3>
+                <p class="box-service__text">
+                    Proin iaculis purus consequat sem digni ssim. Donec
+                    porttitora entum aenean rhoncus posuere odio in.
+                    Iaculis purus digni.
+                </p>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Other expertise -->
+    <section class="content content--grey">
+        <div class="expertise-wrap">
+            <div class="expertise-block">
+                <h2 class="expertise-block__title">Other Expertise</h2>
+                <p class="expertise-block__description">
+                    Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                    rhoncus posuere odio in tincidunt consequat sem cure digni ssim.
+                </p>
+                <div class="expertise-boxes">
+                    <figure class="expertise-box offset-bottom--sm">
+                        <div class="expertise-box-flex">
+                            <img class="expertise-box__img offset-right--xs" src="images/icons/gear-icon.png" alt="Custom setup">
+                            <h3 class="expertise-box__title">Custom setup</h3>
+                        </div>
+                        <figcaption class="expertise-box__description offset-left--lg">
+                            Proin iaculis purus consequat sem cure digni ssim.
+                            Donec
+                            porttitora entum suscipit aenean rhoncus.
+                        </figcaption>
+                    </figure>
+                    <figure class="expertise-box offset-bottom--sm">
+                        <div class="expertise-box-flex">
+                            <img class="expertise-box__img offset-right--xs" src="images/icons/cloud-icon.png" alt="Cloud control">
+                            <h3 class="expertise-box__title">Cloud control</h3>
+                        </div>
+                        <figcaption class="expertise-box__description offset-left--lg">
+                            Proin iaculis purus consequat sem cure digni ssim.
+                            Donec
+                            porttitora entum suscipit aenean rhoncus.
+                        </figcaption>
+                    </figure>
+                    <figure class="expertise-box offset-bottom--sm">
+                        <div class="expertise-box-flex">
+                            <img class="expertise-box__img offset-right--xs" src="images/icons/star-icon.png" alt="All star support team">
+                            <h3 class="expertise-box__title">All star support team</h3>
+                        </div>
+                        <figcaption class="expertise-box__description offset-left--lg">
+                            Proin iaculis purus consequat sem cure digni ssim.
+                            Donec
+                            porttitora entum suscipit aenean rhoncus.
+                        </figcaption>
+                    </figure>
+                    <figure class="expertise-box offset-bottom--sm">
+                        <div class="expertise-box-flex">
+                            <img class="expertise-box__img offset-right--xs" src="images/icons/lock-icon.png" alt="">
+                            <h3 class="expertise-box__title">Top notch security</h3>
+                        </div>
+                        <figcaption class="expertise-box__description offset-left--lg">
+                            Proin iaculis purus consequat sem cure digni ssim.
+                            Donec
+                            porttitora entum suscipit aenean rhoncus.
+                        </figcaption>
+                    </figure>
+                </div>
+                <a href="#" class="expertise-boxes__learn-more">Learn More</a>
             </div>
-            <div class="block-services">
-                <div class="box-services">
-                    <img class="box-services__img" src="images/tools.png" alt="Beautiful design">
-                    <h2 class="box-services__title">Beautiful Designs</h2>
-                    <div class="box-services__text">
-                        Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere
-                        odio in. Iaculis purus digni.
-                    </div>
-                </div>
-                <div class="box-services">
-                    <img class="box-services__img" src="images/flow-tree.png" alt="Web development">
-                    <h2 class="box-services__title">Web development</h2>
-                    <div class="box-services__text">
-                        Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere
-                        odio in. Iaculis purus digni.
-                    </div>
-                </div>
-                <div class="box-services">
-                    <img class="box-services__img" src="images/lifebuoy.png" alt="24/7 Support">
-                    <h2 class="box-services__title">24/7 Support</h2>
-                    <div class="box-services__text">Proin iaculis purus consequat sem digni ssim. Donec porttitora
-                        entum aenean rhoncus posuere odio in. Iaculis purus digni.
-                    </div>
-                </div>
+            <div class="expertise-img">
+                <img class="expertise-img__img img--right" src="images/expertise.png" alt="Expertise">
             </div>
         </div>
-    </div>
-    <!-- Core services END-->
+    </section>
 
-</body>
+    <!-- Amazing Portfolio -->
+    <section class="amazing-portfolio">
+        <div class="amazing-wrap">
+            <div class="amazing-portfolio-description">
+                <h2 class="amazing-portfolio__heading">Amazing Portfolio</h2>
+                <div class="amazing-portfolio-background">
+                    <p class="amazing-portfolio__desc offset-bottom--md">
+                        Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                        rhoncus
+                        posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+                        entum suscipit.
+                    </p>
+                    <p class="amazing-portfolio__desc offset-bottom--md">
+                        Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
+                        posuere
+                        odio in tincidunt. Proin iaculis purus consequat.
+                    </p>
+                    <figure class="amazing-box">
+                        <div class="amazing-box-flex">
+                            <img class="amazing-box__img offset-right--xs" src="images/icons/gear-icon.png" alt="Sail Away Your Worries">
+                            <h3 class="amazing-box__title">Sail Away Your Worries</h3>
+                        </div>
+                        <figcaption class="amazing-box__desc offset-left--lg offset-bottom--md">
+                            Proin iaculis purus consequat sem cure digni ssim.
+                            Donec
+                            porttitora entum suscipit aenean rhoncus.
+                        </figcaption>
+                    </figure>
+                    <figure class="amazing-box">
+                        <div class="amazing-box-flex">
+                            <img class="amazing-box__img offset-right--xs" src="images/icons/star-icon.png" alt="All-star support team">
+                            <h3 class="amazing-box__title">All-star support team</h3>
+                        </div>
+                        <figcaption class="amazing-box__desc offset-left--lg offset-bottom--md">
+                            Proin iaculis purus consequat sem cure digni ssim.
+                            Donec
+                            porttitora entum suscipit aenean rhoncus.
+                        </figcaption>
+                    </figure>
+                    <figure class="amazing-box">
+                        <div class="amazing-box-flex">
+                            <img class="amazing-box__img offset-right--xs" src="images/icons/pie-icon.png" alt="Fully Integrated service">
+                            <h3 class="amazing-box__title">Fully Integrated service</h3>
+                        </div>
+                        <figcaption class="amazing-box__desc offset-left--lg offset-bottom--md">
+                            Proin iaculis purus consequat sem cure digni ssim.
+                            Donec
+                            porttitora entum suscipit aenean rhoncus.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <img class="amazing-portfolio__tablet img--right" src="images/tablet.png" alt="Tablet">
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <img class="gallery-item__img width--third" src="images/gallery/image-1.jpg" alt="Gallery item">
+        <img class="gallery-item__img width--third" src="images/gallery/image-2.png" alt="Gallery item">
+        <img class="gallery-item__img width--third" src="images/gallery/image-3.png" alt="Gallery item">
+        <img class="gallery-item__img width--third" src="images/gallery/image-2.png" alt="Gallery item">
+        <img class="gallery-item__img width--third" src="images/gallery/image-3.png" alt="Gallery item">
+        <img class="gallery-item__img width--third" src="images/gallery/image-1.jpg" alt="Gallery item">
+    </section>
+
+    <!-- About Us -->
+    <section class="about-block">
+        <div class="content-header">
+            <h2 class="content-header__title line">Core services</h2>
+        </div>
+    </section>
 
 </html>
