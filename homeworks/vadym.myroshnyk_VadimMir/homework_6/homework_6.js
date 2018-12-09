@@ -8,7 +8,7 @@ function changeName (fullName, user) {
             return changefullName;
         },
         set (value) {
-            changefullName = value.toLowerCase().replace(/\b\w/g, name => name.toUpperCase());
+            changefullName = value.toLowerCase().replace(/\b\w/g, (name) => name.toUpperCase());
         },
         enumerable : true,
         configurable : true,

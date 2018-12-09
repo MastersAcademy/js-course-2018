@@ -4,7 +4,6 @@ const horses = [
     { name: 'hors1', breed: 'bred1' },
     { name: 'hors2', breed: 'bred2' },
     { name: 'hors3', breed: 'bred3' },
-    { name: 'hors4', breed: 'bred4' },
 ];
 
 class Horse {
