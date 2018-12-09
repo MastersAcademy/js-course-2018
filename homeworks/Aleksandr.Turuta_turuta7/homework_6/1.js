@@ -1,4 +1,31 @@
-
+const user = {};
+Object.defineProperties(user, {
+    fullName: {
+        enumerable: true,
+        configurable: true,
+        writeble: true,
+        set: (name) => {
+            this.fullName = name
+                .replace(/([[A-Za-z])\S/g, s => s.toLowerCase())
+                .replace(/(^|\s|[-])\S/g, s => s.toUpperCase());
+        },
+        get: () => this.fullName,
+    },
+    phone: {
+        enumerable: true,
+        configurable: true,
+        writeble: true,
+        set: (num) => {
+            this.phone = num
+                .replace(/(?![/+])\D+/g, '');
+        },
+        get: () => this.phone,
+    },
+});
+user.fullName = 'aNna-mAria joHNs';
+console.log(user.fullName);
+user.phone = '+38(068)77-22-9-44';
+console.log(user.phone);
 
 class Horse {
     constructor(name, breed) {
