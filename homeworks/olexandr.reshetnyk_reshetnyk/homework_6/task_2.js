@@ -75,18 +75,6 @@ class Race {
                     }
                 }
                 console.log('They won a lot of nothing!');
-
-                /*
-                // calc max distance
-                const maxDistance = Math.max.apply(null, distances);
-                // find winners from Racer instances
-                const winners = this.horses.filter(horse => horse.distance === maxDistance);
-                // print winners
-                console.log('Winners:');
-                winners.forEach((horse) => {
-                    console.log(`${horse.name} ${horse.breed} ${horse.distance}`);
-                });
-                */
             }
         }, 2010);
     }
