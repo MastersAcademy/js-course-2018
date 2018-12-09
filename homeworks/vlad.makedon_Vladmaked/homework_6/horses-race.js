@@ -1,5 +1,3 @@
-const intervalIds = [];
-
 const horseNames = ['Pecos', 'Colt', 'Horseshoe', 'Barley', 'Bronco', 'Blazer', 'Wilbur', 'Buck',
     'Franklin', 'Kentucky', 'Trigger', 'Blacksmith', 'Buckeye', 'Bolt', 'Washington', 'Connecticut',
     'Ironclad', 'King', 'Jockey', 'Clydesdale', 'Wrangler', 'Jupiter', 'Tennessee', 'Texas', 'Diesel',
@@ -25,10 +23,12 @@ class Racer extends Horse {
     }
 
     run() {
-        intervalIds.push(setInterval(() => {
-            this.distance += this.speed;
-            this.setSpeed();
-        }, 1000));
+        for (let i = 1000; i <= 10000; i += 1000) {
+            setTimeout(() => {
+                this.distance += this.speed;
+                this.setSpeed();
+            }, i);
+        }
     }
 
     setSpeed() {
@@ -51,25 +51,19 @@ class Race {
     }
 
     startRace() {
-        let time = 0;
         this.horses.forEach(e => e.run());
-        intervalIds.push(setInterval(() => {
-            time += 2;
-            console.log(`---Race information (after ${time} seconds)---`);
-            this.horses.forEach((e) => {
-                console.log(`Name: ${e.name}, distance: ${e.distance}`);
-            });
-            if (time >= 10) {
-                intervalIds.forEach(e => clearInterval(e));
-                let maxValue = 0;
-                let maxIndex = 0;
-                this.horses.forEach((e, index) => {
-                    maxIndex = (e.distance > maxValue) ? index : maxIndex;
-                    maxValue = (e.distance > maxValue) ? e.distance : maxValue;
+        for (let i = 2000; i <= 10000; i += 2000) {
+            setTimeout(() => {
+                console.log(`---Race information (after ${i / 1000} seconds)---`);
+                this.horses.forEach((e) => {
+                    console.log(`Name: ${e.name}, distance: ${e.distance}`);
                 });
-                console.log(`The winner is ${this.horses[maxIndex].name}, distance: ${maxValue}`);
-            }
-        }, 2000));
+                if (i === 10000) {
+                    this.horses.sort((a, b) => b.distance - a.distance);
+                    console.log(`The winner is ${this.horses[0].name}, distance: ${this.horses[0].distance}`);
+                }
+            }, i);
+        }
     }
 }
 

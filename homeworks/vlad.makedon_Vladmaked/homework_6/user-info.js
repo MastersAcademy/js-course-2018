@@ -1,29 +1,27 @@
 const user = {};
+let fullName;
+let phone;
 
-Object.defineProperties(user, {
-    fullName: {
-        get: () => this.fullName,
-        set: (value) => {
-            this.fullName = value.split('').reduce((accumulator, element, index, array) => (
-                index === 0 || array[index - 1] === ' ' || array[index - 1] === '-'
-                    ? accumulator + element.toUpperCase()
-                    : accumulator + element.toLowerCase()
-            ), '');
-        },
+Object.defineProperty(user, 'fullName', {
+    get() {
+        return fullName;
     },
-    phone: {
-        get: () => this.phone,
-        set: (value) => {
-            this.phone = value.split('').reduce((accumulator, element, index) => (
-                (index === 0 && element === '+') || !Number.isNaN(parseInt(element, 10))
-                    ? accumulator + element
-                    : accumulator
-            ), '');
-        },
+    set(value) {
+        fullName = value.toLowerCase().replace(/\b\w/g, v => v.toUpperCase());
+    },
+});
+Object.defineProperty(user, 'phone', {
+    get() {
+        return phone;
+    },
+    set(value) {
+        phone = (value[0] === '+') ? phone = value.replace(/[^+\d]/g, '') : phone = value.replace(/[^\d]/g, '');
     },
 });
 
 user.fullName = 'anna-mAria joHNs';
 console.log(user.fullName);
 user.phone = '+38(096)-111-22-33 ';
+console.log(user.phone);
+user.phone = '38(096)+111b22+33';
 console.log(user.phone);
