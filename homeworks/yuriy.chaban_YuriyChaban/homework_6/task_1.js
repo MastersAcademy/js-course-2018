@@ -15,7 +15,6 @@ Object.defineProperties(user, {
         },
         enumerable: true,
         configurable: true,
-        writeble: true,
     },
     phone: {
         get() {
@@ -26,7 +25,6 @@ Object.defineProperties(user, {
         },
         enumerable: true,
         configurable: true,
-        writeble: true,
     },
 });
 
