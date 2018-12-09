@@ -1,28 +1,28 @@
-const user = {};
-Object.defineProperties(user, {
-    fullName: {
-        enumerable: true,
-        configurable: true,
-        writeble: true,
-        set: (value) => {
-            this.fullName = value.replace(/([[A-Za-z])\S/g, s => s.toLowerCase()).replace(/(^|\s|[-])\S/g, s => s.toUpperCase());
+function User() {
+    let fullName;
+    let phone;
+    Object.defineProperties(this, {
+        fullName: {
+            set(value) {
+                fullName = value.replace(/([[A-Za-z])\S/g, s => s.toLowerCase()).replace(/(^|\s|[-])\S/g, s => s.toUpperCase());
+            },
+            get() {
+                return fullName;
+            },
         },
-        get: () => this.fullName,
-    },
-    phone: {
-        enumerable: true,
-        configurable: true,
-        writeble: true,
-        set: (value) => {
-            let plus = '';
-            if (value.charAt(0) === '+') {
-                plus += '+';
-            }
-            this.phone = plus + value.split(/\D/).join('');
+        phone: {
+            set(value) {
+                const phoneNum = value.replace(/\D+/g, '');
+                phone = (value[0] === '+') ? '+'.concat(phoneNum) : phoneNum;
+            },
+            get() {
+                return phone;
+            },
         },
-        get: () => this.phone,
-    },
-});
+    });
+}
+
+const user = new User();
 user.fullName = 'aNna-mAria joHNs';
 console.log(user.fullName);
 user.phone = '‎‎+38(067)111-22-33';
