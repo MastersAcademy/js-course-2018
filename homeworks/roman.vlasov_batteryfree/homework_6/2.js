@@ -14,16 +14,17 @@ class Racer extends Horse {
     }
 
     setSpeed() {
-        this.speed = Math.floor(Math.random() * (16 - 10) + 10);
+        this.speed = Math.floor(Math.random() * 6 + 10);
     }
 
     run() {
-        for (let i = 1; i <= 10; i++) {
-            setTimeout(() => {
-                this.distance += this.speed;
-                this.setSpeed();
-            }, 1000 * i);
-        }
+        const runing = setInterval(() => {
+            this.distance += this.speed;
+            this.setSpeed();
+        }, 1000);
+        setTimeout(() => {
+            clearInterval(runing);
+        }, 10000);
     }
 }
 
@@ -53,12 +54,12 @@ class Race {
 
     startRace() {
         this.horses.forEach(element => element.run());
-        for (let i = 1; i <= 5; i++) {
-            setTimeout(() => {
-                this.horses.forEach(element => console.log(element));
-            }, 2000 * i);
-        }
+        const runingRace = setInterval(() => {
+            this.horses.forEach(element => console.log(element));
+        }, 2000);
+
         setTimeout(() => {
+            clearInterval(runingRace);
             this.horses.sort((element1, element2) => element2.distance - element1.distance);
             console.log(`Winner: ${this.horses[0].name}`);
         }, 10000);
