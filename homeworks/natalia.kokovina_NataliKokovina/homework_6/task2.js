@@ -57,7 +57,7 @@ class Race {
         }
     }
 
-    FinishRace() {
+    finishRace() {
         setTimeout(() => {
             console.log('Finish!');
             this.horses.sort((a, b) => b.distance - a.distance);
@@ -70,4 +70,4 @@ const Race1 = new Race();
 
 Race1.crearRace();
 Race1.startRace();
-Race1.FinishRace();
+Race1.finishRace();

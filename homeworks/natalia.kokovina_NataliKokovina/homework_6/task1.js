@@ -13,10 +13,9 @@ function addProtectedKey(firstKey, secondKey, user) {
             return protectedVal;
         },
         set(value) {
+            protectedVal = value.replace(/\D/g, '');
             if (value.charAt(0) === '+') {
-                protectedVal = `+${value.replace(/\D/g, '')}`;
-            } else {
-                protectedVal = value.replace(/\D/g, '');
+                protectedVal = `+${protectedVal}`;
             }
         },
     });
