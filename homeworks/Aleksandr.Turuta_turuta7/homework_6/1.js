@@ -1,3 +1,4 @@
+// the task 1
 const user = {};
 Object.defineProperties(user, {
     fullName: {
@@ -27,6 +28,7 @@ console.log(user.fullName);
 user.phone = '+38(068)77-22-9-44';
 console.log(user.phone);
 
+// the task 2
 class Horse {
     constructor(name, breed) {
         this.name = name;
