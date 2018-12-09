@@ -32,6 +32,14 @@ class Racer extends Horse {
 
 const Breeds = ['Pony', 'Akhal-Teke horse', 'Akhalteke', 'Frieze', 'Shire'];
 
+function createArrayHorses(horses) {
+    for (let i = 1; i < 11; i++) {
+        const randomBreed = Math.floor(Math.random() * Breeds.length);
+        const breed = Breeds[randomBreed];
+        horses.push(new Racer(`Horse ${i}`, breed));
+    }
+}
+
 class Race {
     constructor() {
         this.horses = [];
@@ -39,11 +47,7 @@ class Race {
     }
 
     createRace() {
-        for (let i = 1; i < 11; i++) {
-            const randomBreed = Math.floor(Math.random() * Breeds.length);
-            const breed = Breeds[randomBreed];
-            this.horses.push(new Racer(`Horse ${i}`, breed));
-        }
+        createArrayHorses(this.horses);
     }
 
     winnerParam(name, breed, distance) {
@@ -52,17 +56,21 @@ class Race {
         this.winner.distance = distance;
     }
 
+    runResult() {
+        this.horses.forEach((participant) => {
+            if (this.winner.distance <= participant.distance) {
+                this.winnerParam(participant.name, participant.breed, participant.distance);
+            }
+            console.log(`${participant.name}, ${participant.breed}, ${participant.distance}`);
+        });
+    }
+
     startRace() {
         this.horses.forEach(participant => participant.run());
         this.winnerParam('', '', 0);
 
         const timeout = setInterval(() => {
-            this.horses.forEach((participant) => {
-                if (this.winner.distance <= participant.distance) {
-                    this.winnerParam(participant.name, participant.breed, participant.distance);
-                }
-                console.log(`${participant.name}, ${participant.breed}, ${participant.distance}`);
-            });
+            this.runResult();
         }, 2000);
 
         setTimeout(() => {
