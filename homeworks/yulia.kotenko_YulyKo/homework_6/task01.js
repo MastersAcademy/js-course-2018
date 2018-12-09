@@ -5,7 +5,8 @@ function addPropertyFullName(keyName, object) {
             return stringValue;
         },
         set(value) {
-            stringValue = value.toLowerCase().replace(/\b\w/g, l => l.toUpperCase());
+            const reg = /\b\w/g;
+            stringValue = value.toLowerCase().replace(reg, l => l.toUpperCase());
         },
         enumerable: true,
     });
@@ -15,7 +16,9 @@ function addPropertyFullName(keyName, object) {
 function addPropertyPhone(kayName, object) {
     let phoneNumber;
     Object.defineProperty(object, kayName, {
-        get: () => phoneNumber,
+        get() {
+            return phoneNumber;
+        },
         set(value) {
             const reg = /\D/;
             phoneNumber = `+${value.split(reg).join('')}`;
