@@ -1,7 +1,9 @@
 function User() {
     let fullName;
     let phone;
-
+    const capitalLetter = new RegExp('\\b\\w');
+    const removeCharacters = new RegExp('[^\\d]', 'g');
+    const removeCharactersLeavingPlus = new RegExp('[^+\\d]', 'g');
     Object.defineProperty(this, 'fullName', {
         get() {
             return fullName;
@@ -9,7 +11,7 @@ function User() {
         set(editedName) {
             fullName = editedName
                 .toLowerCase()
-                .replace(/\b\w/g, l => l.toUpperCase());
+                .replace(capitalLetter, l => l.toUpperCase());
         },
     });
     Object.defineProperty(this, 'phone', {
@@ -17,13 +19,10 @@ function User() {
             return phone;
         },
         set(editedPhone) {
-            const newPhone = editedPhone.replace(/[^+\d]/g, '');
-            if (newPhone[0] === '+') {
-                newPhone.replace(/[^\d]/g, '');
-                newPhone[0] = '+';
-                phone = newPhone;
+            if (editedPhone[0] !== '+') {
+                phone = editedPhone.replace(removeCharacters, '');
             } else {
-                phone = newPhone.replace(/[^\d]/g, '');
+                phone = editedPhone.replace(removeCharactersLeavingPlus, '');
             }
         },
     });
