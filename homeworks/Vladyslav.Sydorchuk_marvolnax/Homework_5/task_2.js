@@ -1,4 +1,4 @@
-// task_2
+// task-2
 
 function sorting(mass) {
     const newObj = {};
