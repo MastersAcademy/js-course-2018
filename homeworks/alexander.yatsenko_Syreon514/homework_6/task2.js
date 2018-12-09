@@ -13,7 +13,7 @@ class Racer extends Horse {
     }
 
     setSpeed() {
-        this.speed = Math.floor(Math.random() * 16);
+        this.speed = Math.floor(Math.random() * 6 + 10);
     }
 
     run() {
