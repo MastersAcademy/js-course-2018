@@ -1,16 +1,9 @@
 
-const user = {};
-
-function changeString(word) {
-    let newWord = '';
-
+function capitalizeWord(word) {
     if (word.indexOf('-') + 1) {
-        newWord = word.split('-').map(changeString).join('-');
-    } else {
-        newWord = word[0].toUpperCase() + word.substring(1).toLowerCase();
+        return word.split('-').map(capitalizeWord).join('-');
     }
-
-    return newWord;
+    return word[0].toUpperCase() + word.substring(1).toLowerCase();
 }
 
 function addFullName(keyName, obj) {
@@ -20,7 +13,7 @@ function addFullName(keyName, obj) {
             return protectedVal;
         },
         set(value) {
-            protectedVal = value.split(' ').map(changeString).join(' ');
+            protectedVal = value.split(' ').map(capitalizeWord).join(' ');
         },
         enumerable: true,
     });
@@ -29,17 +22,21 @@ function addFullName(keyName, obj) {
 
 function addPhone(keyName, obj) {
     let protectedVal;
+
     Object.defineProperty(obj, keyName, {
         get() {
             return protectedVal;
         },
         set(value) {
-            protectedVal = value.match(/^\+|\d/g).join('');
+            const regular = /^\+|\d/g;
+            protectedVal = value.match(regular).join('');
         },
         enumerable: true,
     });
     return obj;
 }
+const user = {};
+
 addFullName('fullName', user);
 user.fullName = 'Anna-Maria Johns';
 console.log(user.fullName);
