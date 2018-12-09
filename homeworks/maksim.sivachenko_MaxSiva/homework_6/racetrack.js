@@ -32,12 +32,14 @@ class Racer extends Horse {
 
 const Breeds = ['Pony', 'Akhal-Teke horse', 'Akhalteke', 'Frieze', 'Shire'];
 
-function createArrayHorses(horses) {
+function createArrayHorses() {
+    const horses = [];
     for (let i = 1; i < 11; i++) {
         const randomBreed = Math.floor(Math.random() * Breeds.length);
         const breed = Breeds[randomBreed];
         horses.push(new Racer(`Horse ${i}`, breed));
     }
+    return horses;
 }
 
 class Race {
@@ -46,8 +48,8 @@ class Race {
         this.winner = {};
     }
 
-    createRace() {
-        createArrayHorses(this.horses);
+    createRace(horses) {
+        this.horses = horses;
     }
 
     winnerParam(name, breed, distance) {
@@ -82,5 +84,5 @@ class Race {
 }
 
 const race = new Race();
-race.createRace();
+race.createRace(createArrayHorses());
 race.startRace();
