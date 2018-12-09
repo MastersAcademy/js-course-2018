@@ -1,31 +1,31 @@
 const user = {};
 
 function addKeyName(keyName, obj) {
-  let a;
-  Object.defineProperty(obj, keyName, {
-      configurable: true,
-      enumerable: true,
-      set(value) {
-          a = value.toLowerCase().replace(/\b\w/g, s => s.toUpperCase());
-      },
-      get() {
-          return a;
-      },
-  });
+    let a;
+    Object.defineProperty(obj, keyName, {
+        configurable: true,
+        enumerable: true,
+        set(value) {
+            a = value.toLowerCase().replace(/\b\w/g, s => s.toUpperCase());
+        },
+        get() {
+            return a;
+        },
+    });
 }
 
 function addKeyPhone(keyName, obj) {
-  let b;
-  Object.defineProperty(obj, keyName, {
-      configurable: true,
-      enumerable: true,
-      set(value) {
-          b = value.trim().replace(/(?!^\+)\D/g, '');
-      },
-      get() {
-          return b;
-      },
-  });
+    let b;
+    Object.defineProperty(obj, keyName, {
+        configurable: true,
+        enumerable: true,
+        set(value) {
+            b = value.trim().replace(/(?!^\+)\D/g, '');
+        },
+        get() {
+            return b;
+        },
+    });
 }
 
 addKeyName('fullName', user);
