@@ -7,6 +7,7 @@ Object.defineProperties(user, {
             return this.fullName1;
         },
         set(x) {
+            // regExp => first letter in word
             this.fullName1 = x.toLowerCase().replace(/\b\w/g, letter => letter.toUpperCase());
         },
     },
@@ -15,6 +16,7 @@ Object.defineProperties(user, {
             return this.phone1;
         },
         set(x) {
+            // regExp => first plus on string and numbers
             this.phone1 = x.match(/^\+[\d]*|\d/g).join('');
         },
     },
