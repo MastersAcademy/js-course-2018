@@ -4,7 +4,8 @@ function capitalizeWord(word) {
 }
 
 function capitalize(name) {
-    let result = name.split(/\W+/).map(element => capitalizeWord(element)).join(' ');
+    const notLiteral = name.split(/\W+/);
+    let result = notLiteral.map(element => capitalizeWord(element)).join(' ');
     const hyphen = name.indexOf('-');
     if (hyphen !== -1) {
         result = `${result.substring(0, hyphen)}-${result.substring(hyphen + 1)}`;
@@ -31,7 +32,6 @@ function normalizePhone(phone) {
     const result = phone.split(/\D/).join('');
     if (phone[0] === '+') {
         return `+${result}`;
-        // return '+' + result;
     }
     return result;
 }
