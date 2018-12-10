@@ -1,4 +1,3 @@
-
 // task 1
 
 const obj = {
@@ -49,20 +48,8 @@ class Racer extends Horse {
     }
 
     run() {
-        return new Promise((resolve) => {
-            const race = setInterval(() => {
-                this.distance += this.speed;
-                this.speed = this.setSpeed();
-            }, 1000);
-            const timerRun = setInterval(() => {
-                console.log(`name: ${this.name} breed: ${this.breed} distance: ${this.distance} `);
-            }, 2000);
-            setTimeout(() => {
-                clearInterval(timerRun);
-                clearInterval(race);
-                resolve();
-            }, 10000);
-        });
+        this.distance += this.speed;
+        this.speed = this.setSpeed();
     }
 }
 
@@ -124,18 +111,33 @@ class Race {
     }
 
     startRace() {
-        const timeRun = 10;
-        this.horses.forEach((horse, i) => {
-            const result = horse.run(timeRun);
-            result.then(() => {
-                if (i === this.horses.length - 1) {
-                    const winner = this.horses.reduce((acc, current) => {
-                        const winnerHorse = acc.distance > current.distance ? acc : current;
-                        return winnerHorse;
-                    });
-                    console.log('winner', winner.name);
-                }
+        const final = new Promise(((resolve) => {
+            this.horses.forEach((horse, index) => {
+                const duration = 10000;
+                const race = setInterval(() => {
+                    horse.run();
+                }, 1000);
+
+                const currentPosition = setInterval(() => {
+                    console.log('horse:', horse.name, 'breed:', horse.breed, 'distance:', horse.distance);
+                }, 2000);
+
+                setTimeout(() => {
+                    clearInterval(race);
+                    clearInterval(currentPosition);
+                    if (index === this.horses.length - 1) {
+                        resolve();
+                    }
+                }, duration);
             });
+        }));
+
+        final.then(() => {
+            const distanceArr = [];
+            this.horses.forEach(horse => distanceArr.push(horse.distance));
+            const maxDistance = Math.max(...distanceArr);
+            const winner = this.horses.find(horse => horse.distance === maxDistance);
+            console.log('!!! ---winner--- !!!', 'horse:', winner.name, 'breed:', winner.breed, 'distance:', winner.distance);
         });
     }
 }
