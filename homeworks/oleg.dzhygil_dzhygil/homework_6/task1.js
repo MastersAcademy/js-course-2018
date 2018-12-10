@@ -1,7 +1,8 @@
-function User() {
+const user = {};
+function userName() {
     let fullName;
     let phone;
-    Object.defineProperties(this, {
+    Object.defineProperties(user, {
         fullName: {
             set(value) {
                 fullName = value.replace(/([[A-Za-z])\S/g, s => s.toLowerCase()).replace(/(^|\s|[-])\S/g, s => s.toUpperCase());
@@ -22,7 +23,7 @@ function User() {
     });
 }
 
-const user = new User();
+userName(user);
 user.fullName = 'aNna-mAria joHNs';
 console.log(user.fullName);
 user.phone = '‎‎+38(067)111-22-33';
