@@ -1,11 +1,13 @@
 const user = {};
+const SEARCH_WORD = /\b\w/g;
+const SEARCH_PHONE_PLUS_AND_DIGIT = /^\+\d+|\d+/g;
 
 function addName(obj) {
     let protect;
     Object.defineProperty(obj, 'fullName', {
         get: () => protect,
         set(value) {
-            protect = value.toLowerCase().replace(/\b\w/g, str => str.toUpperCase());
+            protect = value.toLowerCase().replace(SEARCH_WORD, str => str.toUpperCase());
         },
         enumerable: true,
     });
@@ -15,7 +17,7 @@ function addPhone(obj) {
     let protect;
     Object.defineProperty(obj, 'phone', {
         get: () => protect,
-        set(value) { protect = value.match(/^\+\d+|\d+/g).join(''); },
+        set(value) { protect = value.match(SEARCH_PHONE_PLUS_AND_DIGIT).join(''); },
     });
 }
 
