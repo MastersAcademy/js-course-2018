@@ -4,7 +4,7 @@ let fullName;
 let phoneNumber;
 Object.defineProperties(user, {
     fullName: {
-        set: (name) => {
+        set(name) {
             fullName = name.trim().toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
         },
         get() {
@@ -14,11 +14,8 @@ Object.defineProperties(user, {
 });
 Object.defineProperties(phone, {
     phoneNumber: {
-        set: (numPhone) => {
-            const plusSymbol = /^\D*\+/g;
-            const plus = plusSymbol.test(numPhone.trim());
-            const value = numPhone.trim().replace(/\D/g, '');
-            phoneNumber = plus ? `+${value}` : value;
+        set(numPhone) {
+            phoneNumber = '+'.concat(numPhone.toString().replace(/\D/g, ''));
         },
         get() {
             return phoneNumber;
