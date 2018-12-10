@@ -1,14 +1,13 @@
+const NAME_FILTER = /\b\w/g;
+const PHONE_FILTER = /(?![/+])\D+/g;
+
 function User() {
     let fullName;
     let phone;
     Object.defineProperties(this, {
         fullName: {
             set(name) {
-                const reName = /\b\w/g;
-                fullName = name
-                    .toLowerCase()
-                    .replace(reName,
-                        l => l.toUpperCase());
+                fullName = name.toLowerCase().replace(NAME_FILTER, l => l.toUpperCase());
             },
             get() {
                 return fullName;
@@ -16,8 +15,7 @@ function User() {
         },
         phone: {
             set(phoneNum) {
-                const rePhone = /(?![/+])\D+/g;
-                phone = phoneNum.replace(rePhone, '');
+                phone = phoneNum.replace(PHONE_FILTER, '');
             },
             get() {
                 return phone;
