@@ -14,16 +14,19 @@ class Racer extends Horse {
     }
 
     setSpeed() {
-        this.speed = Math.floor(Math.random() * (15 - 10) + 10);
+        this.speed = Math.floor(Math.random() * 6 + 10);
     }
 
     run() {
-        for (let i = 0; i < 10; i++) {
-            setTimeout(() => {
-                this.distance += this.speed;
-                this.setSpeed();
-                console.log(this);
-            }, 1000 * i);
+        this.runing = setInterval(() => {
+            this.distance += this.speed;
+            this.setSpeed();
+        }, 1000);
+    }
+
+    stop() {
+        if (!this.running) {
+            clearInterval(this.runing);
         }
     }
 }
@@ -33,38 +36,39 @@ class Race {
         this.horses = [];
     }
 
-    createRace() {
-        const stabling = [
-            { name: 'Buck', breed: 'Zebra' },
-            { name: 'Widowmaker', breed: 'Pony' },
-            { name: 'Cyril Proudbottom', breed: 'Arabian' },
-            { name: 'Snowball', breed: 'Przewalski' },
-            { name: 'Ahill', breed: 'Zebra' },
-            { name: 'Tagged', breed: 'Arabian' },
-            { name: 'Captain', breed: 'Przewalski' },
-            { name: 'Han', breed: 'Arabian' },
-            { name: 'Major', breed: 'Arabian' },
-            { name: 'Max', breed: 'Pony' },
-        ];
-
-        stabling.forEach((element) => {
-            this.horses.push(new Racer(element.name, element.breed));
-        });
+    createRace(stabling) {
+        this.horses = (stabling);
     }
 
     startRace() {
         this.horses.forEach(element => element.run());
-        for (let i = 0; i < 5; i++) {
-            setTimeout(() => {
-                this.horses.forEach(element => console.log(element));
-            }, 2000 * i);
-        }
+        const runingRace = setInterval(() => {
+            this.horses.forEach(element => console.log(`Name:${element.name}, breed:${element.breed}, 
+            distance:${element.distance}, speed:${element.speed}`));
+        }, 2000);
+
         setTimeout(() => {
+            clearInterval(runingRace);
+            this.horses.forEach(element => element.stop());
             this.horses.sort((element1, element2) => element2.distance - element1.distance);
             console.log(`Winner: ${this.horses[0].name}`);
         }, 10000);
     }
 }
+
+const stabling = [
+    new Racer('Buck', 'Zebra'),
+    new Racer('Widowmaker', 'Pony'),
+    new Racer('Cyril Proudbottom', 'Arabian'),
+    new Racer('Snowball', 'Przewalski'),
+    new Racer('Ahill', 'Zebra'),
+    new Racer('Tagged', 'Arabian'),
+    new Racer('Captain', 'Przewalski'),
+    new Racer('Han', 'Arabian'),
+    new Racer('Major', 'Arabian'),
+    new Racer('Max', 'Pony'),
+];
+
 const horseRacing = new Race();
-horseRacing.createRace();
+horseRacing.createRace(stabling);
 horseRacing.startRace();
