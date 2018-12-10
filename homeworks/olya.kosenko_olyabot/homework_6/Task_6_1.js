@@ -3,24 +3,24 @@ const user = {};
 const reg1 = /\b[a-z]/g;
 // regular first + and all numbers in string
 const reg2 = /^\+\d*|\d/g;
-let userName;
-let userPhone;
 Object.defineProperties(user, {
     fullName: {
         get() {
-            return userName;
+            return this.userName;
         },
         set(value) {
-            userName = value.toLowerCase().replace(reg1, str => str.toUpperCase());
+            this.userName = value.toLowerCase().replace(reg1, str => str.toUpperCase());
         },
+        enumerable: true,
     },
     phone: {
         get() {
-            return userPhone;
+            return this.userPhone;
         },
         set(value) {
-            userPhone = value.match(reg2).join('');
+            this.userPhone = value.match(reg2).join('');
         },
+        enumerable: true,
     },
 });
 

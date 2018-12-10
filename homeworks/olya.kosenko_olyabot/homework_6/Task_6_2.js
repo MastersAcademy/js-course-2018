@@ -12,13 +12,14 @@ class Racer extends Horse {
     }
 
     run() {
-        const t1 = setInterval(() => {
+        this.t1 = setInterval(() => {
             this.distance += this.speed;
             this.setSpeed();
         }, 1000);
-        setTimeout(() => {
-            clearInterval(t1);
-        }, 10000);
+    }
+
+    stopHorse() {
+        clearInterval(this.t1);
     }
 
     setSpeed() {
@@ -34,19 +35,19 @@ class Race {
 
     createRace() {
         const arrayOfHorses = [
-            ['Elida', 'Arabian'],
-            ['Cofone', 'Quarter Horse'],
-            ['Diomede', 'Thoroughbred'],
-            ['Giovanni', 'Augeron'],
-            ['Bavier', 'Morgan'],
-            ['Enriquez', 'Paint'],
-            ['Keenan', 'Appaloosa'],
-            ['Zachery', 'Warmblood'],
-            ['Julia', 'Andalusian'],
-            ['Carrin', 'Salerno horse'],
+            { name: 'Elida', breed: 'Arabian' },
+            { name: 'Cofone', breed: 'Quarter Horse' },
+            { name: 'Diomede', breed: 'Thoroughbred' },
+            { name: 'Giovanni', breed: 'Augeron' },
+            { name: 'Bavier', breed: 'Morgan' },
+            { name: 'Enriquez', breed: 'Paint' },
+            { name: 'Keenan', breed: 'Appaloosa' },
+            { name: 'Zachery', breed: 'Warmblood' },
+            { name: 'Julia', breed: 'Andalusian' },
+            { name: 'Carrin', breed: 'Salerno horse' },
         ];
         arrayOfHorses.forEach((value) => {
-            this.horses.push(new Racer(value[0], value[1]));
+            this.horses.push(new Racer(value.name, value.breed));
         });
     }
 
@@ -65,6 +66,7 @@ class Race {
 
     finishRace() {
         setTimeout(() => {
+            this.horses.forEach(stopHorse => stopHorse.stopHorse());
             this.horses.sort((a, b) => b.distance - a.distance);
             console.log(`Winner: ${this.horses[0].name}, ${this.horses[0].breed}`);
         }, 10000);
