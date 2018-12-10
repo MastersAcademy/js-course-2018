@@ -1,24 +1,25 @@
 function createUser(user) {
-    let value;
+    let nameProtected;
+    let phoneProtected;
     Object.defineProperties(user, {
         fullName: {
             configurable: true,
             enumerable: true,
             set(newValue) {
-                value = newValue.toLowerCase().replace(/\b\w/g, firstSymbol => firstSymbol.toUpperCase());
+                nameProtected = newValue.toLowerCase().replace(/\b\w/g, firstSymbol => firstSymbol.toUpperCase());
             },
             get() {
-                return value;
+                return nameProtected;
             },
         },
         phone: {
             configurable: true,
             enumerable: true,
             set(newValue) {
-                value = `+${newValue.split(/\D/).join('')}`;
+                phoneProtected = `+${newValue.split(/\D/).join('')}`;
             },
             get() {
-                return value;
+                return phoneProtected;
             },
         },
     });
