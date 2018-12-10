@@ -89,6 +89,31 @@
   line-height: 25px;
 }
 
+
+/* For all section*/
+
+.title {
+  color: #222;
+  text-transform: uppercase;
+}
+
+.section_title {
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.box_title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.box_text {
+  color: #777;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+
 /* Core Services Box */
 
 .coreServices {
@@ -96,11 +121,7 @@
 }
 
 .coreServices__title {
-  color: #222;
-  font-size: 29px;
-  font-weight: 700;
   line-height: 75px;
-  text-transform: uppercase;
   text-align: center;
   padding-top: 45px;
 }
@@ -128,10 +149,6 @@
 }
 
 .coreServices__task_title {
-  color: #222;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   margin-bottom: 10px;
@@ -143,9 +160,6 @@
 }
 
 .coreServices__task_text {
-  color: #888;
-  font-size: 11px;
-  font-weight: 500;
   line-height: 20px;
   text-align: center;
 }
@@ -175,16 +189,10 @@
   justify-content: space-around;
 }
 
-.otherExpertise__title {
-  color: #222;
-  font-size: 29px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 
 .otherExpertise__text {
   color: #777;
-  font-size: 14px;
+  font-size: 13px;
   width: 603px;
 }
 
@@ -214,16 +222,8 @@
 }
 
 .infoBox_title {
-  color: #222;
   font-size: 11px;
   line-height: 22px;
-  text-transform: uppercase;
-}
-
-.infoBox_text {
-  color: #777;
-  font-size: 11px;
-  line-height: 16px;
 }
 
 .otherExpertise_but {
@@ -231,10 +231,8 @@
 }
 
 .otherExpertise_buttom {
-  color: #222;
   font-size: 14px;
   font-weight: 700;
-  text-transform: uppercase;
   text-decoration: none;
   background-color: #FFF;
   border-radius: 30px;
@@ -264,7 +262,7 @@
 }
 
 .portfolio_contentWrap {
-  margin: 21px;
+  margin: 11px;
   margin-left: 63px;
   width: 470px;
   height: 332px;
@@ -278,7 +276,7 @@
 }
 
 .portfolio__infoBox {
-  margin-bottom: 25px;
+  margin-top: 25px;
   display: flex;
   width: 390px;
 }
@@ -286,30 +284,10 @@
 .portfolio_title {
   padding-top: 51px;
   padding-left: 63px;
-  color: #222;
-  font-size: 29px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .portfolio_text {
-  color: #777;
-  font-size: 11px;
-  line-height: 17px;
   margin-bottom: 15px;
-}
-
-.infoBoxPf_title {
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.infoBoxPf_text {
-  color: #777;
-  font-size: 11px;
-  line-height: 16px;
 }
 
 .portfolio__imgSection {
@@ -333,23 +311,144 @@
 
 .aboutUs__box {
   display: flex;
-  align-items: center;
+}
+
+.aboutUs__title {
+  text-align: center;
+  padding-top: 45px;
+}
+
+.aboutUs__title:after {
+  width: 78px;
+  height: 1px;
+  display: block;
+  content: "";
+  background-color: #35C2F8;
+  margin: 31px auto;
+}
+
+.aboutUs__box--left {
+  padding-left: 139px;
+}
+
+.aboutUs__box--right {
+  padding-left: 445px;
 }
 
 .aboutUs__box:after {
+  margin-top: 132px;
+  margin-left: -67px;
+  margin-right: 87px;
   height: 67px;
-  width: 3px;
+  width: 2px;
   background-color: #F1F1F1;
   display: block;
   content: "";
 }
 
-.aboutUs__img {
-  /* display: flex; */
-  /* flex-direction: column;
-  align-items: center; */
+.aboutUs__box_img {
+  width: 131px;
+  height: 131px;
+  border: 5px solid #F1F1F1;
+  border-radius: 50%;
+}
+
+.aboutUs__box_content {
+  padding-top: 10px;
+  padding-right: 20px;
+  width: 306px;
 }
 
 .content-left {
-  order: -1;
+  text-align: right;
+}
+
+.content-right {
+  text-align: left;
+  order: 1;
+}
+
+.aboutUs__lastbox {
+  display: flex;
+  margin-left: 445px;
+  background-color: #35C2F8;
+}
+
+.lastbox_text {
+  padding-top: 20px;
+  padding-left: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0,7);
+  color: #FFF;
+  font-size: 14px;
+}
+
+/* Awesome Team */
+
+.awesomeTeam {
+  margin-top: 65px;
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.awesomeTeam__title {
+  text-align: center;
+  padding-top: 45px;
+}
+
+.awesomeTeam_wrap {
+  width: 680px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.awesomeTeam_boxForPhoto {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #222;
+}
+
+.awesomeTeam__text {
+  padding-top: 45px;
+  padding-bottom: 65px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #777;
+  font-size: 13px;
+  text-align: center;
+}
+
+.awesomeTeam_dep {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.awesomeTeam_FullName {
+  color: #222;
+  font-weight: 700;
+}
+
+.socialNet_box {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #222;
+  margin: 6px;
+}
+
+.socialNet_boxWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.socialNet {
+  height: 12px;
+  margin: auto;
 }
