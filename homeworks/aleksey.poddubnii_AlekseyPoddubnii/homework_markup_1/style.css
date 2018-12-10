@@ -137,7 +137,7 @@ ul {
 
 /* Services */
 
-.services-block {
+.with--wrap {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto 101px;
@@ -215,7 +215,8 @@ ul {
   font-family: Montserrat;
 }
 
-.expertise-box-flex, .amazing-box-flex {
+.expertise-box-flex,
+.amazing-box-flex {
   display: flex;
 }
 
@@ -321,15 +322,73 @@ ul {
 
 /* About boxes */
 
+
 .about-box {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.about-box-item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  min-height: 275px;
 }
 
-.about-box-desc {
-  max-width: 250px;
+.about-box-item__title {
+  text-transform: uppercase;
+  color: #222;
+  font-size: 16px;
+  margin-top: 0
 }
 
-.about-box {
-  display: block;
+.about-box-item__left {
+  flex-basis: 35%;
+  text-align: right;
+}
+
+.about-box-item__center {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-box-item__right {
+  flex-basis: 35%;
+}
+
+.about-box-item__img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 169px;
+  height: 169px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 7px solid #F1F1F1;
+}
+
+.about-box-item__line {
+  width: 50%;
+  border-right: 2px solid #F1F1F1;
+  flex-grow: 1;
+  align-self: start;
+}
+
+.about-box-item__desc {
+  padding-top: 22px;
+  font-size: 14px;
+}
+
+.about-box--stories {
+  background-color: #35C2F8;
+}
+
+.about-box__story {
+  width: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFF;
+  text-align: center;
 }
