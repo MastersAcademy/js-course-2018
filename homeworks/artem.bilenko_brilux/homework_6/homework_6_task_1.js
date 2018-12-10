@@ -1,9 +1,10 @@
-function User() {
+const user = {};
+function createUser() {
     let fullName;
     let phone;
     const capitalLetter = new RegExp('\\b\\w', 'g');
     const removeCharacters = new RegExp('[^\\d]', 'g');
-    Object.defineProperty(this, 'fullName', {
+    Object.defineProperty(user, 'fullName', {
         get() {
             return fullName;
         },
@@ -13,7 +14,7 @@ function User() {
                 .replace(capitalLetter, l => l.toUpperCase());
         },
     });
-    Object.defineProperty(this, 'phone', {
+    Object.defineProperty(user, 'phone', {
         get() {
             return phone;
         },
@@ -26,8 +27,7 @@ function User() {
         },
     });
 }
-
-const user = new User();
+createUser(user);
 user.fullName = 'aNna-mAria joHNs';
 console.log(user.fullName);
 user.phone = '+38(096)-111-22-33';
