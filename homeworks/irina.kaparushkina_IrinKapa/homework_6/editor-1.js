@@ -5,8 +5,8 @@ function addName(keyName, obj) {
             return protectedVal;
         },
         set(value) {
-            const array = value.trim().split(' ').map(elem => elem.toLowerCase()).map(elem => elem[0].toUpperCase() + elem.slice(1));
-            protectedVal = array.join(' ').split('-').map(elem => elem[0].toUpperCase() + elem.slice(1)).join('-');
+            const letter = /\b\w/g;
+            protectedVal = value.toLowerCase().replace(letter, elem => elem.toUpperCase());
         },
         enumerable: true,
     });
@@ -23,7 +23,8 @@ function addPhone(keyName, obj) {
             return protectedVal;
         },
         set(value) {
-            protectedVal = value.replace(/(?!^\+)[^0-9]/g, '');
+            const symbol = /(?!^\+)[^0-9]/g;
+            protectedVal = value.replace(symbol, '');
         },
         enumerable: true,
     });
