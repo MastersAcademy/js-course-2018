@@ -4,17 +4,19 @@ class Horse {
         this.breed = breed;
     }
 }
- class Racer extends Horse {
+class Racer extends Horse {
     constructor(name, breed) {
         super(name, breed);
         this.distance = 0;
         this.speed = 0;
         this.setSpeed();
     }
-     setSpeed() {
+
+    setSpeed() {
         this.speed = Math.floor(Math.random() * (15 - 10 + 1) + 10);
     }
-     run() {
+
+    run() {
         for (let i = 1; i <= 10; i++) {
             setTimeout(() => {
                 this.distance += this.speed;
@@ -22,12 +24,13 @@ class Horse {
             }, 1000 * i);
         }
     }
-} 
- class Race {
+}
+class Race {
     constructor() {
         this.horses = [];
     }
-     createRace() {
+
+    createRace() {
         const party = [
             { name: 'Agate', breed: 'Arabian thoroughbred' },
             { name: 'Absinthe', breed: 'Thoroughbred riding' },
@@ -44,7 +47,8 @@ class Horse {
             this.horses.push(new Racer(racer.name, racer.breed));
         });
     }
-     startRace() {
+
+    startRace() {
         console.log('Start!!!');
         this.horses.forEach(racer => racer.run());
         for (let i = 1; i <= 5; i++) {
@@ -62,6 +66,6 @@ class Horse {
         }, 11000);
     }
 }
- const race = new Race();
+const race = new Race();
 race.createRace();
 race.startRace();

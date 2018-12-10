@@ -1,8 +1,8 @@
 const user = {};
- Object.defineProperty(user, 'name', {
+Object.defineProperty(user, 'name', {
     enumerable: true,
     configurable: true,
-    writeble: true, 
+    writeble: true,
     set: (date) => {
         this.name = date.toLowerCase()
             .split(/\s+/)
@@ -14,7 +14,7 @@ const user = {};
     },
     get: () => this.name,
 });
- Object.defineProperty(user, 'phone', {
+Object.defineProperty(user, 'phone', {
     enumerable: true,
     configurable: true,
     writeble: true,
@@ -25,9 +25,9 @@ const user = {};
     },
     get: () => this.phone,
 });
- user.name = 'aNna-mAria joHNs';
+user.name = 'aNna-mAria joHNs';
 console.log(user.name);
- user.phone = '+38(096)-111-22-33';
+user.phone = '+38(096)-111-22-33';
 console.log(user.phone);
- user.phone = '38(096)+111b22+33';
+user.phone = '38(096)+111b22+33';
 console.log(user.phone);
