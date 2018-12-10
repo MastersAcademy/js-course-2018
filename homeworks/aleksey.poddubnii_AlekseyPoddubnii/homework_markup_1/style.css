@@ -62,7 +62,6 @@ ul {
 
 .banner-block {
   background-image: url("images/background.jpg");
-  height: 100vh;
   background-color: rgba(0, 0, 0, .7);
   background-blend-mode: darken;
   background-size: cover;
@@ -120,9 +119,10 @@ ul {
 
 .triggers__small {
   color: #CCC;
-  width: 425px;
+  max-width: 425px;
   margin: auto;
   padding-top: 54px;
+  padding-bottom: 140px;
   text-align: center;
   font-family: "Noto Sans";
   font-size: 20px;

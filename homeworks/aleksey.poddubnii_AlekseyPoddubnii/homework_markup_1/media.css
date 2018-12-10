@@ -52,6 +52,14 @@
 
 @media (max-width:575.98px) {
 
+  .amazing-portfolio {
+    margin: 0 40px;
+  }
+
+  .triggers__big {
+    font-size: 25px !important;
+  }
+
   .about-box-item__line {
     display: none;
   }
