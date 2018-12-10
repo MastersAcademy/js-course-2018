@@ -1,8 +1,8 @@
-const horsesList = [{ name: 'Big Racket', breed: 'Thoroughbred' }, { name: 'Shareef Dancer', breed: 'Thoroughbred' },
-    { name: 'Green Monkey', breed: 'Thoroughbred' }, { name: 'Annihilator', breed: 'Thoroughbred' },
-    { name: 'Seattle Dancer', breed: 'Thoroughbred' }, { name: 'Mystic Park', breed: 'Standardbred' },
-    { name: 'Pine Chip', breed: 'Standardbred' }, { name: 'Sardar\t', breed: 'Thoroughbred' },
-    { name: 'Poetin\t', breed: 'Brandenburger' }, { name: 'Lord Sinclair', breed: 'Bavarian Warmblood' }];
+const horsesList = [['Big Racket', 'Thoroughbred'], ['Shareef Dancer', 'Thoroughbred'],
+    ['Green Monkey', 'Thoroughbred'], ['Annihilator', 'Thoroughbred'],
+    ['Seattle Dancer', 'Thoroughbred'], ['Mystic Park', 'Standardbred'],
+    ['Pine Chip', 'Standardbred'], ['Sardar\t', 'Thoroughbred'],
+    ['Poetin\t', 'Brandenburger'], ['Lord Sinclair', 'Bavarian Warmblood']];
 
 class Horse {
     constructor(name, breed) {
@@ -15,22 +15,25 @@ class Racer extends Horse {
     constructor(name, breed) {
         super(name, breed);
         this.distance = 0;
-        this.speed = Racer.setSpeed();
+        this.speed = 0;
+        this.setSpeed();
         this.time = 0;
     }
 
-    static setSpeed() { return 10 + 5 * Math.random(); }
+    setSpeed() { this.speed = 10 + 5 * Math.random(); }
 
     run(timeout) {
         const that = this;
+
         function racing(time) {
             setTimeout(() => {
                 that.distance += that.speed;
-                that.speed = Racer.setSpeed();
+                that.setSpeed();
                 that.time = time;
                 if (time < timeout) racing(time + 1);
             }, 1000);
         }
+
         racing(1);
     }
 }
@@ -41,32 +44,36 @@ class Race {
     }
 
     createRace() {
-        this.horses = horsesList.map(obj => new Racer(obj.name, obj.breed));
+        this.horses = horsesList.map(arr => new Racer(arr[0], arr[1]));
     }
 
     startRece(timeout) {
         this.horses.forEach(obj => obj.run(timeout));
+
         const that = this;
+
         function racing(time) {
-            setTimeout(() => {
-                function logRacing() {
-                    console.log(that.horses.reduce(
-                        (str, obj) => `${str}${obj.name}\t(${obj.breed})\t\trun\t${obj.distance} m\n`,
-                        `Time = ${time} c:\n`,
-                    ));
-                    if (time < timeout) racing(time + 2);
-                    else {
-                        that.horses.sort((a, b) => b.distance - a.distance);
-                        console.log(`Winner: ${that.horses[0].name}   congratulate the champion!`);
-                    }
+            function createLogRacing(str, obj) {
+                return `${str}${obj.name}\t(${obj.breed})\t\trun\t${obj.distance} m\n`;
+            }
+
+            function logRacing() {
+                console.log(that.horses.reduce(createLogRacing, `Time = ${time} c:\n`));
+                if (time < timeout) racing(time + 2);
+                else {
+                    that.horses.sort((a, b) => b.distance - a.distance);
+                    console.log(`Winner: ${that.horses[0].name}   congratulate the champion!`);
                 }
-                function synchronization() {
-                    if (that.horses.some(obj => obj.time < time)) setTimeout(synchronization, 16);
-                    else logRacing();
-                }
-                synchronization();
-            }, 2000);
+            }
+
+            function synchronization() {
+                if (that.horses.some(obj => obj.time < time)) setTimeout(synchronization, 16);
+                else logRacing();
+            }
+
+            setTimeout(synchronization, 2000);
         }
+
         racing(2);
     }
 }
