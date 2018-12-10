@@ -1,0 +1,67 @@
+@media (max-width: 991.98px) {
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mob-menu__btn {
+    display: inherit !important;
+    margin: 30px;
+    max-width: 50px;
+  }
+
+  .logo {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .box-services {
+    flex-direction: column;
+  }
+
+  .expertise-block__title,
+  .amazing-portfolio__heading {
+    text-align: center;
+  }
+
+  .expertise-block__description {
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+
+  .expertise-boxes {
+    justify-content: center;
+  }
+
+  .expertise-img,
+  .amazing-portfolio__tablet {
+    display: none;
+  }
+
+  .amazing-wrap {
+    justify-content: center;
+  }
+
+  .width--third {
+    width: 50% !important;
+    height: 50%;
+  }
+}
+
+@media (max-width:575.98px) {
+
+  .about-box-item__line {
+    display: none;
+  }
+
+  .about-box-item__right,
+  .about-box-item__left {
+    flex-basis: initial !important;
+  }
+
+  .about-box-item__img-wrap {
+    margin: 0 22px;
+  }
+}

@@ -31,6 +31,10 @@ ul {
   margin: 40px auto 0;
 }
 
+.mob-menu__btn {
+  display: none;
+}
+
 /* Offsets */
 
 .offset-right--xs {
@@ -109,7 +113,7 @@ ul {
   line-height: 60px;
   text-transform: uppercase;
   color: #FFF;
-  width: 550px;
+  max-width: 550px;
   text-align: center;
   margin: auto;
 }
@@ -163,7 +167,7 @@ ul {
 
 .box-service {
   text-align: center;
-  width: 33%;
+  padding-bottom: 30px;
 }
 
 .box-service__title {
@@ -193,7 +197,6 @@ ul {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  height: 616px;
 }
 
 .expertise-block {
@@ -260,11 +263,10 @@ ul {
 }
 
 /* Right Image */
-/* Add here height for picture, only for be similiar like at PSD */
 
 .expertise-img__img {
-  width: 350px;
-  height: 616px;
+  max-width: 350px;
+  max-height: 616px;
 }
 
 /* Amazing Portfolio */
