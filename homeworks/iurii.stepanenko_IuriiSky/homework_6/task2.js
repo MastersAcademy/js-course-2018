@@ -1,16 +1,3 @@
-const infoHorses = [
-    { name: 'Arnold', breed: 'Arabian' },
-    { name: 'Schwarzenegger', breed: 'Quarter Horsee' },
-    { name: 'Willard', breed: 'Thoroughbred' },
-    { name: 'Smith', breed: 'Tennessee Walker' },
-    { name: 'Johnny', breed: 'Morgan' },
-    { name: 'Depp', breed: 'Falabella' },
-    { name: 'Nicolas', breed: 'Paint' },
-    { name: 'Cage', breed: 'Appaloosa' },
-    { name: 'Keanu', breed: 'Warmblood' },
-    { name: 'Reeves', breed: 'Andalusian' },
-];
-
 class Horse {
     constructor(name, breed) {
         this.name = name;
@@ -32,14 +19,9 @@ class Racer extends Horse {
     }
 
     run() {
-        let count = 0;
         this.timerId = setInterval(() => {
             this.distance = this.distance + this.speed;
             this.setSpeed();
-            count++;
-            if (count >= 10) {
-                this.stop();
-            }
         }, 1000);
     }
 
@@ -51,17 +33,26 @@ class Racer extends Horse {
     }
 }
 
+const rasers = [
+    new Racer('Arnold', 'Arabian'),
+    new Racer('Schwarzenegger', 'Quarter Horsee'),
+    new Racer('Willard', 'Thoroughbred'),
+    new Racer('Smith', 'Tennessee Walker'),
+    new Racer('Johnny', 'Morgan'),
+    new Racer('Depp', 'Falabella'),
+    new Racer('Nicolas', 'Paint'),
+    new Racer('Cage', 'Appaloosa'),
+    new Racer('Keanu', 'Warmblood'),
+    new Racer('Reeves', 'Andalusian'),
+];
+
 class Race {
     constructor() {
         this.horses = [];
     }
 
-    createRace() {
-        infoHorses.forEach((element) => {
-            const racer = new Racer(element.name, element.breed);
-            racer.stop();
-            this.horses.push(racer);
-        });
+    createRace(racers) {
+        this.horses = racers;
     }
 
     startRace(time, resultInterval) {
@@ -84,20 +75,17 @@ class Race {
     }
 
     printWinner() {
-        let maxDistanceIndex = 0;
-        let maxDistance = 0;
+        let winner = this.horses[0];
 
-        for (let i = 0; i < this.horses.length; i++) {
-            if (this.horses[i].distance > maxDistance) {
-                maxDistanceIndex = i;
-                maxDistance = this.horses[i].distance;
+        for (let i = 1; i < this.horses.length; i++) {
+            if (this.horses[i].distance > winner.distance) {
+                winner = this.horses[i];
             }
         }
-        const winner = this.horses[maxDistanceIndex];
         console.log(`\n Winner: name: ${winner.name}, breed: ${winner.breed}, distance: ${winner.distance}`);
     }
 }
 
 const myRace = new Race();
-myRace.createRace();
+myRace.createRace(rasers);
 myRace.startRace(10, 2);
