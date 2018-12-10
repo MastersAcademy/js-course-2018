@@ -1,3 +1,4 @@
+
 class Horse {
     constructor(name, breed) {
         this.name = name;
@@ -12,19 +13,19 @@ class Racer extends Horse {
         this.speed = 0;
     }
 
-    run() {
-        let time = 1000;
-        for (let i = 1; i <= 10; i++) {
-            setTimeout(() => {
-                this.distance += this.speed;
-                this.setSpeed();
-            }, time);
-            time += 1000;
-        }
+    setSpeed() {
+        this.speed = Math.floor(Math.random() * 5) + 10;
     }
 
-    setSpeed() {
-        this.speed = Math.floor(Math.random() * (15 - 10)) + 10;
+    run() {
+        this.timeout = setInterval(() => {
+            this.distance += this.speed;
+            this.setSpeed();
+        }, 1000);
+    }
+
+    stop() {
+        clearInterval(this.timeout);
     }
 }
 
@@ -35,38 +36,34 @@ class Race {
 
     createRace() {
         const horsesArray = [
-            ['WAWOLD', 'Ardennes horse'],
-            ['GARDINA', 'Colorado Ranger'],
-            ['ANDIRULD', 'Dutch harness horse'],
-            ['ALBETOLF', 'Gidran'],
-            ['ISANGO', 'Holsteiner horse'],
-            ['ABERY', 'Iomud'],
-            ['LIAGONO', 'Karabair'],
-            ['UVERAD', 'Kiger Mustang'],
-            ['JOEZ', 'Latvian horse'],
-            ['VIDARAD', 'Mangalarga'],
+            { name: 'WAWOLD', breed: 'Ardennes horse' },
+            { name: 'GARDINA', breed: 'Colorado Ranger' },
+            { name: 'ANDIRULD', breed: 'Dutch harness horse' },
+            { name: 'ALBETOLF', breed: 'Gidran' },
+            { name: 'ISANGO', breed: 'Holsteiner horse' },
+            { name: 'ABERY', breed: 'Iomud' },
+            { name: 'LIAGONO', breed: 'Karabair' },
+            { name: 'UVERAD', breed: 'Kiger Mustang' },
+            { name: 'JOEZ', breed: 'Latvian horse' },
+            { name: 'VIDARAD', breed: 'Mangalarga' },
         ];
         horsesArray.forEach((elem) => {
-            this.horses.push(new Racer(elem[0], elem[1]));
+            this.horses.push(new Racer(elem.name, elem.breed));
         });
     }
 
     startRace() {
-        this.horses.forEach(elem => elem.run(this.runningTime));
-        let time = 2000;
-        for (let i = 1; i <= 5; i++) {
-            setTimeout(() => {
-                this.horses.sort((a, b) => b.distance - a.distance);
-                this.horses.forEach((elem) => {
-                    console.log(`\n* Horse: ${elem.name}`);
-                    console.log(`* Breed: ${elem.breed}`);
-                    console.log(`* Distance: ${elem.distance}`);
-                });
-                console.log('\t___');
-            }, time);
-            time += 2000;
-        }
+        this.horses.forEach(elem => elem.run());
+        const timeout = setInterval(() => {
+            this.horses.forEach((elem) => {
+                console.log(`\n* Horse: ${elem.name}`);
+                console.log(`* Breed: ${elem.breed}`);
+                console.log(`* Distance: ${elem.distance}`);
+            });
+        }, 2000);
+
         setTimeout(() => {
+            clearInterval(timeout);
             this.horses.sort((a, b) => b.distance - a.distance);
             if (this.horses[0].distance === this.horses[1].distance) {
                 console.log('\n No winner!');
@@ -75,7 +72,7 @@ class Race {
                 console.log(`Breed: ${this.horses[0].breed}`);
                 console.log(`Distance: ${this.horses[0].distance}`);
             }
-        }, 11000);
+        }, 10000);
     }
 }
 const race = new Race();
