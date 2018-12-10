@@ -25,16 +25,16 @@ class Racer extends Horse {
     run(timeout) {
         const that = this;
 
-        function racing(time) {
-            setTimeout(() => {
-                that.distance += that.speed;
-                that.setSpeed();
-                that.time = time;
-                if (time < timeout) racing(time + 1);
-            }, 1000);
+        let intervalID;
+
+        function racing() {
+            that.distance += that.speed;
+            that.time++;
+            that.setSpeed();
+            if (that.time >= timeout) clearInterval(intervalID);
         }
 
-        racing(1);
+        intervalID = setInterval(racing, 1000);
     }
 }
 
