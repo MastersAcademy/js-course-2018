@@ -787,18 +787,7 @@ body {
 
 /*   --- RESPONSIVE ---   */
 
-@media (max-width: 967px) {
-
-  .other-expertise {
-    padding-bottom: 50px;
-  }
-
-  .cloud-control {
-    margin-top: 25px;
-  }
-}
-
-@media (max-width: 920px) {
+@media (max-width: 991.98px) {
 
   .navigation {
     display: none;
@@ -807,50 +796,189 @@ body {
   .responsive-menu {
     display: block;
   }
+
+  .other-expertise {
+    padding-bottom: 50px;
+  }
+
+  .other-expertise__item {
+    display: none;
+  }
+
+  .types-of-expertise {
+    width: 600px;
+  }
+
+  .feedback {
+    margin: 25px 50px 0;
+  }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 767.98px) {
 
   .services {
     flex-direction: column;
   }
+
+  .amazing-portfolio__item {
+    display: none;
+  }
+
+  .portfolio-photos__item {
+    width: 50%;
+    height: 215px;
+  }
+
+  .portfolio-photos__img {
+    width: 100%;
+    height: 215px;
+  }
+
+  .about-content {
+    margin: 0 auto;
+  }
+
+  .our-humble {
+    margin-left: 5%;
+  }
+
+  .facing-startup {
+    margin-left: 5%;
+  }
+
+  .dark-days {
+    margin-left: 5%;
+  }
+
+  .our-triumph {
+    margin-left: 5%;
+  }
+
+  .team__img {
+    width: 150px;
+    height: auto;
+  }
+
+  .team-social__img {
+    width: 20px;
+    height: auto;
+  }
 }
 
-@media (max-width: 770px) {
+@media (max-width:575.98px) {
 
-  .other-expertise {
+  .other-expertise-content__headline {
+    width: 100px;
+  }
+
+  .other-expertise-content__paragraph {
+    width: 300px;
+  }
+
+  .types-of-expertise {
     flex-direction: column;
   }
-
-  .other-expertise__item {
-    order: -1;
-  }
-
-  .other-expertise__img {
-    width: 100%;
-    height: 400px;
-  }
-
-  .cloud-control {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 549px) {
 
   .cloud-control {
     margin-top: 25px;
   }
-}
 
-@media (max-width: 416px) {
-
-  .title-content {
-    padding-top: 150px;
+  .amazing-portfolio__headline {
+    width: 100px;
   }
 
-  .title-content__headline {
+  .amazing-portfolio__paragraph1 {
     width: 300px;
+  }
+
+  .amazing-portfolio__paragraph2 {
+    width: 300px;
+  }
+
+  .advantages-of-portfolio {
+    width: 250px;
+  }
+
+  .portfolio-photos__item {
+    width: 50%;
+    height: 180px;
+  }
+
+  .portfolio-photos__img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .team {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .team-social {
+    margin-bottom: 25px;
+  }
+
+  .list-contacts {
+    flex-wrap: nowrap;
+    height: 200px;
+  }
+
+  .contacts-form {
+    width: 350px;
+  }
+}
+
+@media (max-width:450.98px) {
+
+  .other-expertise-content__paragraph {
+    width: 250px;
+  }
+
+  .amazing-portfolio__paragraph1 {
+    width: 250px;
+  }
+
+  .amazing-portfolio__paragraph2 {
+    width: 250px;
+  }
+
+  .portfolio-photos__item {
+    width: 50%;
+    height: 140px;
+  }
+
+  .portfolio-photos__img {
+    width: 100%;
+    height: 140px;
+  }
+
+  .awesome-team__paragraph {
     margin: 0 auto;
+    width: 250px;
+  }
+
+  .contact-us-content__paragraph {
+    width: 250px;
+  }
+
+  .contacts-form {
+    width: 290px;
+  }
+}
+
+@media (max-width: 376.98px) {
+
+  .portfolio-photos__item {
+    width: 50%;
+    height: 115px;
+  }
+
+  .portfolio-photos__img {
+    width: 100%;
+    height: 115px;
+  }
+
+  .contacts-form {
+    width: 225px;
   }
 }
