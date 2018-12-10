@@ -2,8 +2,8 @@ const user = {};
 function createUser() {
     let fullName;
     let phone;
-    const capitalLetter = new RegExp('\\b\\w', 'g');
-    const removeCharacters = new RegExp('[^\\d]', 'g');
+    const capitalLetter = /\b\w/g;
+    const removeCharacters = /[^\d]/g;
     Object.defineProperty(user, 'fullName', {
         get() {
             return fullName;
