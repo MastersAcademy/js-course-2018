@@ -14,11 +14,13 @@ function addKey(obj, keyName, setter) {
 }
 
 function capitalizeWords(str) {
-    return str.toLowerCase().replace(/\b./g, ch => ch.toUpperCase());
+    const WORD_FIRST_CHAR = /\b./g;
+    return str.toLowerCase().replace(WORD_FIRST_CHAR, ch => ch.toUpperCase());
 }
 
 function normalizePhoneNumber(num) {
-    return num.match(/^\+|\d/g).join('');
+    const FIRST_PLUS_OR_ANY_DIGITS = /^\+|\d/g;
+    return num.match(FIRST_PLUS_OR_ANY_DIGITS).join('');
 }
 
 addKey(user, 'fullName', capitalizeWords);
