@@ -4,8 +4,6 @@
 }
 
 body {
-  margin: 0 auto;
-  width: 1024px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #FFF;
@@ -14,6 +12,7 @@ body {
 /* ---SECTION Title --- */
 
 .header {
+  max-width: 1024px;
   background-image: url("../img/backgrounds/title-bg.jpg");
 }
 
@@ -22,11 +21,11 @@ body {
 }
 
 .logo__dreams {
-  margin: 40px 0 0 130px;
+  margin: 40px 0 0 10%;
 }
 
 .title-navigation {
-  margin: 50px 130px 0 70px;
+  margin: 50px 10% 0 70px;
 }
 
 .navigation {
@@ -52,8 +51,25 @@ body {
   color: #35E9EB;
 }
 
+.responsive-menu {
+  display: none;
+  right: 10%;
+  position: fixed;
+  padding: 6px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.responsive-menu:hover {
+  cursor: pointer;
+  color: #35E9EB;
+}
+
 .title-content {
-  padding-top: 242px;
+  padding-top: 225px;
   text-align: center;
 }
 
@@ -78,12 +94,13 @@ body {
   font-size: 16px;
   color: #CCC;
   line-height: 1.7;
-  padding-bottom: 140px;
+  padding-bottom: 100px;
 }
 
 /* --- SECTION Core Services ---*/
 
 .core-services {
+  max-width: 1024px;
   text-align: center;
 }
 
@@ -128,6 +145,7 @@ body {
 /* --- SECTION Other Expertise --- */
 
 .other-expertise {
+  max-width: 1024px;
   background-color: #F7F7F7;
   display: flex;
 }
@@ -247,6 +265,7 @@ body {
 /* --- SECTION Amazing Portfolio --- */
 
 .amazing-portfolio {
+  max-width: 1024px;
   margin-left: 50px;
   width: 100%;
   display: flex
@@ -347,7 +366,7 @@ body {
 /* --- SECTION Portfolio Photos --- */
 
 .portfolio-content {
-  width: 100%;
+  max-width: 1024px;
 }
 
 .portfolio-photos {
@@ -377,6 +396,7 @@ body {
 /* --- SECTION About Us --- */
 
 .about-us {
+  max-width: 1024px;
   padding: 100px 0;
 }
 
@@ -542,6 +562,7 @@ body {
 /* SECTION Awesome Team */
 
 .awesome-team {
+  max-width: 1024px;
   padding: 100px 0;
   background-color: #F7F7F7;
 }
@@ -610,6 +631,7 @@ body {
 /* --- SECTION Contsct Us --- */
 
 .contact-us {
+  max-width: 1024px;
   background-color: #111;
   padding: 50px 0 25px;
 }
@@ -761,4 +783,74 @@ body {
   margin-top: 40px;
   margin-bottom: 25px;
   border-bottom: 1px solid #FFF;
+}
+
+/*   --- RESPONSIVE ---   */
+
+@media (max-width: 967px) {
+
+  .other-expertise {
+    padding-bottom: 50px;
+  }
+
+  .cloud-control {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 920px) {
+
+  .navigation {
+    display: none;
+  }
+
+  .responsive-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 790px) {
+
+  .services {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 770px) {
+
+  .other-expertise {
+    flex-direction: column;
+  }
+
+  .other-expertise__item {
+    order: -1;
+  }
+
+  .other-expertise__img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .cloud-control {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 549px) {
+
+  .cloud-control {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 416px) {
+
+  .title-content {
+    padding-top: 150px;
+  }
+
+  .title-content__headline {
+    width: 300px;
+    margin: 0 auto;
+  }
 }
