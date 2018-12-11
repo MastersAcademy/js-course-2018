@@ -64,14 +64,12 @@ class Race {
                 clearInterval(this.raceTimer);
 
                 // sorting horses by DESC their distances
-                this.horses.sort((h1, h2) => ((h1.distance < h2.distance) ? 1 : -1));
+                this.horses.sort((h1, h2) => h2.distance - h1.distance);
                 // print winners
                 console.log('Congratulation our horses-winners!');
                 for (let i = 0; i < this.horses.length; i++) {
                     if (this.horses[i].distance === this.horses[0].distance) {
                         console.log(`Winner: ${this.horses[i].name}  ${this.horses[i].distance}`);
-                    } else {
-                        break;
                     }
                 }
                 console.log('They won a lot of nothing!');
