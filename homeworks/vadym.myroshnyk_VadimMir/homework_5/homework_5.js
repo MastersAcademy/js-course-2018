@@ -59,7 +59,7 @@ const people = [
     { id: 6, name: 'Jeen', friends: [5, 1] },
 ];
 
-const getPeople = function (userId) {
+const getPeople = function letsGetPeople(userId) {
     const peopleFriends = people.find((user) => {
         if (user.id === userId) {
             return user;
