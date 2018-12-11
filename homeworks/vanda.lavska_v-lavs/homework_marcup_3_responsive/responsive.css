@@ -225,9 +225,3 @@
   }
 }
 
-@media screen and (min-width: 576px) {
-
-  .portfolio-list__item {
-    width: 100%;
-  }
-}
