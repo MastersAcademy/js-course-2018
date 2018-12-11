@@ -9,10 +9,14 @@ body {
   color: #FFF;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
 /* ---SECTION Title --- */
 
 .header {
-  max-width: 1024px;
   background-image: url("../img/backgrounds/title-bg.jpg");
 }
 
@@ -100,7 +104,6 @@ body {
 /* --- SECTION Core Services ---*/
 
 .core-services {
-  max-width: 1024px;
   text-align: center;
 }
 
@@ -145,7 +148,6 @@ body {
 /* --- SECTION Other Expertise --- */
 
 .other-expertise {
-  max-width: 1024px;
   background-color: #F7F7F7;
   display: flex;
 }
@@ -265,8 +267,7 @@ body {
 /* --- SECTION Amazing Portfolio --- */
 
 .amazing-portfolio {
-  max-width: 1024px;
-  margin-left: 50px;
+  padding-left: 50px;
   width: 100%;
   display: flex
 }
@@ -365,26 +366,24 @@ body {
 
 /* --- SECTION Portfolio Photos --- */
 
-.portfolio-content {
-  max-width: 1024px;
-}
-
 .portfolio-photos {
+  text-align: center;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .portfolio-photos__item {
-  width: 341px;
-  height: 256px;
+  flex-grow: 2;
+  flex-basis: 300px;
+  max-width: 350px;
 }
 
 /* photos */
 
 .portfolio-photos__img {
-  width: 341px;
-  height: 256px;
+  height: 100%;
+  width: 100%;
   opacity: 1;
 }
 
@@ -396,7 +395,6 @@ body {
 /* --- SECTION About Us --- */
 
 .about-us {
-  max-width: 1024px;
   padding: 100px 0;
 }
 
@@ -562,7 +560,6 @@ body {
 /* SECTION Awesome Team */
 
 .awesome-team {
-  max-width: 1024px;
   padding: 100px 0;
   background-color: #F7F7F7;
 }
@@ -631,7 +628,6 @@ body {
 /* --- SECTION Contsct Us --- */
 
 .contact-us {
-  max-width: 1024px;
   background-color: #111;
   padding: 50px 0 25px;
 }
@@ -814,6 +810,13 @@ body {
   }
 }
 
+@media (max-width: 899.98px) {
+
+  .portfolio-photos__item {
+    flex-basis: 250px;
+  }
+}
+
 @media (max-width: 767.98px) {
 
   .services {
@@ -822,16 +825,6 @@ body {
 
   .amazing-portfolio__item {
     display: none;
-  }
-
-  .portfolio-photos__item {
-    width: 50%;
-    height: 215px;
-  }
-
-  .portfolio-photos__img {
-    width: 100%;
-    height: 215px;
   }
 
   .about-content {
@@ -862,6 +855,13 @@ body {
   .team-social__img {
     width: 20px;
     height: auto;
+  }
+}
+
+@media (max-width: 749.98px) {
+
+  .portfolio-photos__item {
+    flex-basis: 200px;
   }
 }
 
@@ -899,16 +899,6 @@ body {
     width: 250px;
   }
 
-  .portfolio-photos__item {
-    width: 50%;
-    height: 180px;
-  }
-
-  .portfolio-photos__img {
-    width: 100%;
-    height: 180px;
-  }
-
   .team {
     text-align: center;
     flex-direction: column;
@@ -942,16 +932,6 @@ body {
     width: 250px;
   }
 
-  .portfolio-photos__item {
-    width: 50%;
-    height: 140px;
-  }
-
-  .portfolio-photos__img {
-    width: 100%;
-    height: 140px;
-  }
-
   .awesome-team__paragraph {
     margin: 0 auto;
     width: 250px;
@@ -966,17 +946,14 @@ body {
   }
 }
 
-@media (max-width: 376.98px) {
+@media (max-width: 399.98px) {
 
   .portfolio-photos__item {
-    width: 50%;
-    height: 115px;
+    flex-basis: 150px;
   }
+}
 
-  .portfolio-photos__img {
-    width: 100%;
-    height: 115px;
-  }
+@media (max-width: 376.98px) {
 
   .contacts-form {
     width: 225px;
