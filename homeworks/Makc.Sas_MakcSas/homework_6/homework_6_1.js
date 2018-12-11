@@ -5,7 +5,7 @@ let phoneNumber;
 Object.defineProperties(user, {
     fullName: {
         set(name) {
-            fullName = name.trim().toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
+            fullName = name.toString().toLowerCase().replace(/\b\w/g, value => value.toUpperCase());
         },
         get() {
             return fullName;
