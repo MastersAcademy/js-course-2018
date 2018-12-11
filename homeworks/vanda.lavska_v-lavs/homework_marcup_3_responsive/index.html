@@ -1159,24 +1159,24 @@
     <!--</section>-->
     <script>
 
-function respMenu() {
+    function respMenu() {
 
-    let burger = document.getElementById('btnBurger');
-    let close = document.getElementById('btnClose');
-    let menuResp = document.getElementById('menu');
+        let burger = document.getElementById('btnBurger');
+         let close = document.getElementById('btnClose');
+        let menuResp = document.getElementById('menu');
 
-    burger.addEventListener('click', function (e) {
-        e.preventDefault();
-        menuResp.classList.add('nav-open');
-    });
+         burger.addEventListener('click', function (e) {
+            e.preventDefault();
+            menuResp.classList.add('nav-open');
+        });
 
-    close.addEventListener('click', function (e) {
-        e.preventDefault();
-        menuResp.classList.remove('nav-open');
-    });
-}
+        close.addEventListener('click', function (e) {
+           e.preventDefault();
+            menuResp.classList.remove('nav-open');
+        });
+    }
 
-respMenu();
+    respMenu();
 
     </script>
 
