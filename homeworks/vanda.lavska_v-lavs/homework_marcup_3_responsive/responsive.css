@@ -49,7 +49,7 @@
     transform: translateX(0);
   }
 
-  .nav-open .nav__list {
+  .nav__list {
     position: relative;
     display: block;
   }
