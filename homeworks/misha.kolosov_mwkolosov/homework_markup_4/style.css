@@ -599,7 +599,7 @@
     top: 23px;
   }
 
-  .hamburger .bar {
+  .hamburger .hamburger__bar {
     padding: 0;
     width: 30px;
     height: 4px;
