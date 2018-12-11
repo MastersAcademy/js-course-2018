@@ -57,57 +57,56 @@ class Race {
 
     createRace() {
         const horseNames = [
-            'President',
-            'Sheriff',
-            'Deputy',
-            'Lucky',
-            'Pecos',
-            'Colt',
-            'Horseshoe',
-            'Barley',
-            'Bronco',
-            'Franklin',
+            "President",
+            "Sheriff",
+            "Deputy",
+            "Lucky",
+            "Pecos",
+            "Colt",
+            "Horseshoe",
+            "Barley",
+            "Bronco",
+            "Franklin"
         ];
 
-        const horseBreeds = ['Arabian', 'Quarter Horse', 'Thoroughbred'];
+        const horseBreeds = ["Arabian", "Quarter Horse", "Thoroughbred"];
 
-        horseNames.forEach((horse) => {
-            this.horses.push(new Racer(horse, horseBreeds[Math.floor(Math.random() * 3)]));
+        horseNames.forEach(horse => {
+            this.horses.push(
+                new Racer(horse, horseBreeds[Math.floor(Math.random() * 3)])
+            );
         });
     }
 
     sortAndDisplayResults() {
-        this.horses.sort((a, b) => {
-            if (a.distance < b.distance) return 1;
-            if (b.distance < a.distance) return -1;
-            return 0;
-        });
-        this.horses.forEach((horse) => {
+        this.horses.sort((a, b) => a.distance < b.distance);
+        this.horses.forEach(horse => {
             console.log(
-                `${horse.name} (${horse.breed}) -- passed: ${horse.distance} m`,
+                `${horse.name} (${horse.breed}) -- passed: ${horse.distance} m`
             );
         });
     }
 
     startRace() {
-        console.log('\n🐴 OUR PARTICIPANTS 🐴\n');
-        this.horses.forEach((horse) => {
+        console.log("\n🐴 OUR PARTICIPANTS 🐴\n");
+        this.horses.forEach(horse => {
             console.log(`${horse.name} -- ${horse.breed}`);
         });
 
-        console.log('\n\n🏁 AND OUR RACE BEGINS! 🏁');
-        this.horses.map(horse => horse.run());
+        console.log("\n\n🏁 AND OUR RACE BEGINS! 🏁");
+        this.horses.forEach(horse => horse.run());
 
         this.timePassed = 0;
         const handle = setInterval(() => {
             this.timePassed += 2;
             if (this.timePassed >= 10) {
-                console.log('\n\n🏁 RACE FINISHED! 🏁');
-                console.log('\n🏆 OUR FINAL LEADERBOARD 🏆\n');
+                console.log("\n\n🏁 RACE FINISHED! 🏁");
+                console.log("\n🏆 OUR FINAL LEADERBOARD 🏆\n");
                 this.horses.forEach(horse => horse.stop());
                 clearInterval(handle);
             }
-            if (this.timePassed < 10) console.log(`\nLeaderboard after ${this.timePassed} seconds:`);
+            if (this.timePassed < 10)
+                console.log(`\nLeaderboard after ${this.timePassed} seconds:`);
             this.sortAndDisplayResults();
         }, 2 * 1000);
     }
