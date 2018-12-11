@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 
 </head>
 
@@ -20,7 +21,7 @@
                     <img src="images/dreams.png" alt="Dreams" class="img">
                 </a>
             </h1>
-            <button class="btn btn--burger">
+            <button id="btnBurger" class="btn btn--burger">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 424 424" style="enable-background:new 0 0 424 424;" xml:space="preserve">
 <g>
@@ -62,8 +63,8 @@
 </g>
 </svg>
             </button>
-            <nav class="header__nav">
-                <button class="btn btn--close">
+            <nav id="menu"  class="header__nav">
+                <button id="btnClose" class="btn btn--close">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <g>
@@ -1240,6 +1241,23 @@
             </form>
         </div>
     </section>
+    <script>
+
+        let burger = document.getElementById('btnBurger');
+        let close = document.getElementById('btnClose');
+        let menuResp = document.getElementById('menu');
+
+        burger.addEventListener('click', function (e) {
+            e.preventDefault();
+            menuResp.classList.add('nav-open');
+        });
+
+        close.addEventListener('click', function (e) {
+            e.preventDefault();
+            menuResp.classList.remove('nav-open');
+        });
+
+    </script>
 
 </body>
 </html>

@@ -25,6 +25,7 @@
 
   .header__nav {
     position: fixed;
+    align-items: flex-start;
     top: 0;
     bottom: 0;
     right: 0;
@@ -36,7 +37,7 @@
     text-align: right;
     font-size: 16px;
     transform: translateX(100%);
-    transition: .6s;
+    transition: all ease .6s;
     z-index: 999;
   }
 
@@ -173,7 +174,7 @@
   }
 
   .section--intro {
-    height: 100vh;
+    height: 80vh;
   }
 
   .section__title--intro {
