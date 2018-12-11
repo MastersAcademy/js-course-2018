@@ -1,0 +1,3362 @@
+﻿[
+  {
+    "Country": "Afghanistan",
+    "CountryCode": "93",
+    "IsoCodes": [
+      {
+        "Code": "AF"
+      },
+      {
+        "Code": "AFG"
+      }
+    ],
+    "Population": "29,121,286",
+    "AreaKM2": "647,500"
+  },
+  {
+    "Country": "Albania",
+    "CountryCode": "355",
+    "IsoCodes": [
+      {
+        "Code": "AL"
+      },
+      {
+        "Code": "ALB"
+      }
+    ],
+    "Population": "2,986,952",
+    "AreaKM2": "28,748"
+  },
+  {
+    "Country": "Algeria",
+    "CountryCode": "213",
+    "IsoCodes": [
+      {
+        "Code": "DZ"
+      },
+      {
+        "Code": "DZA"
+      }
+    ],
+    "Population": "34,586,184",
+    "AreaKM2": "2,381,740"
+  },
+  {
+    "Country": "American Samoa",
+    "CountryCode": "1-684",
+    "IsoCodes": [
+      {
+        "Code": "AS"
+      },
+      {
+        "Code": "ASM"
+      }
+    ],
+    "Population": "57,881",
+    "AreaKM2": "199"
+  },
+  {
+    "Country": "Andorra",
+    "CountryCode": "376",
+    "IsoCodes": [
+      {
+        "Code": "AD"
+      },
+      {
+        "Code": "AND"
+      }
+    ],
+    "Population": "84,000",
+    "AreaKM2": "468"
+  },
+  {
+    "Country": "Angola",
+    "CountryCode": "244",
+    "IsoCodes": [
+      {
+        "Code": "AO"
+      },
+      {
+        "Code": "AGO"
+      }
+    ],
+    "Population": "13,068,161",
+    "AreaKM2": "1,246,700"
+  },
+  {
+    "Country": "Anguilla",
+    "CountryCode": "1-264",
+    "IsoCodes": [
+      {
+        "Code": "AI"
+      },
+      {
+        "Code": "AIA"
+      }
+    ],
+    "Population": "13,254",
+    "AreaKM2": "102"
+  },
+  {
+    "Country": "Antarctica",
+    "CountryCode": "672",
+    "IsoCodes": [
+      {
+        "Code": "AQ"
+      },
+      {
+        "Code": "ATA"
+      }
+    ],
+    "Population": "0",
+    "AreaKM2": "14,000,000"
+  },
+  {
+    "Country": "Antigua and Barbuda",
+    "CountryCode": "1-268",
+    "IsoCodes": [
+      {
+        "Code": "AG"
+      },
+      {
+        "Code": "ATG"
+      }
+    ],
+    "Population": "86,754",
+    "AreaKM2": "443"
+  },
+  {
+    "Country": "Argentina",
+    "CountryCode": "54",
+    "IsoCodes": [
+      {
+        "Code": "AR"
+      },
+      {
+        "Code": "ARG"
+      }
+    ],
+    "Population": "41,343,201",
+    "AreaKM2": "2,766,890"
+  },
+  {
+    "Country": "Armenia",
+    "CountryCode": "374",
+    "IsoCodes": [
+      {
+        "Code": "AM"
+      },
+      {
+        "Code": "ARM"
+      }
+    ],
+    "Population": "2,968,000",
+    "AreaKM2": "29,800"
+  },
+  {
+    "Country": "Aruba",
+    "CountryCode": "297",
+    "IsoCodes": [
+      {
+        "Code": "AW"
+      },
+      {
+        "Code": "ABW"
+      }
+    ],
+    "Population": "71,566",
+    "AreaKM2": "193"
+  },
+  {
+    "Country": "Australia",
+    "CountryCode": "61",
+    "IsoCodes": [
+      {
+        "Code": "AU"
+      },
+      {
+        "Code": "AUS"
+      }
+    ],
+    "Population": "21,515,754",
+    "AreaKM2": "7,686,850"
+  },
+  {
+    "Country": "Austria",
+    "CountryCode": "43",
+    "IsoCodes": [
+      {
+        "Code": "AT"
+      },
+      {
+        "Code": "AUT"
+      }
+    ],
+    "Population": "8,205,000",
+    "AreaKM2": "83,858"
+  },
+  {
+    "Country": "Azerbaijan",
+    "CountryCode": "994",
+    "IsoCodes": [
+      {
+        "Code": "AZ"
+      },
+      {
+        "Code": "AZE"
+      }
+    ],
+    "Population": "8,303,512",
+    "AreaKM2": "86,600"
+  },
+  {
+    "Country": "Bahamas",
+    "CountryCode": "1-242",
+    "IsoCodes": [
+      {
+        "Code": "BS"
+      },
+      {
+        "Code": "BHS"
+      }
+    ],
+    "Population": "301,790",
+    "AreaKM2": "13,940"
+  },
+  {
+    "Country": "Bahrain",
+    "CountryCode": "973",
+    "IsoCodes": [
+      {
+        "Code": "BH"
+      },
+      {
+        "Code": "BHR"
+      }
+    ],
+    "Population": "738,004",
+    "AreaKM2": "665"
+  },
+  {
+    "Country": "Bangladesh",
+    "CountryCode": "880",
+    "IsoCodes": [
+      {
+        "Code": "BD"
+      },
+      {
+        "Code": "BGD"
+      }
+    ],
+    "Population": "156,118,464",
+    "AreaKM2": "144,000"
+  },
+  {
+    "Country": "Barbados",
+    "CountryCode": "1-246",
+    "IsoCodes": [
+      {
+        "Code": "BB"
+      },
+      {
+        "Code": "BRB"
+      }
+    ],
+    "Population": "285,653",
+    "AreaKM2": "431"
+  },
+  {
+    "Country": "Belarus",
+    "CountryCode": "375",
+    "IsoCodes": [
+      {
+        "Code": "BY"
+      },
+      {
+        "Code": "BLR"
+      }
+    ],
+    "Population": "9,685,000",
+    "AreaKM2": "207,600"
+  },
+  {
+    "Country": "Belgium",
+    "CountryCode": "32",
+    "IsoCodes": [
+      {
+        "Code": "BE"
+      },
+      {
+        "Code": "BEL"
+      }
+    ],
+    "Population": "10,403,000",
+    "AreaKM2": "30,510"
+  },
+  {
+    "Country": "Belize",
+    "CountryCode": "501",
+    "IsoCodes": [
+      {
+        "Code": "BZ"
+      },
+      {
+        "Code": "BLZ"
+      }
+    ],
+    "Population": "314,522",
+    "AreaKM2": "22,966"
+  },
+  {
+    "Country": "Benin",
+    "CountryCode": "229",
+    "IsoCodes": [
+      {
+        "Code": "BJ"
+      },
+      {
+        "Code": "BEN"
+      }
+    ],
+    "Population": "9,056,010",
+    "AreaKM2": "112,620"
+  },
+  {
+    "Country": "Bermuda",
+    "CountryCode": "1-441",
+    "IsoCodes": [
+      {
+        "Code": "BM"
+      },
+      {
+        "Code": "BMU"
+      }
+    ],
+    "Population": "65,365",
+    "AreaKM2": "53"
+  },
+  {
+    "Country": "Bhutan",
+    "CountryCode": "975",
+    "IsoCodes": [
+      {
+        "Code": "BT"
+      },
+      {
+        "Code": "BTN"
+      }
+    ],
+    "Population": "699,847",
+    "AreaKM2": "47,000"
+  },
+  {
+    "Country": "Bolivia",
+    "CountryCode": "591",
+    "IsoCodes": [
+      {
+        "Code": "BO"
+      },
+      {
+        "Code": "BOL"
+      }
+    ],
+    "Population": "9,947,418",
+    "AreaKM2": "1,098,580"
+  },
+  {
+    "Country": "Bosnia and Herzegovina",
+    "CountryCode": "387",
+    "IsoCodes": [
+      {
+        "Code": "BA"
+      },
+      {
+        "Code": "BIH"
+      }
+    ],
+    "Population": "4,590,000",
+    "AreaKM2": "51,129"
+  },
+  {
+    "Country": "Botswana",
+    "CountryCode": "267",
+    "IsoCodes": [
+      {
+        "Code": "BW"
+      },
+      {
+        "Code": "BWA"
+      }
+    ],
+    "Population": "2,029,307",
+    "AreaKM2": "600,370"
+  },
+  {
+    "Country": "Brazil",
+    "CountryCode": "55",
+    "IsoCodes": [
+      {
+        "Code": "BR"
+      },
+      {
+        "Code": "BRA"
+      }
+    ],
+    "Population": "201,103,330",
+    "AreaKM2": "8,511,965"
+  },
+  {
+    "Country": "British Indian Ocean Territory",
+    "CountryCode": "246",
+    "IsoCodes": [
+      {
+        "Code": "IO"
+      },
+      {
+        "Code": "IOT"
+      }
+    ],
+    "Population": "4,000",
+    "AreaKM2": "60"
+  },
+  {
+    "Country": "British Virgin Islands",
+    "CountryCode": "1-284",
+    "IsoCodes": [
+      {
+        "Code": "VG"
+      },
+      {
+        "Code": "VGB"
+      }
+    ],
+    "Population": "21,730",
+    "AreaKM2": "153"
+  },
+  {
+    "Country": "Brunei",
+    "CountryCode": "673",
+    "IsoCodes": [
+      {
+        "Code": "BN"
+      },
+      {
+        "Code": "BRN"
+      }
+    ],
+    "Population": "395,027",
+    "AreaKM2": "5,770"
+  },
+  {
+    "Country": "Bulgaria",
+    "CountryCode": "359",
+    "IsoCodes": [
+      {
+        "Code": "BG"
+      },
+      {
+        "Code": "BGR"
+      }
+    ],
+    "Population": "7,148,785",
+    "AreaKM2": "110,910"
+  },
+  {
+    "Country": "Burkina Faso",
+    "CountryCode": "226",
+    "IsoCodes": [
+      {
+        "Code": "BF"
+      },
+      {
+        "Code": "BFA"
+      }
+    ],
+    "Population": "16,241,811",
+    "AreaKM2": "274,200"
+  },
+  {
+    "Country": "Burundi",
+    "CountryCode": "257",
+    "IsoCodes": [
+      {
+        "Code": "BI"
+      },
+      {
+        "Code": "BDI"
+      }
+    ],
+    "Population": "9,863,117",
+    "AreaKM2": "27,830"
+  },
+  {
+    "Country": "Cambodia",
+    "CountryCode": "855",
+    "IsoCodes": [
+      {
+        "Code": "KH"
+      },
+      {
+        "Code": "KHM"
+      }
+    ],
+    "Population": "14,453,680",
+    "AreaKM2": "181,040"
+  },
+  {
+    "Country": "Cameroon",
+    "CountryCode": "237",
+    "IsoCodes": [
+      {
+        "Code": "CM"
+      },
+      {
+        "Code": "CMR"
+      }
+    ],
+    "Population": "19,294,149",
+    "AreaKM2": "475,440"
+  },
+  {
+    "Country": "Canada",
+    "CountryCode": "1",
+    "IsoCodes": [
+      {
+        "Code": "CA"
+      },
+      {
+        "Code": "CAN"
+      }
+    ],
+    "Population": "33,679,000",
+    "AreaKM2": "9,984,670"
+  },
+  {
+    "Country": "Cape Verde",
+    "CountryCode": "238",
+    "IsoCodes": [
+      {
+        "Code": "CV"
+      },
+      {
+        "Code": "CPV"
+      }
+    ],
+    "Population": "508,659",
+    "AreaKM2": "4,033"
+  },
+  {
+    "Country": "Cayman Islands",
+    "CountryCode": "1-345",
+    "IsoCodes": [
+      {
+        "Code": "KY"
+      },
+      {
+        "Code": "CYM"
+      }
+    ],
+    "Population": "44,270",
+    "AreaKM2": "262"
+  },
+  {
+    "Country": "Central African Republic",
+    "CountryCode": "236",
+    "IsoCodes": [
+      {
+        "Code": "CF"
+      },
+      {
+        "Code": "CAF"
+      }
+    ],
+    "Population": "4,844,927",
+    "AreaKM2": "622,984"
+  },
+  {
+    "Country": "Chad",
+    "CountryCode": "235",
+    "IsoCodes": [
+      {
+        "Code": "TD"
+      },
+      {
+        "Code": "TCD"
+      }
+    ],
+    "Population": "10,543,464",
+    "AreaKM2": "1,284,000"
+  },
+  {
+    "Country": "Chile",
+    "CountryCode": "56",
+    "IsoCodes": [
+      {
+        "Code": "CL"
+      },
+      {
+        "Code": "CHL"
+      }
+    ],
+    "Population": "16,746,491",
+    "AreaKM2": "756,950"
+  },
+  {
+    "Country": "China",
+    "CountryCode": "86",
+    "IsoCodes": [
+      {
+        "Code": "CN"
+      },
+      {
+        "Code": "CHN"
+      }
+    ],
+    "Population": "1,330,044,000",
+    "AreaKM2": "9,596,960"
+  },
+  {
+    "Country": "Christmas Island",
+    "CountryCode": "61",
+    "IsoCodes": [
+      {
+        "Code": "CX"
+      },
+      {
+        "Code": "CXR"
+      }
+    ],
+    "Population": "1,500",
+    "AreaKM2": "135"
+  },
+  {
+    "Country": "Cocos Islands",
+    "CountryCode": "61",
+    "IsoCodes": [
+      {
+        "Code": "CC"
+      },
+      {
+        "Code": "CCK"
+      }
+    ],
+    "Population": "628",
+    "AreaKM2": "14"
+  },
+  {
+    "Country": "Colombia",
+    "CountryCode": "57",
+    "IsoCodes": [
+      {
+        "Code": "CO"
+      },
+      {
+        "Code": "COL"
+      }
+    ],
+    "Population": "47,790,000",
+    "AreaKM2": "1,138,910"
+  },
+  {
+    "Country": "Comoros",
+    "CountryCode": "269",
+    "IsoCodes": [
+      {
+        "Code": "KM"
+      },
+      {
+        "Code": "COM"
+      }
+    ],
+    "Population": "773,407",
+    "AreaKM2": "2,170"
+  },
+  {
+    "Country": "Cook Islands",
+    "CountryCode": "682",
+    "IsoCodes": [
+      {
+        "Code": "CK"
+      },
+      {
+        "Code": "COK"
+      }
+    ],
+    "Population": "21,388",
+    "AreaKM2": "240"
+  },
+  {
+    "Country": "Costa Rica",
+    "CountryCode": "506",
+    "IsoCodes": [
+      {
+        "Code": "CR"
+      },
+      {
+        "Code": "CRI"
+      }
+    ],
+    "Population": "4,516,220",
+    "AreaKM2": "51,100"
+  },
+  {
+    "Country": "Croatia",
+    "CountryCode": "385",
+    "IsoCodes": [
+      {
+        "Code": "HR"
+      },
+      {
+        "Code": "HRV"
+      }
+    ],
+    "Population": "4,491,000",
+    "AreaKM2": "56,542"
+  },
+  {
+    "Country": "Cuba",
+    "CountryCode": "53",
+    "IsoCodes": [
+      {
+        "Code": "CU"
+      },
+      {
+        "Code": "CUB"
+      }
+    ],
+    "Population": "11,423,000",
+    "AreaKM2": "110,860"
+  },
+  {
+    "Country": "Curacao",
+    "CountryCode": "599",
+    "IsoCodes": [
+      {
+        "Code": "CW"
+      },
+      {
+        "Code": "CUW"
+      }
+    ],
+    "Population": "141,766",
+    "AreaKM2": "444"
+  },
+  {
+    "Country": "Cyprus",
+    "CountryCode": "357",
+    "IsoCodes": [
+      {
+        "Code": "CY"
+      },
+      {
+        "Code": "CYP"
+      }
+    ],
+    "Population": "1,102,677",
+    "AreaKM2": "9,250"
+  },
+  {
+    "Country": "Czech Republic",
+    "CountryCode": "420",
+    "IsoCodes": [
+      {
+        "Code": "CZ"
+      },
+      {
+        "Code": "CZE"
+      }
+    ],
+    "Population": "10,476,000",
+    "AreaKM2": "78,866"
+  },
+  {
+    "Country": "Democratic Republic of the Congo",
+    "CountryCode": "243",
+    "IsoCodes": [
+      {
+        "Code": "CD"
+      },
+      {
+        "Code": "COD"
+      }
+    ],
+    "Population": "70,916,439",
+    "AreaKM2": "2,345,410"
+  },
+  {
+    "Country": "Denmark",
+    "CountryCode": "45",
+    "IsoCodes": [
+      {
+        "Code": "DK"
+      },
+      {
+        "Code": "DNK"
+      }
+    ],
+    "Population": "5,484,000",
+    "AreaKM2": "43,094"
+  },
+  {
+    "Country": "Djibouti",
+    "CountryCode": "253",
+    "IsoCodes": [
+      {
+        "Code": "DJ"
+      },
+      {
+        "Code": "DJI"
+      }
+    ],
+    "Population": "740,528",
+    "AreaKM2": "23,000"
+  },
+  {
+    "Country": "Dominica",
+    "CountryCode": "1-767",
+    "IsoCodes": [
+      {
+        "Code": "DM"
+      },
+      {
+        "Code": "DMA"
+      }
+    ],
+    "Population": "72,813",
+    "AreaKM2": "754"
+  },
+  {
+    "Country": "Dominican Republic",
+    "CountryCode": "1-809, 1-829, 1-849",
+    "IsoCodes": [
+      {
+        "Code": "DO"
+      },
+      {
+        "Code": "DOM"
+      }
+    ],
+    "Population": "9,823,821",
+    "AreaKM2": "48,730"
+  },
+  {
+    "Country": "East Timor",
+    "CountryCode": "670",
+    "IsoCodes": [
+      {
+        "Code": "TL"
+      },
+      {
+        "Code": "TLS"
+      }
+    ],
+    "Population": "1,154,625",
+    "AreaKM2": "15,007"
+  },
+  {
+    "Country": "Ecuador",
+    "CountryCode": "593",
+    "IsoCodes": [
+      {
+        "Code": "EC"
+      },
+      {
+        "Code": "ECU"
+      }
+    ],
+    "Population": "14,790,608",
+    "AreaKM2": "283,560"
+  },
+  {
+    "Country": "Egypt",
+    "CountryCode": "20",
+    "IsoCodes": [
+      {
+        "Code": "EG"
+      },
+      {
+        "Code": "EGY"
+      }
+    ],
+    "Population": "80,471,869",
+    "AreaKM2": "1,001,450"
+  },
+  {
+    "Country": "El Salvador",
+    "CountryCode": "503",
+    "IsoCodes": [
+      {
+        "Code": "SV"
+      },
+      {
+        "Code": "SLV"
+      }
+    ],
+    "Population": "6,052,064",
+    "AreaKM2": "21,040"
+  },
+  {
+    "Country": "Equatorial Guinea",
+    "CountryCode": "240",
+    "IsoCodes": [
+      {
+        "Code": "GQ"
+      },
+      {
+        "Code": "GNQ"
+      }
+    ],
+    "Population": "1,014,999",
+    "AreaKM2": "28,051"
+  },
+  {
+    "Country": "Eritrea",
+    "CountryCode": "291",
+    "IsoCodes": [
+      {
+        "Code": "ER"
+      },
+      {
+        "Code": "ERI"
+      }
+    ],
+    "Population": "5,792,984",
+    "AreaKM2": "121,320"
+  },
+  {
+    "Country": "Estonia",
+    "CountryCode": "372",
+    "IsoCodes": [
+      {
+        "Code": "EE"
+      },
+      {
+        "Code": "EST"
+      }
+    ],
+    "Population": "1,291,170",
+    "AreaKM2": "45,226"
+  },
+  {
+    "Country": "Ethiopia",
+    "CountryCode": "251",
+    "IsoCodes": [
+      {
+        "Code": "ET"
+      },
+      {
+        "Code": "ETH"
+      }
+    ],
+    "Population": "88,013,491",
+    "AreaKM2": "1,127,127"
+  },
+  {
+    "Country": "Falkland Islands",
+    "CountryCode": "500",
+    "IsoCodes": [
+      {
+        "Code": "FK"
+      },
+      {
+        "Code": "FLK"
+      }
+    ],
+    "Population": "2,638",
+    "AreaKM2": "12,173"
+  },
+  {
+    "Country": "Faroe Islands",
+    "CountryCode": "298",
+    "IsoCodes": [
+      {
+        "Code": "FO"
+      },
+      {
+        "Code": "FRO"
+      }
+    ],
+    "Population": "48,228",
+    "AreaKM2": "1,399"
+  },
+  {
+    "Country": "Fiji",
+    "CountryCode": "679",
+    "IsoCodes": [
+      {
+        "Code": "FJ"
+      },
+      {
+        "Code": "FJI"
+      }
+    ],
+    "Population": "875,983",
+    "AreaKM2": "18,270"
+  },
+  {
+    "Country": "Finland",
+    "CountryCode": "358",
+    "IsoCodes": [
+      {
+        "Code": "FI"
+      },
+      {
+        "Code": "FIN"
+      }
+    ],
+    "Population": "5,244,000",
+    "AreaKM2": "337,030"
+  },
+  {
+    "Country": "France",
+    "CountryCode": "33",
+    "IsoCodes": [
+      {
+        "Code": "FR"
+      },
+      {
+        "Code": "FRA"
+      }
+    ],
+    "Population": "64,768,389",
+    "AreaKM2": "547,030"
+  },
+  {
+    "Country": "French Polynesia",
+    "CountryCode": "689",
+    "IsoCodes": [
+      {
+        "Code": "PF"
+      },
+      {
+        "Code": "PYF"
+      }
+    ],
+    "Population": "270,485",
+    "AreaKM2": "4,167"
+  },
+  {
+    "Country": "Gabon",
+    "CountryCode": "241",
+    "IsoCodes": [
+      {
+        "Code": "GA"
+      },
+      {
+        "Code": "GAB"
+      }
+    ],
+    "Population": "1,545,255",
+    "AreaKM2": "267,667"
+  },
+  {
+    "Country": "Gambia",
+    "CountryCode": "220",
+    "IsoCodes": [
+      {
+        "Code": "GM"
+      },
+      {
+        "Code": "GMB"
+      }
+    ],
+    "Population": "1,593,256",
+    "AreaKM2": "11,300"
+  },
+  {
+    "Country": "Georgia",
+    "CountryCode": "995",
+    "IsoCodes": [
+      {
+        "Code": "GE"
+      },
+      {
+        "Code": "GEO"
+      }
+    ],
+    "Population": "4,630,000",
+    "AreaKM2": "69,700"
+  },
+  {
+    "Country": "Germany",
+    "CountryCode": "49",
+    "IsoCodes": [
+      {
+        "Code": "DE"
+      },
+      {
+        "Code": "DEU"
+      }
+    ],
+    "Population": "81,802,257",
+    "AreaKM2": "357,021"
+  },
+  {
+    "Country": "Ghana",
+    "CountryCode": "233",
+    "IsoCodes": [
+      {
+        "Code": "GH"
+      },
+      {
+        "Code": "GHA"
+      }
+    ],
+    "Population": "24,339,838",
+    "AreaKM2": "239,460"
+  },
+  {
+    "Country": "Gibraltar",
+    "CountryCode": "350",
+    "IsoCodes": [
+      {
+        "Code": "GI"
+      },
+      {
+        "Code": "GIB"
+      }
+    ],
+    "Population": "27,884",
+    "AreaKM2": "7"
+  },
+  {
+    "Country": "Greece",
+    "CountryCode": "30",
+    "IsoCodes": [
+      {
+        "Code": "GR"
+      },
+      {
+        "Code": "GRC"
+      }
+    ],
+    "Population": "11,000,000",
+    "AreaKM2": "131,940"
+  },
+  {
+    "Country": "Greenland",
+    "CountryCode": "299",
+    "IsoCodes": [
+      {
+        "Code": "GL"
+      },
+      {
+        "Code": "GRL"
+      }
+    ],
+    "Population": "56,375",
+    "AreaKM2": "2,166,086"
+  },
+  {
+    "Country": "Grenada",
+    "CountryCode": "1-473",
+    "IsoCodes": [
+      {
+        "Code": "GD"
+      },
+      {
+        "Code": "GRD"
+      }
+    ],
+    "Population": "107,818",
+    "AreaKM2": "344"
+  },
+  {
+    "Country": "Guam",
+    "CountryCode": "1-671",
+    "IsoCodes": [
+      {
+        "Code": "GU"
+      },
+      {
+        "Code": "GUM"
+      }
+    ],
+    "Population": "159,358",
+    "AreaKM2": "549"
+  },
+  {
+    "Country": "Guatemala",
+    "CountryCode": "502",
+    "IsoCodes": [
+      {
+        "Code": "GT"
+      },
+      {
+        "Code": "GTM"
+      }
+    ],
+    "Population": "13,550,440",
+    "AreaKM2": "108,890"
+  },
+  {
+    "Country": "Guernsey",
+    "CountryCode": "44-1481",
+    "IsoCodes": [
+      {
+        "Code": "GG"
+      },
+      {
+        "Code": "GGY"
+      }
+    ],
+    "Population": "65,228",
+    "AreaKM2": "78"
+  },
+  {
+    "Country": "Guinea",
+    "CountryCode": "224",
+    "IsoCodes": [
+      {
+        "Code": "GN"
+      },
+      {
+        "Code": "GIN"
+      }
+    ],
+    "Population": "10,324,025",
+    "AreaKM2": "245,857"
+  },
+  {
+    "Country": "Guinea-Bissau",
+    "CountryCode": "245",
+    "IsoCodes": [
+      {
+        "Code": "GW"
+      },
+      {
+        "Code": "GNB"
+      }
+    ],
+    "Population": "1,565,126",
+    "AreaKM2": "36,120"
+  },
+  {
+    "Country": "Guyana",
+    "CountryCode": "592",
+    "IsoCodes": [
+      {
+        "Code": "GY"
+      },
+      {
+        "Code": "GUY"
+      }
+    ],
+    "Population": "748,486",
+    "AreaKM2": "214,970"
+  },
+  {
+    "Country": "Haiti",
+    "CountryCode": "509",
+    "IsoCodes": [
+      {
+        "Code": "HT"
+      },
+      {
+        "Code": "HTI"
+      }
+    ],
+    "Population": "9,648,924",
+    "AreaKM2": "27,750"
+  },
+  {
+    "Country": "Honduras",
+    "CountryCode": "504",
+    "IsoCodes": [
+      {
+        "Code": "HN"
+      },
+      {
+        "Code": "HND"
+      }
+    ],
+    "Population": "7,989,415",
+    "AreaKM2": "112,090"
+  },
+  {
+    "Country": "Hong Kong",
+    "CountryCode": "852",
+    "IsoCodes": [
+      {
+        "Code": "HK"
+      },
+      {
+        "Code": "HKG"
+      }
+    ],
+    "Population": "6,898,686",
+    "AreaKM2": "1,092"
+  },
+  {
+    "Country": "Hungary",
+    "CountryCode": "36",
+    "IsoCodes": [
+      {
+        "Code": "HU"
+      },
+      {
+        "Code": "HUN"
+      }
+    ],
+    "Population": "9,982,000",
+    "AreaKM2": "93,030"
+  },
+  {
+    "Country": "Iceland",
+    "CountryCode": "354",
+    "IsoCodes": [
+      {
+        "Code": "IS"
+      },
+      {
+        "Code": "ISL"
+      }
+    ],
+    "Population": "308,910",
+    "AreaKM2": "103,000"
+  },
+  {
+    "Country": "India",
+    "CountryCode": "91",
+    "IsoCodes": [
+      {
+        "Code": "IN"
+      },
+      {
+        "Code": "IND"
+      }
+    ],
+    "Population": "1,173,108,018",
+    "AreaKM2": "3,287,590"
+  },
+  {
+    "Country": "Indonesia",
+    "CountryCode": "62",
+    "IsoCodes": [
+      {
+        "Code": "ID"
+      },
+      {
+        "Code": "IDN"
+      }
+    ],
+    "Population": "242,968,342",
+    "AreaKM2": "1,919,440"
+  },
+  {
+    "Country": "Iran",
+    "CountryCode": "98",
+    "IsoCodes": [
+      {
+        "Code": "IR"
+      },
+      {
+        "Code": "IRN"
+      }
+    ],
+    "Population": "76,923,300",
+    "AreaKM2": "1,648,000"
+  },
+  {
+    "Country": "Iraq",
+    "CountryCode": "964",
+    "IsoCodes": [
+      {
+        "Code": "IQ"
+      },
+      {
+        "Code": "IRQ"
+      }
+    ],
+    "Population": "29,671,605",
+    "AreaKM2": "437,072"
+  },
+  {
+    "Country": "Ireland",
+    "CountryCode": "353",
+    "IsoCodes": [
+      {
+        "Code": "IE"
+      },
+      {
+        "Code": "IRL"
+      }
+    ],
+    "Population": "4,622,917",
+    "AreaKM2": "70,280"
+  },
+  {
+    "Country": "Isle of Man",
+    "CountryCode": "44-1624",
+    "IsoCodes": [
+      {
+        "Code": "IM"
+      },
+      {
+        "Code": "IMN"
+      }
+    ],
+    "Population": "75,049",
+    "AreaKM2": "572"
+  },
+  {
+    "Country": "Israel",
+    "CountryCode": "972",
+    "IsoCodes": [
+      {
+        "Code": "IL"
+      },
+      {
+        "Code": "ISR"
+      }
+    ],
+    "Population": "7,353,985",
+    "AreaKM2": "20,770"
+  },
+  {
+    "Country": "Italy",
+    "CountryCode": "39",
+    "IsoCodes": [
+      {
+        "Code": "IT"
+      },
+      {
+        "Code": "ITA"
+      }
+    ],
+    "Population": "60,340,328",
+    "AreaKM2": "301,230"
+  },
+  {
+    "Country": "Ivory Coast",
+    "CountryCode": "225",
+    "IsoCodes": [
+      {
+        "Code": "CI"
+      },
+      {
+        "Code": "CIV"
+      }
+    ],
+    "Population": "21,058,798",
+    "AreaKM2": "322,460"
+  },
+  {
+    "Country": "Jamaica",
+    "CountryCode": "1-876",
+    "IsoCodes": [
+      {
+        "Code": "JM"
+      },
+      {
+        "Code": "JAM"
+      }
+    ],
+    "Population": "2,847,232",
+    "AreaKM2": "10,991"
+  },
+  {
+    "Country": "Japan",
+    "CountryCode": "81",
+    "IsoCodes": [
+      {
+        "Code": "JP"
+      },
+      {
+        "Code": "JPN"
+      }
+    ],
+    "Population": "127,288,000",
+    "AreaKM2": "377,835"
+  },
+  {
+    "Country": "Jersey",
+    "CountryCode": "44-1534",
+    "IsoCodes": [
+      {
+        "Code": "JE"
+      },
+      {
+        "Code": "JEY"
+      }
+    ],
+    "Population": "90,812",
+    "AreaKM2": "116"
+  },
+  {
+    "Country": "Jordan",
+    "CountryCode": "962",
+    "IsoCodes": [
+      {
+        "Code": "JO"
+      },
+      {
+        "Code": "JOR"
+      }
+    ],
+    "Population": "6,407,085",
+    "AreaKM2": "92,300"
+  },
+  {
+    "Country": "Kazakhstan",
+    "CountryCode": "7",
+    "IsoCodes": [
+      {
+        "Code": "KZ"
+      },
+      {
+        "Code": "KAZ"
+      }
+    ],
+    "Population": "15,340,000",
+    "AreaKM2": "2,717,300"
+  },
+  {
+    "Country": "Kenya",
+    "CountryCode": "254",
+    "IsoCodes": [
+      {
+        "Code": "KE"
+      },
+      {
+        "Code": "KEN"
+      }
+    ],
+    "Population": "40,046,566",
+    "AreaKM2": "582,650"
+  },
+  {
+    "Country": "Kiribati",
+    "CountryCode": "686",
+    "IsoCodes": [
+      {
+        "Code": "KI"
+      },
+      {
+        "Code": "KIR"
+      }
+    ],
+    "Population": "92,533",
+    "AreaKM2": "811"
+  },
+  {
+    "Country": "Kosovo",
+    "CountryCode": "383",
+    "IsoCodes": [
+      {
+        "Code": "XK"
+      },
+      {
+        "Code": "XKX"
+      }
+    ],
+    "Population": "1,800,000",
+    "AreaKM2": "10,887"
+  },
+  {
+    "Country": "Kuwait",
+    "CountryCode": "965",
+    "IsoCodes": [
+      {
+        "Code": "KW"
+      },
+      {
+        "Code": "KWT"
+      }
+    ],
+    "Population": "2,789,132",
+    "AreaKM2": "17,820"
+  },
+  {
+    "Country": "Kyrgyzstan",
+    "CountryCode": "996",
+    "IsoCodes": [
+      {
+        "Code": "KG"
+      },
+      {
+        "Code": "KGZ"
+      }
+    ],
+    "Population": "5,508,626",
+    "AreaKM2": "198,500"
+  },
+  {
+    "Country": "Laos",
+    "CountryCode": "856",
+    "IsoCodes": [
+      {
+        "Code": "LA"
+      },
+      {
+        "Code": "LAO"
+      }
+    ],
+    "Population": "6,368,162",
+    "AreaKM2": "236,800"
+  },
+  {
+    "Country": "Latvia",
+    "CountryCode": "371",
+    "IsoCodes": [
+      {
+        "Code": "LV"
+      },
+      {
+        "Code": "LVA"
+      }
+    ],
+    "Population": "2,217,969",
+    "AreaKM2": "64,589"
+  },
+  {
+    "Country": "Lebanon",
+    "CountryCode": "961",
+    "IsoCodes": [
+      {
+        "Code": "LB"
+      },
+      {
+        "Code": "LBN"
+      }
+    ],
+    "Population": "4,125,247",
+    "AreaKM2": "10,400"
+  },
+  {
+    "Country": "Lesotho",
+    "CountryCode": "266",
+    "IsoCodes": [
+      {
+        "Code": "LS"
+      },
+      {
+        "Code": "LSO"
+      }
+    ],
+    "Population": "1,919,552",
+    "AreaKM2": "30,355"
+  },
+  {
+    "Country": "Liberia",
+    "CountryCode": "231",
+    "IsoCodes": [
+      {
+        "Code": "LR"
+      },
+      {
+        "Code": "LBR"
+      }
+    ],
+    "Population": "3,685,076",
+    "AreaKM2": "111,370"
+  },
+  {
+    "Country": "Libya",
+    "CountryCode": "218",
+    "IsoCodes": [
+      {
+        "Code": "LY"
+      },
+      {
+        "Code": "LBY"
+      }
+    ],
+    "Population": "6,461,454",
+    "AreaKM2": "1,759,540"
+  },
+  {
+    "Country": "Liechtenstein",
+    "CountryCode": "423",
+    "IsoCodes": [
+      {
+        "Code": "LI"
+      },
+      {
+        "Code": "LIE"
+      }
+    ],
+    "Population": "35,000",
+    "AreaKM2": "160"
+  },
+  {
+    "Country": "Lithuania",
+    "CountryCode": "370",
+    "IsoCodes": [
+      {
+        "Code": "LT"
+      },
+      {
+        "Code": "LTU"
+      }
+    ],
+    "Population": "2,944,459",
+    "AreaKM2": "65,200"
+  },
+  {
+    "Country": "Luxembourg",
+    "CountryCode": "352",
+    "IsoCodes": [
+      {
+        "Code": "LU"
+      },
+      {
+        "Code": "LUX"
+      }
+    ],
+    "Population": "497,538",
+    "AreaKM2": "2,586"
+  },
+  {
+    "Country": "Macau",
+    "CountryCode": "853",
+    "IsoCodes": [
+      {
+        "Code": "MO"
+      },
+      {
+        "Code": "MAC"
+      }
+    ],
+    "Population": "449,198",
+    "AreaKM2": "254"
+  },
+  {
+    "Country": "Macedonia",
+    "CountryCode": "389",
+    "IsoCodes": [
+      {
+        "Code": "MK"
+      },
+      {
+        "Code": "MKD"
+      }
+    ],
+    "Population": "2,062,294",
+    "AreaKM2": "25,333"
+  },
+  {
+    "Country": "Madagascar",
+    "CountryCode": "261",
+    "IsoCodes": [
+      {
+        "Code": "MG"
+      },
+      {
+        "Code": "MDG"
+      }
+    ],
+    "Population": "21,281,844",
+    "AreaKM2": "587,040"
+  },
+  {
+    "Country": "Malawi",
+    "CountryCode": "265",
+    "IsoCodes": [
+      {
+        "Code": "MW"
+      },
+      {
+        "Code": "MWI"
+      }
+    ],
+    "Population": "15,447,500",
+    "AreaKM2": "118,480"
+  },
+  {
+    "Country": "Malaysia",
+    "CountryCode": "60",
+    "IsoCodes": [
+      {
+        "Code": "MY"
+      },
+      {
+        "Code": "MYS"
+      }
+    ],
+    "Population": "28,274,729",
+    "AreaKM2": "329,750"
+  },
+  {
+    "Country": "Maldives",
+    "CountryCode": "960",
+    "IsoCodes": [
+      {
+        "Code": "MV"
+      },
+      {
+        "Code": "MDV"
+      }
+    ],
+    "Population": "395,650",
+    "AreaKM2": "300"
+  },
+  {
+    "Country": "Mali",
+    "CountryCode": "223",
+    "IsoCodes": [
+      {
+        "Code": "ML"
+      },
+      {
+        "Code": "MLI"
+      }
+    ],
+    "Population": "13,796,354",
+    "AreaKM2": "1,240,000"
+  },
+  {
+    "Country": "Malta",
+    "CountryCode": "356",
+    "IsoCodes": [
+      {
+        "Code": "MT"
+      },
+      {
+        "Code": "MLT"
+      }
+    ],
+    "Population": "403,000",
+    "AreaKM2": "316"
+  },
+  {
+    "Country": "Marshall Islands",
+    "CountryCode": "692",
+    "IsoCodes": [
+      {
+        "Code": "MH"
+      },
+      {
+        "Code": "MHL"
+      }
+    ],
+    "Population": "65,859",
+    "AreaKM2": "181"
+  },
+  {
+    "Country": "Mauritania",
+    "CountryCode": "222",
+    "IsoCodes": [
+      {
+        "Code": "MR"
+      },
+      {
+        "Code": "MRT"
+      }
+    ],
+    "Population": "3,205,060",
+    "AreaKM2": "1,030,700"
+  },
+  {
+    "Country": "Mauritius",
+    "CountryCode": "230",
+    "IsoCodes": [
+      {
+        "Code": "MU"
+      },
+      {
+        "Code": "MUS"
+      }
+    ],
+    "Population": "1,294,104",
+    "AreaKM2": "2,040"
+  },
+  {
+    "Country": "Mayotte",
+    "CountryCode": "262",
+    "IsoCodes": [
+      {
+        "Code": "YT"
+      },
+      {
+        "Code": "MYT"
+      }
+    ],
+    "Population": "159,042",
+    "AreaKM2": "374"
+  },
+  {
+    "Country": "Mexico",
+    "CountryCode": "52",
+    "IsoCodes": [
+      {
+        "Code": "MX"
+      },
+      {
+        "Code": "MEX"
+      }
+    ],
+    "Population": "112,468,855",
+    "AreaKM2": "1,972,550"
+  },
+  {
+    "Country": "Micronesia",
+    "CountryCode": "691",
+    "IsoCodes": [
+      {
+        "Code": "FM"
+      },
+      {
+        "Code": "FSM"
+      }
+    ],
+    "Population": "107,708",
+    "AreaKM2": "702"
+  },
+  {
+    "Country": "Moldova",
+    "CountryCode": "373",
+    "IsoCodes": [
+      {
+        "Code": "MD"
+      },
+      {
+        "Code": "MDA"
+      }
+    ],
+    "Population": "4,324,000",
+    "AreaKM2": "33,843"
+  },
+  {
+    "Country": "Monaco",
+    "CountryCode": "377",
+    "IsoCodes": [
+      {
+        "Code": "MC"
+      },
+      {
+        "Code": "MCO"
+      }
+    ],
+    "Population": "32,965",
+    "AreaKM2": "2"
+  },
+  {
+    "Country": "Mongolia",
+    "CountryCode": "976",
+    "IsoCodes": [
+      {
+        "Code": "MN"
+      },
+      {
+        "Code": "MNG"
+      }
+    ],
+    "Population": "3,086,918",
+    "AreaKM2": "1,565,000"
+  },
+  {
+    "Country": "Montenegro",
+    "CountryCode": "382",
+    "IsoCodes": [
+      {
+        "Code": "ME"
+      },
+      {
+        "Code": "MNE"
+      }
+    ],
+    "Population": "666,730",
+    "AreaKM2": "14,026"
+  },
+  {
+    "Country": "Montserrat",
+    "CountryCode": "1-664",
+    "IsoCodes": [
+      {
+        "Code": "MS"
+      },
+      {
+        "Code": "MSR"
+      }
+    ],
+    "Population": "9,341",
+    "AreaKM2": "102"
+  },
+  {
+    "Country": "Morocco",
+    "CountryCode": "212",
+    "IsoCodes": [
+      {
+        "Code": "MA"
+      },
+      {
+        "Code": "MAR"
+      }
+    ],
+    "Population": "31,627,428",
+    "AreaKM2": "446,550"
+  },
+  {
+    "Country": "Mozambique",
+    "CountryCode": "258",
+    "IsoCodes": [
+      {
+        "Code": "MZ"
+      },
+      {
+        "Code": "MOZ"
+      }
+    ],
+    "Population": "22,061,451",
+    "AreaKM2": "801,590"
+  },
+  {
+    "Country": "Myanmar",
+    "CountryCode": "95",
+    "IsoCodes": [
+      {
+        "Code": "MM"
+      },
+      {
+        "Code": "MMR"
+      }
+    ],
+    "Population": "53,414,374",
+    "AreaKM2": "678,500"
+  },
+  {
+    "Country": "Namibia",
+    "CountryCode": "264",
+    "IsoCodes": [
+      {
+        "Code": "NA"
+      },
+      {
+        "Code": "NAM"
+      }
+    ],
+    "Population": "2,128,471",
+    "AreaKM2": "825,418"
+  },
+  {
+    "Country": "Nauru",
+    "CountryCode": "674",
+    "IsoCodes": [
+      {
+        "Code": "NR"
+      },
+      {
+        "Code": "NRU"
+      }
+    ],
+    "Population": "10,065",
+    "AreaKM2": "21"
+  },
+  {
+    "Country": "Nepal",
+    "CountryCode": "977",
+    "IsoCodes": [
+      {
+        "Code": "NP"
+      },
+      {
+        "Code": "NPL"
+      }
+    ],
+    "Population": "28,951,852",
+    "AreaKM2": "140,800"
+  },
+  {
+    "Country": "Netherlands",
+    "CountryCode": "31",
+    "IsoCodes": [
+      {
+        "Code": "NL"
+      },
+      {
+        "Code": "NLD"
+      }
+    ],
+    "Population": "16,645,000",
+    "AreaKM2": "41,526"
+  },
+  {
+    "Country": "Netherlands Antilles",
+    "CountryCode": "599",
+    "IsoCodes": [
+      {
+        "Code": "AN"
+      },
+      {
+        "Code": "ANT"
+      }
+    ],
+    "Population": "136,197",
+    "AreaKM2": "960"
+  },
+  {
+    "Country": "New Caledonia",
+    "CountryCode": "687",
+    "IsoCodes": [
+      {
+        "Code": "NC"
+      },
+      {
+        "Code": "NCL"
+      }
+    ],
+    "Population": "216,494",
+    "AreaKM2": "19,060"
+  },
+  {
+    "Country": "New Zealand",
+    "CountryCode": "64",
+    "IsoCodes": [
+      {
+        "Code": "NZ"
+      },
+      {
+        "Code": "NZL"
+      }
+    ],
+    "Population": "4,252,277",
+    "AreaKM2": "268,680"
+  },
+  {
+    "Country": "Nicaragua",
+    "CountryCode": "505",
+    "IsoCodes": [
+      {
+        "Code": "NI"
+      },
+      {
+        "Code": "NIC"
+      }
+    ],
+    "Population": "5,995,928",
+    "AreaKM2": "129,494"
+  },
+  {
+    "Country": "Niger",
+    "CountryCode": "227",
+    "IsoCodes": [
+      {
+        "Code": "NE"
+      },
+      {
+        "Code": "NER"
+      }
+    ],
+    "Population": "15,878,271",
+    "AreaKM2": "1,267,000"
+  },
+  {
+    "Country": "Nigeria",
+    "CountryCode": "234",
+    "IsoCodes": [
+      {
+        "Code": "NG"
+      },
+      {
+        "Code": "NGA"
+      }
+    ],
+    "Population": "154,000,000",
+    "AreaKM2": "923,768"
+  },
+  {
+    "Country": "Niue",
+    "CountryCode": "683",
+    "IsoCodes": [
+      {
+        "Code": "NU"
+      },
+      {
+        "Code": "NIU"
+      }
+    ],
+    "Population": "2,166",
+    "AreaKM2": "260"
+  },
+  {
+    "Country": "North Korea",
+    "CountryCode": "850",
+    "IsoCodes": [
+      {
+        "Code": "KP"
+      },
+      {
+        "Code": "PRK"
+      }
+    ],
+    "Population": "22,912,177",
+    "AreaKM2": "120,540"
+  },
+  {
+    "Country": "Northern Mariana Islands",
+    "CountryCode": "1-670",
+    "IsoCodes": [
+      {
+        "Code": "MP"
+      },
+      {
+        "Code": "MNP"
+      }
+    ],
+    "Population": "53,883",
+    "AreaKM2": "477"
+  },
+  {
+    "Country": "Norway",
+    "CountryCode": "47",
+    "IsoCodes": [
+      {
+        "Code": "NO"
+      },
+      {
+        "Code": "NOR"
+      }
+    ],
+    "Population": "5,009,150",
+    "AreaKM2": "324,220"
+  },
+  {
+    "Country": "Oman",
+    "CountryCode": "968",
+    "IsoCodes": [
+      {
+        "Code": "OM"
+      },
+      {
+        "Code": "OMN"
+      }
+    ],
+    "Population": "2,967,717",
+    "AreaKM2": "212,460"
+  },
+  {
+    "Country": "Pakistan",
+    "CountryCode": "92",
+    "IsoCodes": [
+      {
+        "Code": "PK"
+      },
+      {
+        "Code": "PAK"
+      }
+    ],
+    "Population": "184,404,791",
+    "AreaKM2": "803,940"
+  },
+  {
+    "Country": "Palau",
+    "CountryCode": "680",
+    "IsoCodes": [
+      {
+        "Code": "PW"
+      },
+      {
+        "Code": "PLW"
+      }
+    ],
+    "Population": "19,907",
+    "AreaKM2": "458"
+  },
+  {
+    "Country": "Palestine",
+    "CountryCode": "970",
+    "IsoCodes": [
+      {
+        "Code": "PS"
+      },
+      {
+        "Code": "PSE"
+      }
+    ],
+    "Population": "3,800,000",
+    "AreaKM2": "5,970"
+  },
+  {
+    "Country": "Panama",
+    "CountryCode": "507",
+    "IsoCodes": [
+      {
+        "Code": "PA"
+      },
+      {
+        "Code": "PAN"
+      }
+    ],
+    "Population": "3,410,676",
+    "AreaKM2": "78,200"
+  },
+  {
+    "Country": "Papua New Guinea",
+    "CountryCode": "675",
+    "IsoCodes": [
+      {
+        "Code": "PG"
+      },
+      {
+        "Code": "PNG"
+      }
+    ],
+    "Population": "6,064,515",
+    "AreaKM2": "462,840"
+  },
+  {
+    "Country": "Paraguay",
+    "CountryCode": "595",
+    "IsoCodes": [
+      {
+        "Code": "PY"
+      },
+      {
+        "Code": "PRY"
+      }
+    ],
+    "Population": "6,375,830",
+    "AreaKM2": "406,750"
+  },
+  {
+    "Country": "Peru",
+    "CountryCode": "51",
+    "IsoCodes": [
+      {
+        "Code": "PE"
+      },
+      {
+        "Code": "PER"
+      }
+    ],
+    "Population": "29,907,003",
+    "AreaKM2": "1,285,220"
+  },
+  {
+    "Country": "Philippines",
+    "CountryCode": "63",
+    "IsoCodes": [
+      {
+        "Code": "PH"
+      },
+      {
+        "Code": "PHL"
+      }
+    ],
+    "Population": "99,900,177",
+    "AreaKM2": "300,000"
+  },
+  {
+    "Country": "Pitcairn",
+    "CountryCode": "64",
+    "IsoCodes": [
+      {
+        "Code": "PN"
+      },
+      {
+        "Code": "PCN"
+      }
+    ],
+    "Population": "46",
+    "AreaKM2": "47"
+  },
+  {
+    "Country": "Poland",
+    "CountryCode": "48",
+    "IsoCodes": [
+      {
+        "Code": "PL"
+      },
+      {
+        "Code": "POL"
+      }
+    ],
+    "Population": "38,500,000",
+    "AreaKM2": "312,685"
+  },
+  {
+    "Country": "Portugal",
+    "CountryCode": "351",
+    "IsoCodes": [
+      {
+        "Code": "PT"
+      },
+      {
+        "Code": "PRT"
+      }
+    ],
+    "Population": "10,676,000",
+    "AreaKM2": "92,391"
+  },
+  {
+    "Country": "Puerto Rico",
+    "CountryCode": "1-787, 1-939",
+    "IsoCodes": [
+      {
+        "Code": "PR"
+      },
+      {
+        "Code": "PRI"
+      }
+    ],
+    "Population": "3,916,632",
+    "AreaKM2": "9,104"
+  },
+  {
+    "Country": "Qatar",
+    "CountryCode": "974",
+    "IsoCodes": [
+      {
+        "Code": "QA"
+      },
+      {
+        "Code": "QAT"
+      }
+    ],
+    "Population": "840,926",
+    "AreaKM2": "11,437"
+  },
+  {
+    "Country": "Republic of the Congo",
+    "CountryCode": "242",
+    "IsoCodes": [
+      {
+        "Code": "CG"
+      },
+      {
+        "Code": "COG"
+      }
+    ],
+    "Population": "3,039,126",
+    "AreaKM2": "342,000"
+  },
+  {
+    "Country": "Reunion",
+    "CountryCode": "262",
+    "IsoCodes": [
+      {
+        "Code": "RE"
+      },
+      {
+        "Code": "REU"
+      }
+    ],
+    "Population": "776,948",
+    "AreaKM2": "2,517"
+  },
+  {
+    "Country": "Romania",
+    "CountryCode": "40",
+    "IsoCodes": [
+      {
+        "Code": "RO"
+      },
+      {
+        "Code": "ROU"
+      }
+    ],
+    "Population": "21,959,278",
+    "AreaKM2": "237,500"
+  },
+  {
+    "Country": "Russia",
+    "CountryCode": "7",
+    "IsoCodes": [
+      {
+        "Code": "RU"
+      },
+      {
+        "Code": "RUS"
+      }
+    ],
+    "Population": "140,702,000",
+    "AreaKM2": "17,100,000"
+  },
+  {
+    "Country": "Rwanda",
+    "CountryCode": "250",
+    "IsoCodes": [
+      {
+        "Code": "RW"
+      },
+      {
+        "Code": "RWA"
+      }
+    ],
+    "Population": "11,055,976",
+    "AreaKM2": "26,338"
+  },
+  {
+    "Country": "Saint Barthelemy",
+    "CountryCode": "590",
+    "IsoCodes": [
+      {
+        "Code": "BL"
+      },
+      {
+        "Code": "BLM"
+      }
+    ],
+    "Population": "8,450",
+    "AreaKM2": "21"
+  },
+  {
+    "Country": "Saint Helena",
+    "CountryCode": "290",
+    "IsoCodes": [
+      {
+        "Code": "SH"
+      },
+      {
+        "Code": "SHN"
+      }
+    ],
+    "Population": "7,460",
+    "AreaKM2": "410"
+  },
+  {
+    "Country": "Saint Kitts and Nevis",
+    "CountryCode": "1-869",
+    "IsoCodes": [
+      {
+        "Code": "KN"
+      },
+      {
+        "Code": "KNA"
+      }
+    ],
+    "Population": "51,134",
+    "AreaKM2": "261"
+  },
+  {
+    "Country": "Saint Lucia",
+    "CountryCode": "1-758",
+    "IsoCodes": [
+      {
+        "Code": "LC"
+      },
+      {
+        "Code": "LCA"
+      }
+    ],
+    "Population": "160,922",
+    "AreaKM2": "616"
+  },
+  {
+    "Country": "Saint Martin",
+    "CountryCode": "590",
+    "IsoCodes": [
+      {
+        "Code": "MF"
+      },
+      {
+        "Code": "MAF"
+      }
+    ],
+    "Population": "35,925",
+    "AreaKM2": "53"
+  },
+  {
+    "Country": "Saint Pierre and Miquelon",
+    "CountryCode": "508",
+    "IsoCodes": [
+      {
+        "Code": "PM"
+      },
+      {
+        "Code": "SPM"
+      }
+    ],
+    "Population": "7,012",
+    "AreaKM2": "242"
+  },
+  {
+    "Country": "Saint Vincent and the Grenadines",
+    "CountryCode": "1-784",
+    "IsoCodes": [
+      {
+        "Code": "VC"
+      },
+      {
+        "Code": "VCT"
+      }
+    ],
+    "Population": "104,217",
+    "AreaKM2": "389"
+  },
+  {
+    "Country": "Samoa",
+    "CountryCode": "685",
+    "IsoCodes": [
+      {
+        "Code": "WS"
+      },
+      {
+        "Code": "WSM"
+      }
+    ],
+    "Population": "192,001",
+    "AreaKM2": "2,944"
+  },
+  {
+    "Country": "San Marino",
+    "CountryCode": "378",
+    "IsoCodes": [
+      {
+        "Code": "SM"
+      },
+      {
+        "Code": "SMR"
+      }
+    ],
+    "Population": "31,477",
+    "AreaKM2": "61"
+  },
+  {
+    "Country": "Sao Tome and Principe",
+    "CountryCode": "239",
+    "IsoCodes": [
+      {
+        "Code": "ST"
+      },
+      {
+        "Code": "STP"
+      }
+    ],
+    "Population": "175,808",
+    "AreaKM2": "1,001"
+  },
+  {
+    "Country": "Saudi Arabia",
+    "CountryCode": "966",
+    "IsoCodes": [
+      {
+        "Code": "SA"
+      },
+      {
+        "Code": "SAU"
+      }
+    ],
+    "Population": "25,731,776",
+    "AreaKM2": "1,960,582"
+  },
+  {
+    "Country": "Senegal",
+    "CountryCode": "221",
+    "IsoCodes": [
+      {
+        "Code": "SN"
+      },
+      {
+        "Code": "SEN"
+      }
+    ],
+    "Population": "12,323,252",
+    "AreaKM2": "196,190"
+  },
+  {
+    "Country": "Serbia",
+    "CountryCode": "381",
+    "IsoCodes": [
+      {
+        "Code": "RS"
+      },
+      {
+        "Code": "SRB"
+      }
+    ],
+    "Population": "7,344,847",
+    "AreaKM2": "88,361"
+  },
+  {
+    "Country": "Seychelles",
+    "CountryCode": "248",
+    "IsoCodes": [
+      {
+        "Code": "SC"
+      },
+      {
+        "Code": "SYC"
+      }
+    ],
+    "Population": "88,340",
+    "AreaKM2": "455"
+  },
+  {
+    "Country": "Sierra Leone",
+    "CountryCode": "232",
+    "IsoCodes": [
+      {
+        "Code": "SL"
+      },
+      {
+        "Code": "SLE"
+      }
+    ],
+    "Population": "5,245,695",
+    "AreaKM2": "71,740"
+  },
+  {
+    "Country": "Singapore",
+    "CountryCode": "65",
+    "IsoCodes": [
+      {
+        "Code": "SG"
+      },
+      {
+        "Code": "SGP"
+      }
+    ],
+    "Population": "4,701,069",
+    "AreaKM2": "693"
+  },
+  {
+    "Country": "Sint Maarten",
+    "CountryCode": "1-721",
+    "IsoCodes": [
+      {
+        "Code": "SX"
+      },
+      {
+        "Code": "SXM"
+      }
+    ],
+    "Population": "37,429",
+    "AreaKM2": "34"
+  },
+  {
+    "Country": "Slovakia",
+    "CountryCode": "421",
+    "IsoCodes": [
+      {
+        "Code": "SK"
+      },
+      {
+        "Code": "SVK"
+      }
+    ],
+    "Population": "5,455,000",
+    "AreaKM2": "48,845"
+  },
+  {
+    "Country": "Slovenia",
+    "CountryCode": "386",
+    "IsoCodes": [
+      {
+        "Code": "SI"
+      },
+      {
+        "Code": "SVN"
+      }
+    ],
+    "Population": "2,007,000",
+    "AreaKM2": "20,273"
+  },
+  {
+    "Country": "Solomon Islands",
+    "CountryCode": "677",
+    "IsoCodes": [
+      {
+        "Code": "SB"
+      },
+      {
+        "Code": "SLB"
+      }
+    ],
+    "Population": "559,198",
+    "AreaKM2": "28,450"
+  },
+  {
+    "Country": "Somalia",
+    "CountryCode": "252",
+    "IsoCodes": [
+      {
+        "Code": "SO"
+      },
+      {
+        "Code": "SOM"
+      }
+    ],
+    "Population": "10,112,453",
+    "AreaKM2": "637,657"
+  },
+  {
+    "Country": "South Africa",
+    "CountryCode": "27",
+    "IsoCodes": [
+      {
+        "Code": "ZA"
+      },
+      {
+        "Code": "ZAF"
+      }
+    ],
+    "Population": "49,000,000",
+    "AreaKM2": "1,219,912"
+  },
+  {
+    "Country": "South Korea",
+    "CountryCode": "82",
+    "IsoCodes": [
+      {
+        "Code": "KR"
+      },
+      {
+        "Code": "KOR"
+      }
+    ],
+    "Population": "48,422,644",
+    "AreaKM2": "98,480"
+  },
+  {
+    "Country": "South Sudan",
+    "CountryCode": "211",
+    "IsoCodes": [
+      {
+        "Code": "SS"
+      },
+      {
+        "Code": "SSD"
+      }
+    ],
+    "Population": "8,260,490",
+    "AreaKM2": "644,329"
+  },
+  {
+    "Country": "Spain",
+    "CountryCode": "34",
+    "IsoCodes": [
+      {
+        "Code": "ES"
+      },
+      {
+        "Code": "ESP"
+      }
+    ],
+    "Population": "46,505,963",
+    "AreaKM2": "504,782"
+  },
+  {
+    "Country": "Sri Lanka",
+    "CountryCode": "94",
+    "IsoCodes": [
+      {
+        "Code": "LK"
+      },
+      {
+        "Code": "LKA"
+      }
+    ],
+    "Population": "21,513,990",
+    "AreaKM2": "65,610"
+  },
+  {
+    "Country": "Sudan",
+    "CountryCode": "249",
+    "IsoCodes": [
+      {
+        "Code": "SD"
+      },
+      {
+        "Code": "SDN"
+      }
+    ],
+    "Population": "35,000,000",
+    "AreaKM2": "1,861,484"
+  },
+  {
+    "Country": "Suriname",
+    "CountryCode": "597",
+    "IsoCodes": [
+      {
+        "Code": "SR"
+      },
+      {
+        "Code": "SUR"
+      }
+    ],
+    "Population": "492,829",
+    "AreaKM2": "163,270"
+  },
+  {
+    "Country": "Svalbard and Jan Mayen",
+    "CountryCode": "47",
+    "IsoCodes": [
+      {
+        "Code": "SJ"
+      },
+      {
+        "Code": "SJM"
+      }
+    ],
+    "Population": "2,550",
+    "AreaKM2": "62,049"
+  },
+  {
+    "Country": "Swaziland",
+    "CountryCode": "268",
+    "IsoCodes": [
+      {
+        "Code": "SZ"
+      },
+      {
+        "Code": "SWZ"
+      }
+    ],
+    "Population": "1,354,051",
+    "AreaKM2": "17,363"
+  },
+  {
+    "Country": "Sweden",
+    "CountryCode": "46",
+    "IsoCodes": [
+      {
+        "Code": "SE"
+      },
+      {
+        "Code": "SWE"
+      }
+    ],
+    "Population": "9,555,893",
+    "AreaKM2": "449,964"
+  },
+  {
+    "Country": "Switzerland",
+    "CountryCode": "41",
+    "IsoCodes": [
+      {
+        "Code": "CH"
+      },
+      {
+        "Code": "CHE"
+      }
+    ],
+    "Population": "7,581,000",
+    "AreaKM2": "41,290"
+  },
+  {
+    "Country": "Syria",
+    "CountryCode": "963",
+    "IsoCodes": [
+      {
+        "Code": "SY"
+      },
+      {
+        "Code": "SYR"
+      }
+    ],
+    "Population": "22,198,110",
+    "AreaKM2": "185,180"
+  },
+  {
+    "Country": "Taiwan",
+    "CountryCode": "886",
+    "IsoCodes": [
+      {
+        "Code": "TW"
+      },
+      {
+        "Code": "TWN"
+      }
+    ],
+    "Population": "22,894,384",
+    "AreaKM2": "35,980"
+  },
+  {
+    "Country": "Tajikistan",
+    "CountryCode": "992",
+    "IsoCodes": [
+      {
+        "Code": "TJ"
+      },
+      {
+        "Code": "TJK"
+      }
+    ],
+    "Population": "7,487,489",
+    "AreaKM2": "143,100"
+  },
+  {
+    "Country": "Tanzania",
+    "CountryCode": "255",
+    "IsoCodes": [
+      {
+        "Code": "TZ"
+      },
+      {
+        "Code": "TZA"
+      }
+    ],
+    "Population": "41,892,895",
+    "AreaKM2": "945,087"
+  },
+  {
+    "Country": "Thailand",
+    "CountryCode": "66",
+    "IsoCodes": [
+      {
+        "Code": "TH"
+      },
+      {
+        "Code": "THA"
+      }
+    ],
+    "Population": "67,089,500",
+    "AreaKM2": "514,000"
+  },
+  {
+    "Country": "Togo",
+    "CountryCode": "228",
+    "IsoCodes": [
+      {
+        "Code": "TG"
+      },
+      {
+        "Code": "TGO"
+      }
+    ],
+    "Population": "6,587,239",
+    "AreaKM2": "56,785"
+  },
+  {
+    "Country": "Tokelau",
+    "CountryCode": "690",
+    "IsoCodes": [
+      {
+        "Code": "TK"
+      },
+      {
+        "Code": "TKL"
+      }
+    ],
+    "Population": "1,466",
+    "AreaKM2": "10"
+  },
+  {
+    "Country": "Tonga",
+    "CountryCode": "676",
+    "IsoCodes": [
+      {
+        "Code": "TO"
+      },
+      {
+        "Code": "TON"
+      }
+    ],
+    "Population": "122,580",
+    "AreaKM2": "748"
+  },
+  {
+    "Country": "Trinidad and Tobago",
+    "CountryCode": "1-868",
+    "IsoCodes": [
+      {
+        "Code": "TT"
+      },
+      {
+        "Code": "TTO"
+      }
+    ],
+    "Population": "1,228,691",
+    "AreaKM2": "5,128"
+  },
+  {
+    "Country": "Tunisia",
+    "CountryCode": "216",
+    "IsoCodes": [
+      {
+        "Code": "TN"
+      },
+      {
+        "Code": "TUN"
+      }
+    ],
+    "Population": "10,589,025",
+    "AreaKM2": "163,610"
+  },
+  {
+    "Country": "Turkey",
+    "CountryCode": "90",
+    "IsoCodes": [
+      {
+        "Code": "TR"
+      },
+      {
+        "Code": "TUR"
+      }
+    ],
+    "Population": "77,804,122",
+    "AreaKM2": "780,580"
+  },
+  {
+    "Country": "Turkmenistan",
+    "CountryCode": "993",
+    "IsoCodes": [
+      {
+        "Code": "TM"
+      },
+      {
+        "Code": "TKM"
+      }
+    ],
+    "Population": "4,940,916",
+    "AreaKM2": "488,100"
+  },
+  {
+    "Country": "Turks and Caicos Islands",
+    "CountryCode": "1-649",
+    "IsoCodes": [
+      {
+        "Code": "TC"
+      },
+      {
+        "Code": "TCA"
+      }
+    ],
+    "Population": "20,556",
+    "AreaKM2": "430"
+  },
+  {
+    "Country": "Tuvalu",
+    "CountryCode": "688",
+    "IsoCodes": [
+      {
+        "Code": "TV"
+      },
+      {
+        "Code": "TUV"
+      }
+    ],
+    "Population": "10,472",
+    "AreaKM2": "26"
+  },
+  {
+    "Country": "U.S. Virgin Islands",
+    "CountryCode": "1-340",
+    "IsoCodes": [
+      {
+        "Code": "VI"
+      },
+      {
+        "Code": "VIR"
+      }
+    ],
+    "Population": "108,708",
+    "AreaKM2": "352"
+  },
+  {
+    "Country": "Uganda",
+    "CountryCode": "256",
+    "IsoCodes": [
+      {
+        "Code": "UG"
+      },
+      {
+        "Code": "UGA"
+      }
+    ],
+    "Population": "33,398,682",
+    "AreaKM2": "236,040"
+  },
+  {
+    "Country": "Ukraine",
+    "CountryCode": "380",
+    "IsoCodes": [
+      {
+        "Code": "UA"
+      },
+      {
+        "Code": "UKR"
+      }
+    ],
+    "Population": "45,415,596",
+    "AreaKM2": "603,700"
+  },
+  {
+    "Country": "United Arab Emirates",
+    "CountryCode": "971",
+    "IsoCodes": [
+      {
+        "Code": "AE"
+      },
+      {
+        "Code": "ARE"
+      }
+    ],
+    "Population": "4,975,593",
+    "AreaKM2": "82,880"
+  },
+  {
+    "Country": "United Kingdom",
+    "CountryCode": "44",
+    "IsoCodes": [
+      {
+        "Code": "GB"
+      },
+      {
+        "Code": "GBR"
+      }
+    ],
+    "Population": "62,348,447",
+    "AreaKM2": "244,820"
+  },
+  {
+    "Country": "United States",
+    "CountryCode": "1",
+    "IsoCodes": [
+      {
+        "Code": "US"
+      },
+      {
+        "Code": "USA"
+      }
+    ],
+    "Population": "310,232,863",
+    "AreaKM2": "9,629,091"
+  },
+  {
+    "Country": "Uruguay",
+    "CountryCode": "598",
+    "IsoCodes": [
+      {
+        "Code": "UY"
+      },
+      {
+        "Code": "URY"
+      }
+    ],
+    "Population": "3,477,000",
+    "AreaKM2": "176,220"
+  },
+  {
+    "Country": "Uzbekistan",
+    "CountryCode": "998",
+    "IsoCodes": [
+      {
+        "Code": "UZ"
+      },
+      {
+        "Code": "UZB"
+      }
+    ],
+    "Population": "27,865,738",
+    "AreaKM2": "447,400"
+  },
+  {
+    "Country": "Vanuatu",
+    "CountryCode": "678",
+    "IsoCodes": [
+      {
+        "Code": "VU"
+      },
+      {
+        "Code": "VUT"
+      }
+    ],
+    "Population": "221,552",
+    "AreaKM2": "12,200"
+  },
+  {
+    "Country": "Vatican",
+    "CountryCode": "379",
+    "IsoCodes": [
+      {
+        "Code": "VA"
+      },
+      {
+        "Code": "VAT"
+      }
+    ],
+    "Population": "921",
+    "AreaKM2": "0"
+  },
+  {
+    "Country": "Venezuela",
+    "CountryCode": "58",
+    "IsoCodes": [
+      {
+        "Code": "VE"
+      },
+      {
+        "Code": "VEN"
+      }
+    ],
+    "Population": "27,223,228",
+    "AreaKM2": "912,050"
+  },
+  {
+    "Country": "Vietnam",
+    "CountryCode": "84",
+    "IsoCodes": [
+      {
+        "Code": "VN"
+      },
+      {
+        "Code": "VNM"
+      }
+    ],
+    "Population": "89,571,130",
+    "AreaKM2": "329,560"
+  },
+  {
+    "Country": "Wallis and Futuna",
+    "CountryCode": "681",
+    "IsoCodes": [
+      {
+        "Code": "WF"
+      },
+      {
+        "Code": "WLF"
+      }
+    ],
+    "Population": "16,025",
+    "AreaKM2": "274"
+  },
+  {
+    "Country": "Western Sahara",
+    "CountryCode": "212",
+    "IsoCodes": [
+      {
+        "Code": "EH"
+      },
+      {
+        "Code": "ESH"
+      }
+    ],
+    "Population": "273,008",
+    "AreaKM2": "266,000"
+  },
+  {
+    "Country": "Yemen",
+    "CountryCode": "967",
+    "IsoCodes": [
+      {
+        "Code": "YE"
+      },
+      {
+        "Code": "YEM"
+      }
+    ],
+    "Population": "23,495,361",
+    "AreaKM2": "527,970"
+  },
+  {
+    "Country": "Zambia",
+    "CountryCode": "260",
+    "IsoCodes": [
+      {
+        "Code": "ZM"
+      },
+      {
+        "Code": "ZMB"
+      }
+    ],
+    "Population": "13,460,305",
+    "AreaKM2": "752,614"
+  },
+  {
+    "Country": "Zimbabwe",
+    "CountryCode": "263",
+    "IsoCodes": [
+      {
+        "Code": "ZW"
+      },
+      {
+        "Code": "ZWE"
+      }
+    ],
+    "Population": "11,651,858",
+    "AreaKM2": "390,580"
+  }
+]
