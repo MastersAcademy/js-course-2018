@@ -48,8 +48,10 @@ class Racer extends Horse {
     }
 
     run() {
-        this.distance += this.speed;
-        this.speed = this.setSpeed();
+        this.race = setInterval(() => {
+            this.distance += this.speed;
+            this.speed = this.setSpeed();
+        }, 1000);
     }
 }
 
@@ -103,9 +105,9 @@ class Race {
 
     createRace(horsesArr) {
         this.racerArr = [];
-        horsesArr.forEach((horse) => {
+        this.racerArr = horsesArr.map((horse) => {
             const racer = new Racer(horse.name, horse.breed);
-            this.racerArr.push(racer);
+            return racer;
         });
         return this.racerArr;
     }
@@ -114,16 +116,14 @@ class Race {
         const final = new Promise(((resolve) => {
             this.horses.forEach((horse, index) => {
                 const duration = 10000;
-                const race = setInterval(() => {
-                    horse.run();
-                }, 1000);
+                horse.run();
 
                 const currentPosition = setInterval(() => {
                     console.log('horse:', horse.name, 'breed:', horse.breed, 'distance:', horse.distance);
                 }, 2000);
 
                 setTimeout(() => {
-                    clearInterval(race);
+                    clearInterval(this.race);
                     clearInterval(currentPosition);
                     if (index === this.horses.length - 1) {
                         resolve();
