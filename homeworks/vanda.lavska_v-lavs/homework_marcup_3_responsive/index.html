@@ -1159,19 +1159,24 @@
     <!--</section>-->
     <script>
 
-        let burger = document.getElementById('btnBurger');
-        let close = document.getElementById('btnClose');
-        let menuResp = document.getElementById('menu');
+function respMenu() {
 
-        burger.addEventListener('click', function (e) {
-            e.preventDefault();
-            menuResp.classList.add('nav-open');
-        });
+    let burger = document.getElementById('btnBurger');
+    let close = document.getElementById('btnClose');
+    let menuResp = document.getElementById('menu');
 
-        close.addEventListener('click', function (e) {
-            e.preventDefault();
-            menuResp.classList.remove('nav-open');
-        });
+    burger.addEventListener('click', function (e) {
+        e.preventDefault();
+        menuResp.classList.add('nav-open');
+    });
+
+    close.addEventListener('click', function (e) {
+        e.preventDefault();
+        menuResp.classList.remove('nav-open');
+    });
+}
+
+respMenu();
 
     </script>
 
