@@ -25,6 +25,9 @@
                 <a href="#" class="nav__link">Team</a>
                 <a href="#" class="nav__link">Contact</a>
             </nav>
+            <a class="menu-btn">
+                <span class="burger"></span>
+            </a>
         </header>
         <section class="subtitle">
             <h1 class="content__tittle underline">Build the website of<br>your dreams</h1>
@@ -152,28 +155,28 @@
     </section>
     <section class="content content--about">
         <h1 class="content__header underline underline--about">About Us</h1>
-        <figure class="content__item content__item--center">
+        <figure class="content__item content__item--center content__item--about">
             <div class="content__img-wrapper second"><img class="about--border" src="./images/image-7.png" alt="Gadgets"></div>
             <figcaption class="item_caption item__caption--about item__caption--left">
                 <h2 class="item__title item__title--uppercase">July 2010<br>Our Humble Beginnings</h2>
                 <p class="content__description">Proin iaculis purus consequat sem cure<br>digni ssim. Donec porttitora entum suscipit<br>aenean rhoncus posuere odio in tincidunt. Proin<br>iaculis purus consequat sem cure digni<br>ssim. Donec porttitora entum suscipit.</p>
             </figcaption>
         </figure>
-        <figure class="content__item content__item--center">
+        <figure class="content__item content__item--center content__item--about">
             <div class="content__img-wrapper content__img-wrapper--left"><img class="about--border" src="./images/image-8.png" alt="Beach with mountain"></div>
             <figcaption class="item_caption item__caption--about item__caption--right">
                 <h2 class="item__title item__title--uppercase">January 2011<br>Facing Startup Battles</h2>
                 <p class="content__description">Proin iaculis purus consequat sem cure<br>digni ssim. Donec porttitora entum suscipit<br>aenean rhoncus posuere odio in tincidunt. Proin<br>iaculis purus consequat sem cure digni<br>ssim. Donec porttitora entum suscipit aenean<br>rhoncus posuere odio in tincidunt.</p>
             </figcaption>
         </figure>
-        <figure class="content__item content__item--center">
+        <figure class="content__item content__item--center content__item--about">
             <div class="content__img-wrapper second"><img class="about--border" src="./images/image-9.png" alt="Concert"></div>
             <figcaption class="item_caption item__caption--about item__caption--left">
                 <h2 class="item__title item__title--uppercase">December 2012<br>Enter The Dark Days</h2>
                 <p class="content__description">Proin iaculis purus consequat sem cure<br>digni ssim. Donec porttitora entum suscipit<br>aenean rhoncus posuere odio in tincidunt. Proin<br>iaculis purus consequat sem cure digni.</p>
             </figcaption>
         </figure>
-        <figure class="content__item content__item--center">
+        <figure class="content__item content__item--center content__item--about">
             <div class="content__img-wrapper content__img-wrapper--left"><img class="about--border" src="./images/image-10.png" alt="The mountains"></div>
             <figcaption class="item_caption item__caption--about item__caption--right">
                 <h2 class="item__title item__title--uppercase">february 2014<br>Our Triumph</h2>
@@ -265,5 +268,16 @@
             <p>© 2014 Dreams By FreebiesXpress</p>
         </div>
     </footer>
+    <script>
+        (function(){
+            document.getElementsByClassName('menu-btn')[0].addEventListener( 'click', (e) => {
+                e.preventDefault();
+                const burgerMenu = document.getElementsByClassName('burger')[0];
+                burgerMenu.classList.toggle('burger--active');
+                const navigationPanel = document.getElementsByClassName('header__nav')[0];
+                navigationPanel.classList.toggle('header__nav--active');
+            });
+        })();
+    </script>
 </body>
 </html>
