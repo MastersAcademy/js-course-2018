@@ -4,17 +4,21 @@ const user = {};
 
 Object.defineProperties(user, {
     fullName: {
-        set: (text) => {
-            this.fullName = text.toLowerCase().replace(/\b\w/g,
+        set(text) {
+            this.newFullName = text.toLowerCase().replace(/\b\w/g,
                 firstCharacter => firstCharacter.toUpperCase());
         },
-        get: () => this.fullName,
+        get() {
+            return this.newFullName;
+        },
     },
     phone: {
-        set: (numbers) => {
-            this.phone = numbers.replace(/(?!^\+)\D+/g, '');
+        set(numbers) {
+            this.newPhone = numbers.replace(/(?!^\+)\D+/g, '');
         },
-        get: () => this.phone,
+        get() {
+            return this.newPhone;
+        },
     },
 });
 user.fullName = 'vLaDislAv viTaliJoVich rEsHEtylo';
