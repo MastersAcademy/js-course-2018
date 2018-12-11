@@ -488,7 +488,7 @@ body {
 
   .other__text {
     font-size: 10px;
-    padding: 0 15px 0;
+    padding: 0 15px;
   }
 
   .other__containers {
@@ -497,27 +497,28 @@ body {
 
   .other_img {
     height: 0;
-  } 
+  }
 
-/*portfolio block 991.98px*/
+  /*portfolio block 991.98px*/
 
   .portfolio {
     display: block;
     padding: 0 15px;
   }
-  
+
   .portfolio__bground {
     width: 100%;
   }
+
   .portfolio__img {
     height: 0;
   }
-  
+
   .album {
     justify-content: normal;
     text-align: center;
   }
-  
+
   .album__img {
     width: 40%;
   }
@@ -527,7 +528,7 @@ body {
   .about-containers__img--margin {
     margin: 0;
   }
-  
+
   .about__containers {
     display: inline-flex;
     margin: 50px 0;
@@ -536,60 +537,61 @@ body {
   .about-container__title {
     text-align: center;
   }
-  
+
   .about-container__text {
     text-align: justify;
   }
-  
+
   .about__containers--right {
     margin: auto;
     text-align: -webkit-center;
     display: block;
-    }
+  }
 
   .about__containers--left {
     margin: auto;
     text-align: -webkit-center;
     display: block;
   }
-  
+
   /*team block 991.98px*/
-  
+
   .team__containers {
     display: block;
     text-align: center;
   }
-  
+
   .team-container__idisplaymg {
     border-radius: 50%;
   }
-  
+
   .team-container__pic {
     justify-content: safe;
     display: flex;
   }
-  
+
   .team__text {
     margin: auto;
   }
-  
+
   .team__container {
     padding-bottom: 50px;
   }
-  
 }
 
 @media (max-width: 767.98px) {
 
   /*baner block 767.98px*/
+
   .baner__header {
     display: block;
     text-align: initial;
   }
+
   .baner__nav {
     padding-top: 20px;
   }
-  
+
   .baner__link {
     font-size: 14px;
     padding: 5px;
@@ -599,13 +601,13 @@ body {
     font-size: 25px;
     margin: 70px 0 0;
   }
-  
+
   .baner__text {
     font-size: 14px;
   }
 
   /*services block 767.98px*/
- 
+
   .services__title {
     font-size: 20px;
   }
@@ -626,7 +628,7 @@ body {
     font-size: 10px;
   }
 
- /*other block 767.98px*/
+  /*other block 767.98px*/
 
   .other__title {
     font-size: 20px;
@@ -647,9 +649,9 @@ body {
 
   .other-container__text {
     font-size: 10px;
-}
+  }
 
- /*portfolio block 767.98px*/
+  /*portfolio block 767.98px*/
 
   .portfolio__title {
     font-size: 20px;
@@ -706,7 +708,7 @@ body {
     font-size: 11px;
   }
 
-/*team block 767.98px*/
+  /*team block 767.98px*/
 
   .team__title {
     font-size: 20px;
@@ -719,6 +721,7 @@ body {
   .team-container__pic {
     justify-content: center;
   }
+
   .team-container__img {
     width: 150px;
   }
@@ -736,9 +739,8 @@ body {
   .team-container__text--bold {
     font-size: 12px;
   }
-
 }
 
-@media (max-width: 575.98px) {
-  
-}
+/*@media (max-width: 575.98px) {
+
+}*/
