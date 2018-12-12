@@ -14,24 +14,6 @@ ul {
   list-style: none;
 }
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-  background: none;
-  overflow: visible;
-  border: 0;
-  padding: 0;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  -webkit-appearance: button;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  cursor: pointer;
-}
-
 input::-moz-focus-inner,
 button::-moz-focus-inner {
   border: 0;
@@ -569,14 +551,20 @@ body {
 }
 
 .page-contact-us__container {
-  padding-right: 40px;
-  padding-left: 40px;
+  align-items: flex-start;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.page-contact-us__contant-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 60px;
 }
 
 .page-contact-us__column {
-  flex: 0 1 50%;
-  padding-right: 10px;
-  padding-left: 10px;
+  flex: 0 1 48%;
 }
 
 .contacts {
@@ -592,8 +580,8 @@ body {
   flex: 0 1 50%;
   display: flex;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .contacts-list__image-wrapper {
@@ -617,6 +605,75 @@ body {
   color: #35C2F8;
 }
 
+.page-contact-us__form {
+  padding-top: 40px;
+}
+
+/* FORM ================================================== */
+
+.form-element-style {
+  width: 100%;
+  display: block;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+  color: #BBB;
+}
+
+.user-name {
+  height: 50px;
+}
+
+.user-email {
+  height: 50px;
+  margin-top: 25px;
+}
+
+.form .user-message {
+  height: 167px;
+  margin-top: 20px;
+  resize: none;
+}
+
+
+.form-submit {
+  width: 187px;
+  display: block;
+  line-height: 61px;
+  margin-top: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 31px;
+  background-color: #35C2F8;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-submit:hover {
+  transition: all .25s ease;
+  background-color: #FFF;
+  color: #222;
+}
+
+
+/* ------------------------------------------------- */
+/* FOOTER */
+/* ------------------------------------------------- */
+
+.footer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #FFF;
+}
 
 /* ------------------------------------------------------- */
 /* UTILITY COMPONENTS */
