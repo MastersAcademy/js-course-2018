@@ -33,10 +33,6 @@ class Racer extends Horse {
 }
 
 class Race {
-    constructor() {
-        this.horses = [];
-    }
-
     createRace() {
         this.horses = horsesList.map(obj => new Racer(obj.name, obj.breed));
     }
