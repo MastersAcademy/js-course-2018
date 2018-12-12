@@ -430,6 +430,124 @@ body {
 }
 
 /* ------------------------------------------------- */
+/* PAGE-ABOUT-US */
+/* ------------------------------------------------- */
+
+.page-about-us {
+  padding-bottom: 90px;
+}
+
+.articles-wrapper:before {
+  width: 4px;
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  background-color: #F1F1F1;
+}
+
+.articles-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.article {
+  width: 50%;
+  position: relative;
+  margin-top: 45px;
+  padding-right: 110px;
+  padding-bottom: 45px;
+  padding-left: 110px;
+}
+
+.article:first-of-type {
+  margin-top: 0;
+}
+
+.article:last-of-type {
+  padding-bottom: 90px;
+}
+
+.article__date {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.article--left {
+  align-self: flex-start;
+  text-align: right;
+}
+
+.article--right {
+  align-self: flex-end;
+  text-align: left;
+}
+
+.article:after {
+  width: 168px;
+  height: 168px;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  border: 7px solid #F1F1F1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.article--left:after {
+  right: 0;
+  margin-right: -84px;
+}
+
+.article--right:after {
+  left: 0;
+  margin-left: -84px;
+}
+
+.article--item1:after {
+  background-image: url("./image/about-us/our-humble-beginnings.jpg");
+}
+
+.article--item2:after {
+  background-image: url("./image/about-us/facing-startup-battles.jpg");
+}
+
+.article--item3:after {
+  background-image: url("./image/about-us/enter-the-dark-days.jpg");
+}
+
+.article--item4:after {
+  background-image: url("./image/about-us/our-triumph.jpg");
+}
+
+.our-story-continues {
+  z-index: 99;
+  width: 168px;
+  height: 168px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #35C2F8;
+  border-radius: 50%;
+  border: 7px solid #F1F1F1;
+  text-align: center;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------- */
 /* PAGE-AWESOME-TEAM */
 /* ------------------------------------------------- */
 
@@ -681,4 +799,12 @@ body {
 
 .u-color-white {
   color: #FFF;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-text-left {
+  text-align: left;
 }
