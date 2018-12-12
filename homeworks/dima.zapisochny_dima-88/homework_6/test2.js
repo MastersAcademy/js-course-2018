@@ -11,6 +11,7 @@ class Racer extends Horse {
         super(name, breed);
         this.distance = 0;
         this.speed = 0;
+        this.setSpeed();
     }
 
     setSpeed() {
@@ -34,36 +35,24 @@ class Race {
         this.horses = [];
     }
 
-    createRace() {
-        const horsesArray = [
-            { name: 'WAWOLD', breed: 'Ardennes horse' },
-            { name: 'GARDINA', breed: 'Colorado Ranger' },
-            { name: 'ANDIRULD', breed: 'Dutch harness horse' },
-            { name: 'ALBETOLF', breed: 'Gidran' },
-            { name: 'ISANGO', breed: 'Holsteiner horse' },
-            { name: 'ABERY', breed: 'Iomud' },
-            { name: 'LIAGONO', breed: 'Karabair' },
-            { name: 'UVERAD', breed: 'Kiger Mustang' },
-            { name: 'JOEZ', breed: 'Latvian horse' },
-            { name: 'VIDARAD', breed: 'Mangalarga' },
-        ];
-        horsesArray.forEach((elem) => {
-            this.horses.push(new Racer(elem.name, elem.breed));
-        });
+    createRace(horsesArray) {
+        this.horses = horsesArray;
     }
 
     startRace() {
         this.horses.forEach(elem => elem.run());
-        const timeout = setInterval(() => {
+        const hx = setInterval(() => {
             this.horses.forEach((elem) => {
                 console.log(`\n* Horse: ${elem.name}`);
                 console.log(`* Breed: ${elem.breed}`);
                 console.log(`* Distance: ${elem.distance}`);
             });
+            console.log('__');
         }, 2000);
 
         setTimeout(() => {
-            clearInterval(timeout);
+            clearInterval(hx);
+            this.horses.forEach(elem => elem.stop());
             this.horses.sort((a, b) => b.distance - a.distance);
             if (this.horses[0].distance === this.horses[1].distance) {
                 console.log('\n No winner!');
@@ -75,6 +64,20 @@ class Race {
         }, 10000);
     }
 }
+
+const horsesArray = [
+    new Racer('WAWOLD', 'Ardennes horse'),
+    new Racer('GARDINA', 'Colorado Ranger'),
+    new Racer('ANDIRULD', 'Dutch harness horse'),
+    new Racer('ALBETOLF', 'Gidran'),
+    new Racer('ISANGO', 'Holsteiner horse'),
+    new Racer('ABERY', 'Iomud'),
+    new Racer('LIAGONO', 'Karabair'),
+    new Racer('UVERAD', 'Kiger Mustang'),
+    new Racer('JOEZ', 'Latvian horse'),
+    new Racer('VIDARAD', 'Mangalarga'),
+];
+
 const race = new Race();
-race.createRace();
+race.createRace(horsesArray);
 race.startRace();
