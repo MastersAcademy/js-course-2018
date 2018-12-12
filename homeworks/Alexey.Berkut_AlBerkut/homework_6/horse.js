@@ -34,9 +34,7 @@ class Race {
     }
 
     createRace(horses) {
-        horses.forEach((horse) => {
-            this.horses.push(new Racer(horse.name, horse.breed));
-        });
+        this.horses = horses;
     }
 
     startRace() {
