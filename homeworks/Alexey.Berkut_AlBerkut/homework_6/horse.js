@@ -42,12 +42,12 @@ class Race {
     startRace() {
         if (this.horses.length) {
             this.horses.forEach(horse => horse.run());
-            this.racerState();
+            this.logRacerState();
             setTimeout(this.stopRace.bind(this), 10000);
         }
     }
 
-    racerState() {
+    logRacerState() {
         this.timer = setInterval(() => {
             this.horses.forEach((horse) => {
                 console.log(`${horse.breed} ${horse.name} : ${horse.distance}`);
@@ -58,12 +58,12 @@ class Race {
     stopRace() {
         if (this.timer) clearInterval(this.timer);
         this.horses.forEach(horse => horse.stop());
-        this.findWinner();
+        console.log(this.findWinner().breed, this.findWinner().name, 'Win!');
     }
 
     findWinner() {
         this.horses.sort((i1, i2) => i1.distance - i2.distance);
-        console.log(`=== ${this.horses[0].breed} ${this.horses[0].name} win! ===`);
+        return this.horses[0];
     }
 }
 
