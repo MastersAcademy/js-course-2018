@@ -13,9 +13,7 @@ class Racer extends Horse {
     }
 
     setSpeed() {
-        const min = 10;
-        const max = 15;
-        this.speed = Math.random() * (max - min) + min;
+        this.speed = Math.random() * (15 - 10) + 10;
     }
 
     run() {
@@ -26,14 +24,11 @@ class Racer extends Horse {
     }
 
     stop() {
-        if (this.timerId === undefined) {
-            return;
-        }
-        clearInterval(this.timerId);
+        if (this.timerId) clearInterval(this.timerId);
     }
 }
 
-const rasers = [
+const racersHorse = [
     new Racer('Arnold', 'Arabian'),
     new Racer('Schwarzenegger', 'Quarter Horsee'),
     new Racer('Willard', 'Thoroughbred'),
@@ -87,5 +82,5 @@ class Race {
 }
 
 const myRace = new Race();
-myRace.createRace(rasers);
+myRace.createRace(racersHorse);
 myRace.startRace(10, 2);
