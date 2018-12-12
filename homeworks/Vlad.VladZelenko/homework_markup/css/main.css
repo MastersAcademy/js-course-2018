@@ -85,7 +85,7 @@ body {
   text-transform: uppercase;
 }
 
-h3.title {
+h3 {
   color: #222;
   font: 400 16px "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -106,7 +106,7 @@ h3.title {
   text-align: center;
 }
 
-.intro .sub-title {
+.intro-sub-title {
   max-width: 524px;
   margin: 175px auto 54px;
   font: 700 50px/60px "Open Sans", sans-serif;
@@ -114,7 +114,7 @@ h3.title {
   text-transform: uppercase;
 }
 
-.intro .description {
+.intro-description {
   max-width: 445px;
   margin: 0 auto;
   color: #CCC;
@@ -133,12 +133,12 @@ h3.title {
   align-items: center;
 }
 
-.overlay__content {
+.overlay-content {
   display: flex;
   flex-flow: row nowrap;
 }
 
-.overlay__content li a {
+.item-menu {
   padding: 5px 20px;
   color: #CCC;
   font: 400 14px "Open Sans", sans-serif;
@@ -147,7 +147,7 @@ h3.title {
   cursor: pointer;
 }
 
-.overlay__content li a:hover {
+.item-menu:hover {
   color: #35C2F8;
   transition: ease-in-out .7s;
   text-decoration: none;
@@ -160,7 +160,7 @@ h3.title {
   padding: 100px 0;
 }
 
-.core-services .item {
+.core-services-item {
   width: 282px;
   color: #888;
 }
@@ -169,7 +169,7 @@ h3.title {
   margin-top: 79px;
 }
 
-.core-services h3 {
+.services-secondary-title {
   margin: 39px 0 18px;
 }
 
@@ -185,11 +185,11 @@ h3.title {
   background-size: cover;
 }
 
-.others-expertise .content-box {
+.others-expertise-content-box {
   max-width: 752px;
 }
 
-.others-expertise .title {
+.others-expertise-title {
   margin-bottom: 36px;
 }
 
@@ -202,15 +202,15 @@ h3.title {
   flex-wrap: wrap;
 }
 
-.grid-expertise .margin-top {
+.grid-margin-top {
   margin-top: 58px;
 }
 
-.grid-expertise .expertise-content {
+.grid-expertise-content {
   max-width: 314px;
 }
 
-.grid-expertise .title {
+.expertise-title {
   margin-bottom: 13px;
 }
 
@@ -218,7 +218,7 @@ h3.title {
   line-height: 22px;
 }
 
-.grid-expertise .icon {
+.expertise-icon {
   width: 46px;
   font-size: 30px;
 }
@@ -229,28 +229,28 @@ h3.title {
   padding-top: 100px;
 }
 
-.portfolio .content-box {
+.portfolio-content-box {
   max-width: 530px;
 }
 
-.portfolio h2 {
+.portfolio-header-title {
   margin-bottom: 52px;
 }
 
-.portfolio .description {
+.portfolio-description {
   margin-top: 30px;
   line-height: 22px;
 }
 
-.portfolio .grid-expertise {
+.portfolio-grid {
   max-width: 400px;
 }
 
-.portfolio .margin-top {
+.portfolio-margin-top {
   margin-top: 30px;
 }
 
-.portfolio .first-header-margin {
+.first-header-margin {
   margin-top: 40px;
 }
 
@@ -260,7 +260,7 @@ h3.title {
   min-height: 100px;
 }
 
-.portfolio-container .item-portfolio {
+.item-portfolio {
   width: 33%;
 }
 
@@ -275,22 +275,6 @@ h3.title {
   text-align: center;
 }
 
-.about-us h2 {
-  text-align: center;
-}
-
-.about-us .content {
-  width: 303px;
-  text-align: right;
-}
-
-.about-us .content-box {
-  display: flex;
-  flex-flow: row wrap;
-  width: 517px;
-  margin: 92px auto;
-}
-
 .awesome-team {
   width: 100%;
   min-height: 800px;
@@ -299,11 +283,11 @@ h3.title {
   text-align: center;
 }
 
-.awesome-team .col-lg-4 {
+.person-info {
   margin-top: 82px;
 }
 
-.awesome-team i {
+.style-social-icon {
   width: 40px;
   padding: 10px;
   background-color: #111;
@@ -312,20 +296,21 @@ h3.title {
   font-size: 20px;
 }
 
-.awesome-team h3 {
+.awesome-title {
+  color: #111;
   margin: 26px 0 8px;
   font: 700 16px "Montserrat", sans-serif;
   text-transform: capitalize;
 }
 
-.awesome-team p {
+.awesome-desc {
   max-width: 588px;
   margin: 82px auto 0;
   font-size: 16px;
   line-height: 20px;
 }
 
-.awesome-team .social-icons {
+.awesome-social-icons {
   width: 140px;
   margin: 14px auto 0;
   font-size: 30px;
@@ -340,16 +325,16 @@ h3.title {
   padding-top: 100px;
 }
 
-.footer .col-lg-6 {
+.footer-primary-col {
   max-width: 460px;
 }
 
-.footer .title {
+.footer-title {
   margin-bottom: 30px;
   color: #FFF;
 }
 
-.footer p {
+.footer-desc {
   line-height: 18px;
 }
 
@@ -357,7 +342,7 @@ h3.title {
   color: #FFF;
 }
 
-.footer i {
+.footer-icon {
   font-size: 20px;
   width: 30px;
 }
@@ -367,14 +352,14 @@ h3.title {
   width: 210px;
 }
 
-.footer .copyright {
+.copyright {
   display: block;
   margin: 63px 0 32px;
   width: 100%;
   text-align: center;
 }
 
-.footer .copyright:before {
+.copyright:before {
   content: "";
   display: block;
   max-width: 100%;
@@ -390,7 +375,7 @@ h3.title {
     background: #F7F7F7;
   }
 
-  .grid-expertise, .content-box {
+  .grid-expertise-content {
     justify-content: center;
     margin: 0 auto;
   }
@@ -399,7 +384,7 @@ h3.title {
     padding: 50px 20px;
   }
 
-  .footer .container {
+  .grid-expertise-content {
     flex-flow: column nowrap;
     align-items: center;
   }
@@ -420,7 +405,7 @@ h3.title {
     margin: 10px 0 0 10px;
   }
 
-  .services .container {
+  .services-container {
     flex-direction: column;
     align-items: center;
   }
@@ -437,7 +422,7 @@ h3.title {
     transition: all .7s;
   }
 
-  .overlay a {
+  .item-menu {
     display: block;
     padding: 10px;
     color: #CCC;
@@ -445,26 +430,26 @@ h3.title {
     text-decoration: none;
   }
 
-  .overlay a:hover {
+  .item-menu:hover {
     color: #FFF;
     transition: all .5s ease-in-out .1s;
   }
 
-  .overlay .close-btn {
+  .close-btn {
     position: absolute;
     top: 10px;
     right: 7px;
     font-size: 50px;
   }
 
-  .overlay__content {
+  .overlay-content {
     flex-flow: column nowrap;
     justify-content: center;
     height: 100%;
     text-align: center;
   }
 
-  .overlay__content li {
+  .overlay-content li {
     padding: 10px 0;
   }
 
@@ -489,11 +474,16 @@ h3.title {
   .intro {
     padding: 20px;
   }
+
+  .footer-container {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 850px) {
 
-  .core-services .flex-grid {
+  .services-flex-grid {
     flex-flow: column nowrap;
     align-items: center;
   }
@@ -506,16 +496,16 @@ h3.title {
     margin: 49px auto;
   }
 
-  .grid-expertise .icon {
+  .expertise-icon {
     margin-bottom: 30px;
   }
 
-  .grid-expertise, .grid-expertise .margin-top {
+  .grid-expertise, .grid-margin-top {
     flex-flow: column nowrap;
     align-items: center;
   }
 
-  .awesome-team .container {
+  .awesome-container {
     flex-flow: column nowrap;
     align-items: center;
   }
@@ -531,11 +521,11 @@ h3.title {
     flex-flow: column nowrap;
   }
 
-  .portfolio-container .item-portfolio {
+  .item-portfolio {
     width: 100%;
   }
 
-  .footer .container {
+  .footer-container {
     text-align: center;
   }
 
@@ -581,7 +571,7 @@ h3.title {
   color: #BBB;
 }
 
-input.name, input.mail {
+.form-name, .form-mail {
   width: 100%;
   height: 52px;
   margin-bottom: 25px;
