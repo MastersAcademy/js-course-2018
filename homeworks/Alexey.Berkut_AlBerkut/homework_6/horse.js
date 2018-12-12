@@ -68,16 +68,16 @@ class Race {
 }
 
 const HORSES = [
-    new Horse('Roach', 'Geralt\'s Horse'),
-    new Horse('Pegasus', 'Dandelion\'s white gelding'),
-    new Horse('Aard', 'Windhorse'),
-    new Horse('Ignis', 'Firehorse'),
-    new Horse('Quen', 'Battlehorse'),
-    new Horse('Axii', 'Calmhorse'),
-    new Horse('Yrden', 'Magichorse'),
-    new Horse('Kelpie', 'Ciri\'s Horse'),
-    new Horse('Scorpion', 'Eskel\'s horse'),
-    new Horse('Lexa', 'Student'),
+    new Racer('Roach', 'Geralt\'s Horse'),
+    new Racer('Pegasus', 'Dandelion\'s white gelding'),
+    new Racer('Aard', 'Windhorse'),
+    new Racer('Ignis', 'Firehorse'),
+    new Racer('Quen', 'Battlehorse'),
+    new Racer('Axii', 'Calmhorse'),
+    new Racer('Yrden', 'Magichorse'),
+    new Racer('Kelpie', 'Ciri\'s Horse'),
+    new Racer('Scorpion', 'Eskel\'s horse'),
+    new Racer('Lexa', 'Student'),
 ];
 
 const race = new Race();
