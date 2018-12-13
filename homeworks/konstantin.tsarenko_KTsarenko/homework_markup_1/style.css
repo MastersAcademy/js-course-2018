@@ -74,9 +74,10 @@ p {
 
 .container {
   width: 100%;
-  max-width: 1108px;
+  max-width: 1138px;
   overflow: hidden;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .title-page {
@@ -412,4 +413,301 @@ p {
   text-align: center;
   align-items: center;
   position: relative;
+}
+
+.nav-icon {
+  display: none;
+  z-index: 2;
+  width: 35px;
+  height: 25px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-icon span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #DDD;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.nav-icon span:nth-child(1) {
+  top: 0;
+}
+
+.nav-icon span:nth-child(2) {
+  top: 10px;
+}
+
+.nav-icon span:nth-child(3) {
+  top: 20px;
+}
+
+.nav-icon.open span:nth-child(1) {
+  top: 10px;
+  transform: rotate(135deg);
+}
+
+.nav-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: 60px;
+}
+
+.nav-icon.open span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-135deg);
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+  .border_b {
+    padding-bottom: 26px;
+  }
+
+  .title-page {
+    font-size: 42px;
+    line-height: 49px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  .title-section {
+    margin-bottom: 56px;
+    font-size: 34px;
+  }
+
+  .home .content {
+    margin: 90px auto 120px;
+  }
+
+  .services {
+    padding: 60px 0;
+  }
+
+  .expertise {
+    padding: 60px 0 40px;
+  }
+
+  .container_expertise {
+    padding-right: 36%;
+  }
+
+  .title-section_expertise {
+    margin-bottom: 26px;
+  }
+
+  .description-expertise {
+    margin-bottom: 42px;
+  }
+
+  .list-expertise {
+    margin-bottom: 20px;
+  }
+
+  .portfolio {
+    padding: 60px 0;
+  }
+
+  .bg_portfolio {
+    left: 55%;
+    right: -26%;
+  }
+
+  .about {
+    padding: 60px 0 40px;
+  }
+
+  .item-about {
+    margin-bottom: 60px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+  .title-section {
+    margin-bottom: 46px;
+    font-size: 32px;
+  }
+
+  .header_top {
+    padding: 30px 0;
+  }
+
+  .item-nav:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .title-page {
+    font-size: 36px;
+    padding-bottom: 26px;
+    margin-bottom: 32px;
+  }
+
+  .item-sevices {
+    width: 240px;
+  }
+
+  .icon_sevices {
+    width: 54px;
+    margin-bottom: 30px;
+  }
+
+  .bg_expertise, .bg_portfolio {
+    display: none;
+  }
+
+  .container_expertise, .container_portfolio {
+    padding-right: 15px;
+  }
+
+  .item-about {
+    width: 100%;
+    margin-bottom: 38px;
+  }
+
+  .item-about:last-child {
+    width: 170px;
+  }
+
+  .foto-about:before {
+    display: none;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+  .header_top {
+    padding: 22px 0;
+  }
+
+  .navigation {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    height: 70px;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    padding: 0 50px 0 15px;
+    background-color: #2A2521;
+    transform: translateY(-100%);
+  }
+
+  .navigation.open {
+    transform: translateY(0);
+  }
+
+  .nav-icon {
+    display: block;
+  }
+
+  .list-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+
+  .title-page {
+    font-size: 32px;
+    line-height: 36px;
+    padding-bottom: 17px;
+  }
+
+  .title-section {
+    margin-bottom: 38px;
+    font-size: 28px;
+  }
+
+  .item-gallery {
+    width: 50%;
+  }
+
+  .item-gallery:nth-child(3n+3) {
+    display: none;
+  }
+
+  .foto-about {
+    margin: 0 30px;
+  }
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  .navigation {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .list-nav {
+    flex-direction: column;
+  }
+
+  .item-nav:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 8px
+  }
+
+  .home .content {
+    margin: 40px auto 60px;
+  }
+
+  .title-page {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .services, .expertise {
+    padding: 40px 0 30px;
+  }
+
+  .title-section {
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .item-sevices {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .icon_sevices {
+    margin-bottom: 22px;
+  }
+
+  .description-expertise {
+    margin-bottom: 34px;
+  }
+
+  .item-expertise {
+    width: 100%;
+  }
+
+  .item-about {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .description-about {
+    order: 2;
+    text-align: justify;
+    width: 100%;
+  }
+
+  .foto-about {
+    order: 1;
+  }
 }
