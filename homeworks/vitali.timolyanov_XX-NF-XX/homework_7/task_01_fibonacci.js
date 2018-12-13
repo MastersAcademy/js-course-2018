@@ -3,7 +3,7 @@ const MAX_RANDOM = 100;
 
 function getRandomFibonacciSequence() {
     const difference = MAX_RANDOM - MIN_RANDOM;
-    const maxNumber = Math.trunc(Math.random() * (difference + 1) + difference);
+    const maxNumber = Math.trunc(Math.random() * (difference + 1) + MIN_RANDOM);
     const numbers = [0, 1];
 
     for (let i = 1; i <= maxNumber; i += numbers[numbers.length - 2]) {
