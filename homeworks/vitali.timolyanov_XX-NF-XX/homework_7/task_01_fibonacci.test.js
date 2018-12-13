@@ -33,14 +33,10 @@ describe('Fibonacci test', () => {
     });
     test('Array contains proper fibonacci sequence', () => {
         const testSequence = getFibonacciSequence();
-        let isFibonacciSequence = true;
+        expect(testSequence.length).toBeGreaterThan(2);
 
         for (let i = 2; i < testSequence.length; i++) {
-            if (testSequence[i - 2] + testSequence[i - 1] !== testSequence[i]) {
-                isFibonacciSequence = false;
-                break;
-            }
+            expect(testSequence[i - 2] + testSequence[i - 1]).toBe(testSequence[i]);
         }
-        expect(isFibonacciSequence).toBeTruthy();
     });
 });
