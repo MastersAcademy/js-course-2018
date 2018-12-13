@@ -3,13 +3,14 @@ Object.defineProperty(user, 'name', {
     enumerable: true,
     writeble: true,
     configurable: true,
-    set: (date) => {
-        this.name = date.toLowerCase()
+    set: (value) => {
+        const capititalizeWord = word => word[0].toUpperCase() + word.substring(1);
+        this.name = value.toLowerCase()
             .split(/\s+/)
-            .map(word => word[0].toUpperCase() + word.substring(1))
+            .map(capititalizeWord)
             .join(' ')
             .split(/-/)
-            .map(word => word[0].toUpperCase() + word.substring(1))
+            .map(capititalizeWord)
             .join('-');
     },
     get: () => this.name,
@@ -19,13 +20,9 @@ Object.defineProperty(user, 'phone', {
     enumerable: true,
     writeble: true,
     configurable: true,
-    set: (date) => {
-        let plus = '';
-        if (date.charAt(0) === '+') {
-            plus += '+';
-        }
-        this.phone = plus + date.split(/\D/)
-            .join('');
+    set: (value) => {
+        const plus = value[0] === '+' ? '+' : '';
+        this.phone = plus + value.split(/\D/).join('');
     },
     get: () => this.phone,
 });
