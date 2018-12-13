@@ -28,22 +28,21 @@ body {
   text-align: center;
 }
 
+
 .baner__header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.baner__menu {
-  visibility: hidden;
-}
-
-.baner-menu__img {
-  width: 30px;
+.baner__toggle {
+  position: absolute;
+  left: -100%;
+  top: -100%;
 }
 
 .baner__link {
-  margin: 10px;
+  margin: 2px;
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
@@ -589,12 +588,11 @@ body {
   }
 
   .baner__nav {
-    padding-top: 20px;
+    margin-top: 25px;
   }
 
   .baner__link {
     font-size: 14px;
-    padding: 5px;
   }
 
   .baner__title {
@@ -741,6 +739,127 @@ body {
   }
 }
 
-/*@media (max-width: 575.98px) {
+@media (max-width: 575.98px) {
 
-}*/
+  .baner__menu {
+    border-radius: 50%;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFFA2;
+  }
+
+  .baner__toggle__btn1 {
+    margin: 12px 7px;
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #FFF;
+    transform: translateY(-50%) rotate(0deg) scale(1);
+  }
+
+  .baner__toggle__btn2 {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    margin: 20px 7px;
+    background-color: #FFF;
+    transform: translateY(-50%) rotate(0deg) scale(1);
+  }
+
+  .baner__toggle__btn3 {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    margin: 27px 7px;
+    background-color: #FFF;
+    transform: translateY(-50%) rotate(0deg) scale(1);
+  }
+
+  .baner__nav {
+    visibility: hidden;
+    height: 0;
+    display: grid;
+    background-color: #FFFFFFA2;
+  }
+
+  .baner__link {
+    font-size: 0;
+    text-align: center;
+    padding: 20px;
+  }
+
+
+  .baner__toggle:checked ~ .baner__nav {
+    height: 70vh;
+    visibility: visible;
+    transition: 0,5s;
+  }
+
+  .baner__toggle:checked ~ .baner__nav .baner__link:nth-child(1) {
+    font-size: 20px;
+    background-color: #00000087;
+    transition: 0,2s;
+  }
+
+  .baner__toggle:checked ~ .baner__nav .baner__link:nth-child(2) {
+    font-size: 20px;
+    background-color: #00000087;
+    transition: 0,4s;
+  }
+
+  .baner__toggle:checked ~ .baner__nav .baner__link:nth-child(3) {
+    font-size: 20px;
+    background-color: #00000087;
+    transition: 0,6s;
+  }
+
+  .baner__toggle:checked ~ .baner__nav .baner__link:nth-child(4) {
+    font-size: 20px;
+    background-color: #00000087;
+    transition: 0,8s;
+  }
+
+  .baner__toggle:checked ~ .baner__nav .baner__link:nth-child(5) {
+    font-size: 20px;
+    background-color: #FFFFFFA1;
+    transition: 1s;
+  }
+
+  .baner__toggle:checked ~ .baner__menu .baner__toggle__btn1:nth-child(1) {
+    margin: 20px 7px;
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #FFF;
+    transform: translateY(-50%) rotate(45deg) scale(1);
+    transition: 1s;
+  }
+
+  .baner__toggle:checked ~ .baner__menu .baner__toggle__btn2:nth-child(2) {
+    margin: 20px 7px;
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #FFF;
+    transform: translateY(-50%) rotate(45deg) scale(0);
+    transition: 1s;
+  }
+
+  .baner__toggle:checked ~ .baner__menu .baner__toggle__btn3:nth-child(3) {
+    margin: 20px 7px;
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #FFF;
+    transform: translateY(-50%) rotate(-45deg) scale(1);
+    transition: 1s;
+  }
+}
+ 
