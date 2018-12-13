@@ -47,7 +47,7 @@ class Login {
     }
 
     unlock(user) {
-        this.failedLogins.set(user, 0);
+        this.failedLogins.delete(user);
     }
 }
 
