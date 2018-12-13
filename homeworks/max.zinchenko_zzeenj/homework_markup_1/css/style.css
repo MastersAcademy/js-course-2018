@@ -173,12 +173,13 @@ body {
 .types-of-expertise {
   margin-top: 55px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
 .types-of-expertise__item {
-  width: 250px;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
 }
 
 .types-of-expertise__headline {
@@ -415,12 +416,18 @@ body {
   border-bottom: 2px solid #35E9EB;
 }
 
+.about-content {
+  margin: 0 auto;
+}
+
 /* Our Humble Beginnings */
 
 .our-humble {
   margin-top: 80px;
-  margin-left: 13.5%;
   display: flex;
+  width: 58%;
+  justify-content: flex-end;
+  margin-bottom: 100px;
 }
 
 .our-content {
@@ -451,9 +458,10 @@ body {
 /* Facing Startup Battles */
 
 .facing-startup {
-  margin-top: 80px;
-  margin-left: 42%;
   display: flex;
+  width: 86%;
+  justify-content: flex-end;
+  margin-bottom: 100px;
 }
 
 .facing-content {
@@ -482,9 +490,10 @@ body {
 /* Enter The Dark Days */
 
 .dark-days {
-  margin-top: 80px;
-  margin-left: 13.5%;
   display: flex;
+  width: 58%;
+  justify-content: flex-end;
+  margin-bottom: 100px;
 }
 
 .dark-content {
@@ -515,9 +524,9 @@ body {
 /* Our Triumph */
 
 .our-triumph {
-  margin-top: 80px;
-  margin-left: 42%;
   display: flex;
+  width: 86%;
+  justify-content: flex-end;
 }
 
 .triumph-content {
@@ -543,9 +552,12 @@ body {
   border: 3px solid #F1F1F1
 }
 
-.round {
-  margin-left: 42%;
+.our-story {
   margin-top: 80px;
+  text-align: center;
+}
+
+.round {
   width: 150px;
   height: 150px;
   text-transform: uppercase;
@@ -802,11 +814,88 @@ body {
   }
 
   .types-of-expertise {
-    width: 600px;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .feedback {
     margin: 25px 50px 0;
+  }
+
+  .our-humble {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .our-content {
+    margin-right: 0;
+  }
+
+  .our-content__headline {
+    text-align: center;
+  }
+
+  .our-content__paragraph {
+    text-align: center;
+  }
+
+  .our-humble__img {
+    order: -1;
+    margin: 0 auto;
+  }
+
+  .facing-startup {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .facing-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .facing-startup__img {
+    margin: 0 auto;
+  }
+
+  .dark-days {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dark-content {
+    margin-right: 0;
+  }
+
+  .dark-content__headline {
+    text-align: center;
+  }
+
+  .dark-content__paragraph {
+    text-align: center;
+  }
+
+  .dark-days__img {
+    order: -1;
+    margin: 0 auto;
+  }
+
+  .our-triumph {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .triumph-content {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .our-triumph__img {
+    margin: 0 auto;
+  }
+
+  .round {
+    align-items: center;
   }
 }
 
@@ -827,26 +916,6 @@ body {
     display: none;
   }
 
-  .about-content {
-    margin: 0 auto;
-  }
-
-  .our-humble {
-    margin-left: 5%;
-  }
-
-  .facing-startup {
-    margin-left: 5%;
-  }
-
-  .dark-days {
-    margin-left: 5%;
-  }
-
-  .our-triumph {
-    margin-left: 5%;
-  }
-
   .team__img {
     width: 150px;
     height: auto;
@@ -858,10 +927,26 @@ body {
   }
 }
 
+
 @media (max-width: 749.98px) {
 
   .portfolio-photos__item {
     flex-basis: 200px;
+  }
+}
+
+@media (max-width: 690.98px) {
+
+  .types-of-expertise {
+    flex-direction: column;
+  }
+
+  .types-of-expertise__item {
+    width: 100%;
+  }
+
+  .cloud-control {
+    margin-top: 25px;
   }
 }
 
@@ -873,14 +958,6 @@ body {
 
   .other-expertise-content__paragraph {
     width: 300px;
-  }
-
-  .types-of-expertise {
-    flex-direction: column;
-  }
-
-  .cloud-control {
-    margin-top: 25px;
   }
 
   .amazing-portfolio__headline {
@@ -902,10 +979,6 @@ body {
   .team {
     text-align: center;
     flex-direction: column;
-  }
-
-  .team-social {
-    margin-bottom: 25px;
   }
 
   .list-contacts {
@@ -957,5 +1030,9 @@ body {
 
   .contacts-form {
     width: 225px;
+  }
+
+  .types-of-expertise__item {
+    width: 85%;
   }
 }
