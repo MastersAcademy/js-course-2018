@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Dreams</title>
         <link rel="stylesheet" href="style.css" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400, 700" rel="stylesheet">
@@ -12,14 +13,19 @@
             <div class="filter">
                 <div class="site-nav">
                     <h1><a href="#" class="logo" title="Dreams home"><img src="images/logo.png" alt="Dreams"/></a></h1>
-                    <nav class="main-menu">
-                        <a href="#" title="Home">Home</a>
-                        <a href="#" title="Services">Services</a>
-                        <a href="#" title="Portfolio">Portfolio</a>
-                        <a href="#" title="About us">About</a>
-                        <a href="#" title="Our team">Team</a>
-                        <a href="#" title="Contact us">Contact</a>
-                    </nav>
+                    <div class="menu-wrap">
+                        <button id="hamburger-menu--btn" type="menu">
+                            <svg class="mobile-icon"><use xlink:href="#menu" /></svg>
+                        </button>
+                        <nav id="site-menu" class="main-menu">
+                            <a href="#" title="Home">Home</a>
+                            <a href="#" title="Services">Services</a>
+                            <a href="#" title="Portfolio">Portfolio</a>
+                            <a href="#" title="About us">About</a>
+                            <a href="#" title="Our team">Team</a>
+                            <a href="#" title="Contact us">Contact</a>
+                        </nav>
+                    </div>
                 </div>
                 <div class="site-description">
                     <h2 class="lined">Build the website of <br>your dreams</h2>
@@ -190,7 +196,9 @@
                 <h3 class="team-title lined">Awesome Team</h3>
                 <ul class="team-list">
                     <li class="team-item">
-                        <img src="images/default.png" class="photo-box" alt="nophoto"/>
+                        <div class="photo-box">
+                            <img src="images/default.png" class="photo" alt="nophoto"/>
+                        </div>
                         <h5 class="name">Jimmy Letterman</h5>
                         <p class="occupation">Marketer</p>
                         <ul class="social-media">
@@ -206,7 +214,9 @@
                         </ul>
                     </li>
                     <li class="team-item">
-                        <img src="images/default.png" class="photo-box" alt="nophoto"/>
+                        <div class="photo-box">
+                            <img src="images/default.png" class="photo" alt="nophoto"/>
+                        </div>
                         <h5 class="name">Rico Massimo</h5>
                         <p class="occupation">Coder</p>
                         <ul class="social-media">
@@ -222,7 +232,9 @@
                         </ul>
                     </li>
                     <li class="team-item">
-                        <img src="images/default.png" class="photo-box" alt="nophoto"/>
+                        <div class="photo-box">
+                            <img src="images/default.png" class="photo" alt="nophoto"/>
+                        </div>
                         <h5 class="name">Lisa Mason</h5>
                         <p class="occupation">Graphic Designer</p>
                         <ul class="social-media">
@@ -250,11 +262,29 @@
                 <defs><path id="ui6ha" d="M575.636 1461.93c-.273 3.84-3.248 7.973-9.132 7.973-8.946 0-23.712-.047-23.86-.047-3.854 0-7.09-2.896-7.689-6.885-.468-3.112.85-7.27 5.85-9.46-.63-2.584-.206-5.132 1.248-7.318 1.801-2.708 4.963-4.39 8.252-4.39 3.327 0 6.333 1.678 8.466 4.665a7.388 7.388 0 0 1 3.712-1.016c2.067 0 3.965.897 5.205 2.462 1.072 1.353 1.567 3.094 1.45 5.016 4.793 1.39 6.75 5.476 6.498 9zm-8.606-6.05a1.664 1.664 0 0 1-1.385-2.03c.372-1.591.176-2.927-.567-3.865-.604-.764-1.55-1.201-2.595-1.201-1.078 0-2.145.463-3.005 1.303a1.667 1.667 0 0 1-2.634-.41c-1.554-2.93-3.876-4.542-6.539-4.542-2.188 0-4.288 1.113-5.48 2.904-1.125 1.692-1.268 3.764-.402 5.834a1.665 1.665 0 0 1-1.046 2.236c-3.642 1.12-5.56 3.5-5.129 6.366.303 2.012 1.911 4.049 4.4 4.049.154 0 14.915.047 23.856.047 3.773 0 5.637-2.45 5.81-4.878.178-2.49-1.387-5.254-5.284-5.813zm-15.74-7.749c.07.803-.522 1.51-1.324 1.58-1.674.148-1.716 1.322-1.69 1.678a1.458 1.458 0 0 1-2.905.22c-.133-1.765.913-4.5 4.34-4.802a1.454 1.454 0 0 1 1.579 1.324z"/></defs><g><g transform="translate(-534 -1441)"><use fill="#777" xlink:href="#ui6ha"/></g></g>
             </symbol>
             <symbol id="lock" width="27" height="39" viewBox="0 0 27 39">
-                <defs><path id="qwdla" d="M568.531 1543.482v21.012c0 .92-.745 1.665-1.665 1.665h-23.17c-.92 0-1.665-.745-1.665-1.665v-21.012c0-.92.746-1.665 1.666-1.665h.982c-.007-2.576.41-7.262 3.204-10.384 1.826-2.04 4.315-3.074 7.398-3.074 3.084 0 5.573 1.034 7.399 3.074 2.794 3.122 3.21 7.808 3.204 10.384h.982c.92 0 1.665.745 1.665 1.665zm-20.52-1.665h14.54c.007-2.08-.293-5.868-2.36-8.17-1.182-1.317-2.789-1.957-4.91-1.957s-3.727.64-4.91 1.958c-2.066 2.301-2.366 6.089-2.36 8.169zm17.19 3.33h-19.839v17.682H565.2zm-6.127 13.063a.832.832 0 0 1-.779 1.128h-5.955a.835.835 0 0 1-.776-1.132l1.639-4.244c-.318-.472-.759-1.286-.759-2.154 0-1.554 1.007-3.204 2.874-3.204 1.866 0 2.873 1.65 2.873 3.204 0 .865-.427 1.677-.733 2.148zm-1.986-.537l-1.346-3.542a.835.835 0 0 1 .136-.825c.166-.205.647-.926.647-1.498 0-.016-.033-1.54-1.207-1.54-1.175 0-1.208 1.524-1.208 1.54 0 .565.496 1.282.67 1.489.196.233.251.554.141.838l-1.366 3.538z"/></defs><g><g transform="translate(-542 -1528)"><use fill="#777" xlink:href="#qwdla"/></g></g>
+                <defs>
+                    <path id="qwdla" d="M568.531 1543.482v21.012c0 .92-.745 1.665-1.665 1.665h-23.17c-.92 0-1.665-.745-1.665-1.665v-21.012c0-.92.746-1.665 1.666-1.665h.982c-.007-2.576.41-7.262 3.204-10.384 1.826-2.04 4.315-3.074 7.398-3.074 3.084 0 5.573 1.034 7.399 3.074 2.794 3.122 3.21 7.808 3.204 10.384h.982c.92 0 1.665.745 1.665 1.665zm-20.52-1.665h14.54c.007-2.08-.293-5.868-2.36-8.17-1.182-1.317-2.789-1.957-4.91-1.957s-3.727.64-4.91 1.958c-2.066 2.301-2.366 6.089-2.36 8.169zm17.19 3.33h-19.839v17.682H565.2zm-6.127 13.063a.832.832 0 0 1-.779 1.128h-5.955a.835.835 0 0 1-.776-1.132l1.639-4.244c-.318-.472-.759-1.286-.759-2.154 0-1.554 1.007-3.204 2.874-3.204 1.866 0 2.873 1.65 2.873 3.204 0 .865-.427 1.677-.733 2.148zm-1.986-.537l-1.346-3.542a.835.835 0 0 1 .136-.825c.166-.205.647-.926.647-1.498 0-.016-.033-1.54-1.207-1.54-1.175 0-1.208 1.524-1.208 1.54 0 .565.496 1.282.67 1.489.196.233.251.554.141.838l-1.366 3.538z"/>
+                </defs>
+                <g>
+                    <g transform="translate(-542 -1528)">
+                        <use fill="#777" xlink:href="#qwdla"/>
+                    </g>
+                </g>
             </symbol>
             <symbol id="pie" width="30" height="29" viewBox="0 0 30 29">
                 <defs><path id="zk81a" d="M142.583 2346.074h-10.948a1.077 1.077 0 0 1-1.077-1.077c0-6.63 5.394-12.024 12.025-12.024.594 0 1.077.482 1.077 1.077v10.947c0 .595-.483 1.077-1.077 1.077zm-1.077-10.89c-4.585.5-8.236 4.152-8.736 8.737h8.736zm17.944 13.208c0 7.429-6.044 13.473-13.473 13.473-7.429 0-13.473-5.79-13.473-12.907 0-.68.551-1.231 1.231-1.231h11.578v-11.577c0-.68.55-1.23 1.23-1.23 6.996 0 12.907 6.17 12.907 13.472zm-2.461 0c0-5.53-4.107-10.266-9.215-10.932v11.498c0 .68-.55 1.23-1.23 1.23h-11.502c.644 5.183 5.302 9.216 10.935 9.216 6.072 0 11.012-4.94 11.012-11.012z"/></defs><g><g transform="translate(-130 -2333)"><use fill="#777" xlink:href="#zk81a"/></g></g>
             </symbol>
+            <symbol height="32px" id="menu" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+            </symbol>
         </svg>
+
+        <script type="application/javascript">
+            const getButton = document.getElementById('hamburger-menu--btn');
+            getButton.onclick = function() {
+                const getNav = document.getElementById('site-menu');
+                getNav.classList.toggle('visible');
+            };
+        </script>
     </body>
 </html>

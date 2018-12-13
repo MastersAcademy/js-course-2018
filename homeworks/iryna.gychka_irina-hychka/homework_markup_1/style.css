@@ -1,4 +1,6 @@
 body {
+  position: relative;
+  margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -17,6 +19,7 @@ a {
 a:hover,
 a:active,
 a:focus {
+  color: #35C2F8;
   background: transparent;
 }
 
@@ -37,7 +40,8 @@ h3,
 h4,
 h5,
 p,
-figure {
+figure,
+button {
   margin: 0;
   padding: 0;
 }
@@ -93,7 +97,6 @@ header {
 .main-menu a:hover,
 .main-menu a:active,
 .main-menu a:focus {
-  color: #35C2F8;
   opacity: 1;
 }
 
@@ -152,7 +155,7 @@ h3 {
 
 .services,
 .team {
-  padding: 80px 0;
+  padding: 80px;
   text-align: center;
 }
 
@@ -179,7 +182,6 @@ h3 {
 .serv-link:hover,
 .serv-link:active,
 .serv-link:focus {
-  color: #35C2F8;
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -300,7 +302,6 @@ h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #222;
   background-color: #FFF;
   border-radius: 50px;
 }
@@ -308,10 +309,8 @@ h4 {
 .read-more:hover,
 .read-more:active,
 .read-more:focus {
-  color: #35C2F8;
   opacity: 1;
   background-color: #FFF;
-  text-shadow: none;
 }
 
 /* Portfolio section */
@@ -370,7 +369,7 @@ h4 {
 }
 
 .psample-item {
-  width: 33.33%;
+  max-width: 33.33%;
 }
 
 .psample-item img {
@@ -439,7 +438,8 @@ h4 {
 }
 
 .about-photo img {
-  display: inline-flex;
+  display: inline-block;
+  max-width: 100%;
   border: 7px solid #F1F1F1;
   border-radius: 91px;
 }
@@ -478,29 +478,25 @@ h4 {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 0 69px;
 }
 
 .team-item {
-  margin: 0 15px;
-}
-
-.team-item:first-child {
-  margin: 0 15px 0 0;
-}
-
-.team-item:last-child {
-  margin: 0 0 0 15px;
+  margin: 0 15px 79px;
 }
 
 .photo-box {
-  display: block;
-  width: 100%;
-  max-width: 220px;
-  margin: 0 0 26px;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto 26px;
   border: 7px solid #FFF;
   border-radius: 121px;
+}
+
+.photo {
+  display: block;
+  max-width: 100%;
 }
 
 .name {
@@ -571,8 +567,243 @@ h4 {
   opacity: .85;
 }
 
+#hamburger-menu--btn {
+  display: none;
+}
+
 /* SVG */
 
 .invisible {
   display: none;
+}
+
+/* Media Queries */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  header,
+  .main-box {
+    width: 100%;
+    margin: 0;
+  }
+
+  .filter {
+    padding: 40px 30px 140px;
+  }
+
+  .main-menu a {
+    padding: 10px;
+  }
+
+  .expertise-image--block img {
+    height: 100%;
+  }
+
+  .about-info strong {
+    margin: 10px 0;
+  }
+
+  .logo:hover,
+  .logo:active,
+  .logo:focus,
+  .media:hover,
+  .media:active,
+  .media:focus {
+    opacity: 1;
+  }
+
+  a:hover,
+  a:active,
+  a:focus {
+    color: #222;
+  }  
+}
+
+@media (max-width: 1023.98px) {
+  .info-even,
+  .info-odd {
+    margin: 0 38px;
+  }
+
+  .about-photo {
+    width: 670px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .about-box {
+    justify-content: flex-start;
+    max-width: 60%;
+    margin: 0 auto 30px;
+  }
+
+  .even .about-photo,
+  .odd .about-photo, 
+  .info-even, 
+  .info-odd {
+    order: 0;
+  }
+
+  .info-even,
+  .info-odd {
+    margin: 0 0 0 38px;
+  }
+
+  .about-photo {
+    width: auto;
+  }
+
+  .about-photo:after {
+    content: none;
+  }
+
+  .info-even {
+    text-align: left;
+  }
+
+  .about-etc {
+    margin: 0 auto;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .site-description h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .about-etc {
+    margin: 0 auto;
+  }
+
+  #hamburger-menu--btn {
+    position: relative;
+    z-index: 2;
+    display: block;
+    border: none;
+    outline: 0 none;
+    background: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-menu--btn:hover,
+  #hamburger-menu--btn:active,
+  #hamburger-menu--btn:focus {
+    background: none;
+    opacity: 1;
+  }
+
+  .main-menu {
+    display: none;
+  }
+
+  .main-menu.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 100px 0 30px;
+    background-color: #222;
+    border-bottom: 3px solid #FFF;
+    opacity: .95;
+  }
+
+  .main-menu a {
+    font-weight: 700;
+  }
+
+  .main-menu a,
+  .main-menu a:last-child {
+    padding: 20px 30px;
+  }
+
+  .mobile-icon {
+    width: 32px;
+    height: 32px;
+    fill: #FFF;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .site-description h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .serv-items {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .serv-item {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  .expertise-image--block,
+  .portfolio-image--box {
+    display: none;
+  }
+
+  .expertise-info,
+  .services,
+  .team {
+    max-width: 100%;
+    padding: 80px;
+    margin: 0;
+  }
+
+  .portfolio-main {
+    background-size: 100%;
+    margin: 80px;
+  }
+
+  .iconed-list--item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .portfolio-info {
+    max-width: 100%;
+  }
+
+  .psample-item {
+    max-width: 50%;
+  }
+
+  .about-box {
+    max-width: 80%;
+  }
+
+  .about-etc {
+    padding: 35px 30px 30px;
+    font-size: 12px;
+    border-radius: 77px;
+  }
+
+  .team-list {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .read-more {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
 }
