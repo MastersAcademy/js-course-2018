@@ -12,12 +12,14 @@
     <div class="heading">
         <header class="heading__top">
         <a href="#home"><img class="heading__img_logo" src="images/logo.png" alt="logo"></a>
+        <label class="labelMobileMenu" for="menuMobile">Menu</label>
+        <input class="checkboxMenu" id="menuMobile" type="checkbox">
             <nav class="heading__menu">
                     <a class="heading__menu_box" href="#home">Home</a>
                     <a class="heading__menu_box" href="#services">Services</a>
-                    <a class="heading__menu_box" href="#">Portfolio</a>
-                    <a class="heading__menu_box" href="#">About</a>
-                    <a class="heading__menu_box" href="#">Team</a>
+                    <a class="heading__menu_box" href="#portfolio">Portfolio</a>
+                    <a class="heading__menu_box" href="#about"> About</a>
+                    <a class="heading__menu_box" href="#team">Team</a>
                     <a class="heading__menu_box" href="#">Contact</a>
             </nav>
         </header>
@@ -26,7 +28,7 @@
             <p class="heading__text">We are a digital agency that believes in building things that are  meaningful!</p>
         </section>
     </div>
-    <main class="coreServices" id="services">
+    <main id="services">
         <h2 class="coreServices__title section_title title">Core Services</h2>
         <section class="coreServices__tasksBlock">
             <div class="coreServices__task">
@@ -92,7 +94,7 @@
         </section>
         <img class="otherExpertise_img" src="images/otherExpertise.png" alt="expertise">
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <h2 class="section_title portfolio_title title">Amazing Portfolio</h2>
         <div class="portfolio_contentWrap">
             <p class="box_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
@@ -135,7 +137,7 @@
         <img class="portfolio__img" src="images/Image-5.png" alt="bottles">
         <img class="portfolio__img" src="images/Image-6.png" alt="walkers">
     </div>
-    <section class="aboutUs">
+    <section id="about" class="aboutUs">
         <h2 class = "section_title aboutUs__title title">About Us</h2>
         <figure class="aboutUs__box aboutUs__box--left">
             <div class="aboutUs__box_content content-left">
@@ -190,33 +192,33 @@
             <h4 class="lastbox_text"> Our <br> Story <br> Continues <br>...</h4>
         </div>
     </section>
-    <section class="awesomeTeam">
+    <section id="team" class="awesomeTeam">
         <h3 class="aboutUs__title section_title title">Awesome Team</h3>
             <div class="awesomeTeam_wrap">
             <div>
                 <div class="awesomeTeam_boxForPhoto"></div>
                 <p class="awesomeTeam_dep box_text"><span class="awesomeTeam_FullName">Jimmy Letterman</span><br>Marketer</p>
                 <div class="socialNet_boxWrap">
-                    <div class="socialNet_box"><img class="socialNet" src="images/Twitter.png" alt="Twitter"></div>
-                    <div class="socialNet_box"><img class="socialNet" src="images/Facebook.png" alt="Facebook"></div>
-                    <div class="socialNet_box"><img class="socialNet" src="images/Pinterest.png" alt="Pinterest"></div>
+                    <a class="socialNet_box" href="https://twitter.com"><img class="socialNet" src="images/Twitter.png" alt="Twitter"></a>
+                    <a class="socialNet_box" href="https://www.facebook.com/"><img class="socialNet" src="images/Facebook.png" alt="Facebook"></a>
+                    <a class="socialNet_box" href="https://www.pinterest.com/"><img class="socialNet" src="images/Pinterest.png" alt="Pinterest"></a>
                 </div>
             </div>
             <div>
                 <div class="awesomeTeam_boxForPhoto"></div>
                 <p class="awesomeTeam_dep box_text"><span class="awesomeTeam_FullName">Rico Massimo</span><br>Coder</p>
                 <div class="socialNet_boxWrap">
-                    <div class="socialNet_box"><img class="socialNet" src="images/Twitter.png" alt="Twitter"></div>
-                    <div class="socialNet_box"><img class="socialNet" src="images/Facebook.png" alt="Facebook"></div>
-                    <div class="socialNet_box"><img class="socialNet" src="images/Google+.png" alt="Google+"></div>
+                    <a class="socialNet_box" href="https://twitter.com"><img class="socialNet" src="images/Twitter.png" alt="Twitter"></a>
+                    <a class="socialNet_box" href="https://www.facebook.com/"><img class="socialNet" src="images/Facebook.png" alt="Facebook"></a>
+                    <a class="socialNet_box" href="https://plus.google.com/"><img class="socialNet" src="images/Google+.png" alt="Google+"></a>
                 </div>
                 </div>
             <div>
                 <div class="awesomeTeam_boxForPhoto"></div>
                 <p class="awesomeTeam_dep box_text"><span class="awesomeTeam_FullName">Lisa Mason</span><br>Graphic Designer</p>
                 <div class="socialNet_boxWrap">
-                    <div class="socialNet_box"><img class="socialNet" src="images/Facebook.png" alt="Facebook"></div>
-                    <div class="socialNet_box"><img class="socialNet" src="images/Pinterest.png" alt="Pinterest"></div>
+                    <a class="socialNet_box" href="https://www.facebook.com/"><img class="socialNet" src="images/Facebook.png" alt="Facebook"></a>
+                    <a class="socialNet_box" href="https://www.pinterest.com/"><img class="socialNet" src="images/Pinterest.png" alt="Pinterest"></a>
                 </div>
             </div>
             <p class="awesomeTeam__text ">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit
