@@ -12,7 +12,8 @@ body {
 .dream-section {
   background: url("./images/background.jpg") no-repeat;
   background-size: cover;
-  max-width: 1024px;
+  width: 1024px;
+  margin: 0 auto;
 }
 
 .dream-section-overlay {
@@ -42,7 +43,7 @@ body {
   padding-left: 100px;
 }
 
-.header-container a {
+.menu-element {
   color: #FFF;
   margin-right: 30px;
   text-transform: uppercase;
@@ -50,7 +51,7 @@ body {
   text-decoration: none;
 }
 
-.menu a:hover {
+.menu-element:hover {
   background-color: #35C2F8;
 }
 
@@ -65,7 +66,9 @@ body {
   text-transform: uppercase;
 }
 
-.underline {
+.dream-section-title:after {
+  content: "";
+  display: block;
   width: 111px;
   height: 2px;
   background-color: #35C2F8;
@@ -81,7 +84,8 @@ body {
 }
 
 .services-section {
-  max-width: 1024px;
+  width: 1024px;
+  margin: 0 auto;
 }
 
 .services-title {
@@ -89,6 +93,17 @@ body {
   padding-top: 50px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.services-title:after {
+  content: "";
+  display: block;
+  width: 111px;
+  height: 2px;
+  background-color: #35C2F8;
+  margin: 0 auto;
+  margin-top: 51px;
+  margin-bottom: 51px
 }
 
 .services-list {
@@ -108,13 +123,13 @@ body {
   list-style: none;
 }
 
-.services-item h2 {
+.services-item_title {
   text-transform: uppercase;
   font-size: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.services-item p {
+.services-item_note {
   color: #777;
 }
