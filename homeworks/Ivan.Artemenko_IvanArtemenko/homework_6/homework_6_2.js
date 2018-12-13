@@ -5,12 +5,12 @@ class Horse {
     }
 }
 
-class Raser extends Horse {
+class Racer extends Horse {
     constructor(name, breed) {
         super(name, breed);
         this.speed = 0;
         this.setSpeed();
-        this.distans = 0;
+        this.distance = 0;
     }
 
     setSpeed() {
@@ -18,53 +18,53 @@ class Raser extends Horse {
     }
 
     run() {
-        for (let time = 1; time <= 10; time++) {
-            setTimeout(() => {
-                this.distans += this.speed;
-                this.setSpeed();
-            }, 1000 * time);
-        }
+        this.timerId = setInterval(() => {
+            this.distance += this.speed;
+            this.setSpeed();
+        }, 1000);
     }
 }
 
-class Rase {
+class Race {
     constructor() {
         this.horses = [];
     }
 
-    createRase() {
-        const dataHorses = [
-            { name: 'Cleopatra', breed: 'Australian Pony' },
-            { name: 'Mary', breed: 'Connemara pony' },
-            { name: 'Betsy', breed: 'Gotland Pony' },
-            { name: 'Mulan', breed: 'Fell Pony' },
-            { name: 'William', breed: 'Exmoor pony' },
-            { name: 'Caesar', breed: 'Welsh Pony' },
-            { name: 'Napoleon', breed: 'Tokara Pony' },
-            { name: 'Lincoln', breed: 'Noma pony' },
-            { name: 'Genghis Khan', breed: 'Java Pony' },
-            { name: 'Clover', breed: 'Chincoteague Pony' },
-        ];
-        dataHorses.forEach((raser) => {
-            this.horses.push(new Raser(raser.name, raser.breed));
-        });
+    createRace(dataHorses) {
+        for (let i = 0; i < dataHorses.length; i++) {
+            this.horses.push(new Racer(dataHorses[i].name, dataHorses[i].breed));
+        }
     }
 
-    startRase() {
+    startRace() {
         this.horses.forEach(raser => raser.run());
         for (let counter = 1; counter <= 5; counter++) {
             setTimeout(() => {
-                this.horses.forEach(raser => console.log(`Name hors ${raser.name} || Breed hors ${raser.breed} || Distans ${raser.distans}`));
+                this.horses.forEach(raser => console.log(`Name hors ${raser.name} || Breed hors ${raser.breed} || Distans ${raser.distance}`));
             }, 2000 * counter);
         }
+
         setTimeout(() => {
-            this.horses.sort((first, two) => two.distans - first.distans);
+            this.horses.sort((first, two) => two.distance - first.distance);
             console.log('WINNER');
-            console.log(`|| Name hors ${this.horses[0].name} || Bred hors ${this.horses[0].breed} || Distans ${this.horses[0].distans}`);
-        }, 11000);
+            console.log(`|| Name hors ${this.horses[0].name} || Bred hors ${this.horses[0].breed} || Distans ${this.horses[0].distance}`);
+        }, 10000);
     }
 }
 
-const rase = new Rase();
-rase.createRase();
-rase.startRase();
+const dataHorses = [
+    { name: 'Cleopatra', breed: 'Australian Pony' },
+    { name: 'Mary', breed: 'Connemara pony' },
+    { name: 'Betsy', breed: 'Gotland Pony' },
+    { name: 'Mulan', breed: 'Fell Pony' },
+    { name: 'William', breed: 'Exmoor pony' },
+    { name: 'Caesar', breed: 'Welsh Pony' },
+    { name: 'Napoleon', breed: 'Tokara Pony' },
+    { name: 'Lincoln', breed: 'Noma pony' },
+    { name: 'Genghis Khan', breed: 'Java Pony' },
+    { name: 'Clover', breed: 'Chincoteague Pony' },
+];
+
+const rase = new Race();
+rase.createRace(dataHorses);
+rase.startRace();
