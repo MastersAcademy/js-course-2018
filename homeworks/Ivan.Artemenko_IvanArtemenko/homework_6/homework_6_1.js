@@ -1,35 +1,34 @@
 const user = {};
-Object.defineProperty(user, 'name', {
-    enumerable: true,
-    writeble: true,
-    configurable: true,
-    set: (value) => {
-        const capititalizeWord = word => word[0].toUpperCase() + word.substring(1);
-        this.name = value.toLowerCase()
-            .split(/\s+/)
-            .map(capititalizeWord)
-            .join(' ')
-            .split(/-/)
-            .map(capititalizeWord)
-            .join('-');
+const reg1 = /\b[a-z]/g;
+const reg2 = /^\+\d*|\d/g;
+Object.defineProperties(user, {
+    ollName: {
+        get() {
+            return this.name;
+        },
+        set(value) {
+            this.name = value.toLowerCase().replace(reg1, str => str.toUpperCase());
+        },
+        enumerable: true,
+        writeble: true,
+        configurable: true,
     },
-    get: () => this.name,
+    userPhone: {
+        get() {
+            return this.phone;
+        },
+        set(value) {
+            this.phone = value.match(reg2).join('');
+        },
+        enumerable: true,
+        writeble: true,
+        configurable: true,
+    },
 });
 
-Object.defineProperty(user, 'phone', {
-    enumerable: true,
-    writeble: true,
-    configurable: true,
-    set: (value) => {
-        const plus = value[0] === '+' ? '+' : '';
-        this.phone = plus + value.split(/\D/).join('');
-    },
-    get: () => this.phone,
-});
-
-user.name = 'aNNa-maRia Johns';
-console.log(user.name);
-user.phone = '+38(096)-448-20-89';
-console.log(user.phone);
-user.phone = '+38(096)w448=20+89';
-console.log(user.phone);
+user.ollName = 'aNNa-maRia Johns';
+console.log(user.ollName);
+user.userPhone = '+38(096)-448-20-89';
+console.log(user.userPhone);
+user.userPhone = '+38(096)w448=20+89';
+console.log(user.userPhone);
