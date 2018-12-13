@@ -4,11 +4,14 @@
 }
 
 body {
-  margin: 0 auto;
-  width: 1024px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #FFF;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
 /* ---SECTION Title --- */
@@ -22,11 +25,11 @@ body {
 }
 
 .logo__dreams {
-  margin: 40px 0 0 130px;
+  margin: 40px 0 0 10%;
 }
 
 .title-navigation {
-  margin: 50px 130px 0 70px;
+  margin: 50px 10% 0 70px;
 }
 
 .navigation {
@@ -52,8 +55,25 @@ body {
   color: #35E9EB;
 }
 
+.responsive-menu {
+  display: none;
+  right: 10%;
+  position: fixed;
+  padding: 6px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.responsive-menu:hover {
+  cursor: pointer;
+  color: #35E9EB;
+}
+
 .title-content {
-  padding-top: 242px;
+  padding-top: 225px;
   text-align: center;
 }
 
@@ -78,7 +98,7 @@ body {
   font-size: 16px;
   color: #CCC;
   line-height: 1.7;
-  padding-bottom: 140px;
+  padding-bottom: 100px;
 }
 
 /* --- SECTION Core Services ---*/
@@ -153,12 +173,13 @@ body {
 .types-of-expertise {
   margin-top: 55px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
 .types-of-expertise__item {
-  width: 250px;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
 }
 
 .types-of-expertise__headline {
@@ -247,7 +268,7 @@ body {
 /* --- SECTION Amazing Portfolio --- */
 
 .amazing-portfolio {
-  margin-left: 50px;
+  padding-left: 50px;
   width: 100%;
   display: flex
 }
@@ -346,26 +367,24 @@ body {
 
 /* --- SECTION Portfolio Photos --- */
 
-.portfolio-content {
-  width: 100%;
-}
-
 .portfolio-photos {
+  text-align: center;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .portfolio-photos__item {
-  width: 341px;
-  height: 256px;
+  flex-grow: 2;
+  flex-basis: 300px;
+  max-width: 350px;
 }
 
 /* photos */
 
 .portfolio-photos__img {
-  width: 341px;
-  height: 256px;
+  height: 100%;
+  width: 100%;
   opacity: 1;
 }
 
@@ -397,12 +416,18 @@ body {
   border-bottom: 2px solid #35E9EB;
 }
 
+.about-content {
+  margin: 0 auto;
+}
+
 /* Our Humble Beginnings */
 
 .our-humble {
   margin-top: 80px;
-  margin-left: 13.5%;
   display: flex;
+  width: 58%;
+  justify-content: flex-end;
+  margin-bottom: 100px;
 }
 
 .our-content {
@@ -433,9 +458,10 @@ body {
 /* Facing Startup Battles */
 
 .facing-startup {
-  margin-top: 80px;
-  margin-left: 42%;
   display: flex;
+  width: 86%;
+  justify-content: flex-end;
+  margin-bottom: 100px;
 }
 
 .facing-content {
@@ -464,9 +490,10 @@ body {
 /* Enter The Dark Days */
 
 .dark-days {
-  margin-top: 80px;
-  margin-left: 13.5%;
   display: flex;
+  width: 58%;
+  justify-content: flex-end;
+  margin-bottom: 100px;
 }
 
 .dark-content {
@@ -497,9 +524,9 @@ body {
 /* Our Triumph */
 
 .our-triumph {
-  margin-top: 80px;
-  margin-left: 42%;
   display: flex;
+  width: 86%;
+  justify-content: flex-end;
 }
 
 .triumph-content {
@@ -525,9 +552,12 @@ body {
   border: 3px solid #F1F1F1
 }
 
-.round {
-  margin-left: 42%;
+.our-story {
   margin-top: 80px;
+  text-align: center;
+}
+
+.round {
   width: 150px;
   height: 150px;
   text-transform: uppercase;
@@ -761,4 +791,248 @@ body {
   margin-top: 40px;
   margin-bottom: 25px;
   border-bottom: 1px solid #FFF;
+}
+
+/*   --- RESPONSIVE ---   */
+
+@media (max-width: 991.98px) {
+
+  .navigation {
+    display: none;
+  }
+
+  .responsive-menu {
+    display: block;
+  }
+
+  .other-expertise {
+    padding-bottom: 50px;
+  }
+
+  .other-expertise__item {
+    display: none;
+  }
+
+  .types-of-expertise {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .feedback {
+    margin: 25px 50px 0;
+  }
+
+  .our-humble {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .our-content {
+    margin-right: 0;
+  }
+
+  .our-content__headline {
+    text-align: center;
+  }
+
+  .our-content__paragraph {
+    text-align: center;
+  }
+
+  .our-humble__img {
+    order: -1;
+    margin: 0 auto;
+  }
+
+  .facing-startup {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .facing-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .facing-startup__img {
+    margin: 0 auto;
+  }
+
+  .dark-days {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dark-content {
+    margin-right: 0;
+  }
+
+  .dark-content__headline {
+    text-align: center;
+  }
+
+  .dark-content__paragraph {
+    text-align: center;
+  }
+
+  .dark-days__img {
+    order: -1;
+    margin: 0 auto;
+  }
+
+  .our-triumph {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .triumph-content {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .our-triumph__img {
+    margin: 0 auto;
+  }
+
+  .round {
+    align-items: center;
+  }
+}
+
+@media (max-width: 899.98px) {
+
+  .portfolio-photos__item {
+    flex-basis: 250px;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .services {
+    flex-direction: column;
+  }
+
+  .amazing-portfolio__item {
+    display: none;
+  }
+
+  .team__img {
+    width: 150px;
+    height: auto;
+  }
+
+  .team-social__img {
+    width: 20px;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 749.98px) {
+
+  .portfolio-photos__item {
+    flex-basis: 200px;
+  }
+}
+
+@media (max-width: 690.98px) {
+
+  .types-of-expertise {
+    flex-direction: column;
+  }
+
+  .types-of-expertise__item {
+    width: 100%;
+  }
+
+  .cloud-control {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width:575.98px) {
+
+  .other-expertise-content__headline {
+    width: 100px;
+  }
+
+  .other-expertise-content__paragraph {
+    width: 300px;
+  }
+
+  .amazing-portfolio__headline {
+    width: 100px;
+  }
+
+  .amazing-portfolio__paragraph1 {
+    width: 300px;
+  }
+
+  .amazing-portfolio__paragraph2 {
+    width: 300px;
+  }
+
+  .advantages-of-portfolio {
+    width: 250px;
+  }
+
+  .team {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .list-contacts {
+    flex-wrap: nowrap;
+    height: 200px;
+  }
+
+  .contacts-form {
+    width: 350px;
+  }
+}
+
+@media (max-width:450.98px) {
+
+  .other-expertise-content__paragraph {
+    width: 250px;
+  }
+
+  .amazing-portfolio__paragraph1 {
+    width: 250px;
+  }
+
+  .amazing-portfolio__paragraph2 {
+    width: 250px;
+  }
+
+  .awesome-team__paragraph {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .contact-us-content__paragraph {
+    width: 250px;
+  }
+
+  .contacts-form {
+    width: 290px;
+  }
+}
+
+@media (max-width: 399.98px) {
+
+  .portfolio-photos__item {
+    flex-basis: 150px;
+  }
+}
+
+@media (max-width: 376.98px) {
+
+  .contacts-form {
+    width: 225px;
+  }
+
+  .types-of-expertise__item {
+    width: 85%;
+  }
 }
