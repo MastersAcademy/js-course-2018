@@ -38,7 +38,7 @@
     "clearMocks": true,
     "testEnvironment": "node",
     "testMatch": [
-      "**/src/**/*.test.js"
+      "**/*.test.js"
     ]
   },
   "dependencies": {
