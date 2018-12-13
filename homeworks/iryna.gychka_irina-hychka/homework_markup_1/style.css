@@ -1,0 +1,578 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #777;
+  background-color: #F1F1F1;
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #222;
+}
+
+a:hover,
+a:active,
+a:focus {
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+header,
+main,
+section,
+footer,
+div,
+ul,
+ul li,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+
+header {
+  max-width: 1024px;
+  margin: 30px auto 0;
+  background-image: url("images/header-bg.png");
+  background-size: cover;
+}
+
+.filter {
+  padding: 40px 130px 140px;
+  background-color: #000;
+  opacity: .75;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 140px;
+}
+
+.logo,
+.logo img {
+  display: block;
+}
+
+.logo:hover,
+.logo:active,
+.logo:focus {
+  opacity: .9;
+}
+
+.main-menu {
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-menu a {
+  padding: 10px 25px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.main-menu a:last-child {
+  padding: 10px 0 10px 25px;
+}
+
+.main-menu a:hover,
+.main-menu a:active,
+.main-menu a:focus {
+  color: #35C2F8;
+  opacity: 1;
+}
+
+.site-description {
+  text-align: center;
+}
+
+.site-description h2 {
+  padding: 0 0 51px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.site-description p {
+  padding: 54px 0 0;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  color: #CCC;
+}
+
+/* Main Section */
+/* Services Section */
+
+.main-box {
+  max-width: 1024px;
+  margin: 0 auto 30px;
+  background-color: #FFF;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.services-title,
+.about-title,
+.team-title {
+  margin: 0 0 80px;
+  padding: 0 0 40px;
+}
+
+.lined {
+  background-image: url("images/line.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/* Services section */
+
+.services,
+.team {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.serv-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.serv-item {
+  width: 30%;
+}
+
+.serv-link {
+  display: block;
+  padding: 94px 0 19px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #222;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.serv-link:hover,
+.serv-link:active,
+.serv-link:focus {
+  color: #35C2F8;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.serv-link.serv-icon1 {
+  background-image: url("images/serv-design-icon.png");
+}
+
+.serv-link.serv-icon2 {
+  background-image: url("images/serv-dev-icon.png");
+}
+
+.serv-link.serv-icon3 {
+  background-image: url("images/serv-support-icon.png");
+}
+
+.serv-item .description {
+  color: #888;
+  font-family: inherit;
+}
+
+/* Expertise section */
+
+.expertise-block,
+.team {
+  background-color: #F7F7F7;
+}
+
+.expertise-block {
+  display: flex;
+}
+
+.expertise-image--block {
+  overflow: hidden;
+  max-width: 40%;
+}
+
+.expertise-image--block img {
+  display: block;
+}
+
+.expertise-info {
+  max-width: 60%;
+  margin: 80px 0 80px 80px;
+}
+
+.expertise-title {
+  padding: 0 0 20px
+}
+
+.expertise-info p {
+  padding: 0 0 20px;
+}
+
+.iconed-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.expertise-list--item {
+  width: 46%;
+  margin: 0 2% 0 0;
+}
+
+.iconed-list--item {
+  display: flex;
+}
+
+.iconed-list--item svg {
+  margin: 0 10px 0 0;
+}
+
+.svg-star {
+  width: 31px;
+  height: 30px;
+}
+
+.svg-gear {
+  width: 30px;
+  height: 30px;
+}
+
+.svg-cloud {
+  width: 42px;
+  height: 29px;
+}
+
+.svg-lock {
+  width: 27px;
+  height: 39px;
+}
+
+.svg-pie {
+  width: 30px;
+  height: 29px;
+}
+
+.info {
+  margin: 5px 0 0;
+}
+
+h4 {
+  font-weight: 400;
+  color: #222;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info h4 {
+  margin: 0 0 10px;
+}
+
+.read-more {
+  display: inline-flex;
+  margin: 10px 0 0;
+  padding: 20px 24px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  background-color: #FFF;
+  border-radius: 50px;
+}
+
+.read-more:hover,
+.read-more:active,
+.read-more:focus {
+  color: #35C2F8;
+  opacity: 1;
+  background-color: #FFF;
+  text-shadow: none;
+}
+
+/* Portfolio section */
+
+.portfolio-main {
+  display: flex;
+  margin: 80px 0 80px 80px;
+  background-image: url("images/portfolio-bg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 50%;
+}
+
+.portfolio-info {
+  max-width: 45%;
+}
+
+.portfolio-title {
+  margin: 0 0 20px;
+}
+
+.portfolio-info p {
+  margin: 0 0 10px;
+}
+
+.portfolio-list--item {
+  width: 100%;
+  margin: 0 0 10px;
+}
+
+.portfolio-list--item:last-child {
+  margin: 0;
+}
+
+.portfolio-list--item .info h4 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.portfolio-image--box {
+  max-width: 55%;
+  align-self: center;
+}
+
+.portfolio-image--box img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Portfolio samples list */
+
+.portfolio-sample--list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.psample-item {
+  width: 33.33%;
+}
+
+.psample-item img {
+  display: block;
+  max-width: 100%;
+}
+
+/* About Us Section */
+
+.about-us {
+  margin: 80px 0;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-box {
+  display: flex;
+  justify-content: center;
+}
+
+.info-odd {
+  order: 2;
+  margin: 0 0 0 46px;
+}
+
+.info-even {
+  order: 1;
+  width: 301px;
+  margin: 0 38px 0 0;
+  text-align: right;
+}
+
+.about-info strong {
+  margin: 10px 0 20px;
+  font-weight: 400;
+}
+
+.about-info strong,
+.about-info time {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.about-info p {
+  max-width: 304px;
+}
+
+.about-photo {
+  position: relative;
+  width: 527px;
+  padding: 0 0 94px;
+}
+
+.odd .about-photo {
+  text-align: right;
+  order: 1;
+}
+
+.even .about-photo {
+  order: 2;
+}
+
+.about-photo img {
+  display: inline-flex;
+  border: 7px solid #F1F1F1;
+  border-radius: 91px;
+}
+
+.about-photo:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  width: 3px;
+  height: 100px;
+  background-color: #F1F1F1;
+}
+
+.even .about-photo:after {
+  left: 90px;
+}
+
+.odd .about-photo:after {
+  right: 90px;
+}
+
+.about-etc {
+  padding: 45px 35px 30px;
+  margin: 0 0 94px;
+  border: 7px solid #F1F1F1;
+  border-radius: 91px;
+  background-color: #35C2F8;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Team Section */
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 69px;
+}
+
+.team-item {
+  margin: 0 15px;
+}
+
+.team-item:first-child {
+  margin: 0 15px 0 0;
+}
+
+.team-item:last-child {
+  margin: 0 0 0 15px;
+}
+
+.photo-box {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 0 26px;
+  border: 7px solid #FFF;
+  border-radius: 121px;
+}
+
+.name {
+  font-weight: 700;
+  color: #222;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.occupation {
+  margin: 0 0 14px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.media-item {
+  margin: 0 5px;
+}
+
+.media {
+  display: flex;
+  width: 41px;
+  height: 41px;
+  text-indent: -9999px;
+  background-color: #000;
+  background-image: url("images/media-sprite.png");
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.tw,
+.tw:hover,
+.tw:active,
+.tw:focus {
+  background-position: -81px 5px;
+}
+
+.fb,
+.fb:hover,
+.fb:active,
+.fb:focus {
+  background-position: 12px 4px;
+}
+
+.pin,
+.pin:hover,
+.pin:active,
+.pin:focus {
+  background-position: -129px 5px;
+}
+
+.google,
+.google:hover,
+.google:active,
+.google:focus {
+  background-position: -31px 5px;
+}
+
+.media:hover,
+.media:active,
+.media:focus {
+  background-color: #000;
+  background-image: url("images/media-sprite.png");
+  background-repeat: no-repeat;
+  opacity: .85;
+}
+
+/* SVG */
+
+.invisible {
+  display: none;
+}
