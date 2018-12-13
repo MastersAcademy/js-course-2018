@@ -43,7 +43,7 @@ body {
   padding-left: 100px;
 }
 
-.header-container a {
+.menu-element {
   color: #FFF;
   margin-right: 30px;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ body {
   text-decoration: none;
 }
 
-.menu a:hover {
+.menu-element:hover {
   background-color: #35C2F8;
 }
 
@@ -123,14 +123,14 @@ body {
   list-style: none;
 }
 
-.services-item h2 {
+.services-item_title {
   text-transform: uppercase;
   font-size: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.services-item p {
+.services-item_note {
   color: #777;
 }
 
@@ -404,8 +404,9 @@ body {
     margin: 0 auto;
   }
 
-  .header-container a {
+  .menu-element {
     display: block;
+    padding-top: 10px;
   }
 
   .logo {
@@ -419,10 +420,6 @@ body {
     padding-right: 10px;
     margin-top: 10px;
     margin-right: initial;
-  }
-
-  .menu-element {
-    padding-top: 10px;
   }
 
   .dream-section-title {
