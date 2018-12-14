@@ -5,38 +5,37 @@ const RANDOM = {
     MAX: 1 - Number.EPSILON,
 };
 
-describe('Fibonacci test', () => {
-    beforeAll(() => {
-        // eslint-disable-next-line no-extend-native
-        Math.random = jest.fn();
-        Math.random.mockReturnValue(RANDOM.MAX);
-    });
-
-    test('Returns an array', () => {
-        expect(Array.isArray(getFibonacciSequence())).toBeTruthy();
-    });
-    test('Array is not empty', () => {
-        expect(getFibonacciSequence()).not.toHaveLength(0);
-    });
+describe('Fibonacci seqence test', () => {
     test('First element is 0', () => {
         expect(getFibonacciSequence()[0]).toBe(0);
     });
     test('Second element is 1', () => {
         expect(getFibonacciSequence()[1]).toBe(1);
     });
-    test(`Last element is 89 if random() returns ${RANDOM.MAX}`, () => {
-        expect(getFibonacciSequence().pop()).toBe(89);
-    });
-    test(`Last element is 34 if random() returns ${RANDOM.MIN}`, () => {
-        Math.random.mockReturnValueOnce(RANDOM.MIN);
-        expect(getFibonacciSequence().pop()).toBe(34);
-    });
-    test('Array contains proper fibonacci sequence', () => {
+    test('Fibonacci sequence is correct', () => {
         const testSequence = getFibonacciSequence();
         expect(testSequence.length).toBeGreaterThan(2);
 
         for (let i = 2; i < testSequence.length; i++) {
             expect(testSequence[i - 2] + testSequence[i - 1]).toBe(testSequence[i]);
         }
+    });
+});
+
+describe('Random seqence test', () => {
+    beforeAll(() => {
+        // eslint-disable-next-line no-extend-native
+        Math.random = jest.fn();
+        Math.random.mockReturnValue(RANDOM.MAX);
+    });
+    afterAll(() => {
+        Math.random.mockClear();
+    });
+    test('Last element of the largest sequence is 89', () => {
+        expect(getFibonacciSequence().pop()).toBe(89);
+    });
+    test('Last element of the smallest sequence is 34', () => {
+        Math.random.mockReturnValueOnce(RANDOM.MIN);
+        expect(getFibonacciSequence().pop()).toBe(34);
     });
 });
