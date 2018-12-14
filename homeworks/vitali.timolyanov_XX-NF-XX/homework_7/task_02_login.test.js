@@ -1,65 +1,68 @@
 const Login = require('./task_02_login');
 
-describe('Login test', () => {
-    describe('Method and arguments', () => {
-        test('Object has "login" property', () => {
-            expect(new Login()).toHaveProperty('login');
-        });
-        test('"login" property is a method', () => {
-            expect(typeof (new Login().login)).toBe('function');
-        });
-        test('Method returns an error when called with less than 2 arguments', () => {
-            expect(new Login().login()).not.toBe('success');
-            expect(new Login().login('admin')).not.toBe('success');
-        });
-    });
+const testLogins = [{
+    login: 'test',
+    password: '123',
+}, {
+    login: 'user',
+    password: '321',
+}];
 
-    describe('Login and password', () => {
-        test('Returns an error when password is wrong or empty', () => {
-            expect(new Login().login('admin', '')).not.toBe('success');
-            expect(new Login().login('admin', 'Admin')).not.toBe('success');
-        });
-        test('Returns an error when name is wrong or empty', () => {
-            expect(new Login().login('', 'admin')).not.toBe('success');
-            expect(new Login().login('!@#$%_(*&^', 'admin')).not.toBe('success');
-        });
-        test('Returns "success" when called with proper name (admin) and password (admin)', () => {
-            expect(new Login().login('admin', 'admin')).toBe('success');
-        });
+describe('User existence method', () => {
+    const login = new Login();
+    login.logins = testLogins;
+    test('Returns true when user exists', () => {
+        expect(login.isUserExists(testLogins[0].login)).toBeTruthy();
     });
+    test('Returns false when user does not exist', () => {
+        expect(login.isUserExists('')).toBeFalsy();
+    });
+});
 
-    describe('Login locking', () => {
-        beforeAll(() => {
-            jest.useFakeTimers();
-        });
-        test('Login is locked if failed more than 3 times', () => {
-            const login = new Login();
-            expect(login.login('admin', 'qwe')).not.toBe('success');
-            expect(login.login('admin', '123')).not.toBe('success');
-            expect(login.login('admin', 'asdf')).not.toBe('success');
-            expect(login.login('admin', '321')).not.toBe('success');
-            expect(login.login('admin', 'admin')).not.toBe('success');
-        });
-        test('Login is locked only for a certain user', () => {
-            const login = new Login();
-            expect(login.login('admin', 'qwe')).not.toBe('success');
-            expect(login.login('admin', '123')).not.toBe('success');
-            expect(login.login('admin', 'asdf')).not.toBe('success');
-            expect(login.login('admin', '321')).not.toBe('success');
-            expect(login.login('admin', 'admin')).not.toBe('success');
-            expect(login.login('zayka123', 'qwerty321')).toBe('success');
-        });
-        test('Login becomes available after 10 seconds', () => {
-            const login = new Login();
-            expect(login.login('admin', 'qwe')).not.toBe('success');
-            expect(login.login('admin', '123')).not.toBe('success');
-            expect(login.login('admin', 'asdf')).not.toBe('success');
-            expect(login.login('admin', '321')).not.toBe('success');
-            expect(login.login('admin', 'admin')).not.toBe('success');
-            jest.advanceTimersByTime(9500);
-            expect(login.login('admin', 'admin')).not.toBe('success');
-            jest.advanceTimersByTime(1000);
-            expect(login.login('admin', 'admin')).toBe('success');
-        });
+describe('Password correctness method', () => {
+    const login = new Login();
+    login.logins = testLogins;
+    test('Returns true when password is correct', () => {
+        expect(login.isPasswordCorrect(testLogins[0].login, testLogins[0].password)).toBeTruthy();
+    });
+    test('Returns false when password is wrong', () => {
+        expect(login.isPasswordCorrect(testLogins[0].login, '')).toBeFalsy();
+        expect(login.isPasswordCorrect(testLogins[0].login, '0A0')).toBeFalsy();
+    });
+});
+
+describe('Login method', () => {
+    const login = new Login();
+    login.logins = testLogins;
+    test('Returns "success" when login/password is correct', () => {
+        expect(login.login(testLogins[0].login, testLogins[0].password)).toBe('success');
+    });
+    test('Returns an error when login/password is not correct', () => {
+        expect(login.login('', testLogins[0].password)).not.toBe('success');
+        expect(login.login(testLogins[0].login, '')).not.toBe('success');
+    });
+});
+
+describe('Login locking', () => {
+    const login = new Login();
+    login.logins = testLogins;
+
+    beforeAll(() => {
+        jest.useFakeTimers();
+    });
+    test('Login is locked if failed more than 3 times', () => {
+        for (let i = 0; i <= 3; i++) {
+            expect(login.login(testLogins[0].login, '')).not.toBe('success');
+        }
+        expect(login.login(testLogins[0].login, testLogins[0].password)).not.toBe('success');
+    });
+    test('Login is not locked for another user', () => {
+        expect(login.login(testLogins[1].login, testLogins[1].password)).toBe('success');
+    });
+    test('Login becomes available after 10 seconds', () => {
+        jest.advanceTimersByTime(9500);
+        expect(login.login(testLogins[0].login, testLogins[0].password)).not.toBe('success');
+        jest.advanceTimersByTime(1000);
+        expect(login.login(testLogins[0].login, testLogins[0].password)).toBe('success');
     });
 });
