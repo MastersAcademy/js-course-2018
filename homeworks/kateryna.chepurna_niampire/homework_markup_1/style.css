@@ -99,6 +99,10 @@ div {
 
 /* title */
 
+.title {
+  margin-bottom: 135px;
+}
+
 .heading-title {
   text-align: center;
 }
@@ -112,7 +116,6 @@ div {
   margin-top: -420px;
 }
 
-
 .heading-title .underline {
   margin: 51px auto 0 ;
 }
@@ -122,7 +125,7 @@ div {
   font-size: 20px;
   line-height: 30px;
   margin-top: 53px;
-  margin-bottom: 135px
+  margin-bottom: 135px;
 }
 
 /* services */
@@ -571,59 +574,6 @@ div {
   list-style: none;
 }
 
-/* menu hover */
-
-.nav-icon {
-  display: none;
-  z-index: 2;
-  width: 35px;
-  height: 25px;
-  position: relative;
-  transform: rotate(0deg);
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-.nav-icon span {
-  display: block;
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  background: #DDD;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-
-.nav-icon span:nth-child(1) {
-  top: 0;
-}
-
-.nav-icon span:nth-child(2) {
-  top: 10px;
-}
-
-.nav-icon span:nth-child(3) {
-  top: 20px;
-}
-
-.nav-icon.open span:nth-child(1) {
-  top: 10px;
-  transform: rotate(135deg);
-}
-
-.nav-icon.open span:nth-child(2) {
-  opacity: 0;
-  left: 60px;
-}
-
-.nav-icon.open span:nth-child(3) {
-  top: 10px;
-  transform: rotate(-135deg);
-}
-
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
 
@@ -653,6 +603,72 @@ div {
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+  .heading {
+    height: 80vh;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    top: 0;
+    padding-left: 650px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .menu-togle__input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+
+  .menu-toggle__span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #CDCDCD;
+    border-radius: 3px;
+    z-index: 1;
+  }
+
+  .menu-toggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  .menu-toggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  .menu-toggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  .menu-toggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0, 0);
+  }
+
+  .menu-toggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  .nav-menu {
+    visibility: hidden;
+  }
 
   .heading-flex {
     padding: 22px 0;
@@ -660,35 +676,6 @@ div {
 
   .underline {
     display: none;
-  }
-
-  .nav {
-    position: absolute;
-    z-index: 2;
-    top: 10;
-    height: 70px;
-    left: 100;
-    right: 10;
-    margin-top: 0;
-    padding: 50px 50px 0 15px;
-    background-color: #2A2521;
-    transform: translateY(-100%);
-    display: none;
-  }
-
-  .nav.open {
-    transform: translateY(0);
-  }
-
-  .nav-icon {
-    display: block;
-  }
-
-  .nav-menu {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
   }
 
   .heading-title__h1 {
@@ -878,4 +865,3 @@ div {
     margin-left: 37px;
   }
 }
-
