@@ -31,10 +31,6 @@ ul {
   margin: 40px auto 0;
 }
 
-.mob-menu__btn {
-  display: none;
-}
-
 /* Offsets */
 
 .offset-right--xs {
@@ -77,6 +73,10 @@ ul {
 
 .logo {
   padding-top: 30px;
+}
+
+.mob-menu {
+  display: none;
 }
 
 .nav-menu {
@@ -141,7 +141,7 @@ ul {
 
 /* Services */
 
-.with--wrap {
+.wrap {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto 101px;
@@ -320,6 +320,7 @@ ul {
 
 .width--third {
   width: 33.33%;
+  height: 33.33%;
 }
 
 /* About boxes */
