@@ -7,6 +7,7 @@
 .body {
   padding: 0;
   margin: 0 auto;
+  max-width: 1400px;
   font-family: "Noto Sans", sans-serif;
   color: #777;
   font-size: 14px;
@@ -37,13 +38,13 @@
   align-items: center;
   max-width: 85%;
   margin: 0 auto;
+  padding: 50px;
   min-height: 120px;
 }
 
 .dreams-logo {
   max-width: 107px;
   max-height: 28px;
-  margin-left: 60px;
 }
 
 .company {
@@ -52,7 +53,9 @@
 
 .navigation {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -71,7 +74,13 @@
   opacity: 1;
 }
 
+.toggle,
+.toggle-btn {
+  display: none;
+}
+
 .intro {
+  padding: 50px;
   margin: 0 auto;
   min-height: 525px;
   display: flex;
@@ -116,6 +125,43 @@
   text-align: center;
 }
 
+@media (max-width: 991.98px) {
+
+  .header {
+    position: relative;
+  }
+
+  .navigation__link {
+    opacity: 1;
+  }
+
+  .toggle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #35C2F8;
+    border-radius: 50px;
+    color: #FFF;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .toggle:checked ~ .navigation {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: absolute;
+    background-color: #000;
+    z-index: 100;
+    top: 100px;
+    right: 50px;
+  }
+}
+
 /* Services */
 
 .services {
@@ -124,6 +170,7 @@
   justify-content: space-evenly;
   align-items: center;
   min-height: 535px;
+  padding: 50px;
 }
 
 .services__caption {
@@ -180,6 +227,22 @@
   text-align: center;
 }
 
+@media (max-width: 991.98px) {
+
+  .services__caption {
+    text-align: center;
+  }
+
+  .description {
+    margin: 40px;
+    flex-direction: column;
+  }
+
+  .description__image {
+    margin-bottom: 10px;
+  }
+}
+
 /* Expertise */
 
 .expertice {
@@ -191,18 +254,21 @@
   align-items: center;
 }
 
-.expertice-background {
+.expertice__background {
   height: 100%;
+  background-image: url("./images/expertise-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .expertice__content {
-  padding: 0 40px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: 62%;
   min-height: 440px;
+  max-width: 64%;
 }
 
 .expertice__caption {
@@ -278,6 +344,53 @@
   /* box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, .8); */
 }
 
+@media (max-width: 991.98px) {
+
+  .expertice__caption {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .expertice__caption:after {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 1px;
+    background-color: #35C2F8;
+    bottom: 0;
+    left: calc(50% - 55px);
+  }
+
+  .expertice-intro {
+    margin: 25px 0;
+    width: 100%;
+  }
+
+  .expertice {
+    justify-content: center;
+  }
+
+  .expertice-background {
+    display: none;
+  }
+
+  .expertice__content {
+    align-items: center;
+    max-width: 90%;
+  }
+
+  .expertice__table {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .expertice__table-element {
+    width: 80%;
+  }
+}
+
 /* Portfolio */
 
 .portfolio__main {
@@ -329,6 +442,47 @@
 .portfolio-photo {
   width: 33%;
   flex-grow: 1;
+}
+
+@media (max-width: 991.98px) {
+
+  .portfolio__caption {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .portfolio__caption:after {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 1px;
+    background-color: #35C2F8;
+    bottom: 0;
+    left: calc(50% - 55px);
+  }
+
+  .portfolio__main {
+    justify-content: center;
+  }
+
+  .portfolio__background-image {
+    display: none;
+  }
+
+  .portfolio__content {
+    align-items: center;
+    max-width: 90%;
+  }
+
+  .portfolio-photo {
+    width: 50%;
+  }
+
+  .content-background {
+    margin-top: 25px;
+  }
 }
 
 /* About Us */
@@ -431,6 +585,46 @@
 .about-us__btn:hover {
   color: #000;
   background-color: #FFF;
+}
+
+@media (max-width: 991.98px) {
+
+  .about-us__container {
+    min-height: 100%;
+  }
+
+  .about-us__caption {
+    align-self: center;
+  }
+
+  .content-left,
+  .content-right {
+    text-align: center;
+    top: 25%;
+    left: 0;
+  }
+
+  .about-us__table-cell {
+    margin: 0 0 30px;
+  }
+
+  .table-cell-caption {
+    color: #FFF;
+    font-weight: 700;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 1);
+  }
+
+  .table-cell-content {
+    width: 100%;
+  }
+
+  .table-cell-text {
+    display: none;
+  }
+
+  .about-us__table-cell:after {
+    height: 40px;
+  }
 }
 
 /* Team */
@@ -553,4 +747,15 @@
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+
+  .team__table {
+    flex-direction: column;
+  }
+
+  .team__member {
+    margin: 20px 0;
+  }
 }
