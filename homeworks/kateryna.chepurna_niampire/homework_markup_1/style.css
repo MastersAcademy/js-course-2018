@@ -275,7 +275,6 @@ div {
 .portfolio-photos {
   display: flex;
   flex-wrap: wrap;
-  /* align-items: stretch; */
 }
 
 .portfolio-photos__img {
@@ -283,11 +282,7 @@ div {
   height: 276px;
   flex-wrap: wrap;
 }
-/* @media (max-width: 899.98px) {
-  .portfolio-photos__item {
-    flex-basis: 200px;
-  }
-} */
+
 /* about-us */
 
 .about {
@@ -418,10 +413,6 @@ div {
   margin-top: 13px;
 }
 
-.media-content__list {
-  margin: 0 5px;
-}
-
 .media-content__link {
   display: flex;
   width: 41px;
@@ -497,14 +488,14 @@ div {
 }
 
 .contact-info__items {
-  display: inline-flex;
-  margin-left: 0;
+  margin: 0;
   padding-bottom: 43px;
   width: 40%;
 }
 
 .contact-info__img {
   padding-right: 16px;
+  float: left;
 }
 
 .contact-form__input,
@@ -565,7 +556,7 @@ div {
 }
 
 .contact-info {
-  width: 35%;
+  width: 42%;
 }
 
 .contact-form {
@@ -579,7 +570,6 @@ div {
   flex-wrap: wrap;
   list-style: none;
 }
-
 
 /* menu hover */
 
@@ -634,32 +624,11 @@ div {
   transform: rotate(-135deg);
 }
 
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-
-  .heading-title__h1 {
-    font-size: 42px;
-    line-height: 49px;
-  }
-}
-
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
 
-  .heading-title__h1 {
-    font-size: 46px
-  }
-
-  .title-h2 {
-    font-size: 32px;
-  }
-
   .services-title {
-    padding-top: 50px;
-  }
-
-  .heading-flex {
-    padding: 30px 0;
+    padding-top: 20px;
   }
 
   .nav-menu__list:not(:last-child) {
@@ -667,7 +636,6 @@ div {
   }
 
   .heading-title__h1 {
-    font-size: 36px;
     padding-bottom: 26px;
     margin-bottom: 32px;
   }
@@ -697,14 +665,15 @@ div {
   .nav {
     position: absolute;
     z-index: 2;
-    top: 0;
+    top: 10;
     height: 70px;
-    left: 0;
-    right: 0;
+    left: 100;
+    right: 10;
     margin-top: 0;
-    padding: 20px 50px 0 15px;
+    padding: 50px 50px 0 15px;
     background-color: #2A2521;
     transform: translateY(-100%);
+    display: none;
   }
 
   .nav.open {
@@ -723,8 +692,6 @@ div {
   }
 
   .heading-title__h1 {
-    font-size: 32px;
-    line-height: 36px;
     padding-bottom: 17px;
   }
 
@@ -734,7 +701,7 @@ div {
   }
 
   .services-title {
-    margin-top: 70px;
+    padding-top: 120px;
   }
 
   .expertise-picture,
@@ -857,13 +824,9 @@ div {
     margin: 40px auto 60px;
   }
 
-  .heading-title__h1 {
-    font-size: 28px;
-    line-height: 34px;
-  }
-
   .services,
   .expertise {
+    height: auto;
     padding: 40px 0 30px;
   }
 
@@ -871,6 +834,10 @@ div {
     margin-bottom: 32px;
     padding-bottom: 16px;
     font-size: 24px;
+  }
+
+  .services-title {
+    padding-top: 50px;
   }
 
   .services-content {
@@ -887,7 +854,8 @@ div {
   }
 
   .expertise-content {
-    width: 100%;
+    display: flex
+    /* width: 100%; */
   }
 
   .about-content {
