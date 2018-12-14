@@ -11,9 +11,11 @@
 </head>
 <body class="body">
     <header class="home-header container">
-        <img src="images/dreams.png" alt="Logotype Dreams">
+        <a class="logo__link" href="/"><img src="images/dreams.png" alt="Logotype Dreams"></a>
         <nav class="nav">
-            <ul>
+            <button class="button_toogle" type="button"><img src="images/menu-icon.png" alt="Menu Toogle">
+            </button>
+            <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Services</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Portfolio</a></li>
@@ -55,7 +57,7 @@
     <!-- Homewor 2 -->
 
     <section class="section section__expertise">
-        <div class="expertise__info">
+        <div class="expertise__info mobile-padding">
             <h2 class="h2">Other Expertise</h2>
             <h3 class="expertise__description">Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt consequat sem cure  digni ssim. </h3>
             <div class="expertise__features">
@@ -104,7 +106,7 @@
     </section>
 
     <section class="section section__portfolio">
-        <div class="portfolio__info">
+        <div class="portfolio__info mobile-padding">
             <img class="portfolio__info_background" src="images/users.svg" alt="Users on background">
             <div class="portfolio__info_text">
                     <h2 class="h2">Amazing Portfolio</h2>
@@ -170,5 +172,104 @@
             </div>
         </div>
     </section>
+
+    <section class="section section__about-us">
+        <h2 class="h2 h2_bottom-blue-line">About Us</h2>
+        <div class="about-us__circle">
+            <div class="circle__item">
+                <div class="circle__desc">
+                    <span class="date">July 2010</span>
+                    <h4 class="h4-black">Our Humble Beginnings</h4>                        </h4>
+                    <p class="p_grey">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="img__wrap_circle">
+                    <img class="circle__img" src="images/circle-1.png" alt="Our Beginnings">
+                </div>
+            </div>
+
+            <div class="circle__item circle__item_reverse">
+                <div class="circle__desc circle__desc_reverse mobile-padding">
+                    <span class="date">January 2011</span>
+                    <h4 class="h4-black">Facing Startup Battles</h4>
+                    <p class="p_grey">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="img__wrap_circle img__wrap_circle_reverse mobile-padding">
+                    <img class="circle__img" src="images/circle-2.jpg" alt="Startup Battles">
+                </div>
+            </div>
+
+            <div class="circle__item">
+                <div class="circle__desc mobile-padding">
+                    <span class="date">December 2012</span>
+                    <h4 class="h4-black">Enter The Dark Days</h4>
+                    <p class="p_grey">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="img__wrap_circle">
+                    <img class="circle__img" src="images/circle-3.jpg" alt="Dark Days">
+                </div>
+            </div>
+
+            <div class="circle__item circle__item_reverse">
+                <div class="circle__desc circle__desc_reverse mobile-padding">
+                    <span class="date">february 2014</span>
+                    <h4 class="h4-black">Our Triumph</h4>
+                    <p class="p_grey">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="img__wrap_circle img__wrap_circle_reverse">
+                    <img class="circle__img" src="images/circle-4.jpg" alt="Our Triumph">
+                </div>
+            </div>
+
+            <button type="button" class="circle__item_last img__wrap_circle">
+                    Our Story Continues ...
+            </button>
+        </div>
+    </section>
+
+    <section class="section section__our-team">
+        <h2 class="h2 h2_bottom-blue-line">Awesome Team</h2>
+        <div class="team__grid">
+            <div class="grid__item-3">
+                <div class="img__wrap_circle">
+                    <img class="circle__img" src="images/member-1.jpeg" alt="Eminem">
+                </div>
+                <h3 class="h3__team-name">Jimmy Letterman</h3>
+                <p class="p__team-name p_grey">Marketer</p>
+                <div class="social-link">
+                    <a class="social-icon_black" href="/"><img class="social-icon__img" src="images/twitter.png" alt="Twitter"></a>
+                    <a class="social-icon_black" href="/"><img class="social-icon__img" src="images/facebook.png" alt="Facebook"></a>
+                    <a class="social-icon_black" href="/"><img class="social-icon__img" src="images/pinterest.png" alt="Pinterest"></a>
+                </div>
+            </div>
+
+            <div class="grid__item-3">
+                <div class="img__wrap_circle">
+                    <img class="circle__img" src="images/member-2.jpg" alt="Kanye West">
+                </div>
+                <h3 class="h3__team-name">Rico Massimo</h3>
+                <p class="p__team-name p_grey">Coder</p>
+                <div class="social-link">
+                    <a class="social-icon_black" href="/"><img class="social-icon__img" src="images/twitter.png" alt="Twitter"></a>
+                    <a class="social-icon_black" href="/"><img class="social-icon__img" src="images/facebook.png" alt="Facebook"></a>
+                    <a class="social-icon_black" href="/"><img class="social-icon__img" src="images/pinterest.png" alt="Pinterest"></a>
+                </div>
+            </div>
+
+            <div class="grid__item-3">
+                <div class="img__wrap_circle">
+                    <img class="circle__img" src="images/member-3.jpg" alt="Billie Ellish">
+                </div>
+                <h3 class="h3__team-name">Lisa Mason</h3>
+                <p class="p__team-name p_grey">Graphic Designer</p>
+                <div class="social-link">
+                    <a class="social-icon_black" href="/"><img class="social-icon__img" src="images/twitter.png" alt="Twitter"></a>
+                    <a class="social-icon_black" href="/"><img class="social-icon__img" src="images/facebook.png" alt="Facebook"></a>
+                    <a class="social-icon_black" href="/"><img class="social-icon__img" src="images/pinterest.png" alt="Pinterest"></a>
+                </div>
+            </div>
+        </div>
+        <p class="team__last-p p_grey">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+    </section>
+<script src="main.js"></script>
 </body>
 </html>
