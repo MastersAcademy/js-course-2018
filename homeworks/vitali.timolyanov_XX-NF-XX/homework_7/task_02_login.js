@@ -12,38 +12,51 @@ class Login {
     }
 
     login(user, password) {
-        const login = this.logins.find(current => current.login === user);
+        if (!this.isUserExists(user)) return this.onError('User not found');
 
-        if (typeof login === 'undefined') return this.onError('User not found');
+        if (this.isLocked(user)) return this.onError('Login is locked! Try again later');
 
-        if (this.failedLogins.has(user) && this.failedLogins.get(user) > MAX_FAILED_LOGINS) {
-            return this.onError('Login is locked! Try again later');
-        }
-
-        if (password === login.password) return this.onSuccess(user);
+        if (this.isPasswordCorrect(user, password)) return this.onSuccess(user);
 
         return this.onError(`Wrong password! User "${user}"`, user);
     }
 
+    isUserExists(user) {
+        if (typeof (this.logins.find(current => current.login === user)) === 'undefined') return false;
+        return true;
+    }
+
+    isPasswordCorrect(user, password) {
+        const login = this.logins.find(current => current.login === user);
+
+        if (password === login.password) return true;
+        return false;
+    }
+
     onSuccess(user) {
-        this.unlock(user);
+        if (this.isLocked(user)) this.unlock(user);
         return 'success';
     }
 
     onError(message, user = null) {
-        if (user === null) return message;
+        if (user !== null) this.addFail(user);
+        return message;
+    }
 
+    addFail(user) {
         let failed = this.failedLogins.get(user);
         failed = failed ? failed + 1 : 1;
         this.failedLogins.set(user, failed);
 
         if (failed > MAX_FAILED_LOGINS) this.lock(user);
-
-        return message;
     }
 
     lock(user) {
         setTimeout(this.unlock.bind(this), LOCK_TIME, user);
+    }
+
+    isLocked(user) {
+        return this.failedLogins.has(user) && this.failedLogins.get(user) > MAX_FAILED_LOGINS;
     }
 
     unlock(user) {
