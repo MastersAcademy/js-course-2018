@@ -22,8 +22,8 @@ class Login {
     }
 
     isUserExists(user) {
-        if (typeof (this.logins.find(current => current.login === user)) === 'undefined') return false;
-        return true;
+        if (this.logins.findIndex(current => current.login === user) >= 0) return true;
+        return false;
     }
 
     isPasswordCorrect(user, password) {
