@@ -62,7 +62,6 @@ body {
 
 .section {
   width: 100%;
-  min-width: 1024px;
   min-height: 100vh;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -74,7 +73,9 @@ body {
 /* At the moment I'm dealing with Grid, I thought it will be better in this case. I will apply the Grid a little later */
 
 .container {
-  width: 1024px;
+  min-width: 992px;
+  width: 100%;
+  max-width: 1024px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,7 +234,6 @@ body {
 
 .home {
   width: 100%;
-  min-width: 1024px;
   height: 100vh;
   min-height: 480px;
   padding-top: 30px;
@@ -360,11 +360,14 @@ body {
 /* PAGE-PORTFOLIO-DESCRIPTION */
 /* ------------------------------------------------- */
 
+.page-portfolio-description {
+  overflow: hidden;
+}
+
 .page-portfolio-description__container {
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  overflow-x: hidden;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -386,19 +389,19 @@ body {
 
 .page-portfolio-description__container:after {
   content: "";
-  overflow-y: hidden;
-  width: 70%;
+  width: 100%;
   height: 100%;
   display: block;
   position: absolute;
-  bottom: 50px;
-  right: -250px;
+  top: 0;
+  left: 50%;
   background-image: url("./image/bg-image-ipad.png");
-  background-position-x: right;
-  background-position-y: bottom;
+  background-position-x: 0;
+  background-position-y: 0;
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
 
 .page-portfolio-description__description {
   width: 50%;
@@ -423,7 +426,8 @@ body {
 /* ------------------------------------------------- */
 
 .portfolio-gallery {
-  width: 1024px;
+  width: 100%;
+  max-width: 1024px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -799,7 +803,6 @@ body {
 
 .footer {
   width: 100%;
-  min-width: 1024px;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -836,7 +839,7 @@ body {
 @media (max-width: 991.98px) {
 
   .container {
-    width: 100%;
+    min-width: 768px;
   }
 
   /* page-expertise */
@@ -896,7 +899,7 @@ body {
 @media (max-width: 767.98px) {
 
   .container {
-    width: 100%;
+    min-width: 576px;
   }
 
   .heading__h1 {
@@ -1031,6 +1034,11 @@ body {
 @media (max-width: 575.98px) {
 
   .section, .container, .portfolio-gallery, .home, .footer {
-    min-width: 575px;
+    max-width: 575px;
+    min-width: 480px;
+  }
+
+  .heading__h1 {
+    font-size: 35px;
   }
 }
