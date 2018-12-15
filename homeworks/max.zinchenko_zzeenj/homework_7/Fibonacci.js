@@ -1,11 +1,13 @@
-function fibonacci() {
-    const last = Math.random() * 50 + 50;
+function getRandomInteger() {
+    return Math.floor(Math.random() * (100 - 50 + 1)) + 50;
+}
+
+function fibonacci(lastNum) {
     const result = [0, 1];
-    for (let i = 1; result[i] < last; i++) {
-        result.push(result[i] + result[i - 1]);
+    for (let i = 1; i < lastNum; i += result[result.length - 2]) {
+        result.push(i);
     }
     return result;
 }
-fibonacci();
 
-module.exports = { fibonacci };
+module.exports = { fibonacci, getRandomInteger };
