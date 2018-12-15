@@ -269,7 +269,7 @@ a:hover {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 50px auto;
+  margin: 90px auto;
   text-align: center;
 }
 
@@ -300,14 +300,14 @@ a:hover {
 
 .about-container__title {
   color: #222;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .about-container__text {
   color: #888;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -352,4 +352,51 @@ a:hover {
 
 .about-containers__img4 {
   background: url("images/about-img4.png")
+}
+
+@media (max-width: 701.98px) {
+
+  .heading-title {
+    font-size: 22px;
+    line-height: 1.5;
+    width: 690px;
+    margin-left: -16%;
+  }
+
+  .heading-subtitle {
+    font-size: 12px;
+    line-height: 1.5;
+    width: 690px;
+    margin-left: -16%;
+  }
+
+  .services {
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .services-content {
+    flex-wrap: wrap;
+  }
+
+  .other-expertise {
+    flex-wrap: wrap;
+    background: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .portfolio-pics {
+    flex-direction: inherit;
+  }
+
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about__containers {
+    flex-wrap: wrap;
+  }
 }
