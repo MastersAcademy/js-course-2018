@@ -20,7 +20,9 @@ describe('test sequence to be equal fibonacci', () => {
 });
 
 test('last element of sequence to more 50 and less than 100', () => {
+    const min = 50;
+    const max = 100;
     const fibonacciArr = fibonacci();
-    expect(fibonacciArr[fibonacciArr.length - 1]).toBeGreaterThanOrEqual(50);
-    expect(fibonacciArr[fibonacciArr.length - 1]).toBeLessThanOrEqual(100);
+    expect(fibonacciArr[fibonacciArr.length - 1]).toBeGreaterThanOrEqual(min);
+    expect(fibonacciArr[fibonacciArr.length - 1]).toBeLessThanOrEqual(max);
 });
