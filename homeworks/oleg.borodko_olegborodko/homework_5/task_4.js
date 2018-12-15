@@ -8,7 +8,7 @@ const people = [
     { id: 7 },
 ];
 
-const getPeople = function (userId) {
+const getPeople = function letsGetPeople(userId) {
     const friendsObj = people.find(el => el.id === userId);
 
     if (typeof friendsObj === 'undefined') {

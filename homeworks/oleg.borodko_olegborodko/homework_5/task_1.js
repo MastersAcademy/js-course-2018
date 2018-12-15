@@ -1,6 +1,6 @@
 function arraySum() {
     let result = 0;
-    const toCount = function (numeric) {
+    const toCount = function letsCount(numeric) {
         if (typeof numeric === 'number') {
             result += numeric;
             return result;
