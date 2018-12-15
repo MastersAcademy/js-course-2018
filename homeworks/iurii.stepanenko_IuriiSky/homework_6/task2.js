@@ -51,32 +51,34 @@ class Race {
     }
 
     startRace(time, resultInterval) {
-        this.horses.forEach((racer) => {
-            racer.run();
-        });
+        this.horses.forEach(racer => racer.run());
         this.timerId = setInterval(() => {
-            this.horses.forEach((racer) => {
-                console.log(`name: ${racer.name}, breed: ${racer.breed}, distance: ${racer.distance}`);
-            });
+            this.logRacersState();
         }, resultInterval * 1000);
 
         setTimeout(() => {
             clearInterval(this.timerId);
             this.printWinner();
-            this.horses.forEach((racer) => {
-                racer.stop();
-            });
+            this.horses.forEach(racer => racer.stop());
         }, time * 1000);
     }
 
-    printWinner() {
-        let winner = this.horses[0];
+    logRacersState() {
+        this.horses.forEach(racer => console.log(`name: ${racer.name}, breed: ${racer.breed}, distance: ${racer.distance}`));
+    }
 
-        for (let i = 1; i < this.horses.length; i++) {
-            if (this.horses[i].distance > winner.distance) {
-                winner = this.horses[i];
+    getWinner() {
+        let winner = this.horses[0];
+        this.horses.forEach((horse) => {
+            if (horse.distance > winner.distance) {
+                winner = horse;
             }
-        }
+        });
+        return winner;
+    }
+
+    printWinner() {
+        const winner = this.getWinner();
         console.log(`\n Winner: name: ${winner.name}, breed: ${winner.breed}, distance: ${winner.distance}`);
     }
 }
