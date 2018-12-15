@@ -7,4 +7,4 @@ function fibo(max) {
 }
 
 module.exports = fibo;
-console.log(fibo(99));
+console.log(fibo(Math.floor(Math.random() * 51) + 50));
