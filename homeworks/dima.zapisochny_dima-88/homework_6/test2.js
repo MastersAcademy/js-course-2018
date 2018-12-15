@@ -40,19 +40,23 @@ class Race {
     }
 
     startRace() {
-        this.horses.forEach(elem => elem.run());
-        const hx = setInterval(() => {
-            this.horses.forEach((elem) => {
-                console.log(`\n* Horse: ${elem.name}`);
-                console.log(`* Breed: ${elem.breed}`);
-                console.log(`* Distance: ${elem.distance}`);
+        this.horses.forEach(horse => horse.run());
+        const resultRace = setInterval(() => {
+            this.horses.forEach((horse) => {
+                console.log(`\n* Horse: ${horse.name}`);
+                console.log(`* Breed: ${horse.breed}`);
+                console.log(`* Distance: ${horse.distance}`);
             });
             console.log('__');
         }, 2000);
-
         setTimeout(() => {
-            clearInterval(hx);
-            this.horses.forEach(elem => elem.stop());
+            clearInterval(resultRace);
+        }, 10000);
+    }
+
+    stopRace() {
+        setTimeout(() => {
+            this.horses.forEach(horse => horse.stop());
             this.horses.sort((a, b) => b.distance - a.distance);
             if (this.horses[0].distance === this.horses[1].distance) {
                 console.log('\n No winner!');
@@ -81,3 +85,4 @@ const horsesArray = [
 const race = new Race();
 race.createRace(horsesArray);
 race.startRace();
+race.stopRace();
