@@ -73,9 +73,9 @@ body {
 /* At the moment I'm dealing with Grid, I thought it will be better in this case. I will apply the Grid a little later */
 
 .container {
-  min-width: 992px;
-  width: 100%;
   max-width: 1024px;
+  width: 100%;
+  min-width: 992px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,6 +278,17 @@ body {
 }
 
 /* ------------------------------------------------- */
+/* menu-burger */
+
+.menu-burger__checkbox {
+  display: none;
+}
+
+.menu-burger__icon {
+  display: none;
+}
+
+/* ------------------------------------------------- */
 /* PAGE-SERVICES */
 /* ------------------------------------------------- */
 
@@ -360,14 +371,11 @@ body {
 /* PAGE-PORTFOLIO-DESCRIPTION */
 /* ------------------------------------------------- */
 
-.page-portfolio-description {
-  overflow: hidden;
-}
-
 .page-portfolio-description__container {
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow-x: hidden;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -389,19 +397,19 @@ body {
 
 .page-portfolio-description__container:after {
   content: "";
-  width: 100%;
+  overflow-y: hidden;
+  width: 70%;
   height: 100%;
   display: block;
   position: absolute;
-  top: 0;
-  left: 50%;
+  bottom: 50px;
+  right: -250px;
   background-image: url("./image/bg-image-ipad.png");
-  background-position-x: 0;
-  background-position-y: 0;
+  background-position-x: right;
+  background-position-y: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
 
 .page-portfolio-description__description {
   width: 50%;
@@ -426,7 +434,6 @@ body {
 /* ------------------------------------------------- */
 
 .portfolio-gallery {
-  width: 100%;
   max-width: 1024px;
   display: flex;
   flex-wrap: wrap;
@@ -842,6 +849,12 @@ body {
     min-width: 768px;
   }
 
+  /* home */
+
+  .home__navigation {
+    margin-right: 15px;
+  }
+
   /* page-expertise */
 
   .page-expertise {
@@ -1033,12 +1046,104 @@ body {
 
 @media (max-width: 575.98px) {
 
-  .section, .container, .portfolio-gallery, .home, .footer {
+  section, .container, .portfolio-gallery, .home, .footer {
     max-width: 575px;
     min-width: 480px;
   }
 
   .heading__h1 {
     font-size: 35px;
+  }
+
+  .header {
+    position: relative;
+    height: 42px;
+    position: relative;
+    /* background-image: linear-gradient(to bottom, rgba(51,51,51,0) 0%, rgba(51,51,51,.8) 90%,rgba(51,51,51, 1) 100%); */
+    /* background-color: rgba(51, 51, 51, .5); */
+  }
+
+  .navigation {
+    display: none;
+    z-index: 99;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(61, 61, 59, 0) 0%, rgba(61, 61, 59,1) 20%, rgba(61, 61, 59,1) 80%,rgba(61, 61, 59,0) 100%);
+  }
+
+  .navigation__link {
+    margin-top: 5px;
+    border-radius: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgba(52, 48, 45, .4);
+    font-size: 20px;
+  }
+
+  .menu-burger__checkbox {
+    display: none;
+  }
+
+  .menu-burger__icon {
+    width: 40px;
+    height: 30px;
+    display: block;
+    position: relative;
+    margin-right: 30px;
+  }
+
+  .menu-burger__icon-line {
+    width: 100%;
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: 0;
+    border-radius: 9px;
+    background-color: #FFF;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    opacity: 1;
+  }
+
+  .menu-burger__icon-line:nth-child(1) {
+    top: 0;
+  }
+
+  .menu-burger__icon-line:nth-child(2), .menu-burger__icon-line:nth-child(3) {
+    top: 13px;
+  }
+
+  .menu-burger__icon-line:nth-child(4) {
+    top: 26px;
+  }
+
+  .menu-burger__checkbox:checked ~ .menu-burger__icon .menu-burger__icon-line:nth-child(1) {
+    top: 12px;
+    width: 0;
+    left: 50%;
+  }
+
+  .menu-burger__checkbox:checked ~ .menu-burger__icon .menu-burger__icon-line:nth-child(2) {
+    transform: rotate(45deg)
+  }
+
+  .menu-burger__checkbox:checked ~ .menu-burger__icon .menu-burger__icon-line:nth-child(3) {
+    transform: rotate(-45deg)
+  }
+
+  .menu-burger__checkbox:checked ~ .menu-burger__icon .menu-burger__icon-line:nth-child(4) {
+    top: 12px;
+    width: 0;
+    left: 50%;
+  }
+
+  .menu-burger__checkbox:checked ~ .navigation {
+    display: flex;
   }
 }

@@ -10,11 +10,21 @@
 </head>
 <body>
     <div class="home">
-        <header class="container container--jc-between">
+        <header class="container container--jc-between header">
+
             <a href="/" class="logo-dreams">
                 <img src="./image/logo-dreams.png" alt="Dreams" class="logo-dreams__image">
             </a>
-            <nav class="navigation">
+
+            <input class="menu-burger__checkbox" type="checkbox" id="burger">
+            <label class="menu-burger__icon" for="burger">
+                <span class="menu-burger__icon-line"></span>
+                <span class="menu-burger__icon-line"></span>
+                <span class="menu-burger__icon-line"></span>
+                <span class="menu-burger__icon-line"></span>
+            </label>
+
+            <nav class="navigation menu-burger home__navigation">
                 <a href="#" class="navigation__link link">Home</a>
                 <a href="#services" class="navigation__link link">Services</a>
                 <a href="#portfolio" class="navigation__link link">Portfolio</a>
