@@ -1,5 +1,7 @@
 
-const { fibonacci, getRangeNumber } = require('./task7_1');
+const {
+    fibonacci, getRangeNumber, errorNegative, errorNotNumber,
+} = require('./task7_1');
 
 describe('fibonacci test', () => {
     test('Array value at length = 6', () => {
@@ -7,15 +9,15 @@ describe('fibonacci test', () => {
         expect(fibonacci(12).length).toEqual(12);
     });
 
-    test('n shouldbe a numb', () => {
-        expect(() => fibonacci({})).toThrow('is not number');
+    test('n should be a number', () => {
+        expect(() => fibonacci({})).toThrow(errorNotNumber);
     });
     test('only positive numbers', () => {
-        expect(() => fibonacci(-1)).toThrow('nummber should be positive');
+        expect(() => fibonacci(-1)).toThrow(errorNegative);
     });
     test('range', () => {
         const value = getRangeNumber();
-        expect(value).toBeGreaterThanOrEqual(10);
-        expect(value).toBeLessThanOrEqual(11);
+        expect(value).toBeGreaterThanOrEqual(11);
+        expect(value).toBeLessThanOrEqual(12);
     });
 });
