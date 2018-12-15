@@ -76,6 +76,6 @@ describe('Classes', () => {
                 assert.deepStrictEqual(winners.length, 3);
                 done();
             });
-        });
+        }).timeout(11000);
     });
 });
