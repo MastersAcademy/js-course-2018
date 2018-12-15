@@ -1,3 +1,5 @@
+const random = require('./random.js');
+
 function fibo(max) {
     const array = [0, 1];
     while (array[array.length - 1] + array[array.length - 2] <= max) {
@@ -5,6 +7,6 @@ function fibo(max) {
     }
     return array;
 }
+console.log(fibo(random(50, 100)));
 
 module.exports = fibo;
-console.log(fibo(Math.floor(Math.random() * 51) + 50));
