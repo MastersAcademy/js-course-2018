@@ -328,28 +328,3 @@
   width: 341px;
   height: 256px;
 }
-
-/* About Us */
-
-.aboutUs__box {
-  display: flex;
-  align-items: center;
-}
-
-.aboutUs__box:after {
-  height: 67px;
-  width: 3px;
-  background-color: #F1F1F1;
-  display: block;
-  content: "";
-}
-
-.aboutUs__img {
-  /* display: flex; */
-  /* flex-direction: column;
-  align-items: center; */
-}
-
-.content-left {
-  order: -1;
-}
