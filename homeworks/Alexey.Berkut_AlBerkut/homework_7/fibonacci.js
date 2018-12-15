@@ -3,7 +3,7 @@ function fib() {
     let b = 1;
     const rand = Math.floor(Math.random() * 50 + 50);
     const result = [a, b];
-    for (let i = 2; i <= rand; i++) {
+    for (let i = 3; i <= rand; i++) {
         const c = a + b;
         a = b; b = c;
         result.push(b);
