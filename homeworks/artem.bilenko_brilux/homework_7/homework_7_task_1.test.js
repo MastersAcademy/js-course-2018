@@ -6,7 +6,7 @@ test('array type check', () => {
 
 test('check first and second elements in array', () => {
     const arr = [0, 1];
-    expect(fibonacci(0)).toEqual(arr);
+    expect(fibonacci()).toEqual(arr);
 });
 
 test('fibonacci array test then diapason less 55', () => {
