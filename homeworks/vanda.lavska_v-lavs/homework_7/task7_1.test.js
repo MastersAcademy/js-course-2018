@@ -12,8 +12,10 @@ describe('getRangeNumber test', () => {
 });
 
 describe('fibonacci test', () => {
-    test('Array at value number = 51', () => {
-        expect(fibonacci(51)).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34]);
+    test('Array at value mock-number = 51', () => {
+        const random = jest.fn();
+        random.mockReturnValue(51);
+        expect(fibonacci(random())).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34]);
     });
 
     test('n should be a number', () => {
