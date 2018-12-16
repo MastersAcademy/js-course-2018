@@ -1,4 +1,4 @@
-function rundomNumber(min, max) {
+function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
@@ -16,4 +16,4 @@ function fibonacci(lengthArray) {
     return arr;
 }
 
-module.exports = { fibonacci, rundomNumber };
+module.exports = { fibonacci, randomNumber };
