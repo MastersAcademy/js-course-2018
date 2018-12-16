@@ -2,15 +2,14 @@ function randomEndValue() {
     return Math.floor(Math.random() * 51 + 50);
 }
 function fibonacci() {
-    const fibonacciArray = [0, 1];
+    const array = [0];
     const endOfArray = randomEndValue();
-    for (let i = 0; ;) {
-        i = fibonacciArray[fibonacciArray.length - 1] + fibonacciArray[fibonacciArray.length - 2];
-        if (i < endOfArray) {
-            fibonacciArray.push(i);
-        } else { break; }
-    }
-    return fibonacciArray;
+    let nextNumber = 1;
+    do {
+        array.push(nextNumber);
+        nextNumber = array[array.length - 1] + array[array.length - 2];
+    } while (nextNumber <= endOfArray);
+    return array;
 }
 console.log(fibonacci());
 module.exports = { fibonacci, randomEndValue };
