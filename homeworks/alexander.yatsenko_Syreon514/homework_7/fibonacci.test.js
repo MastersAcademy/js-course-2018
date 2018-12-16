@@ -12,7 +12,7 @@ test('Is the second element of an array is 1?', () => {
     expect(createFibonacciSequence(100)[1]).toEqual(1);
 });
 
-test('Is each array element is the sum of the previous two', () => {
+test('Is each element of an array is the sum of the previous two?', () => {
     const arr = createFibonacciSequence(100);
     for (let i = 2; i < arr.length; i++) {
         expect(arr[i]).toEqual(arr[i - 1] + arr[i - 2]);
