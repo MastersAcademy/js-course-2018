@@ -17,7 +17,7 @@ function User() {
         phone: {
             set(value) {
                 const phoneNumber = value.replace(reg2, '');
-                phone = (value[0] === '+') ? '+' : phoneNumber;
+                phone = `+${phoneNumber}`;
             },
             get() {
                 return phone;

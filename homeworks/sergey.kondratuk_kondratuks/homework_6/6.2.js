@@ -42,16 +42,14 @@ class Race {
         this.horses.forEach(raser => raser.run());
         for (let counter = 1; counter <= 5; counter++) {
             setTimeout(() => {
-                this.horses.forEach(raser => console.log(`${raser.name} - ${raser.breed}
-                __ Distans - ${raser.distance}`));
+                this.horses.forEach(raser => console.log(`${raser.name} - ${raser.breed} __ Distance - ${raser.distance}`));
             }, 2000 * counter);
         }
 
         setTimeout(() => {
             this.horses.sort((first, two) => two.distance - first.distance);
             console.log('The horse that came first:');
-            console.log(`${this.horses[0].name} - ${this.horses[0].breed}
-            __ Distans - ${this.horses[0].distance}`);
+            console.log(`${this.horses[0].name} - ${this.horses[0].breed} __ Distance - ${this.horses[0].distance}`);
         }, 10000);
     }
 }
