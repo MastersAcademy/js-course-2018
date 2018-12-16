@@ -33,9 +33,9 @@ describe('Testing a function that returns an array of Fibonacci numbers that doe
         expect(fibonacciNumbers(50)).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34]);
     });
 
-    test('negative numbers', () => {
+    test('sending a negative numbers throws an error', () => {
         const error = new Error('The number should be at least 0!');
-        expect(fibonacciNumbers).toThrow(error);
+        expect(() => fibonacciNumbers(-8)).toThrow(error);
     });
 });
 
@@ -50,7 +50,7 @@ describe('Check the range of random numbers', () => {
     });
 
     test('Checking the maximum value', () => {
-        Math.random.mockReturnValueOnce(0.9999999999999999999999999);
+        Math.random.mockReturnValueOnce(0.9999999999999999);
         expect(randomFrom50to100()).toBeCloseTo(100);
     });
 });
