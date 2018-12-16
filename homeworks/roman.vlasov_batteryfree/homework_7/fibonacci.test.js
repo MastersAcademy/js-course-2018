@@ -4,7 +4,7 @@ let { randomNumber } = require('./fibonacci.js');
 
 describe('randomizer test', () => {
     beforeAll(() => {
-      randomNumber = jest.fn();
+        randomNumber = jest.fn();
     });
 
     test('test randomizer > 15', () => {
@@ -16,11 +16,9 @@ describe('randomizer test', () => {
         randomNumber.mockReturnValue(15);
         expect(randomNumber()).toBeLessThan(30);
     });
-
 });
 
 describe('fibonacci test', () => {
-
     test('test array types correctly', () => {
         expect(Array.isArray(fibonacci())).toBeTruthy();
     });
