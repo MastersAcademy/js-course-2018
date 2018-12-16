@@ -1,4 +1,5 @@
 const { numFibonachi } = require('./fibonachi.js');
+
 describe('Fibonachi', () => {
     describe('Check the value in a series of numbers', () => {
         test('First value', () => {
