@@ -1,7 +1,7 @@
 function createFibonacciSequence(maxValue) {
     const seq = [0, 1];
-    for (let i = 2; (seq[seq.length - 1] + seq[seq.length - 2]) <= maxValue; i++) {
-        seq.push(seq[i - 1] + seq[i - 2]);
+    for (let i = 1; i < maxValue; i = seq[seq.length - 1] + seq[seq.length - 2]) {
+        seq.push(i);
     }
     return seq;
 }
