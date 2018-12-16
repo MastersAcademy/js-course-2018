@@ -10,9 +10,26 @@
     <link rel="icon" href="./img/logos/ma-icon.png">
 </head>
 <body>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-cog" viewBox="0 0 16 16">
+                <title>cog</title>
+                <path fill="#999" d="M14.59 9.535c-0.839-1.454-0.335-3.317 1.127-4.164l-1.572-2.723c-0.449 0.263-0.972 0.414-1.529 0.414-1.68 0-3.042-1.371-3.042-3.062h-3.145c0.004 0.522-0.126 1.051-0.406 1.535-0.839 1.454-2.706 1.948-4.17 1.106l-1.572 2.723c0.453 0.257 0.845 0.634 1.123 1.117 0.838 1.452 0.336 3.311-1.12 4.16l1.572 2.723c0.448-0.261 0.967-0.41 1.522-0.41 1.675 0 3.033 1.362 3.042 3.046h3.145c-0.001-0.517 0.129-1.040 0.406-1.519 0.838-1.452 2.7-1.947 4.163-1.11l1.572-2.723c-0.45-0.257-0.839-0.633-1.116-1.113zM8 11.24c-1.789 0-3.24-1.45-3.24-3.24s1.45-3.24 3.24-3.24c1.789 0 3.24 1.45 3.24 3.24s-1.45 3.24-3.24 3.24z"></path>
+            </symbol>
+            <symbol id="icon-pie-chart" viewBox="0 0 16 16">
+                <title>pie-chart</title>
+                <path fill="#999" d="M7 9v-7c-3.866 0-7 3.134-7 7s3.134 7 7 7 7-3.134 7-7c0-1.126-0.266-2.189-0.738-3.131l-6.262 3.131zM14.262 3.869c-1.149-2.294-3.521-3.869-6.262-3.869v7l6.262-3.131z"></path>
+            </symbol>
+            <symbol id="icon-star-full" viewBox="0 0 16 16">
+                <title>star-full</title>
+                <path fill="#999" d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z"></path>
+            </symbol>
+        </defs>
+    </svg>
+            
     <header class="header wrapper" id="home">
         <div class="head">
-            <a class="logo__dreams" href="index.html"><img src="./img/logos/logo.png" alt="Dreams"></a>
+            <a class="logo__dreams" href="index.html"><img src="./img/logos/svg/logo.svg" alt="Dreams"></a>
             <nav class="title-navigation">
                 <ul class="navigation">
                     <li class="navigation__list"><a class="navigation__link" href="index.html">Home</a></li>
@@ -64,7 +81,9 @@
                 <figcaption class="types-of-expertise">
                     <figure class="types-of-expertise__item">
                         <div class="custom-setup">
-                            <img class="custom-setup__img" src="./img/other-expertise/icons/gear.png" alt="gear">
+                            <svg class="custom-setup__img" viewBox="0 0 16 16">
+                                <use xlink:href="icons/sprite-sheet.svg#cog"></use>
+                            </svg>
                             <div class="expertise__items">
                                 <h3 class="types-of-expertise__headline">Custom Setup</h3>
                                 <p class="types-of-expertise__paragraph">Proin iaculis purus consequat sem cure digni 
@@ -74,7 +93,9 @@
                     </figure>
                     <figure class="types-of-expertise__item">
                         <div class="cloud-control">
-                            <img class="cloud-control__img" src="./img/other-expertise/icons/cloud.png" alt="cloud">
+                            <svg class="cloud-control__img" viewBox="0 0 16 16">
+                                <use xlink:href="icons/sprite-sheet.svg#cloud"></use>
+                            </svg>
                             <div class="expertise__items">
                                 <h3 class="types-of-expertise__headline">Cloud Control</h3>
                                 <p class="types-of-expertise__paragraph">Proin iaculis purus consequat sem cure digni 
@@ -84,7 +105,9 @@
                     </figure>
                     <figure class="types-of-expertise__item">
                         <div class="all-star">
-                            <img class="all-star__img" src="./img/other-expertise/icons/star.png" alt="star">
+                            <svg class="all-star__img" viewBox="0 0 16 16">
+                                <use xlink:href="icons/sprite-sheet.svg#star-full"></use>
+                            </svg>
                             <div class="expertise__items">
                                 <h3 class="types-of-expertise__headline">All Star Support Team</h3>
                                 <p class="types-of-expertise__paragraph">Proin iaculis purus consequat sem cure digni 
@@ -94,7 +117,9 @@
                     </figure>
                     <figure class="types-of-expertise__item">   
                         <div class="top-security">
-                            <img class="top-security__img" src="./img/other-expertise/icons/lock.png" alt="lock">
+                            <svg class="all-star__img" viewBox="0 0 16 16">
+                                <use xlink:href="icons/sprite-sheet.svg#lock"></use>
+                            </svg>
                             <div class="expertise__items">
                                 <h3 class="types-of-expertise__headline">Top Notch Security</h3>
                                 <p class="types-of-expertise__paragraph">Proin iaculis purus consequat sem cure digni 
@@ -124,7 +149,9 @@
                     <figcaption class="advantages-of-portfolio">
                         <figure class="advantages-of-portfolio__item">
                             <div class="sail-away">
-                                <img class="sail-away__img" src="./img/amazing-portfolio/icons/gear.png" alt="gear">
+                                <svg class="sail-away__img">
+                                    <use xlink:href="#icon-cog"></use>
+                                </svg>
                                 <div class="service__items">
                                     <h3 class="advantages-of-portfolio__headline">Sail Away Your Worries</h3>
                                     <p class="advantages-of-portfolio__paragraph">Proin iaculis purus consequat sem 
@@ -135,7 +162,9 @@
                         </figure>
                         <figure class="advantages-of-portfolio__item">
                             <div class="support-team">
-                                <img class="support-team__img" src="./img/amazing-portfolio/icons/star.png" alt="star">
+                                <svg class="support-team__img">
+                                    <use xlink:href="#icon-star-full"></use>
+                                </svg>
                                 <div class="service__items">
                                     <h3 class="advantages-of-portfolio__headline">All Star Suppurt Team</h3>
                                     <p class="advantages-of-portfolio__paragraph">Proin iaculis purus consequat sem 
@@ -146,7 +175,9 @@
                         </figure>
                         <figure class="advantages-of-portfolio__item">
                             <div class="fully-service">
-                                <img class="fully-service__img" src="./img/amazing-portfolio/icons/ple.png" alt="ple">
+                                <svg class="fully-service__img">
+                                    <use xlink:href="#icon-pie-chart"></use>
+                                </svg>
                                 <div class="service__items">
                                     <h3 class="advantages-of-portfolio__headline">Fully Integrated Service</h3>
                                     <p class="advantages-of-portfolio__paragraph">Proin iaculis purus consequat sem 

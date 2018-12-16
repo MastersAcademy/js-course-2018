@@ -296,7 +296,7 @@ body {
 }
 
 .amazing-portfolio-bg {
-  background-image: url("../img/backgrounds/users-bg.png");
+  background-image: url("../img/backgrounds/svg/users-bg.svg");
   background-repeat: no-repeat;
 }
 
@@ -688,15 +688,15 @@ body {
 }
 
 .phone:before {
-  content: url("../img/contact-us/phone.png");
+  content: url("../img/contact-us/svg/mobile.svg");
 }
 
 .twitter:before {
-  content: url("../img/contact-us/twitter.png");
+  content: url("../img/contact-us/svg/twitter.svg");
 }
 
 .google:before {
-  content: url("../img/contact-us/google.png");
+  content: url("../img/contact-us/svg/google-plus.svg");
 }
 
 .email:before {
@@ -704,11 +704,11 @@ body {
 }
 
 .facebook:before {
-  content: url("../img/contact-us/fecebook.png");
+  content: url("../img/contact-us/svg/facebook.svg");
 }
 
 .printerest:before {
-  content: url("../img/contact-us/pinterest.png");
+  content: url("../img/contact-us/svg/pinterest.svg");
 }
 
 .list-contacts__link {
@@ -1035,4 +1035,15 @@ body {
   .types-of-expertise__item {
     width: 85%;
   }
+}
+
+/* SVG */
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
