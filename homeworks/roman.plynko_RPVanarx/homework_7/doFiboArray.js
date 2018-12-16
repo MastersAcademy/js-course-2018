@@ -1,4 +1,4 @@
-function doFiboArray(max) {
+function doFiboArray(max = 100) {
     const fiboArray = [0];
     let number = 1;
     while (number <= max) {

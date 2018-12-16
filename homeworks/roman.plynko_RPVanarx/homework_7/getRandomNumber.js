@@ -1,6 +1,5 @@
-function getRandomNumber() {
-    const randomNumber = (Math.random() * 51) + 50;
-    return Math.floor(randomNumber);
+function getRandomNumber(min, max) {
+    return Math.floor((Math.random(max - min + 1) + min));
 }
 
 module.exports = { getRandomNumber };
