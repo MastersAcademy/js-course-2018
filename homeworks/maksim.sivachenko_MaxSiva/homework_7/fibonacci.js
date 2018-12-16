@@ -1,10 +1,8 @@
 
 function createFibonacciArray(max) {
     const fibArray = [0, 1];
-    let sum = 0;
-    for (let i = 3; i <= max; i = sum + fibArray[fibArray.length - 2]) {
-        sum = fibArray[fibArray.length - 2] + fibArray[fibArray.length - 1];
-        fibArray.push(sum);
+    for (let i = 1; i <= max; i = fibArray[fibArray.length - 1] + fibArray[fibArray.length - 2]) {
+        fibArray.push(i);
     }
     return fibArray;
 }
