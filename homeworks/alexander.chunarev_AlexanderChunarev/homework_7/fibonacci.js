@@ -1,9 +1,17 @@
-function fibonacci() {
+function fibonacci(lastNumber) {
     const arr = [0, 1];
-    const lastNumber = Math.floor(Math.random() * 51 + 50);
-    while (arr[arr.length - 1] + arr[arr.length - 2] < lastNumber) {
-        arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
+    while (true) {
+        const newItem = arr[arr.length - 1] + arr[arr.length - 2];
+        if (newItem > lastNumber) return arr;
+        arr.push(newItem);
     }
-    return arr;
 }
-module.exports = fibonacci;
+
+function randomNumber() {
+    return Math.floor(Math.random() * 51 + 50);
+}
+
+module.exports = {
+    fibonacci,
+    randomNumber,
+};
