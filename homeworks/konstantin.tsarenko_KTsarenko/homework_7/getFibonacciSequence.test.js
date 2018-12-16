@@ -11,7 +11,7 @@ test('2 element of sequence to equal 1', () => {
 
 describe('test sequence to be equal fibonacci', () => {
     const fibonacciArr = fibonacci();
-    for (let i = 2; i < fibonacciArr.length - 3; i++) {
+    for (let i = 2; i < fibonacciArr.length; i++) {
         it('check elements of sequence', () => {
             const val = fibonacciArr[i - 1] + fibonacciArr[i - 2];
             expect(fibonacciArr[i]).toBe(val);
