@@ -3,13 +3,15 @@ function limitNumber() {
 }
 
 function fibonacci(greaterNumber) {
-    const fibonacciArray = [0, 1];
-    let i = 1;
-    while (fibonacciArray[i] < greaterNumber) {
-        fibonacciArray.push(fibonacciArray[i] + fibonacciArray[i - 1]);
-        i++;
+    const fibonacciArray = [0];
+    let currentIndex = 0;
+    let nextFibonacciNumber = 1;
+    while (nextFibonacciNumber <= greaterNumber) {
+        fibonacciArray.push(nextFibonacciNumber);
+        nextFibonacciNumber += fibonacciArray[currentIndex];
+        currentIndex++;
     }
-    return fibonacciArray.splice(0, i);
+    return fibonacciArray;
 }
 console.log(fibonacci(limitNumber()));
 
