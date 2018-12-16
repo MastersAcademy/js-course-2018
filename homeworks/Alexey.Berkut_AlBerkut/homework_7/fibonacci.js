@@ -13,7 +13,6 @@ function fib(min, max) {
         a = b; b = c;
         result.push(b);
     }
-    console.log(rand); /* for testing */
     return result;
 }
 
