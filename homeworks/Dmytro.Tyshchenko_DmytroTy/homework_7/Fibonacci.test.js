@@ -37,6 +37,11 @@ describe('Testing a function that returns an array of Fibonacci numbers that doe
         const error = new Error('The number should be at least 0!');
         expect(() => fibonacciNumbers(-8)).toThrow(error);
     });
+
+    test('sending not a numbers throws an error', () => {
+        const error = new Error('Must be given a positive number!');
+        expect(() => fibonacciNumbers('8')).toThrow(error);
+    });
 });
 
 describe('Check the range of random numbers', () => {

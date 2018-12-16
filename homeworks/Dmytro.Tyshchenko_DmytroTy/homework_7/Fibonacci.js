@@ -1,4 +1,6 @@
 function fibonacciNumbers(max) {
+    if (typeof max != 'number') throw new Error('Must be given a positive number!');
+
     function createFibonacci(fibonacciArray, preprevious, previous) {
         const next = previous + preprevious;
         if (next <= max) {
