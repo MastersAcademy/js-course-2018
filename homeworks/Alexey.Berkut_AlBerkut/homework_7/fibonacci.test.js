@@ -7,11 +7,8 @@ describe('Fibonacci test', () => {
     test('test first element', () => {
         expect(fib()[0]).toBe(0);
     });
-    test('test four element', () => {
-        expect(fib()[4]).toBe(3);
-    });
-    test('test ten element', () => {
-        expect(fib()[10]).toBe(55);
+    test('test two element', () => {
+        expect(fib()[1]).toBe(1);
     });
     test('sum two previous elements', () => {
         const num = fib();
