@@ -1,19 +1,21 @@
 const file = require('./task_1');
 
+const { resultFibonacci, randomNumber } = file;
+
 test('fibonacci return array', () => {
-    expect(Array.isArray(file.resultFibonacci)).toBeTruthy();
+    expect(Array.isArray(resultFibonacci)).toBeTruthy();
 });
 
 test('fibonacci array start from 0', () => {
-    expect(file.resultFibonacci[0]).toBe(0);
+    expect(resultFibonacci[0]).toBe(0);
 });
 
 test('fibonacci array element 1', () => {
-    expect(file.resultFibonacci[1]).toBe(1);
+    expect(resultFibonacci[1]).toBe(1);
 });
 
 test('fibonacci array correct', () => {
-    file.resultFibonacci.forEach((item, index, arr) => {
+    resultFibonacci.forEach((item, index, arr) => {
         if (index > 2) {
             const twoElements = arr[index - 2] + arr[index - 1];
             if (twoElements !== arr[index]) {
@@ -24,6 +26,6 @@ test('fibonacci array correct', () => {
 });
 
 test('fibonacci array finish from 50 to 100', () => {
-    expect(file.randomNumber).toBeGreaterThanOrEqual(50);
-    expect(file.randomNumber).toBeLessThanOrEqual(100);
+    expect(randomNumber).toBeGreaterThanOrEqual(50);
+    expect(randomNumber).toBeLessThanOrEqual(100);
 });
