@@ -1,11 +1,19 @@
-function fibonacci() {
-    const arr = [0, 1];
+function rundomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
-    const num = Math.floor(Math.random() * 50 + 50);
-
-    for (let i = 3; i <= num; i++) {
+function fibonacci(lengthArray) {
+    const arr = [];
+    if (lengthArray > 0) {
+        arr.push(0);
+    }
+    if (lengthArray > 1) {
+        arr.push(1);
+    }
+    for (let i = 3; i <= lengthArray; i++) {
         arr.push(arr[i - 2] + arr[i - 3]);
     }
     return arr;
 }
-module.exports = { fibonacci };
+
+module.exports = { fibonacci, rundomNumber };
