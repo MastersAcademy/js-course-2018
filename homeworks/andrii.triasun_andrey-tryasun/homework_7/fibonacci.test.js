@@ -4,7 +4,8 @@ describe('Test random number function', () => {
     test('Should be random number from 50 to 100', () => {
         const MIN = 50;
         const MAX = 100;
-        for (let i = 0; i < 1000; i++) {
+        // run the test several times
+        for (let i = 0; i < 5; i++) {
             const randomNumber = f.random(MIN, MAX);
             expect(randomNumber).toBeGreaterThanOrEqual(MIN);
             expect(randomNumber).toBeLessThanOrEqual(MAX);
@@ -36,7 +37,8 @@ describe('Test fibonacci function', () => {
     });
 
     test('Should be last element not more than a given number', () => {
-        for (let i = 0; i < 1000; i++) {
+        // run the test several times
+        for (let i = 0; i < 5; i++) {
             const randomNumber = f.random(50, 100);
             const result = f.fibonacciSequence(randomNumber);
             expect(result.pop()).toBeLessThanOrEqual(randomNumber);

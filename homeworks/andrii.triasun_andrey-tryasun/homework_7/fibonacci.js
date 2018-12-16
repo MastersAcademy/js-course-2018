@@ -2,15 +2,11 @@ const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 const fibonacciSequence = (end) => {
     const result = [];
-    let i = 0;
-    let fibonacci;
+    let fibonacci = 0;
 
-    while (true) {
-        fibonacci = i >= 2 ? result[i - 1] + result[i - 2] : i;
-        if (fibonacci > end) break;
-
+    for (let i = 1; fibonacci <= end; i++) {
         result.push(fibonacci);
-        i++;
+        fibonacci = i >= 2 ? result[i - 1] + result[i - 2] : i;
     }
 
     return result;
