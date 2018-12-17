@@ -16,6 +16,11 @@ for (let i = 0; i < 3; i++) {
     });
 }
 
+test('First, another user entered an invalid password', () => {
+    const error = new Error('Incorrect password entered!');
+    expect(() => login.login('kak_bozenka_smolvil', 'StrongPassword')).toThrow(error);
+});
+
 test('User enters the correct password immediately after three unsuccessful attempts', () => {
     const error = new Error('Wait 10 seconds before the next login attempt!');
     expect(() => login.login('admin', 'admin')).toThrow(error);
