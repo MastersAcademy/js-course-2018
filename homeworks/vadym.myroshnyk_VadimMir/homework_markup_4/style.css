@@ -1,0 +1,374 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header {
+  background: url("./images/background-1.png") rgb(67, 65, 65) no-repeat center top;
+  background-blend-mode: multiply;
+}
+
+.container {
+  width: 1024px;
+  border: 1px solid transparent;
+  margin: 0 auto;
+}
+
+.logo__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 32px;
+}
+
+.main__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: -52px;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.manu__item {
+  float: left;
+  display: block;
+  margin-right: 40px;
+}
+
+.menu__link {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.middle__text {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 20px;
+  color: #CCC;
+  margin-bottom: 140px;
+}
+
+.title__header {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  text-align: center;
+  margin-top: 210px;
+  font-size: 50px;
+  color: #FFF;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__services {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.service__item {
+  text-align: center;
+  margin: 20px;
+}
+
+.service__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #000;
+}
+
+.underline:after {
+  left: 45%;
+  bottom: -45px;
+  width: 111px;
+  height: 2px;
+  background: #35C2F8;
+  content: "";
+  position: absolute;
+}
+
+.title__section {
+  text-transform: uppercase;
+  margin-top: 70px;
+  font-size: 40px;
+  color: rgba(34, 34, 34, 255);
+}
+
+.title--center {
+  text-align: center;
+  position: relative;
+}
+
+.m-top-xs {
+  margin-top: 100px;
+}
+
+.color__section {
+  background-color: #F7F7F7;
+}
+
+.service__img {
+  margin-top: 25px;
+  width: 30px;
+  height: 30px;
+}
+
+.service__text {
+  margin-top: 10px;
+  text-transform: none;
+  color: #CCC;
+}
+
+.expertise__service {
+  margin-top: 10px;
+  padding: 12px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+}
+
+.img__background {
+  display: flex;
+  flex-direction: column;
+  background: url("./images/background-2.png") 30% 30% no-repeat;
+}
+
+.column__fix {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph--center {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.margin-left-xs {
+  margin-left: 420px;
+}
+
+.center--fix {
+  display: flex;
+  justify-content: center;
+}
+
+.margin-fix-xs {
+  margin-right: 370px;
+}
+
+.button {
+  border-radius: 30px;
+  background-color: #FFF;
+  color: #111;
+  padding: 15px 20px 13px;
+  cursor: pointer;
+  border: 1px solid #000;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.menuBurger {
+  padding: 10px 15px;
+  display: none;      /* кнопка гамбургер скрыта */
+  cursor: pointer;
+}
+
+#menuCSS {
+    display: none;
+  }
+
+@media (max-width: 1199.98px) {
+.container {
+   width: 1199.98px;
+  }
+
+.block__media {
+   display: flex;
+   flex-direction: column;
+ }
+
+.main__media {
+   flex-direction: row;
+ }
+
+.section__right {
+   display: none;
+  }
+
+.center__media--fix {
+  display: flex;
+  justify-content: center;
+}
+
+.title__header{
+  margin-top: 500px;
+}
+
+.menu {
+  display: none; /* пункты меню скрыты */
+  background: #FF0000;
+  position: absolute;
+}
+  
+.manu__item {
+  float: none; /* пункты меню в столбцах */
+}
+  
+.menuBurger {
+  display: inline-block; /* иконка гамбургер видна */
+}
+  
+#menuCSS:checked + .menu {
+  display: block;
+}
+
+}
+
+@media (max-width: 991.98px) {
+.container {
+  width: 991.98px;
+}
+
+.block__media {
+  flex-direction: column;
+}
+
+.main__media {
+  flex-direction: row;
+} 
+
+.section__right {
+  display: none;
+}
+
+.center__media--fix {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: none; /* пункты меню скрыты */
+  background: #FF0000;
+  position: absolute;
+}
+  
+.manu__item {
+  float: none; /* пункты меню в столбцах */
+}
+  
+.menuBurger {
+  display: inline-block; /* иконка гамбургер видна */
+}
+  
+#menuCSS:checked + .menu {
+  display: block;
+}
+}
+
+@media (max-width: 767.98px) {
+.container {
+  width: 767.98px;
+}
+
+.block__media {
+  flex-direction: column;
+}
+
+.main__media {
+  flex-direction: row;
+}
+
+.section__right {
+  display: none;
+}
+
+.center__media--fix {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: none; /* пункты меню скрыты */
+  background: #FF0000;
+  position: absolute;
+}
+  
+.manu__item {
+  float: none; /* пункты меню в столбцах */
+}
+  
+.menuBurger {
+  display: inline-block; /* иконка гамбургер видна */
+}
+  
+#menuCSS:checked + .menu {
+  display: block;
+}
+}
+
+@media (max-width: 597.98px) {
+.container {
+  width: 597.98px;
+}
+
+.block__media {
+  flex-direction: column;
+}
+
+.main__media {
+  flex-direction: row;
+}
+.section__right {
+  display: none;
+}
+
+.center__media--fix {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: none; /* пункты меню скрыты */
+  background: #FF0000;
+  position: absolute;
+}
+  
+.manu__item {
+  float: none; /* пункты меню в столбцах */
+}
+  
+.menuBurger {
+  display: inline-block; /* иконка гамбургер видна */
+}
+  
+#menuCSS:checked + .menu {
+  display: block;
+}
+}
+ 
