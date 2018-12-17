@@ -1,6 +1,6 @@
 /* eslint no-underscore-dangle: ["error", { "allowAfterThis": true }] */
 
-const USERS = require('./users');
+const users = require('./users');
 
 class Login {
     constructor() {
@@ -11,7 +11,7 @@ class Login {
         const FAIL_USER = new Error('The system does not have a user registered with this login!');
         const FAIL_PASSWORD = new Error('Incorrect password entered!');
 
-        [this.user] = USERS.filter(obj => obj.login === login);
+        [this.user] = users.filter(obj => obj.login === login);
         if (this.user === undefined) {
             this._addFail(login);
             throw FAIL_USER;
