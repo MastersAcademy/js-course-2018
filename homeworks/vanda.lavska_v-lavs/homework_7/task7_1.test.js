@@ -1,27 +1,28 @@
 
 const {
-    fibonacci, getRangeNumber, ERRORNEGATIVE, ERRORNOTNUMBER,
+    fibonacci, getRangeNumber, ERROR_NEGATIVE, ERROR_NOT_NUMBER,
 } = require('./task7_1');
 
-describe('getRangeNumber test', () => {
-    test('range', () => {
-        const value = getRangeNumber();
-        expect(value).toBeGreaterThanOrEqual(50);
-        expect(value).toBeLessThanOrEqual(100);
+describe('RangeNumber test', () => {
+    Math.random = jest.fn();
+    test('range bigger 50', () => {
+        Math.random.mockReturnValueOnce(0);
+        expect(getRangeNumber()).toBeCloseTo(50);
+    });
+    test('range less 100', () => {
+        Math.random.mockReturnValueOnce(0.99);
+        expect(getRangeNumber()).toBeCloseTo(100);
     });
 });
-
 describe('fibonacci test', () => {
-    test('Array at value mock-number = 51', () => {
-        const random = jest.fn();
-        random.mockReturnValue(51);
-        expect(fibonacci(random())).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34]);
+    test('Array at value maxValue = 51', () => {
+        expect(fibonacci(51)).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34]);
     });
 
     test('n should be a number', () => {
-        expect(() => fibonacci({})).toThrow(ERRORNOTNUMBER);
+        expect(() => fibonacci({})).toThrow(ERROR_NOT_NUMBER);
     });
     test('only positive numbers', () => {
-        expect(() => fibonacci(-1)).toThrow(ERRORNEGATIVE);
+        expect(() => fibonacci(-1)).toThrow(ERROR_NEGATIVE);
     });
 });

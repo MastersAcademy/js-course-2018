@@ -1,13 +1,13 @@
-const ERRORNEGATIVE = 'number should be positive';
-const ERRORNOTNUMBER = 'is not number';
+const ERROR_NEGATIVE = 'number should be positive';
+const ERROR_NOT_NUMBER = 'is not number';
 
 function getRangeNumber() {
     return Math.floor(Math.random() * 51 + 50);
 }
 
 function fibonacci(maxValue) {
-    if (typeof maxValue !== 'number') throw new Error(ERRORNOTNUMBER);
-    if (maxValue < 0) throw new Error(ERRORNEGATIVE);
+    if (typeof maxValue !== 'number') throw new Error(ERROR_NOT_NUMBER);
+    if (maxValue < 0) throw new Error(ERROR_NEGATIVE);
 
     const fibArr = [0, 1];
     for (let i = 2; i < maxValue; i++) {
@@ -19,8 +19,8 @@ function fibonacci(maxValue) {
     return fibArr;
 }
 
-console.log(fibonacci(getRangeNumber()));
+// console.log(fibonacci(getRangeNumber()));
 
 module.exports = {
-    fibonacci, getRangeNumber, ERRORNEGATIVE, ERRORNOTNUMBER,
+    fibonacci, getRangeNumber, ERROR_NEGATIVE, ERROR_NOT_NUMBER,
 };
