@@ -19,7 +19,7 @@ class Login {
 
         [this.fail] = this.failed.filter(obj => obj.login === login);
         if (this.user.password === password && (this.fail === undefined || this.fail.count < 3)) {
-            this._clearFail();
+            this._clearFail(login);
             return 'success';
         }
 
@@ -32,18 +32,19 @@ class Login {
         if (this.fail === undefined) this.failed.push({ login, count: 1 });
         else {
             this.fail.count++;
-            if (this.fail.count > 2) this._timerAllowLogin();
+            if (this.fail.count > 2) this._timerAllowLogin(login);
             if (this.fail.count > 3) throw FAIL_USER_BLOCKED;
         }
     }
 
-    _clearFail() {
-        this.failed.splice(this.failed.indexOf(this.fail), 1);
+    _clearFail(login) {
+        const user = this.failed.filter(obj => obj.login === login);
+        this.failed.splice(this.failed.indexOf(user), 1);
     }
 
-    _timerAllowLogin() {
+    _timerAllowLogin(login) {
         setTimeout(() => {
-            this._clearFail();
+            this._clearFail(login);
         }, 10000);
     }
 }
