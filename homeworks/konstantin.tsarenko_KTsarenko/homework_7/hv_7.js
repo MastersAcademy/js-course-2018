@@ -12,10 +12,12 @@ function getFibonacciSequence() {
     for (let i = 2; i < n; i++) {
         const currentFib = fibonacci[i - 1] + fibonacci[i - 2];
         if (currentFib >= n) break;
-        fibonacci[i] = currentFib;
+        fibonacci.push(currentFib);
     }
     console.log(fibonacci);
     return fibonacci;
 }
+
+getFibonacciSequence();
 
 module.exports = getFibonacciSequence;
