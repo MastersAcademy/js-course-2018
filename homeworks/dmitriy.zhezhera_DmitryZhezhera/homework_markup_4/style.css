@@ -100,15 +100,15 @@ body {
   transform: translateY(9px)
 }
 
-.burger__line--active {
+.js-burger__line-active {
   height: 0;
 }
 
-.burger__line--active:before {
+.js-burger__line-active:before {
   transform: rotate(45deg);
 }
 
-.burger__line--active:after {
+.js-burger__line-active:after {
   transform: rotate(-45deg);
 }
 
@@ -477,14 +477,14 @@ body {
     display: flex;
   }
 
-  .dreams-navigation {
+  .js-dreams-navigation {
     transition: 1s;
     flex-basis: 100%;
     transform: scaleY(0);
     transform-origin: center top;
   }
 
-  .dreams-navigation--active {
+  .js-dreams-navigation-active {
     flex-basis: 100%;
     height: 80vh;
     transform-origin: center top;
