@@ -20,8 +20,21 @@ test('The second number is 1', () => {
 });
 
 test('Every number is the sum of the two preceding ones', () => {
-    const serviceArray = createFibonacciSequence(randomLimitValue(50, 100));
+    const serviceArray = createFibonacciSequence(50, 100);
+
     for (let i = 2; i < serviceArray.length; i++) {
         expect(serviceArray[i]).toBe(serviceArray[i - 1] + serviceArray[i - 2]);
     }
+});
+
+test('The last number of the fibonacci sequence less than 100', () => {
+    const serviceArray = createFibonacciSequence(50, 100);
+
+    expect(serviceArray[serviceArray.length - 1]).toBeLessThan(100);
+});
+
+test('Even if a limit is less than 55 the last number of the fibonacci sequence is 55', () => {
+    const serviceArray = createFibonacciSequence(50, 55);
+
+    expect(serviceArray[serviceArray.length - 1]).toBe(55);
 });
