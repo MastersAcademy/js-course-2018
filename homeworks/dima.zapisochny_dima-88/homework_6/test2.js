@@ -25,7 +25,7 @@ class Racer extends Horse {
         }, 1000);
     }
 
-    stop() {
+    clear() {
         clearInterval(this.timeout);
     }
 }
@@ -35,13 +35,13 @@ class Race {
         this.horses = [];
     }
 
-    createRace(horsesArray) {
+    create(horsesArray) {
         this.horses = horsesArray;
     }
 
-    startRace() {
+    start() {
         this.horses.forEach(horse => horse.run());
-        const resultRace = setInterval(() => {
+        this.resultRace = setInterval(() => {
             this.horses.forEach((horse) => {
                 console.log(`\n* Horse: ${horse.name}`);
                 console.log(`* Breed: ${horse.breed}`);
@@ -49,14 +49,12 @@ class Race {
             });
             console.log('__');
         }, 2000);
-        setTimeout(() => {
-            clearInterval(resultRace);
-        }, 10000);
     }
 
-    stopRace() {
+    stop() {
         setTimeout(() => {
-            this.horses.forEach(horse => horse.stop());
+            clearInterval(this.resultRace);
+            this.horses.forEach(horse => horse.clear());
             this.horses.sort((a, b) => b.distance - a.distance);
             if (this.horses[0].distance === this.horses[1].distance) {
                 console.log('\n No winner!');
@@ -83,6 +81,6 @@ const horsesArray = [
 ];
 
 const race = new Race();
-race.createRace(horsesArray);
-race.startRace();
-race.stopRace();
+race.create(horsesArray);
+race.start();
+race.stop();
