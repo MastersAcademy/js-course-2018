@@ -3,10 +3,6 @@ function fib(n) {
     let a = 1;
     let b = 1;
 
-    if (n === 0) return [0];
-    if (n === 1) return [0, 1];
-    if (n === 2) return [0, 1, 1];
-
     do {
         const c = a + b;
         a = b;
