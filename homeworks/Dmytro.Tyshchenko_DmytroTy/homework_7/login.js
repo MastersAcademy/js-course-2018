@@ -4,7 +4,7 @@ const users = require('./users');
 
 class Login {
     constructor() {
-        this.failStore = [];
+        this._failStore = [];
     }
 
     login(login, password) {
@@ -17,7 +17,7 @@ class Login {
             throw FAIL_USER;
         }
 
-        [this.fail] = this.failStore.filter(obj => obj.login === login);
+        [this.fail] = this._failStore.filter(obj => obj.login === login);
         if (user.password === password && (this.fail === undefined || this.fail.count < 3)) {
             this._clearFail(login);
             return 'success';
@@ -29,7 +29,7 @@ class Login {
 
     _addFail(login) {
         const FAIL_USER_BLOCKED = new Error('Wait 10 seconds before the next login attempt!');
-        if (this.fail === undefined) this.failStore.push({ login, count: 1 });
+        if (this.fail === undefined) this._failStore.push({ login, count: 1 });
         else {
             this.fail.count++;
             if (this.fail.count > 2) this._timerAllowLogin(login);
@@ -38,8 +38,8 @@ class Login {
     }
 
     _clearFail(login) {
-        const user = this.failStore.filter(obj => obj.login === login)[0];
-        if (user !== undefined) this.failStore.splice(this.failStore.indexOf(user), 1);
+        const user = this._failStore.filter(obj => obj.login === login)[0];
+        if (user !== undefined) this._failStore.splice(this._failStore.indexOf(user), 1);
     }
 
     _timerAllowLogin(login) {
