@@ -22,12 +22,37 @@ describe('Test for fibonacci', () => {
     });
     test('Check that the array is Fibonacci sequence', () => {
         const array = fibonacci();
-        const a = array[array.length - 1];
-        const b = array[array.length - 2];
-        const c = array[array.length - 3];
-        const cof1 = (b / a).toFixed(3);
-        const cof2 = (c / a).toFixed(3);
-        expect(cof1).toBe('0.618');
-        expect(cof2).toBe('0.382');
+        for (let i = 0; i < array.length - 1; i++) {
+            const cof = parseFloat((array[i] / array[i + 1]).toFixed(3));
+            switch (i) {
+                case 0:
+                    expect(cof).toBe(0);
+                    break;
+                case 1:
+                    expect(cof).toBe(1);
+                    break;
+                case 2:
+                    expect(cof).toBe(0.5);
+                    break;
+                case 3:
+                    expect(cof).toBe(0.667);
+                    break;
+                case 4:
+                    expect(cof).toBe(0.6);
+                    break;
+                case 5:
+                    expect(cof).toBe(0.625);
+                    break;
+                case 6:
+                    expect(cof).toBe(0.615);
+                    break;
+                case 7:
+                    expect(cof).toBe(0.619);
+                    break;
+                default:
+                    expect(cof).toBe(0.618);
+                    break;
+            }
+        }
     });
 });
