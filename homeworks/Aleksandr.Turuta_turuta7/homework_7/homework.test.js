@@ -1,11 +1,11 @@
 const { makeFiboArr } = require('./homework_7');
 
 describe('Test funcltion "makeFiboArr", function supposed to return an array', () => {
-    test('returned empty array', () => {
+    test('0 index element of returned array should be 0', () => {
         expect(makeFiboArr()[0]).toBe(0);
     });
 
-    test('1 index element of returned array should be 0', () => {
+    test('2 index element of returned array should be 1', () => {
         expect(makeFiboArr()[2]).toBe(1);
     });
 
