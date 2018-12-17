@@ -2,10 +2,10 @@ const { fibonacci, randomNumber } = require('./fibonacci-sequence.js');
 
 describe('fibonacci sequence', () => {
     test('the last number is less than 100', () => {
-        expect(randomNumber()).toBeLessThan(100);
+        expect(randomNumber()).toBeLessThanOrEqual(100);
     });
     test('the last number is more than 50', () => {
-        expect(randomNumber()).toBeGreaterThan(50);
+        expect(randomNumber()).toBeGreaterThanOrEqual(50);
     });
 
     test('fibonacci() make array', () => {

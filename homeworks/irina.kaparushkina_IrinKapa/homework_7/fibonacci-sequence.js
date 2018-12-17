@@ -6,9 +6,8 @@ console.log(rand);
 
 function fibonacci() {
     const sequence = [0, 1];
-    let x;
-    for (let i = 0, j = 1, k = 0; k < rand; i = j, j = x, k += i) {
-        x = i + j;
+    for (let k = 0; k < rand; k += sequence[sequence.length - 2]) {
+        const x = sequence[sequence.length - 2] + sequence[sequence.length - 1];
         sequence.push(x);
     }
     return sequence;
