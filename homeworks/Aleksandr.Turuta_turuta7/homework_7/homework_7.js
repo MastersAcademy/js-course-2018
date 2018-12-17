@@ -1,13 +1,10 @@
 function makeFiboArr(rand) {
-    const array = [];
+    const array = [0, 1];
     const randNum = rand === undefined ? 50 : rand;
     console.log(randNum);
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < randNum; i++) {
         const fib = array[i - 1] + array[i - 2];
-        if (i === 0 && randNum > 0) array.push(0);
-        if (i === 1 && randNum > 1) array.push(1);
-        if (i === 2 && randNum > 1) array.push(1);
-        if (i > 2 && fib < randNum) array.push(fib);
+        if (i >= 2 && fib < randNum) array.push(fib);
     }
     return array;
 }
