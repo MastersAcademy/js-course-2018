@@ -39,7 +39,7 @@ class Login {
 
     _clearFail(login) {
         const user = this.failStore.filter(obj => obj.login === login)[0];
-        if (user === undefined) this.failStore.splice(this.failStore.indexOf(user), 1);
+        if (user !== undefined) this.failStore.splice(this.failStore.indexOf(user), 1);
     }
 
     _timerAllowLogin(login) {
