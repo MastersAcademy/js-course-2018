@@ -2,15 +2,17 @@ function randNumb(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-const fiboNumb = () => {
-    const arr = [0, 1];
-    for (let i = 0; i < 10; i++) {
-        const a = arr[i] + arr[i + 1];
-        if (a <= randNumb) {
-            arr.push(a);
-        }
+function fiboNumb(maxNumber) {
+    const fiboArray = [0];
+    let firstNumber = 0;
+    let nextNumber = 1;
+    while (nextNumber <= maxNumber) {
+        fiboArray.push(nextNumber);
+        nextNumber += fiboArray[firstNumber];
+        firstNumber++;
     }
-    return arr;
-};
+    return fiboArray;
+}
+console.log(fiboNumb(randNumb(50, 100)));
 
 module.exports = { fiboNumb };
