@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front-end</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<svg style="position: absolute; width: 0;">
+            <symbol id="icontools" viewBox="0 0 80 80">
+                <title>tools</title>
+                <path d="M25.2 36.7h.1c.5 0 1-.2 1.2-.5l1.5-1.4 10 9.9L23 59.5a5.7 5.7 0 0 0-1.6 4.6c.2 1.7 1 3.3 2.2 4.5l.1.2A7.3 7.3 0 0 0 29 71c1.5 0 3-.6 4-1.7l11-11L56.4 71c1 1 2.5 1.6 4 1.6 1.9 0 3.8-.8 5.3-2.3 1.3-1.3 2-3 2.2-4.6.1-1.8-.4-3.4-1.6-4.6l-9.5-9.6c3.2 0 6.2-1.4 9-4.2l4-3.9c4.2-4.3 2.9-9.3 1-14l-1-2.4-6.4 6.3c-.9 1-1.7 1.5-2.4 1.6-.5 0-1.2 0-2.2-1h-.2c-1-1.1-1.8-2.3.7-4.8l6.3-6.2-2.4-1c-4.8-2-9.8-3.3-14 1l-3.9 3.9C41 31 39.7 36 41.7 40.9l-.3.3-1 1.1-10-10 1.5-1.5a1.7 1.7 0 0 0-.2-2.6l-8-5.2c-.6-.4-1.5-.4-2 .2L18.8 26c-.5.6-.6 1.5-.2 2.1l5.2 8c.3.4.7.6 1.3.7zm38.7 26.7c.4.5.7 1.1.6 2 0 .8-.5 1.7-1.3 2.5a4 4 0 0 1-2.8 1.2c-.4 0-1-.1-1.6-.6L43.5 52.9l5-5L64 63.4zM43.8 43.6l.7-.4 1.9-.7-1-1.7c-2.2-4-1.4-8 2.3-11.7l4-4c1.9-1.9 4-2.3 7.8-1l-2.6 2.5c-4.4 4.4-2.3 7.9-.6 9.5v.1c2 2 4 2.2 5.3 2 1.4-.3 2.8-1.1 4.3-2.6l2.6-2.6c1.2 3.7.8 6-1.2 7.9l-3.9 3.9c-3.5 3.4-7.1 4-11.2 1.9l-1.4-1.3c-.5-.6-1.1-1-1.9-1.3l-1-.4-3 3-2.2-2 1-1zm-1.4 5.6l-3 3 .3 1c.3.8.7 1.5 1.2 2l.7.7-11 11c-1 1-3 .8-4.3-.5l-.2-.2a4 4 0 0 1-1.2-2.4c0-.8.2-1.5.6-2l14.8-14.7 2.1 2.1zM23.1 26.6l5 3.3-2.5 2.4-3.3-5 .8-.7z"/>
+            </symbol>
+            <symbol id="iconweb" viewBox="0 0 24 24">
+                <title>connections</title>
+                <path d="M23 18h-1v-6l-1-1h-8V6h1l1-1V1l-1-1h-4L9 1v4l1 1h1v5H3l-1 1v6H1l-1 1v4l1 1h4l1-1v-4l-1-1H4v-5h7v5h-1l-1 1v4l1 1h4l1-1v-4l-1-1h-1v-5h7v5h-1l-1 1v4l1 1h4l1-1v-4l-1-1zM10 5V1h4v4h-4zM5 19v4H1v-4h4zm9 0v4h-4v-4h4zm9 4h-4v-4h4v4z"/>
+            </symbol>
+            <symbol id="iconsaver" viewBox="0 0 50 50">
+                <title>support</title>
+                <path d="M25 1a24 24 0 1 0 0 48 24 24 0 0 0 0-48zm20 14.7L36.5 19a13 13 0 0 0-5.7-5.7l3.4-8.3C39 7.3 42.7 11 45 15.7zM25 36a11 11 0 1 1 0-22 11 11 0 0 1 0 22zm7.5-31.7L29 12.6a13 13 0 0 0-8 0l-3.5-8.3a22 22 0 0 1 15 0zm-16.8.8l3.4 8.3a13 13 0 0 0-5.7 5.7l-8.3-3.4C7.3 11 11 7.3 15.7 5zM4.3 17.5l8.3 3.5a13 13 0 0 0 0 8l-8.3 3.5a22 22 0 0 1 0-15zm.8 16.8l8.3-3.4a13 13 0 0 0 5.7 5.7l-3.4 8.3C11 42.7 7.3 39 5 34.3zm12.4 11.4l3.5-8.3a13 13 0 0 0 8 0l3.5 8.3a22 22 0 0 1-15 0zm16.8-.8L31 36.6a13 13 0 0 0 5.7-5.7l8.3 3.4C42.7 39 39 42.7 34.3 45zm11.4-12.4L37.4 29a13 13 0 0 0 0-8l8.3-3.5a22 22 0 0 1 0 15z"/>
+            </symbol>
+        </svg>
+<body class="body">
+    <header class="header container">
+        <a class="logo" href="/"><img src="/home/kostyan/js-course-2018/homeworks/Tatiana.Skachko_S3tt0n/homework_markup_1/images/logo.png" alt="logo"></a>
+        <nav class="navigation">
+            <div class="toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.0" viewBox="0 0 512 512" width="512px" xml:space="preserve">
+                        <g><rect height="5" width="40" x="62" y="0"/></g>
+                        <g><rect height="5" width="40" x="62" y="15"/></g>
+                        <g><rect height="5" width="40" x="62" y="30"/></g>
+                    </svg>
+            </div>
+            <ul class="navigation__menu">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Services</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Portfolio</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">About</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Team</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section first">
+        <img class="first__background" src="/home/kostyan/js-course-2018/homeworks/Tatiana.Skachko_S3tt0n/homework_markup_1/images/background.jpg" alt="">
+        <div class="first__text">
+                <h1>Build the website of your dreams</h1>
+                <h3>We are a digital agency that believes in building things that are  meaningful!</h3>
+        </div>
+    </section>
+     <section class="section second">
+        <h2>Core Services</h2>
+        <div class="services">
+            <div class="services__item">
+                <svg class="icons">
+                    <use xlink:href="#icontools"></use> 
+                </svg>
+                <h3>Beautiful Designs</h3>
+                <p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+            </div>
+            <div class="services__item">
+                <svg class="icons">
+                    <use xlink:href="#iconweb"></use> 
+                </svg>
+                <h3>Web development</h3>
+                <p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+            </div>
+            <div class="services__item">
+                <svg class="icons">
+                    <use xlink:href="#iconsaver"></use> 
+                </svg>
+                <h3>24/7 Support</h3>
+                <p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+            </div>
+        </div>
+    </section>
+
+<!--homework 2-->
+
+    <section class="section third">
+        <div class="third__content mobile-padding">
+            <h5>Other Expertise</h5>
+            <p2>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit<br>aenean rhoncus posuere odio in tincidunt consequat sem cure  digni ssim. </p2>
+            <div class="second__wrapper">
+                <div class="wrapper__item item-content">
+                    <div class="wrapper__item__image">
+                        <img src="images/icon1.png" alt="Setup">
+                    </div>
+                    <div class="wrapper__item__text">
+                        <h4>Custom setup</h4>
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                    </div>
+                </div>
+                <div class="wrapper__item item-content">
+                    <div class="wrapper__item__image">
+                        <img src="images/icon3.png" alt="Cloud">
+                    </div>
+                    <div class="wrapper__item__text">
+                        <h4>Cloud control</h4>
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                    </div>
+                </div>
+                <div class="wrapper__item item-content">
+                    <div class="wrapper__item__image">
+                        <img src="images/icon2.png" alt="Support">
+                    </div>
+                    <div class="wrapper__item__text">
+                        <h4>All star support team</h4>
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                    </div>
+                </div>
+                <div class="wrapper__item item-content">
+                    <div class="wrapper__item__image">
+                        <img src="images/icon4.png" alt="Secure">
+                    </div>
+                    <div class="wrapper__item__text">
+                        <h4>Top notch security</h4>
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="button button1" type="button">Learn more</button>
+        </div>
+        <div class="third__background">
+            <img class="third__image" src="/home/kostyan/js-course-2018/homeworks/Tatiana.Skachko_S3tt0n/homework_markup_1/images/image1.jpg" alt="Third">
+        </div>
+    </section>
+    <section class="section forth">
+        <div class="forth__content mobile-padding">
+            <img class="forth__content_background" src="images/background-users.svg" alt="Users">
+            <div class="third__content_text">
+                    <h5>Amazing Portfolio</h5>
+                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                    <p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
+                <div class="portfolio__wrapper2">
+                    <div class="wrapper2__item">
+                        <div class="wrapper2__item__image">
+                            <img src="images/icon1.png" alt="Sail">
+                        </div>
+                        <div class="wrapper2__item__text">
+                            <h4>Sail Away Your Worries</h4>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                        </div>
+                    </div>
+                    <div class="wrapper2__item">
+                        <div class="wrapper2__item__text">
+                            <img src="images/icon3.png" alt="Support">
+                        </div>
+                        <div class="wrapper2__item__text">
+                            <h4>All-star support team</h4>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                        </div>
+                    </div>
+                    <div class="wrapper2__item">
+                        <div class="wrapper2__item__text">
+                            <img src="images/icon5.png" alt="Services">
+                        </div>
+                        <div class="wrapper2__item__text">
+                            <h4>fully Integrated service</h4>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forth__background">
+            <img class="forth__background-image" src="images/image2.jpg" alt="Tablet">
+        </div>
+        <div class="forth__table">
+            <div class="table__image">
+                <img class="portfolio__image" src="images/portfolio1.jpg" alt="portfolio1">
+            </div>
+            <div class="table__image">
+                <img class="portfolio__image" src="images/portfolio2.jpg" alt="portfolio2">
+            </div>
+            <div class="table__image">
+                <img class="portfolio__image" src="images/portfolio3.jpg" alt="portfolio3">
+            </div>
+            <div class="table__image">
+                <img class="portfolio__image" src="images/portfolio4.jpg" alt="portfolio4">
+            </div>
+            <div class="table__image">
+                <img class="portfolio__image" src="images/portfolio5.jpg" alt="portfolio5">
+            </div>
+            <div class="table__image">
+                <img class="portfolio__image" src="images/portfolio6.jpg" alt="portfolio6">
+            </div>
+        </div>
+    </section>
+     <section class="section fifth">
+        <h6>About Us</h6>
+        <div class="fifth__wrapper3">
+            <div class="wrapper3__item">
+                <div class="wrapper3__content">
+                    <p3>July 2010</p3>
+                    <h4>Our Humble Beginnings</h4>
+                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="image__wrapper">
+                    <img class="round__image" src="/home/kostyan/js-course-2018/homeworks/Tatiana.Skachko_S3tt0n/homework_markup_1/images/about1.jpg" alt="Beginnings">
+                </div>
+            </div>
+             <div class="wrapper3__item wrapper3__item_reverse">
+                <div class="wrapper3__content wrapper3__content_reverse mobile-padding">
+                    <p3>January 2011</p3>
+                    <h4>Facing Startup Battles</h4>
+                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="image__wrapper image__wrapper_reverse mobile-padding">
+                    <img class="round__image" src="/home/kostyan/js-course-2018/homeworks/Tatiana.Skachko_S3tt0n/homework_markup_1/images/about2.jpg" alt="Battles">
+                </div>
+            </div>
+             <div class="wrapper3__item">
+                <div class="wrapper3__content mobile-padding">
+                    <p3>December 2012</p3>
+                    <h4>Enter The Dark Days</h4>
+                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="image__wrapper">
+                    <img class="round__image" src="/home/kostyan/js-course-2018/homeworks/Tatiana.Skachko_S3tt0n/homework_markup_1/images/about3.jpg" alt="Dark days">
+                </div>
+            </div>
+             <div class="wrapper3__item wrapper3__item_reverse">
+                <div class="wrapper3__content wrapper3__content_reverse mobile-padding">
+                    <p3>february 2014</p3>
+                    <h4>Our Triumph</h4>
+                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="image__wrapper image__wrapper_reverse">
+                    <img class="round__image" src="/home/kostyan/js-course-2018/homeworks/Tatiana.Skachko_S3tt0n/homework_markup_1/images/about4.jpg" alt="Triumph">
+                </div>
+            </div>
+            <button type="button" class="wrapper3__content_blue image__wrapper">
+                Our Story Continues ...
+            </button>
+        </div>
+    </section>
+     <section class="section sixth">
+        <h5>Awesome Team</h5>
+        <div class="team__description">
+            <div class="table__image">
+                <div class="image__wrapper">
+                    <img class="round__image" src="/home/kostyan/js-course-2018/homeworks/Tatiana.Skachko_S3tt0n/homework_markup_1/images/black-circle.png" alt="Photo">
+                </div>
+                <h8>Jimmy Letterman</h8>
+                <p>Marketer</p>
+                <div class="contacts">
+                    <a class="contacts-icon" href="/">
+                        <img class="contacts__image" src="images/twitter.png" alt="Twitter">
+                    </a>
+                    <a class="contacts-icon" href="/">
+                        <img class="contacts__image" src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a class="contacts-icon" href="/">
+                        <img class="contacts__image" src="images/pinterest.png" alt="Pinterest">
+                    </a>
+                </div>
+            </div>
+             <div class="table__image">
+                <div class="image__wrapper">
+                    <img class="round__image" src="/home/kostyan/js-course-2018/homeworks/Tatiana.Skachko_S3tt0n/homework_markup_1/images/black-circle.png" alt="Photo">
+                </div>
+                <h8>Rico Massimo</h8>
+                <p>Coder</p>                
+            </div>
+             <div class="table__image">
+                <div class="image__wrapper">
+                    <img class="round__image" src="/home/kostyan/js-course-2018/homeworks/Tatiana.Skachko_S3tt0n/homework_markup_1/images/black-circle.png" alt="Photo">
+                </div>
+                <h8>Lisa Mason</h8>
+                <p>Graphic Designer</p>
+                <div class="contacts">
+                    <a class="contacts-icon" href="/">
+                        <img class="contacts__image" src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a class="contacts-icon" href="/">
+                        <img class="contacts__image" src="images/pinterest.png" alt="Pinterest">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="team__text p">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+    </section>
+    <script src="sript.js"></script>
+</body>
+</html>
