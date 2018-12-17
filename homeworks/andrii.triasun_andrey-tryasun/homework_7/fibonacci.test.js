@@ -44,4 +44,10 @@ describe('Test fibonacci function', () => {
             expect(result.pop()).toBeLessThanOrEqual(randomNumber);
         }
     });
+
+    test('Should be each element is a part of Fibonacci sequence', () => {
+        const genuineFibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+        const result = f.fibonacciSequence(89);
+        expect(result).toEqual(genuineFibonacci);
+    });
 });
