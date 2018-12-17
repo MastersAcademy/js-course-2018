@@ -4,21 +4,21 @@ const users = require('./users');
 
 class Login {
     constructor() {
-        this.failed = [];
+        this.failStore = [];
     }
 
     login(login, password) {
         const FAIL_USER = new Error('The system does not have a user registered with this login!');
         const FAIL_PASSWORD = new Error('Incorrect password entered!');
 
-        [this.user] = users.filter(obj => obj.login === login);
-        if (this.user === undefined) {
+        const user = users.filter(obj => obj.login === login)[0];
+        if (user === undefined) {
             this._addFail(login);
             throw FAIL_USER;
         }
 
-        [this.fail] = this.failed.filter(obj => obj.login === login);
-        if (this.user.password === password && (this.fail === undefined || this.fail.count < 3)) {
+        [this.fail] = this.failStore.filter(obj => obj.login === login);
+        if (user.password === password && (this.fail === undefined || this.fail.count < 3)) {
             this._clearFail(login);
             return 'success';
         }
@@ -29,7 +29,7 @@ class Login {
 
     _addFail(login) {
         const FAIL_USER_BLOCKED = new Error('Wait 10 seconds before the next login attempt!');
-        if (this.fail === undefined) this.failed.push({ login, count: 1 });
+        if (this.fail === undefined) this.failStore.push({ login, count: 1 });
         else {
             this.fail.count++;
             if (this.fail.count > 2) this._timerAllowLogin(login);
@@ -38,8 +38,8 @@ class Login {
     }
 
     _clearFail(login) {
-        const user = this.failed.filter(obj => obj.login === login);
-        this.failed.splice(this.failed.indexOf(user), 1);
+        const user = this.failStore.filter(obj => obj.login === login)[0];
+        if (user === undefined) this.failStore.splice(this.failStore.indexOf(user), 1);
     }
 
     _timerAllowLogin(login) {
