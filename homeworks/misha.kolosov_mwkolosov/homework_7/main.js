@@ -1,17 +1,17 @@
-const random = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
-
-const fib = (maxNum) => {
+function fib(maxNum) {
     const arr = [0, 1];
-    for (let i = 0; i < 20; i++) {
-        const a = arr[i] + arr[i + 1];
-        if (a <= maxNum) {
-            arr.push(a);
-        }
+    let current = 0;
+
+    while (true) {
+        current += arr[arr.length - 2] || 1;
+        if (current <= maxNum) arr.push(current);
+        else break;
     }
+
     return arr;
-};
+}
 
-console.log(fib(random));
-console.log(random);
+const random = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
+console.log(random, fib(random));
 
-module.exports = { fib };
+module.exports = { fib, random };
