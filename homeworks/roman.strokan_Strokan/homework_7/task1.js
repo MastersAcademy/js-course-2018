@@ -8,7 +8,7 @@ function fib(endVal) {
     let num = 1;
     while (num <= endVal) {
         array.push(num);
-        num = array[array.length - 2] + array[array.length - 1]; 
+        num = array[array.length - 2] + array[array.length - 1];
     }
     return array;
 }
