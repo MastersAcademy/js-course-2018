@@ -21,4 +21,12 @@ describe('fibonacci with random limit', () => {
 
         expect(task()).toEqual(mockResult);
     });
+    
+    test('last number in array is 34', () => {
+        const mockResult = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34];
+
+        random.mockReturnValueOnce(34);
+
+        expect(task()).toEqual(mockResult);
+    });
 });
