@@ -17,8 +17,8 @@ class Login {
             throw FAIL_USER;
         }
 
-        [this.fail] = this._failStore.filter(obj => obj.login === login);
-        if (user.password === password && (this.fail === undefined || this.fail.count < 3)) {
+        const fail = this._failStore.filter(obj => obj.login === login)[0];
+        if (user.password === password && (fail === undefined || fail.count < 3)) {
             this._clearFail(login);
             return 'success';
         }
@@ -29,11 +29,13 @@ class Login {
 
     _addFail(login) {
         const FAIL_USER_BLOCKED = new Error('Wait 10 seconds before the next login attempt!');
-        if (this.fail === undefined) this._failStore.push({ login, count: 1 });
+
+        const fail = this._failStore.filter(obj => obj.login === login)[0];
+        if (fail === undefined) this._failStore.push({ login, count: 1 });
         else {
-            this.fail.count++;
-            if (this.fail.count > 2) this._timerAllowLogin(login);
-            if (this.fail.count > 3) throw FAIL_USER_BLOCKED;
+            fail.count++;
+            if (fail.count > 2) this._timerAllowLogin(login);
+            if (fail.count > 3) throw FAIL_USER_BLOCKED;
         }
     }
 
