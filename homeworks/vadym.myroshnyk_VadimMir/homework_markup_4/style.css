@@ -195,180 +195,180 @@ header {
 
 .menuBurger {
   padding: 10px 15px;
-  display: none;      /* кнопка гамбургер скрыта */
+  display: none;
   cursor: pointer;
 }
 
-#menuCSS {
+.menuCSS {
+  display: none;
+}
+
+@media (max-width: 1199.98px) {
+
+  .container {
+    width: 1199.98px;
+  }
+
+  .block__media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__media {
+    flex-direction: row;
+  }
+
+  .section__right {
     display: none;
   }
 
-@media (max-width: 1199.98px) {
-.container {
-   width: 1199.98px;
+  .center__media--fix {
+    display: flex;
+    justify-content: center;
   }
 
-.block__media {
-   display: flex;
-   flex-direction: column;
- }
-
-.main__media {
-   flex-direction: row;
- }
-
-.section__right {
-   display: none;
+  .title__header {
+    margin-top: 500px;
   }
 
-.center__media--fix {
-  display: flex;
-  justify-content: center;
-}
+  .menu {
+    display: none;
+    position: absolute;
+  }
 
-.title__header{
-  margin-top: 500px;
-}
+  .manu__item {
+    float: none;
+  }
 
-.menu {
-  display: none; /* пункты меню скрыты */
-  background: #FF0000;
-  position: absolute;
-}
-  
-.manu__item {
-  float: none; /* пункты меню в столбцах */
-}
-  
-.menuBurger {
-  display: inline-block; /* иконка гамбургер видна */
-}
-  
-#menuCSS:checked + .menu {
-  display: block;
-}
+  .menuBurger {
+    display: inline-block;
+  }
 
+  .menuCSS:checked ~ .menu {
+    display: block;
+  }
 }
 
 @media (max-width: 991.98px) {
-.container {
-  width: 991.98px;
-}
 
-.block__media {
-  flex-direction: column;
-}
+  .container {
+    width: 991.98px;
+  }
 
-.main__media {
-  flex-direction: row;
-} 
+  .block__media {
+    flex-direction: column;
+  }
 
-.section__right {
-  display: none;
-}
+  .main__media {
+    flex-direction: row;
+  }
 
-.center__media--fix {
-  display: flex;
-  justify-content: center;
-}
+  .section__right {
+    display: none;
+  }
 
-.menu {
-  display: none; /* пункты меню скрыты */
-  background: #FF0000;
-  position: absolute;
-}
-  
-.manu__item {
-  float: none; /* пункты меню в столбцах */
-}
-  
-.menuBurger {
-  display: inline-block; /* иконка гамбургер видна */
-}
-  
-#menuCSS:checked + .menu {
-  display: block;
-}
+  .center__media--fix {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu {
+    display: none; /* пункты меню скрыты */
+    position: absolute;
+  }
+
+  .manu__item {
+    float: none;/* пункты меню в столбцах */
+  }
+
+  .menuBurger {
+    display: inline-block; /* иконка гамбургер видна */
+  }
+
+  .menuCSS:checked ~ .menu {
+    display: block;
+  }
 }
 
 @media (max-width: 767.98px) {
-.container {
-  width: 767.98px;
-}
 
-.block__media {
-  flex-direction: column;
-}
+  .container {
+    width: 767.98px;
+  }
 
-.main__media {
-  flex-direction: row;
-}
+  .block__media {
+    flex-direction: column;
+  }
 
-.section__right {
-  display: none;
-}
+  .main__media {
+    flex-direction: row;
+  }
 
-.center__media--fix {
-  display: flex;
-  justify-content: center;
-}
+  .section__right {
+    display: none;
+  }
 
-.menu {
-  display: none; /* пункты меню скрыты */
-  background: #FF0000;
-  position: absolute;
-}
-  
-.manu__item {
-  float: none; /* пункты меню в столбцах */
-}
-  
-.menuBurger {
-  display: inline-block; /* иконка гамбургер видна */
-}
-  
-#menuCSS:checked + .menu {
-  display: block;
-}
+  .center__media--fix {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu {
+    display: none; /* пункты меню скрыты */
+    position: absolute;
+  }
+
+  .manu__item {
+    float: none; /* пункты меню в столбцах */
+  }
+
+  .menuBurger {
+    display: inline-block; /* иконка гамбургер видна */
+  }
+
+  .menuCSS:checked ~ .menu {
+    display: block;
+  }
 }
 
 @media (max-width: 597.98px) {
-.container {
-  width: 597.98px;
-}
 
-.block__media {
-  flex-direction: column;
-}
+  .container {
+    width: 597.98px;
+  }
 
-.main__media {
-  flex-direction: row;
-}
-.section__right {
-  display: none;
-}
+  .block__media {
+    flex-direction: column;
+  }
 
-.center__media--fix {
-  display: flex;
-  justify-content: center;
-}
+  .main__media {
+    flex-direction: row;
+  }
 
-.menu {
-  display: none; /* пункты меню скрыты */
-  background: #FF0000;
-  position: absolute;
-}
-  
-.manu__item {
-  float: none; /* пункты меню в столбцах */
-}
-  
-.menuBurger {
-  display: inline-block; /* иконка гамбургер видна */
-}
-  
-#menuCSS:checked + .menu {
-  display: block;
-}
+  .section__right {
+    display: none;
+  }
+
+  .center__media--fix {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu {
+    display: none; /* пункты меню скрыты */
+    position: absolute;
+  }
+
+  .manu__item {
+    float: none; /* пункты меню в столбцах */
+  }
+
+  .menuBurger {
+    display: inline-block; /* иконка гамбургер видна */
+  }
+
+  .menuCSS:checked ~ .menu {
+    display: block;
+  }
 }
  
