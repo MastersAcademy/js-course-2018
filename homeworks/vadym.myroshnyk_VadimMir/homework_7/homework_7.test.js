@@ -6,18 +6,16 @@ describe('fibonacci', () => {
     });
 
     test('check Fibonacci sequence until max number of 50', () => {
-        const array = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34];
         const arrayFinonacci = fib(50);
-        for (let i = 0; i < arrayFinonacci.lenght; i++) {
-            expect(arrayFinonacci[i]).toEqual(arrayFinonacci[i] === array[i]);
+        for (let i = 2; i < arrayFinonacci.lenght; i++) {
+            expect(arrayFinonacci[i]).toEqual(arrayFinonacci[i - 1] + arrayFinonacci[i - 2]);
         }
     });
 
     test('check Fibonacci sequence until max number of 100', () => {
-        const array = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
         const arrayFinonacci = fib(50);
-        for (let i = 0; i < arrayFinonacci.lenght; i++) {
-            expect(arrayFinonacci[i]).toEqual(arrayFinonacci[i] === array[i]);
+        for (let i = 2; i < arrayFinonacci.lenght; i++) {
+            expect(arrayFinonacci[i]).toEqual(arrayFinonacci[i - 1] + arrayFinonacci[i - 2]);
         }
     });
 
