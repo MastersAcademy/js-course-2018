@@ -2,7 +2,7 @@ function fib(maxNum) {
     const arr = [0, 1];
     let current = 0;
 
-    while (true) {
+    while (current <= maxNum) {
         current += arr[arr.length - 2] || 1;
         if (current <= maxNum) arr.push(current);
         else break;
