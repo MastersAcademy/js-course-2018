@@ -1,17 +1,18 @@
-function fib(array, endVal) {
-    const n = array[array.length - 2] + array[array.length - 1];
-    if (n < endVal) {
-        array.push(n);
-        fib(array, endVal);
+function randomNamber() {
+    const endVal = Math.floor(Math.random() * 50) + 50;
+    return endVal;
+}
+
+function fib(endVal) {
+    const array = [0];
+    let num = 1;
+    while (num <= endVal) {
+        array.push(num);
+        num = array[array.length - 2] + array[array.length - 1]; 
     }
     return array;
 }
 
-function main() {
-    const endVal = Math.floor(Math.random() * 50) + 50;
-    const startAray = [0, 1];
-    return fib(startAray, endVal);
-}
-console.log(main());
+console.log(fib(randomNamber()));
 
 module.exports = { fib };
