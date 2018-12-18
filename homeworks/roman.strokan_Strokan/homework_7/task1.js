@@ -1,6 +1,6 @@
 function randomNamber() {
-    const endVal = Math.floor(Math.random() * 50) + 50;
-    return endVal;
+    const randomNum = Math.floor(Math.random() * 50) + 50;
+    return randomNum;
 }
 
 function fib(endVal) {
