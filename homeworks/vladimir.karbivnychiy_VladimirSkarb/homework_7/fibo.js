@@ -3,16 +3,13 @@ function randNumb(min, max) {
 }
 
 function fiboNumb(maxNumber) {
-    const fiboArray = [0];
-    let firstNumber = 0;
-    let nextNumber = 1;
-    while (nextNumber <= maxNumber) {
-        fiboArray.push(nextNumber);
-        nextNumber += fiboArray[firstNumber];
-        firstNumber++;
+    const array = [0, 1];
+    console.log(maxNumber);
+    for (let i = 1; i < maxNumber; i = array[array.length - 1] + array[array.length - 2]) {
+        array.push(i);
     }
-    return fiboArray;
+    return array;
 }
-console.log(fiboNumb(randNumb(50, 100)));
 
+console.log(fiboNumb(randNumb(50, 100)));
 module.exports = { fiboNumb };
