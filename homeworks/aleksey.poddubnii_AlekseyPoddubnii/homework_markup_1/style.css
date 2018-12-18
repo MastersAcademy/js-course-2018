@@ -395,3 +395,63 @@ ul {
   color: #FFF;
   text-align: center;
 }
+
+/* Team block */
+
+.team-boxes {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1024px;
+  text-align: center;
+}
+
+.about-box__item {
+  margin-top: 25px;
+  font-weight: 700;
+  color: #000;
+}
+
+.team-social {
+  margin-top: 15px;
+}
+
+.team-social__link {
+  text-decoration: none;
+}
+
+.team-social__svg {
+  max-width: 40px;
+}
+
+.team__desc {
+  margin: 0 auto;
+  padding: 69px 0 106px;
+  font-size: 16px;
+  max-width: 620px;
+  text-align: center;
+}
+
+/* Contact us */
+
+.contact-us {
+  color: #FFF;
+  background-color: #111;
+}
+
+.contact-us-blocks {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.contact-us-desc__ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.contact-us-desc__icon {
+  vertical-align: middle;
+  margin-right: 15px;
+}
