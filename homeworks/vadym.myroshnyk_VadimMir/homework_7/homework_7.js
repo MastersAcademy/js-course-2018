@@ -1,17 +1,19 @@
 // fibonacci
-const random = Math.floor(Math.random() * (100 - 50 + 1) + 50);
+const randomNum = Math.floor(Math.random() * (100 - 50 + 1) + 50);
 
-function fib() {
+function fib(random) {
+    const arr = [];
     let a = 1;
-    let b = 1;
-    for (let i = 3; i <= random; i++) {
+    let b = 0;
+    for (let i = 0; i <= random; i += a) {
         const c = a + b;
         a = b;
         b = c;
+        arr.push(c);
     }
-    return b;
+    return arr;
 }
 
-console.log(fib(random));
+console.log(fib(randomNum));
 
 module.exports = fib;
