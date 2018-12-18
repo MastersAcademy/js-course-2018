@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans|Open+Sans");
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 1024px;
+  font-family: "Open Sans", "sans-serif";
+}
+
+.header_style {
+  width: 1024px;
+  background-image: url("../homework_markup_1/images/Backgroundbackground.png");
+  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, .7);
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+}
+
+.pos_of_logo_and_nav {
+  display: flex;
+}
+
+.logo {
+  margin: 52px 0 0 120px;
+}
+
+.menu {
+  padding-right: 50px;
+  margin: 67px 0 0 130px;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  display: flex;
+  list-style-type: none;
+}
+
+.ref {
+  margin-left: 35px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.ref:hover {
+  text-decoration: underline;
+  color: #35C;
+}
+
+.title {
+  text-align: center;
+}
+
+.title_f {
+  color: #FFF;
+  font-size: 40px;
+  font-family: Montserrat, sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.title_f:after,
+.caption_services:after {
+  content: "";
+  margin-top: 51px;
+  width: 111px;
+  height: 2px;
+  background-color: #35C;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.meaningful {
+  margin-top: 54px;
+  margin-bottom: 60px;
+  color: #CCC;
+  font-family: Noto Sans, sans-serif;
+  font-size: 20px;
+}
+
+.section_1 {
+  width: 900px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.caption_services,
+.caption_other,
+.caption_portfolio {
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  letter-spacing: -2px;
+  font-weight: 700;
+  padding-top: 99px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.caption_services {
+  margin-bottom: 0;
+  line-height: 75px;
+  text-align: center;
+}
+
+.caption_other,
+.caption_portfolio {
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block_im {
+  width: 62px;
+  height: 55px;
+  margin-top: 79px;
+  margin-bottom: 39px;
+}
+
+.block_head {
+  height: 12px;
+  margin-bottom: 18px;
+  font-family: Montserrat, sans-serif;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.content .block_txt {
+  color: #888;
+  font-family: Noto Sans, sans-serif;
+  font-size: 14px;
+  margin-bottom: 101px;
+}
+
+.section_2,
+.section_3 {
+  text-align: left;
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: stretch;
+}
+
+.section_3 {
+  background-color: #FFF;
+}
+
+.description_other_exp,
+.description_porfolio {
+  width: 654px;
+  color: #777;
+  font-family: "Noto Sans", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.other_services .block_head,
+.positive_list .block_head {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.other_services .block_txt,
+.positive_list .block_txt {
+  color: #777;
+  line-height: 22px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: "Noto Sans", "sans-serif";
+}
+
+.positive_list .block_txt {
+  width: auto;
+}
+
+.extra_txt_portfolio {
+  background: url("../homework_markup_1/images/portfolio-bg.png") no-repeat #FFF;
+  background-size: auto;
+  background-position: bottom;
+  background-attachment: scroll;
+}
+
+.block_icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-right: 16px;
+  margin-top: 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info,
+.info_portfolio {
+  margin-left: 75px;
+}
+
+.extra_txt_portfolio {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.box_with_info,
+.positive_list {
+  display: flex;
+  margin-top: 35px;
+}
+
+.bag,
+.ipad {
+  display: block;
+  text-align: right;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.img_bag,
+.img_ipad {
+  width: auto;
+  height: 800px;
+}
+
+.button_details {
+  display: inline-block;
+  background-color: #FFF;
+  color: #222;
+  text-shadow: 0 1px 1 px rgba(0, 0, 0, .7);
+  height: 61px;
+  width: 169px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 36px;
+  border: 1px solid #D4EFF9;
+  transition: .7s;
+  margin-top: 49px;
+  margin-bottom: 88px;
+}
+
+.button_details:hover {
+  color: #DDD;
+  background-color: #777;
+}
+
+.row_small_photo {
+  width: 346px;
+  height: 251px;
+  justify-content: center;
+}
