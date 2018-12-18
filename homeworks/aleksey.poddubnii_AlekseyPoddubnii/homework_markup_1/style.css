@@ -437,6 +437,17 @@ ul {
 .contact-us {
   color: #FFF;
   background-color: #111;
+  padding: 100px 0 32px;
+}
+
+.contact-us-desc__heading {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.contact-us-desc__info {
+  padding: 35px 0 47px;
+  max-width: 430px;
 }
 
 .contact-us-blocks {
@@ -449,9 +460,67 @@ ul {
 .contact-us-desc__ul {
   list-style-type: none;
   display: inline-block;
+  margin-right: 70px;
+}
+
+.contact-us-desc__li {
+  margin: 20px 0;
 }
 
 .contact-us-desc__icon {
   vertical-align: middle;
   margin-right: 15px;
+  color: #FFF;
+}
+
+.contact-us-form {
+  min-width: 400px;
+}
+
+.contact-us-form__li {
+  list-style-type: none;
+}
+
+.contact-us-form__input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.contact-us-form__area {
+  min-height: 150px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 7px;
+}
+
+.contact-us-form__btn {
+  background-color: #35C2F8;
+  border: none;
+  margin-top: 10px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 1s;
+  font-weight: 700;
+}
+
+.contact-us-form__btn:hover {
+  background-color: #FFF;
+  color: #35C2F8;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 63px;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.copyright__year {
+  padding-top: 32px;
 }

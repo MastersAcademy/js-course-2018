@@ -374,7 +374,7 @@
 
     <!-- Contact -->
 
-    <section class="contact-us">
+    <footer class="contact-us">
         <div class="contact-us-blocks">
             <div class="contact-us-desc">
                 <h1 class="contact-us-desc__heading">
@@ -385,40 +385,44 @@
                     bunch of people :)
                 </p>
                 <ul class="contact-us-desc__ul">
-                    <li><img class="contact-us-desc__icon" src="./images/icons/mobile.svg" alt="mobile">(416) 555-0000</li>
-                    <li>2</li>
-                    <li>3</li>
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/mobile.svg"
+                            alt="mobile">(416) 555-0000</li>
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/twitter-icon.svg"
+                            alt="twitter">@dreams</li>
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/google-plus.svg"
+                            alt="plus">plus.com/dreams</li>
                 </ul>
-
                 <ul class="contact-us-desc__ul">
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/mail.svg"
+                            alt="email">hello@dreams.com</li>
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/facebook-icon.svg"
+                            alt="facebook">facebook.com/dreams</li>
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/pinterest-icon.svg"
+                            alt="pinterest">pinterest.com/dreams</li>
                 </ul>
             </div>
-            <div class="contact-us-form">
-                form here
-                <form>
-                    <ul>
-                        <li>
-                            <input type="text">
+            <form class="contact-us-form">
+                <ul class="contact-us-form__ul">
+                    <li class="contact-us-form__li">
+                        <input class="contact-us-form__input" type="text" placeholder="Your name*" required>
 
-                        </li>
-                        <li>
-                            <input type="text">
-
-                        </li>
-
-                    </ul>
-                    <input type="text">
-                    <br>
-                    <input type="text">
-                    <input type="textarea">
-
-                </form>
-            </div>
+                    </li>
+                    <li class="contact-us-form__li">
+                        <input class="contact-us-form__input" type="text" placeholder="Your email*" required>
+                    </li>
+                    <li class="contact-us-form__li">
+                        <textarea class="contact-us-form__area" placeholder="Your text*" required></textarea>
+                    </li>
+                </ul>
+                <button class="contact-us-form__btn">Send message</button>
+            </form>
         </div>
-
-    </section>
+        <div class="copyright">
+            <hr class="copyright__line">
+            <p class="copyright__year">
+                © 2014 Dreams By FreebiesXpress
+            </p>
+        </div>
+    </footer>
 
 </html>
