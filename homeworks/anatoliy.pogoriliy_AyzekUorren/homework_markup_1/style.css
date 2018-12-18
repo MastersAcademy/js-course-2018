@@ -147,6 +147,7 @@ p, h1, h2, figure, body {
 .service__image {
   height: 55px;
   margin: auto auto 39px;
+  filter: invert(50%);
 }
 
 .service__caption {
@@ -265,7 +266,7 @@ p, h1, h2, figure, body {
 
 .content__wrapper--portfolio {
   flex-basis: 55%;
-  background-image: url("images/background-users-icon.png");
+  background-image: url("images/background-users-icon.svg");
   background-repeat: no-repeat;
   background-position-y: 210px;
 }
@@ -422,6 +423,15 @@ p, h1, h2, figure, body {
   filter: invert(100%);
 }
 
+.awesome-team__img--svg {
+  width: 100%;
+}
+
+.icon-pinterest {
+  width: 100%;
+  filter: invert(100%);
+}
+
 .awesome-team__link-wrapper {
   display: flex;
   flex-direction: row;
@@ -568,6 +578,16 @@ p, h1, h2, figure, body {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 40px;
+  height: 26px;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon-facebook11 {
+  width: 100%;
+  filter: invert(100%);
 }
 
 .credentials__details__description {
