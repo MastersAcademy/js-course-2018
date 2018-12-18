@@ -17,7 +17,7 @@ describe('Test funcltion "makeFiboArr", function supposed to return an array', (
         expect(makeFiboArr()).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34]);
     });
 
-    test('if there is no function value, the array will return [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]', () => {
+    test('for index 2 and higher, elements of returned array should be the sum of previous two elements', () => {
         const testSum = makeFiboArr(50);
         for (let i = 2; i < testSum.length; i++) {
             expect(testSum[i]).toEqual(testSum[i - 1] + testSum[i - 2]);
