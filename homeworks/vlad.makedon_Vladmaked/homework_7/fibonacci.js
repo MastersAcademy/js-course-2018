@@ -1,10 +1,13 @@
-function getFibonacciNumbers(rand) {
-    const arrayOfFibonacciNumbers = [0, 1];
-    for (let i = 2; arrayOfFibonacciNumbers[i - 1] + arrayOfFibonacciNumbers[i - 2] < rand; i++) {
-        const currentNumber = arrayOfFibonacciNumbers[i - 1] + arrayOfFibonacciNumbers[i - 2];
-        arrayOfFibonacciNumbers.push(currentNumber);
-    }
-    return arrayOfFibonacciNumbers;
+function getRandomNumber(startOfRange, endOfRange) {
+    return (Math.floor(Math.random() * (endOfRange - startOfRange) + startOfRange));
 }
 
-module.exports = getFibonacciNumbers;
+function getFibonacciNumbers(rand = 55) {
+    const fiboArr = [0, 1];
+    for (let i = 2; fiboArr[i - 1] + fiboArr[i - 2] <= rand; i++) {
+        fiboArr.push(fiboArr[i - 1] + fiboArr[i - 2]);
+    }
+    return fiboArr;
+}
+
+module.exports = { getFibonacciNumbers, getRandomNumber };
