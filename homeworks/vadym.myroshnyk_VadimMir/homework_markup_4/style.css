@@ -201,6 +201,7 @@ header {
 
 .menuCSS {
   display: none;
+  height: 80vh;
 }
 
 @media (max-width: 1199.98px) {
@@ -234,6 +235,8 @@ header {
   .menu {
     display: none;
     position: absolute;
+    font-size: 50px;
+    margin-top: -1000px;
   }
 
   .manu__item {
@@ -275,6 +278,8 @@ header {
   .menu {
     display: none; /* пункты меню скрыты */
     position: absolute;
+    font-size: 50px;
+    margin-top: -1000px;
   }
 
   .manu__item {
@@ -316,6 +321,8 @@ header {
   .menu {
     display: none; /* пункты меню скрыты */
     position: absolute;
+    font-size: 50px;
+    margin-top: -1000px;
   }
 
   .manu__item {
@@ -357,6 +364,8 @@ header {
   .menu {
     display: none; /* пункты меню скрыты */
     position: absolute;
+    font-size: 50px;
+    margin-top: -1000px;
   }
 
   .manu__item {
