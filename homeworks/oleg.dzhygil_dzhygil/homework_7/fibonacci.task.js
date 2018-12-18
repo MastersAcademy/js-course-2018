@@ -1,14 +1,15 @@
-function fibonacci() {
-    const random = Math.floor(Math.random() * 50 + 50);
-    const array = [0, 1];
-    for (let i = 0; i < random; i++) {
-        const a = array[i] + array[i + 1];
-        if (a <= random) {
-            array.push(a);
-        }
+const randomNum = Math.floor(Math.random() * (100 - 50 + 1) + 50);
+
+function fibonacci(maxNum) {
+    const array = [0];
+    let number = 1;
+    while (number <= maxNum) {
+        array.push(number);
+        number = array[array.length - 1] + array[array.length - 2];
     }
+    console.log(maxNum);
     return array;
 }
 
-console.log(fibonacci());
-module.exports = { fibonacci };
+console.log(fibonacci(randomNum));
+module.exports = fibonacci;
