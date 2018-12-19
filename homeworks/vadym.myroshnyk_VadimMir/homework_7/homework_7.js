@@ -1,11 +1,11 @@
 // fibonacci
 const randomNum = Math.floor(Math.random() * (100 - 50 + 1) + 50);
 
-function fib(random) {
+function fib(max) {
     const arr = [0];
     let a = 1;
     let b = 0;
-    for (let i = 0; i <= random; i += a) {
+    for (let i = 0; i < max; i += a) {
         const c = a + b;
         a = b;
         b = c;
