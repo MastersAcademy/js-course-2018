@@ -187,15 +187,18 @@ h3 {
 }
 
 .serv-link.serv-icon1 {
-  background-image: url("images/serv-design-icon.png");
+  background-image: url("images/tools.svg");
+  background-size: 62px 55px;
 }
 
 .serv-link.serv-icon2 {
-  background-image: url("images/serv-dev-icon.png");
+  background-image: url("images/flow-tree.svg");
+  background-size: 55px 55px;
 }
 
 .serv-link.serv-icon3 {
-  background-image: url("images/serv-support-icon.png");
+  background-image: url("images/support.svg");
+  background-size: 56px 54px;
 }
 
 .serv-item .description {
@@ -254,9 +257,13 @@ h3 {
   margin: 0 10px 0 0;
 }
 
+.site-icons {
+  fill: #777;
+}
+
 .svg-star {
   width: 31px;
-  height: 30px;
+  height: 31px;
 }
 
 .svg-gear {
@@ -523,52 +530,37 @@ h4 {
   display: flex;
   width: 41px;
   height: 41px;
-  text-indent: -9999px;
+  align-items: center;
+  justify-content: center;
   background-color: #000;
-  background-image: url("images/media-sprite.png");
-  background-repeat: no-repeat;
   border-radius: 20px;
-}
-
-.tw,
-.tw:hover,
-.tw:active,
-.tw:focus {
-  background-position: -81px 5px;
-}
-
-.fb,
-.fb:hover,
-.fb:active,
-.fb:focus {
-  background-position: 12px 4px;
-}
-
-.pin,
-.pin:hover,
-.pin:active,
-.pin:focus {
-  background-position: -129px 5px;
-}
-
-.google,
-.google:hover,
-.google:active,
-.google:focus {
-  background-position: -31px 5px;
 }
 
 .media:hover,
 .media:active,
 .media:focus {
   background-color: #000;
-  background-image: url("images/media-sprite.png");
-  background-repeat: no-repeat;
   opacity: .85;
+}
+
+.media-icons {
+  width: 31px;
+  height: 31px;
+  fill: #FFF;
+}
+
+.google-icon {
+  width: 21px;
+  height: 21px;
 }
 
 .mobile-btn {
   display: none;
+}
+
+.menu-icon {
+  width: 32px;
+  height: 32px;
 }
 
 /* SVG */
@@ -736,7 +728,6 @@ h4 {
   .mobile-icon {
     width: 32px;
     height: 32px;
-    fill: #FFF;
   }
 }
 
