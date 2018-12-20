@@ -1,0 +1,51 @@
+body {
+  padding-top: 80px;
+}
+
+.carousel-wrap {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.slides-wrap {
+  margin: 0 10px;
+  display: inline-block;
+  min-width: 400px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  white-space: nowrap;
+  transition: all 300ms linear 0s;
+}
+
+.slides > .slide {
+  padding: 10px;
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ABABAB;
+  vertical-align: top;
+}
+
+.slides > .slide:first-child {
+  margin-left: 0;
+}
+
+.slides > .slide:last-child {
+  margin-right: 0;
+}
+
+.slides > .slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
