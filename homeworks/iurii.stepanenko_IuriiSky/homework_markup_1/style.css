@@ -23,8 +23,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #EAEAEA;
-  line-height: 20px;
-  padding: 20px;
+  line-height: 10px;
+  padding: 15px;
 }
 
 .btn:hover {
@@ -42,38 +42,6 @@ label {
 
 .toggle {
   display: none;
-}
-
-@media screen and (max-width: 575.98px) {
-
-  label {
-    display: block;
-    cursor: pointer;
-  }
-
-  .menu {
-    text-align: center;
-    width: 100%;
-    display: none;
-  }
-
-  .btn {
-    display: block;
-    border-bottom: 1px solid #EAEAEB;
-    margin: 0;
-  }
-
-  .toggle:checked + .menu {
-    display: block;
-  }
-
-  .slogan, .underline, .present {
-    display: none;
-  }
-
-  .our-services {
-    margin: 0 auto;
-  }
 }
 
 .background {
@@ -182,27 +150,6 @@ label {
   padding-top: 8%;
 }
 
-@media screen and (max-width:575.98px) {
-
-  .wrapper-expertise {
-    display: grid;
-    grid-template-columns: 30% 30% 40%;
-    grid-auto-rows: minmax(100px auto);
-    grid-template-areas: "t t t"
-      "p p p"
-      "f f f"
-      "s s s"
-      "o o o"
-      "c c c"
-      "b b b";
-  }
-
-  .other-expertise__title, .other-expertise__info,
-  .amazing-portfolio__name, .amazing-portfolio__info {
-    text-align: center;
-  }
-}
-
 .other-expertise__img {
   grid-area: i;
   width: 100%;
@@ -279,19 +226,6 @@ label {
   padding-top: 8%;
 }
 
-@media screen and (max-width:575.98px) {
-
-  .amazing-portfolio {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: minmax(auto auto);
-    grid-template-areas: "a a i"
-      "b b i"
-      "c c i ";
-    padding-top: 8%;
-  }
-}
-
 .amazing-portfolio__body {
   grid-area: i;
   padding-top: 25%;
@@ -356,15 +290,6 @@ label {
   height: 33%;
 }
 
-@media screen and (max-width:575.98px) {
-
-  .img-portfolio {
-    width: 45%;
-    height: 45%;
-    margin-left: 2%;
-  }
-}
-
 /* six block */
 
 .about-us {
@@ -382,29 +307,6 @@ label {
     ". . y w w"
     ". . q . ."
     ". . btn . ."
-}
-
-@media screen and (max-width:575.98px) {
-
-  .about-us {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-auto-columns: minmax(10% auto);
-    grid-template-areas: "h"
-      "i"
-      "l"
-      "m"
-      "n"
-      "x"
-      "z"
-      "y"
-      "w"
-      "btn"
-  }
-
-  .title-about {
-    margin: 0 auto;
-  }
 }
 
 .title-about {
@@ -556,4 +458,92 @@ label {
 
 .btn-story:hover {
   color: rgb(250, 2, 2);
+}
+
+/* Media */
+
+@media screen and (max-width: 575.98px) {
+
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .btn {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+  }
+
+  .toggle:checked + .menu {
+    display: block;
+  }
+
+  .slogan, .underline, .present {
+    display: none;
+  }
+
+  .our-services {
+    margin: 0 auto;
+  }
+
+  .wrapper-expertise {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-auto-rows: minmax(100px auto);
+    grid-template-areas: "t t t"
+      "p p p"
+      "f f f"
+      "s s s"
+      "o o o"
+      "c c c"
+      "b b b";
+  }
+
+  .other-expertise__title, .other-expertise__info,
+  .amazing-portfolio__name, .amazing-portfolio__info {
+    text-align: center;
+  }
+
+  .amazing-portfolio {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(auto auto);
+    grid-template-areas: "a a i"
+      "b b i"
+      "c c i ";
+    padding-top: 8%;
+  }
+
+  .img-portfolio {
+    width: 45%;
+    height: 45%;
+    margin-left: 2%;
+  }
+
+  .about-us {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-columns: minmax(10% auto);
+    grid-template-areas: "h"
+      "i"
+      "l"
+      "m"
+      "n"
+      "x"
+      "z"
+      "y"
+      "w"
+      "btn"
+  }
+
+  .title-about {
+    margin: 0 auto;
+  }
 }
