@@ -84,7 +84,7 @@ header {
   text-align: center;
 }
 
-h2 {
+.h2 {
   padding-top: 45px;
   margin-top: 0;
   margin-top: 45px;
@@ -93,7 +93,7 @@ h2 {
   color: #000;
 }
 
-h2:after {
+.h2:after {
   content: "";
   width: 110px;
   height: 1.5px;
@@ -122,16 +122,16 @@ h2:after {
   padding: 0 40px;
 }
 
-p {
+.p {
   color: rgb(131, 131, 131);
 }
 
-h1 {
+.h1 {
   text-transform: uppercase;
   font-size: 40px;
 }
 
-h3 {
+.h3 {
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -157,7 +157,7 @@ h3 {
   padding-bottom: 50px;
 }
 
-h5 {
+.h5 {
   text-transform: uppercase;
   color: #000;
   margin-top: 45px;
@@ -188,13 +188,13 @@ h5 {
   padding-left: 20px;
 }
 
-h4 {
+.h4 {
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 0;
 }
 
-p2 {
+.p2 {
   font-weight: 100;
   font-size: 16px;
   letter-spacing: -.5px;
@@ -280,7 +280,7 @@ p2 {
   padding-bottom: 60px;
 }
 
-h6 {
+.h6 {
   text-transform: uppercase;
   color: #000;
   margin-top: 45px;
@@ -340,7 +340,7 @@ h6 {
   padding-right: 25px;
 }
 
-p3 {
+.p3 {
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 0;
@@ -405,7 +405,7 @@ p3 {
   border-radius: 50%;
 }
 
-h8 {
+.h8 {
   font-weight: 600;
   text-transform: uppercase;
   padding-top: 5px;
@@ -459,7 +459,7 @@ h8 {
     padding-bottom: 32px;
   }
 
-  h2 {
+  .h2 {
     text-align: center;
   }
 
