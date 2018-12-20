@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="media.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -16,9 +17,12 @@
     <!-- Header and menu -->
     <div class="banner-block">
         <header class="header">
-            <a class="logo" href="#">
+            <a class="logo" href="index.html">
                 <img class="logo__img" src="images/logo.png" alt="Dreams" />
             </a>
+            <button class="mob-menu">
+                <img class="mob-menu__btn" src="./images/button.jpg" alt="">
+            </button>
             <nav class="nav-menu">
                 <a class="nav-menu__link" href="#">Home</a>
                 <a class="nav-menu__link" href="#">Services</a>
@@ -40,7 +44,7 @@
     </div>
 
     <!-- Core services -->
-    <section class="services-block">
+    <section class="services-block wrap">
         <div class="content-header">
             <h2 class="content-header__title line">Core services</h2>
         </div>
@@ -130,12 +134,12 @@
                         </figcaption>
                     </figure>
                 </div>
-                <a href="#" class="expertise-boxes__learn-more">Learn More</a>
             </div>
             <div class="expertise-img">
                 <img class="expertise-img__img img--right" src="images/expertise.png" alt="Expertise">
             </div>
         </div>
+
     </section>
 
     <!-- Amazing Portfolio -->
@@ -205,10 +209,220 @@
     </section>
 
     <!-- About Us -->
-    <section class="about-block">
+    <section class="about-block wrap">
         <div class="content-header">
-            <h2 class="content-header__title line">Core services</h2>
+            <h2 class="content-header__title line">About Us</h2>
+        </div>
+        <div class="about-boxes">
+            <ul class="about-box">
+                <li class="about-box-item">
+                    <div class="about-box-item__left">
+                        <h2 class="about-box-item__title">July 2010 <br>
+                            Our Humble Beginnings</h2>
+                        <p class="about-box-item__desc">Proin iaculis purus consequat sem cure
+                            digni ssim. Donec porttitora entum suscipit
+                            aenean rhoncus posuere odio in tincidunt. Proin
+                            iaculis purus consequat sem cure digni
+                            ssim. Donec porttitora entum suscipit.</p>
+                    </div>
+                    <div class="about-box-item__center">
+                        <div class="about-box-item__img-wrap">
+                            <img class="about-box-item__img" src="./images/about/circle-one.jpg" alt="image">
+                        </div>
+                        <div class="about-box-item__line"></div>
+                    </div>
+                    <div class="about-box-item__right"></div>
+                </li>
+                <li class="about-box-item">
+                    <div class="about-box-item__left"></div>
+                    <div class="about-box-item__center">
+                        <div class="about-box-item__img-wrap">
+                            <img class="about-box-item__img" src="./images/about/circle-two.jpg" alt="image">
+                        </div>
+                        <div class="about-box-item__line"></div>
+                    </div>
+                    <div class="about-box-item__right">
+                        <h2 class="about-box-item__title">January 2011 <br>
+                            Facing Startup Battles</h2>
+                        <p class="about-box-item__desc">Proin iaculis purus consequat sem cure
+                            digni ssim. Donec porttitora entum suscipit
+                            aenean rhoncus posuere odio in tincidunt. Proin
+                            iaculis purus consequat sem cure digni
+                            ssim. Donec porttitora entum suscipit aenean
+                            rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                </li>
+                <li class="about-box-item">
+                    <div class="about-box-item__left">
+                        <h2 class="about-box-item__title">December 2012
+                            <br>
+                            Enter The Dark Days</h2>
+                        <p class="about-box-item__desc">Proin iaculis purus consequat sem cure
+                            digni ssim. Donec porttitora entum suscipit
+                            aenean rhoncus posuere odio in tincidunt. Proin
+                            iaculis purus consequat sem cure digni.</p>
+                    </div>
+                    <div class="about-box-item__center">
+                        <div class="about-box-item__img-wrap">
+                            <img class="about-box-item__img" src="./images/about/circle-three.jpg" alt="image">
+                        </div>
+                        <div class="about-box-item__line"></div>
+                    </div>
+                    <div class="about-box-item__right"></div>
+                </li>
+                <li class="about-box-item">
+                    <div class="about-box-item__left"></div>
+                    <div class="about-box-item__center">
+                        <div class="about-box-item__img-wrap">
+                            <img class="about-box-item__img" src="./images/about/circle-four.jpg" alt="image">
+                        </div>
+                        <div class="about-box-item__line"></div>
+                    </div>
+                    <div class="about-box-item__right">
+                        <h2 class="about-box-item__title">february 2014
+                            <br>
+                            Our Triumph</h2>
+                        <p class="about-box-item__desc">Proin iaculis purus consequat sem cure
+                            digni ssim. Donec porttitora entum suscipit
+                            aenean rhoncus posuere odio in tincidunt. Proin
+                            iaculis purus consequat sem cure digni
+                            ssim. Donec porttitora entum suscipit aenean.</p>
+                    </div>
+                </li>
+                <li class="about-box-item">
+                    <div class="about-box-item__left"></div>
+                    <div class="about-box-item__center">
+                        <div class="about-box-item__img-wrap about-box--stories">
+                            <p class="about-box__story">
+                                Our <br> Story <br> Continues <br> ...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-box-item__right"></div>
+                </li>
+            </ul>
         </div>
     </section>
+
+    <!-- Awesome team -->
+
+    <section class="team content--grey">
+        <div class="content-header">
+            <h2 class="content-header__title line">Awesome Team</h2>
+        </div>
+        <div class="team-boxes">
+            <figure class="team-box">
+                <img src="./images/about/circle-one.jpg" alt="About one" class="about-box__img">
+                <figcaption class="about-box__item">
+                    Jimmy Letterman
+                </figcaption>
+                <p class="team-box__type">Marketer</p>
+                <div class="team-social">
+                    <a href="#" class="team-social__link">
+                        <img src="./images/icons/user.svg" alt="user" class="team-social__svg">
+                    </a>
+                    <a href="#" class="team-social__link">
+                        <img src="./images/icons/twitter.svg" alt="twitter" class="team-social__svg">
+                    </a>
+                    <a href="#" class="team-social__link">
+                        <img src="./images/icons/linkedin-button.svg" alt="linkedin-button" class="team-social__svg">
+                    </a>
+                </div>
+            </figure>
+            <figure class="team-box">
+                <img src="./images/about/circle-one.jpg" alt="About one" class="about-box__img">
+                <figcaption class="about-box__item">
+                    Jimmy Letterman
+                </figcaption>
+                <p class="team-box__type">Marketer</p>
+                <div class="team-social">
+                    <a href="#" class="team-social__link">
+                        <img src="./images/icons/user.svg" alt="user" class="team-social__svg">
+                    </a>
+                    <a href="#" class="team-social__link">
+                        <img src="./images/icons/twitter.svg" alt="twitter" class="team-social__svg">
+                    </a>
+                    <a href="#" class="team-social__link">
+                        <img src="./images/icons/linkedin-button.svg" alt="linkedin-button" class="team-social__svg">
+                    </a>
+                </div>
+            </figure>
+            <figure class="team-box">
+                <img src="./images/about/circle-one.jpg" alt="About one" class="about-box__img">
+                <figcaption class="about-box__item">
+                    Jimmy Letterman
+                </figcaption>
+                <p class="team-box__type">Marketer</p>
+                <div class="team-social">
+                    <a href="#" class="team-social__link">
+                        <img src="./images/icons/user.svg" alt="user" class="team-social__svg">
+                    </a>
+                    <a href="#" class="team-social__link">
+                        <img src="./images/icons/twitter.svg" alt="twitter" class="team-social__svg">
+                    </a>
+                    <a href="#" class="team-social__link">
+                        <img src="./images/icons/linkedin-button.svg" alt="linkedin-button" class="team-social__svg">
+                    </a>
+                </div>
+            </figure>
+        </div>
+        <p class="team__desc">
+            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+            aenean rhoncus posuere odio in tincidunt proin iaculis.
+        </p>
+    </section>
+
+    <!-- Contact -->
+
+    <footer class="contact-us">
+        <div class="contact-us-blocks">
+            <div class="contact-us-desc">
+                <h1 class="contact-us-desc__heading">
+                    Contact us
+                </h1>
+                <p class="contact-us-desc__info">
+                    Don’t be shy, drop us an email and say hello! We are a really nice
+                    bunch of people :)
+                </p>
+                <ul class="contact-us-desc__ul">
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/mobile.svg"
+                            alt="mobile">(416) 555-0000</li>
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/twitter-icon.svg"
+                            alt="twitter">@dreams</li>
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/google-plus.svg"
+                            alt="plus">plus.com/dreams</li>
+                </ul>
+                <ul class="contact-us-desc__ul">
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/mail.svg"
+                            alt="email">hello@dreams.com</li>
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/facebook-icon.svg"
+                            alt="facebook">facebook.com/dreams</li>
+                    <li class="contact-us-desc__li"><img class="contact-us-desc__icon" src="./images/icons/pinterest-icon.svg"
+                            alt="pinterest">pinterest.com/dreams</li>
+                </ul>
+            </div>
+            <form class="contact-us-form">
+                <ul class="contact-us-form__ul">
+                    <li class="contact-us-form__li">
+                        <input class="contact-us-form__input" type="text" placeholder="Your name*" required>
+
+                    </li>
+                    <li class="contact-us-form__li">
+                        <input class="contact-us-form__input" type="text" placeholder="Your email*" required>
+                    </li>
+                    <li class="contact-us-form__li">
+                        <textarea class="contact-us-form__area" placeholder="Your text*" required></textarea>
+                    </li>
+                </ul>
+                <button class="contact-us-form__btn">Send message</button>
+            </form>
+        </div>
+        <div class="copyright">
+            <hr class="copyright__line">
+            <p class="copyright__year">
+                © 2014 Dreams By FreebiesXpress
+            </p>
+        </div>
+    </footer>
 
 </html>
