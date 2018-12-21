@@ -447,6 +447,10 @@ body {
     text-align: center;
   }
 
+  .expertise-title_note {
+    margin: 0 auto;
+  }
+
   .expertise-items-container {
     padding-left: initial;
     margin: 0 auto;
