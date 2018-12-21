@@ -5,6 +5,7 @@
   font-size: 16px;
   color: #FFF;
   margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
 .header-section {
@@ -17,8 +18,7 @@
 }
 
 .container {
-  max-width: 77%;
-  margin: 0 auto;
+  margin: 0 10%;
 }
 
 .header {
@@ -46,7 +46,7 @@
   margin-right: 0;
 }
 
-.header_text {
+.header-text {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   align-self: center;
@@ -101,7 +101,7 @@
 .sub-heading {
   font-size: 40px;
   color: #222;
-  margin-top: 89px;
+  margin-top: 90px;
   margin-bottom: 0;
 }
 
@@ -109,6 +109,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  margin-bottom: 101px;
 }
 
 .service-section__box {
@@ -121,7 +122,6 @@
   color: #888;
   font-size: 14px;
   text-align: center;
-  margin-bottom: 101px;
 }
 
 .third-heading {
@@ -131,4 +131,125 @@
 
 .main-text {
   margin: 0;
+}
+
+.expertise-section {
+  background-color: #F7F7F7;
+}
+
+.expertise-section .container {
+  margin-right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  min-width: 420px;
+  min-height: 616px;
+}
+
+.expertise-text {
+  color: #777;
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+.list {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.two-column-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+  justify-content: space-between;
+  max-height: 284px;
+}
+
+.list-header {
+  margin: 0;
+  font-size: 14px;
+}
+
+.list-text {
+  margin-top: 13px;
+  margin-bottom: 30px;
+}
+
+.small-text {
+  color: #777;
+  font-size: 14px;
+}
+
+.list__item {
+  display: flex;
+  list-style-type: none;
+  color: #777;
+}
+
+.list__icon {
+  align-self: start;
+  min-width: 30px;
+}
+
+.list__content {
+  margin-left: 10px;
+}
+
+.button {
+  padding: 20px 36px;
+  border-radius: 40px;
+  border: 1px solid #D4EFF9;
+  background-color: #FFF;
+  margin-bottom: 88px;
+  margin-left: 9px;
+}
+
+.portfolio-section .container {
+  margin-right: 0;
+}
+
+.amazing-portfolio {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+
+.portfolio-description {
+  min-width: 51%;
+  margin-right: 50px;
+  margin-bottom: 80px;
+}
+
+.amazing-portfolio-description {
+  background-image: url("./images/background-users-icon.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+.portfolio-text {
+  margin-top: 42px;
+}
+
+.portfolio-text-2 {
+  margin-top: 40px;
+}
+
+.portfolio-description .list__item:nth-child(3) .list-text {
+  margin-bottom: 0;
+}
+
+.isometric-ipad-air {
+  margin-top: 63px;
+  position: relative;
+  min-width: 1076px;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
