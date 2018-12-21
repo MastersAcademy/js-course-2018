@@ -382,6 +382,10 @@ body {
 
 @media screen and (max-width: 992px) {
 
+  body {
+    width: initial;
+  }
+
   .dream-section {
     width: 100%;
     margin: 0 auto;
