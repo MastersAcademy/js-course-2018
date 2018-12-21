@@ -1,11 +1,10 @@
 function fib(maxNum) {
-    const arr = [0, 1];
-    let current = 0;
+    const arr = [0];
+    let current = 1;
 
     while (current <= maxNum) {
-        current += arr[arr.length - 2] || 1;
-        if (current <= maxNum) arr.push(current);
-        else break;
+        arr.push(current);
+        current = arr[arr.length - 1] + arr[arr.length - 2];
     }
 
     return arr;
