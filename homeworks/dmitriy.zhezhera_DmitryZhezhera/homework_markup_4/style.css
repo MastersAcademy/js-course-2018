@@ -18,7 +18,7 @@ body {
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 15px;
+  width: 90%;
 }
 
 .dreams-display-none {
@@ -274,7 +274,8 @@ body {
   min-width: 300px;
   flex-basis: 32%;
   flex-grow: 1;
-  height: 350px;
+  max-height: 350px;
+  font-size: 0;
 }
 
 .portfolio-item:hover {
@@ -283,7 +284,7 @@ body {
 
 .portfolio-item__image {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 /*DREAMS-SIXTH*/
@@ -331,17 +332,12 @@ body {
   flex-basis: 35%;
 }
 
-.about-list-item__image-wrap {
+.about-list-item__image {
   border-radius: 50%;
-  box-sizing: border-box;
-  background-color: #35C2F8;
-  border: 7px solid #F1F1F1;
   width: 180px;
   height: 180px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0 15px;
+  box-shadow: 0 0 0 7px #F1F1F1;
 }
 
 .about-list-item__center-line {
@@ -374,10 +370,6 @@ body {
 
   .dreams-services {
     justify-content: space-evenly;
-  }
-
-  .portfolio-item {
-    height: 300px;
   }
 }
 
