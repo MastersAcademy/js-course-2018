@@ -407,6 +407,10 @@ body {
 
 @media screen and (max-width: 992px) {
 
+  body {
+    width: initial;
+  }
+
   .dream-section {
     width: 100%;
     margin: 0 auto;
@@ -468,6 +472,10 @@ body {
     text-align: center;
   }
 
+  .expertise-title_note {
+    margin: 0 auto;
+  }
+
   .expertise-items-container {
     padding-left: initial;
     margin: 0 auto;
@@ -475,10 +483,11 @@ body {
 
   .expertise-list {
     flex-direction: column;
+    padding-top: 20px;
   }
 
-  .expertise-list {
-    padding-top: 20px;
+  .expertise-item {
+    justify-content: center;
   }
 
   .expertise-button {
