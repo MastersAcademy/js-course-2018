@@ -99,6 +99,7 @@ label {
   display: inline-block;
   width: 2em;
   height: 2em;
+  padding-left: 1em;
 }
 
 .services {
@@ -462,16 +463,94 @@ label {
 
 /* Media */
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 991.98px) {
+
+  .our-services, .about-as__img, .about-as__img-second, .about-as__img-three,
+  .about-as__img-four, .our-story__button {
+    margin: 0 auto;
+  }
+
+  .wrapper-expertise {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: minmax(100px auto);
+    grid-template-areas: ". t t ."
+      ". p p ."
+      ". f f .."
+      ". s s ."
+      ". o o ."
+      ". c c ."
+      ". b b .";
+  }
+
+  .about-portfolio, .our-expertise__first, .our-expertise__second,
+  .our-expertise__third, .our-expertise__fourth {
+    padding-top: 1em;
+    margin-left: 4em;
+  }
+
+  .info-expertise {
+    margin-left: 5em;
+  }
+
+  .other-expertise__title, .other-expertise__info,
+  .amazing-portfolio__name, .amazing-portfolio__info,
+  .name-picture__left, .name-picture__right,
+  .about-as__info, .about-as__info__right {
+    text-align: center;
+  }
+
+  .amazing-portfolio {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: minmax(auto auto);
+    grid-template-areas: ". a a ."
+      ". b b ."
+      ". c c .";
+    padding-top: 8%;
+  }
+
+  .img-portfolio {
+    width: 30%;
+    height: 30%;
+    margin-left: 2%;
+  }
+
+  .about-us {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(10% auto);
+    grid-template-areas: "h"
+      "i"
+      "l"
+      "m"
+      "n"
+      "x"
+      "z"
+      "y"
+      "w"
+      "btn"
+  }
+
+  .underline, .present, .other-expertise__img,
+  .amazing-portfolio__img, .amazing-portfolio__texture,
+  .amazing-portfolio__line, .amazing-portfolio__body,
+  .vertical-line, .vertical-line__second, .vertical-line__third, .vertical-line__four {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
 
   label {
     display: block;
     cursor: pointer;
+    padding-top: 10%;
   }
 
   .menu {
     text-align: center;
-    width: 100%;
+    width: 50%;
     display: none;
   }
 
@@ -485,11 +564,8 @@ label {
     display: block;
   }
 
-  .slogan, .underline, .present {
-    display: none;
-  }
-
-  .our-services {
+  .our-services, .about-as__img, .about-as__img-second, .about-as__img-three,
+  .about-as__img-four, .our-story__button {
     margin: 0 auto;
   }
 
@@ -506,6 +582,16 @@ label {
       "b b b";
   }
 
+  .name-expertise, .about-portfolio, .our-expertise__first, .our-expertise__second,
+  .our-expertise__third, .our-expertise__fourth {
+    padding-top: 1em;
+    margin-left: 4em;
+  }
+
+  .info-expertise {
+    margin-left: 5em;
+  }
+
   .other-expertise__title, .other-expertise__info,
   .amazing-portfolio__name, .amazing-portfolio__info {
     text-align: center;
@@ -515,9 +601,9 @@ label {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-rows: minmax(auto auto);
-    grid-template-areas: "a a i"
-      "b b i"
-      "c c i ";
+    grid-template-areas: "a a"
+      "b b"
+      "c c";
     padding-top: 8%;
   }
 
@@ -530,7 +616,7 @@ label {
   .about-us {
     display: grid;
     grid-template-columns: 100%;
-    grid-auto-columns: minmax(10% auto);
+    grid-auto-rows: minmax(10% auto);
     grid-template-areas: "h"
       "i"
       "l"
@@ -543,7 +629,107 @@ label {
       "btn"
   }
 
-  .title-about {
+  .slogan, .underline, .present, .other-expertise__img,
+  .amazing-portfolio__img, .amazing-portfolio__texture,
+  .amazing-portfolio__line, .amazing-portfolio__body,
+  .vertical-line, .vertical-line__second, .vertical-line__third, .vertical-line__four {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+
+  label {
+    display: block;
+    cursor: pointer;
+    padding-top: 10%;
+  }
+
+  .menu {
+    text-align: center;
+    width: 50%;
+    display: none;
+  }
+
+  .btn {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+  }
+
+  .toggle:checked + .menu {
+    display: block;
+  }
+
+  .our-services, .about-as__img, .about-as__img-second, .about-as__img-three,
+  .about-as__img-four, .our-story__button {
     margin: 0 auto;
+  }
+
+  .wrapper-expertise {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-auto-rows: minmax(100px auto);
+    grid-template-areas: "t t t"
+      "p p p"
+      "f f f"
+      "s s s"
+      "o o o"
+      "c c c"
+      "b b b";
+  }
+
+  .name-expertise, .about-portfolio, .our-expertise__first, .our-expertise__second,
+  .our-expertise__third, .our-expertise__fourth {
+    padding-top: 1em;
+    margin-left: 4em;
+  }
+
+  .info-expertise {
+    margin-left: 5em;
+  }
+
+  .other-expertise__title, .other-expertise__info,
+  .amazing-portfolio__name, .amazing-portfolio__info {
+    text-align: center;
+  }
+
+  .amazing-portfolio {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(auto auto);
+    grid-template-areas: "a a"
+      "b b"
+      "c c";
+    padding-top: 8%;
+  }
+
+  .img-portfolio {
+    width: 45%;
+    height: 45%;
+    margin-left: 2%;
+  }
+
+  .about-us {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(10% auto);
+    grid-template-areas: "h"
+      "i"
+      "l"
+      "m"
+      "n"
+      "x"
+      "z"
+      "y"
+      "w"
+      "btn"
+  }
+
+  .slogan, .underline, .present, .other-expertise__img,
+  .amazing-portfolio__img, .amazing-portfolio__texture,
+  .amazing-portfolio__line, .amazing-portfolio__body,
+  .vertical-line, .vertical-line__second, .vertical-line__third, .vertical-line__four {
+    display: none;
   }
 }
