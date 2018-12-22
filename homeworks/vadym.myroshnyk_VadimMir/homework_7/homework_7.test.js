@@ -19,17 +19,7 @@ describe('fibonacci', () => {
         }
     });
 
-    test('check if iterations count is less then max (50)', () => {
-        const array = fib(50);
-        for (let i = 0; i < array.lenght; i++) {
-            expect(array[i]).toBe(array[i] < 50);
-        }
-    });
-
-    test('check if iterations count is less then max (100)', () => {
-        const array = fib(100);
-        for (let i = 0; i < array.lenght; i++) {
-            expect(array[i]).toBe(array[i] < 100);
-        }
+    test('check the first number, to be 0', () => {
+        expect(fib(0)[0]).toBe(0);
     });
 });
