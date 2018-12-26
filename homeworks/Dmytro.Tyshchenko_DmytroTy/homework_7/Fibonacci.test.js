@@ -39,7 +39,7 @@ describe('Testing a function that returns an array of Fibonacci numbers that doe
     });
 
     test('sending not a numbers throws an error', () => {
-        const error = new Error('Must be given a positive number!');
+        const error = new Error('Must be given a number (positive)!');
         expect(() => fibonacciNumbers('8')).toThrow(error);
     });
 });
