@@ -10,45 +10,324 @@
     <link rel="icon" href="./img/logos/ma-icon.png">
 </head>
 <body>
-    <header id="home" class="header">
-        <div class="logo__dreams">
-            <a href="index.html"><img src="./img/logos/logo.png" alt="Dreams"></a>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-cog" viewBox="0 0 16 16">
+                <title>cog</title>
+                <path fill="#999" d="M14.59 9.535c-0.839-1.454-0.335-3.317 1.127-4.164l-1.572-2.723c-0.449 0.263-0.972 0.414-1.529 0.414-1.68 0-3.042-1.371-3.042-3.062h-3.145c0.004 0.522-0.126 1.051-0.406 1.535-0.839 1.454-2.706 1.948-4.17 1.106l-1.572 2.723c0.453 0.257 0.845 0.634 1.123 1.117 0.838 1.452 0.336 3.311-1.12 4.16l1.572 2.723c0.448-0.261 0.967-0.41 1.522-0.41 1.675 0 3.033 1.362 3.042 3.046h3.145c-0.001-0.517 0.129-1.040 0.406-1.519 0.838-1.452 2.7-1.947 4.163-1.11l1.572-2.723c-0.45-0.257-0.839-0.633-1.116-1.113zM8 11.24c-1.789 0-3.24-1.45-3.24-3.24s1.45-3.24 3.24-3.24c1.789 0 3.24 1.45 3.24 3.24s-1.45 3.24-3.24 3.24z"></path>
+            </symbol>
+            <symbol id="icon-pie-chart" viewBox="0 0 16 16">
+                <title>pie-chart</title>
+                <path fill="#999" d="M7 9v-7c-3.866 0-7 3.134-7 7s3.134 7 7 7 7-3.134 7-7c0-1.126-0.266-2.189-0.738-3.131l-6.262 3.131zM14.262 3.869c-1.149-2.294-3.521-3.869-6.262-3.869v7l6.262-3.131z"></path>
+            </symbol>
+            <symbol id="icon-star-full" viewBox="0 0 16 16">
+                <title>star-full</title>
+                <path fill="#999" d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z"></path>
+            </symbol>
+        </defs>
+    </svg>
+            
+    <header class="header wrapper" id="home">
+        <div class="head">
+            <a class="logo__dreams" href="index.html"><img src="./img/logos/svg/logo.svg" alt="Dreams"></a>
+            <nav class="title-navigation">
+                <ul class="navigation">
+                    <li class="navigation__list"><a class="navigation__link" href="index.html">Home</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="#services">Services</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="#portfolio">Portfolio</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="#about">About</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="#team">Team</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="#contact">Contact</a></li>
+                </ul>
+                <a class="responsive-menu"  href="#">Menu</a>
+            </nav>
         </div>
-        <nav class="title__navigation">
-            <ul class="nav__ul">
-                <li class="nav__li"><a href="index.html" class="nav__a">Home</a></li>
-                <li class="nav__li"><a href="#services" class="nav__a">Services</a></li>
-                <li class="nav__li"><a href="#" class="nav__a">Portfolio</a></li>
-                <li class="nav__li"><a href="#" class="nav__a">About</a></li>
-                <li class="nav__li"><a href="#" class="nav__a">Team</a></li>
-                <li class="nav__li"><a href="#" class="nav__a">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="title__content">
-            <h1 class="title__h1">Build the website of<br>your dreams</h1>
-            <p class="title__p">We are a digital agency that believes in building<br>things that are meaningful!</p>
+        <div class="title-content">
+            <h1 class="title-content__headline">Build the website of<br>your dreams</h1>
+            <p class="title-content__paragraph">We are a digital agency that believes in building<br>
+                things that are meaningful!</p>
         </div>
     </header>
     <main>
-        <section id="services" class="core__services">
-            <h2 class="services__h2">Core Services</h2>
+        <section class="core-services wrapper" id="services">
+            <h2 class="core-services__headline">Core Services</h2>
             <div class="services">
-                <div class="services__design">
+                <div class="services-design">
                     <img src="./img/services/tools.png" alt="tools">
-                    <h3 class="services__h3">Beautiful Designs</h3>
-                    <p class="services__p">Proin iaculis purus consequat sem digni ssim.<br>Donec porttitora entum aenean rhoncus<br>posuere odio in. Iaculis purus digni.</p>
+                    <h3 class="services__headline">Beautiful Designs</h3>
+                    <p class="core-services__paragraph">Proin iaculis purus consequat sem digni ssim.<br>
+                        Donec porttitora entum aenean rhoncus<br>posuere odio in. Iaculis purus digni.</p>
                 </div>
                 <div class="services__development">
                     <img src="./img/services/flow-tree.png" alt="flow-tree">
-                    <h3 class="services__h3">Web Development</h3>
-                    <p class="services__p">Proin iaculis purus consequat sem digni ssim.<br>Donec porttitora entum aenean rhoncus<br>posuere odio in. Iaculis purus digni.</p>
+                    <h3 class="services__headline">Web Development</h3>
+                    <p class="core-services__paragraph">Proin iaculis purus consequat sem digni ssim.<br>
+                        Donec porttitora entum aenean rhoncus<br>posuere odio in. Iaculis purus digni.</p>
                 </div>
                 <div class="services__support">
                     <img src="./img/services/lifebeoy.png" alt="lefebeoy">
-                    <h3 class="services__h3">24/7 Suppurt</h3>
-                    <p class="services__p">Proin iaculis purus consequat sem digni ssim.<br>Donec porttitora entum aenean rhoncus<br>posuere odio in. Iaculis purus digni.</p>
+                    <h3 class="services__headline">24/7 Suppurt</h3>
+                    <p class="core-services__paragraph">Proin iaculis purus consequat sem digni ssim.<br>
+                        Donec porttitora entum aenean rhoncus<br>posuere odio in. Iaculis purus digni.</p>
                 </div>
             </div>
+        </section>
+        <section class="other-expertise wrapper">
+            <div class="other-expertise-content">
+                <h2 class="other-expertise-content__headline">Other Expertise</h2>
+                <p class="other-expertise-content__paragraph">Proin iaculis purus consequat sem cure  digni ssim. 
+                    Donec porttitora entum suscipit  aenean<br>rhoncus posuere odio in tincidunt consequat sem cure  
+                    digni ssim. </p>
+                <figcaption class="types-of-expertise">
+                    <figure class="types-of-expertise__item">
+                        <div class="custom-setup">
+                            <svg class="custom-setup__img" viewBox="0 0 16 16">
+                                <use xlink:href="icons/sprite-sheet.svg#cog"></use>
+                            </svg>
+                            <div class="expertise__items">
+                                <h3 class="types-of-expertise__headline">Custom Setup</h3>
+                                <p class="types-of-expertise__paragraph">Proin iaculis purus consequat sem cure digni 
+                                    ssim.<br>Donec porttitora entum suscipit aenean rhoncus.</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="types-of-expertise__item">
+                        <div class="cloud-control">
+                            <svg class="cloud-control__img" viewBox="0 0 16 16">
+                                <use xlink:href="icons/sprite-sheet.svg#cloud"></use>
+                            </svg>
+                            <div class="expertise__items">
+                                <h3 class="types-of-expertise__headline">Cloud Control</h3>
+                                <p class="types-of-expertise__paragraph">Proin iaculis purus consequat sem cure digni 
+                                    ssim.<br>Donec porttitora entum suscipit aenean rhoncus.</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="types-of-expertise__item">
+                        <div class="all-star">
+                            <svg class="all-star__img" viewBox="0 0 16 16">
+                                <use xlink:href="icons/sprite-sheet.svg#star-full"></use>
+                            </svg>
+                            <div class="expertise__items">
+                                <h3 class="types-of-expertise__headline">All Star Support Team</h3>
+                                <p class="types-of-expertise__paragraph">Proin iaculis purus consequat sem cure digni 
+                                    ssim.<br>Donec porttitora entum suscipit aenean rhoncus.</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="types-of-expertise__item">   
+                        <div class="top-security">
+                            <svg class="all-star__img" viewBox="0 0 16 16">
+                                <use xlink:href="icons/sprite-sheet.svg#lock"></use>
+                            </svg>
+                            <div class="expertise__items">
+                                <h3 class="types-of-expertise__headline">Top Notch Security</h3>
+                                <p class="types-of-expertise__paragraph">Proin iaculis purus consequat sem cure digni 
+                                    ssim.<br>Donec porttitora entum suscipit aenean rhoncus.</p>
+                            </div>
+                        </div>
+                    </figure>
+                </figcaption>
+                <div class="button-of-expertise">
+                    <a class="button-of-expertise__link" href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="other-expertise__item">
+                <img class="other-expertise__img" src="./img/other-expertise/writer.jpg" alt="writer">
+            </div>
+        </section>    
+        <section class="amazing-portfolio wrapper" id="portfolio">
+            <div class="amazing-content">    
+                <h2 class="amazing-portfolio__headline">Amazing Portfolio</h2>
+                <div class="amazing-portfolio-bg">
+                    <p class="amazing-portfolio__paragraph1">Proin iaculis purus consequat sem cure digni ssim. 
+                        Donec porttitora entum suscipit aenean<br>rhoncus posuere odio in tincidunt. Proin iaculis 
+                        purus consequat sem cure digni ssim. Donec<br>porttitora entum suscipit.</p>
+                    <p class="amazing-portfolio__paragraph2">Iaculis purus consequat sem cure digni ssim. Donec 
+                        porttitora entum suscipit aenean rhoncus<br>posuere odio in tincidunt. Proin iaculis purus 
+                        consequat.</p>
+                    <figcaption class="advantages-of-portfolio">
+                        <figure class="advantages-of-portfolio__item">
+                            <div class="sail-away">
+                                <svg class="sail-away__img">
+                                    <use xlink:href="#icon-cog"></use>
+                                </svg>
+                                <div class="service__items">
+                                    <h3 class="advantages-of-portfolio__headline">Sail Away Your Worries</h3>
+                                    <p class="advantages-of-portfolio__paragraph">Proin iaculis purus consequat sem 
+                                        cure digni ssim. Donec porttitora<br>entum suscipit aenean rhoncus posuere 
+                                        odio in tincidunt.</p>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="advantages-of-portfolio__item">
+                            <div class="support-team">
+                                <svg class="support-team__img">
+                                    <use xlink:href="#icon-star-full"></use>
+                                </svg>
+                                <div class="service__items">
+                                    <h3 class="advantages-of-portfolio__headline">All Star Suppurt Team</h3>
+                                    <p class="advantages-of-portfolio__paragraph">Proin iaculis purus consequat sem 
+                                        cure digni ssim. Donec porttitora<br>entum suscipit aenean rhoncus posuere 
+                                        odio in tincidunt.</p>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="advantages-of-portfolio__item">
+                            <div class="fully-service">
+                                <svg class="fully-service__img">
+                                    <use xlink:href="#icon-pie-chart"></use>
+                                </svg>
+                                <div class="service__items">
+                                    <h3 class="advantages-of-portfolio__headline">Fully Integrated Service</h3>
+                                    <p class="advantages-of-portfolio__paragraph">Proin iaculis purus consequat sem 
+                                        cure digni ssim. Donec porttitora<br>entum suscipit aenean rhoncus posuere 
+                                        odio in tincidunt.</p>
+                                </div>
+                            </div>
+                        </figure>
+                    </figcaption>    
+                </div>
+            </div>
+            <div class="amazing-portfolio__item">
+                <img class="amazing-portfolio__img" src="./img/amazing-portfolio/ipad.png" alt="ipad-mokup">
+            </div>
+        </section>
+        <section class="portfolio-content wrapper">
+            <figcaption class="portfolio-photos">
+                <figure class="portfolio-photos__item">
+                    <img class="portfolio-photos__img" src="./img/amazing-portfolio/portfolio-photos/photo-1.jpg" alt="Nike Shoes">
+                </figure>
+                <figure class="portfolio-photos__item">
+                    <img class="portfolio-photos__img" src="./img/amazing-portfolio/portfolio-photos/photo-2.jpg" alt="Vinyl Record Mokup">
+                </figure>
+                <figure class="portfolio-photos__item">
+                    <img class="portfolio-photos__img" src="./img/amazing-portfolio/portfolio-photos/photo-3.jpg" alt="Site Mokup">
+                </figure>
+                <figure class="portfolio-photos__item">
+                    <img class="portfolio-photos__img" src="./img/amazing-portfolio/portfolio-photos/photo-4.jpg" alt="Shopong Bag Mokup">
+                </figure>
+                <figure class="portfolio-photos__item">
+                    <img class="portfolio-photos__img" src="./img/amazing-portfolio/portfolio-photos/photo-5.jpg" alt="Logo Mokup">
+                </figure>
+                <figure class="portfolio-photos__item">
+                    <img class="portfolio-photos__img" src="./img/amazing-portfolio/portfolio-photos/photo-6.jpg" alt="logo Mokup">
+                </figure>
+            </figcaption>
+        </section>
+        <section class="about-us wrapper" id="about">
+            <h2 class="about-us__headline">About Us</h2>
+            <figcaption class="about-content">
+                <figure class="our-humble">
+                    <div class="our-content">
+                        <h3 class="our-content__headline">July 2010<br>Our Humble Beginnings</h3>
+                        <p class="our-content__paragraph">Proin iaculis purus consequat sem cure<br>
+                            digni ssim. Donec porttitora entum suscipit<br>
+                            aenean rhoncus posuere odio in tincidunt. Proin<br>
+                            iaculis purus consequat sem cure digni<br>
+                            ssim. Donec porttitora entum suscipit.</p>
+                    </div>
+                    <img class="our-humble__img" src="./img/about-us/our-humble.png" alt="Our Humble Beginnings">
+                </figure>
+                <figure class="facing-startup">
+                    <img class="facing-startup__img" src="./img/about-us/facing-startup.png" alt="Facing Startup Battles">
+                    <div class="facing-content">
+                        <h3 class="facing-content__headline">January 2011<br>Facing Startup Battles</h3>
+                        <p class="facing-content__paragraph">Proin iaculis purus consequat sem cure<br>
+                            digni ssim. Donec porttitora entum suscipit<br>
+                            aenean rhoncus posuere odio in tincidunt. Proin<br>
+                            iaculis purus consequat sem cure digni<br>
+                            ssim. Donec porttitora entum suscipit aenean<br>
+                            rhoncus posuere odio in tincidunt.</p>
+                    </div>
+                </figure>
+                <figure class="dark-days">
+                    <div class="dark-content">
+                        <h3 class="dark-content__headline">December 2012<br>Enter The Dark Days</h3>
+                        <p class="dark-content__paragraph">Proin iaculis purus consequat sem cure<br>
+                            digni ssim. Donec porttitora entum suscipit<br>
+                            aenean rhoncus posuere odio in tincidunt. Proin<br>
+                            iaculis purus consequat sem cure digni.</p>
+                    </div>
+                    <img class="dark-days__img" src="./img/about-us/dark-days.png" alt="Enter The Dark Days">
+                </figure>
+                <figure class="our-triumph">
+                    <img class="our-triumph__img" src="./img/about-us/our-triumph.png" alt="">
+                    <div class="triumph-content">
+                        <h3 class="triumph-content__headline">February 2014<br>Our Triumph</h3>
+                        <p class="triumph-content__paragraph">Proin iaculis purus consequat sem cure<br>
+                            digni ssim. Donec porttitora entum suscipit<br>
+                            aenean rhoncus posuere odio in tincidunt. Proin<br>
+                            iaculis purus consequat sem cure digni<br>
+                            ssim. Donec porttitora entum suscipit aenean.</p>
+                    </div>
+                </figure>
+            </figcaption>
+            <div class="our-story">
+                <button class="round" type="button">Our<br>Story<br>Continues<br>...</button>
+            </div>
+        </section>
+        <section class="awesome-team wrapper" id="team">
+            <h2 class="awesome-team__headline">Awesome Team</h2>
+            <figcaption class="team">
+                <figure class="jimmy">
+                    <img class="team__img" src="./img/amazing-team/team-photo.png" alt="Jimmy Letterman">
+                    <h3 class="team__headline">Jimmy Letterman</h3>
+                    <p class="team__paragraph">Marketer</p>
+                    <div class="team-social">
+                        <a class="team-social__link" href="#"><img class="team-social__img" src="./img/amazing-team/icons/twitter.png" alt="twitter"></a>
+                        <a class="team-social__link" href="#"><img class="team-social__img" src="./img/amazing-team/icons/facebook.png" alt="facebook"></a>
+                        <a class="team-social__link" href="#"><img class="team-social__img" src="./img/amazing-team/icons/pinterest.png" alt="pinterest"></a>
+                    </div>
+                </figure>
+                <figure class="rico">
+                    <img class="team__img" src="./img/amazing-team/team-photo.png" alt="Rico Massimo">
+                    <h3 class="team__headline">Rico Massimo</h3>
+                    <p class="team__paragraph">Coder</p>
+                    <div class="team-social">
+                        <a class="team-social__link" href="#"><img class="team-social__img" src="./img/amazing-team/icons/twitter.png" alt="twitter"></a>
+                        <a class="team-social__link" href="#"><img class="team-social__img" src="./img/amazing-team/icons/facebook.png" alt="facebook"></a>
+                        <a class="team-social__link" href="#"><img class="team-social__img" src="./img/amazing-team/icons/google-plus.png" alt="google plus"></a>
+                    </div>
+                </figure>
+                <figure class="lisa">
+                    <img class="team__img" src="./img/amazing-team/team-photo.png" alt="Lisa Mason">
+                    <h3 class="team__headline">Lisa Mason</h3>
+                    <p class="team__paragraph">Graphic Designer</p>
+                    <div class="team-social">
+                        <a class="team-social__link" href="#"><img class="team-social__img" src="./img/amazing-team/icons/facebook.png" alt="facebook"></a>
+                        <a class="team-social__link" href="#"><img class="team-social__img" src="./img/amazing-team/icons/pinterest.png" alt="pinterest"></a>
+                    </div>
+                </figure>
+            </figcaption>
+            <p class="awesome-team__paragraph">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit<br>
+                aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+        </section>
+        <section class="contact-us wrapper" id="contact">
+            <figcaption class="contact-us-flex">
+                <figure class="contact-us-content">
+                    <h2 class="contact-us-content__headline">Contact Us</h2>
+                    <p class="contact-us-content__paragraph">Don’t be shy, drop us an email and say hello! We are a really nice<br>
+                        bunch of people :)</p>
+                    <ul class="list-contacts">
+                        <li class="list-contacts__list phone"><a class="list-contacts__link">(416) 555 0000</a></li>
+                        <li class="list-contacts__list twitter"><a class="list-contacts__link" href="">@dreams</a></li>
+                        <li class="list-contacts__list google"><a class="list-contacts__link" href="">plus.com/dreams</a></li>
+                        <li class="list-contacts__list email"><a class="list-contacts__link" href="">hello@dreams.com</a></li>
+                        <li class="list-contacts__list facebook"><a class="list-contacts__link" href="">facebook.com/dreams</a></li>
+                        <li class="list-contacts__lst printerest"><a class="list-contacts__link" href="">printerest.com/dreams</a></li>
+                    </ul>
+                </figure>
+                <figure class="feedback">
+                    <form class="contacts-form" action="" method="POST">
+                        <input class="contacts-form__name" type="text" name="name" placeholder="Your Name *" type="text" required>
+                        <input class="contacts-form__email" type="text" name="email" placeholder="Your E-mail *" type="email" required>
+                        <textarea class="contacts-form__message" name="message" cols="30" rows="10" placeholder="Your Message *" type="text" required></textarea>
+                        <button class="contact-button">Send Message</button>
+                    </form>
+                </figure>         
+            </figcaption>
+            <p class="contact-us__paragraph">© 2014 Dreams By FreebiesXpress</p>
         </section>
     </main>
     <script></script>
