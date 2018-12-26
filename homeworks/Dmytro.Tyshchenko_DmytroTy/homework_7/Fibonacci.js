@@ -1,5 +1,5 @@
 function fibonacciNumbers(max) {
-    if (typeof max != 'number') throw new Error('Must be given a positive number!');
+    if (typeof max != 'number') throw new Error('Must be given a number (positive)!');
 
     function createFibonacci(fibonacciArray, preprevious, previous) {
         const next = previous + preprevious;
