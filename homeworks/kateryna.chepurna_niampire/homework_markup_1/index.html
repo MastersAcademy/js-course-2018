@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0;">
+        <defs>
+            <symbol id="gear" viewBox="0 0 128 128">
+                <title>gear</title>
+                <path d="M64 39a25 25 0 1 0 25 25 25 25 0 0 0-25-25zm0 44a19 19 0 1 1 19-19 19 19 0 0 1-19 19z"/>
+                <path d="M121 48h-9a1 1 0 0 1-.9-.7 49.9 49.9 0 0 0-2-4.8 1 1 0 0 1 .2-1.2l6.3-6.3a7 7 0 0 0 0-9.9L103 12.4a7 7 0 0 0-10 0l-6.2 6.3a1 1 0 0 1-1.2.2 49.8 49.8 0 0 0-4.8-2 1 1 0 0 1-.7-1V7a7 7 0 0 0-7-7H55a7 7 0 0 0-7 7v9a1 1 0 0 1-.7.9 49.9 49.9 0 0 0-4.8 2 1 1 0 0 1-1.2-.2L35 12.4a7 7 0 0 0-9.9 0L12.4 25a7 7 0 0 0 0 10l6.3 6.2a1 1 0 0 1 .2 1.2 49.8 49.8 0 0 0-2 4.8 1 1 0 0 1-1 .7H7a7 7 0 0 0-7 7v18a7 7 0 0 0 7 7h9a1 1 0 0 1 .9.7 49.9 49.9 0 0 0 2 4.8 1 1 0 0 1-.2 1.2L12.4 93a7 7 0 0 0 0 9.9L25 115.6a7 7 0 0 0 10 0l6.2-6.3a1 1 0 0 1 1.2-.2 49.8 49.8 0 0 0 4.8 2 1 1 0 0 1 .7 1v8.9a7 7 0 0 0 7 7h18a7 7 0 0 0 7-7v-9a1 1 0 0 1 .7-.9 49.9 49.9 0 0 0 4.8-2 1 1 0 0 1 1.2.2l6.3 6.3a7 7 0 0 0 9.9 0l12.7-12.7a7 7 0 0 0 0-10l-6.3-6.2a1 1 0 0 1-.2-1.2 49.8 49.8 0 0 0 2-4.8 1 1 0 0 1 1-.7h8.9a7 7 0 0 0 7-7V55a7 7 0 0 0-7-7zm1 25a1 1 0 0 1-1 1h-9a7 7 0 0 0-6.5 4.7 43.9 43.9 0 0 1-1.8 4.2 7 7 0 0 0 1.4 8l6.3 6.4a1 1 0 0 1 0 1.4l-12.8 12.7a1 1 0 0 1-1.4 0L91 105a7 7 0 0 0-8-1.4 43.9 43.9 0 0 1-4.2 1.8A7 7 0 0 0 74 112v8.9a1 1 0 0 1-1 1H55a1 1 0 0 1-1-1v-9a7 7 0 0 0-4.7-6.5 43.9 43.9 0 0 1-4.2-1.8 7 7 0 0 0-8 1.4l-6.4 6.3a1 1 0 0 1-1.4 0L16.6 98.6a1 1 0 0 1 0-1.4L23 91a7 7 0 0 0 1.4-8 43.9 43.9 0 0 1-1.8-4.2A7 7 0 0 0 16 74H7a1 1 0 0 1-1-1V55a1 1 0 0 1 1-1h9a7 7 0 0 0 6.5-4.7 43.9 43.9 0 0 1 1.8-4.2 7 7 0 0 0-1.4-8l-6.3-6.4a1 1 0 0 1 0-1.4l12.8-12.7a1 1 0 0 1 1.4 0L37 23a7 7 0 0 0 8 1.4 43.9 43.9 0 0 1 4.2-1.8A7 7 0 0 0 54 16V7a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v9a7 7 0 0 0 4.7 6.5 43.9 43.9 0 0 1 4.2 1.8 7 7 0 0 0 8-1.4l6.4-6.3a1 1 0 0 1 1.4 0l12.7 12.8a1 1 0 0 1 0 1.4l-6.3 6.3a7 7 0 0 0-1.4 8 43.9 43.9 0 0 1 1.8 4.3 7 7 0 0 0 6.6 4.6h8.9a1 1 0 0 1 1 1z"/>
+            </symbol>
+            <symbol id="cloud" viewBox="0 0 32 32">
+                <title>cloud</title>
+                <path fill="#000" fill-rule="evenodd" d="M0 19a6 6 0 0 1 3-5.2 9 9 0 0 1 16.7-4.5 6.5 6.5 0 0 1 7.9 4A6 6 0 0 1 26 25H6a6 6 0 0 1-6-6zm26-4a4.5 4.5 0 0 0-7.3-3A7 7 0 0 0 5.1 15 4 4 0 0 0 6 23h20a4 4 0 0 0 0-8zm0 0"/>
+            </symbol>
+            <symbol id="star" viewBox="0 0 32 32">
+                <title>star</title>
+                <path d="M31.9 12.6c-.3-.8-1-1.4-1.9-1.6l-8.3-1.2-3.6-7.5A2.3 2.3 0 0 0 16 1c-.9 0-1.7.5-2 1.3l-3.7 7.5L2 11c-.9.2-1.6.8-1.9 1.6-.3.8 0 1.6.6 2.2l6 6.1-1.4 8.5c-.1.8.3 1.7 1 2.2a2.4 2.4 0 0 0 2.4.1l7.3-3.9 7.3 4a2.4 2.4 0 0 0 2.4-.2c.7-.5 1.1-1.4 1-2.2l-1.5-8.5 6.1-6c.6-.7.9-1.5.6-2.3zm-8.3 6.8c-.5.5-.8 1.2-.6 1.9l1.4 8.4-7.3-3.9a2.3 2.3 0 0 0-2.2 0l-7.3 4L9 21.2c.2-.7 0-1.4-.6-2l-6-6 8.2-1.3c.8 0 1.5-.6 1.8-1.2L16 3.3l3.6 7.5c.3.6 1 1.1 1.8 1.2l8.3 1.3-6.1 6z" fill="#333"/>
+            </symbol>
+            <symbol id="lock" viewBox="0 0 50 50">
+                <title>lock</title>
+                <path fill="none" d="M0 0h50v50H0z"/>
+                <path fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M18 47a2 2 0 0 1-2-2V23c0-1.1.9-2 2-2h28a2 2 0 0 1 2 2v22a2 2 0 0 1-2 2H18zM42 21v-7a10 10 0 1 0-20 0v7"/>
+                <path d="M35 32a3 3 0 1 0-5 2.2V37a2 2 0 0 0 4 0v-2.8a3 3 0 0 0 1-2.2z"/>
+            </symbol>
+            <symbol id="mobile" viewBox="0 0 58 98">
+                <title>mobile</title>
+                <path d="M48 0H10A10 10 0 0 0 0 10v78a10 10 0 0 0 10 10h38a10 10 0 0 0 10-10V10A10 10 0 0 0 48 0zM29 94c-3.9 0-7-2.2-7-5s3.1-5 7-5 7 2.2 7 5-3.1 5-7 5zm21-15H8V13h42v66z"/>
+            </symbol>
+            <symbol id="mail" viewBox="0 0 32 32">
+                <title>mail</title>
+                <path d="M0 4v2l16 10L32 6V4zm0 5v19h32V9L16 19z"/>
+            </symbol>
+            <symbol id="facebook" viewBox="0 0 30 30">
+                <title>facebook</title>
+                <path d="M22 16l1-5h-5V7c0-1.5.8-2 3-2h2V0h-4c-4 0-7 2.4-7 7v4H7v5h5v14h6V16h4z"/>
+            </symbol>
+            <symbol id="twitter" viewBox="0 0 56 56">
+                <title>twitter</title>
+                <path d="M52.8 15c-1.8.9-3.7 1.4-5.8 1.7 2.1-1.3 3.7-3.3 4.5-5.6-2 1.1-4.1 2-6.4 2.4a10 10 0 0 0-17.3 9.2A28.7 28.7 0 0 1 7 12.2a10 10 0 0 0 3.1 13.5 10 10 0 0 1-4.5-1.3v.1c0 5 3.4 9 8 10a10.2 10.2 0 0 1-4.5.1c1.3 4 5 7 9.4 7a20.3 20.3 0 0 1-15 4.2 28.6 28.6 0 0 0 44.2-25.5c2-1.4 3.8-3.2 5.1-5.2z"/>
+            </symbol>
+            <symbol id="pinterest" viewBox="0 0 56 56">
+                <title>pinterest</title>
+                <path d="M30.4 4.6c-13.6 0-20.5 9.8-20.5 17.9 0 4.9 1.9 9.3 5.9 11 .6.2 1.2 0 1.4-.8l.6-2.3c.2-.7.1-1-.4-1.6a8.2 8.2 0 0 1-1.9-5.6c0-7.2 5.4-13.7 14-13.7 7.8 0 12 4.7 12 11 0 8.2-3.7 15.2-9 15.2-3 0-5.3-2.5-4.6-5.5.9-3.7 2.5-7.6 2.5-10.2 0-2.3-1.2-4.3-3.8-4.3-3 0-5.5 3.2-5.5 7.4 0 2.7.9 4.5.9 4.5l-3.7 15.6c-1.1 4.6-.2 10.3 0 10.9 0 .3.4.4.6.2.3-.4 4-5 5.2-9.4l2-7.9c1 2 3.9 3.6 7 3.6 9.1 0 15.4-8.4 15.4-19.6 0-8.5-7.2-16.4-18.1-16.4z"/>
+            </symbol>
+            <symbol id="google_plus" viewBox="0 0 56 56">
+                <title>google plus</title>
+                <path d="M52.2 25.9h-7.5v-7.6c0-.5-.5-1-1-1h-2.2a1 1 0 0 0-1 1V26H33a1 1 0 0 0-1 1V29c0 .6.4 1 1 1h7.5v7.6c0 .6.5 1 1 1h2.2c.5 0 1-.4 1-1V30h7.5c.6 0 1-.5 1-1v-2.2c0-.6-.4-1-1-1z"/>
+                <path d="M27 32.4c-1.6-1-3-2.7-3-3.2 0-1 0-1.4 2-3 2.7-2 4.2-4.8 4.2-7.7 0-2.6-.8-5-2.2-6.6h1c.3 0 .5 0 .7-.2l3-2.1c.3-.3.5-.8.3-1.2a1 1 0 0 0-1-.7H18.9c-1.4 0-2.9.2-4.3.7-4.8 1.7-8.2 5.8-8.2 10 0 6 4.6 10.5 10.8 10.6l-.2 1.4c0 1 .3 1.8.7 2.7h-.1c-6 0-11.2 2.9-13.3 7.2a7.9 7.9 0 0 0-.8 3.3c0 1.1.3 2.2.9 3.1 1.2 2.3 4 4 7.6 5a24.8 24.8 0 0 0 11.5 0c5.2-1.5 8.6-5.4 8.6-9.8 0-4.3-1.3-6.9-5-9.5zm-16.7 9.8c0-3 4-5.8 8.4-5.8h.1c1 0 2 .1 2.9.4l.9.6c2 1.4 3.4 2.4 3.8 3.9l.2 1.1c0 3.9-3 5.8-8.6 5.8-4.3 0-7.7-2.6-7.7-6zm4-29.3c.8-.8 1.7-1.3 2.7-1.3h.2c2.9.1 5.7 3.4 6.2 7.3a7 7 0 0 1-1.3 5.5c-.7.8-1.6 1.2-2.7 1.2-3 0-5.8-3.4-6.3-7.3-.3-2.2.2-4.2 1.3-5.4z"/>
+        </symbol>
+        </defs>
+    </svg>
+    <header class="heading containe">
+        <div class="heading-flex container">
+            <a href="/">
+                <img class="logo" src="images/logo.png" alt="dreams">
+            </a>
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <span class="menu-toggle__span"></span>
+                    <span class="menu-toggle__span"></span>
+                    <span class="menu-toggle__span"></span>
+                </div>
+                <ul class="nav-menu">
+                        <li class="nav-menu__list">
+                            <a href="#home" class="nav-menu__list--link">Home</a>
+                        </li>
+                        <li class="nav-menu__list">
+                            <a href="#services" class="nav-menu__list--link">Services</a>
+                        </li>
+                        <li class="nav-menu__list">
+                            <a href="#portfolio" class="nav-menu__list--link">Portfolio</a>
+                        </li>
+                        <li class="nav-menu__list">
+                            <a href="#about" class="nav-menu__list--link">About</a>
+                        </li>
+                        <li class="nav-menu__list">
+                            <a href="#team" class="nav-menu__list--link">Team</a>
+                        </li>
+                        <li class="nav-menu__list">
+                            <a href="#contact" class="nav-menu__list--link">Contact</a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class='title containe'>
+            <div class="heading-title container">
+                <h1 class="heading-title__h1 ">Build the website of<br> your dreams</h1>
+                <div class="title-underline underline"></div>
+                <p class="heading-title__text">We are a digital agency that believes in building things that are
+                    meaningful!</p>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="services-title title-h2">Core Services</h2>
+                <div class="underline"></div>
+                <div class="flex-services">
+                    <div class="services-content">
+                        <img class="services-content__icon" src="images/iconfinder_settings.svg" alt="tools">
+                        <h3 class="services-content__title title-h3">Beautiful Designs</h3>
+                        <p class="services-content__text">Proin iaculis purus consequat sem digni ssim. Donec
+                            porttitora entum aenean rhoncus posuere odio in.</p>
+                    </div>
+                    <div class="services-content">
+                        <img class="services-content__icon" src="images/flow.svg" alt="flow-tree">
+                        <h3 class="services-content__title title-h3">Web development</h3>
+                        <p class="services-content__text">Proin iaculis purus consequat sem digni ssim. Donec
+                            porttitora entum aenean rhoncus posuere odio in.</p>
+                    </div>
+                    <div class="services-content">
+                        <img class="services-content__icon" src="images/lifebuoy.svg" alt="lifebuoy">
+                        <h3 class="services-content__title title-h3">24/7 Support</h3>
+                        <p class="services-content__text">Proin iaculis purus consequat sem digni ssim. Donec
+                            porttitora entum aenean rhoncus posuere odio in.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="expertise">
+            <div class="container flex-expertise">
+                <h2 class="expertise-title title-h2">Other Expertise</h2>
+                <p class="expertise-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                    suscipit aenean
+                    rhoncus posuere odio in tincidunt consequat sem cure digni ssim. </p>
+                <div class="expertise-content">
+                    <a href="#">
+                        <svg class="expertise-content__icon content-icon">
+                            <use xlink:href="#gear"></use>
+                        </svg>
+                        <!-- <img class="expertise-content__icon content-icon" src="images/Gear_Icon.png" alt="Gear"> -->
+                    </a>
+                    <div class="expertise-content__block">
+                        <h4 class="expertise-content__title title-h4">Custom setup</h4>
+                        <p class="expertise-content__text">Proin iaculis purus consequat sem cure digni ssim. Donec
+                            porttitora entum suscipit aenean rhoncus.</p>
+                    </div>
+                    <a href="#">
+                        <svg class="expertise-content__icon content-icon">
+                            <use xlink:href="#cloud"></use>
+                        </svg>
+                        <!-- <img class="expertise-content__icon content-icon" src="images/Cloud_Icon.png" alt="Cloud"> -->
+                    </a>
+                    <div class="expertise-content__block">
+                        <h4 class="expertise-content__title title-h4">Cloud control</h4>
+                        <p class="expertise-content__text">Proin iaculis purus consequat sem cure digni ssim. Donec
+                            porttitora entum suscipit aenean rhoncus.</p>
+                    </div>
+                </div>
+                <div class="expertise-content">
+                    <a href="#">
+                        <svg class="expertise-content__icon content-icon">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <!-- <img class="expertise-content__icon content-icon" src="images/Star_Icon.png" alt="Star"> -->
+                    </a>
+                    <div class="expertise-content__block">
+                        <h4 class="expertise-content__title title-h4">All star support team</h4>
+                        <p class="expertise-content__text">Proin iaculis purus consequat sem cure digni ssim. Donec
+                            porttitora entum suscipit aenean rhoncus.</p>
+                    </div>
+                    <a href="#">
+                            <svg class="expertise-content__icon content-icon">
+                                <use xlink:href="#lock"></use>
+                            </svg>
+                        <!-- <img class="expertise-content__icon content-icon" src="images/Lock_Icon.png" alt="Lock"> -->
+                    </a>
+                    <div class="expertise-content__block">
+                        <h4 class="expertise-content__title title-h4">Top notch security</h4>
+                        <p class="expertise-content__text">Proin iaculis purus consequat sem cure digni ssim. Donec
+                            porttitora entum suscipit aenean rhoncus.</p>
+                    </div>
+                </div>
+                <button type="button" class="expertise-button">Learn more</button>
+            </div>
+            <div class="expertise-picture_block">
+                <img src="images/expertise.png" alt="expertise-picture" class="expertise-picture">
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio-flex  container">
+                <h2 class="portfolio-title title-h2">Amazing Portfolio</h2>
+                <p class="portfolio-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                    suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni
+                    ssim. Donec porttitora entum suscipit.</p>
+                <p class="portfolio-text">Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
+                <div class="portfolio-content">
+                    <div class="portfolio-content__flex">
+                        <a class="portfolio-content__icon1 content-icon portfolio-icon" href="#"></a>
+                        <div class="portfolio-content__block">
+                            <h3 class="portfolio-content__title title-h3">Sail Away Your Worries</h3>
+                            <p class="portfolio-content__text">Proin iaculis purus consequat sem cure digni ssim. Donec
+                                porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content__flex">
+                        <a class="portfolio-content__icon2 content-icon portfolio-icon" href="#"></a>
+                        <div class="portfolio-content__block">
+                            <h4 class="portfolio-content__title title-h3">All-star support team</h3>
+                                <p class="portfolio-content__text">Proin iaculis purus consequat sem cure digni ssim.
+                                    Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content__flex">
+                        <a class="portfolio-content__icon3 content-icon portfolio-icon" href="#"></a>
+                        <div class="portfolio-content__block">
+                            <h3 class="portfolio-content__title title-h3">Fully integrated service</h3>
+                            <p class="portfolio-content__text">Proin iaculis purus consequat sem cure digni ssim. Donec
+                                porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/Isometric_iPad_Air.png" alt="iPad_Air" class="portfolio-picture__img">
+        </section>
+        <section class="portfolio-photos  container">
+            <a class="portfolio-photos__item" href="#">
+                <img class="portfolio-photos__img" src="./images/Image-1.png" alt="Nike Shoes">
+            </a>
+            <a class="portfolio-photos__item" href="#">
+                <img class="portfolio-photos__img" src="./images/Image-2.png" alt="Vinyl Record Mokup">
+            </a>
+            <a class="portfolio-photos__item" href="#">
+                <img class="portfolio-photos__img" src="./images/Image-3.png" alt="Site Mokup">
+            </a>
+            <a class="portfolio-photos__item" href="#">
+                <img class="portfolio-photos__img" src="./images/Image-4.png" alt="Shopong Bag Mokup">
+            </a>
+            <a class="portfolio-photos__item" href="#">
+                <img class="portfolio-photos__img" src="./images/Image-5.png" alt="Logo Mokup">
+            </a>
+            <a class="portfolio-photos__item" href="#">
+                <img class="portfolio-photos__img" src="./images/Image-6.png" alt="logo Mokup">
+            </a>
+        </section>
+        <section class="about" id="about">
+            <h2 class="about-title title-h2">About Us</h2>
+            <div class="about-underline underline"></div>
+            <div class="about-flex left">
+                <div class="about-flex__photo about-flex__photo--left">
+                    <img class="about-flex__photo--img" src="images/about-1.png" alt="beginnings" />
+                </div>
+                <div class="about-content content-left">
+                    <h3 class="title-h3">July 2010<br>Our Humble Beginnings</h3>
+                    <p class="about-flex__content--text">Proin iaculis purus consequat sem cure digni ssim. Donec
+                        porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus
+                        consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+            </div>
+            <div class="about-flex right">
+                <div class="about-flex__photo about-flex__photo--right">
+                    <img class="about-flex__photo--img" src="images/about-2.png" alt="startup" />
+                </div>
+                <div class="about-content content-right">
+                    <h3 class="title-h3">January 2011<br>Facing Startup Battles</h3>
+                    <p class="about-flex__content--text">Proin iaculis purus consequat sem cure digni ssim. Donec
+                        porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus
+                        consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in
+                        tincidunt.</p>
+                </div>
+            </div>
+            <div class="about-flex left">
+                <div class="about-flex__photo about-flex__photo--left">
+                    <img class="about-flex__photo--img" src="images/about-3.png" alt="dark days" />
+                </div>
+                <div class="about-content content-left">
+                    <h3 class="title-h3">December 2012<br>Enter The Dark Days</h3>
+                    <p class="about-flex__content--text">Proin iaculis purus consequat sem cure digni ssim. Donec
+                        porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus
+                        consequat sem cure digni.</p>
+                </div>
+            </div>
+            <div class="about-flex right">
+                <div class="about-flex__photo about-flex__photo--right">
+                    <img class="about-flex__photo--img" src="images/about-4.png" alt="triumph" />
+                </div>
+                <div class="about-content content-right">
+                    <h3 class="title-h3">february 2014<br>Our Triumph</h3>
+                    <p class="about-flex__content--text">Proin iaculis purus consequat sem cure digni ssim. Donec
+                        porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus
+                        consequat sem cure digni ssim. Donec porttitora entum suscipit aenean.</p>
+                </div>
+            </div>
+            <div class="about-flex">
+                <p class="about-flex__text about-continues">Our<br />Story<br />Continues<br />...</p>
+            </div>
+        </section>
+        <section class="team container" id="team">
+            <h2 class="team-title title-h2">Awesome Team</h2>
+            <div class="underline"></div>
+            <ul class="team-content">
+                <li class="team-content__list">
+                    <img class="team-content___list--photo" src="images/black.png" alt="empty" />
+                    <h3 class="title-h3">Jimmy Letterman</h3>
+                    <p>Marketer</p>
+                    <div class="media-content">
+                            <a class="media-content__link media-content__link--twitter" href="#">
+                                <svg class="contact-icon media-content__img">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="media-content__link media-content__link--facebook" href="#">
+                                <svg class="contact-icon media-content__img">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="media-content__link media-content__link--pinterest" href="#">
+                                <svg class="contact-icon media-content__img">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </a>
+                    </div>
+                </li>
+                <li class="team-content__list">
+                    <img class="team-content___list--photo" src="images/black.png" alt="empty" />
+                    <h3 class="title-h3">Rico Massimo</h3>
+                    <p>Coder</p>
+                    <div class="media-content">
+                            <a class="media-content__link media-content__link--twitter" href="#">
+                                <svg class="contact-icon media-content__img">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="media-content__link media-content__link--facebook" href="#">
+                                <svg class="contact-icon media-content__img">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="media-content__link media-content__link--google" href="#">
+                                <svg class="contact-icon media-content__img">
+                                    <use xlink:href="#google_plus"></use>
+                                </svg>
+                            </a>
+                    </div>
+                </li>
+                <li class="team-content__list">
+                    <img class="team-content___list--photo" src="images/black.png" alt="empty" />
+                    <h3 class="title-h3">Lisa Mason</h3>
+                    <p>Graphic Designer</p>
+                    <div class="media-content">
+                            <a class="media-content__link media-content__link--facebook" href="#">
+                                <svg class="contact-icon media-content__img">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="media-content__link media-content__link--pinterest" href="#">
+                                <svg class="contact-icon media-content__img">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </a>
+                    </div>
+                </li>
+            </ul>
+            <p class="team-text">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean
+                rhoncus posuere odio in tincidunt proin iaculis.</p>
+        </section>
+<section class="contact container" id="contact">
+    <div class="contact-info">
+        <div class="contact-content">
+            <h2 class="contact-info__title title-h2">Contact us</h2>
+            <p class="contact-info__text">Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)</p>
+        </div>
+        <ul class="contact-info__list">
+            <li class="contact-info__items">
+                <svg class="contact-icon content-icon contact-info__img">
+                    <use xlink:href="icons.svg#mobile"></use>
+                </svg>
+                <p>(416)-555-0000</p>
+            </li>
+             <li class="contact-info__items">
+                <svg class="contact-icon content-icon contact-info__img">
+                    <use xlink:href="icons.svg#mail"></use>
+                </svg>
+                <p>hello@dreams.com</p>
+            </li>
+            <li class="contact-info__items">
+                <svg class="contact-icon content-icon contact-info__img">
+                    <use xlink:href="icons.svg#twitter"></use>
+                </svg>
+                <p>@dreams</p>
+            </li>
+            <li class="contact-info__items">
+                <svg class="contact-icon content-icon contact-info__img">
+                    <use xlink:href="icons.svg#facebook"></use>
+                </svg>
+                <p>facebook.com/dreams</p>
+            </li>
+            <li class="contact-info__items">
+                <svg class="contact-icon content-icon contact-info__img">
+                    <use xlink:href="icons.svg#google_plus"></use>
+                </svg>
+                <p>plus.com/dreams</p>
+            </li>
+            <li class="contact-info__items">
+                <svg class="contact-icon content-icon contact-info__img">
+                    <use xlink:href="icons.svg#pinterest"></use>
+                </svg>
+                <p>pinterest.com/dreams</p>
+            </li>
+        </ul>
+    </div>
+    <div class="contact-form">
+            <input class="contact-form__input" type="text" placeholder="Your Name*">
+            <input class="contact-form__input" type="email" placeholder="Your E-mail*">
+            <textarea class="contact-form__textarea" placeholder="Your Message*"></textarea>
+            <button class="contact-button" type="button">Send message</button>
+    </div>
+</section>
+</main>
+<footer class="footer container">
+    <p class="footer-text">© 2014 Dreams By FreebiesXpress</p>
+</footer>
+</body>
+</html>
