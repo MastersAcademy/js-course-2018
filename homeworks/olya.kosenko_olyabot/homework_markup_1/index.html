@@ -9,18 +9,40 @@
     <title>Dreams</title>
 </head>
 <body class="wrapper">
+    <svg style="position: absolute; width: 0; height: 0">
+        <defs>
+            <symbol id="tools" viewbox = "0 0 20 20">
+                <title>tools</title>
+                <path d="M3.135 6.89c0.933-0.725 1.707-0.225 2.74 0.971 0.116 0.135 0.272-0.023 0.361-0.1 0.088-0.078 1.451-1.305 1.518-1.361 0.066-0.059 0.146-0.169 0.041-0.292-0.107-0.123-0.494-0.625-0.743-0.951-1.808-2.365 4.946-3.969 3.909-3.994-0.528-0.014-2.646-0.039-2.963-0.004-1.283 0.135-2.894 1.334-3.705 1.893-1.061 0.726-1.457 1.152-1.522 1.211-0.3 0.262-0.048 0.867-0.592 1.344-0.575 0.503-0.934 0.122-1.267 0.414-0.165 0.146-0.627 0.492-0.759 0.607-0.133 0.117-0.157 0.314-0.021 0.471 0 0 1.264 1.396 1.37 1.52 0.105 0.122 0.391 0.228 0.567 0.071 0.177-0.156 0.632-0.553 0.708-0.623 0.078-0.066-0.050-0.861 0.358-1.177zM8.843 7.407c-0.12-0.139-0.269-0.143-0.397-0.029l-1.434 1.252c-0.113 0.1-0.129 0.283-0.027 0.4l8.294 9.439c0.194 0.223 0.53 0.246 0.751 0.053l0.97-0.813c0.222-0.195 0.245-0.533 0.052-0.758l-8.209-9.544zM19.902 3.39c-0.074-0.494-0.33-0.391-0.463-0.182-0.133 0.211-0.721 1.102-0.963 1.506-0.24 0.4-0.832 1.191-1.934 0.41-1.148-0.811-0.749-1.377-0.549-1.758 0.201-0.383 0.818-1.457 0.907-1.59 0.089-0.135-0.015-0.527-0.371-0.363s-2.523 1.025-2.823 2.26c-0.307 1.256 0.257 2.379-0.85 3.494l-1.343 1.4 1.349 1.566 1.654-1.57c0.394-0.396 1.236-0.781 1.998-0.607 1.633 0.369 2.524-0.244 3.061-1.258 0.482-0.906 0.402-2.814 0.327-3.308zM2.739 17.053c-0.208 0.209-0.208 0.549 0 0.758l0.951 0.93c0.208 0.209 0.538 0.121 0.746-0.088l4.907-4.824-1.503-1.714-5.101 4.938z"></path>
+            </symbol>
+            <symbol id="flow-tree" viewbox="0 0 20 20">
+                <title>flow-tree</title>
+                <path d="M18 14.824v-2.324c0-1.933-1.567-3.5-3.5-3.5h-2c-0.828 0-1.5-0.672-1.5-1.5v-2.324c0.825-0.38 1.4-1.208 1.4-2.176 0-1.326-1.074-2.4-2.4-2.4s-2.4 1.074-2.4 2.4c0 0.967 0.576 1.796 1.4 2.176v2.324c0 0.828-0.672 1.5-1.5 1.5h-2c-1.933 0-3.5 1.567-3.5 3.5v2.324c-0.825 0.38-1.4 1.209-1.4 2.176 0 1.326 1.074 2.4 2.4 2.4s2.4-1.075 2.4-2.4c0-0.967-0.576-1.796-1.4-2.176v-2.324c0-0.828 0.672-1.5 1.5-1.5h2c0.539 0 1.044-0.132 1.5-0.35v4.174c-0.825 0.38-1.4 1.209-1.4 2.176 0 1.326 1.074 2.4 2.4 2.4s2.4-1.075 2.4-2.4c0-0.967-0.576-1.796-1.4-2.176v-4.174c0.456 0.218 0.961 0.35 1.5 0.35h2c0.828 0 1.5 0.672 1.5 1.5v2.324c-0.825 0.38-1.4 1.208-1.4 2.176 0 1.326 1.074 2.4 2.4 2.4s2.4-1.075 2.4-2.4c0-0.967-0.575-1.796-1.4-2.176zM10 1.615c0.764 0 1.384 0.619 1.384 1.385 0 0.764-0.62 1.385-1.384 1.385s-1.384-0.621-1.384-1.385c0-0.766 0.619-1.385 1.384-1.385zM3 18.385c-0.766 0-1.385-0.621-1.385-1.385 0-0.766 0.619-1.385 1.385-1.385 0.764 0 1.384 0.619 1.384 1.385 0 0.764-0.62 1.385-1.384 1.385zM10 18.385c-0.766 0-1.385-0.621-1.385-1.385 0-0.766 0.619-1.385 1.385-1.385 0.764 0 1.384 0.619 1.384 1.385 0 0.764-0.62 1.385-1.384 1.385zM17 18.385c-0.766 0-1.385-0.621-1.385-1.385 0-0.766 0.619-1.385 1.385-1.385 0.764 0 1.384 0.619 1.384 1.385 0 0.764-0.62 1.385-1.384 1.385z"></path>
+            </symbol>
+            <symbol id="lifebuoy" viewbox="0 0 20 20">
+                <title>lifebuoy</title>
+                <path d="M16.788 3.212c-3.749-3.749-9.827-3.749-13.575 0-3.75 3.75-3.75 9.828-0.002 13.576 3.75 3.75 9.828 3.75 13.578 0 3.748-3.749 3.748-9.827-0.001-13.576zM6.748 13.252c-1.797-1.797-1.797-4.709 0-6.505 1.795-1.796 4.709-1.796 6.506 0s1.795 4.709 0 6.505c-1.797 1.797-4.709 1.797-6.506 0zM15.347 12.879c0.968-1.799 0.969-3.959 0-5.759l1.783-0.96c1.289 2.391 1.289 5.29 0.002 7.678l-1.785-0.959zM13.839 2.869l-0.961 1.784c-1.799-0.967-3.959-0.967-5.756 0l-0.961-1.783c2.39-1.288 5.287-1.288 7.678-0.001zM2.87 6.16l1.784 0.961c-0.968 1.798-0.968 3.957-0.001 5.756l-1.784 0.961c-1.288-2.389-1.287-5.287 0.001-7.678zM6.159 17.129l0.961-1.783c1.799 0.969 3.96 0.969 5.759 0l0.961 1.785c-2.392 1.287-5.29 1.287-7.681-0.002z"></path>
+            </symbol>
+        </defs>
+    </svg>
     <header id="home" class="header">
         <div class="header_head">
             <div class="logo">
-                <a href="index.html"><img src="images\Logo.png" alt="Dreams"></a>
+                <a href="index.html"><img class="header-img" src="images\Logo.svg" alt="Dreams"></a>
                 <h1>Dreams</h1>
             </div>
             <nav>
+                <input id="burger-menu" class="hidden-menu" type="checkbox">
+                <label class="menu-icons" for="burger-menu">
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                </label>
                 <ul class="header-menu">
                     <li class="header-menu__list"><a class="navigation" href="#home">Home</a></li>
                     <li class="header-menu__list"><a class="navigation" href="#services">Services</a></li>
                     <li class="header-menu__list"><a class="navigation" href="#portfolio">Portfolio</a></li>
-                    <li class="header-menu__list"><a class="navigation" href="#">About</a></li>
+                    <li class="header-menu__list"><a class="navigation" href="#about">About</a></li>
                     <li class="header-menu__list"><a class="navigation" href="#">Team</a></li>
                     <li class="header-menu__list"><a class="navigation" href="#">Contact</a></li>
                 </ul>
@@ -38,7 +60,9 @@
         <div class="horizontal-line"></div>
         <div class="section1_services">
             <div class="section1_tool">
-                <img class="image" src="images\tools.png" alt="tools">
+                <svg class="icon_style">
+                    <use xlink:href="#tools"></use>
+                </svg>
                 <h4 class="title-h4">Beautiful Designs</h4>
                 <p class="text">Proin iaculis purus consequat sem
                     digni ssim. Donec porttitora entum
@@ -46,7 +70,9 @@
                     Iaculis purus digni.</p>
             </div>
             <div class="section1_tool">
-                <img class="image" src="images\flow-tree.png" alt="flow-tree">
+                <svg class="icon_style">
+                    <use xlink:href="#flow-tree"></use>
+                </svg>
                 <h4 class="title-h4">Web development</h4>
                 <p class="text">Proin iaculis purus consequat sem
                     digni ssim. Donec porttitora entum
@@ -54,7 +80,9 @@
                     Iaculis purus digni.</p>
             </div>
             <div class="section1_tool">
-                <img class="image" src="images\lifebuoy.png" alt="lifebuoy">
+                <svg class="icon_style">
+                    <use xlink:href="#lifebuoy"></use>
+                </svg>
                 <h4 class="title-h4">24/7 Support</h4>
                 <p class="text">Proin iaculis purus consequat sem
                     digni ssim. Donec porttitora entum
@@ -101,7 +129,7 @@
             </div>
             <button class="button" type="button">Learn more</button>
         </div>
-        <img src="images\expertise.png" alt="Expertise">
+        <img class="section3-img" src="images\expertise.png" alt="Expertise">
     </section>
     <section id="portfolio" class="section3">
        <div class="section2_portfolio">
@@ -129,7 +157,7 @@
                     rhoncus posuere odio in tincidunt. </p>
             </div>
         </div>
-        <img src="images\iPad.png" alt="iPad">
+        <img class="section3-img" src="images\iPad.png" alt="iPad">
     </section>
     <section class="portfolio-photo">
         <img class="photo" src="images\Image-1.png" alt="Image-1">
@@ -138,6 +166,61 @@
         <img class="photo" src="images\Image-4.png" alt="Image-4">
         <img class="photo" src="images\Image-5.png" alt="Image-5">
         <img class="photo" src="images\Image-6.png" alt="Image-6">
+    </section>
+    <section id="about">
+        <header class="header_about">
+            <h3 class="title-h3">About us</h3>
+            <div class="horizontal-line"></div>
+        </header>
+        <div class="about-story">
+            <div class="about-block-left">
+                <img class="about-image" src="images\July2010.png" alt="July 2010">
+                <div class="about-text-right">
+                    <h4 class="title-h4">July 2010<br>Our Humble Beginnings</h4>
+                    <p class="text">Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt. Proin
+                        iaculis purus consequat sem cure digni
+                        ssim. Donec porttitora entum suscipit.</p>
+                </div>
+            </div>
+            <div class="about-block-right">
+                <img class="about-image" src="images\January2011.png" alt="January 2011">
+                <div class="about-text-left">
+                    <h4 class="title-h4">January 2011<br>Facing Startup Battles</h4>
+                    <p class="text">Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt. Proin
+                        iaculis purus consequat sem cure digni
+                        ssim. Donec porttitora entum suscipit aenean
+                        rhoncus posuere odio in tincidunt.</p>
+                </div>
+            </div>
+            <div class="about-block-left">
+                <img class="about-image" src="images\December2012.png" alt="December 2012">
+                <div class="about-text-right">
+                    <h4 class="title-h4">December 2012<br>Enter The Dark Days</h4>
+                    <p class="text">Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt. Proin
+                        iaculis purus consequat sem cure digni.</p>
+                </div>
+            </div>
+            <div class="about-block-right">
+                <img class="about-image" src="images\February2014.png" alt="February 2014">
+                <div class="about-text-left">
+                    <h4 class="title-h4">February 2014<br>Our Triumph</h4>
+                    <p class="text">Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt. Proin
+                        iaculis purus consequat sem cure digni
+                        ssim. Donec porttitora entum suscipit aenean.</p>
+                </div>
+            </div>
+            <div class="button-position">
+                <button class="button-round" type="button">Our Story Continues ...</button>
+            </div>
+        </div>
     </section>
 </body>
 </html>
