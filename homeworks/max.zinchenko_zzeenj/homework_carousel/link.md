@@ -1,1 +1,1 @@
-https://zzeenj.github.io/apps/carousel/index.html
+https://zzeenj.github.io/apps/Carousel/index.html
