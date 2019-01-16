@@ -58,7 +58,6 @@ ul {
 
 .banner-block {
   background-image: url("images/background.jpg");
-  height: 100vh;
   background-color: rgba(0, 0, 0, .7);
   background-blend-mode: darken;
   background-size: cover;
@@ -74,6 +73,10 @@ ul {
 
 .logo {
   padding-top: 30px;
+}
+
+.mob-menu {
+  display: none;
 }
 
 .nav-menu {
@@ -109,16 +112,17 @@ ul {
   line-height: 60px;
   text-transform: uppercase;
   color: #FFF;
-  width: 550px;
+  max-width: 550px;
   text-align: center;
   margin: auto;
 }
 
 .triggers__small {
   color: #CCC;
-  width: 425px;
+  max-width: 425px;
   margin: auto;
   padding-top: 54px;
+  padding-bottom: 140px;
   text-align: center;
   font-family: "Noto Sans";
   font-size: 20px;
@@ -137,7 +141,7 @@ ul {
 
 /* Services */
 
-.services-block {
+.wrap {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto 101px;
@@ -163,7 +167,7 @@ ul {
 
 .box-service {
   text-align: center;
-  width: 33%;
+  padding-bottom: 30px;
 }
 
 .box-service__title {
@@ -193,7 +197,6 @@ ul {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  height: 616px;
 }
 
 .expertise-block {
@@ -215,7 +218,8 @@ ul {
   font-family: Montserrat;
 }
 
-.expertise-box-flex, .amazing-box-flex {
+.expertise-box-flex,
+.amazing-box-flex {
   display: flex;
 }
 
@@ -259,11 +263,10 @@ ul {
 }
 
 /* Right Image */
-/* Add here height for picture, only for be similiar like at PSD */
 
 .expertise-img__img {
-  width: 350px;
-  height: 616px;
+  max-width: 350px;
+  max-height: 616px;
 }
 
 /* Amazing Portfolio */
@@ -317,4 +320,207 @@ ul {
 
 .width--third {
   width: 33.33%;
+  height: 33.33%;
+}
+
+/* About boxes */
+
+
+.about-box {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.about-box-item {
+  display: flex;
+  justify-content: space-between;
+  min-height: 275px;
+}
+
+.about-box-item__title {
+  text-transform: uppercase;
+  color: #222;
+  font-size: 16px;
+  margin-top: 0
+}
+
+.about-box-item__left {
+  flex-basis: 35%;
+  text-align: right;
+}
+
+.about-box-item__center {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-box-item__right {
+  flex-basis: 35%;
+}
+
+.about-box-item__img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 169px;
+  height: 169px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 7px solid #F1F1F1;
+}
+
+.about-box-item__line {
+  width: 50%;
+  border-right: 2px solid #F1F1F1;
+  flex-grow: 1;
+  align-self: start;
+}
+
+.about-box-item__desc {
+  padding-top: 22px;
+  font-size: 14px;
+}
+
+.about-box--stories {
+  background-color: #35C2F8;
+}
+
+.about-box__story {
+  width: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFF;
+  text-align: center;
+}
+
+/* Team block */
+
+.team-boxes {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1024px;
+  text-align: center;
+}
+
+.about-box__item {
+  margin-top: 25px;
+  font-weight: 700;
+  color: #000;
+}
+
+.team-social {
+  margin-top: 15px;
+}
+
+.team-social__link {
+  text-decoration: none;
+}
+
+.team-social__svg {
+  max-width: 40px;
+}
+
+.team__desc {
+  margin: 0 auto;
+  padding: 69px 0 106px;
+  font-size: 16px;
+  max-width: 620px;
+  text-align: center;
+}
+
+/* Contact us */
+
+.contact-us {
+  color: #FFF;
+  background-color: #111;
+  padding: 100px 0 32px;
+}
+
+.contact-us-desc__heading {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.contact-us-desc__info {
+  padding: 35px 0 47px;
+  max-width: 430px;
+}
+
+.contact-us-blocks {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.contact-us-desc__ul {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.contact-us-desc__li {
+  margin: 20px 0;
+}
+
+.contact-us-desc__icon {
+  vertical-align: middle;
+  margin-right: 15px;
+  color: #FFF;
+}
+
+.contact-us-form {
+  min-width: 400px;
+}
+
+.contact-us-form__li {
+  list-style-type: none;
+}
+
+.contact-us-form__input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.contact-us-form__area {
+  min-height: 150px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 7px;
+}
+
+.contact-us-form__btn {
+  background-color: #35C2F8;
+  border: none;
+  margin-top: 10px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 1s;
+  font-weight: 700;
+}
+
+.contact-us-form__btn:hover {
+  background-color: #FFF;
+  color: #35C2F8;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 63px;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.copyright__year {
+  padding-top: 32px;
 }
