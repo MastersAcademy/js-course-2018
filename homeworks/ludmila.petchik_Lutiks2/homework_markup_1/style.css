@@ -1,0 +1,291 @@
+/*common style*/
+
+body {
+  margin: 0;
+  font: 14px "Open Sans", sans-serif;
+  color: #777;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section--content-centre {
+  text-align: center;
+}
+
+.section__header {
+  font: 700 40px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.section__header-line:after {
+  content: "";
+  display: block;
+  width: 111px;
+  height: 2px;
+  margin: 40px auto;
+  background: #35C2F8;
+}
+
+.section__description {
+  padding-bottom: 30px;
+  font: 14px "Open Sans", sans-serif;
+  color: #777;
+}
+
+.list-item-heading {
+  margin-top: 0;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.button {
+  padding: 23px 36px 26px 35px;
+  border: 1px solid #35C2F8;
+  border-radius: 45px;
+  font: 700 16px "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+/*start section welcome*/
+
+.welcome {
+  background: url("./images/welcome.png") center/cover;
+}
+
+.welcome_fon {
+  padding-bottom: 100px;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.header {
+  padding: 40px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome_heading {
+  margin-top: 0;
+}
+
+.welcome_heading_img {
+  max-width: 107px;
+}
+
+.welcome_nav {
+  list-style: none;
+}
+
+.welcome_nav li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.welcome_nav li:last-child {
+  margin-right: 0;
+}
+
+.welcome_nav_link {
+  font: 14px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.welcome_nav_link:hover {
+  color: #35C2F8;
+}
+
+.welcome_greeting {
+  max-width: 566px;
+  margin: 0 auto;
+}
+
+.welcome_greeting_header {
+  text-align: center;
+  text-transform: uppercase;
+  font: 700 50px "Open Sans", sans-serif;
+  color: #FFF;
+}
+
+.welcome_greeting_header:after {
+  content: "";
+  display: block;
+  width: 111px;
+  height: 2px;
+  margin: 40px auto;
+  background: #35C2F8;
+}
+
+.welcome_description {
+  max-width: 441px;
+  margin: 5px auto;
+  padding-bottom: 40px;
+  text-align: center;
+  font: 20px "Open Sans", sans-serif;
+  color: #FFF;
+}
+
+/*end section welcome*/
+/*section services*/
+
+.services_list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 0;
+}
+
+.services_list_li {
+  max-width: 282px;
+  list-style: none;
+}
+
+.services_list_ikon {
+  padding-bottom: 35px;
+  font-size: 55px;
+  color: #888;
+}
+
+.services_list_heading {
+  font: 700 16px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.services_list_text {
+  font: 14px "Open Sans", sans-serif;
+  color: #888;
+}
+
+/*end section services*/
+/*start section expertise*/
+
+.expertise {
+  background-color: #F7F7F7;
+  background-image: url("images/coffe-breik.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+}
+
+.expertise-main {
+  max-width: 750px;
+}
+
+.section__description-expertise {
+  max-width: 600px;
+  padding-bottom: 50px;
+}
+
+.expertise-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  box-sizing: border-box;
+  padding-left: 0;
+  padding-bottom: 45px;
+}
+
+.expertise-list__li {
+  max-width: 50%;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 45px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.list-item:before {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+.gear:before {
+  content: url("./images/gear.png");
+}
+
+.cloud:before {
+  content: url("./images/cloud.png");
+}
+
+.star:before {
+  content: url("./images/star.png");
+}
+
+.lock:before {
+  content: url("./images/lock.png");
+}
+
+.button-expertise {
+  background-color: #FFF;
+}
+
+.button-expertise:hover {
+  cursor: pointer;
+  background-color: #35C2F8;
+}
+
+/*start section portfolio*/
+
+.portfolio {
+  background-image: url("images/tel.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+}
+
+.portfolio__text {
+  max-width: 625px;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+
+.portfolio__list {
+  max-width: 500px;
+  padding-left: 0;
+}
+
+.portfolio__list--li {
+  position: relative;
+  padding-left: 45px;
+  padding-bottom: 25px;
+}
+
+.pie:before {
+  content: url("./images/pie.png");
+}
+
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}

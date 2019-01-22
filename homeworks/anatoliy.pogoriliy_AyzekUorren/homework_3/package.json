@@ -1,0 +1,17 @@
+{
+  "name": "homework_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "task_1.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Pogoriliy Anatoliy",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}

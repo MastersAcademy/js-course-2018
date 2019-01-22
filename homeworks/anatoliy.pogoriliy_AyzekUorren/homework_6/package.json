@@ -1,0 +1,17 @@
+{
+  "name": "homework_6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --timeout 15000 --exit"
+  },
+  "author": "Anatoliy Pogoriliy",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}

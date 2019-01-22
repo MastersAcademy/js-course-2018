@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #FFF;
+  font-family: "Open Sans", "sans-serif";
+}
+
+/*site header*/
+
+header {
+  box-sizing: border-box;
+  text-align: justify;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+}
+
+/*background image(computer)*/
+
+.backgroundImage {
+  background-image: url("img/Background.png");
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*second layer of background image*/
+
+.shadow {
+  background-image: url("img/TransparencyLayer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: justify;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+}
+
+/*site logo*/
+
+.logo {
+  width: 107px;
+  height: 28px;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: wrap;
+  position: relative;
+}
+
+/*menu bar*/
+
+.menuBar {
+  margin-top: 35px;
+  margin-left: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+}
+
+.menuPoint {
+  color: #FFF;
+  margin-right: 50px;
+  font-weight: 900;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/*content part of site(slogans)*/
+
+.contain {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 110px;
+}
+
+.bigSlogan {
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: 900;
+  line-height: 60px;
+  margin-top: 100px;
+}
+
+.bigSlogan:after, .title:after {
+  border-top: 1px solid #7AE6F9;
+  width: 100px;
+  height: 30px;
+  margin-top: 60px;
+  margin-left: -160px;
+  position: absolute;
+  display: inline-block;
+}
+
+.smallSlogan {
+  margin-top: 80px;
+  color: #CCC;
+  font-weight: 400;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/*main of site*/
+
+.title {
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 70px;
+}
+
+.mainMenu {
+  box-sizing: border-box;
+  text-align: justify;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+
+.design, .develop, .support {
+  width: 300px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.logoDesign {
+  width: 40px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.logoTitle {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.describe {
+  margin-top: 10px;
+  color: #888;
+  text-align: center;
+  font-size: 12px;
+}
+
+.support {
+  margin-right: 30px;
+}

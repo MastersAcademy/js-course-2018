@@ -1,0 +1,11 @@
+{
+  "name": "homework_3",
+  "version": "1.0.0",
+  "description": "HW 3",
+  "main": "task1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

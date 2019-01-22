@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.link-hover {
+  text-decoration: none;
+}
+
+.header-img {
+  background-image: url("./img/Background.jpg");
+  background-repeat: no-repeat;
+  width: 1024px;
+  height: 473px;
+  position: relative;
+}
+
+/*First two blocks*/
+
+.header-background {
+  position: absolute;
+  width: 1024px;
+  height: 100%;
+  background-color: #000;
+  opacity: .75;
+}
+
+.logo {
+  margin-left: 134px;
+  margin-top: 42px;
+}
+
+nav {
+  top: 42px;
+  margin-left: 500px;
+  position: relative;
+}
+
+.wrapper .link-hover {
+  padding: 20px 10px;
+  color: #FFF;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.wrapper .link-hover:hover {
+  color: #EE2F1B;
+}
+
+.main-h1 {
+  position: relative;
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  top: 120px;
+}
+
+.line:after {
+  width: 80px;
+  height: 1px;
+  background-color: #35C2F8;
+  display: block;
+  content: "";
+  margin: 31px auto;
+}
+
+.background-paragraph {
+  color: #CCC;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -.5px;
+  position: relative;
+  opacity: .8;
+  text-align: center;
+  top: 120px;
+}
+
+.h2-style {
+  color: #222;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -.5px;
+  margin-left: 405px;
+  margin-top: 40px;
+}
+
+.liner:after {
+  width: 111px;
+  height: 1px;
+  background-color: #35C2F8;
+  display: block;
+  content: "";
+  margin: 31px;
+  margin-left: 50px;
+}
+
+.container-services {
+  display: flex;
+  flex-basis: 33%;
+  justify-content: space-around;
+}
+
+.container-services__block {
+  text-align: center;
+}
+
+
+.h3-style {
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -.4px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.image-description {
+  color: #888;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -.35px;
+  margin-top: -20px;
+  margin-bottom: 101px;
+  text-align: center;
+}

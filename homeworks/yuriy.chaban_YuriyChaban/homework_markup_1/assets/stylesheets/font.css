@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Bello Script";
+  src: url("../fonts/Bello/Bello_Script.eot");
+  src: url("../fonts/Bello/Bello_Script.woff2") format("woff2"),
+    url("../fonts/Bello/Bello_Script.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bello Script";
+  src: url("../fonts/Bello/Bello_Script.woff") format("woff"),
+    url("../fonts/Bello/Bello_Script.ttf") format("truetype"),
+    url("../fonts/Bello/Bello_Script.svg#Bello_Script") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+

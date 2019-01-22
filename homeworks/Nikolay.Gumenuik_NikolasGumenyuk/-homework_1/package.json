@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.1.1",
+  "description": "node version v10.13.0 npm version 6.4.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikolasGumenyuk/js-course-2018.git"
+  },
+  "keywords": [
+    "ma"
+  ],
+  "author": "Nikolay_Gumenuik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikolasGumenyuk/js-course-2018/issues"
+  },
+  "homepage": "https://github.com/NikolasGumenyuk/js-course-2018#readme"
+}

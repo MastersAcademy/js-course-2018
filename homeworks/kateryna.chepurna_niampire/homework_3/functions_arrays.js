@@ -9,12 +9,9 @@ console.log(squareNumber(53));
 
 // 1.2
 
-const array = [];
-
 function addNumberToArray(maxValue, stepValue) {
-    for (let i = 0; i <= maxValue; i += stepValue) {
-        array.push(i);
-    }
+    const array = [];
+    for (let i = 0; i <= maxValue; i += stepValue) array.push(i);
     return array;
 }
 
@@ -22,24 +19,14 @@ console.log(addNumberToArray(32, 4));
 
 // 1.3
 
-function squareArray() {
-    const arrayNew = [];
-    array.forEach((item) => {
-        arrayNew.push(squareNumber(item));
-    });
-    return arrayNew;
+function squareArray(array) {
+    return array.map(element => element * element);
 }
-console.log(squareArray());
+console.log(squareArray(addNumberToArray(32, 4)));
 
 // 1.4
 
-const b = squareArray();
-
-function sumArray() {
-    let sum = 0;
-    b.forEach((item) => {
-        sum += item;
-    });
-    return sum;
+function sumArray(array) {
+    return array.reduce((n1, n2) => (n1 + n2));
 }
-console.log(sumArray());
+console.log(sumArray(squareArray(addNumberToArray(32, 4))));

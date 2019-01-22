@@ -1,0 +1,342 @@
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.sub-title:after {
+  content: "";
+  display: block;
+  width: 111px;
+  height: 2px;
+  margin: 50px auto;
+  background-color: #35C2F8;
+}
+
+/* ---------------------------------Hero, Intro-------------------------------------- */
+
+.intro {
+  width: 100%;
+  min-height: 657px;
+  padding-bottom: 50px;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/intro.png") center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero {
+  max-width: 554px;
+  margin: 0 auto;
+}
+
+.sub-title {
+  margin: 175px auto 54px;
+  font: 700 50px/60px "Open Sans", sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.description {
+  font: 400 20px/30px "Open Sans", sans-serif;
+  color: #CCC;
+}
+
+/* --------------------------Header Nav---------------------------------------- */
+
+.close-btn, .open-btn {
+  display: none;
+}
+
+.container {
+  min-height: 95px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay__content {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.overlay__content li a {
+  padding: 5px 20px;
+  color: #CCC;
+  font: 400 14px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.overlay__content li a:hover {
+  color: #35C2F8;
+  transition: ease-in-out .7s;
+  text-decoration: none;
+}
+
+/* --------------------------Section Services--------------------------- */
+
+.services {
+  width: 100%;
+  min-height: 535px;
+  padding: 99px 0 101px;
+  text-align: center;
+}
+
+.services .sub-title {
+  margin: 0;
+  font: 700 40px "Open Sans", sans-serif;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.services .sub-title:after {
+  margin: 40px auto;
+}
+
+.services .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.post-services {
+  width: 310px;
+}
+
+.services img {
+  margin: 79px 0 39px;
+}
+
+.services .title {
+  font: 400 16px "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.services p {
+  padding: 10px;
+  font: 400 14px/22px "Open Sans", sans-serif;
+  color: #888;
+}
+
+/* --------------------------Section Expertise--------------------------- */
+
+.expertise {
+  width: 100%;
+  min-height: 616px;
+  background: url("./../img/expertize.png") center center no-repeat;
+  background-size: cover;
+}
+
+.expertise .content-box {
+  width: 752px;
+  padding: 100px 0 88px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: flex-start;
+}
+
+.expertise .title {
+  margin: 0 0 36px;
+  font: 700 40px "Open Sans", sans-serif;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.expertise .description {
+  color: #777;
+  font: 400 16px "Noto Sans", sans-serif;
+}
+
+.expertise-btn {
+  display: block;
+  width: 169px;
+  margin-top: 49px;
+  background-color: #FFF;
+  border: 1px solid #CEE;
+  border-radius: 50px;
+  color: #222;
+  font: 700 16px/61px "Montserrat", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.grid-expertise {
+  display: flex;
+  flex-wrap: wrap;
+  color: #777;
+}
+
+.grid-expertise .icon {
+  margin-top: 58px;
+}
+
+.icon i {
+  padding-right: 16px;
+  font-size: 30px;
+}
+
+.expertise-content {
+  max-width: 314px;
+  margin-top: 58px;
+  font: 400 14px/22px "Open Sans", sans-serif;
+}
+
+.expertise-content .title {
+  margin-bottom: 13px;
+  color: #222;
+  font: 400 14px "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* --------------------------Section Portfolio--------------------------- */
+
+.portfolio {
+  min-height: 701px;
+  padding: 98px 0;
+  color: #777;
+}
+
+.portfolio-title {
+  margin: 0 0 36px;
+  font: 700 40px "Open Sans", sans-serif;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.portfolio .content-box {
+  max-width: 531px;
+}
+
+.portfolio .description {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.portfolio .grid-expertise {
+  max-width: 467px;
+}
+
+.portfolio .expertise-content {
+  max-width: 420px;
+  margin-top: 30px;
+}
+
+.portfolio .fa-star,
+.portfolio .fa-chart-pie {
+  font-size: 27px;
+}
+
+.itembox-portfolio {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item-portfolio {
+  max-width: 33%;
+}
+
+.item-portfolio img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -------------------------------MEDIA------------------------------------------ */
+
+@media only screen and (max-width: 930px) {
+
+  .logo {
+    margin: 10px 0 0 10px;
+  }
+
+  .services .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(0, 0, 0, .95);
+    overflow-x: hidden;
+    z-index: 5;
+    transition: all .7s;
+  }
+
+  .overlay a {
+    display: block;
+    padding: 10px;
+    color: #CCC;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .overlay a:hover {
+    color: #FFF;
+    transition: all .5s ease-in-out .1s;
+  }
+
+  .overlay .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    font-size: 50px;
+  }
+
+  .overlay__content {
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  .overlay__content li {
+    padding: 10px 0;
+  }
+
+  .open-btn {
+    display: block;
+    margin-right: 10px;
+    width: 35px;
+    height: 30px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+
+  .line {
+    display: block;
+    margin: 5px auto;
+    width: 20px;
+    height: 3px;
+    background: #000;
+  }
+
+  .expertise,
+  .portfolio {
+    padding: 90px 20px;
+  }
+
+  .item-portfolio {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+
+  .itembox-portfolio {
+    flex-direction: column;
+  }
+
+  .item-portfolio {
+    max-width: 100%;
+  }
+
+  .item-portfolio img {
+    max-width: 100%;
+    height: auto;
+  }
+}

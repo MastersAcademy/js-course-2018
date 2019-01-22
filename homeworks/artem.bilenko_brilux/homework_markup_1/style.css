@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  background-color: #FFF;
+}
+
+.dream-section {
+  background: url("./images/background.jpg") no-repeat;
+  background-size: cover;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.dream-section-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .75;
+}
+
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 30px;
+  margin-left: 10%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 67px;
+  margin-right: 40px;
+  padding-left: 100px;
+}
+
+.menu-element {
+  color: #FFF;
+  margin-right: 30px;
+  text-transform: uppercase;
+  display: flex;
+  text-decoration: none;
+}
+
+.menu-element:hover {
+  background-color: #35C2F8;
+}
+
+.title {
+  text-align: center;
+}
+
+.dream-section-title {
+  font-size: 50px;
+  margin-top: 100px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.dream-section-title:after {
+  content: "";
+  display: block;
+  width: 111px;
+  height: 2px;
+  background-color: #35C2F8;
+  margin: 0 auto;
+  margin-top: 51px;
+  margin-bottom: 51px
+}
+
+.dream-section-title_note {
+  font-size: 20px;
+  color: #CCC;
+  padding-bottom: 140px;
+}
+
+.services-section {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.services-title {
+  font-size: 40px;
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services-title:after {
+  content: "";
+  display: block;
+  width: 111px;
+  height: 2px;
+  background-color: #35C2F8;
+  margin: 0 auto;
+  margin-top: 51px;
+  margin-bottom: 51px
+}
+
+.services-list {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 150px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.services-item {
+  width: 275px;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  list-style: none;
+}
+
+.services-item_title {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.services-item_note {
+  color: #777;
+}

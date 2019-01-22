@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Homework_markup_1</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700||Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="icon-pinterest-p" viewBox="0 0 20 28">
+            <title>pinterest-p</title>
+            <path d="M0 9.328c0-5.766 5.281-9.328 10.625-9.328 4.906 0 9.375 3.375 9.375 8.547 0 4.859-2.484 10.25-8.016 10.25-1.313 0-2.969-0.656-3.609-1.875-1.188 4.703-1.094 5.406-3.719 9l-0.219 0.078-0.141-0.156c-0.094-0.984-0.234-1.953-0.234-2.938 0-3.187 1.469-7.797 2.188-10.891-0.391-0.797-0.5-1.766-0.5-2.641 0-1.578 1.094-3.578 2.875-3.578 1.313 0 2.016 1 2.016 2.234 0 2.031-1.375 3.938-1.375 5.906 0 1.344 1.109 2.281 2.406 2.281 3.594 0 4.703-5.187 4.703-7.953 0-3.703-2.625-5.719-6.172-5.719-4.125 0-7.313 2.969-7.313 7.156 0 2.016 1.234 3.047 1.234 3.531 0 0.406-0.297 1.844-0.812 1.844-0.078 0-0.187-0.031-0.266-0.047-2.234-0.672-3.047-3.656-3.047-5.703z"></path>
+        </symbol>
+        <symbol id="icon-facebook" viewBox="0 0 16 28">
+            <title>facebook</title>
+            <path d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z"></path>
+        </symbol>
+        <symbol id="icon-google" viewBox="0 0 20 20">
+            <title>google</title>
+            <path d="M1.989 5.589c0 1.494 0.499 2.572 1.482 3.205 0.806 0.52 1.74 0.598 2.226 0.598 0.118 0 0.213-0.006 0.279-0.010 0 0-0.154 1.004 0.59 1.996h-0.034c-1.289 0-5.493 0.269-5.493 3.727 0 3.516 3.861 3.695 4.636 3.695 0.061 0 0.097-0.002 0.097-0.002 0.008 0 0.063 0.002 0.158 0.002 0.497 0 1.782-0.062 2.975-0.643 1.548-0.75 2.333-2.059 2.333-3.885 0-1.764-1.196-2.814-2.069-3.582-0.533-0.469-0.994-0.873-0.994-1.266 0-0.4 0.337-0.701 0.762-1.082 0.689-0.615 1.339-1.492 1.339-3.15 0-1.457-0.189-2.436-1.354-3.057 0.121-0.062 0.551-0.107 0.763-0.137 0.631-0.086 1.554-0.184 1.554-0.699v-0.099h-4.599c-0.046 0.002-4.651 0.172-4.651 4.389zM9.413 14.602c0.088 1.406-1.115 2.443-2.922 2.574-1.835 0.135-3.345-0.691-3.433-2.096-0.043-0.676 0.254-1.336 0.835-1.863 0.589-0.533 1.398-0.863 2.278-0.928 0.104-0.006 0.207-0.012 0.31-0.012 1.699 0.001 2.849 0.999 2.932 2.325zM8.212 4.626c0.451 1.588-0.23 3.246-1.316 3.553-0.125 0.035-0.253 0.052-0.384 0.052-0.994 0-1.979-1.006-2.345-2.393-0.204-0.776-0.187-1.458 0.047-2.112 0.229-0.645 0.643-1.078 1.163-1.225 0.125-0.035 0.254-0.053 0.385-0.053 1.2 0 1.972 0.498 2.45 2.178zM16 8v-3h-2v3h-3v2h3v3h2v-3h3v-2h-3z"></path>
+        </symbol>
+        <symbol id="icon-twitter"  viewBox="0 0 30 30">
+            <title>twitter</title>
+            <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"/>
+        </symbol>
+    </defs>
+</svg>
+
+<div class="wrap">
+    <header class="header">
+        <div class="container container-header">
+            <h1>
+                <a href="/" class="logo-site">
+                    <img src="images/dreams.png" alt="Dreams" class="img">
+                </a>
+            </h1>
+            <button id="btnBurger" class="btn btn--burger">
+                <svg class="svg-icon" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+            </button>
+            <nav id="menu"  class="header__nav">
+                <button id="btnClose" class="btn btn--close">
+                    <svg class="svg-icon" height="28px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="28px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
+                </button>
+                <ul class="nav__list">
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__link">home</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__link">services</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__link">portfolio</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__link">about</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__link">team</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="#" class="nav__link">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section section--intro">
+        <div class="container container--intro">
+            <h2 class="section__title section__title--intro section__title--underline">build the website of your
+                dreams</h2>
+            <p class="sub-title">We are a digital agency that believers in building things that are meaningful!</p>
+        </div>
+    </section>
+
+    <section class="section section--services">
+        <div class="container">
+            <h2 class="section__title text-center section__title--underline">core services</h2>
+            <div class="container__cards">
+
+                <div class="card-services">
+                    <img src="images/tools.svg" class="img img--services img--services-big ">
+                    <h3 class="card__title card__title--services text-medium">Beautiful designs</h3>
+                    <p class="card__text">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean
+                        rhoncus posuere odio in. Iaculis purus digni.</p>
+                </div>
+
+                <div class="card-services">
+                    <img src="images/tree.svg" class="img img--services">
+                    <h3 class="card__title card__title--services text-medium">Beautiful designs</h3>
+                    <p class="card__text">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean
+                        rhoncus posuere odio in. Iaculis purus digni.</p>
+                </div>
+
+                <div class="card-services">
+                    <img src="images/lifebuoy.svg" class="img img--services">
+                    <h3 class="card__title card__title--services text-medium">Beautiful designs</h3>
+                    <p class="card__text">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean
+                        rhoncus posuere odio in. Iaculis purus digni.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--expertise">
+        <div class="container">
+            <div class="row">
+                <div class="wrap__content">
+                    <h2 class="section__title">Other Expertise</h2>
+                    <p class="section__text section__text--expertise">Proin iaculis purus consequat sem cure digni ssim.
+                        Donec
+                        porttitora entum suscipit
+                        aenean
+                        rhoncus posuere odio in tincidunt consequat sem cure digni ssim. </p>
+                    <ul class="card__list--expertise">
+
+                        <li class="card card--expertise">
+                            <div class="card__heading card__heading--icon1">
+                                <h3 class="card__title">
+                                    <a href="#" class="card__title__link">
+                                        Custom setup</a>
+                                </h3>
+                            </div>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                                rhoncus.
+                            </p>
+                        </li>
+
+                        <li class="card card--expertise">
+                            <div class="card__heading card__heading--icon2">
+                                <h3 class="card__title">
+                                    <a href="#" class="card__title__link">
+                                        Cloud control</a>
+                                </h3>
+                            </div>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                                rhoncus.
+                            </p>
+                        </li>
+
+                        <li class="card card--expertise">
+                            <div class="card__heading card__heading--icon3">
+                                <h3 class="card__title">
+                                    <a href="#" class="card__title__link">
+                                        All star support team</a>
+                                </h3>
+                            </div>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                                rhoncus.
+                            </p>
+                        </li>
+
+                        <li class="card card--expertise">
+                            <div class="card__heading card__heading--icon4">
+                                <h3 class="card__title">
+                                    <a href="#" class="card__title__link">
+                                        top notch security</a>
+                                </h3>
+                            </div>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                                rhoncus.
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="wrap-btn">
+                        <a class="btn btn--main">Learn more</a>
+                    </div>
+                </div>
+                <div class="bg-box">
+                    <div class="bg-img"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section section--portfolio">
+        <div class="inner-wrap">
+            <div class="container ">
+                <div class="bg-briefcase">
+                    <h2 class="section__title no-padding">Amazing Portfolio</h2>
+                    <p class="section__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                        suscipit
+                        aenean
+                        rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec
+                        porttitora
+                        entum suscipit.</p>
+                    <p class="section__text">Iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                        suscipit
+                        aenean
+                        rhoncus posuere odio
+                        in tincidunt. Proin iaculis purus consequat.</p>
+                    <div class="briefcase__box">
+                        <div class="card card--briefcase">
+                            <div class="card__heading card__heading--icon1">
+                                <h3 class="card__title text-medium">
+                                    <a href="#" class="card__title__link">
+                                        Custom setup</a>
+                                </h3>
+                            </div>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                                rhoncus.
+                            </p>
+                        </div>
+
+                        <div class="card card--briefcase">
+                            <div class="card__heading card__heading--icon3">
+                                <h3 class="card__title text-medium">
+                                    <a href="#" class="card__title__link">
+                                        Cloud control</a>
+                                </h3>
+                            </div>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                                rhoncus.
+                            </p>
+                        </div>
+
+                        <div class="card card--briefcase">
+                            <div class="card__heading card__heading--icon5">
+                                <h3 class="card__title text-medium">
+                                    <a href="#" class="card__title__link">
+                                        fully Integrated service</a>
+                                </h3>
+                            </div>
+                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                                rhoncus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="device-wrap">
+            <img src="images/isometric.png" alt="isometric iPad" class="img img--device">
+        </div>
+        <ul class="portfolio-list">
+            <li class="portfolio-list__item">
+                <a href="#" class="portfolio-list__item__link">
+                    <img src="images/shoes.jpg" alt="shoes" class="img img__link">
+                </a>
+            </li>
+            <li class="portfolio-list__item">
+                <a href="#" class="portfolio-list__item__link">
+                    <img src="images/music.jpg" alt="music dick" class="img img__link">
+                </a>
+            </li>
+            <li class="portfolio-list__item">
+                <a href="#" class="portfolio-list__item__link">
+                    <img src="images/websites.jpg" alt="websites design" class="img img__link">
+                </a>
+            </li>
+            <li class="portfolio-list__item">
+                <a href="#" class="portfolio-list__item__link">
+                    <img src="images/purchases.jpg" alt="purchases" class="img img__link">
+                </a>
+            </li>
+            <li class="portfolio-list__item">
+                <a href="#" class="portfolio-list__item__link">
+                    <img src="images/bootle-mokup.jpg" alt="bootle mokup" class="img img__link">
+                </a>
+            </li>
+            <li class="portfolio-list__item">
+                <a href="#" class="portfolio-list__item__link">
+                    <img src="images/shoemaking.jpg" alt="shoemaking" class="img img__link">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section section--about">
+        <div class="container">
+            <h2 class="section__title text-center section__title--underline section__title--about">About us</h2>
+            <div class="container-story">
+                <div class="card-story">
+                    <div class="box-img round">
+                        <img src="images/birds.jpg" alt="birds" class="img">
+                    </div>
+                    <div class="card-story__body card__body--left">
+                        <div class="date">July 2010</div>
+                        <h3 class="card__title text-medium">
+                            <a href="#" class="card__title__link">July 2010 Our Humble Beginnings</a>
+                        </h3>
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                            rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec
+                            porttitora entum suscipit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-story">
+                    <div class="box-img round">
+                        <img src="images/birds.jpg" alt="birds" class="img">
+                    </div>
+                    <div class="card-story__body">
+                        <div class="date">January 2011</div>
+                        <h3 class="card__title text-medium">
+                            <a href="#" class="card__title__link">Facing Startup Battles</a>
+                        </h3>
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                            rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec
+                            porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-story card--right">
+                    <div class="box-img round">
+                        <img src="images/birds.jpg" alt="birds" class="img">
+                    </div>
+                    <div class="card-story__body card__body--left">
+                        <div class="date">December 2012</div>
+                        <h3 class="card__title text-medium">
+                            <a href="#" class="card__title__link">Enter The Dark Days</a>
+                        </h3>
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                            rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-story">
+                    <div class="box-img round">
+                        <img src="images/birds.jpg" alt="birds" class="img">
+                    </div>
+                    <div class="card-story__body">
+                        <div class="date">february 2014</div>
+                        <h3 class="card__title text-medium">
+                            <a href="#" class="card__title__link">Our Triumph</a>
+                        </h3>
+                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                            rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec
+                            porttitora entum suscipit aenean.
+                        </p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn--story round">Our<br> Story<br> Continues<br> ...</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--team text-center">
+        <div class="container">
+            <h2 class="section__title section__title--underline">Awesome Team</h2>
+            <ul class="team-list">
+                <li class="card card--member text-center">
+
+                    <div class="wrap-img--team">
+                        <a href="#">
+                            <img src="images/jimmy.jpg" alt="Jimmy Letterman" class="img img--member img__link">
+                        </a>
+                    </div>
+
+                    <div class="card__body text-center">
+                        <h3 class="card__title text-medium card__title--lowercase">
+                            <a href="#" class="card__title__link">Jimmy Letterman</a>
+                        </h3>
+                        <span class="text--team">Marketer</span>
+
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__item__link">
+                                    <svg class="svg-icon svg-icon--social">
+                                        <use xlink:href="#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__item__link">
+                                    <svg class="svg-icon svg-icon--social">
+                                        <use xlink:href="#icon-pinterest-p"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__item__link">
+                                    <svg class="svg-icon svg-icon--social">
+                                        <use xlink:href="#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="card card--member text-center">
+
+                    <div class="wrap-img--team">
+                        <a href="#">
+                            <img src="images/jimmy.jpg" alt="Jimmy Letterman" class="img img--member img__link">
+                        </a>
+                    </div>
+
+                    <div class="card__body text-center">
+                        <h3 class="card__title text-medium card__title--lowercase">
+                            <a href="#" class="card__title__link">Jimmy Letterman</a>
+                        </h3>
+                        <span class="text--team">Marketer</span>
+
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__item__link">
+                                    <svg class="svg-icon svg-icon--social">
+                                        <use xlink:href="#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__item__link">
+                                    <svg class="svg-icon svg-icon--social">
+                                        <use xlink:href="#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__item__link">
+                                    <svg class="svg-icon svg-icon--social">
+                                        <use xlink:href="#icon-google"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="card card--member text-center">
+
+                    <div class="wrap-img--team">
+                        <a href="#">
+                            <img src="images/jimmy.jpg" alt="Jimmy Letterman" class="img img--member img__link">
+                        </a>
+                    </div>
+
+                    <div class="card__body text-center">
+                        <h3 class="card__title text-medium card__title--lowercase">
+                            <a href="#" class="card__title__link">Jimmy Letterman</a>
+                        </h3>
+                        <span class="text--team">Marketer</span>
+
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__item__link">
+                                    <svg class="svg-icon svg-icon--social">
+                                        <use xlink:href="#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__item__link">
+                                    <svg class="svg-icon svg-icon--social">
+                                        <use xlink:href="#icon-pinterest-p"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+            </ul>
+            <p class="text text--team">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                aenean rhoncus posuere
+                odio in tincidunt proin iaculis.
+            </p>
+        </div>
+    </section>
+
+    <section class="section section--contact text-white">
+        <div class="container container--contact">
+            <div class="wrap--contacts">
+                <h2 class="section__title section__title--white no-padding">contacts</h2>
+
+                <p class="section__text ">Don’t be shy, drop us an email and say hello! We are a really nice
+                    bunch of people :)
+                </p>
+
+                <ul class="contact__list">
+                    <li class="contact__list__item">
+                        <a href="tel:(416) 555-0000" class="contact__link">
+                            <svg class="svg-icon svg-icon--contact">
+                                <use xlink:href="symbol-defs.svg#icon-mobile2"></use>
+                            </svg>
+                            <span>(416) 555-0000</span>
+                        </a>
+                    </li>
+
+                    <li class="contact__list__item">
+                        <a href="mailto:hello@dreams.com" class="contact__link">
+                            <svg class="svg-icon svg-icon--contact">
+                                <use xlink:href="symbol-defs.svg#icon-mail"></use>
+                            </svg>
+                            <span>hello@dreams.com</span>
+                        </a>
+                    </li>
+
+                    <li class="contact__list__item">
+                        <a href="#" class="contact__link">
+                            <svg class="svg-icon svg-icon--contact">
+                                <use xlink:href="symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                            <span>@dreams</span>
+                        </a>
+                    </li>
+
+                    <li class="contact__list__item">
+                        <a href="#" class="contact__link">
+                            <svg class="svg-icon svg-icon--contact">
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg>
+                            <span>facebook.com/dreams</span>
+                        </a>
+                    </li>
+
+                    <li class="contact__list__item">
+                        <a href="#" class="contact__link">
+                            <svg class="svg-icon svg-icon--contact">
+                                <use xlink:href="#icon-google"></use>
+                            </svg>
+                            <span>plus.com/dreams</span>
+                        </a>
+                    </li>
+
+                    <li class="contact__list__item">
+                        <a href="#" class="contact__link">
+                            <svg class="svg-icon svg-icon--contact">
+                                <use xlink:href="symbol-defs.svg#icon-pinterest-p"></use>
+                            </svg>
+                            <span>pinterest.com/dreams</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+
+    function respMenu() {
+
+        let burger = document.getElementById('btnBurger');
+        let close = document.getElementById('btnClose');
+        let menuResp = document.getElementById('menu');
+
+        burger.addEventListener('click', function (e) {
+            e.preventDefault();
+            menuResp.classList.add('nav-open');
+        });
+
+        close.addEventListener('click', function (e) {
+            e.preventDefault();
+            menuResp.classList.remove('nav-open');
+        });
+    }
+
+    respMenu();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #CCC;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/bg.png");
+  background-size: cover;
+  box-shadow: 0 0 0 300px rgba(0, 0, 0, .7) inset;
+  color: #FFF;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.header__logo {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.header__logo__img {
+  width: 107px;
+  height: 25px;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.nav__menu__list {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.nav__menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 10px 20px;
+}
+
+.nav__menu__link:hover {
+  color: #35C2F8;
+}
+
+.header__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.intro__heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.intro__heading:after {
+  display: block;
+  content: "";
+  margin: 1em auto 0;
+  width: 25%;
+  height: .05em;
+  background-color: #35C2F8;
+}
+
+.intro__title {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+/* Section Core services */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+}
+
+.about__heading {
+  font-weight: 900;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin-top: 5%;
+}
+
+.about__heading:after {
+  display: block;
+  content: "";
+  margin: .5em auto;
+  width: 35%;
+  height: .05em;
+  background-color: #35C2F8;
+}
+
+.about__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.block__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%
+}
+
+.block__section__heading {
+  color: #222;
+  margin-bottom: 0;
+}
+
+.block__section__paragraf {
+  color: #888;
+  text-align: center;
+}
+
+.block__section__img {
+  width: 62px;
+  height: 55px;
+  margin-bottom: 1em;
+}
+
+/* Section Other expertise */
+
+.other {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F7F7F7;
+}
+
+.other__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  padding-right: 0;
+}
+
+.other__article__heading {
+  font-weight: 900;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin-top: 5%;
+}
+
+.other__article__paragraf {
+  color: #888;
+}
+
+.other__article__block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.other__article__block__section {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.other__article__block__section__image {
+  text-align: center;
+  width: 8%;
+  height: 15%;
+  margin-top: 6%;
+  margin-right: 3%;
+}
+
+.other__article__block__section__sideitems {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.sideitems__heading {
+  text-transform: uppercase;
+}
+
+.sideitems__paragraf {
+  color: #888;
+}
+
+.other__aside {
+  margin-left: 2%;
+}
+
+.other__article__button {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #FFF;
+  width: 30%;
+  margin-top: 5%;
+  padding: 2%;
+  border-radius: 1em;
+}
+
+.other__article__button:hover {
+  box-shadow: 1px 1px 2px 2px #AAA;
+}
+
+/* Section Amazing porfolio */
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+}
+
+.portfolio__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 5%;
+  padding-left: 10%;
+  background-image: url("images/bg-user-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.portfolio__article__heading {
+  font-weight: 900;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin-top: 5%;
+}
+
+.portfolio__article__paragraf {
+  color: #888;
+}
+
+.portfolio__article__section {
+  display: flex;
+}
+
+.portfolio__article__section__img {
+  text-align: center;
+  width: 12%;
+  height: 15%;
+  margin-top: 6%;
+  margin-right: 3%;
+}
+
+.portfolio__article__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.portfolio__article__block__heading {
+  text-transform: uppercase;
+}
+
+.portfolio__article__block__paragraf {
+  color: #888;
+}
+
+.portfolio__img {
+  width: 40%;
+  max-width: 500px;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-images__img {
+  width: 33.3%;
+}

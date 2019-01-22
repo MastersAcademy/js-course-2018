@@ -1,0 +1,17 @@
+/* this is comment */
+
+.heading {
+  width: 70px;
+  height: 10px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 22px;
+  color: #000;
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <title>HomeWork_markup_01</title>
+</head>
+<body class="page" id="home">
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-facebook-with-circle" viewBox="0 0 20 20">
+                <title>facebook-with-circle</title>
+                <path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm2.274 6.634h-1.443c-.171 0-.361.225-.361.524V8.6h1.805l-.273 1.486H10.47v4.461H8.767v-4.461H7.222V8.6h1.545v-.874c0-1.254.87-2.273 2.064-2.273h1.443v1.581z"/>
+            </symbol>
+            <symbol id="icon-google-with-circle" viewBox="0 0 20 20">
+                <title>google-with-circle</title>
+                <path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm-.553 13.721c-.603.293-1.252.324-1.503.324h-.075-.054c-.392 0-2.343-.09-2.343-1.867 0-1.746 2.125-1.883 2.776-1.883h.017c-.376-.502-.298-1.008-.298-1.008a2.34 2.34 0 0 1-.14.004c-.245 0-.718-.039-1.124-.301-.498-.32-.75-.865-.75-1.619 0-2.131 2.327-2.217 2.35-2.219h2.324v.051c0 .26-.467.311-.785.354-.108.016-.325.037-.386.068.589.315.684.809.684 1.545 0 .838-.328 1.281-.676 1.592-.216.193-.385.344-.385.547 0 .199.232.402.502.639.441.389 1.046.918 1.046 1.811 0 .923-.397 1.583-1.18 1.962zM14.5 10H13v1.5h-1V10h-1.5V9H12V7.5h1V9h1.5v1zm-6.277 1.15a2.08 2.08 0 0 0-.157.006 1.918 1.918 0 0 0-1.15.469c-.294.266-.444.602-.423.941.045.711.808 1.127 1.735 1.061.912-.066 1.52-.592 1.476-1.303-.042-.668-.623-1.174-1.481-1.174zm.874-3.865c-.242-.85-.632-1.102-1.238-1.102a.75.75 0 0 0-.194.027c-.263.075-.472.294-.588.62-.119.33-.126.674-.024 1.066.185.701.683 1.209 1.185 1.209a.664.664 0 0 0 .194-.027c.549-.154.893-.992.665-1.793z"/>
+            </symbol>
+            <symbol id="icon-pinterest-with-circle" viewBox="0 0 20 20">
+                <title>pinterest-with-circle</title>
+                <path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm.657 11.875c-.616-.047-.874-.352-1.356-.644-.265 1.391-.589 2.725-1.549 3.422-.297-2.104.434-3.682.774-5.359-.579-.975.069-2.936 1.291-2.454 1.503.596-1.302 3.625.581 4.004 1.966.394 2.769-3.412 1.55-4.648-1.762-1.787-5.127-.041-4.713 2.517.1.625.747.815.258 1.678-1.127-.25-1.464-1.139-1.42-2.324.069-1.94 1.743-3.299 3.421-3.486 2.123-.236 4.115.779 4.391 2.777.309 2.254-.959 4.693-3.228 4.517z"/>
+            </symbol>
+            <symbol id="icon-twitter-with-circle" viewBox="0 0 20 20">
+                <title>twitter-with-circle</title>
+                <path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm3.905 7.864c.004.082.005.164.005.244 0 2.5-1.901 5.381-5.379 5.381a5.335 5.335 0 0 1-2.898-.85c.147.018.298.025.451.025.886 0 1.701-.301 2.348-.809a1.895 1.895 0 0 1-1.766-1.312 1.9 1.9 0 0 0 .853-.033 1.892 1.892 0 0 1-1.517-1.854v-.023c.255.141.547.227.857.237a1.89 1.89 0 0 1-.585-2.526 5.376 5.376 0 0 0 3.897 1.977 1.891 1.891 0 0 1 3.222-1.725 3.797 3.797 0 0 0 1.2-.459 1.9 1.9 0 0 1-.831 1.047 3.799 3.799 0 0 0 1.086-.299 3.834 3.834 0 0 1-.943.979z"/>
+            </symbol>
+            <symbol id="cloudicon" viewBox="0 0 42 29">
+                <title>cloudicon</title>
+                <path id="wwzca" d="M575.636 1461.93c-.273 3.84-3.248 7.973-9.132 7.973-8.946 0-23.712-.047-23.86-.047-3.854 0-7.09-2.896-7.689-6.885-.468-3.112.85-7.27 5.85-9.46-.63-2.584-.206-5.132 1.248-7.318 1.801-2.708 4.963-4.39 8.252-4.39 3.327 0 6.333 1.678 8.466 4.665a7.388 7.388 0 0 1 3.712-1.016c2.067 0 3.965.897 5.205 2.462 1.072 1.353 1.567 3.094 1.45 5.016 4.793 1.39 6.75 5.476 6.498 9zm-8.606-6.05a1.664 1.664 0 0 1-1.385-2.03c.372-1.591.176-2.927-.567-3.865-.604-.764-1.55-1.201-2.595-1.201-1.078 0-2.145.463-3.005 1.303a1.667 1.667 0 0 1-2.634-.41c-1.554-2.93-3.876-4.542-6.539-4.542-2.188 0-4.288 1.113-5.48 2.904-1.125 1.692-1.268 3.764-.402 5.834a1.665 1.665 0 0 1-1.046 2.236c-3.642 1.12-5.56 3.5-5.129 6.366.303 2.012 1.911 4.049 4.4 4.049.154 0 14.915.047 23.856.047 3.773 0 5.637-2.45 5.81-4.878.178-2.49-1.387-5.254-5.284-5.813zm-15.74-7.749c.07.803-.522 1.51-1.324 1.58-1.674.148-1.716 1.322-1.69 1.678a1.458 1.458 0 0 1-2.905.22c-.133-1.765.913-4.5 4.34-4.802a1.454 1.454 0 0 1 1.579 1.324z"/><g><g transform="translate(-534 -1441)"><use xlink:href="#wwzca"/></g></g>
+            </symbol>
+            <symbol id="staricon" viewBox="0 0 31 30">
+                <title>staricon</title>
+                <path id="xxbsa" d="M171.941 1562.178c-.255 0-.51-.072-.734-.218l-7.894-5.125-7.895 5.125a1.35 1.35 0 0 1-2.032-1.5l2.473-8.78-7.38-6.25a1.352 1.352 0 0 1 .775-2.378l8.85-.638 3.982-8.73a1.349 1.349 0 0 1 2.454 0l3.982 8.73 8.849.638a1.35 1.35 0 0 1 .775 2.378l-7.38 6.25 2.473 8.781a1.35 1.35 0 0 1-1.298 1.717zm-8.628-8.303c.255 0 .51.073.734.218l5.624 3.652-1.736-6.169a1.35 1.35 0 0 1 .427-1.396l5.515-4.672-6.347-.458a1.347 1.347 0 0 1-1.13-.786l-3.087-6.767-3.087 6.767c-.205.45-.639.751-1.13.786l-6.347.458 5.515 4.672c.403.341.57.887.427 1.396l-1.737 6.169 5.625-3.652c.223-.145.478-.218.734-.218z"/><g><g transform="translate(-148 -1533)"><use xlink:href="#xxbsa"/></g></g>
+            </symbol>
+            <symbol id="icon-pie" viewBox="0 0 30 29">
+                <title>pieicon</title>
+                <path id="or5ka" d="M142.583 2346.074h-10.948a1.077 1.077 0 0 1-1.077-1.077c0-6.63 5.394-12.024 12.025-12.024.594 0 1.077.482 1.077 1.077v10.947c0 .595-.483 1.077-1.077 1.077zm-1.077-10.89c-4.585.5-8.236 4.152-8.736 8.737h8.736zm17.944 13.208c0 7.429-6.044 13.473-13.473 13.473-7.429 0-13.473-5.79-13.473-12.907 0-.68.551-1.231 1.231-1.231h11.578v-11.577c0-.68.55-1.23 1.23-1.23 6.996 0 12.907 6.17 12.907 13.472zm-2.461 0c0-5.53-4.107-10.266-9.215-10.932v11.498c0 .68-.55 1.23-1.23 1.23h-11.502c.644 5.183 5.302 9.216 10.935 9.216 6.072 0 11.012-4.94 11.012-11.012z"/><g><g transform="translate(-130 -2333)"><use xlink:href="#or5ka"/></g></g>
+            </symbol>
+            <symbol id="lockicon" viewBox="0 0 27 39">
+                <title>lockicon</title>
+                <path id="t9o3a" d="M568.531 1543.482v21.012c0 .92-.745 1.665-1.665 1.665h-23.17c-.92 0-1.665-.745-1.665-1.665v-21.012c0-.92.746-1.665 1.666-1.665h.982c-.007-2.576.41-7.262 3.204-10.384 1.826-2.04 4.315-3.074 7.398-3.074 3.084 0 5.573 1.034 7.399 3.074 2.794 3.122 3.21 7.808 3.204 10.384h.982c.92 0 1.665.745 1.665 1.665zm-20.52-1.665h14.54c.007-2.08-.293-5.868-2.36-8.17-1.182-1.317-2.789-1.957-4.91-1.957s-3.727.64-4.91 1.958c-2.066 2.301-2.366 6.089-2.36 8.169zm17.19 3.33h-19.839v17.682H565.2zm-6.127 13.063a.832.832 0 0 1-.779 1.128h-5.955a.835.835 0 0 1-.776-1.132l1.639-4.244c-.318-.472-.759-1.286-.759-2.154 0-1.554 1.007-3.204 2.874-3.204 1.866 0 2.873 1.65 2.873 3.204 0 .865-.427 1.677-.733 2.148zm-1.986-.537l-1.346-3.542a.835.835 0 0 1 .136-.825c.166-.205.647-.926.647-1.498 0-.016-.033-1.54-1.207-1.54-1.175 0-1.208 1.524-1.208 1.54 0 .565.496 1.282.67 1.489.196.233.251.554.141.838l-1.366 3.538z"/><g><g transform="translate(-542 -1528)"><use xlink:href="#t9o3a"/></g></g>
+            </symbol>
+            <symbol id="gearicon" viewBox="0 0 30 29">
+                <title>gearicon</title>
+                <path id="f8nqa" d="M160.33 2164.384c0 1.892-.287 3.026-.3 3.074-.11.429-.47.747-.909.804l-2.373.311-.082.218-.037.091-.012.03-.096.211 1.458 1.897c.27.351.3.832.074 1.213-.025.042-.625 1.046-1.961 2.384-1.339 1.337-2.343 1.937-2.385 1.961-.38.226-.861.197-1.213-.074l-1.896-1.458c-.128.06-.212.096-.212.096l-.098.04c-.01.006-.104.04-.24.092l-.31 2.373a1.086 1.086 0 0 1-.806.91c-.047.012-1.182.298-3.073.298-1.892 0-3.026-.286-3.073-.298a1.086 1.086 0 0 1-.805-.91l-.31-2.373-.218-.082-.092-.038-.03-.012s-.083-.036-.211-.096l-1.897 1.458c-.35.27-.83.3-1.212.075-.042-.025-1.048-.624-2.385-1.962-1.337-1.338-1.937-2.342-1.961-2.384a1.084 1.084 0 0 1 .074-1.213l1.458-1.897c-.059-.127-.096-.211-.096-.211l-.012-.03-.03-.072-.09-.237-2.372-.31a1.085 1.085 0 0 1-.91-.805c-.012-.048-.299-1.182-.299-3.074 0-1.89.287-3.025.299-3.073.11-.429.47-.747.91-.805l2.372-.31.083-.219c.016-.04.034-.08.054-.119l-.005-.001s.037-.084.096-.211l-1.458-1.897c-.27-.351-.3-.831-.074-1.213.024-.042.624-1.046 1.961-2.384 1.338-1.338 2.343-1.937 2.385-1.962a1.085 1.085 0 0 1 1.212.074l1.897 1.458a20.132 20.132 0 0 1 .241-.108l.073-.03.236-.09.31-2.372c.058-.44.376-.8.805-.91.048-.012 1.183-.298 3.074-.298 1.891 0 3.026.286 3.073.298.43.11.748.47.805.91l.31 2.373.217.081.089.036a4.589 4.589 0 0 1 .245.11l1.896-1.458c.351-.27.831-.3 1.213-.074.042.025 1.047.624 2.384 1.962s1.937 2.342 1.962 2.384c.225.382.196.862-.074 1.213l-1.458 1.897.096.211.04.097.091.242 2.373.31c.44.058.8.376.91.805.012.048.298 1.182.298 3.073zm-2.17 0c0-.777-.054-1.398-.11-1.83l-2.24-.294a1.085 1.085 0 0 1-.885-.725c-.13-.382-.28-.77-.282-.776l-.02-.047s-.164-.37-.339-.722a1.085 1.085 0 0 1 .114-1.141l1.376-1.79a14.39 14.39 0 0 0-1.217-1.374c-.549-.55-1.026-.95-1.372-1.216l-1.79 1.376c-.328.253-.77.296-1.14.114a24.06 24.06 0 0 0-.733-.343l-.054-.022s-.382-.147-.76-.276a1.085 1.085 0 0 1-.726-.885l-.292-2.24a14.278 14.278 0 0 0-1.83-.11c-.778 0-1.4.054-1.832.11l-.293 2.24a1.084 1.084 0 0 1-.725.885c-.383.13-.77.28-.776.282l-.035.015c-.068.03-.408.183-.735.344-.37.182-.812.138-1.14-.113l-1.79-1.377c-.347.266-.824.667-1.374 1.216-.55.55-.95 1.027-1.216 1.374l1.377 1.79c.252.328.295.77.112 1.141-.18.365-.35.747-.35.747l-.008.023c-.003.007-.152.393-.281.773a1.085 1.085 0 0 1-.887.727l-2.239.293a14.293 14.293 0 0 0-.11 1.832c0 .777.054 1.397.11 1.83l2.24.293c.41.053.753.335.886.727.13.382.278.766.28.773l.015.036c.031.069.183.409.344.734.183.372.14.814-.112 1.142l-1.377 1.79c.266.346.667.824 1.216 1.373.55.55 1.027.95 1.373 1.217l1.79-1.377a1.086 1.086 0 0 1 1.142-.113c.323.16.66.31.732.343l.057.023s.38.146.755.275c.391.133.673.476.726.885l.293 2.24c.433.056 1.054.11 1.831.11.777 0 1.398-.054 1.83-.11l.293-2.24c.054-.408.335-.752.726-.885.386-.132.776-.282.776-.282l.049-.021c.018-.008.377-.168.72-.338a1.085 1.085 0 0 1 1.142.113l1.79 1.376c.345-.266.823-.667 1.373-1.216a14.2 14.2 0 0 0 1.216-1.373l-1.377-1.79a1.086 1.086 0 0 1-.113-1.141c.16-.323.311-.66.343-.732l.023-.058s.147-.379.275-.756c.133-.39.476-.672.886-.725l2.239-.293c.056-.433.11-1.053.11-1.83zm-8.629 8.765h.001zm3.237-8.765c0 3.81-3.1 6.91-6.909 6.91-3.81 0-6.91-3.1-6.91-6.91s3.1-6.91 6.91-6.91 6.909 3.1 6.909 6.91zm-2.169 0a4.746 4.746 0 0 0-4.74-4.74 4.746 4.746 0 0 0-4.74 4.74 4.746 4.746 0 0 0 4.74 4.74 4.746 4.746 0 0 0 4.74-4.74z"/><g><g transform="translate(-131 -2150)"><use xlink:href="#f8nqa"/></g></g>
+            </symbol>
+        </defs>
+    </svg>
+    <div class="heading">
+        <header class="heading__top">
+        <a href="#home"><img class="heading__img_logo" src="images/logo.png" alt="logo"></a>
+        <label class="labelMobileMenu" for="menuMobile">Menu</label>
+        <input class="checkboxMenu menuMobile" type="checkbox">
+            <nav class="heading__menu">
+                    <a class="heading__menu_box" href="#home">Home</a>
+                    <a class="heading__menu_box" href="#services">Services</a>
+                    <a class="heading__menu_box" href="#portfolio">Portfolio</a>
+                    <a class="heading__menu_box" href="#about"> About</a>
+                    <a class="heading__menu_box" href="#team">Team</a>
+                    <a class="heading__menu_box" href="#">Contact</a>
+            </nav>
+        </header>
+        <section class="heading__wrap">
+            <h1 class="heading__title"> Build the website of your dreams</h1>
+            <p class="heading__text">We are a digital agency that believes in building things that are  meaningful!</p>
+        </section>
+    </div>
+    <main id="services">
+        <h2 class="coreServices__title section_title title">Core Services</h2>
+        <section class="coreServices__tasksBlock">
+            <div class="coreServices__task">
+                <svg class="coreServices__task_icon">
+                    <use xlink:href="symbol-defs.svg#icon-tools"></use>
+                </svg>
+                <a class= "coreServices__task_title box_title title" href="#">Beautiful Designs</a>
+                <p class= "coreServices__task_text box_text">Proin iaculis purus consequat sem digni ssim. Donec
+                    porttitora entum aenean rhoncus posuere odio in. Iaculis
+                    purus digni.</p>
+            </div>
+            <div class="coreServices__task">
+                <svg class="coreServices__task_icon">
+                    <use xlink:href="symbol-defs.svg#icon-flow-tree"></use>
+                </svg>
+                <a class= "coreServices__task_title box_title title" href="#" >web development</a>
+                <p class= "coreServices__task_text box_text">Proin iaculis purus consequat sem digni ssim.
+                        Donec porttitora entum aenean rhoncus posuere odio in.
+                        Iaculis purus digni.</p>
+            </div>
+            <div class="coreServices__task">
+                <svg class="coreServices__task_icon">
+                    <use xlink:href="symbol-defs.svg#icon-lifebuoy"></use>
+                </svg>
+                <a class= "coreServices__task_title box_title title" href="#">24/7 Support</a>
+                <p class= "coreServices__task_text box_text">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+            </div>
+        </section>
+    </main>
+    <section class="otherExpertise">
+        <section class="otherExpertise__contentWrap">
+            <h2 class="section_title title">Other Expertise</h2>
+            <p class="otherExpertise__text">Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean
+                    rhoncus posuere odio in tincidunt consequat sem cure  digni ssim. </p>
+            <div class="otherExpertise__infoWrap">
+                <div class="otherExpertise__infoBox">
+                 <svg class="infoBox_img">
+                    <use xlink:href="#gearicon"></use>
+                </svg>
+                    <div class="infoBox_wrap">
+                        <h3 class="infoBox_title title">Custom setup</h3>
+                        <p class="box_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                    </div>
+                </div>
+                <div class="otherExpertise__infoBox">
+                    <svg class="infoBox_img">
+                        <use xlink:href="#cloudicon"></use>
+                    </svg>
+                    <div class="infoBox_wrap">
+                        <h3 class="infoBox_title title">Cloud control</h3>
+                        <p class="box_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                </div>
+                </div>
+                <div class="otherExpertise__infoBox">
+                    <svg class="infoBox_img">
+                        <use xlink:href="#staricon"></use>
+                    </svg>
+                    <div class="infoBox_wrap">
+                        <h3 class="infoBox_title title">All star support team</h3>
+                        <p class="box_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                    </div>
+                </div>
+                <div class="otherExpertise__infoBox">
+                    <svg class="infoBox_img">
+                        <use xlink:href="#lockicon"></use>
+                    </svg>
+                    <div class="infoBox_wrap">
+                        <h3 class="infoBox_title title">top notch security</h3>
+                        <p class="box_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                     </div>
+                </div>
+            </div>
+            <div class="otherExpertise_but">
+                    <a class="otherExpertise_buttom title" href="#">Learn more</a>
+            </div>
+        </section>
+        <img class="otherExpertise_img" src="images/otherExpertise.png" alt="expertise">
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2 class="section_title portfolio_title title">Amazing Portfolio</h2>
+        <div class="portfolio_contentWrap">
+            <p class="box_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus
+                consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+            <p class="box_text">Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
+            <div class="portfolio__infoBox">
+                 <svg class="infoBox_img">
+                    <use xlink:href="#gearicon"></use>
+                </svg>
+                <div class="infoBoxPf_wrap">
+                    <h3 class="box_title title">Sail Away Your Worries</h3>
+                    <p class="box_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                        suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                </div>
+            </div>
+            <div class="portfolio__infoBox">
+                <svg class="infoBox_img">
+                    <use xlink:href="#staricon"></use>
+                </svg>
+                <div class="infoBoxPf_wrap">
+                    <h3 class="box_title title">All-star support team</h3>
+                    <p class="box_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                            suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+            </div>
+            <div class="portfolio__infoBox">
+                <svg class="infoBox_img">
+                    <use xlink:href="#icon-pie"></use>
+                </svg>
+                <div class="infoBoxPf_wrap">
+                    <h3 class="box_title title">fully Integrated service</h3>
+                    <p class="box_text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                        rhoncus posuere odio in tincidunt. </p>
+                </div>
+            </div>
+        </div>
+        <img class="portfolio__imgSection" src="images/ipad.png" alt="Ipad">
+    </section>
+    <div class="portfolio__gallery_wrap">
+        <img class="portfolio__img" src="images/Image-1.png" alt="boot">
+        <img class="portfolio__img" src="images/Image-2.png" alt="disc">
+        <img class="portfolio__img" src="images/Image-3.png" alt="psd">
+        <img class="portfolio__img" src="images/Image-4.png" alt="shoppingbag">
+        <img class="portfolio__img" src="images/Image-5.png" alt="bottles">
+        <img class="portfolio__img" src="images/Image-6.png" alt="walkers">
+    </div>
+    <section id="about" class="aboutUs">
+        <h2 class = "section_title aboutUs__title title">About Us</h2>
+        <figure class="aboutUs__box aboutUs__box--left">
+            <div class="aboutUs__box_content content-left">
+                <figcaption class="box_title title aboutUs__box_title">July 2010<br>
+                    Our Humble Beginnings</figcaption>
+                <p class="box_text aboutUs__box_text">Proin iaculis purus consequat sem cure
+                    digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt. Proin
+                    iaculis purus consequat sem cure digni
+                    ssim. Donec porttitora entum suscipit.</p>
+            </div>
+            <div class="aboutUs__box_imgborder"><img class="aboutUs__box_img" src="images/Image.png" alt="july2010"></div>
+        </figure>
+        <div class="aboutUs__box aboutUs__box--right">
+            <div class="aboutUs__box_content content-right">
+                <figcaption class = "box_title title">January 2011 <br>
+                    Facing Startup Battles</figcaption>
+                <p class="box_text">Proin iaculis purus consequat sem cure
+                    digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt. Proin
+                    iaculis purus consequat sem cure digni
+                    ssim. Donec porttitora entum suscipit aenean
+                    rhoncus posuere odio in tincidunt.</p>
+            </div>
+            <div class="aboutUs__box_imgborder"><img class="aboutUs__box_img" src="images/Image2.png" alt="january2011"></div>
+        </div>
+        </figure>
+        <figure class="aboutUs__box aboutUs__box--left">
+            <div class="aboutUs__box_content content-left">
+                <figcaption class = "box_title title">December 2012 <br>
+                    Enter The Dark Days</figcaption>
+                <p class="box_text">Proin iaculis purus consequat sem cure
+                    digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt. Proin
+                    iaculis purus consequat sem cure digni.</p>
+            </div>
+            <div class="aboutUs__box_imgborder"><img class="aboutUs__box_img" src="images/Image3.png" alt="december2012"></div>
+        </figure>
+        <figure class="aboutUs__box aboutUs__box--right">
+            <div class="aboutUs__box_content content-right">
+                <figcaption class = "box_title title">february 2014 <br>
+                    Our Triumph</figcaption>
+                <p class="box_text">Proin iaculis purus consequat sem cure
+                    digni ssim. Donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt. Proin
+                    iaculis purus consequat sem cure digni
+                    ssim. Donec porttitora entum suscipit aenean.</p>
+            </div>
+            <div class="aboutUs__box_imgborder"><img class="aboutUs__box_img" src="images/Image4.png" alt="february2014"></div>
+        </figure>
+        <div class="aboutUs__lastbox aboutUs__box_img">
+            <h4 class="lastbox_text"> Our <br> Story <br> Continues <br>...</h4>
+        </div>
+    </section>
+    <section id="team" class="awesomeTeam">
+        <h3 class="aboutUs__title section_title title">Awesome Team</h3>
+            <div class="awesomeTeam_wrap">
+            <div>
+                <div class="awesomeTeam_boxForPhoto"></div>
+                <p class="awesomeTeam_dep box_text"><span class="awesomeTeam_FullName">Jimmy Letterman</span><br>Marketer</p>
+                <div class="socialNet_boxWrap">
+                    <a class="socialNet_box" href="https://twitter.com">
+                        <svg>
+                            <use xlink:href="#icon-twitter-with-circle"></use>
+                        </svg>
+                    </a>
+                    <a class="socialNet_box" href="https://www.facebook.com/">
+                        <svg>
+                            <use xlink:href="#icon-facebook-with-circle"></use>
+                        </svg>
+                    </a>
+                    <a class="socialNet_box" href="https://www.pinterest.com/">
+                        <svg>
+                            <use xlink:href="#icon-pinterest-with-circle"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="awesomeTeam_boxForPhoto"></div>
+                <p class="awesomeTeam_dep box_text"><span class="awesomeTeam_FullName">Rico Massimo</span><br>Coder</p>
+                <div class="socialNet_boxWrap">
+                    <a class="socialNet_box" href="https://twitter.com">
+                         <svg>
+                            <use xlink:href="#icon-twitter-with-circle"></use>
+                        </svg>
+                    </a>
+                    <a class="socialNet_box" href="https://www.facebook.com/">
+                        <svg>
+                            <use xlink:href="#icon-facebook-with-circle"></use>
+                        </svg>
+                    </a>
+                    <a class="socialNet_box" href="https://plus.google.com/">
+                        <svg>
+                            <use xlink:href="#icon-google-with-circle"></use>
+                        </svg>
+                    </a>
+                </div>
+                </div>
+            <div>
+                <div class="awesomeTeam_boxForPhoto"></div>
+                <p class="awesomeTeam_dep box_text"><span class="awesomeTeam_FullName">Lisa Mason</span><br>Graphic Designer</p>
+                <div class="socialNet_boxWrap">
+                    <a class="socialNet_box" href="https://www.facebook.com/">
+                        <svg>
+                            <use xlink:href="#icon-facebook-with-circle"></use>
+                        </svg>
+                    </a>
+                    <a class="socialNet_box" href="https://www.pinterest.com/">
+                        <svg>
+                            <use xlink:href="#icon-pinterest-with-circle"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <p class="awesomeTeam__text ">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+        </div>
+    </section>
+</body>
+
+</html>
