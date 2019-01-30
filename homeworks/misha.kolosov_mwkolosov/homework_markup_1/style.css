@@ -1,7 +1,6 @@
 /* Global style */
 
 .body {
-  width: 1024px;
   margin: auto;
   position: relative;
   display: flex;
@@ -437,4 +436,15 @@
 
 .team__last-p {
   padding: 56px 25%;
+}
+
+.button_toogle {
+  display: none;
+}
+
+@media (min-width: 992px) {
+
+  .body {
+    width: 1024px;
+  }
 }

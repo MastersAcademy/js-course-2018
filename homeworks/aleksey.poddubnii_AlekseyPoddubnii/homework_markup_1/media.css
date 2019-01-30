@@ -1,0 +1,82 @@
+@media (max-width: 991.98px) {
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mob-menu {
+    margin: 20px;
+    background-color: #FFF;
+    border: none;
+    display: block !important;
+  }
+
+  .mob-menu__btn {
+    margin: 10px 5px;
+    max-width: 50px;
+  }
+
+  .logo {
+    padding-left: 30px;
+  }
+
+  .expertise-img,
+  .amazing-portfolio__tablet {
+    display: none;
+  }
+
+  .box-services {
+    flex-direction: column;
+  }
+
+  .expertise-block__title,
+  .amazing-portfolio__heading {
+    text-align: center;
+  }
+
+  .expertise-block__description {
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+
+  .expertise-boxes {
+    justify-content: center;
+  }
+
+  .amazing-wrap {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+
+  .width--third {
+    width: 50% !important;
+    height: 50%;
+  }
+
+  .about-box-item__right,
+  .about-box-item__left {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width:575.98px) {
+
+  .amazing-portfolio {
+    margin: 0 40px;
+  }
+
+  .triggers__big {
+    font-size: 25px;
+  }
+
+  .about-box-item__line {
+    display: none;
+  }
+
+  .about-box-item__img-wrap {
+    margin: 0 22px;
+  }
+}

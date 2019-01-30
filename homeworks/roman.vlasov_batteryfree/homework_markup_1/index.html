@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html leng="eu">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,131 +8,250 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
-	<body>
-<!--1 block-->
-        <section class="main" id="home-link">
-            <header class="header-main">
-                <a href="/"><img class="logo-main__img" src="images/logo.png" alt="logo"></a>
-                <nav class="nav-main">
-                    <a class="nav-main__link" href="#home-link">Home</a>
-                    <a class="nav-main__link" href="#services-link">Services</a>
-                    <a class="nav-main__link" href="#portfolio-link">Portfolio</a>
-                    <a class="nav-main__link" href="/">About</a>
-                    <a class="nav-main__link" href="/">Team</a>
-                    <a class="nav-main__link" href="/">Contact</a>
-                </nav>
-            </header>
-            <main>
-                <h1 class="main-title__txt line-blue">Build the website of your dreams</h1>
-                <p class="main__txt">We are a digital agency that believes in building things that are  meaningful!</p>
-            </main>
-        </section>
-<!--2 block-->
-        <section class="sevrices" id="services-link">
-            <h2 class="services-title__txt line-blue">Core Services</h2>
-            <div class="services-box">
-                <figure class="services-box__figure">
-                        <img class="services-box_img" src="images/desig.png" alt="beautiful designs">
-                        <figcaption>
-                            <h3 class="services-box-title__txt">Beautiful Designs</h3>
-                            <p class="services-box__txt">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
-                        </figcaption>
-                </figure>
-                <figure class="services-box__figure">
-                        <img class="services-box_img" src="images/develop.png" alt="web development">
-                        <figcaption>
-                            <h3 class="services-box-title__txt">web development</h3>
-                            <p class="services-box__txt">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
-                        </figcaption>
-                </figure>
-                <figure class="services-box__figure">
-                        <img class="services-box_img" src="images/support.png" alt="24/7 Support">
-                        <figcaption>
-                            <h3 class="services-box-title__txt">24/7 Support</h3>
-                            <p class="services-box__txt">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
-                        </figcaption>
-                </figure>
+    <body>
+<!--SVG block-->
+        <svg style="position: absolute; width: 0;">
+            <symbol id="menu-icon" viewBox="0 0 32 32">
+                <title>menu</title>
+                <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+            </symbol>
+            <symbol id="wrench-icon" viewBox="0 0 32 32">
+                <title>wrench</title>
+                <path d="M31.342 25.559l-14.392-12.336c0.67-1.259 1.051-2.696 1.051-4.222 0-4.971-4.029-9-9-9-0.909 0-1.787 0.135-2.614 0.386l5.2 5.2c0.778 0.778 0.778 2.051 0 2.828l-3.172 3.172c-0.778 0.778-2.051 0.778-2.828 0l-5.2-5.2c-0.251 0.827-0.386 1.705-0.386 2.614 0 4.971 4.029 9 9 9 1.526 0 2.963-0.38 4.222-1.051l12.336 14.392c0.716 0.835 1.938 0.882 2.716 0.104l3.172-3.172c0.778-0.778 0.731-2-0.104-2.716z"></path>
+            </symbol>
+            <symbol id="lifebuoy-icon" viewBox="0 0 32 32">
+                <title>lifebuoy</title>
+                <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM10 16c0-3.314 2.686-6 6-6s6 2.686 6 6-2.686 6-6 6-6-2.686-6-6zM28.937 21.359v0l-5.544-2.297c0.391-0.943 0.608-1.977 0.608-3.062s-0.216-2.119-0.608-3.062l5.544-2.297c0.685 1.651 1.063 3.46 1.063 5.359s-0.379 3.708-1.063 5.359v0zM21.359 3.063v0 0l-2.297 5.544c-0.943-0.391-1.977-0.607-3.062-0.607s-2.119 0.216-3.062 0.607l-2.297-5.544c1.651-0.684 3.46-1.063 5.359-1.063s3.708 0.379 5.359 1.063zM3.063 10.641l5.544 2.297c-0.391 0.943-0.608 1.977-0.608 3.062s0.216 2.119 0.607 3.062l-5.544 2.297c-0.685-1.651-1.063-3.46-1.063-5.359s0.379-3.708 1.063-5.359zM10.641 28.937l2.297-5.544c0.943 0.391 1.977 0.608 3.062 0.608s2.119-0.216 3.062-0.608l2.297 5.544c-1.651 0.684-3.46 1.063-5.359 1.063s-3.708-0.379-5.359-1.063z"></path>
+            </symbol>
+            <symbol id="tree-icon" viewBox="0 0 32 32">
+                <title>tree</title>
+                <path d="M30.5 24h-0.5v-6.5c0-1.93-1.57-3.5-3.5-3.5h-8.5v-4h0.5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5h-5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h0.5v4h-8.5c-1.93 0-3.5 1.57-3.5 3.5v6.5h-0.5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5h-0.5v-6h8v6h-0.5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5h-0.5v-6h8v6h-0.5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5zM6 30h-4v-4h4v4zM18 30h-4v-4h4v4zM14 8v-4h4v4h-4zM30 30h-4v-4h4v4z"></path>
+            </symbol>
+            <symbol id="twitter-icon" viewBox="0 0 32 32">
+                <title>twitter</title>
+                <path d="M18.001 14l-0 7.318c0 1.857-0.024 2.927 0.173 3.453 0.195 0.524 0.685 1.067 1.218 1.381 0.709 0.425 1.517 0.637 2.428 0.637 1.62 0 2.577-0.214 4.179-1.267v4.811c-1.366 0.642-2.558 1.019-3.666 1.279-1.109 0.258-2.308 0.388-3.596 0.388-1.463 0-2.327-0.184-3.45-0.552-1.124-0.371-2.083-0.9-2.876-1.579-0.795-0.685-1.344-1.413-1.652-2.182s-0.46-1.888-0.46-3.351v-11.222h-4.295v-4.531c1.256-0.408 2.661-0.993 3.556-1.755 0.899-0.764 1.618-1.678 2.16-2.748 0.543-1.067 0.917-2.429 1.121-4.079h5.159l-0 8h7.999v6h-7.999z"></path>
+            </symbol>
+            <symbol id="pinterest-icon" viewBox="0 0 32 32">
+                <title>pinterest</title>
+                <path d="M16 0c-8.825 0-16 7.175-16 16s7.175 16 16 16 16-7.175 16-16-7.175-16-16-16zM16 29.863c-1.431 0-2.806-0.219-4.106-0.619 0.563-0.919 1.412-2.431 1.725-3.631 0.169-0.65 0.863-3.294 0.863-3.294 0.45 0.863 1.775 1.594 3.175 1.594 4.181 0 7.194-3.844 7.194-8.625 0-4.581-3.738-8.006-8.544-8.006-5.981 0-9.156 4.019-9.156 8.387 0 2.031 1.081 4.563 2.813 5.369 0.262 0.125 0.4 0.069 0.463-0.188 0.044-0.194 0.281-1.131 0.387-1.575 0.031-0.137 0.019-0.262-0.094-0.4-0.575-0.694-1.031-1.975-1.031-3.162 0-3.056 2.313-6.019 6.256-6.019 3.406 0 5.788 2.319 5.788 5.637 0 3.75-1.894 6.35-4.356 6.35-1.363 0-2.381-1.125-2.050-2.506 0.394-1.65 1.15-3.425 1.15-4.613 0-1.063-0.569-1.95-1.756-1.95-1.394 0-2.506 1.438-2.506 3.369 0 1.225 0.412 2.056 0.412 2.056s-1.375 5.806-1.625 6.887c-0.281 1.2-0.169 2.881-0.050 3.975-5.156-2.012-8.813-7.025-8.813-12.9 0-7.656 6.206-13.863 13.862-13.863s13.863 6.206 13.863 13.863c0 7.656-6.206 13.863-13.863 13.863z"></path>
+            </symbol>
+            <symbol id="facebook-icon" viewBox="0 0 32 32">
+                <title>facebook</title>
+                <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+            </symbol>
+        </svg>
+<!--baner block-->
+        <section class="baner" id="homeLink">
+            <div class="container">
+                <header class="baner__header container">
+                    <a href="#homeLink">
+                        <img class="baner_logo" src="images/logo.png" alt="logotype dreams">
+                    </a>
+                    <div>
+                        <input class="baner__toggle" id="toggle" type="checkbox">
+                            <label class="baner__menu" for="toggle">
+                            <svg class="baner-menu__icon">
+                                <use xlink:href="#menu-icon"></use>
+                            </svg>
+                        </label>
+                        <nav class="baner__nav">
+                            <a class="baner__link" href="#homeLink">Home</a>
+                            <a class="baner__link" href="#servicesLink">Services</a>
+                            <a class="baner__link" href="#portfolioLink">Portfolio</a>
+                            <a class="baner__link" href="#aboutLink">About</a>
+                            <a class="baner__link" href="#teamLink">Team</a>
+                        </nav>
+                    </div>
+                </header>
+                <h1 class="baner__title line">Build the website of your dreams</h1>
+                <p class="baner__text">We are a digital agency that believes in building things that are  meaningful!</p>
             </div>
         </section>
-<!--3 block-->
-        <section class="other">
-            <div class="other-text">
-                <h2 class="other-title__txt">Other Expertise</h2>
-                <p class="other__txt">Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt consequat sem cure digni ssim.</p>
-                <div class="other-box">
-                        <div class="other-box__figure">
-                            <img class="other-box__img" src="images/setup.png" alt="setup">
-                            <div>
-                                <h3 class="other-box-title__txt">Custom setup</h3>
-                                <p class="other-box__txt">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-                            </div>
-                        </div>
-                        <div class="other-box__figure">
-                            <img class="other-box__img" src="images/star.png" alt="support">
-                            <div>
-                                <h3 class="other-box-title__txt">All star support team</h3>
-                                <p class="other-box__txt">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-                            </div>
-                        </div>
-                        <div class="other-box__figure">
-                            <img class="other-box__img" src="images/cloud.png" alt="cloud">
-                            <div>
-                                <h3 class="other-box-title__txt">Cloud control</h3>
-                                <p class="other-box__txt">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-                            </div>
-                        </div>
-                        <div class="other-box__figure">
-                            <img class="other-box__img" src="images/lock.png" alt="security">
-                            <div>
-                                <h3 class="other-box-title__txt">Top notch security</h3>
-                                <p class="other-box__txt">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
-                            </div>
-                        </div>
-                    </div>
-                
-                <button type="button" class="portfolio-box_button">Learn more</button>
+<!--services blok-->
+        <section class="services container" id="servicesLink">
+            <h2 class="services__title line">Core Services</h2>
+            <div class="services__containers">
+                <div class="services__container">
+                    <svg class="services-container__img">
+                        <use xlink:href="#wrench-icon"></use> 
+                    </svg>
+                    <h3 class="services-container__title">Beautiful Designs</h3>
+                    <p class="services-container__text">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+                </div>
+                <div class="services__container">
+                    <svg class="services-container__img">
+                        <use xlink:href="#tree-icon"></use> 
+                    </svg>
+                    <h3 class="services-container__title">Web development</h3>
+                    <p class="services-container__text">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+                </div>
+                <div class="services__container">
+                    <svg class="services-container__img">
+                        <use xlink:href="#lifebuoy-icon"></use> 
+                    </svg>
+                    <h3 class="services-container__title">24/7 Support</h3>
+                    <p class="services-container__text">Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni.</p>
+                </div>
             </div>
-                <img class="other-box2__img" src="images/other.png" alt="other">
         </section>
-<!--4 block-->
-        <section class="portfolio" id="portfolio-link">
-            <div class="portfolio-box">
-                <h2 class="portfolio-title__txt">Amazing Portfolio</h2>
-                <div class="portfolio-box-back">
-                    <p class="portfolio__txt">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
-                    <p class="portfolio__txt">Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
-                    <div class="portfolio-box__figure">
-                        <img class="portfolio-box__img" src="images/setup.png" alt="setup">
-                        <div>
-                            <h3 class="portfolio-box-title__txt">Sail Away Your Worries</h3>
-                            <p class="portfolio-box__txt">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+<!--other blok-->
+        <section class="other container">
+            <div class="other__bground">
+                <h2 class="other__title">Other Expertise</h2>
+                <p class="other__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt consequat sem cure digni ssim.</p>
+                <div class="other__containers">    
+                    <div class="other__container">
+                        <div class="other-container__img1 other-container__img--position">
+                            <h3 class="other-container__title">Custom setup</h3>
+                            <p class="other-container__text"> Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                        </div>
+                        <div class="other-container__img2 other-container__img--position">
+                            <h3 class="other-container__title">All star support team</h3>
+                            <p class="other-container__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
                         </div>
                     </div>
-                    <div class="portfolio-box__figure">
-                        <img class="portfolio-box__img" src="images/star.png" alt="star">
-                        <div>
-                            <h3 class="portfolio-box-title__txt">All-star support team</h3>
-                            <p class="portfolio-box__txt">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                    <div class="other__container">
+                        <div class="other-container__img3 other-container__img--position">
+                            <h3 class="other-container__title">Cloud control</h3>
+                            <p class="other-container__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
                         </div>
+                        <div class="other-container__img4 other-container__img--position">
+                            <h3 class="other-container__title">Top notch security</h3>
+                            <p class="other-container__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+                        </div>  
                     </div>
-                    <div class="portfolio-box__figure">
-                        <img class="portfolio-box__img" src="images/pie.png" alt="support">
-                        <div>
-                            <h3 class="portfolio-box-title__txt">fully Integrated service</h3>
-                            <p class="portfolio-box__txt">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                        </div>
+                </div>
+                <button type="button" class="other_button">Learn more</button>
+            </div>
+            <div class="other_img"></div>
+        </section>
+<!--portfolio bock-->
+        <section class="portfolio container" id="portfolioLink">
+            <div class="portfolio__bground">
+                <h2 class="portfolio__title">Amazing Portfolio</h2>
+                <p class="portfolio__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                <p class="portfolio__text">Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
+                <div class ="portfolio-container__img1 portfolio-container__img--position">
+                    <h3 class="portfolio-container__title">Sail Away Your Worries</h3>
+                    <p class="portfolio-container__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+                <div class ="portfolio-container__img2 portfolio-container__img--position">
+                    <h3 class="portfolio-container__title">All-star support team</h3>
+                    <p class="portfolio-container__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+                <div class ="portfolio-container__img3 portfolio-container__img--position">
+                    <h3 class="portfolio-container__title">fully Integrated service</h3>
+                    <p class="portfolio-container__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+            </div>
+            <div div class="portfolio__img"></div>
+        </section>
+        <section class="album container">
+            <img class="album__img" src="images/image-1.png" alt="">
+            <img class="album__img" src="images/image-2.png" alt="">
+            <img class="album__img" src="images/image-3.png" alt="">
+            <img class="album__img" src="images/image-4.png" alt="">
+            <img class="album__img" src="images/image-5.png" alt="">
+            <img class="album__img" src="images/image-6.png" alt="">
+        </section>
+<!--about block-->
+        <section class="about container" id="aboutLink">
+            <h2 class="about__title line">About Us</h2>
+            
+                <div class="about__containers about__containers--right">
+                    <div class="about-containers__img1 about-containers__img--size"></div>
+                    <div class="about__container about__container--right">
+                        <h3 class="about-container__title">July 2010 Our <br> Humble Beginnings</h3>
+                        <p class="about-container__text">Proin iaculis purus consequat sem cure 
+                                digni ssim. Donec porttitora entum suscipit 
+                                aenean rhoncus posuere odio in tincidunt. Proin 
+                                iaculis purus consequat sem cure digni.</p>
+                    </div>
+                </div>
+                <div class="about__containers about__containers--left">
+                    <div class="about-containers__img2 about-containers__img--size"></div>
+                    <div  class="about__container">    
+                        <h3 class="about-container__title">January 2011 <br> Facing Startup Battles</h3>
+                        <p class="about-container__text">Proin iaculis purus consequat sem cure 
+                            digni ssim. Donec porttitora entum suscipit 
+                            aenean rhoncus posuere odio in tincidunt. Proin 
+                            iaculis purus consequat sem cure digni.</p>
+                    </div>
+                </div>
+                <div class="about__containers about__containers--right">
+                    <div class="about-containers__img3 about-containers__img--size"></div>
+                    <div  class="about__container about__container--right">
+                        <h3 class="about-container__title">December 2012 <br> Enter The Dark Days</h3>
+                        <p class="about-container__text">Proin iaculis purus consequat sem cure 
+                            digni ssim. Donec porttitora entum suscipit 
+                            aenean rhoncus posuere odio in tincidunt. Proin 
+                            iaculis purus consequat sem cure digni.</p>
+                    </div>
+                </div>
+                <div class="about__containers about__containers--left">
+                    <div class="about-containers__img4 about-containers__img--size"></div>
+                    <div class="about__container">
+                        <h3 class="about-container__title">february 2014 <br> Our Triumph</h3>
+                        <p class="about-container__text">Proin iaculis purus consequat sem cure 
+                            digni ssim. Donec porttitora entum suscipit 
+                            aenean rhoncus posuere odio in tincidunt. Proin 
+                            iaculis purus consequat sem cure digni.</p>
+                    </div>
+                </div>
+            <p class="about__text about__text--circle">Our Story Continues ...</p>
+        </section>
+<!--team block-->
+        <section class="team container" id="teamLink">
+            <h2 class="team__title line">Awesome Team</h2>
+            <div class="team__containers">
+                <div class="team__container">
+                    <img class="team-container__img" src="images/blackc.png" alt="black circle">
+                    <p class="team-container__text team-container__text--bold">Jimmy Letterman</p>
+                    <p class="team-container__text">Marketer</p>
+                    <div class="team-container__pic">
+                        <svg class="team-container-pic__img">
+                            <use xlink:href="#facebook-icon"></use>
+                        </svg>
+                        <svg class="team-container-pic__img">
+                            <use xlink:href="#twitter-icon"></use>
+                        </svg>
+                        <svg class="team-container-pic__img">
+                            <use xlink:href="#pinterest-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="team__container">
+                    <img class="team-container__img" src="images/blackc.png" alt="black circle">
+                    <p class="team-container__text team-container__text--bold">Jimmy Letterman</p>
+                    <p class="team-container__text">Marketer</p>
+                    <div class="team-container__pic">
+                        <svg class="team-container-pic__img">
+                            <use xlink:href="#facebook-icon"></use>
+                        </svg>
+                        <svg class="team-container-pic__img">
+                            <use xlink:href="#twitter-icon"></use>
+                        </svg>
+                        <svg class="team-container-pic__img">
+                            <use xlink:href="#pinterest-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="team__container">
+                    <img class="team-container__img" src="images/blackc.png" alt="black circle">
+                    <p class="team-container__text team-container__text--bold">Jimmy Letterman</p>
+                    <p class="team-container__text">Marketer</p>
+                    <div class="team-container__pic">
+                        <svg class="team-container-pic__img">
+                            <use xlink:href="#facebook-icon"></use>
+                        </svg>
+                        <svg class="team-container-pic__img">
+                            <use xlink:href="#twitter-icon"></use>
+                        </svg>
                     </div>
                 </div>
             </div>
-                <img class="portfolio__img" src="images/pad.png" alt="pad">
-        </section>
-        <section clss="portfolio-albom">
-            <img class="portfolio-albom__img" src="images/image-1.png" alt="Shoes">
-            <img class="portfolio-albom__img" src="images/image-2.png" alt="Vinyl">
-            <img class="portfolio-albom__img" src="images/image-3.png" alt="Site">
-            <img class="portfolio-albom__img" src="images/image-4.png" alt="Packag">
-            <img class="portfolio-albom__img" src="images/image-5.png" alt="Bottles">
-            <img class="portfolio-albom__img" src="images/image-6.png" alt="Logo">
-        </section>
+            <p class="team__text">Proin iaculis purus consequat sem cure  digni ssim donec porttitora
+                entum suscipit <br> aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+        </section> 
     </body>
 </html>

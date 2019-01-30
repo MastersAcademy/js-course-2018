@@ -1,0 +1,11 @@
+{
+  "name": "homework_7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fibonacci.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Iryna Gychka",
+  "license": "ISC"
+}
