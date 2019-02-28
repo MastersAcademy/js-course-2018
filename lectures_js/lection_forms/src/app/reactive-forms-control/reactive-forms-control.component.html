@@ -1,0 +1,13 @@
+<h1>FormControl example:</h1>
+
+<input type="text" [formControl]="someString">
+
+<br>
+<br>
+
+{{someString.value}}
+
+<br>
+<br>
+
+<button (click)="resetToHello()" type="button">Reset to Hello</button>

@@ -1,0 +1,58 @@
+<h1>FormGroup example:</h1>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <label>
+    First Name
+    <input type="text" formControlName="firstName">
+  </label>
+  <p *ngIf="userForm.get('firstName').errors?.minlength">To short {{userForm.get('firstName').errors['minlength'] | json}}</p>
+  <br>
+
+  <label>
+    Last Name
+    <input type="text" formControlName="lastName">
+  </label>
+  <br>
+
+  <label>Emails:</label>
+  <ng-container type="text" formArrayName="emails">
+    <input type="text" formControlName="0">
+  </ng-container>
+
+  <div formGroupName="address">
+    <label>
+      Line 1
+      <input type="text" formControlName="line1">
+    </label>
+    <br>
+
+    <label>
+      Line 2
+      <input type="text" formControlName="line2">
+    </label>
+    <br>
+
+    <label>
+      City
+      <input type="text" formControlName="city">
+    </label>
+    <br>
+
+    <label>
+      Country
+      <input type="text" formControlName="country">
+    </label>
+    <br>
+
+    <label *ngIf="userForm.get('address.postalCode')">
+      Postal Code
+      <input type="text" formControlName="postalCode">
+    </label>
+    <br>
+
+  </div>
+  <br>
+
+  <button type="submit">Print data (interrupt function if not valid)</button>
+  <!--<button type="submit" [disabled]="userForm.invalid">Print data (disable if form invalid)</button>-->
+</form>
