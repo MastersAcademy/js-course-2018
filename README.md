@@ -2,7 +2,6 @@
 
 Masters Academy «Front-end» & «NodeJS» courses project for season 2018/2019
 -----------------------------------------------------------------------
-[![Join the chat at https://t.me/joinchat/AASxphAqJmFE10ndNhuY6Q](https://d22dkb9kbinceo.cloudfront.net/chat-DaW8.svg)](https://t.me/joinchat/AASxphAqJmFE10ndNhuY6Q)
 
 
 # Terms and conditions
